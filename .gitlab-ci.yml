@@ -1,0 +1,14 @@
+stages: [test]
+
+fixture-evidence:
+  stage: test
+  image: node:24-alpine
+  script:
+    - node --test --test-reporter=junit --test-reporter-destination=test-results.xml
+  artifacts:
+    when: always
+    reports:
+      junit: test-results.xml
+    paths:
+      - test-results.xml
+    expire_in: 30 days
