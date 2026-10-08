@@ -1,3 +1,4 @@
+import { mountScopeHistory } from './scope-history-view.mjs';
 import { createScopeReviewDocument, SCOPE_REVIEW_FILENAME } from './scope-review-export.mjs';
 import { createScopeRevisionDraft, SCOPE_REVISION_FILENAME } from './scope-revision-draft.mjs';
 import { MAX_CHECKPOINTS, draftFromFixture, draftBudget, validateScopeDraft, createScopeReview, formatUSD as money } from './scope-plan.mjs';
@@ -9,6 +10,7 @@ const form = $('#scope-form');
 let draft = draftFromFixture();
 let review = null;
 const evidenceDrafts = new Map();
+const scopeHistory = mountScopeHistory($('#scope-history'));
 
 function element(tag, text, className) {
   const node = document.createElement(tag);
@@ -33,6 +35,7 @@ function draftField(index, key, caption, value, options = {}) {
 }
 
 function renderDraftRows() {
+  scopeHistory.clear();
   const list = $('#scope-draft-list');
   list.replaceChildren();
   draft.checkpoints.forEach((cp, index) => {
@@ -230,6 +233,7 @@ function renderReview() {
     );
     body.append(row);
   }
+  scopeHistory.update(() => encodeScopeWorkspace({ draft, review, evidenceDrafts }));
 }
 
 $('#scope-label').value = draft.label;

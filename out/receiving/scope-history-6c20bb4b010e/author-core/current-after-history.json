@@ -1,0 +1,129 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "review",
+  "draft": {
+    "label": "Authored two-checkpoint recovery <literal>",
+    "brief": "Inspect this fictional recovery without changing the reviewed work.",
+    "cap": "700.00",
+    "checkpoints": [
+      {
+        "title": "Alpha <literal>",
+        "amount": "125.50",
+        "evidence": "Planned Alpha evidence"
+      },
+      {
+        "title": "Beta <literal>",
+        "amount": "225.75",
+        "evidence": "Planned Beta evidence"
+      }
+    ]
+  },
+  "events": [
+    {
+      "seq": 1,
+      "type": "checkpoint.approved",
+      "at": "T+001",
+      "checkpointId": "scope-1",
+      "approver": "human-reviewer",
+      "acceptedEvidence": "Accepted Alpha proof\nSecond line"
+    },
+    {
+      "seq": 2,
+      "type": "paypal.order.created",
+      "at": "T+002",
+      "checkpointId": "scope-1",
+      "orderId": "SANDBOX-SCOPE-1",
+      "amount": 12550,
+      "currency": "USD",
+      "environment": "sandbox"
+    },
+    {
+      "seq": 3,
+      "type": "paypal.capture.requested",
+      "at": "T+003",
+      "checkpointId": "scope-1",
+      "orderId": "SANDBOX-SCOPE-1",
+      "environment": "sandbox"
+    },
+    {
+      "seq": 4,
+      "type": "paypal.capture.response_lost",
+      "at": "T+004",
+      "checkpointId": "scope-1",
+      "orderId": "SANDBOX-SCOPE-1",
+      "outcome": "unknown"
+    },
+    {
+      "seq": 5,
+      "type": "paypal.webhook.received",
+      "at": "T+005",
+      "checkpointId": "scope-1",
+      "eventId": "WH-SCOPE-1",
+      "captureId": "CAP-SCOPE-1",
+      "duplicate": false,
+      "amount": 12550,
+      "currency": "USD"
+    },
+    {
+      "seq": 6,
+      "type": "paypal.webhook.received",
+      "at": "T+006",
+      "checkpointId": "scope-1",
+      "eventId": "WH-SCOPE-1",
+      "captureId": "CAP-SCOPE-1",
+      "duplicate": true,
+      "amount": 12550,
+      "currency": "USD"
+    },
+    {
+      "seq": 7,
+      "type": "paypal.capture.reconciled",
+      "at": "T+007",
+      "checkpointId": "scope-1",
+      "captureId": "CAP-SCOPE-1",
+      "outcome": "captured",
+      "source": "sandbox-transaction-lookup"
+    },
+    {
+      "seq": 8,
+      "type": "checkpoint.approved",
+      "at": "T+008",
+      "checkpointId": "scope-2",
+      "approver": "human-reviewer",
+      "acceptedEvidence": "Accepted Beta proof, separate from its plan"
+    },
+    {
+      "seq": 9,
+      "type": "paypal.order.created",
+      "at": "T+009",
+      "checkpointId": "scope-2",
+      "orderId": "SANDBOX-SCOPE-2",
+      "amount": 22575,
+      "currency": "USD",
+      "environment": "sandbox"
+    },
+    {
+      "seq": 10,
+      "type": "paypal.capture.requested",
+      "at": "T+010",
+      "checkpointId": "scope-2",
+      "orderId": "SANDBOX-SCOPE-2",
+      "environment": "sandbox"
+    },
+    {
+      "seq": 11,
+      "type": "paypal.webhook.received",
+      "at": "T+011",
+      "checkpointId": "scope-2",
+      "eventId": "WH-SCOPE-2",
+      "captureId": "CAP-SCOPE-2",
+      "duplicate": false,
+      "amount": 22575,
+      "currency": "USD"
+    }
+  ],
+  "evidenceDrafts": []
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "draft",
+  "draft": {
+    "label": "Replacement scope <literal>",
+    "brief": "A different authored plan with the same positional ID.",
+    "cap": "900.00",
+    "checkpoints": [
+      {
+        "title": "Replacement deliverable",
+        "amount": "125.25",
+        "evidence": "Replacement planned evidence"
+      }
+    ]
+  },
+  "events": [],
+  "evidenceDrafts": []
+}
