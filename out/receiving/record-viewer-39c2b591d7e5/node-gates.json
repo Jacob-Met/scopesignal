@@ -1,0 +1,40 @@
+{
+  "schema": "scopesignal.record-viewer.node-gates.v1",
+  "at": "2026-10-08T09:51:00.736Z",
+  "node": "v26.3.0",
+  "gates": [
+    {
+      "name": "candidate-node",
+      "command": [
+        "/opt/homebrew/bin/node",
+        "--test"
+      ],
+      "source": "/Users/me/hamon-scopesignal-records-39c2b591d7e5",
+      "exit": 0,
+      "signal": null,
+      "error": null
+    },
+    {
+      "name": "old-ledger-negative",
+      "command": [
+        "/opt/homebrew/bin/node",
+        "--test",
+        "--test-name-pattern=shared ledger refuses contradictory",
+        "tests/record-reader.test.mjs"
+      ],
+      "source": "/Users/me/hamon-scopesignal-records-39c2b591d7e5-runtime/old-ledger-control",
+      "exit": 1,
+      "signal": null,
+      "error": null
+    }
+  ],
+  "candidateLedgerBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+  "negativeLedgerBlob": "dc324dda071f82071be10cb7f6327b953ccf6b1e",
+  "onlyControlDifference": "src/ledger.mjs is the exact original default-31d683 source. Reader, exporter and selected test are unchanged.",
+  "expectedNegative": "The old shared reducer admits a self-consistent file attributing the approval to bot. The same reader with #8 refuses it before rendering.",
+  "sources": {
+    "src/record-reader.mjs": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8",
+    "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+    "tests/record-reader.test.mjs": "01084a72ce7bd408212c8c5b1ff56df73b42dcfeaedaaf654fb352448c56a034"
+  }
+}

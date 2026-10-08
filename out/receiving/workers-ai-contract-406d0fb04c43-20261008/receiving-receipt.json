@@ -1,0 +1,33 @@
+{
+  "schema": "scopesignal.current-tree-receiving.v1",
+  "worker": "chatgpt-406d0fb04c43/root",
+  "receiving_parent": "31d683e35e4a70065a514cc459eb83d8ffc573ca",
+  "receiving_tree": "79eed5d03b80d428b0c9163ccc6017a274f38650",
+  "receiving_leaves": 54,
+  "author_head": "c9e1530f0f6c2baa78bf5107cfeb634f09a68b83",
+  "author_tree": "ed342ef9ef43a3349b06c4e9a15b9e84617a9cfd",
+  "source_changes": [
+    "src/workers-ai.mjs",
+    "tests/workers-ai-contract.test.mjs",
+    ".github/workflows/test.yml"
+  ],
+  "source_closure": "All54 captured receiving leaves reconstructed and checked against canonical tree79eed5d before exact three-file overlay. Original adapter base, agents module and package manifest unchanged; newer timeline/export source and tests retained.",
+  "verification": {
+    "command": "npm test",
+    "node": "v24.19.0",
+    "cwd": "/workspace/scratch/406d0fb04c43/integration/scopesignal/receiving",
+    "exit_code": 0,
+    "tests": 41,
+    "passed": 41,
+    "failed": 0,
+    "skipped": 0,
+    "reporter": "Node default spec",
+    "log_sha256": "896457b0906962556ba6cf322ca37d4c30c3a6042a1e1f6317730ab4017d993a"
+  },
+  "provider_calls": 0,
+  "hosted_ci": "pending at publication",
+  "deployment": "not performed by this receipt; existing Pages push workflow unchanged",
+  "independent_review": "15/15 separate methods pass;9/15 baseline; see sealed packet",
+  "author_bundle": "Preserves all three authored commits and exact qualified tree; restore against canonical base33f021aaacd6d7ed68c508d92901e7442d99586c.",
+  "scope": "Actual exported adapter boundary; current application still has no Workers AI consumer."
+}

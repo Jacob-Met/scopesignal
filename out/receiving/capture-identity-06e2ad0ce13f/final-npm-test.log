@@ -1,0 +1,50 @@
+
+> scopesignal@0.1.0 test
+> node --test
+
+✔ review: all deterministic fixture events and reduced values retain exact serialized bytes (3.533214ms)
+✔ review: money and order identity cannot disagree with approved checkpoint evidence (2.830847ms)
+✔ review: raw replay preserves approval, order, capture, and reconciliation prerequisites (1.012873ms)
+✔ review: altered receipt money cannot be disguised as an exact duplicate (1.119433ms)
+✔ review: accepted independent capture paths serialize and replay at every prefix (13.919311ms)
+✔ review: seed admission rejects checkpoint IDs that generate the same fixture order (0.77144ms)
+✔ review: event payload accessors cannot execute a nested append while metadata is reserved (0.242495ms)
+✔ an unresolved pending capture cannot be requested a second time (2.789154ms)
+✔ a delayed lost response cannot undo a confirmed capture or be recorded twice (2.297124ms)
+✔ a webhook event identity cannot be reused for a different capture or checkpoint (2.219718ms)
+✔ a capture identity cannot count against two different checkpoints (0.745781ms)
+✔ an unknown receipt reserves its capture identity before any amount is counted (1.680327ms)
+✔ reconciliation and later receipts share the same capture binding (1.706236ms)
+✔ one checkpoint cannot acquire a second capture through a new webhook event ID (0.730849ms)
+✔ webhook and reconciliation identities must be nonempty canonical strings (10.713029ms)
+✔ exact duplicate webhook delivery remains auditable in every supported capture state (2.610555ms)
+✔ the public append path and reducer refuse lifecycle violations too (1.193986ms)
+✔ replay derives receipt identity from history instead of trusting a duplicate flag (0.59221ms)
+✔ published events cannot be edited or removed and append owns sequence metadata (0.548825ms)
+✔ a ledger keeps its creation seed stable across caller mutation (0.463216ms)
+✔ inherited object properties are not checkpoint identities (56.204758ms)
+✔ three independent checkpoint capture paths compose without double counting (9.013725ms)
+✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (5.505109ms)
+✔ order and capture require prior explicit human approval and order (1.016228ms)
+✔ lost response cannot be blindly captured again; reconcile is one-time (2.849625ms)
+✔ same webhook event ID is idempotent and cannot double count (1.01058ms)
+✔ reducer never counts duplicate webhook in fixture stream (0.976589ms)
+✔ role previews are explicit local rules and never claim AI output (17.129849ms)
+✔ Workers AI adapter fails closed without binding and has no paid fallback (0.40511ms)
+✔ schema validation rejects malformed model output (0.557889ms)
+✔ every shipped replay prefix presents its current reduced capture state (4.882662ms)
+✔ ordinary webhook capture does not invent a reconciliation (1.432114ms)
+✔ missing and unrecognized states do not become captured or safe-to-retry labels (0.239901ms)
+✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (2.989665ms)
+✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (0.690959ms)
+✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (3.501886ms)
+✔ pending and never-requested captures remain distinct from resolved captures (2.78293ms)
+ℹ tests 37
+ℹ suites 0
+ℹ pass 37
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 225.816022
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.

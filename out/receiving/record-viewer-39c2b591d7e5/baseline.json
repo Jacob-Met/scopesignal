@@ -1,0 +1,11 @@
+{
+  "schema": "scopesignal.record-viewer.baseline.v1",
+  "at": "2026-10-08T09:47:09.059Z",
+  "node": "v26.3.0",
+  "base": "31d683e35e4a70065a514cc459eb83d8ffc573ca",
+  "composition": "d5f50bb37711b043214da832f880abafe00af8e6",
+  "ledgerDependency": "d5e47b431288c4f9642ecadc1b33d4a94498e153",
+  "ledgerBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+  "baselineExit": 0,
+  "viewerOriginallyPresent": false
+}

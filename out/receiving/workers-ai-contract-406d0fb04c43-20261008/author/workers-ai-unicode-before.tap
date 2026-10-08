@@ -1,0 +1,32 @@
+TAP version 13
+# Subtest: serialized Unicode text at the schema character limits remains valid
+not ok 1 - serialized Unicode text at the schema character limits remains valid
+  ---
+  duration_ms: 1.439494
+  type: 'test'
+  location: '/workspace/scratch/406d0fb04c43/agents/production/scopesignal/tests/workers-ai-contract.test.mjs:39:1'
+  failureType: 'testCodeFailure'
+  error: 'AI checkpoint failed schema validation'
+  code: 'ERR_TEST_FAILURE'
+  stack: |-
+    validateBriefResult (file:///workspace/scratch/406d0fb04c43/agents/production/scopesignal/src/workers-ai.mjs:33:158)
+    interpretWithWorkersAI (file:///workspace/scratch/406d0fb04c43/agents/production/scopesignal/src/workers-ai.mjs:53:10)
+    async TestContext.<anonymous> (file:///workspace/scratch/406d0fb04c43/agents/production/scopesignal/tests/workers-ai-contract.test.mjs:49:24)
+    async Test.run (node:internal/test_runner/test:1389:7)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3)
+  ...
+# Subtest: Unicode length limits count code points rather than graphemes
+ok 2 - Unicode length limits count code points rather than graphemes
+  ---
+  duration_ms: 1.001936
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 1
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 87.088413

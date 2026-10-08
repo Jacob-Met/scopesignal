@@ -1,0 +1,168 @@
+{
+  "schema": "scopesignal.record-viewer.source-receipt.v1",
+  "at": "2026-10-08T09:54:45.107Z",
+  "base": "31d683e35e4a70065a514cc459eb83d8ffc573ca",
+  "ledgerDependency": "d5e47b431288c4f9642ecadc1b33d4a94498e153",
+  "composition": "d5f50bb37711b043214da832f880abafe00af8e6",
+  "productCommit": "d9ed1762bf1b90e848e745bd8edcfd792b543823",
+  "productTree": "fbcd21685eea84403456aef1d14fb91ed8f20335",
+  "ledgerBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+  "productFiles": [
+    {
+      "path": "README.md",
+      "bytes": 10081,
+      "gitBlob": "f52321009f2357e8d309ca066efb99f769c2dff5",
+      "sha256": "bfa09cda4c6ba43bb0a20883ab4e60a0675e7debce5c803195bec86f7cdc2c03"
+    },
+    {
+      "path": "index.html",
+      "bytes": 9076,
+      "gitBlob": "550055ba46185a4719bdc53263519f347497dcb4",
+      "sha256": "75ff4a9bdff5a791596e27dd944997b266533d61c29871f6ac9ef96e987c9152"
+    },
+    {
+      "path": "record.html",
+      "bytes": 2461,
+      "gitBlob": "5718956e264ba46e699d21e2c04d54d4ddd14b5d",
+      "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4"
+    },
+    {
+      "path": "record-view.css",
+      "bytes": 6493,
+      "gitBlob": "ad73b8678228eacdbd7ddf36d56c573b2fc34e4a",
+      "sha256": "71345c822fdf74c7160eb5aa09675fac19abe24603137a75d7431397eb59768d"
+    },
+    {
+      "path": "src/record-reader.mjs",
+      "bytes": 5111,
+      "gitBlob": "e6f69a87605b9808058a4e46df6b923ebb22c9dd",
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+    },
+    {
+      "path": "src/record-view.mjs",
+      "bytes": 8786,
+      "gitBlob": "08dbca153a600bf7ff6b41fb378b86b62422925f",
+      "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f"
+    },
+    {
+      "path": "tests/record-reader.test.mjs",
+      "bytes": 8759,
+      "gitBlob": "562f7db7b2052c26f66e29601b4fca931b0a8a48",
+      "sha256": "01084a72ce7bd408212c8c5b1ff56df73b42dcfeaedaaf654fb352448c56a034"
+    },
+    {
+      "path": "scripts/check-record-view.mjs",
+      "bytes": 19426,
+      "gitBlob": "8a183cb5a0aef21a240a35f0c7019ae9609c8ec5",
+      "sha256": "8619fbc2b85fabedcf852730d99e2d100b87089515a5e8d96866217e9f33574d"
+    }
+  ],
+  "actualServedSource": [
+    {
+      "path": "app.mjs",
+      "sha256": "3d5e42368d08296c94a87bb3c0bafd9d67c931a48c5971bad59e63349db2d0b1",
+      "gitBlob": "18a9711a629b33d21c5853fdc8b4c5051d6faa65",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "fixture-timeline.css",
+      "sha256": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+      "gitBlob": "6fa3b725f49ef21346821cd8db599d0cd6728223",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "index.html",
+      "sha256": "75ff4a9bdff5a791596e27dd944997b266533d61c29871f6ac9ef96e987c9152",
+      "gitBlob": "550055ba46185a4719bdc53263519f347497dcb4",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "record-view.css",
+      "sha256": "71345c822fdf74c7160eb5aa09675fac19abe24603137a75d7431397eb59768d",
+      "gitBlob": "ad73b8678228eacdbd7ddf36d56c573b2fc34e4a",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "record.html",
+      "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4",
+      "gitBlob": "5718956e264ba46e699d21e2c04d54d4ddd14b5d",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "src/agents.mjs",
+      "sha256": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+      "gitBlob": "ae1141b4f45ac8a064aa684fdcf47e938daf085d",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "src/fixture-record.mjs",
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "gitBlob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "src/fixture-timeline-view.mjs",
+      "sha256": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+      "gitBlob": "780e12706ee16ebcbf87692b7a21681c4722092d",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "src/fixture-timeline.mjs",
+      "sha256": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+      "gitBlob": "b686daaf49b53c44a06f4be8d9ef878886acf57e",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "src/ledger.mjs",
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "gitBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "gitBlob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "src/record-reader.mjs",
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8",
+      "gitBlob": "e6f69a87605b9808058a4e46df6b923ebb22c9dd",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "src/record-view.mjs",
+      "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f",
+      "gitBlob": "08dbca153a600bf7ff6b41fb378b86b62422925f",
+      "matchesCommittedSource": true
+    },
+    {
+      "path": "styles.css",
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "gitBlob": "31353c93740241c42551710bd12599338c017e45",
+      "matchesCommittedSource": true
+    }
+  ],
+  "browserSourceNote": "The raw browser sourceCommit was the composition HEAD before the eight viewer files were committed. Every served byte now matches productCommit.",
+  "actualDownload": {
+    "bytes": 3912,
+    "sha256": "0e1528a6dea485c467fba8a522f54603ab298f3fa872c1dd70ffda24276e4c70",
+    "identicalOriginalDesktopCandidateDesktopAndPhone": true
+  },
+  "screenshots": [
+    {
+      "path": "candidate-browser-r1/desktop-record.png",
+      "bytes": 293151,
+      "sha256": "c0a327c3da92e8b2f277cd439a3a80c8ad3a34bb0eac78c8705a2b2da5c5b021",
+      "gitBlob": "aa9aa67ab7b8533a7a954a69e642da84631a6195",
+      "visuallyInspected": true
+    },
+    {
+      "path": "candidate-browser-r1/phone-record.png",
+      "bytes": 262485,
+      "sha256": "ad3bdfe35e86a67c131e3561da735130da13d8ccec809712335489c18da8b791",
+      "gitBlob": "1fcdef33987f753e7a7b9e62255729540e79c0eb",
+      "visuallyInspected": true
+    }
+  ]
+}

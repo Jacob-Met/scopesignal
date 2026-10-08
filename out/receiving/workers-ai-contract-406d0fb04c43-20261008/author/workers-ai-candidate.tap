@@ -1,0 +1,190 @@
+TAP version 13
+# Subtest: fixture deterministically replays lost response, duplicate webhook, and one reconcile
+ok 1 - fixture deterministically replays lost response, duplicate webhook, and one reconcile
+  ---
+  duration_ms: 1.929451
+  type: 'test'
+  ...
+# Subtest: order and capture require prior explicit human approval and order
+ok 2 - order and capture require prior explicit human approval and order
+  ---
+  duration_ms: 0.45209
+  type: 'test'
+  ...
+# Subtest: lost response cannot be blindly captured again; reconcile is one-time
+ok 3 - lost response cannot be blindly captured again; reconcile is one-time
+  ---
+  duration_ms: 0.205118
+  type: 'test'
+  ...
+# Subtest: same webhook event ID is idempotent and cannot double count
+ok 4 - same webhook event ID is idempotent and cannot double count
+  ---
+  duration_ms: 0.177126
+  type: 'test'
+  ...
+# Subtest: reducer never counts duplicate webhook in fixture stream
+ok 5 - reducer never counts duplicate webhook in fixture stream
+  ---
+  duration_ms: 0.145318
+  type: 'test'
+  ...
+# Subtest: role previews are explicit local rules and never claim AI output
+ok 6 - role previews are explicit local rules and never claim AI output
+  ---
+  duration_ms: 12.461757
+  type: 'test'
+  ...
+# Subtest: Workers AI adapter fails closed without binding and has no paid fallback
+ok 7 - Workers AI adapter fails closed without binding and has no paid fallback
+  ---
+  duration_ms: 0.457368
+  type: 'test'
+  ...
+# Subtest: schema validation rejects malformed model output
+ok 8 - schema validation rejects malformed model output
+  ---
+  duration_ms: 0.380613
+  type: 'test'
+  ...
+# Subtest: every shipped replay prefix presents its current reduced capture state
+ok 9 - every shipped replay prefix presents its current reduced capture state
+  ---
+  duration_ms: 1.559615
+  type: 'test'
+  ...
+# Subtest: ordinary webhook capture does not invent a reconciliation
+ok 10 - ordinary webhook capture does not invent a reconciliation
+  ---
+  duration_ms: 0.307192
+  type: 'test'
+  ...
+# Subtest: missing and unrecognized states do not become captured or safe-to-retry labels
+ok 11 - missing and unrecognized states do not become captured or safe-to-retry labels
+  ---
+  duration_ms: 0.153731
+  type: 'test'
+  ...
+# Subtest: a reconciled fixture no longer asks the reviewer to keep its capture unknown
+ok 12 - a reconciled fixture no longer asks the reviewer to keep its capture unknown
+  ---
+  duration_ms: 1.646676
+  type: 'test'
+  ...
+# Subtest: a lost response and both webhook receipts retain current unknown guidance until reconciliation
+ok 13 - a lost response and both webhook receipts retain current unknown guidance until reconciliation
+  ---
+  duration_ms: 0.328163
+  type: 'test'
+  ...
+# Subtest: another unresolved checkpoint still takes priority over an earlier reconciled capture
+ok 14 - another unresolved checkpoint still takes priority over an earlier reconciled capture
+  ---
+  duration_ms: 0.29287
+  type: 'test'
+  ...
+# Subtest: pending and never-requested captures remain distinct from resolved captures
+ok 15 - pending and never-requested captures remain distinct from resolved captures
+  ---
+  duration_ms: 0.196535
+  type: 'test'
+  ...
+# Subtest: validated suggestions preserve editable text without retaining provider-owned objects
+ok 16 - validated suggestions preserve editable text without retaining provider-owned objects
+  ---
+  duration_ms: 2.383544
+  type: 'test'
+  ...
+# Subtest: the existing empty-list and text-length contracts are preserved
+ok 17 - the existing empty-list and text-length contracts are preserved
+  ---
+  duration_ms: 0.901626
+  type: 'test'
+  ...
+# Subtest: serialized Unicode text at the schema character limits remains valid
+ok 18 - serialized Unicode text at the schema character limits remains valid
+  ---
+  duration_ms: 1.696321
+  type: 'test'
+  ...
+# Subtest: Unicode length limits count code points rather than graphemes
+ok 19 - Unicode length limits count code points rather than graphemes
+  ---
+  duration_ms: 2.579839
+  type: 'test'
+  ...
+# Subtest: root fields must be declared own data properties
+ok 20 - root fields must be declared own data properties
+  ---
+  duration_ms: 0.48549
+  type: 'test'
+  ...
+# Subtest: checkpoint records cannot smuggle inherited fields or undeclared approval data
+ok 21 - checkpoint records cannot smuggle inherited fields or undeclared approval data
+  ---
+  duration_ms: 0.253381
+  type: 'test'
+  ...
+# Subtest: accessor fields are refused without evaluating provider code
+ok 22 - accessor fields are refused without evaluating provider code
+  ---
+  duration_ms: 0.246641
+  type: 'test'
+  ...
+# Subtest: checkpoint lists must contain their own entries and cannot replace iteration
+ok 23 - checkpoint lists must contain their own entries and cannot replace iteration
+  ---
+  duration_ms: 0.251958
+  type: 'test'
+  ...
+# Subtest: ordinary and null-prototype data records normalize to the same result
+ok 24 - ordinary and null-prototype data records normalize to the same result
+  ---
+  duration_ms: 0.253952
+  type: 'test'
+  ...
+# Subtest: configured bindings support the existing direct, JSON, and response-string forms
+ok 25 - configured bindings support the existing direct, JSON, and response-string forms
+  ---
+  duration_ms: 1.42319
+  type: 'test'
+  ...
+# Subtest: the async adapter rejects JSON-representable malformed suggestions in every supported response form
+ok 26 - the async adapter rejects JSON-representable malformed suggestions in every supported response form
+  ---
+  duration_ms: 4.036619
+  type: 'test'
+  ...
+# Subtest: each provider call receives an independent request schema
+ok 27 - each provider call receives an independent request schema
+  ---
+  duration_ms: 0.378168
+  type: 'test'
+  ...
+# Subtest: inherited or accessor response envelopes do not bypass result validation
+ok 28 - inherited or accessor response envelopes do not bypass result validation
+  ---
+  duration_ms: 0.38634
+  type: 'test'
+  ...
+# Subtest: missing or invalid bindings fail closed before any dispatch
+ok 29 - missing or invalid bindings fail closed before any dispatch
+  ---
+  duration_ms: 0.454343
+  type: 'test'
+  ...
+# Subtest: provider errors and malformed results are rejected without retry or fallback
+ok 30 - provider errors and malformed results are rejected without retry or fallback
+  ---
+  duration_ms: 1.992706
+  type: 'test'
+  ...
+1..30
+# tests 30
+# suites 0
+# pass 30
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 322.597263

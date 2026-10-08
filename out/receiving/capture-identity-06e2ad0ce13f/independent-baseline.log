@@ -1,0 +1,110 @@
+✔ review: all deterministic fixture events and reduced values retain exact serialized bytes (2.470266ms)
+✖ review: money and order identity cannot disagree with approved checkpoint evidence (1.198212ms)
+✖ review: raw replay preserves approval, order, capture, and reconciliation prerequisites (0.27299ms)
+✖ review: altered receipt money cannot be disguised as an exact duplicate (0.339601ms)
+✔ review: accepted independent capture paths serialize and replay at every prefix (4.902194ms)
+✖ review: seed admission rejects checkpoint IDs that generate the same fixture order (0.473923ms)
+✖ review: event payload accessors cannot execute a nested append while metadata is reserved (0.297948ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 2
+ℹ fail 5
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 122.921364
+
+✖ failing tests:
+
+test at ../../../tmp/scopesignal-baseline-review-6kwuS0/tests/capture-identity-receiving.test.mjs:40:1
+✖ review: money and order identity cannot disagree with approved checkpoint evidence (1.198212ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at refused (file:///tmp/scopesignal-baseline-review-6kwuS0/tests/capture-identity-receiving.test.mjs:30:10)
+      at TestContext.<anonymous> (file:///tmp/scopesignal-baseline-review-6kwuS0/tests/capture-identity-receiving.test.mjs:51:41)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at ../../../tmp/scopesignal-baseline-review-6kwuS0/tests/capture-identity-receiving.test.mjs:54:1
+✖ review: raw replay preserves approval, order, capture, and reconciliation prerequisites (0.27299ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at refused (file:///tmp/scopesignal-baseline-review-6kwuS0/tests/capture-identity-receiving.test.mjs:30:10)
+      at TestContext.<anonymous> (file:///tmp/scopesignal-baseline-review-6kwuS0/tests/capture-identity-receiving.test.mjs:64:41)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at ../../../tmp/scopesignal-baseline-review-6kwuS0/tests/capture-identity-receiving.test.mjs:67:1
+✖ review: altered receipt money cannot be disguised as an exact duplicate (0.339601ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at refused (file:///tmp/scopesignal-baseline-review-6kwuS0/tests/capture-identity-receiving.test.mjs:30:10)
+      at TestContext.<anonymous> (file:///tmp/scopesignal-baseline-review-6kwuS0/tests/capture-identity-receiving.test.mjs:73:5)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at ../../../tmp/scopesignal-baseline-review-6kwuS0/tests/capture-identity-receiving.test.mjs:104:1
+✖ review: seed admission rejects checkpoint IDs that generate the same fixture order (0.473923ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///tmp/scopesignal-baseline-review-6kwuS0/tests/capture-identity-receiving.test.mjs:109:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at ../../../tmp/scopesignal-baseline-review-6kwuS0/tests/capture-identity-receiving.test.mjs:123:1
+✖ review: event payload accessors cannot execute a nested append while metadata is reserved (0.297948ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///tmp/scopesignal-baseline-review-6kwuS0/tests/capture-identity-receiving.test.mjs:135:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }

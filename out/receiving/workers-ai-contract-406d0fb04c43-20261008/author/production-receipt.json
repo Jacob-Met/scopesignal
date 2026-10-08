@@ -1,0 +1,133 @@
+{
+  "schema": "scopesignal.workers-ai-contract.receiving.v1",
+  "recordedAt": "2026-10-08T08:47:50.891Z",
+  "repository": "https://github.com/Jacob-Met/scopesignal",
+  "branch": "estate/406d0fb04c43-workers-ai-contract",
+  "base": {
+    "commit": "33f021aaacd6d7ed68c508d92901e7442d99586c",
+    "tree": "4b7b68a48acb7bd83665f7e97239d68c018f61ed"
+  },
+  "head": {
+    "commit": "c9e1530f0f6c2baa78bf5107cfeb634f09a68b83",
+    "tree": "ed342ef9ef43a3349b06c4e9a15b9e84617a9cfd",
+    "clean": true
+  },
+  "commits": [
+    {
+      "commit": "832d76b5f0071542a82d24d3f19ae4dc463d9f1c",
+      "purpose": "Detach validated suggestion data, validate own data fields, preserve fail-closed binding behavior, isolate per-call schema"
+    },
+    {
+      "commit": "2e2c9bf824222a0e467d049e5bd5575e81f5af86",
+      "purpose": "Add PR-only Node 24 fixture test workflow without deployment"
+    },
+    {
+      "commit": "c9e1530f0f6c2baa78bf5107cfeb634f09a68b83",
+      "purpose": "Match existing JSON Schema Unicode character limits through actual async receiving"
+    }
+  ],
+  "sourceSha256": {
+    "src/workers-ai.mjs": "d69676fceb4a3782e6eaa7edcff4d5a4d1b7d89fc0d4e642d3bdca6e079a938e",
+    "tests/workers-ai-contract.test.mjs": "cdc3505c1de94951ebf5f0b21cfe13ed30365e82b350ec076fe1a62231447e85",
+    ".github/workflows/test.yml": "65600373a689661f1e448e2b22e7973235ef002317f93a1d87394a692bc995ff"
+  },
+  "validation": {
+    "node": "v24.19.0",
+    "originalDefaultSuite": {
+      "tests": 15,
+      "pass": 15,
+      "fail": 0
+    },
+    "finalCandidate": {
+      "command": "node --test --test-reporter=tap",
+      "tests": 30,
+      "pass": 30,
+      "fail": 0,
+      "skipped": 0,
+      "logSha256": "5a00168346fe457c2336744e35a33b9ae85c4cd2ece1b5eabd860000584b88ae"
+    },
+    "finalNewTestsAgainstBase": {
+      "command": "node --test --test-reporter=tap tests/workers-ai-contract.test.mjs",
+      "tests": 15,
+      "pass": 5,
+      "fail": 10,
+      "skipped": 0,
+      "logSha256": "7deb8a8fb9472c7b24f7a4302cad296e00d25bb7e942e9972cb66ed00e124b30"
+    },
+    "unicodeTestsBeforeCorrection": {
+      "sourceCommit": "2e2c9bf824222a0e467d049e5bd5575e81f5af86",
+      "tests": 2,
+      "pass": 1,
+      "fail": 1,
+      "skipped": 0,
+      "logSha256": "476a3b72970644f47dd32a6cff5b81deaf908e4ae1af4ce3bea90b783178822a"
+    },
+    "malformedJsonCases": 20,
+    "malformedJsonResponseForms": [
+      "direct parsed data",
+      "JSON string",
+      "own response-string envelope"
+    ],
+    "malformedJsonRefusals": 60,
+    "malformedJsonRefusalsAlreadyPassedBase": true,
+    "gitDiffCheck": "pass",
+    "nodeSyntaxChecks": "pass",
+    "bundleVerify": "pass",
+    "workflow": {
+      "sourceReviewed": true,
+      "runnerExecuted": false,
+      "trigger": "pull_request only",
+      "node": 24,
+      "permissions": {
+        "contents": "read"
+      },
+      "timeoutMinutes": 5,
+      "deploymentJobs": 0
+    }
+  },
+  "preservedBehavior": [
+    "The UI has no configured AI binding and remains disconnected.",
+    "Existing direct, JSON-string, and own response-string output formats are supported.",
+    "An empty checkpoint array remains permitted by the existing schema.",
+    "Validated suggestion text remains editable and is preserved verbatim.",
+    "Provider errors and malformed output cause one refusal without retry or fallback.",
+    "The ledger, editor, payment behavior, provider configuration, and Pages workflow are unchanged."
+  ],
+  "qualification": [
+    "All adapter calls use local synthetic binding doubles; no Workers AI request or provider integration is claimed.",
+    "Object-origin regressions concern the exported JavaScript contract; the malformed JSON refusal matrix already passed the base.",
+    "The Unicode boundary refusal is reproduced through the actual adapter with ordinary serialized JSON.",
+    "There is no generateCheckpoints export or adapter consumer in the shipped UI; the actual entry point is interpretWithWorkersAI.",
+    "No GitHub write, authorization fallback, remote push, pull request, merge, deployment, or public action was attempted. Parent coordinates publication after the existing GitHub content-write rate limit resolves."
+  ],
+  "authoritativeReferences": [
+    {
+      "url": "https://json-schema.org/draft/2020-12/json-schema-validation#section-6.3.1",
+      "purpose": "maxLength counts JSON string characters"
+    },
+    {
+      "url": "https://www.rfc-editor.org/info/rfc8259/",
+      "purpose": "Section 7: a UTF-16 surrogate pair represents one extended character"
+    }
+  ],
+  "avoidedOverlap": [
+    {
+      "url": "https://github.com/Jacob-Met/scopesignal/pull/2#issuecomment-6055365460",
+      "scope": "52e56ea8fcca/repo-coordination owns current-tip #2/#3 editor incorporation and final receiving"
+    },
+    {
+      "url": "https://github.com/Jacob-Met/scopesignal/issues/5",
+      "scope": "06e2ad0ce13f owns capture lifecycle/identity ledger work"
+    }
+  ],
+  "artifacts": {
+    "bundle": {
+      "file": "scopesignal-workers-ai-contract.bundle",
+      "sha256": "4b39f0de36d16771d9eba2b0a743e79329ffabe933b7c1184a4a5ae29692693f"
+    },
+    "patch": {
+      "file": "scopesignal-workers-ai-contract.patch",
+      "sha256": "6ee55baece51894c189f5792b5c8b6d5435dde06344c22113bd1c73d48cefcb3"
+    }
+  }
+}
