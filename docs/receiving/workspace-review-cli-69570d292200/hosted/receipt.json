@@ -1,0 +1,50 @@
+{
+  "schema": "hamon.hosted-source-receiving.v1",
+  "repository": "Jacob-Met/scopesignal",
+  "pr": 47,
+  "qualifiedHead": "e2fd217148c60165d261262c03c473e444127269",
+  "acceptedBase": "5bbb52087aa3c5b33d1694887ff3d1380b826e5e",
+  "workflow": {
+    "id": 37835849875,
+    "name": "Fixture tests",
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37835849875"
+  },
+  "job": {
+    "id": 113512540645,
+    "status": "completed",
+    "conclusion": "success",
+    "startedAt": "2026-10-08T19:57:42Z",
+    "completedAt": "2026-10-08T19:57:52Z"
+  },
+  "actualCheckout": {
+    "sha": "12e43a47011094a5a58d9ed1e0817dc2328ba42d",
+    "tree": "f386e8b18347058bcd019ab244feec11c3269e4c",
+    "parents": [
+      "5bbb52087aa3c5b33d1694887ff3d1380b826e5e",
+      "e2fd217148c60165d261262c03c473e444127269"
+    ],
+    "observedFrom": "runner.log actions/checkout git log -1 --format=%H; Git commit readback"
+  },
+  "treeReceiving": {
+    "matchesQualifiedTree": true,
+    "leafCount": 783,
+    "contributionEntries": 55,
+    "unrelatedAcceptedLeavesPreserved": 728
+  },
+  "runtime": {
+    "node": "v24.21.0",
+    "npm": "11.19.0"
+  },
+  "command": "npm test",
+  "result": {
+    "passed": 242,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "independentReceiving": "Pending source and separate actual-command review by /root/integration_lane.",
+  "boundary": "Normal hosted source/test qualification of the exact prospective PR merge checkout; no deployment, installed adoption, public browser, provider or payment claim."
+}
