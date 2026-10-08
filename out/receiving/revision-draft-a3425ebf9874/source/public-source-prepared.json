@@ -1,0 +1,59 @@
+{
+  "actual_parent": "bab391c7c6fec1193e221997e4d66d89bd914cfd",
+  "actual_base_tree": "328092ddb109dd75ecf750f2cdf4fd564143d3ed",
+  "expected_source_tree": "ce206600271b03d6d0aedf9fa630c033c7248d8e",
+  "before_leaves": 389,
+  "after_leaves": 392,
+  "inherited_unchanged": 386,
+  "source_capture_head": "433739686010e003d56473e07c7b237379c9e58c",
+  "files": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2952d29179fbf20ea6bbefe03dad2f734b57ed52",
+      "sha256": "53b9311a7c224d3fa09299ae6340f1be8c2262e8788d7e958a331e07633d2d29",
+      "bytes": 18750
+    },
+    {
+      "path": "scope.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90d4dd2cbc11bba632e38b97dfa3ee6eabf77426",
+      "sha256": "07c109530240623979889d9c554858b82661d77f84856161dcd203575069f160",
+      "bytes": 8561
+    },
+    {
+      "path": "scripts/check-scope-revision-draft.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d44dc0fc0b26f4464e9cd07a057ada393723bfa",
+      "sha256": "a8da170e65e87904eb58dde9567ba7b15fce8c0e6202e4b0772c8a7325a9a43a",
+      "bytes": 18137
+    },
+    {
+      "path": "src/scope-revision-draft.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "bytes": 667
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad0753de8b0aecb37a5b15915f262298635d85e5",
+      "sha256": "cf07a157d84b206eb5664455fc654f280deb51a2d991acde5b0d198157736fa1",
+      "bytes": 22821
+    },
+    {
+      "path": "tests/scope-revision-draft.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03219dd86a781a7bd8085252533e04b1b9281919",
+      "sha256": "4cf167dcb036a2d1112c7e989eb563c36cc495bd9d41dc2bd453174443711614",
+      "bytes": 8867
+    }
+  ]
+}

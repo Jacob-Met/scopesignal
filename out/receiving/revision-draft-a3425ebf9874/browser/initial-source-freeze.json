@@ -1,0 +1,11 @@
+{
+  "head": "851cd5033859a828d897733709a07c5edee1bf4b",
+  "tree": "2258617c67d73face128c115155fe8a9c7008cb6",
+  "source_commit": "31fd385d584f9ab611284768fa0f29a62966bf4e",
+  "base_capture": "d8b23e553b13d960f8dbd406c223cd8523894b26",
+  "public_parent": "bab391c7c6fec1193e221997e4d66d89bd914cfd",
+  "bundle": "/dev/shm/hamon-a3425ebf9874-github-estate/scopesignal-revision-draft/receiving/source-browser.bundle",
+  "bytes": 122018,
+  "sha256": "32ebed213357cfa8ab427336bfc2613f17c2e2e784471a8d34771bacedc77602",
+  "harness_sha256": "3a9f2141ac53788bbfbaf9f549b74e8a36d903b058629d2fab01837e75288120"
+}

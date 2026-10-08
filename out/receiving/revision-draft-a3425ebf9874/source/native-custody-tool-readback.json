@@ -1,0 +1,13 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Process started with PID 3253221 (shell: /bin/bash)\nInitial output:\n{\"bundle\": \"/srv/hamon-estate/receivers/estate-a3425ebf9874-scopesignal-revision-draft/source-browser-32ebed21.bundle\", \"bytes\": 122018, \"sha256\": \"32ebed213357cfa8ab427336bfc2613f17c2e2e784471a8d34771bacedc77602\", \"source_path\": \"/srv/hamon-estate/receivers/estate-a3425ebf9874-scopesignal-revision-draft/source\", \"baseline_path\": \"/srv/hamon-estate/receivers/estate-a3425ebf9874-scopesignal-revision-draft/baseline\", \"head\": \"851cd5033859a828d897733709a07c5edee1bf4b\", \"tree\": \"2258617c67d73face128c115155fe8a9c7008cb6\", \"production_source\": \"31fd385d584f9ab611284768fa0f29a62966bf4e\", \"production_unchanged\": true, \"status\": \"\", \"history\": \"bounded source capture; actual public parent bab391c7c6fec1193e221997e4d66d89bd914cfd\"}\n"
+    },
+    {
+      "type": "text",
+      "text": "\n[executed on device: hamon-thinkpad (cadafaf3-4d0b-4c4f-a0d3-34a95d2cec90)]"
+    }
+  ],
+  "isError": false
+}

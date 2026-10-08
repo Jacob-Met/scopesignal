@@ -1,0 +1,16 @@
+Exact selected lines from GitHub Actions job113394302844, run37801413462.
+Source head9863a0e971da312d2328ffdbb14c5d0cf01da74f; actual merge checkout shown below.
+https://github.com/Jacob-Met/scopesignal/actions/runs/37801413462
+
+2026-10-08T15:31:12.3272029Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e993f61bcf670f4e622624f1cda05e2decb35204:refs/remotes/pull/30/merge
+2026-10-08T15:31:14.1420428Z  * [new ref]         e993f61bcf670f4e622624f1cda05e2decb35204 -> pull/30/merge
+2026-10-08T15:31:14.2474535Z HEAD is now at e993f61 Merge 9863a0e971da312d2328ffdbb14c5d0cf01da74f into bab391c7c6fec1193e221997e4d66d89bd914cfd
+2026-10-08T15:31:14.2695541Z e993f61bcf670f4e622624f1cda05e2decb35204
+2026-10-08T15:31:14.8080705Z node: v24.21.0
+2026-10-08T15:31:14.8080976Z npm: 11.19.0
+2026-10-08T15:31:15.7025264Z ℹ tests 139
+2026-10-08T15:31:15.7025658Z ℹ pass 139
+2026-10-08T15:31:15.7025848Z ℹ fail 0
+2026-10-08T15:31:15.7026039Z ℹ cancelled 0
+2026-10-08T15:31:15.7026242Z ℹ skipped 0
+2026-10-08T15:31:15.7026656Z ℹ duration_ms 667.223705
