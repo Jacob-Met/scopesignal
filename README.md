@@ -68,7 +68,9 @@ seven-event Northstar example remains available from the return link.
    Recovery is single-use and stays available through downloads and file previews.
    Another removal replaces it; adding, copying, moving, successful review or
    replacing the workspace clears it. Invalid restored amounts still require
-   correction before review. All amounts must be positive,
+   correction before review. Project-cap and checkpoint-amount input strings
+   must each be 64 characters or fewer, including spaces and leading zeros,
+   so the reviewed scope can still be saved. All amounts must be positive,
    use at most two decimal places, and fit within the project cap. Unallocated
    cap is shown separately from the remaining allocated milestones.
 2. Select **Review this scope**. This prepares an unapproved plan with zero
