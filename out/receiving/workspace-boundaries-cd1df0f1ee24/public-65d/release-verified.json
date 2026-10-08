@@ -1,0 +1,132 @@
+{
+  "commit": "65d47f90e609c36f51648c303e06f74a1d95f856",
+  "tree": "88073a0984b05b629d85563ae2e113e6c932e8ec",
+  "pages": {
+    "id": 37781938930,
+    "head_sha": "65d47f90e609c36f51648c303e06f74a1d95f856",
+    "status": "completed",
+    "conclusion": "success",
+    "event": "push",
+    "path": ".github/workflows/pages.yml",
+    "html_url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37781938930",
+    "created_at": "2026-10-08T13:07:44Z",
+    "updated_at": "2026-10-08T13:08:15Z"
+  },
+  "baseline_release_custody": {
+    "owner": "estate-7a9310dad255",
+    "source": "https://github.com/Jacob-Met/scopesignal/pull/18#issuecomment-6059448532",
+    "status": "Original baseline release receiving remains its owner\u2019s work. This run is the separately authorized repair release at65d; no acceptance of their earlier served baseline is inferred."
+  },
+  "independent_published_source_acceptance": "c436b9ff023d9d0c79af3e5e134131fd37f5883f tree88073a0984b05b629d85563ae2e113e6c932e8ec all312leaves matched; merge65d has identical tree.",
+  "deployed_runtime_preflight": {
+    "passed": true,
+    "commit": "65d47f90e609c36f51648c303e06f74a1d95f856",
+    "normal_tls": true,
+    "files": [
+      {
+        "path": "scope-workspace.css",
+        "url": "https://jacobmetoyer.com/scopesignal/scope-workspace.css",
+        "curl_exit": 0,
+        "http_status": "200",
+        "effective_url": "https://jacobmetoyer.com/scopesignal/scope-workspace.css",
+        "bytes": 5040,
+        "sha256": "01f9a70a6f0e4f6be16d693e6a63459fd13c2944aa9d6882b93c23e74418416b",
+        "git_blob": "2b962b49f408075877bbb8ff48c494b0fce111c7",
+        "stderr": "",
+        "seconds": 0.18863466603215784,
+        "passed": true
+      },
+      {
+        "path": "scope.html",
+        "url": "https://jacobmetoyer.com/scopesignal/scope.html",
+        "curl_exit": 0,
+        "http_status": "200",
+        "effective_url": "https://jacobmetoyer.com/scopesignal/scope.html",
+        "bytes": 7554,
+        "sha256": "eb342ac10d6f09444b912171e5f03fed95ea90b7a42295c71d5390a533a3c546",
+        "git_blob": "aaa7a07eccb16bf5897181f58e29876130d2d2a8",
+        "stderr": "",
+        "seconds": 0.1648368340684101,
+        "passed": true
+      },
+      {
+        "path": "src/ledger.mjs",
+        "url": "https://jacobmetoyer.com/scopesignal/src/ledger.mjs",
+        "curl_exit": 0,
+        "http_status": "200",
+        "effective_url": "https://jacobmetoyer.com/scopesignal/src/ledger.mjs",
+        "bytes": 12684,
+        "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+        "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+        "stderr": "",
+        "seconds": 0.1745267080841586,
+        "passed": true
+      },
+      {
+        "path": "src/payment-status.mjs",
+        "url": "https://jacobmetoyer.com/scopesignal/src/payment-status.mjs",
+        "curl_exit": 0,
+        "http_status": "200",
+        "effective_url": "https://jacobmetoyer.com/scopesignal/src/payment-status.mjs",
+        "bytes": 1959,
+        "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+        "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+        "stderr": "",
+        "seconds": 0.205309999990277,
+        "passed": true
+      },
+      {
+        "path": "src/scope-plan.mjs",
+        "url": "https://jacobmetoyer.com/scopesignal/src/scope-plan.mjs",
+        "curl_exit": 0,
+        "http_status": "200",
+        "effective_url": "https://jacobmetoyer.com/scopesignal/src/scope-plan.mjs",
+        "bytes": 6794,
+        "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+        "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+        "stderr": "",
+        "seconds": 0.22523162502329797,
+        "passed": true
+      },
+      {
+        "path": "src/scope-workspace-record.mjs",
+        "url": "https://jacobmetoyer.com/scopesignal/src/scope-workspace-record.mjs",
+        "curl_exit": 0,
+        "http_status": "200",
+        "effective_url": "https://jacobmetoyer.com/scopesignal/src/scope-workspace-record.mjs",
+        "bytes": 7421,
+        "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+        "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+        "stderr": "",
+        "seconds": 0.21584820898715407,
+        "passed": true
+      },
+      {
+        "path": "src/scope-workspace.mjs",
+        "url": "https://jacobmetoyer.com/scopesignal/src/scope-workspace.mjs",
+        "curl_exit": 0,
+        "http_status": "200",
+        "effective_url": "https://jacobmetoyer.com/scopesignal/src/scope-workspace.mjs",
+        "bytes": 19111,
+        "sha256": "8b6f39b97a139ac63679b3b34b15342d695dbda613ae676873c1bbcc888e9f28",
+        "git_blob": "adc9bb3e53ffa72671a8f46e9b067b879ac3adff",
+        "stderr": "",
+        "seconds": 0.2016224170802161,
+        "passed": true
+      },
+      {
+        "path": "styles.css",
+        "url": "https://jacobmetoyer.com/scopesignal/styles.css",
+        "curl_exit": 0,
+        "http_status": "200",
+        "effective_url": "https://jacobmetoyer.com/scopesignal/styles.css",
+        "bytes": 9444,
+        "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+        "git_blob": "31353c93740241c42551710bd12599338c017e45",
+        "stderr": "",
+        "seconds": 0.2623580419458449,
+        "passed": true
+      }
+    ]
+  }
+}

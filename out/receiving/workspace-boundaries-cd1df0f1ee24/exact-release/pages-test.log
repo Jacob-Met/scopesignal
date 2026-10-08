@@ -1,0 +1,274 @@
+﻿2026-10-08T13:07:47.9855228Z Current runner version: '2.337.0'
+2026-10-08T13:07:47.9891344Z ##[group]Runner Image Provisioner
+2026-10-08T13:07:47.9892682Z Hosted Compute Agent
+2026-10-08T13:07:47.9893629Z Version: 20261002.596
+2026-10-08T13:07:47.9894693Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-08T13:07:47.9896108Z Build Date: 2026-10-02T22:28:27Z
+2026-10-08T13:07:47.9897179Z Worker ID: {f2185b14-fd5d-4fd4-93e2-6d9009f1ddd8}
+2026-10-08T13:07:47.9898403Z Region: eastus2
+2026-10-08T13:07:47.9899250Z Cloud: Azure
+2026-10-08T13:07:47.9900030Z ##[endgroup]
+2026-10-08T13:07:47.9902277Z ##[group]Operating System
+2026-10-08T13:07:47.9903284Z Ubuntu
+2026-10-08T13:07:47.9904163Z 24.04.5
+2026-10-08T13:07:47.9905292Z LTS
+2026-10-08T13:07:47.9906080Z ##[endgroup]
+2026-10-08T13:07:47.9907096Z ##[group]Runner Image
+2026-10-08T13:07:47.9908058Z Image: ubuntu-24.04
+2026-10-08T13:07:47.9909009Z Version: 20261004.327.1
+2026-10-08T13:07:47.9911077Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-08T13:07:47.9913832Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-08T13:07:47.9915726Z ##[endgroup]
+2026-10-08T13:07:47.9918246Z ##[group]GITHUB_TOKEN Permissions
+2026-10-08T13:07:47.9921357Z Contents: read
+2026-10-08T13:07:47.9922440Z Metadata: read
+2026-10-08T13:07:47.9923340Z Pages: write
+2026-10-08T13:07:47.9924192Z ##[endgroup]
+2026-10-08T13:07:47.9927298Z Secret source: Actions
+2026-10-08T13:07:47.9928733Z Cache mode: write
+2026-10-08T13:07:47.9930167Z Prepare workflow directory
+2026-10-08T13:07:48.0397177Z Prepare all required actions
+2026-10-08T13:07:48.0449206Z Getting action download info
+2026-10-08T13:07:48.2213754Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-08T13:07:48.3138751Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-10-08T13:07:48.5085299Z Complete job name: test
+2026-10-08T13:07:48.5888981Z ##[group]Run actions/checkout@v4
+2026-10-08T13:07:48.5889820Z with:
+2026-10-08T13:07:48.5890295Z   repository: Jacob-Met/scopesignal
+2026-10-08T13:07:48.5894588Z   token: ***
+2026-10-08T13:07:48.5895254Z   ssh-strict: true
+2026-10-08T13:07:48.5895709Z   ssh-user: git
+2026-10-08T13:07:48.5896166Z   persist-credentials: true
+2026-10-08T13:07:48.5896666Z   clean: true
+2026-10-08T13:07:48.5897135Z   sparse-checkout-cone-mode: true
+2026-10-08T13:07:48.5897679Z   fetch-depth: 1
+2026-10-08T13:07:48.5898133Z   fetch-tags: false
+2026-10-08T13:07:48.5898605Z   show-progress: true
+2026-10-08T13:07:48.5899079Z   lfs: false
+2026-10-08T13:07:48.5899533Z   submodules: false
+2026-10-08T13:07:48.5899999Z   set-safe-directory: true
+2026-10-08T13:07:48.5900528Z   allow-unsafe-pr-checkout: false
+2026-10-08T13:07:48.5901257Z ##[endgroup]
+2026-10-08T13:07:48.7001725Z Syncing repository: Jacob-Met/scopesignal
+2026-10-08T13:07:48.7005061Z ##[group]Getting Git version info
+2026-10-08T13:07:48.7006403Z Working directory is '/home/runner/work/scopesignal/scopesignal'
+2026-10-08T13:07:48.7008022Z [command]/usr/bin/git version
+2026-10-08T13:07:48.7092965Z git version 2.55.0
+2026-10-08T13:07:48.7116573Z ##[endgroup]
+2026-10-08T13:07:48.7135202Z Temporarily overriding HOME='/home/runner/work/_temp/02a7d8db-9376-45a1-8828-c25e9a1180c7' before making global git config changes
+2026-10-08T13:07:48.7137520Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-08T13:07:48.7142091Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/scopesignal/scopesignal
+2026-10-08T13:07:48.7203351Z Deleting the contents of '/home/runner/work/scopesignal/scopesignal'
+2026-10-08T13:07:48.7208105Z ##[group]Initializing the repository
+2026-10-08T13:07:48.7213426Z [command]/usr/bin/git init /home/runner/work/scopesignal/scopesignal
+2026-10-08T13:07:48.7301368Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-08T13:07:48.7302846Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-08T13:07:48.7304306Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-08T13:07:48.7305698Z hint: call:
+2026-10-08T13:07:48.7306510Z hint:
+2026-10-08T13:07:48.7307236Z hint: 	git config --global init.defaultBranch <name>
+2026-10-08T13:07:48.7308046Z hint:
+2026-10-08T13:07:48.7309079Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-08T13:07:48.7310753Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-08T13:07:48.7312080Z hint:
+2026-10-08T13:07:48.7312823Z hint: 	git branch -m <name>
+2026-10-08T13:07:48.7313477Z hint:
+2026-10-08T13:07:48.7314276Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-08T13:07:48.7315904Z Initialized empty Git repository in /home/runner/work/scopesignal/scopesignal/.git/
+2026-10-08T13:07:48.7328290Z [command]/usr/bin/git remote add origin https://github.com/Jacob-Met/scopesignal
+2026-10-08T13:07:48.7392709Z ##[endgroup]
+2026-10-08T13:07:48.7393878Z ##[group]Disabling automatic garbage collection
+2026-10-08T13:07:48.7397770Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-08T13:07:48.7436637Z ##[endgroup]
+2026-10-08T13:07:48.7437395Z ##[group]Setting up auth
+2026-10-08T13:07:48.7445886Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-08T13:07:48.7484699Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-08T13:07:48.7858788Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-08T13:07:48.7915629Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-08T13:07:48.8159096Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-08T13:07:48.8200546Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-08T13:07:48.8452659Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-08T13:07:48.8498454Z ##[endgroup]
+2026-10-08T13:07:48.8499660Z ##[group]Fetching the repository
+2026-10-08T13:07:48.8509458Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +65d47f90e609c36f51648c303e06f74a1d95f856:refs/remotes/origin/paypal-ai
+2026-10-08T13:07:49.5115222Z From https://github.com/Jacob-Met/scopesignal
+2026-10-08T13:07:49.5117150Z  * [new ref]         65d47f90e609c36f51648c303e06f74a1d95f856 -> origin/paypal-ai
+2026-10-08T13:07:49.5121292Z ##[endgroup]
+2026-10-08T13:07:49.5122976Z ##[group]Determining the checkout info
+2026-10-08T13:07:49.5124703Z ##[endgroup]
+2026-10-08T13:07:49.5130462Z [command]/usr/bin/git sparse-checkout disable
+2026-10-08T13:07:49.5201965Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-08T13:07:49.5242001Z ##[group]Checking out the ref
+2026-10-08T13:07:49.5246990Z [command]/usr/bin/git checkout --progress --force -B paypal-ai refs/remotes/origin/paypal-ai
+2026-10-08T13:07:49.5794244Z Switched to a new branch 'paypal-ai'
+2026-10-08T13:07:49.5796431Z branch 'paypal-ai' set up to track 'origin/paypal-ai'.
+2026-10-08T13:07:49.5806077Z ##[endgroup]
+2026-10-08T13:07:49.5855528Z [command]/usr/bin/git log -1 --format=%H
+2026-10-08T13:07:49.5886347Z 65d47f90e609c36f51648c303e06f74a1d95f856
+2026-10-08T13:07:49.6288216Z ##[group]Run actions/setup-node@v4
+2026-10-08T13:07:49.6289476Z with:
+2026-10-08T13:07:49.6290418Z   node-version: 24
+2026-10-08T13:07:49.6291437Z   always-auth: false
+2026-10-08T13:07:49.6292499Z   check-latest: false
+2026-10-08T13:07:49.6301660Z   token: ***
+2026-10-08T13:07:49.6302629Z ##[endgroup]
+2026-10-08T13:07:49.7839001Z (node:2300) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-08T13:07:49.7842177Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-08T13:07:49.7845796Z Found in cache @ /opt/hostedtoolcache/node/24.21.0/x64
+2026-10-08T13:07:49.7847911Z ##[group]Environment details
+2026-10-08T13:07:50.1422257Z node: v24.21.0
+2026-10-08T13:07:50.1422662Z npm: 11.19.0
+2026-10-08T13:07:50.1422935Z yarn: 1.22.22
+2026-10-08T13:07:50.1423992Z ##[endgroup]
+2026-10-08T13:07:50.1571813Z ##[group]Run npm test
+2026-10-08T13:07:50.1572296Z [36;1mnpm test[0m
+2026-10-08T13:07:50.1815059Z shell: /usr/bin/bash -e {0}
+2026-10-08T13:07:50.1815479Z ##[endgroup]
+2026-10-08T13:07:50.3120929Z 
+2026-10-08T13:07:50.3131093Z > scopesignal@0.1.0 test
+2026-10-08T13:07:50.3132319Z > node --test
+2026-10-08T13:07:50.3132934Z 
+2026-10-08T13:07:50.4930460Z ✔ review: all deterministic fixture events and reduced values retain exact serialized bytes (5.985668ms)
+2026-10-08T13:07:50.4988457Z ✔ review: money and order identity cannot disagree with approved checkpoint evidence (2.360787ms)
+2026-10-08T13:07:50.4997819Z ✔ review: raw replay preserves approval, order, capture, and reconciliation prerequisites (1.250785ms)
+2026-10-08T13:07:50.5016503Z ✔ review: altered receipt money cannot be disguised as an exact duplicate (1.066727ms)
+2026-10-08T13:07:50.5041867Z ✔ review: accepted independent capture paths serialize and replay at every prefix (15.437248ms)
+2026-10-08T13:07:50.5057037Z ✔ review: seed admission rejects checkpoint IDs that generate the same fixture order (1.093427ms)
+2026-10-08T13:07:50.5060316Z ✔ review: event payload accessors cannot execute a nested append while metadata is reserved (0.376387ms)
+2026-10-08T13:07:50.6004312Z ✔ an unresolved pending capture cannot be requested a second time (7.173378ms)
+2026-10-08T13:07:50.6007566Z ✔ a delayed lost response cannot undo a confirmed capture or be recorded twice (2.650103ms)
+2026-10-08T13:07:50.6013693Z ✔ a webhook event identity cannot be reused for a different capture or checkpoint (3.09962ms)
+2026-10-08T13:07:50.6016266Z ✔ a capture identity cannot count against two different checkpoints (2.974952ms)
+2026-10-08T13:07:50.6018195Z ✔ an unknown receipt reserves its capture identity before any amount is counted (2.987561ms)
+2026-10-08T13:07:50.6056251Z ✔ reconciliation and later receipts share the same capture binding (1.605408ms)
+2026-10-08T13:07:50.6060417Z ✔ one checkpoint cannot acquire a second capture through a new webhook event ID (0.90927ms)
+2026-10-08T13:07:50.6062459Z ✔ webhook and reconciliation identities must be nonempty canonical strings (16.047321ms)
+2026-10-08T13:07:50.6064274Z ✔ exact duplicate webhook delivery remains auditable in every supported capture state (2.758066ms)
+2026-10-08T13:07:50.6066315Z ✔ the public append path and reducer refuse lifecycle violations too (1.508292ms)
+2026-10-08T13:07:50.6068111Z ✔ replay derives receipt identity from history instead of trusting a duplicate flag (0.839725ms)
+2026-10-08T13:07:50.6070007Z ✔ published events cannot be edited or removed and append owns sequence metadata (0.74347ms)
+2026-10-08T13:07:50.6071756Z ✔ a ledger keeps its creation seed stable across caller mutation (1.419679ms)
+2026-10-08T13:07:50.6073408Z ✔ inherited object properties are not checkpoint identities (53.012985ms)
+2026-10-08T13:07:50.6075561Z ✔ three independent checkpoint capture paths compose without double counting (21.096063ms)
+2026-10-08T13:07:50.6170153Z ✔ approving one checkpoint preserves another pending draft, including initial line feeds (51.165892ms)
+2026-10-08T13:07:50.6172759Z ✔ refused approval retains empty and multiline drafts across repeated rerenders (7.246427ms)
+2026-10-08T13:07:50.6174661Z ✔ a suggestion survives approval of a different checkpoint (5.898077ms)
+2026-10-08T13:07:50.6178077Z ✔ accepted evidence comes from its recorded event and its controls cannot edit approval (8.116178ms)
+2026-10-08T13:07:50.6179848Z ✔ literal textarea-like text is preserved without adding editors (7.29401ms)
+2026-10-08T13:07:50.6182656Z ✔ successive approvals retain accepted evidence and count each approval once (7.916287ms)
+2026-10-08T13:07:50.6184308Z ✔ fixture totals and explicit replay behavior remain intact (4.683907ms)
+2026-10-08T13:07:50.6186068Z ✔ webhook rows describe receipt without claiming an unknown capture was counted (11.298532ms)
+2026-10-08T13:07:50.6230427Z ✔ download has a fixed safe filename and explicit fixture schema and provenance (6.1133ms)
+2026-10-08T13:07:50.6232728Z ✔ export records the actual replay events and reduced counted outcome (2.631355ms)
+2026-10-08T13:07:50.6234413Z ✔ accepted multiline and literal evidence comes from the exact approval event (2.352254ms)
+2026-10-08T13:07:50.6236584Z ✔ unapproved checkpoints have no approval evidence and no authored draft field (1.648775ms)
+2026-10-08T13:07:50.6238342Z ✔ every capture prefix exports the current outcome without advancing or inventing events (1.737828ms)
+2026-10-08T13:07:50.6240107Z ✔ repeated exports are deterministic and detached from the live in-memory ledger (1.115931ms)
+2026-10-08T13:07:50.6241792Z ✔ an empty fixture exports no approval and never represents a successful payment (0.333172ms)
+2026-10-08T13:07:50.6876459Z ✔ the timeline exposes every real fixture prefix and counts only after reconciliation (9.228955ms)
+2026-10-08T13:07:50.6885956Z ✔ backward, repeated and out-of-order inspection never changes the fixture or another ledger (3.953547ms)
+2026-10-08T13:07:50.6907226Z ✔ returned event and state objects cannot rewrite later timeline inspection (1.520661ms)
+2026-10-08T13:07:50.6921269Z ✔ invalid navigation refuses the index without losing valid timeline state (1.139287ms)
+2026-10-08T13:07:50.7057358Z ✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (5.777645ms)
+2026-10-08T13:07:50.7060217Z ✔ order and capture require prior explicit human approval and order (0.922871ms)
+2026-10-08T13:07:50.7062340Z ✔ lost response cannot be blindly captured again; reconcile is one-time (1.432958ms)
+2026-10-08T13:07:50.7064299Z ✔ same webhook event ID is idempotent and cannot double count (0.71022ms)
+2026-10-08T13:07:50.7066166Z ✔ reducer never counts duplicate webhook in fixture stream (0.619283ms)
+2026-10-08T13:07:50.7067734Z ✔ role previews are explicit local rules and never claim AI output (17.176669ms)
+2026-10-08T13:07:50.7069369Z ✔ Workers AI adapter fails closed without binding and has no paid fallback (0.446403ms)
+2026-10-08T13:07:50.7070983Z ✔ schema validation rejects malformed model output (0.572513ms)
+2026-10-08T13:07:50.7135938Z ✔ every shipped replay prefix presents its current reduced capture state (6.753635ms)
+2026-10-08T13:07:50.7146782Z ✔ ordinary webhook capture does not invent a reconciliation (1.452729ms)
+2026-10-08T13:07:50.7156473Z ✔ missing and unrecognized states do not become captured or safe-to-retry labels (0.326352ms)
+2026-10-08T13:07:51.1379503Z ✔ saved fixture reader accepts all real recovery prefixes without advancing the outcome (18.161462ms)
+2026-10-08T13:07:51.1396756Z ✔ accepted evidence is exact literal Unicode text and an unapproved draft is absent (2.242719ms)
+2026-10-08T13:07:51.1426819Z ✔ ordinary capture, lookup-only recovery and independent checkpoints use the existing ledger (4.541592ms)
+2026-10-08T13:07:51.1456846Z ✔ JSON key order and whitespace do not change the record, and returned facts are immutable (2.066594ms)
+2026-10-08T13:07:51.1466238Z ✔ invalid JSON, another document and unsupported record versions are refused (5.539876ms)
+2026-10-08T13:07:51.1497998Z ✔ saved summaries, approvals, identities and fixture definitions must match recorded events (17.815551ms)
+2026-10-08T13:07:51.1500189Z ✔ missing, extra and inherited-property fields cannot become trusted record facts (5.692456ms)
+2026-10-08T13:07:51.1502137Z ✔ event order, required metadata and payload types are checked before ledger replay (4.092125ms)
+2026-10-08T13:07:51.1504148Z ✔ shared ledger refuses contradictory lifecycle, money and capture identities in a file (7.942176ms)
+2026-10-08T13:07:51.1516495Z ✔ exact byte limit is inclusive and uses UTF-8 bytes rather than JavaScript characters (12.338039ms)
+2026-10-08T13:07:51.1518325Z ✔ event limit permits a bounded full history and rejects the next exact duplicate (283.983994ms)
+2026-10-08T13:07:51.1521999Z ✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (6.877712ms)
+2026-10-08T13:07:51.1523891Z ✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (1.520431ms)
+2026-10-08T13:07:51.1526288Z ✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (3.386863ms)
+2026-10-08T13:07:51.1528086Z ✔ pending and never-requested captures remain distinct from resolved captures (1.055079ms)
+2026-10-08T13:07:51.1529678Z ✔ the example becomes a detached editable draft, with no inherited approvals (7.015049ms)
+2026-10-08T13:07:51.1531482Z ✔ an authored brief and checkpoints produce a bounded ledger seed and explicit unallocated cap (0.762218ms)
+2026-10-08T13:07:51.1533304Z ✔ incomplete, malformed and over-cap drafts cannot enter review (1.854945ms)
+2026-10-08T13:07:51.1535003Z ✔ field errors identify the actual editable checkpoint and budget (0.384279ms)
+2026-10-08T13:07:51.1536846Z ✔ USD authoring rejects unsupported notation and avoids silently rounding sub-cent entries (0.334574ms)
+2026-10-08T13:07:51.1538643Z ✔ generated identities remain distinct when titles match or resemble object keys (1.711939ms)
+2026-10-08T13:07:51.1540364Z ✔ every accepted safe cent amount is displayed without floating-dollar rounding (1.189212ms)
+2026-10-08T13:07:51.1541726Z ✔ sparse or absent checkpoint rows are refused as incomplete drafts (0.493333ms)
+2026-10-08T13:07:51.1543094Z ✔ approval uses the explicit reviewed evidence and refuses empty acceptance without any event (3.353121ms)
+2026-10-08T13:07:51.1544348Z ✔ plan, approval evidence and prior events cannot be changed through caller-owned objects (0.824072ms)
+2026-10-08T13:07:51.1545715Z ✔ review controls advance one legal event at a time and do not repeat pending requests (2.607289ms)
+2026-10-08T13:07:51.1547093Z ✔ the authored lost-response path stays unknown through duplicate receipt and reconciles exactly once (3.565642ms)
+2026-10-08T13:07:51.1548059Z ✔ independent checkpoints keep their amounts and receipt identities across mixed outcomes (5.006062ms)
+2026-10-08T13:07:51.1548978Z ✔ an unknown outcome can use the explicit simulated lookup without manufacturing a webhook (1.10818ms)
+2026-10-08T13:07:51.2733616Z ✔ an unfinished draft preserves exact raw strings and still needs ordinary review validation (3.772153ms)
+2026-10-08T13:07:51.2739166Z ✔ mixed review restores exact history, accepted and pending evidence, totals, and next action (21.309806ms)
+2026-10-08T13:07:51.2743410Z ✔ every prefix of each ordinary authoring lifecycle reopens at the same next-step boundary (67.596452ms)
+2026-10-08T13:07:51.2745191Z ✔ empty pending evidence survives and never becomes an approval by saving or opening (1.666541ms)
+2026-10-08T13:07:51.2746679Z ✔ unsupported envelopes, constants, stages, types and extra fields are refused (1.718028ms)
+2026-10-08T13:07:51.2749040Z ✔ draft shapes and text bounds are enforced without normalizing unfinished input (2.664885ms)
+2026-10-08T13:07:51.2754572Z ✔ every canonical event field and sequence is checked against the unchanged fixture controls (142.530698ms)
+2026-10-08T13:07:51.2756847Z ✔ saved review drafts must belong to distinct existing unapproved checkpoints (18.095212ms)
+2026-10-08T13:07:51.2758195Z ✔ twelve checkpoints and their complete bounded histories retain exact cent totals (91.131249ms)
+2026-10-08T13:07:51.2759113Z ✔ opening accepts harmless JSON field order changes and makes no authenticity claim (3.552873ms)
+2026-10-08T13:07:51.2760474Z ✔ byte limits, failed saves and mismatched plans preserve the source workspace (8.417342ms)
+2026-10-08T13:07:51.2855912Z ✔ validated suggestions preserve editable text without retaining provider-owned objects (3.930031ms)
+2026-10-08T13:07:51.2857887Z ✔ the existing empty-list and text-length contracts are preserved (1.042812ms)
+2026-10-08T13:07:51.2858988Z ✔ serialized Unicode text at the schema character limits remains valid (3.225539ms)
+2026-10-08T13:07:51.2860094Z ✔ Unicode length limits count code points rather than graphemes (1.496515ms)
+2026-10-08T13:07:51.2861108Z ✔ root fields must be declared own data properties (1.24765ms)
+2026-10-08T13:07:51.2862271Z ✔ checkpoint records cannot smuggle inherited fields or undeclared approval data (0.450869ms)
+2026-10-08T13:07:51.2863706Z ✔ accessor fields are refused without evaluating provider code (0.363638ms)
+2026-10-08T13:07:51.2865053Z ✔ checkpoint lists must contain their own entries and cannot replace iteration (0.402356ms)
+2026-10-08T13:07:51.2866266Z ✔ ordinary and null-prototype data records normalize to the same result (0.528145ms)
+2026-10-08T13:07:51.2867550Z ✔ configured bindings support the existing direct, JSON, and response-string forms (1.337695ms)
+2026-10-08T13:07:51.2869182Z ✔ the async adapter rejects JSON-representable malformed suggestions in every supported response form (8.341127ms)
+2026-10-08T13:07:51.2870533Z ✔ each provider call receives an independent request schema (0.446633ms)
+2026-10-08T13:07:51.2871823Z ✔ inherited or accessor response envelopes do not bypass result validation (2.92043ms)
+2026-10-08T13:07:51.2872962Z ✔ missing or invalid bindings fail closed before any dispatch (1.165907ms)
+2026-10-08T13:07:51.2874193Z ✔ provider errors and malformed results are rejected without retry or fallback (0.702028ms)
+2026-10-08T13:07:51.2875861Z ✔ native field strings and LF pending evidence survive file roundtrips without normalization (7.482032ms)
+2026-10-08T13:07:51.2877303Z ✔ project label refuses external line breaks that native form assignment would change (0.880176ms)
+2026-10-08T13:07:51.2878700Z ✔ creative brief refuses external line breaks that native form assignment would change (0.419092ms)
+2026-10-08T13:07:51.2880262Z ✔ project cap refuses external line breaks that native form assignment would change (0.361094ms)
+2026-10-08T13:07:51.2881711Z ✔ checkpoint title refuses external line breaks that native form assignment would change (0.46448ms)
+2026-10-08T13:07:51.2883175Z ✔ checkpoint amount refuses external line breaks that native form assignment would change (0.300412ms)
+2026-10-08T13:07:51.2884681Z ✔ planned evidence refuses external line breaks that native form assignment would change (0.287172ms)
+2026-10-08T13:07:51.2887151Z ✔ pending review evidence refuses CR and CRLF before a native textarea can rewrite it (0.938113ms)
+2026-10-08T13:07:51.2888600Z ✔ saving incompatible in-memory fields refuses without altering the caller draft (0.760596ms)
+2026-10-08T13:07:51.2889448Z ℹ tests 116
+2026-10-08T13:07:51.2889806Z ℹ suites 0
+2026-10-08T13:07:51.2890147Z ℹ pass 116
+2026-10-08T13:07:51.2890480Z ℹ fail 0
+2026-10-08T13:07:51.2890825Z ℹ cancelled 0
+2026-10-08T13:07:51.2891197Z ℹ skipped 0
+2026-10-08T13:07:51.2891547Z ℹ todo 0
+2026-10-08T13:07:51.2891954Z ℹ duration_ms 936.092178
+2026-10-08T13:07:51.3155873Z Post job cleanup.
+2026-10-08T13:07:51.4491340Z (node:2449) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-08T13:07:51.4492209Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-08T13:07:51.4717306Z Post job cleanup.
+2026-10-08T13:07:51.5640778Z [command]/usr/bin/git version
+2026-10-08T13:07:51.5690878Z git version 2.55.0
+2026-10-08T13:07:51.5735671Z Temporarily overriding HOME='/home/runner/work/_temp/92d230d3-8574-431f-b751-34751e8ee54a' before making global git config changes
+2026-10-08T13:07:51.5737172Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-08T13:07:51.5742479Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/scopesignal/scopesignal
+2026-10-08T13:07:51.5788722Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-08T13:07:51.5829872Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-08T13:07:51.6108100Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-08T13:07:51.6138648Z http.https://github.com/.extraheader
+2026-10-08T13:07:51.6151220Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-08T13:07:51.6189971Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-08T13:07:51.6476922Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-08T13:07:51.6522008Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-08T13:07:51.6941870Z Cleaning up orphan processes
+2026-10-08T13:07:51.7265974Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

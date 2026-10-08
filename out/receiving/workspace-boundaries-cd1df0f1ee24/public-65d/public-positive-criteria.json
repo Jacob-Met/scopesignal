@@ -1,0 +1,22 @@
+{
+  "prepared_at": "2026-10-08T13:09:27.138835+00:00",
+  "state": "prepared, not executed",
+  "public_url": "https://jacobmetoyer.com/scopesignal/",
+  "criteria_sources": [
+    {
+      "runner": "check-workspace-boundaries.mjs",
+      "case": "lf-unicode-download-roundtrip",
+      "original_runner_sha256": "539181ff64059ee00232c107b4c6f90cb18a2757830a96bb7088c484ce874163",
+      "case_code_sha256": "0702cbfa115b31cb0282ba0d342256c534911b7b17aec35bec047de338b188ea"
+    },
+    {
+      "runner": "check-workspace-review-history.mjs",
+      "case": "review-history-download-roundtrip",
+      "original_runner_sha256": "2d3adac6895ed2c085edd7af5f12d7f08e69951ab5c04b072619d0de0853785d",
+      "case_code_sha256": "9740b1dcc2fffab3dc09a99bfc0ebc06d095b500a5ab4a3a6e94f5ea113bb117"
+    }
+  ],
+  "adaptations": "Public path mapping; exact release/source requirements; normal TLS; runtime-body pins checked before app actions; one extra draft screenshot. Positive expected criteria unchanged. Original source and receipts remain exact.",
+  "gate": "Do not execute until root provides actual repaired merged SHA, its successful automatic Pages run/deploy, current source manifest, and existing owner release-custody evidence. Driver must first fetch served runtime bytes using normal TLS and compare exact pins.",
+  "negatives": "Both independent boundary negatives already pass exact candidate runtime; rerun only if a concrete composition changes their source."
+}

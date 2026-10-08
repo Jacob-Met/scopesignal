@@ -1,0 +1,25 @@
+{
+  "commit": "65d47f90e609c36f51648c303e06f74a1d95f856",
+  "tree": "88073a0984b05b629d85563ae2e113e6c932e8ec",
+  "pages": {
+    "id": 37781938930,
+    "head_sha": "65d47f90e609c36f51648c303e06f74a1d95f856",
+    "status": "completed",
+    "conclusion": "success",
+    "event": "push",
+    "path": ".github/workflows/pages.yml",
+    "html_url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37781938930",
+    "created_at": "2026-10-08T13:07:44Z",
+    "updated_at": "2026-10-08T13:08:15Z"
+  },
+  "baseline_release_custody": {
+    "owner": "estate-7a9310dad255",
+    "source": "https://github.com/Jacob-Met/scopesignal/pull/18#issuecomment-6059448532",
+    "status": "Original baseline release receiving remains its owner\u2019s work. This run is the separately authorized repair release at65d; no acceptance of their earlier served baseline is inferred."
+  },
+  "independent_published_source_acceptance": "c436b9ff023d9d0c79af3e5e134131fd37f5883f tree88073a0984b05b629d85563ae2e113e6c932e8ec all312leaves matched; merge65d has identical tree.",
+  "deployed_runtime_preflight": {
+    "passed": false,
+    "status": "pending normal-TLS fetch"
+  }
+}

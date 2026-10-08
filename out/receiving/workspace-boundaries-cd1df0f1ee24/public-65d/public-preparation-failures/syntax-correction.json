@@ -1,0 +1,6 @@
+{
+  "phase": "local syntax check only; no browser execution",
+  "error": "SyntaxError: Unexpected identifier s in the limits string",
+  "cause": "Unescaped apostrophe in newly written owner wording, introduced by the public adapter; original frozen runners unchanged.",
+  "correction": "Rephrased the new limits sentence without an apostrophe; expected test criteria unaffected."
+}

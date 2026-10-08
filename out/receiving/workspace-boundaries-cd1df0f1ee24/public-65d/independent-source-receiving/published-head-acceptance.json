@@ -1,0 +1,37 @@
+{
+  "accepted": true,
+  "head": "c436b9ff023d9d0c79af3e5e134131fd37f5883f",
+  "tree": "88073a0984b05b629d85563ae2e113e6c932e8ec",
+  "parents": [
+    "8a241c9ce409fa9b22ab0bbdc339e46fd4b38525"
+  ],
+  "all_published_leaves_and_modes_match_independent_composition": 312,
+  "exact_raw_product_files": [
+    {
+      "path": "README.md",
+      "git_blob": "5b545fd2e5dfe89b1d5b42a5534bfe5286d3bb14",
+      "sha256": "7f56f0a140ce0f1994ffd8abc68631198e74c81f6ff1a76fa9136d7cdadadd18",
+      "bytes": 14508
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "bytes": 7421
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "git_blob": "adc9bb3e53ffa72671a8f46e9b067b879ac3adff",
+      "sha256": "8b6f39b97a139ac63679b3b34b15342d695dbda613ae676873c1bbcc888e9f28",
+      "bytes": 19111
+    },
+    {
+      "path": "tests/workspace-form-values.test.mjs",
+      "git_blob": "961c7ff3c9a58ec1418aede8b0f50194cfcadbbc",
+      "sha256": "316f000073c2d659e629192ac3edc419771e19215487845b051c5df25d797685",
+      "bytes": 3257
+    }
+  ],
+  "readback_sha256": "9eba43888720f41b3bfac5bdc4c8605ba04309dc9fb155970cb636a10d94ba6a",
+  "limits": "Source publication only; no CI, merge or deployed-site acceptance inferred."
+}

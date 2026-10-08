@@ -1,0 +1,594 @@
+﻿2026-10-08T13:07:58.7568698Z Current runner version: '2.337.0'
+2026-10-08T13:07:58.7594453Z ##[group]Runner Image Provisioner
+2026-10-08T13:07:58.7595618Z Hosted Compute Agent
+2026-10-08T13:07:58.7596253Z Version: 20260901.588
+2026-10-08T13:07:58.7596982Z Commit: f88ec8081b781fac6c440065ac7ff9e710ce3d0b
+2026-10-08T13:07:58.7597746Z Build Date: 2026-09-01T19:56:44Z
+2026-10-08T13:07:58.7598476Z Worker ID: {616f6533-11ae-4499-b6ea-97a5cbe998da}
+2026-10-08T13:07:58.7599300Z Azure Region: westus
+2026-10-08T13:07:58.7599903Z ##[endgroup]
+2026-10-08T13:07:58.7601665Z ##[group]Operating System
+2026-10-08T13:07:58.7602392Z Ubuntu
+2026-10-08T13:07:58.7602955Z 24.04.5
+2026-10-08T13:07:58.7603600Z LTS
+2026-10-08T13:07:58.7604140Z ##[endgroup]
+2026-10-08T13:07:58.7604757Z ##[group]Runner Image
+2026-10-08T13:07:58.7606048Z Image: ubuntu-24.04
+2026-10-08T13:07:58.7606693Z Version: 20260927.320.1
+2026-10-08T13:07:58.7608074Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260927.320/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-08T13:07:58.7610046Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260927.320
+2026-10-08T13:07:58.7611115Z ##[endgroup]
+2026-10-08T13:07:58.7612436Z ##[group]GITHUB_TOKEN Permissions
+2026-10-08T13:07:58.7614636Z Contents: read
+2026-10-08T13:07:58.7615639Z Metadata: read
+2026-10-08T13:07:58.7616334Z Pages: write
+2026-10-08T13:07:58.7616980Z ##[endgroup]
+2026-10-08T13:07:58.7619212Z Secret source: Actions
+2026-10-08T13:07:58.7620176Z Cache mode: write
+2026-10-08T13:07:58.7620922Z Prepare workflow directory
+2026-10-08T13:07:58.7963115Z Prepare all required actions
+2026-10-08T13:07:58.8013948Z Getting action download info
+2026-10-08T13:07:59.1806445Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-08T13:07:59.2776167Z Download action repository 'actions/configure-pages@v5' (SHA:983d7736d9b0ae728b81ab479565c72886d7745b)
+2026-10-08T13:07:59.6329873Z Download action repository 'actions/upload-pages-artifact@v3' (SHA:56afc609e74202658d3ffba0e8f6dda462b719fa)
+2026-10-08T13:07:59.8579443Z Download action repository 'actions/deploy-pages@v4' (SHA:d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e)
+2026-10-08T13:08:00.5448852Z Getting action download info
+2026-10-08T13:08:00.6914192Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2026-10-08T13:08:00.8480113Z Complete job name: deploy
+2026-10-08T13:08:00.9406367Z ##[group]Run actions/checkout@v4
+2026-10-08T13:08:00.9407776Z with:
+2026-10-08T13:08:00.9408573Z   repository: Jacob-Met/scopesignal
+2026-10-08T13:08:00.9417914Z   token: ***
+2026-10-08T13:08:00.9418717Z   ssh-strict: true
+2026-10-08T13:08:00.9419531Z   ssh-user: git
+2026-10-08T13:08:00.9420347Z   persist-credentials: true
+2026-10-08T13:08:00.9421257Z   clean: true
+2026-10-08T13:08:00.9422071Z   sparse-checkout-cone-mode: true
+2026-10-08T13:08:00.9423048Z   fetch-depth: 1
+2026-10-08T13:08:00.9423827Z   fetch-tags: false
+2026-10-08T13:08:00.9424650Z   show-progress: true
+2026-10-08T13:08:00.9425759Z   lfs: false
+2026-10-08T13:08:00.9426515Z   submodules: false
+2026-10-08T13:08:00.9427345Z   set-safe-directory: true
+2026-10-08T13:08:00.9428302Z   allow-unsafe-pr-checkout: false
+2026-10-08T13:08:00.9429890Z ##[endgroup]
+2026-10-08T13:08:01.0518465Z Syncing repository: Jacob-Met/scopesignal
+2026-10-08T13:08:01.0522107Z ##[group]Getting Git version info
+2026-10-08T13:08:01.0524029Z Working directory is '/home/runner/work/scopesignal/scopesignal'
+2026-10-08T13:08:01.0526735Z [command]/usr/bin/git version
+2026-10-08T13:08:01.0565572Z git version 2.55.0
+2026-10-08T13:08:01.0604568Z ##[endgroup]
+2026-10-08T13:08:01.0617124Z Temporarily overriding HOME='/home/runner/work/_temp/0bf3e9ad-93bc-4a23-b84d-3b898931c1fe' before making global git config changes
+2026-10-08T13:08:01.0629816Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-08T13:08:01.0634439Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/scopesignal/scopesignal
+2026-10-08T13:08:01.0681543Z Deleting the contents of '/home/runner/work/scopesignal/scopesignal'
+2026-10-08T13:08:01.0686556Z ##[group]Initializing the repository
+2026-10-08T13:08:01.0697049Z [command]/usr/bin/git init /home/runner/work/scopesignal/scopesignal
+2026-10-08T13:08:01.0805280Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-08T13:08:01.0809698Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-08T13:08:01.0813068Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-08T13:08:01.0816324Z hint: call:
+2026-10-08T13:08:01.0817858Z hint:
+2026-10-08T13:08:01.0819700Z hint: 	git config --global init.defaultBranch <name>
+2026-10-08T13:08:01.0821963Z hint:
+2026-10-08T13:08:01.0824004Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-08T13:08:01.0827427Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-08T13:08:01.0830094Z hint:
+2026-10-08T13:08:01.0835533Z hint: 	git branch -m <name>
+2026-10-08T13:08:01.0837198Z hint:
+2026-10-08T13:08:01.0839282Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-08T13:08:01.0843070Z Initialized empty Git repository in /home/runner/work/scopesignal/scopesignal/.git/
+2026-10-08T13:08:01.0849247Z [command]/usr/bin/git remote add origin https://github.com/Jacob-Met/scopesignal
+2026-10-08T13:08:01.0886484Z ##[endgroup]
+2026-10-08T13:08:01.0890359Z ##[group]Disabling automatic garbage collection
+2026-10-08T13:08:01.0892728Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-08T13:08:01.0929190Z ##[endgroup]
+2026-10-08T13:08:01.0931718Z ##[group]Setting up auth
+2026-10-08T13:08:01.0946558Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-08T13:08:01.0975150Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-08T13:08:01.1419783Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-08T13:08:01.1461522Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-08T13:08:01.1698190Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-08T13:08:01.1739758Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-08T13:08:01.1979753Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-08T13:08:01.2025160Z ##[endgroup]
+2026-10-08T13:08:01.2027931Z ##[group]Fetching the repository
+2026-10-08T13:08:01.2039135Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +65d47f90e609c36f51648c303e06f74a1d95f856:refs/remotes/origin/paypal-ai
+2026-10-08T13:08:02.2608150Z From https://github.com/Jacob-Met/scopesignal
+2026-10-08T13:08:02.2609291Z  * [new ref]         65d47f90e609c36f51648c303e06f74a1d95f856 -> origin/paypal-ai
+2026-10-08T13:08:02.2612834Z ##[endgroup]
+2026-10-08T13:08:02.2614336Z ##[group]Determining the checkout info
+2026-10-08T13:08:02.2616612Z ##[endgroup]
+2026-10-08T13:08:02.2622477Z [command]/usr/bin/git sparse-checkout disable
+2026-10-08T13:08:02.2682314Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-08T13:08:02.2716082Z ##[group]Checking out the ref
+2026-10-08T13:08:02.2719497Z [command]/usr/bin/git checkout --progress --force -B paypal-ai refs/remotes/origin/paypal-ai
+2026-10-08T13:08:02.3231013Z Switched to a new branch 'paypal-ai'
+2026-10-08T13:08:02.3235970Z branch 'paypal-ai' set up to track 'origin/paypal-ai'.
+2026-10-08T13:08:02.3246023Z ##[endgroup]
+2026-10-08T13:08:02.3293121Z [command]/usr/bin/git log -1 --format=%H
+2026-10-08T13:08:02.3368449Z 65d47f90e609c36f51648c303e06f74a1d95f856
+2026-10-08T13:08:02.3573612Z ##[group]Run actions/configure-pages@v5
+2026-10-08T13:08:02.3574202Z with:
+2026-10-08T13:08:02.3577520Z   token: ***
+2026-10-08T13:08:02.3577990Z   enablement: false
+2026-10-08T13:08:02.3578447Z ##[endgroup]
+2026-10-08T13:08:02.7251171Z ##[group]Run actions/upload-pages-artifact@v3
+2026-10-08T13:08:02.7251587Z with:
+2026-10-08T13:08:02.7251834Z   path: .
+2026-10-08T13:08:02.7252081Z   name: github-pages
+2026-10-08T13:08:02.7252356Z   retention-days: 1
+2026-10-08T13:08:02.7252615Z env:
+2026-10-08T13:08:02.7252857Z   GITHUB_PAGES: true
+2026-10-08T13:08:02.7253123Z ##[endgroup]
+2026-10-08T13:08:02.7316026Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run]
+2026-10-08T13:08:02.7370969Z ##[group]Run echo ::group::Archive artifact
+2026-10-08T13:08:02.7371426Z [36;1mecho ::group::Archive artifact[0m
+2026-10-08T13:08:02.7371769Z [36;1mtar \[0m
+2026-10-08T13:08:02.7372110Z [36;1m  --dereference --hard-dereference \[0m
+2026-10-08T13:08:02.7372506Z [36;1m  --directory "$INPUT_PATH" \[0m
+2026-10-08T13:08:02.7372886Z [36;1m  -cvf "$RUNNER_TEMP/artifact.tar" \[0m
+2026-10-08T13:08:02.7373239Z [36;1m  --exclude=.git \[0m
+2026-10-08T13:08:02.7373545Z [36;1m  --exclude=.github \[0m
+2026-10-08T13:08:02.7373879Z [36;1m  .[0m
+2026-10-08T13:08:02.7374146Z [36;1mecho ::endgroup::[0m
+2026-10-08T13:08:02.7403879Z shell: /usr/bin/sh -e {0}
+2026-10-08T13:08:02.7404210Z env:
+2026-10-08T13:08:02.7404467Z   GITHUB_PAGES: true
+2026-10-08T13:08:02.7404741Z   INPUT_PATH: .
+2026-10-08T13:08:02.7405232Z ##[endgroup]
+2026-10-08T13:08:02.7466975Z ##[group]Archive artifact
+2026-10-08T13:08:02.7480217Z ./
+2026-10-08T13:08:02.7480691Z ./scope-workspace.css
+2026-10-08T13:08:02.7481164Z ./.gitlab-ci.yml
+2026-10-08T13:08:02.7481594Z ./styles.css
+2026-10-08T13:08:02.7482014Z ./LICENSE
+2026-10-08T13:08:02.7482401Z ./.gitignore
+2026-10-08T13:08:02.7482802Z ./index.html
+2026-10-08T13:08:02.7483228Z ./scripts/
+2026-10-08T13:08:02.7483675Z ./scripts/check-record-view.mjs
+2026-10-08T13:08:02.7484234Z ./scripts/check-browser.mjs
+2026-10-08T13:08:02.7484726Z ./scripts/serve.mjs
+2026-10-08T13:08:02.7485430Z ./scripts/check-fixture-timeline.mjs
+2026-10-08T13:08:02.7486018Z ./scripts/check-scope-workspace.mjs
+2026-10-08T13:08:02.7486580Z ./fixture-timeline.css
+2026-10-08T13:08:02.7487037Z ./tests/
+2026-10-08T13:08:02.7487455Z ./tests/scope-plan.test.mjs
+2026-10-08T13:08:02.7487952Z ./tests/ledger.test.mjs
+2026-10-08T13:08:02.7488435Z ./tests/fixture-record.test.mjs
+2026-10-08T13:08:02.7488974Z ./tests/capture-identity.test.mjs
+2026-10-08T13:08:02.7489542Z ./tests/payment-presentation.test.mjs
+2026-10-08T13:08:02.7490154Z ./tests/capture-identity-receiving.test.mjs
+2026-10-08T13:08:02.7490781Z ./tests/scope-workspace-record.test.mjs
+2026-10-08T13:08:02.7491400Z ./tests/recovery-current-state.test.mjs
+2026-10-08T13:08:02.7491981Z ./tests/fixture-timeline.test.mjs
+2026-10-08T13:08:02.7492959Z ./tests/record-reader.test.mjs
+2026-10-08T13:08:02.7493508Z ./tests/evidence-drafts.test.mjs
+2026-10-08T13:08:02.7494062Z ./tests/workspace-form-values.test.mjs
+2026-10-08T13:08:02.7494640Z ./tests/workers-ai-contract.test.mjs
+2026-10-08T13:08:02.7495375Z ./record.html
+2026-10-08T13:08:02.7495802Z ./record-view.css
+2026-10-08T13:08:02.7496085Z ./src/
+2026-10-08T13:08:02.7496342Z ./src/workers-ai.mjs
+2026-10-08T13:08:02.7496644Z ./src/fixture-timeline-view.mjs
+2026-10-08T13:08:02.7496981Z ./src/scope-workspace-record.mjs
+2026-10-08T13:08:02.7497415Z ./src/scope-workspace.mjs
+2026-10-08T13:08:02.7497830Z ./src/fixture-record.mjs
+2026-10-08T13:08:02.7498374Z ./src/ledger.mjs
+2026-10-08T13:08:02.7498658Z ./src/payment-status.mjs
+2026-10-08T13:08:02.7498961Z ./src/fixture-timeline.mjs
+2026-10-08T13:08:02.7499271Z ./src/record-view.mjs
+2026-10-08T13:08:02.7499620Z ./src/agents.mjs
+2026-10-08T13:08:02.7499901Z ./src/record-reader.mjs
+2026-10-08T13:08:02.7500194Z ./src/scope-plan.mjs
+2026-10-08T13:08:02.7500461Z ./README.md
+2026-10-08T13:08:02.7500922Z ./package.json
+2026-10-08T13:08:02.7501189Z ./scope.html
+2026-10-08T13:08:02.7501442Z ./app.mjs
+2026-10-08T13:08:02.7505913Z ./out/
+2026-10-08T13:08:02.7506397Z ./out/result.md
+2026-10-08T13:08:02.7506877Z ./out/receiving/
+2026-10-08T13:08:02.7507459Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/
+2026-10-08T13:08:02.7508725Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/source-review-v1.json
+2026-10-08T13:08:02.7509861Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/publication-manifest.json
+2026-10-08T13:08:02.7510950Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-frozen-v2.json
+2026-10-08T13:08:02.7511974Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/
+2026-10-08T13:08:02.7513092Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/source-manifest-8a.json
+2026-10-08T13:08:02.7514318Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/transport.json
+2026-10-08T13:08:02.7515786Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/check-workspace-boundaries.mjs
+2026-10-08T13:08:02.7517080Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/fixtures/
+2026-10-08T13:08:02.7518357Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/fixtures/external-lineendings.json
+2026-10-08T13:08:02.7519772Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/fixtures/normal-saved-draft.json
+2026-10-08T13:08:02.7521106Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/baseline-evidence/
+2026-10-08T13:08:02.7522633Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/baseline-evidence/external-lineendings-reject-or-preserve.json
+2026-10-08T13:08:02.7524270Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/baseline-evidence/receipt.json
+2026-10-08T13:08:02.7526014Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/baseline-evidence/external-applied.png
+2026-10-08T13:08:02.7527717Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/baseline-evidence/edit-before-file-choice-preserved.json
+2026-10-08T13:08:02.7529413Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/baseline-evidence/positive-download/
+2026-10-08T13:08:02.7531176Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/baseline-evidence/positive-download/scopesignal-workspace-v1.json
+2026-10-08T13:08:02.7533026Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/baseline-evidence/chooser-after-apply-attempt.png
+2026-10-08T13:08:02.7535055Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/baseline-evidence/lf-unicode-download-roundtrip.json
+2026-10-08T13:08:02.7536772Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/baseline-evidence/external-redownload/
+2026-10-08T13:08:02.7538567Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/baseline-evidence/external-redownload/scopesignal-workspace-v1.json
+2026-10-08T13:08:02.7540191Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/native-driver.stderr
+2026-10-08T13:08:02.7541554Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/probe-freeze-manifest.json
+2026-10-08T13:08:02.7542868Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/native-driver.py
+2026-10-08T13:08:02.7544118Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/native-driver.json
+2026-10-08T13:08:02.7545544Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/README.md
+2026-10-08T13:08:02.7546730Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/native-driver.stdout
+2026-10-08T13:08:02.7547983Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/criteria-frozen.json
+2026-10-08T13:08:02.7549287Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/baseline-browser/artifact-manifest.json
+2026-10-08T13:08:02.7550416Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/source-tests/
+2026-10-08T13:08:02.7551537Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/source-tests/baseline-form-values.log
+2026-10-08T13:08:02.7552942Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/source-tests/receipt.json
+2026-10-08T13:08:02.7554147Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/source-tests/candidate-node-tests.log
+2026-10-08T13:08:02.7555818Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-frozen-v1.json
+2026-10-08T13:08:02.7556925Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/source-review-v2.json
+2026-10-08T13:08:02.7557881Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/README.md
+2026-10-08T13:08:02.7559004Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/current-parent-source-composition.json
+2026-10-08T13:08:02.7560184Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/
+2026-10-08T13:08:02.7561401Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-native-driver.py
+2026-10-08T13:08:02.7562705Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/transport.json
+2026-10-08T13:08:02.7564079Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/check-workspace-boundaries.mjs
+2026-10-08T13:08:02.7565904Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/check-workspace-review-history.mjs
+2026-10-08T13:08:02.7567249Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/fixtures/
+2026-10-08T13:08:02.7568577Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/fixtures/external-lineendings.json
+2026-10-08T13:08:02.7570058Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/fixtures/normal-saved-draft.json
+2026-10-08T13:08:02.7571585Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-boundary-evidence.stdout
+2026-10-08T13:08:02.7573094Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-boundary-evidence.stderr
+2026-10-08T13:08:02.7574567Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/probe-freeze-manifest.json
+2026-10-08T13:08:02.7576220Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-history-evidence.stdout
+2026-10-08T13:08:02.7577765Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-history-evidence.stderr
+2026-10-08T13:08:02.7579305Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/review-history-criteria-frozen.json
+2026-10-08T13:08:02.7580854Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/review-history-probe-manifest.json
+2026-10-08T13:08:02.7582319Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-boundary-evidence/
+2026-10-08T13:08:02.7584197Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-boundary-evidence/external-lineendings-reject-or-preserve.json
+2026-10-08T13:08:02.7586282Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-boundary-evidence/receipt.json
+2026-10-08T13:08:02.7588110Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-boundary-evidence/edit-before-file-choice-preserved.json
+2026-10-08T13:08:02.7589957Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-boundary-evidence/positive-download/
+2026-10-08T13:08:02.7591868Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-boundary-evidence/positive-download/scopesignal-workspace-v1.json
+2026-10-08T13:08:02.7593876Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-boundary-evidence/chooser-after-apply-attempt.png
+2026-10-08T13:08:02.7595975Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-boundary-evidence/lf-unicode-download-roundtrip.json
+2026-10-08T13:08:02.7597631Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-native-driver.json
+2026-10-08T13:08:02.7599104Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/source-manifest-candidate-v1.json
+2026-10-08T13:08:02.7600578Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/README.md
+2026-10-08T13:08:02.7601848Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-history-evidence/
+2026-10-08T13:08:02.7603491Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-history-evidence/receipt.json
+2026-10-08T13:08:02.7605339Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-history-evidence/review-redownload/
+2026-10-08T13:08:02.7607221Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-history-evidence/review-redownload/scopesignal-workspace-v1.json
+2026-10-08T13:08:02.7609259Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-history-evidence/review-history-download-roundtrip.json
+2026-10-08T13:08:02.7611045Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-history-evidence/review-download/
+2026-10-08T13:08:02.7612914Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-history-evidence/review-download/scopesignal-workspace-v1.json
+2026-10-08T13:08:02.7615066Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/candidate-history-evidence/reviewed-history-reopened.png
+2026-10-08T13:08:02.7616716Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/lead-candidate-frozen-v1.json
+2026-10-08T13:08:02.7618059Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/criteria-frozen.json
+2026-10-08T13:08:02.7619341Z ./out/receiving/workspace-boundaries-cd1df0f1ee24/candidate-browser/artifact-manifest.json
+2026-10-08T13:08:02.7620332Z ./out/receiving/fixture-record-20261008/
+2026-10-08T13:08:02.7621071Z ./out/receiving/fixture-record-20261008/node-combined.log
+2026-10-08T13:08:02.7621880Z ./out/receiving/fixture-record-20261008/provenance.json
+2026-10-08T13:08:02.7622701Z ./out/receiving/fixture-record-20261008/browser-initial.json
+2026-10-08T13:08:02.7623629Z ./out/receiving/fixture-record-20261008/downloaded-fixture-record.json
+2026-10-08T13:08:02.7624537Z ./out/receiving/fixture-record-20261008/node-macos.log
+2026-10-08T13:08:02.7625562Z ./out/receiving/fixture-record-20261008/export-app.patch
+2026-10-08T13:08:02.7626334Z ./out/receiving/fixture-record-20261008/README.md
+2026-10-08T13:08:02.7627140Z ./out/receiving/fixture-record-20261008/browser-final.json
+2026-10-08T13:08:02.7627950Z ./out/receiving/fixture-record-20261008/node-linux.log
+2026-10-08T13:08:02.7628702Z ./out/receiving/capture-identity-06e2ad0ce13f/
+2026-10-08T13:08:02.7629585Z ./out/receiving/capture-identity-06e2ad0ce13f/candidate-author-test.log
+2026-10-08T13:08:02.7630621Z ./out/receiving/capture-identity-06e2ad0ce13f/independent-baseline.log
+2026-10-08T13:08:02.7631593Z ./out/receiving/capture-identity-06e2ad0ce13f/provenance.json
+2026-10-08T13:08:02.7632492Z ./out/receiving/capture-identity-06e2ad0ce13f/baseline-test.log
+2026-10-08T13:08:02.7633465Z ./out/receiving/capture-identity-06e2ad0ce13f/candidate-r1-rejected.mjs
+2026-10-08T13:08:02.7634479Z ./out/receiving/capture-identity-06e2ad0ce13f/independent-review.json
+2026-10-08T13:08:02.7635678Z ./out/receiving/capture-identity-06e2ad0ce13f/final-npm-test.log
+2026-10-08T13:08:02.7636642Z ./out/receiving/capture-identity-06e2ad0ce13f/publication-block.json
+2026-10-08T13:08:02.7637694Z ./out/receiving/capture-identity-06e2ad0ce13f/independent-candidate-r1.log
+2026-10-08T13:08:02.7638724Z ./out/receiving/capture-identity-06e2ad0ce13f/composition-test.log
+2026-10-08T13:08:02.7639680Z ./out/receiving/capture-identity-06e2ad0ce13f/independent-review.md
+2026-10-08T13:08:02.7640750Z ./out/receiving/capture-identity-06e2ad0ce13f/independent-candidate-final.log
+2026-10-08T13:08:02.7641785Z ./out/receiving/capture-identity-06e2ad0ce13f/composition.json
+2026-10-08T13:08:02.7642640Z ./out/receiving/capture-identity-06e2ad0ce13f/README.md
+2026-10-08T13:08:02.7643530Z ./out/receiving/capture-identity-06e2ad0ce13f/baseline-fixture.json
+2026-10-08T13:08:02.7644380Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/
+2026-10-08T13:08:02.7645561Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/MANIFEST.json
+2026-10-08T13:08:02.7646526Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/receiver-boundaries/
+2026-10-08T13:08:02.7647913Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/receiver-boundaries/puppeteer-revalidation-r2.json
+2026-10-08T13:08:02.7649306Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/receiver-boundaries/custom-cdp-public.json
+2026-10-08T13:08:02.7650684Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/receiver-boundaries/puppeteer-selection-r1.json
+2026-10-08T13:08:02.7651932Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/native-screenshot-hashes.json
+2026-10-08T13:08:02.7652913Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/baseline/
+2026-10-08T13:08:02.7653931Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/baseline/public-fetch-receipt.json
+2026-10-08T13:08:02.7655306Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/baseline/browser-receipt.json
+2026-10-08T13:08:02.7656480Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/baseline/baseline-after-approval.png
+2026-10-08T13:08:02.7657703Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/baseline/baseline-before-approval.png
+2026-10-08T13:08:02.7658808Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/record-composition/
+2026-10-08T13:08:02.7659929Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/record-composition/source-manifest.json
+2026-10-08T13:08:02.7661164Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/record-composition/phone-record.png
+2026-10-08T13:08:02.7662346Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/record-composition/receipt.json
+2026-10-08T13:08:02.7663529Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/record-composition/desktop-record.png
+2026-10-08T13:08:02.7664723Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/record-composition/downloads/
+2026-10-08T13:08:02.7666315Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/record-composition/downloads/scopesignal-fixture-record-v1.json
+2026-10-08T13:08:02.7667526Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/live/
+2026-10-08T13:08:02.7668474Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/live/public-fetch-receipt.json
+2026-10-08T13:08:02.7669571Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/live/browser-receipt.json
+2026-10-08T13:08:02.7670646Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/live/live-checkpoints.png
+2026-10-08T13:08:02.7671674Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/live/live-record.png
+2026-10-08T13:08:02.7672624Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/live/downloads/
+2026-10-08T13:08:02.7673798Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/live/downloads/scopesignal-fixture-record-v1.json
+2026-10-08T13:08:02.7675220Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/live/release-config.json
+2026-10-08T13:08:02.7676132Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/README.md
+2026-10-08T13:08:02.7676915Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/harnesses/
+2026-10-08T13:08:02.7677762Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/harnesses/check-scopesignal-public-baseline.mjs
+2026-10-08T13:08:02.7679285Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/harnesses/check-scopesignal-live-public.cjs
+2026-10-08T13:08:02.7680150Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/harnesses/fetch-scopesignal-public-snapshot.cjs
+2026-10-08T13:08:02.7680892Z ./out/receiving/pr15-public-20261008-52e56ea8fcca/harnesses/native-hashes.json
+2026-10-08T13:08:02.7681497Z ./out/receiving/pr15-record-composition-20261008-52e56ea8fcca/
+2026-10-08T13:08:02.7682114Z ./out/receiving/pr15-record-composition-20261008-52e56ea8fcca/combined-drafts/
+2026-10-08T13:08:02.7682982Z ./out/receiving/pr15-record-composition-20261008-52e56ea8fcca/combined-drafts/desktop.png
+2026-10-08T13:08:02.7683786Z ./out/receiving/pr15-record-composition-20261008-52e56ea8fcca/combined-drafts/receipt.json
+2026-10-08T13:08:02.7684539Z ./out/receiving/pr15-record-composition-20261008-52e56ea8fcca/combined-drafts/phone.png
+2026-10-08T13:08:02.7685736Z ./out/receiving/pr15-record-composition-20261008-52e56ea8fcca/node-tests.log
+2026-10-08T13:08:02.7686383Z ./out/receiving/pr15-record-composition-20261008-52e56ea8fcca/MANIFEST.json
+2026-10-08T13:08:02.7687176Z ./out/receiving/pr15-record-composition-20261008-52e56ea8fcca/source-freeze.json
+2026-10-08T13:08:02.7687817Z ./out/receiving/pr15-record-composition-20261008-52e56ea8fcca/README.md
+2026-10-08T13:08:02.7688472Z ./out/receiving/pr15-record-composition-20261008-52e56ea8fcca/combined-drafts.log
+2026-10-08T13:08:02.7689093Z ./out/receiving/draft-export-composition-20261008-52e56ea8fcca/
+2026-10-08T13:08:02.7689724Z ./out/receiving/draft-export-composition-20261008-52e56ea8fcca/combined-drafts/
+2026-10-08T13:08:02.7690455Z ./out/receiving/draft-export-composition-20261008-52e56ea8fcca/combined-drafts/desktop.png
+2026-10-08T13:08:02.7691243Z ./out/receiving/draft-export-composition-20261008-52e56ea8fcca/combined-drafts/receipt.json
+2026-10-08T13:08:02.7692004Z ./out/receiving/draft-export-composition-20261008-52e56ea8fcca/combined-drafts/phone.png
+2026-10-08T13:08:02.7692722Z ./out/receiving/draft-export-composition-20261008-52e56ea8fcca/node-tests.log
+2026-10-08T13:08:02.7693398Z ./out/receiving/draft-export-composition-20261008-52e56ea8fcca/fixture-record.log
+2026-10-08T13:08:02.7694090Z ./out/receiving/draft-export-composition-20261008-52e56ea8fcca/combined-drafts.log
+2026-10-08T13:08:02.7694986Z ./out/receiving/draft-export-composition-20261008-52e56ea8fcca/fixture-record/
+2026-10-08T13:08:02.7695734Z ./out/receiving/draft-export-composition-20261008-52e56ea8fcca/fixture-record/desktop.png
+2026-10-08T13:08:02.7696558Z ./out/receiving/draft-export-composition-20261008-52e56ea8fcca/fixture-record/phone-fixture-record.json
+2026-10-08T13:08:02.7697370Z ./out/receiving/draft-export-composition-20261008-52e56ea8fcca/fixture-record/receipt.json
+2026-10-08T13:08:02.7698125Z ./out/receiving/draft-export-composition-20261008-52e56ea8fcca/fixture-record/phone.png
+2026-10-08T13:08:02.7698951Z ./out/receiving/draft-export-composition-20261008-52e56ea8fcca/fixture-record/desktop-fixture-record.json
+2026-10-08T13:08:02.7699636Z ./out/receiving/draft-incorporation-20261008-52e56ea8fcca/
+2026-10-08T13:08:02.7700196Z ./out/receiving/draft-incorporation-20261008-52e56ea8fcca/manifest.json
+2026-10-08T13:08:02.7700794Z ./out/receiving/draft-incorporation-20261008-52e56ea8fcca/desktop.png
+2026-10-08T13:08:02.7701390Z ./out/receiving/draft-incorporation-20261008-52e56ea8fcca/receipt.json
+2026-10-08T13:08:02.7701981Z ./out/receiving/draft-incorporation-20261008-52e56ea8fcca/phone.png
+2026-10-08T13:08:02.7702572Z ./out/receiving/draft-incorporation-20261008-52e56ea8fcca/LEAD-REVIEW.md
+2026-10-08T13:08:02.7703161Z ./out/receiving/draft-incorporation-20261008-52e56ea8fcca/README.md
+2026-10-08T13:08:02.7703662Z ./out/receiving/workspace-files-7a9310dad255/
+2026-10-08T13:08:02.7704175Z ./out/receiving/workspace-files-7a9310dad255/candidate-node-final.log
+2026-10-08T13:08:02.7704710Z ./out/receiving/workspace-files-7a9310dad255/contract.md
+2026-10-08T13:08:02.7705519Z ./out/receiving/workspace-files-7a9310dad255/current-baseline-source.json
+2026-10-08T13:08:02.7706135Z ./out/receiving/workspace-files-7a9310dad255/current-baseline-node.log
+2026-10-08T13:08:02.7706726Z ./out/receiving/workspace-files-7a9310dad255/candidate-source.json
+2026-10-08T13:08:02.7707276Z ./out/receiving/workspace-files-7a9310dad255/receiving-review.md
+2026-10-08T13:08:02.7707859Z ./out/receiving/workspace-files-7a9310dad255/review-guard-correction.json
+2026-10-08T13:08:02.7708522Z ./out/receiving/workspace-files-7a9310dad255/receiving-publication-manifest.json
+2026-10-08T13:08:02.7709174Z ./out/receiving/workspace-files-7a9310dad255/inverse-observation-v1.txt
+2026-10-08T13:08:02.7709783Z ./out/receiving/workspace-files-7a9310dad255/browser-receiving.tar.gz
+2026-10-08T13:08:02.7710314Z ./out/receiving/workspace-files-7a9310dad255/README.md
+2026-10-08T13:08:02.7710822Z ./out/receiving/workspace-files-7a9310dad255/source-review.json
+2026-10-08T13:08:02.7711514Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/
+2026-10-08T13:08:02.7712128Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/combined-drafts/
+2026-10-08T13:08:02.7712961Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/combined-drafts/desktop.png
+2026-10-08T13:08:02.7713739Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/combined-drafts/receipt.json
+2026-10-08T13:08:02.7714496Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/combined-drafts/phone.png
+2026-10-08T13:08:02.7715427Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/node-tests.log
+2026-10-08T13:08:02.7716111Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/source-freeze.json
+2026-10-08T13:08:02.7716812Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/fixture-record.log
+2026-10-08T13:08:02.7717457Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/README.md
+2026-10-08T13:08:02.7718113Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/combined-drafts.log
+2026-10-08T13:08:02.7718754Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/timeline/
+2026-10-08T13:08:02.7719468Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/timeline/narrow-phone-unknown.png
+2026-10-08T13:08:02.7720283Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/timeline/desktop-reconciled.png
+2026-10-08T13:08:02.7721045Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/timeline/receipt.json
+2026-10-08T13:08:02.7721832Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/timeline/narrow-phone-reconciled.png
+2026-10-08T13:08:02.7722641Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/timeline/desktop-unknown.png
+2026-10-08T13:08:02.7723400Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/timeline/phone-unknown.png
+2026-10-08T13:08:02.7724170Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/timeline/phone-reconciled.png
+2026-10-08T13:08:02.7725139Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/fixture-record/
+2026-10-08T13:08:02.7725862Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/fixture-record/desktop.png
+2026-10-08T13:08:02.7726689Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/fixture-record/phone-fixture-record.json
+2026-10-08T13:08:02.7727500Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/fixture-record/receipt.json
+2026-10-08T13:08:02.7728256Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/fixture-record/phone.png
+2026-10-08T13:08:02.7729070Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/fixture-record/desktop-fixture-record.json
+2026-10-08T13:08:02.7729826Z ./out/receiving/pr15-current-composition-20261008-52e56ea8fcca/timeline.log
+2026-10-08T13:08:02.7730355Z ./out/receiving/scope-authoring-a219f250962c/
+2026-10-08T13:08:02.7730862Z ./out/receiving/scope-authoring-a219f250962c/source-manifest.json
+2026-10-08T13:08:02.7731423Z ./out/receiving/scope-authoring-a219f250962c/independent-review/
+2026-10-08T13:08:02.7732049Z ./out/receiving/scope-authoring-a219f250962c/independent-review/browser-562c3a1/
+2026-10-08T13:08:02.7732793Z ./out/receiving/scope-authoring-a219f250962c/independent-review/browser-562c3a1/receipt.json
+2026-10-08T13:08:02.7733574Z ./out/receiving/scope-authoring-a219f250962c/independent-review/invariants-a75f85e.tap
+2026-10-08T13:08:02.7734299Z ./out/receiving/scope-authoring-a219f250962c/independent-review/review-result.json
+2026-10-08T13:08:02.7735216Z ./out/receiving/scope-authoring-a219f250962c/independent-review/browser-a75f85e/
+2026-10-08T13:08:02.7735943Z ./out/receiving/scope-authoring-a219f250962c/independent-review/browser-a75f85e/receipt.json
+2026-10-08T13:08:02.7736637Z ./out/receiving/scope-authoring-a219f250962c/independent-review/REVIEW.md
+2026-10-08T13:08:02.7737309Z ./out/receiving/scope-authoring-a219f250962c/independent-review/review-invariants.mjs
+2026-10-08T13:08:02.7738198Z ./out/receiving/scope-authoring-a219f250962c/independent-review/browser-ledger-composition/
+2026-10-08T13:08:02.7739025Z ./out/receiving/scope-authoring-a219f250962c/independent-review/browser-ledger-composition/receipt.json
+2026-10-08T13:08:02.7739935Z ./out/receiving/scope-authoring-a219f250962c/independent-review/review-browser.mjs
+2026-10-08T13:08:02.7740543Z ./out/receiving/scope-authoring-a219f250962c/node-final.log
+2026-10-08T13:08:02.7741067Z ./out/receiving/scope-authoring-a219f250962c/current-default/
+2026-10-08T13:08:02.7741714Z ./out/receiving/scope-authoring-a219f250962c/current-default/check-current-composition.mjs
+2026-10-08T13:08:02.7742438Z ./out/receiving/scope-authoring-a219f250962c/current-default/composition.json
+2026-10-08T13:08:02.7743061Z ./out/receiving/scope-authoring-a219f250962c/current-default/node.log
+2026-10-08T13:08:02.7743684Z ./out/receiving/scope-authoring-a219f250962c/current-default/browser-timeline/
+2026-10-08T13:08:02.7744387Z ./out/receiving/scope-authoring-a219f250962c/current-default/browser-timeline/receipt.json
+2026-10-08T13:08:02.7745380Z ./out/receiving/scope-authoring-a219f250962c/current-default/browser-composition/
+2026-10-08T13:08:02.7746127Z ./out/receiving/scope-authoring-a219f250962c/current-default/browser-composition/receipt.json
+2026-10-08T13:08:02.7746827Z ./out/receiving/scope-authoring-a219f250962c/browser-ledger-composition/
+2026-10-08T13:08:02.7747510Z ./out/receiving/scope-authoring-a219f250962c/browser-ledger-composition/receipt.json
+2026-10-08T13:08:02.7748127Z ./out/receiving/scope-authoring-a219f250962c/browser-final/
+2026-10-08T13:08:02.7748687Z ./out/receiving/scope-authoring-a219f250962c/browser-final/receipt.json
+2026-10-08T13:08:02.7749223Z ./out/receiving/scope-authoring-a219f250962c/README.md
+2026-10-08T13:08:02.7749765Z ./out/receiving/scope-authoring-a219f250962c/node-ledger-composition.log
+2026-10-08T13:08:02.7750338Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/
+2026-10-08T13:08:02.7750893Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/independent/
+2026-10-08T13:08:02.7751548Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/independent/REVIEW.md
+2026-10-08T13:08:02.7752339Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/independent/scopesignal-independent-review.tar.gz
+2026-10-08T13:08:02.7753122Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/independent/evidence/
+2026-10-08T13:08:02.7753890Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/independent/evidence/independent-receipt.json
+2026-10-08T13:08:02.7754606Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/author/
+2026-10-08T13:08:02.7755555Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/author/scopesignal-workers-ai-contract.bundle
+2026-10-08T13:08:02.7756375Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/author/workers-ai-candidate.tap
+2026-10-08T13:08:02.7757151Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/author/workers-ai-unicode-before.tap
+2026-10-08T13:08:02.7757923Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/author/production-receipt.json
+2026-10-08T13:08:02.7758665Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/author/workers-ai-baseline.tap
+2026-10-08T13:08:02.7759359Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/receiving-node.log
+2026-10-08T13:08:02.7759971Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/README.md
+2026-10-08T13:08:02.7760598Z ./out/receiving/workers-ai-contract-406d0fb04c43-20261008/receiving-receipt.json
+2026-10-08T13:08:02.7761225Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/
+2026-10-08T13:08:02.7761927Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/combined-drafts-initial-enospc/
+2026-10-08T13:08:02.7762804Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/combined-drafts-initial-enospc/receipt.json
+2026-10-08T13:08:02.7763602Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/combined-drafts/
+2026-10-08T13:08:02.7764509Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/combined-drafts/desktop.png
+2026-10-08T13:08:02.7765562Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/combined-drafts/receipt.json
+2026-10-08T13:08:02.7766512Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/combined-drafts/phone.png
+2026-10-08T13:08:02.7767242Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/manifest.json
+2026-10-08T13:08:02.7767924Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/node-tests.log
+2026-10-08T13:08:02.7768691Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/combined-drafts-initial-enospc.log
+2026-10-08T13:08:02.7769466Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/fixture-record.log
+2026-10-08T13:08:02.7770209Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/timeline-initial-enospc.log
+2026-10-08T13:08:02.7770984Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/timeline-initial-enospc/
+2026-10-08T13:08:02.7771808Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/timeline-initial-enospc/receipt.json
+2026-10-08T13:08:02.7772545Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/README.md
+2026-10-08T13:08:02.7773229Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/combined-drafts.log
+2026-10-08T13:08:02.7773999Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/fixture-record-initial-enospc.log
+2026-10-08T13:08:02.7774718Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/timeline/
+2026-10-08T13:08:02.7775689Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/timeline/narrow-phone-unknown.png
+2026-10-08T13:08:02.7776510Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/timeline/desktop-reconciled.png
+2026-10-08T13:08:02.7777273Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/timeline/receipt.json
+2026-10-08T13:08:02.7778074Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/timeline/narrow-phone-reconciled.png
+2026-10-08T13:08:02.7778908Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/timeline/desktop-unknown.png
+2026-10-08T13:08:02.7779690Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/timeline/phone-unknown.png
+2026-10-08T13:08:02.7780477Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/timeline/phone-reconciled.png
+2026-10-08T13:08:02.7781206Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/fixture-record/
+2026-10-08T13:08:02.7781927Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/fixture-record/desktop.png
+2026-10-08T13:08:02.7782797Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/fixture-record/phone-fixture-record.json
+2026-10-08T13:08:02.7783622Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/fixture-record/receipt.json
+2026-10-08T13:08:02.7784378Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/fixture-record/phone.png
+2026-10-08T13:08:02.7785463Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/fixture-record/desktop-fixture-record.json
+2026-10-08T13:08:02.7786235Z ./out/receiving/current-draft-integration-20261008-52e56ea8fcca/timeline.log
+2026-10-08T13:08:02.7786771Z ./out/receiving/record-viewer-39c2b591d7e5/
+2026-10-08T13:08:02.7787265Z ./out/receiving/record-viewer-39c2b591d7e5/baseline-node.stderr
+2026-10-08T13:08:02.7787827Z ./out/receiving/record-viewer-39c2b591d7e5/candidate-browser-r1/
+2026-10-08T13:08:02.7788452Z ./out/receiving/record-viewer-39c2b591d7e5/candidate-browser-r1/phone-record.png
+2026-10-08T13:08:02.7789118Z ./out/receiving/record-viewer-39c2b591d7e5/candidate-browser-r1/receipt.json
+2026-10-08T13:08:02.7789790Z ./out/receiving/record-viewer-39c2b591d7e5/candidate-browser-r1/desktop-record.png
+2026-10-08T13:08:02.7790430Z ./out/receiving/record-viewer-39c2b591d7e5/old-ledger-negative.stdout
+2026-10-08T13:08:02.7790996Z ./out/receiving/record-viewer-39c2b591d7e5/baseline-node.stdout
+2026-10-08T13:08:02.7791682Z ./out/receiving/record-viewer-39c2b591d7e5/candidate-node.stdout
+2026-10-08T13:08:02.7792204Z ./out/receiving/record-viewer-39c2b591d7e5/final-node.stdout
+2026-10-08T13:08:02.7792722Z ./out/receiving/record-viewer-39c2b591d7e5/source-receipt.json
+2026-10-08T13:08:02.7793345Z ./out/receiving/record-viewer-39c2b591d7e5/current-default/
+2026-10-08T13:08:02.7793897Z ./out/receiving/record-viewer-39c2b591d7e5/current-default/node.stderr
+2026-10-08T13:08:02.7794525Z ./out/receiving/record-viewer-39c2b591d7e5/current-default/source-receipt.json
+2026-10-08T13:08:02.7795506Z ./out/receiving/record-viewer-39c2b591d7e5/current-default/browser/
+2026-10-08T13:08:02.7796162Z ./out/receiving/record-viewer-39c2b591d7e5/current-default/browser/receipt.json
+2026-10-08T13:08:02.7796811Z ./out/receiving/record-viewer-39c2b591d7e5/current-default/composition.json
+2026-10-08T13:08:02.7797422Z ./out/receiving/record-viewer-39c2b591d7e5/current-default/node.stdout
+2026-10-08T13:08:02.7798012Z ./out/receiving/record-viewer-39c2b591d7e5/old-ledger-negative.stderr
+2026-10-08T13:08:02.7798566Z ./out/receiving/record-viewer-39c2b591d7e5/baseline-browser/
+2026-10-08T13:08:02.7799125Z ./out/receiving/record-viewer-39c2b591d7e5/baseline-browser/receipt.json
+2026-10-08T13:08:02.7799705Z ./out/receiving/record-viewer-39c2b591d7e5/final-upstream.json
+2026-10-08T13:08:02.7800224Z ./out/receiving/record-viewer-39c2b591d7e5/node-gates.json
+2026-10-08T13:08:02.7800743Z ./out/receiving/record-viewer-39c2b591d7e5/candidate-node.stderr
+2026-10-08T13:08:02.7801232Z ./out/receiving/record-viewer-39c2b591d7e5/README.md
+2026-10-08T13:08:02.7801748Z ./out/receiving/record-viewer-39c2b591d7e5/actual-fixture-record.json
+2026-10-08T13:08:02.7802304Z ./out/receiving/record-viewer-39c2b591d7e5/final-node.stderr
+2026-10-08T13:08:02.7802800Z ./out/receiving/record-viewer-39c2b591d7e5/baseline.json
+2026-10-08T13:08:02.7803236Z ./out/receiving/current-capture-20261008/
+2026-10-08T13:08:02.7803742Z ./out/receiving/current-capture-20261008/browser-candidate-combined.json
+2026-10-08T13:08:02.7804286Z ./out/receiving/current-capture-20261008/desktop.png
+2026-10-08T13:08:02.7804918Z ./out/receiving/current-capture-20261008/native-main-node.log
+2026-10-08T13:08:02.7805433Z ./out/receiving/current-capture-20261008/provenance.json
+2026-10-08T13:08:02.7805958Z ./out/receiving/current-capture-20261008/browser-baseline-r2.json
+2026-10-08T13:08:02.7806520Z ./out/receiving/current-capture-20261008/baseline-current-state.log
+2026-10-08T13:08:02.7807067Z ./out/receiving/current-capture-20261008/browser-harness-r1.mjs
+2026-10-08T13:08:02.7807607Z ./out/receiving/current-capture-20261008/current-capture.patch
+2026-10-08T13:08:02.7808149Z ./out/receiving/current-capture-20261008/native-combined-node.log
+2026-10-08T13:08:02.7808776Z ./out/receiving/current-capture-20261008/browser-candidate-default-command.json
+2026-10-08T13:08:02.7809338Z ./out/receiving/current-capture-20261008/phone.png
+2026-10-08T13:08:02.7809840Z ./out/receiving/current-capture-20261008/browser-baseline-main.json
+2026-10-08T13:08:02.7810426Z ./out/receiving/current-capture-20261008/browser-candidate-main.json
+2026-10-08T13:08:02.7810963Z ./out/receiving/current-capture-20261008/composition.json
+2026-10-08T13:08:02.7811427Z ./out/receiving/current-capture-20261008/README.md
+2026-10-08T13:08:02.7811940Z ./out/receiving/current-capture-20261008/implemented-main-node.log
+2026-10-08T13:08:02.7812493Z ./out/receiving/current-capture-20261008/browser-baseline-r1.json
+2026-10-08T13:08:02.7813071Z ./out/receiving/current-capture-20261008/browser-baseline-r2-harness.mjs
+2026-10-08T13:08:02.7813618Z ./out/receiving/current-capture-20261008/owner-app.patch
+2026-10-08T13:08:02.7814366Z ##[endgroup]
+2026-10-08T13:08:02.7851066Z ##[end-action id=__actions_upload-pages-artifact.__run;outcome=success;conclusion=success;duration_ms=53]
+2026-10-08T13:08:02.7856114Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run_2]
+2026-10-08T13:08:02.7862285Z ##[end-action id=__actions_upload-pages-artifact.__run_2;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-08T13:08:02.7866177Z ##[start-action display=Archive artifact;id=__actions_upload-pages-artifact.__run_3]
+2026-10-08T13:08:02.7870668Z ##[end-action id=__actions_upload-pages-artifact.__run_3;outcome=skipped;conclusion=skipped;duration_ms=0]
+2026-10-08T13:08:02.7873185Z ##[start-action display=Upload artifact;id=__actions_upload-pages-artifact.upload-artifact]
+2026-10-08T13:08:02.7947184Z ##[group]Run actions/upload-artifact@v4
+2026-10-08T13:08:02.7947524Z with:
+2026-10-08T13:08:02.7947777Z   name: github-pages
+2026-10-08T13:08:02.7948086Z   path: /home/runner/work/_temp/artifact.tar
+2026-10-08T13:08:02.7948438Z   retention-days: 1
+2026-10-08T13:08:02.7948718Z   if-no-files-found: error
+2026-10-08T13:08:02.7949016Z   compression-level: 6
+2026-10-08T13:08:02.7949291Z   overwrite: false
+2026-10-08T13:08:02.7949569Z   include-hidden-files: false
+2026-10-08T13:08:02.7949861Z env:
+2026-10-08T13:08:02.7950107Z   GITHUB_PAGES: true
+2026-10-08T13:08:02.7950378Z ##[endgroup]
+2026-10-08T13:08:02.9642324Z (node:2293) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-08T13:08:02.9643322Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-08T13:08:02.9689818Z With the provided path, there will be 1 file uploaded
+2026-10-08T13:08:02.9696174Z Artifact name is valid!
+2026-10-08T13:08:02.9698895Z Root directory input is valid!
+2026-10-08T13:08:03.3764760Z Beginning upload of artifact content to blob storage
+2026-10-08T13:08:03.7099868Z (node:2293) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+2026-10-08T13:08:04.6112256Z Uploaded bytes 8100980
+2026-10-08T13:08:04.6879801Z Finished uploading artifact content to blob storage!
+2026-10-08T13:08:04.6881264Z SHA256 digest of uploaded artifact zip is cc3e47e1f3381da9690727ac5b41c40195b5971dbd88bfb91204ed685b9e5c3e
+2026-10-08T13:08:04.6882700Z Finalizing artifact upload
+2026-10-08T13:08:04.9761005Z Artifact github-pages.zip successfully finalized. Artifact ID 11552422018
+2026-10-08T13:08:04.9762710Z Artifact github-pages has been successfully uploaded! Final size is 8100980 bytes. Artifact ID is 11552422018
+2026-10-08T13:08:04.9769282Z Artifact download URL: https://github.com/Jacob-Met/scopesignal/actions/runs/37781938930/artifacts/11552422018
+2026-10-08T13:08:04.9887788Z ##[end-action id=__actions_upload-pages-artifact.upload-artifact;outcome=success;conclusion=success;duration_ms=2201]
+2026-10-08T13:08:04.9965232Z ##[group]Run actions/deploy-pages@v4
+2026-10-08T13:08:04.9965574Z with:
+2026-10-08T13:08:04.9967995Z   token: ***
+2026-10-08T13:08:04.9968206Z   timeout: 600000
+2026-10-08T13:08:04.9968426Z   error_count: 10
+2026-10-08T13:08:04.9968657Z   reporting_interval: 5000
+2026-10-08T13:08:04.9968919Z   artifact_name: github-pages
+2026-10-08T13:08:04.9969205Z   preview: false
+2026-10-08T13:08:04.9969411Z env:
+2026-10-08T13:08:04.9969601Z   GITHUB_PAGES: true
+2026-10-08T13:08:04.9969823Z ##[endgroup]
+2026-10-08T13:08:05.1772283Z (node:2306) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-08T13:08:05.4300289Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-08T13:08:05.4306749Z Fetching artifact metadata for "github-pages" in this workflow run
+2026-10-08T13:08:05.6854630Z Found 1 artifact(s)
+2026-10-08T13:08:05.6868750Z Creating Pages deployment with payload:
+2026-10-08T13:08:05.6869673Z {
+2026-10-08T13:08:05.6870108Z 	"artifact_id": 11552422018,
+2026-10-08T13:08:05.6870753Z 	"pages_build_version": "65d47f90e609c36f51648c303e06f74a1d95f856",
+2026-10-08T13:08:05.6942630Z 	"oidc_token": "***"
+2026-10-08T13:08:05.6943163Z }
+2026-10-08T13:08:06.6185216Z Created deployment for 65d47f90e609c36f51648c303e06f74a1d95f856, ID: 65d47f90e609c36f51648c303e06f74a1d95f856
+2026-10-08T13:08:11.6203706Z Getting Pages deployment status...
+2026-10-08T13:08:11.8380775Z Reported success!
+2026-10-08T13:08:11.8623500Z Post job cleanup.
+2026-10-08T13:08:11.9502206Z [command]/usr/bin/git version
+2026-10-08T13:08:11.9545959Z git version 2.55.0
+2026-10-08T13:08:11.9588018Z Temporarily overriding HOME='/home/runner/work/_temp/babcdd6d-5fca-4b81-a69a-1a3b8aad4285' before making global git config changes
+2026-10-08T13:08:11.9589413Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-08T13:08:11.9593835Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/scopesignal/scopesignal
+2026-10-08T13:08:11.9631116Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-08T13:08:11.9667042Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-08T13:08:11.9923198Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-08T13:08:11.9952325Z http.https://github.com/.extraheader
+2026-10-08T13:08:11.9963831Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-08T13:08:12.0004681Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-08T13:08:12.0269216Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-08T13:08:12.0309100Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-08T13:08:12.0735658Z Evaluate and set environment url
+2026-10-08T13:08:12.0739169Z Evaluated environment url: http://jacobmetoyer.com/scopesignal/
+2026-10-08T13:08:12.0740090Z Cleaning up orphan processes
+2026-10-08T13:08:12.1076207Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/configure-pages@v5, actions/deploy-pages@v4, actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+

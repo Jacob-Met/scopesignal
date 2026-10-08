@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "path": "check-workspace-public-positive.mjs",
+      "bytes": 15468,
+      "sha256": "266fb7353d9ad3673f6be76d57ac429632f0600694a691a934295e677b540c95"
+    },
+    {
+      "path": "public-native-driver.py",
+      "bytes": 5618,
+      "sha256": "b8100b073b00cc2474a083bdf5c41a1f1ad56c555661c1df63070517336e96d9"
+    },
+    {
+      "path": "public-positive-criteria.json",
+      "bytes": 1461,
+      "sha256": "73c9eb8321ec57d801034dbe1232698ac7796992e5f1ca3bb12f7bd855422108"
+    },
+    {
+      "path": "release-input.json",
+      "bytes": 1154,
+      "sha256": "589f423e855573d0df82b9e92678b187c8069c3dbbadae773d63aa4e3cef94dd"
+    },
+    {
+      "path": "source-manifest.json",
+      "bytes": 10366,
+      "sha256": "395bc7243c6b1400fb7a51268220190a0b12ca98c5c7c75f1000d0e38cd9d9b8"
+    }
+  ]
+}

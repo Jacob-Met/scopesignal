@@ -1,0 +1,63 @@
+{
+  "schema": "scopesignal-workspace-final-release-receiving-v1",
+  "repository": "Jacob-Met/scopesignal",
+  "pr": 22,
+  "authored_head": "c436b9ff023d9d0c79af3e5e134131fd37f5883f",
+  "merge": {
+    "commit": "65d47f90e609c36f51648c303e06f74a1d95f856",
+    "tree": "88073a0984b05b629d85563ae2e113e6c932e8ec",
+    "parents": [
+      "8a241c9ce409fa9b22ab0bbdc339e46fd4b38525",
+      "c436b9ff023d9d0c79af3e5e134131fd37f5883f"
+    ],
+    "payload_files": 65,
+    "unrelated_parent_leaves": 247,
+    "leaves": 312,
+    "complete_tree_reuses_verified_identical_object": true,
+    "pr": 22,
+    "merged": true
+  },
+  "actual_pages_run": 37781938930,
+  "test_job": 113326940599,
+  "test_result": {
+    "passed": 116,
+    "failed": 0,
+    "skipped": 0
+  },
+  "deploy_job": 113327004994,
+  "deployment_reported_success": true,
+  "artifact": {
+    "id": 11552422018,
+    "bytes": 8100980,
+    "sha256": "cc3e47e1f3381da9690727ac5b41c40195b5971dbd88bfb91204ed685b9e5c3e"
+  },
+  "logs": [
+    {
+      "path": "pages-test.log",
+      "bytes": 26236,
+      "sha256": "df1ef4adbd29baebba1f6be261d31ed768a1130e5a77dcb4299773759a20fc3e"
+    },
+    {
+      "path": "pages-deploy.log",
+      "bytes": 55688,
+      "sha256": "838862cd82135ca77b0b654c104b887f0a81d94279e166d354752e6fca20f3b7"
+    }
+  ],
+  "independent_public_packet": {
+    "directory": "../public-65d/",
+    "manifest_sha256": "e5ca565c5ed8a571c8f27ad7223ba1cbcb33acb1fe27bd8c5f68d5f12d63a489",
+    "files": 36,
+    "observed_utc": "2026-10-08T13:12:57.501Z",
+    "normal_https_verification": true,
+    "preflight_runtime_assets": 8,
+    "browser_runtime_response_bodies": 32,
+    "all_runtime_pins_match": true,
+    "passed_flows": 2,
+    "failed_flows": 0,
+    "actual_downloads": 3,
+    "visually_inspected_screenshots": 2
+  },
+  "preserved_state": "The complete merged source and all prior evidence remain unchanged. This commit only adds an immutable post-release receiving packet on a dedicated evidence branch; it does not create another application deployment.",
+  "custody": "PR18 workspace/history author 7a9310dad255 and issue20 portable-report owner retain their scopes. PR19 remains closed unmerged and its alternate format is not used for this release.",
+  "limitations": "Fixture workspace and payment-history replay only. No real provider call, payment operation, installed native app or ongoing background execution is claimed."
+}

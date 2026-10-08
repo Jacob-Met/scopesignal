@@ -1,0 +1,214 @@
+{
+  "merge": {
+    "commit": "65d47f90e609c36f51648c303e06f74a1d95f856",
+    "tree": "88073a0984b05b629d85563ae2e113e6c932e8ec",
+    "parents": [
+      "8a241c9ce409fa9b22ab0bbdc339e46fd4b38525",
+      "c436b9ff023d9d0c79af3e5e134131fd37f5883f"
+    ],
+    "payload_files": 65,
+    "unrelated_parent_leaves": 247,
+    "leaves": 312,
+    "complete_tree_reuses_verified_identical_object": true,
+    "pr": 22,
+    "merged": true
+  },
+  "jobs": {
+    "total_count": 2,
+    "jobs": [
+      {
+        "id": 113326940599,
+        "run_id": 37781938930,
+        "workflow_name": "Fixture-mode Pages deployment",
+        "head_branch": "paypal-ai",
+        "run_url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/runs/37781938930",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOU-z-vs8AAAAaYs_htw",
+        "head_sha": "65d47f90e609c36f51648c303e06f74a1d95f856",
+        "url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/jobs/113326940599",
+        "html_url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37781938930/job/113326940599",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-10-08T13:07:45Z",
+        "started_at": "2026-10-08T13:07:47Z",
+        "completed_at": "2026-10-08T13:07:53Z",
+        "name": "test",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-10-08T13:07:47Z",
+            "completed_at": "2026-10-08T13:07:48Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-10-08T13:07:48Z",
+            "completed_at": "2026-10-08T13:07:49Z"
+          },
+          {
+            "name": "Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-10-08T13:07:49Z",
+            "completed_at": "2026-10-08T13:07:50Z"
+          },
+          {
+            "name": "Run npm test",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-10-08T13:07:50Z",
+            "completed_at": "2026-10-08T13:07:51Z"
+          },
+          {
+            "name": "Post Run actions/setup-node@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 7,
+            "started_at": "2026-10-08T13:07:51Z",
+            "completed_at": "2026-10-08T13:07:51Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 8,
+            "started_at": "2026-10-08T13:07:51Z",
+            "completed_at": "2026-10-08T13:07:51Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 9,
+            "started_at": "2026-10-08T13:07:51Z",
+            "completed_at": "2026-10-08T13:07:51Z"
+          }
+        ],
+        "check_run_url": "https://api.github.com/repos/Jacob-Met/scopesignal/check-runs/113326940599",
+        "labels": [
+          "ubuntu-latest"
+        ],
+        "runner_id": 1000005774,
+        "runner_name": "GitHub Actions 1000005774",
+        "runner_group_id": 0,
+        "runner_group_name": "GitHub Actions"
+      },
+      {
+        "id": 113327004994,
+        "run_id": 37781938930,
+        "workflow_name": "Fixture-mode Pages deployment",
+        "head_branch": "paypal-ai",
+        "run_url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/runs/37781938930",
+        "run_attempt": 1,
+        "node_id": "CR_kwDOU-z-vs8AAAAaYtDdQg",
+        "head_sha": "65d47f90e609c36f51648c303e06f74a1d95f856",
+        "url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/jobs/113327004994",
+        "html_url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37781938930/job/113327004994",
+        "status": "completed",
+        "conclusion": "success",
+        "created_at": "2026-10-08T13:07:53Z",
+        "started_at": "2026-10-08T13:07:57Z",
+        "completed_at": "2026-10-08T13:08:14Z",
+        "name": "deploy",
+        "steps": [
+          {
+            "name": "Set up job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 1,
+            "started_at": "2026-10-08T13:07:58Z",
+            "completed_at": "2026-10-08T13:08:00Z"
+          },
+          {
+            "name": "Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 2,
+            "started_at": "2026-10-08T13:08:00Z",
+            "completed_at": "2026-10-08T13:08:02Z"
+          },
+          {
+            "name": "Run actions/configure-pages@v5",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 3,
+            "started_at": "2026-10-08T13:08:02Z",
+            "completed_at": "2026-10-08T13:08:02Z"
+          },
+          {
+            "name": "Run actions/upload-pages-artifact@v3",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 4,
+            "started_at": "2026-10-08T13:08:02Z",
+            "completed_at": "2026-10-08T13:08:04Z"
+          },
+          {
+            "name": "Run actions/deploy-pages@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 5,
+            "started_at": "2026-10-08T13:08:04Z",
+            "completed_at": "2026-10-08T13:08:11Z"
+          },
+          {
+            "name": "Post Run actions/checkout@v4",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 10,
+            "started_at": "2026-10-08T13:08:11Z",
+            "completed_at": "2026-10-08T13:08:12Z"
+          },
+          {
+            "name": "Complete job",
+            "status": "completed",
+            "conclusion": "success",
+            "number": 11,
+            "started_at": "2026-10-08T13:08:12Z",
+            "completed_at": "2026-10-08T13:08:12Z"
+          }
+        ],
+        "check_run_url": "https://api.github.com/repos/Jacob-Met/scopesignal/check-runs/113327004994",
+        "labels": [
+          "ubuntu-latest"
+        ],
+        "runner_id": 1000005775,
+        "runner_name": "GitHub Actions 1000005775",
+        "runner_group_id": 0,
+        "runner_group_name": "GitHub Actions"
+      }
+    ]
+  },
+  "artifacts": {
+    "total_count": 1,
+    "artifacts": [
+      {
+        "id": 11552422018,
+        "node_id": "MDg6QXJ0aWZhY3QxMTU1MjQyMjAxOA==",
+        "name": "github-pages",
+        "size_in_bytes": 8100980,
+        "url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/artifacts/11552422018",
+        "archive_download_url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/artifacts/11552422018/zip",
+        "expired": false,
+        "digest": "sha256:cc3e47e1f3381da9690727ac5b41c40195b5971dbd88bfb91204ed685b9e5c3e",
+        "created_at": "2026-10-08T13:08:04Z",
+        "updated_at": "2026-10-08T13:08:04Z",
+        "expires_at": "2026-10-09T13:08:02Z",
+        "workflow_run": {
+          "id": 37781938930,
+          "repository_id": 1408040638,
+          "head_repository_id": 1408040638,
+          "head_branch": "paypal-ai",
+          "head_sha": "65d47f90e609c36f51648c303e06f74a1d95f856"
+        }
+      }
+    ]
+  }
+}

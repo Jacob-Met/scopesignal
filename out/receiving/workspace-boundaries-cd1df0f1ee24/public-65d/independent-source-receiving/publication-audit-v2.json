@@ -1,0 +1,35 @@
+{
+  "publication_plan_sha256": "ea7f69d167c64a52efba2c76f5297eb90c9e7f18c3de612b2ce79cfbb02c7b03",
+  "parent_commit": "8a241c9ce409fa9b22ab0bbdc339e46fd4b38525",
+  "parent_tree_reconstructed": "7686f7568c398f522df4d32f75a98814b1c4cd1d",
+  "expected_tree_reconstructed": "88073a0984b05b629d85563ae2e113e6c932e8ec",
+  "payload_files": 65,
+  "product_files": 4,
+  "evidence_files": 61,
+  "binary_uploads": 4,
+  "final_leaves": 312,
+  "unchanged_parent_leaves": 247,
+  "complete_packets": [
+    {
+      "packet": "baseline-packet",
+      "files": 21,
+      "manifest_sha256": "0d5dee934fa6cb94b9440e4660e6d7127f09caaa3a765c32d93ec911697be223",
+      "byte_exact": true
+    },
+    {
+      "packet": "candidate-packet-v1",
+      "files": 30,
+      "manifest_sha256": "45091fb116fe7cd34bc0e57f0253b5f7c005774ab90ee652ef2e3d30f4fcde84",
+      "byte_exact": true
+    }
+  ],
+  "documentation_only_v2_delta": [
+    "README.md"
+  ],
+  "v2_source_files": 45,
+  "top_readme_relative_links_verified": 9,
+  "no_retired_test_path_in_payload": true,
+  "all_payload_content_and_pin_bytes_exact": true,
+  "provenance_review": "Top README accurately preserves original1pass2fail, same3case candidate3pass, separatehistory1pass, v1/v2doc-only distinction, candidate45/original44 distinction, source ownership, and native versus later published/merged/deployed receiving. No blocking provenance issue found.",
+  "helper_corrections_preserved": "publication-audit-helper-corrections.json"
+}

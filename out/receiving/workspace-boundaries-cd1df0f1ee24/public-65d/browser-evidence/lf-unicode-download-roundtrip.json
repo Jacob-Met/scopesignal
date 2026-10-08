@@ -1,0 +1,121 @@
+{
+  "name": "lf-unicode-download-roundtrip",
+  "started_at": "2026-10-08T13:12:52.718Z",
+  "authored": {
+    "label": "  Fictional workspace 日本語 😀  ",
+    "brief": "\nLF first line α\nLF second line 😀\n",
+    "cap": "unfinished",
+    "checkpoints": [
+      {
+        "title": "",
+        "amount": "400.00",
+        "evidence": "\nLiteral <evidence> & “quotes”\n"
+      },
+      {
+        "title": "Accessible billing setup",
+        "amount": "400.00",
+        "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+      },
+      {
+        "title": "Responsive handoff",
+        "amount": "400.00",
+        "evidence": "Desktop and mobile handoff files plus implementation notes."
+      }
+    ]
+  },
+  "download": {
+    "path": "/Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-repair-public-65d/browser-evidence/positive-download/scopesignal-workspace-v1.json",
+    "file": {
+      "schema": "scopesignal.scope-workspace",
+      "version": 1,
+      "fixtureOnly": true,
+      "paymentEvidence": false,
+      "stage": "draft",
+      "draft": {
+        "label": "  Fictional workspace 日本語 😀  ",
+        "brief": "\nLF first line α\nLF second line 😀\n",
+        "cap": "unfinished",
+        "checkpoints": [
+          {
+            "title": "",
+            "amount": "400.00",
+            "evidence": "\nLiteral <evidence> & “quotes”\n"
+          },
+          {
+            "title": "Accessible billing setup",
+            "amount": "400.00",
+            "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+          },
+          {
+            "title": "Responsive handoff",
+            "amount": "400.00",
+            "evidence": "Desktop and mobile handoff files plus implementation notes."
+          }
+        ]
+      },
+      "events": [],
+      "evidenceDrafts": []
+    },
+    "bytes": 843,
+    "sha256": "f3236be3269dedf66446c504052d4c53d5381a070838fba44eada3b4491f2c0b"
+  },
+  "preview": {
+    "draft": {
+      "label": "Northstar onboarding refresh",
+      "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+      "cap": "1200.00",
+      "checkpoints": [
+        {
+          "title": "First-run checklist",
+          "amount": "400.00",
+          "evidence": "A screen recording shows the checklist completion path and reset behavior."
+        },
+        {
+          "title": "Accessible billing setup",
+          "amount": "400.00",
+          "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+        },
+        {
+          "title": "Responsive handoff",
+          "amount": "400.00",
+          "evidence": "Desktop and mobile handoff files plus implementation notes."
+        }
+      ]
+    },
+    "preview": true,
+    "status": "File checked. Replace the current workspace to open it, or cancel to keep your work.",
+    "summary": "Fictional workspace 日本語 😀 · Editable draft · 3 checkpoints · 0 recorded approvals · 0 events.",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "applied": {
+    "draft": {
+      "label": "  Fictional workspace 日本語 😀  ",
+      "brief": "\nLF first line α\nLF second line 😀\n",
+      "cap": "unfinished",
+      "checkpoints": [
+        {
+          "title": "",
+          "amount": "400.00",
+          "evidence": "\nLiteral <evidence> & “quotes”\n"
+        },
+        {
+          "title": "Accessible billing setup",
+          "amount": "400.00",
+          "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+        },
+        {
+          "title": "Responsive handoff",
+          "amount": "400.00",
+          "evidence": "Desktop and mobile handoff files plus implementation notes."
+        }
+      ]
+    },
+    "preview": false,
+    "status": "Saved workspace opened. The file records a fictional fixture; it does not verify real approvals or payments.",
+    "summary": "",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "passed": true
+}

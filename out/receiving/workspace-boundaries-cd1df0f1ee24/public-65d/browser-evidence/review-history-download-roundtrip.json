@@ -1,0 +1,379 @@
+{
+  "name": "review-history-download-roundtrip",
+  "started_at": "2026-10-08T13:12:54.897Z",
+  "before_download": {
+    "visible": true,
+    "title": "Northstar onboarding refresh",
+    "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+    "approved": "1 / 3",
+    "captured": "$0.00",
+    "remaining": "$1,200.00",
+    "count": "4 events",
+    "edit_disabled": true,
+    "events": [
+      [
+        "01",
+        "First-run checklist",
+        "checkpoint.approved",
+        "Human-approved evidence: Accepted fictional evidence α\nNative reviewed proof 😀"
+      ],
+      [
+        "02",
+        "First-run checklist",
+        "paypal.order.created",
+        "SANDBOX-SCOPE-1"
+      ],
+      [
+        "03",
+        "First-run checklist",
+        "paypal.capture.requested",
+        "Pending · await an outcome"
+      ],
+      [
+        "04",
+        "First-run checklist",
+        "paypal.capture.response_lost",
+        "Unknown · do not retry"
+      ]
+    ],
+    "checkpoints": [
+      {
+        "id": "scope-1",
+        "evidence": "Accepted fictional evidence α\nNative reviewed proof 😀",
+        "read_only": true,
+        "status": "Capture state: unknownThe capture response was lost. Do not retry blindly; look up the existing transaction and reconcile once.",
+        "actions": [
+          {
+            "action": "receipt",
+            "disabled": false
+          },
+          {
+            "action": "reconcile",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "id": "scope-2",
+        "evidence": "\nPending human review 日本語\nLiteral <draft> & “quotes”\n",
+        "read_only": false,
+        "status": "Capture state: not startedNo capture has been requested for this checkpoint.",
+        "actions": [
+          {
+            "action": "approve",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "id": "scope-3",
+        "evidence": "",
+        "read_only": false,
+        "status": "Capture state: not startedNo capture has been requested for this checkpoint.",
+        "actions": [
+          {
+            "action": "approve",
+            "disabled": false
+          }
+        ]
+      }
+    ]
+  },
+  "download": {
+    "path": "/Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-repair-public-65d/browser-evidence/review-download/scopesignal-workspace-v1.json",
+    "file": {
+      "schema": "scopesignal.scope-workspace",
+      "version": 1,
+      "fixtureOnly": true,
+      "paymentEvidence": false,
+      "stage": "review",
+      "draft": {
+        "label": "Northstar onboarding refresh",
+        "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+        "cap": "1200.00",
+        "checkpoints": [
+          {
+            "title": "First-run checklist",
+            "amount": "400.00",
+            "evidence": "A screen recording shows the checklist completion path and reset behavior."
+          },
+          {
+            "title": "Accessible billing setup",
+            "amount": "400.00",
+            "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+          },
+          {
+            "title": "Responsive handoff",
+            "amount": "400.00",
+            "evidence": "Desktop and mobile handoff files plus implementation notes."
+          }
+        ]
+      },
+      "events": [
+        {
+          "seq": 1,
+          "type": "checkpoint.approved",
+          "at": "T+001",
+          "checkpointId": "scope-1",
+          "approver": "human-reviewer",
+          "acceptedEvidence": "Accepted fictional evidence α\nNative reviewed proof 😀"
+        },
+        {
+          "seq": 2,
+          "type": "paypal.order.created",
+          "at": "T+002",
+          "checkpointId": "scope-1",
+          "orderId": "SANDBOX-SCOPE-1",
+          "amount": 40000,
+          "currency": "USD",
+          "environment": "sandbox"
+        },
+        {
+          "seq": 3,
+          "type": "paypal.capture.requested",
+          "at": "T+003",
+          "checkpointId": "scope-1",
+          "orderId": "SANDBOX-SCOPE-1",
+          "environment": "sandbox"
+        },
+        {
+          "seq": 4,
+          "type": "paypal.capture.response_lost",
+          "at": "T+004",
+          "checkpointId": "scope-1",
+          "orderId": "SANDBOX-SCOPE-1",
+          "outcome": "unknown"
+        }
+      ],
+      "evidenceDrafts": [
+        {
+          "checkpointId": "scope-2",
+          "text": "\nPending human review 日本語\nLiteral <draft> & “quotes”\n"
+        },
+        {
+          "checkpointId": "scope-3",
+          "text": ""
+        }
+      ]
+    },
+    "bytes": 2063,
+    "sha256": "c5fe18e23240633979aee0b7250722b45d16446000e810778fff629639113dba"
+  },
+  "fresh_before_open": {
+    "draft": {
+      "label": "Northstar onboarding refresh",
+      "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+      "cap": "1200.00",
+      "checkpoints": [
+        {
+          "title": "First-run checklist",
+          "amount": "400.00",
+          "evidence": "A screen recording shows the checklist completion path and reset behavior."
+        },
+        {
+          "title": "Accessible billing setup",
+          "amount": "400.00",
+          "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+        },
+        {
+          "title": "Responsive handoff",
+          "amount": "400.00",
+          "evidence": "Desktop and mobile handoff files plus implementation notes."
+        }
+      ]
+    },
+    "preview": false,
+    "status": "",
+    "summary": "",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "preview": {
+    "draft": {
+      "label": "Northstar onboarding refresh",
+      "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+      "cap": "1200.00",
+      "checkpoints": [
+        {
+          "title": "First-run checklist",
+          "amount": "400.00",
+          "evidence": "A screen recording shows the checklist completion path and reset behavior."
+        },
+        {
+          "title": "Accessible billing setup",
+          "amount": "400.00",
+          "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+        },
+        {
+          "title": "Responsive handoff",
+          "amount": "400.00",
+          "evidence": "Desktop and mobile handoff files plus implementation notes."
+        }
+      ]
+    },
+    "preview": true,
+    "status": "File checked. Replace the current workspace to open it, or cancel to keep your work.",
+    "summary": "Northstar onboarding refresh · Reviewed fixture · 3 checkpoints · 1 recorded approvals · 4 events.",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "after_open": {
+    "visible": true,
+    "title": "Northstar onboarding refresh",
+    "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+    "approved": "1 / 3",
+    "captured": "$0.00",
+    "remaining": "$1,200.00",
+    "count": "4 events",
+    "edit_disabled": true,
+    "events": [
+      [
+        "01",
+        "First-run checklist",
+        "checkpoint.approved",
+        "Human-approved evidence: Accepted fictional evidence α\nNative reviewed proof 😀"
+      ],
+      [
+        "02",
+        "First-run checklist",
+        "paypal.order.created",
+        "SANDBOX-SCOPE-1"
+      ],
+      [
+        "03",
+        "First-run checklist",
+        "paypal.capture.requested",
+        "Pending · await an outcome"
+      ],
+      [
+        "04",
+        "First-run checklist",
+        "paypal.capture.response_lost",
+        "Unknown · do not retry"
+      ]
+    ],
+    "checkpoints": [
+      {
+        "id": "scope-1",
+        "evidence": "Accepted fictional evidence α\nNative reviewed proof 😀",
+        "read_only": true,
+        "status": "Capture state: unknownThe capture response was lost. Do not retry blindly; look up the existing transaction and reconcile once.",
+        "actions": [
+          {
+            "action": "receipt",
+            "disabled": false
+          },
+          {
+            "action": "reconcile",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "id": "scope-2",
+        "evidence": "\nPending human review 日本語\nLiteral <draft> & “quotes”\n",
+        "read_only": false,
+        "status": "Capture state: not startedNo capture has been requested for this checkpoint.",
+        "actions": [
+          {
+            "action": "approve",
+            "disabled": false
+          }
+        ]
+      },
+      {
+        "id": "scope-3",
+        "evidence": "",
+        "read_only": false,
+        "status": "Capture state: not startedNo capture has been requested for this checkpoint.",
+        "actions": [
+          {
+            "action": "approve",
+            "disabled": false
+          }
+        ]
+      }
+    ]
+  },
+  "redownload": {
+    "path": "/Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-repair-public-65d/browser-evidence/review-redownload/scopesignal-workspace-v1.json",
+    "file": {
+      "schema": "scopesignal.scope-workspace",
+      "version": 1,
+      "fixtureOnly": true,
+      "paymentEvidence": false,
+      "stage": "review",
+      "draft": {
+        "label": "Northstar onboarding refresh",
+        "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+        "cap": "1200.00",
+        "checkpoints": [
+          {
+            "title": "First-run checklist",
+            "amount": "400.00",
+            "evidence": "A screen recording shows the checklist completion path and reset behavior."
+          },
+          {
+            "title": "Accessible billing setup",
+            "amount": "400.00",
+            "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+          },
+          {
+            "title": "Responsive handoff",
+            "amount": "400.00",
+            "evidence": "Desktop and mobile handoff files plus implementation notes."
+          }
+        ]
+      },
+      "events": [
+        {
+          "seq": 1,
+          "type": "checkpoint.approved",
+          "at": "T+001",
+          "checkpointId": "scope-1",
+          "approver": "human-reviewer",
+          "acceptedEvidence": "Accepted fictional evidence α\nNative reviewed proof 😀"
+        },
+        {
+          "seq": 2,
+          "type": "paypal.order.created",
+          "at": "T+002",
+          "checkpointId": "scope-1",
+          "orderId": "SANDBOX-SCOPE-1",
+          "amount": 40000,
+          "currency": "USD",
+          "environment": "sandbox"
+        },
+        {
+          "seq": 3,
+          "type": "paypal.capture.requested",
+          "at": "T+003",
+          "checkpointId": "scope-1",
+          "orderId": "SANDBOX-SCOPE-1",
+          "environment": "sandbox"
+        },
+        {
+          "seq": 4,
+          "type": "paypal.capture.response_lost",
+          "at": "T+004",
+          "checkpointId": "scope-1",
+          "orderId": "SANDBOX-SCOPE-1",
+          "outcome": "unknown"
+        }
+      ],
+      "evidenceDrafts": [
+        {
+          "checkpointId": "scope-2",
+          "text": "\nPending human review 日本語\nLiteral <draft> & “quotes”\n"
+        },
+        {
+          "checkpointId": "scope-3",
+          "text": ""
+        }
+      ]
+    },
+    "bytes": 2063,
+    "sha256": "c5fe18e23240633979aee0b7250722b45d16446000e810778fff629639113dba"
+  },
+  "passed": true
+}

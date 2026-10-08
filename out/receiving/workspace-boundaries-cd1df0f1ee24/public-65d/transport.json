@@ -1,0 +1,15 @@
+{
+  "input_archive": {
+    "bytes": 12703,
+    "sha256": "9f31e4f619ada1a4734099b6958bb622330c4806c249981467f70344df237a4e"
+  },
+  "native_evidence_archive": {
+    "bytes": 556342,
+    "sha256": "f8cffd94f2a5ff07669e377c05544723b0f32e00e61585e0b32a60d9f919e2d4"
+  },
+  "native_device": "Mac.lan / 0e3d582f-e25b-44b2-8418-9639fc4e4e33",
+  "native_root": "/Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-repair-public-65d",
+  "input_files_verified_unchanged": 5,
+  "normal_tls": true,
+  "browser_process_exit": 0
+}
