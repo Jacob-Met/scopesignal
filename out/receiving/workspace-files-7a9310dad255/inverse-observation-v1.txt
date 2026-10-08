@@ -1,6 +1,5 @@
 import { MAX_CHECKPOINTS, draftFromFixture, draftBudget, validateScopeDraft, createScopeReview, formatUSD as money } from './scope-plan.mjs';
 import { capturePresentation } from './payment-status.mjs';
-import { encodeScopeWorkspace, decodeScopeWorkspace, WORKSPACE_FILENAME, MAX_WORKSPACE_BYTES } from './scope-workspace-record.mjs';
 
 const $ = selector => document.querySelector(selector);
 const form = $('#scope-form');
@@ -214,11 +213,10 @@ $('#scope-label').value = draft.label;
 $('#scope-brief').value = draft.brief;
 $('#scope-cap').value = draft.cap;
 renderDraftRows();
-form.addEventListener('input', () => { workspaceChanged(); updateBudget(); });
+form.addEventListener('input', updateBudget);
 $('#scope-add').addEventListener('click', () => {
   draft = readDraft();
   if (draft.checkpoints.length >= MAX_CHECKPOINTS) return;
-  workspaceChanged();
   draft.checkpoints.push({ title: '', amount: '', evidence: '' });
   clearErrors();
   renderDraftRows();
@@ -229,7 +227,6 @@ $('#scope-draft-list').addEventListener('click', event => {
   if (!remove || remove.disabled) return;
   draft = readDraft();
   const index = Number(remove.dataset.remove);
-  workspaceChanged();
   draft.checkpoints.splice(index, 1);
   clearErrors();
   renderDraftRows();
@@ -240,7 +237,6 @@ form.addEventListener('submit', event => {
   draft = readDraft();
   const validation = validateScopeDraft(draft);
   if (!validation.ok) { showErrors(validation.errors); return; }
-  workspaceChanged();
   review = createScopeReview(draft);
   evidenceDrafts.clear();
   clearErrors();
@@ -253,7 +249,6 @@ form.addEventListener('submit', event => {
 });
 $('#scope-edit').addEventListener('click', () => {
   if (!review || review.snapshot().events.length > 0) return;
-  workspaceChanged();
   // Evidence edits made during review become part of the editable draft.
   review.snapshot().checkpoints.forEach((cp, index) => {
     draft.checkpoints[index].evidence = evidenceDrafts.get(cp.id) ?? cp.evidence;
@@ -269,8 +264,7 @@ $('#scope-edit').addEventListener('click', () => {
 });
 $('#scope-review-list').addEventListener('input', event => {
   if (event.target.dataset.evidence && !event.target.readOnly) {
-    workspaceChanged();
-    evidenceDrafts.set(event.target.dataset.evidence, event.target.value);
+      evidenceDrafts.set(event.target.dataset.evidence, event.target.value);
   }
 });
 $('#scope-review-list').addEventListener('click', event => {
@@ -282,8 +276,7 @@ $('#scope-review-list').addEventListener('click', event => {
   try {
     const evidence = $(`#review-evidence-${id}`).value;
     review.act(id, action, evidence);
-    workspaceChanged();
-    status.textContent = actionMessages[action];
+      status.textContent = actionMessages[action];
     status.classList.remove('error');
     renderReview();
     $(`#review-heading-${id}`).focus();
@@ -292,133 +285,4 @@ $('#scope-review-list').addEventListener('click', event => {
     status.classList.add('error');
     $(`#review-evidence-${id}`).focus();
   }
-});
-
-let openRequest = 0;
-let readingWorkspace = false;
-let pendingWorkspace = null;
-
-function fileStatus(message, error = false) {
-  const status = $('#scope-file-status');
-  status.textContent = message;
-  status.classList.toggle('error', error);
-}
-
-function cancelOpen(message = '') {
-  openRequest += 1;
-  readingWorkspace = false;
-  pendingWorkspace = null;
-  $('#scope-open-preview').hidden = true;
-  $('#scope-open-summary').textContent = '';
-  $('#scope-open-cancel').hidden = true;
-  $('#scope-open').value = '';
-  if (message) fileStatus(message);
-}
-
-function workspaceChanged() {
-  if (readingWorkspace || pendingWorkspace) {
-    cancelOpen('Your workspace changed. Choose the saved file again when you are ready to replace it.');
-  }
-}
-
-$('#scope-save').addEventListener('click', () => {
-  let url;
-  let link;
-  try {
-    const contents = encodeScopeWorkspace({
-      draft: review ? draft : readDraft(), review, evidenceDrafts
-    });
-    const blob = new Blob([contents], { type: 'application/json;charset=utf-8' });
-    url = URL.createObjectURL(blob);
-    link = element('a');
-    link.href = url;
-    link.download = WORKSPACE_FILENAME;
-    document.body.append(link);
-    link.click();
-    fileStatus('Workspace download started. Keep the JSON file to reopen this fictional draft or simulation.');
-  } catch (error) {
-    fileStatus('Could not prepare the workspace download. ' + error.message, true);
-  } finally {
-    link?.remove();
-    if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
-  }
-});
-
-$('#scope-open').addEventListener('change', async event => {
-  const file = event.currentTarget.files?.[0];
-  cancelOpen();
-  if (!file) { fileStatus('Opening canceled. Your current workspace is unchanged.'); return; }
-  const request = openRequest;
-  readingWorkspace = true;
-  $('#scope-open-cancel').hidden = false;
-  fileStatus('Reading the saved workspace. Your current work remains in place.');
-  try {
-    if (file.size > MAX_WORKSPACE_BYTES) throw new Error('Choose a file no larger than 1 MiB.');
-    const bytes = await file.arrayBuffer();
-    if (request !== openRequest) return;
-    if (bytes.byteLength > MAX_WORKSPACE_BYTES) throw new Error('Choose a file no larger than 1 MiB.');
-    let contents;
-    try { contents = new TextDecoder('utf-8', { fatal: true }).decode(bytes); }
-    catch { throw new Error('The workspace file must contain valid UTF-8 text.'); }
-    const admitted = decodeScopeWorkspace(contents);
-    if (request !== openRequest) return;
-    pendingWorkspace = admitted;
-    readingWorkspace = false;
-    const summary = admitted.summary;
-    const name = summary.label.trim() || 'Untitled draft';
-    $('#scope-open-summary').textContent = name + ' · '
-      + (summary.stage === 'draft' ? 'Editable draft' : 'Reviewed fixture')
-      + ' · ' + summary.checkpoints + ' checkpoints · '
-      + summary.approved + ' recorded approvals · ' + summary.events + ' events.';
-    $('#scope-open-preview').hidden = false;
-    fileStatus('File checked. Replace the current workspace to open it, or cancel to keep your work.');
-  } catch (error) {
-    if (request !== openRequest) return;
-    cancelOpen();
-    fileStatus('Could not open the workspace. ' + error.message + ' Your current work is unchanged.', true);
-  }
-});
-
-$('#scope-open').addEventListener('cancel', () => {
-  cancelOpen('Opening canceled. Your current workspace is unchanged.');
-});
-$('#scope-open-cancel').addEventListener('click', () => {
-  cancelOpen('Opening canceled. Your current workspace is unchanged.');
-  $('#scope-open').focus();
-});
-
-$('#scope-open-apply').addEventListener('click', () => {
-  if (!pendingWorkspace) return;
-  const next = pendingWorkspace;
-  cancelOpen();
-  draft = structuredClone(next.draft);
-  review = next.review;
-  evidenceDrafts.clear();
-  for (const [id, value] of next.evidenceDrafts) evidenceDrafts.set(id, value);
-  $('#scope-label').value = draft.label;
-  $('#scope-brief').value = draft.brief;
-  $('#scope-cap').value = draft.cap;
-  renderDraftRows();
-  clearErrors();
-  form.hidden = Boolean(review);
-  $('#scope-review').hidden = !review;
-  $('#scope-action-status').classList.remove('error');
-  if (review) {
-    $('#scope-action-status').textContent = 'Saved fixture opened. Choose the next simulation step when you are ready.';
-    renderReview();
-  } else {
-    $('#scope-action-status').textContent = '';
-    $('#scope-review-list').replaceChildren();
-    $('#scope-event-body').replaceChildren();
-    $('#scope-event-count').textContent = '0 events';
-    for (const id of ['review-title', 'review-brief', 'scope-total', 'scope-approved', 'scope-captured', 'scope-remaining', 'scope-unallocated']) {
-      $('#' + id).textContent = '';
-    }
-    $('#review-step').removeAttribute('aria-current');
-    $('#simulate-step').removeAttribute('aria-current');
-    $('#draft-step').setAttribute('aria-current', 'step');
-  }
-  $('#scope-file-origin').hidden = false;
-  fileStatus('Saved workspace opened. The file records a fictional fixture; it does not verify real approvals or payments.');
-  (review ? $('#review-title') : $('#scope-label')).focus();
 });

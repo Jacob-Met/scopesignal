@@ -1,0 +1,83 @@
+{
+  "schema": "scopesignal.workspace-root-source-review.v1",
+  "reviewer": "7a9310dad255/root",
+  "reviewed_at": "2026-10-08T11:20:15.503Z",
+  "source": "/Users/me/scopesignal-workspace-7a9310dad255/source",
+  "head": "26cccca57bdc477b1d6547f45a559c17880c5d3e",
+  "tree": "cdf07b654e87ccb109c810e9a80edb249f578fe9",
+  "parent": "8e50105fdc1645720e64ca83738727473c9f6acf",
+  "source_files_verified": 205,
+  "existing_leaves": 203,
+  "unchanged_existing_leaves": 199,
+  "changed_existing": [
+    "README.md",
+    "scope-workspace.css",
+    "scope.html",
+    "src/scope-workspace.mjs"
+  ],
+  "added": [
+    "src/scope-workspace-record.mjs",
+    "tests/scope-workspace-record.test.mjs"
+  ],
+  "existing_controller_byte_exact_after_reversing_only_file_import_hooks_and_addition": true,
+  "pins": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a2b5c19d31dfccebe3988107aa18d441a788f59",
+      "bytes": 13997,
+      "sha256": "4266f4ab795f67519f560b0d315dc47cd812c93355ae25dc94c6c38f343483b3"
+    },
+    {
+      "path": "scope-workspace.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b962b49f408075877bbb8ff48c494b0fce111c7",
+      "bytes": 5040,
+      "sha256": "01f9a70a6f0e4f6be16d693e6a63459fd13c2944aa9d6882b93c23e74418416b"
+    },
+    {
+      "path": "scope.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aaa7a07eccb16bf5897181f58e29876130d2d2a8",
+      "bytes": 7554,
+      "sha256": "eb342ac10d6f09444b912171e5f03fed95ea90b7a42295c71d5390a533a3c546"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49905d00ede9a2b22a3fbdef12d09a2374f47716",
+      "bytes": 7018,
+      "sha256": "db5f4a99f5279127d4940904ff184f3e1d15b6df940807169a7253239f9212dd"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b10d8ef5f664c21717b73c3adf29586eaba9b5e6",
+      "bytes": 17960,
+      "sha256": "a0690095f0806a69564dc4349508fd2332c03076d827c9e5a7a0c9f9405df7b1"
+    },
+    {
+      "path": "tests/scope-workspace-record.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5606ab99933f9665634971662d41c4b5ca93ec83",
+      "bytes": 13625,
+      "sha256": "c3c194289a14c0786473ff73f625f40a6a7cfccd09883ea6733dffc37c707905"
+    }
+  ],
+  "source_review": [
+    "The codec admits exact envelope fields and constants, UTF-8 byte limits, bounded draft strings/checkpoints and finite bounded event counts. Draft-stage incomplete amount strings remain editable and must still pass unchanged plan validation before review.",
+    "Restoration creates a private canonical review and replays only supported existing actions. Each supplied event must have exactly the same scalar fields and values as the generated canonical event; current workspace state is not involved in admission.",
+    "Accepted evidence comes from recorded approval events; pending evidence belongs only to distinct unapproved checkpoints and is preserved as raw text. Saving reconstructs and compares the complete review snapshot before creating a download.",
+    "File reads are canceled by monotonically increasing request identity on replacement/cancel and all substantive form, checkpoint, evidence and lifecycle edits. Stale success and failure both return without mutating the page. Invalid UTF-8 and oversize actual bytes are refused before decode.",
+    "Opening is preview-only until explicit Replace workspace. Save during preview preserves the pending choice so the user can first keep current work. Apply assigns the already admitted isolated draft/review, restores pending evidence, renders through existing functions and focuses the relevant heading/field.",
+    "Authored strings reach textContent, textarea.value or input.value; no new HTML interpolation, network call, automatic browser storage, payment operation or source dependency is introduced. UI and guide identify unsigned fictional records without an authenticity claim.",
+    "All199 unrelated actual-parent leaves and all original controller behavior outside reviewed invalidation hooks are preserved. The canonical model, plan, ledger, fixed example exporter/viewer, and their tests are unchanged."
+  ],
+  "disposition": "Source accepted at this exact head; independent actual-browser receiving and actual-public-head gates remain separate requirements. No deployment is claimed."
+}
