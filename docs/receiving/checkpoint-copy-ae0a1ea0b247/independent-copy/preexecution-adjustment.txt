@@ -1,0 +1,1 @@
+Before the first run and before candidate implementation disclosure, the review-to-edit case uses already-trimmed untouched planned evidence. That keeps the existing owner's review normalization outside the new-copy assertion while retaining raw latest review writing. The raw-copy case still exercises whitespace and invalid fields.

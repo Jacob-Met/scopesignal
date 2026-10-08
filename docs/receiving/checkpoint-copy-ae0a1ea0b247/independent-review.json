@@ -1,0 +1,107 @@
+{
+  "schema": "scopesignal.checkpoint-copy.independent-review/1",
+  "reviewer": "ae0a1ea0b247/root",
+  "disposition": "ACCEPT",
+  "repository": "Jacob-Met/scopesignal",
+  "issue": 27,
+  "baselineCommit": "bab391c7c6fec1193e221997e4d66d89bd914cfd",
+  "acceptedProduct": [
+    {
+      "path": "src/scope-workspace.mjs",
+      "blob": "ab6d87dae1ba7cbef2d3f8e6c7ef5845307fb7a2"
+    },
+    {
+      "path": "scope.html",
+      "blob": "f94a38991065dd7322e91f7c848d51a023947408"
+    },
+    {
+      "path": "README.md",
+      "blob": "1984618e51853d447f5fd3811953dc447fc028f3"
+    }
+  ],
+  "roles": "Independent source and actual-browser receiving; reviewer did not author the product change.",
+  "originalControl": {
+    "passed": true,
+    "genuineDownloads": 1,
+    "sourceUnchanged": true,
+    "missingCopyAffordance": true,
+    "overallRunFailure": "The passing native baseline control was followed by a receiver-only zero-external-request assertion failure on the existing Google Fonts CSS request. The original source, driver, actual download and failure are preserved; baseline behavior was not rerun."
+  },
+  "candidate": {
+    "groups": 4,
+    "passed": 4,
+    "genuineDownloads": 7,
+    "pageErrors": 0,
+    "sourcePins": 10,
+    "sourceUnchanged": true,
+    "chromium": "153.0.8010.0",
+    "cases": [
+      {
+        "name": "First, middle and last copies preserve raw fields; later edits and row actions preserve independent values",
+        "result": "PASS"
+      },
+      {
+        "name": "Capacity, over-cap validation and phone keyboard focus remain native",
+        "result": "PASS"
+      },
+      {
+        "name": "Copy invalidates genuine preview and held native read before an equal-state undo",
+        "result": "PASS"
+      },
+      {
+        "name": "Latest review evidence is copied and receives native IDs without implicit approval; approval locks editing",
+        "result": "PASS"
+      }
+    ],
+    "receiptSha256": "43823a3b4590316dbab80f0393cf3cd7b93ee50f10f082d20a6994aac39df731",
+    "driverSha256": "b6e4624551cfed48a425694585868427de36a297dfb4b1356087cda76eec4a08"
+  },
+  "expectations": {
+    "sha256": "5518818711a4f87250afcc1a19cf19a52ff2bd600f25023c6fffd2eb3fd3c66d",
+    "frozenBeforeCandidateDisclosure": true
+  },
+  "visual": {
+    "imageSha256": "a844b1515cc57f55456fd01eb752626246f758f3fb04679cc6233778452dab45",
+    "viewport": [
+      390,
+      844
+    ],
+    "documentWidth": 390,
+    "accepted": true,
+    "observation": "Copied deliverable has visible focus. Labels, fields and actions are readable; actions wrap inside the viewport, disabled copy controls communicate the twelve-row limit, and there is no clipping or overlap."
+  },
+  "limits": [
+    "The exact unchanged Google Fonts CSS request is blocked: one original and four candidate contexts use installed fallback fonts. Other external requests remain a failure.",
+    "Only delivery of completed native File.arrayBuffer is held for the declared stale-read case. No application/model state was injected.",
+    "Qualification is bounded to the tested local software behavior; no hosted operation, real payment/provider, general accessibility or learning benefit is claimed."
+  ],
+  "evidencePackets": [
+    {
+      "filename": "independent-original.tar.gz",
+      "bytes": 61070,
+      "sha256": "c84f7365ebc5aa06e6f6215ad9f628a611f6e2647362cd0b1ad4341039f5991f",
+      "gitBlob": "bcd2e0a810bd0d1d1407a6eee857d49d7f46b19e",
+      "members": 32
+    },
+    {
+      "filename": "independent-final.tar.gz",
+      "bytes": 31548,
+      "sha256": "70d4b8aba656c45a09a3d382d1c93452996690abc4f111363008b735a65cd179",
+      "gitBlob": "e79b1314c8f38b38be68a5632be7172846eeb707",
+      "members": 18
+    }
+  ],
+  "sourceReview": {
+    "controllerInverse": [
+      {
+        "path": "src/scope-workspace.mjs",
+        "baselineBlob": "f57d31cf8a4e6a9a7ddc140c5c06935fe3ef5004",
+        "candidateBlob": "ab6d87dae1ba7cbef2d3f8e6c7ef5845307fb7a2",
+        "allExistingSourceLinesUnchanged": true,
+        "insertionRegions": 2,
+        "inverseExact": true
+      }
+    ],
+    "htmlAndReadme": "Only bounded copy-action usage/help additions; all native before-images and candidate blobs matched expected identities. CSS, model, ledger, file codec and exports are unchanged."
+  }
+}

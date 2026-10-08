@@ -1,0 +1,76 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "draft",
+  "draft": {
+    "label": "Capacity test",
+    "brief": "A repeated unit deliverable.",
+    "cap": "1.00",
+    "checkpoints": [
+      {
+        "title": "Unit",
+        "amount": "0.09",
+        "evidence": "A visible unit receipt."
+      },
+      {
+        "title": "Unit",
+        "amount": "0.09",
+        "evidence": "A visible unit receipt."
+      },
+      {
+        "title": "Unit",
+        "amount": "0.09",
+        "evidence": "A visible unit receipt."
+      },
+      {
+        "title": "Unit",
+        "amount": "0.09",
+        "evidence": "A visible unit receipt."
+      },
+      {
+        "title": "Unit",
+        "amount": "0.09",
+        "evidence": "A visible unit receipt."
+      },
+      {
+        "title": "Unit",
+        "amount": "0.09",
+        "evidence": "A visible unit receipt."
+      },
+      {
+        "title": "Unit",
+        "amount": "0.09",
+        "evidence": "A visible unit receipt."
+      },
+      {
+        "title": "Unit",
+        "amount": "0.09",
+        "evidence": "A visible unit receipt."
+      },
+      {
+        "title": "Unit",
+        "amount": "0.09",
+        "evidence": "A visible unit receipt."
+      },
+      {
+        "title": "Unit",
+        "amount": "0.09",
+        "evidence": "A visible unit receipt."
+      },
+      {
+        "title": "Unit",
+        "amount": "0.09",
+        "evidence": "A visible unit receipt."
+      },
+      {
+        "title": "Unit",
+        "amount": "0.09",
+        "evidence": "A visible unit receipt."
+      }
+    ]
+  },
+  "events": [],
+  "evidenceDrafts": []
+}

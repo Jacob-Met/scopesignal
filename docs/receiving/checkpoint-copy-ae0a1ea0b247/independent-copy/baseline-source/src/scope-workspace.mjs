@@ -54,12 +54,6 @@ function renderDraftRows() {
       move.disabled = direction === 'up' ? index === 0 : index === draft.checkpoints.length - 1;
       actions.append(move);
     }
-    const duplicate = element('button', 'Duplicate checkpoint', 'text-button');
-    duplicate.type = 'button';
-    duplicate.dataset.duplicate = index;
-    duplicate.setAttribute('aria-label', `Duplicate checkpoint ${index + 1}`);
-    duplicate.disabled = draft.checkpoints.length >= MAX_CHECKPOINTS;
-    actions.append(duplicate);
     const remove = element('button', 'Remove checkpoint', 'text-button scope-remove');
     remove.type = 'button';
     remove.dataset.remove = index;
@@ -244,22 +238,6 @@ $('#scope-add').addEventListener('click', () => {
   $(`#draft-${draft.checkpoints.length - 1}-title`).focus();
 });
 $('#scope-draft-list').addEventListener('click', event => {
-  const duplicate = event.target.closest('button[data-duplicate]');
-  if (duplicate) {
-    if (duplicate.disabled || review || form.hidden) return;
-    const index = Number(duplicate.dataset.duplicate);
-    const current = readDraft();
-    if (!Number.isInteger(index) || index < 0 || index >= current.checkpoints.length
-      || current.checkpoints.length >= MAX_CHECKPOINTS) return;
-    workspaceChanged();
-    current.checkpoints.splice(index + 1, 0, { ...current.checkpoints[index] });
-    draft = current;
-    clearErrors();
-    renderDraftRows();
-    $(`#draft-${index + 1}-title`).focus();
-    $('#scope-order-status').textContent = `Checkpoint ${index + 1} duplicated at position ${index + 2} of ${draft.checkpoints.length}.`;
-    return;
-  }
   const move = event.target.closest('button[data-move]');
   if (move) {
     if (move.disabled || review || form.hidden) return;

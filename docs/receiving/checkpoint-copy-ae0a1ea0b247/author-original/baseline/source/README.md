@@ -57,10 +57,7 @@ seven-event Northstar example remains available from the return link.
 1. Edit the project name, brief, USD cap, and each checkpoint's deliverable,
    amount, and planned acceptance evidence. Add or remove checkpoints before
    review, and use **Move up** or **Move down** to arrange their order. Each
-   checkpoint's three fields move together, preserving unfinished input. Choose
-   **Duplicate checkpoint** to insert an independent copy immediately after that
-   row and focus its deliverable for editing. Copying preserves unfinished field
-   values and is available while the draft has fewer than 12 checkpoints. The
+   checkpoint's three fields move together, preserving unfinished input. The
    controls also work with Tab and Enter or Space; movement announces the new
    position and keeps focus with the moved checkpoint. The plan supports 1–12
    checkpoints. All amounts must be positive,
