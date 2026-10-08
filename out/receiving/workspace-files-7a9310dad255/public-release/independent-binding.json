@@ -1,0 +1,203 @@
+{
+  "at": "2026-10-08T13:18:05.115Z",
+  "receiver": "7a9310dad255/root",
+  "source_merge": "8a241c9ce409fa9b22ab0bbdc339e46fd4b38525",
+  "source_tree": "7686f7568c398f522df4d32f75a98814b1c4cd1d",
+  "workflow": {
+    "id": 37774089051,
+    "head_sha": "8a241c9ce409fa9b22ab0bbdc339e46fd4b38525",
+    "name": "Fixture-mode Pages deployment",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-08T12:02:26Z",
+    "updated_at": "2026-10-08T12:03:14Z",
+    "html_url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37774089051"
+  },
+  "browser_started": "2026-10-08T12:31:34.696Z",
+  "browser_completed": "2026-10-08T12:31:48.880Z",
+  "archive": {
+    "path": "/home/jacob/hamon-7a9310dad255-production-scopesignal-public/public-release-receiving.tar.gz",
+    "bytes": 256651,
+    "sha256": "5716584d419065847e64843810ed670c467461b71b286fbcec6b3d83ab0d1c1e",
+    "git_blob": "0c3f309646bc084a3f389d7101fb2ba626b19844",
+    "files": 66,
+    "directory_members": 11
+  },
+  "manifest": {
+    "path": "/home/jacob/hamon-7a9310dad255-production-scopesignal-public/publication-packet/publication-manifest.json",
+    "sha256": "3c5520df48b03ce49316fb7cc9f9fbdb55ae1519ae5591717ce52168dca76355",
+    "listed_files": 65
+  },
+  "all_manifest_and_archive_bytes_verified": true,
+  "twenty_served_sources_bound_to_authoritative_git": [
+    {
+      "path": "app.mjs",
+      "git_blob": "7398ab71912a6e5e55a1da8ccef3f8fdee82c135",
+      "sha256": "a33c3519e59445e4ed6c19a2beec81005482e34b5e6bd396f10916cfbfd96a24",
+      "bytes": 5366
+    },
+    {
+      "path": "fixture-timeline.css",
+      "git_blob": "6fa3b725f49ef21346821cd8db599d0cd6728223",
+      "sha256": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+      "bytes": 2714
+    },
+    {
+      "path": "index.html",
+      "git_blob": "043b57fce51f0e9571c666139a654bfc36362be0",
+      "sha256": "73171545f26fd82cfaf425ada9ba59b91bd16c5e68118a92152edd9a5c62155c",
+      "bytes": 9090
+    },
+    {
+      "path": "record-view.css",
+      "git_blob": "ad73b8678228eacdbd7ddf36d56c573b2fc34e4a",
+      "sha256": "71345c822fdf74c7160eb5aa09675fac19abe24603137a75d7431397eb59768d",
+      "bytes": 6493
+    },
+    {
+      "path": "record.html",
+      "git_blob": "5718956e264ba46e699d21e2c04d54d4ddd14b5d",
+      "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4",
+      "bytes": 2461
+    },
+    {
+      "path": "scope-workspace.css",
+      "git_blob": "2b962b49f408075877bbb8ff48c494b0fce111c7",
+      "sha256": "01f9a70a6f0e4f6be16d693e6a63459fd13c2944aa9d6882b93c23e74418416b",
+      "bytes": 5040
+    },
+    {
+      "path": "scope.html",
+      "git_blob": "aaa7a07eccb16bf5897181f58e29876130d2d2a8",
+      "sha256": "eb342ac10d6f09444b912171e5f03fed95ea90b7a42295c71d5390a533a3c546",
+      "bytes": 7554
+    },
+    {
+      "path": "src/agents.mjs",
+      "git_blob": "ae1141b4f45ac8a064aa684fdcf47e938daf085d",
+      "sha256": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+      "bytes": 1599
+    },
+    {
+      "path": "src/fixture-record.mjs",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "bytes": 1615
+    },
+    {
+      "path": "src/fixture-timeline-view.mjs",
+      "git_blob": "780e12706ee16ebcbf87692b7a21681c4722092d",
+      "sha256": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+      "bytes": 3336
+    },
+    {
+      "path": "src/fixture-timeline.mjs",
+      "git_blob": "b686daaf49b53c44a06f4be8d9ef878886acf57e",
+      "sha256": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+      "bytes": 3054
+    },
+    {
+      "path": "src/ledger.mjs",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "bytes": 12684
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "bytes": 1959
+    },
+    {
+      "path": "src/record-reader.mjs",
+      "git_blob": "e6f69a87605b9808058a4e46df6b923ebb22c9dd",
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8",
+      "bytes": 5111
+    },
+    {
+      "path": "src/record-view.mjs",
+      "git_blob": "08dbca153a600bf7ff6b41fb378b86b62422925f",
+      "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f",
+      "bytes": 8786
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "bytes": 6794
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "git_blob": "49905d00ede9a2b22a3fbdef12d09a2374f47716",
+      "sha256": "db5f4a99f5279127d4940904ff184f3e1d15b6df940807169a7253239f9212dd",
+      "bytes": 7018
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "git_blob": "b10d8ef5f664c21717b73c3adf29586eaba9b5e6",
+      "sha256": "a0690095f0806a69564dc4349508fd2332c03076d827c9e5a7a0c9f9405df7b1",
+      "bytes": 17960
+    },
+    {
+      "path": "src/workers-ai.mjs",
+      "git_blob": "7951c2f09b7063bd481d3391ae914d6066d2b241",
+      "sha256": "d69676fceb4a3782e6eaa7edcff4d5a4d1b7d89fc0d4e642d3bdca6e079a938e",
+      "bytes": 3525
+    },
+    {
+      "path": "styles.css",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "bytes": 9444
+    }
+  ],
+  "actual_browser_runtime_responses": 24,
+  "browser_groups": [
+    {
+      "name": "desktop.unfinished_actual_download_preview_cancel_apply",
+      "passed": true
+    },
+    {
+      "name": "desktop.authored_mixed_review_and_real_restore",
+      "passed": true
+    },
+    {
+      "name": "desktop.next_explicit_action_and_frozen_model_equivalence",
+      "passed": true
+    },
+    {
+      "name": "public.source_delivery_errors_and_network_boundary",
+      "passed": true
+    }
+  ],
+  "downloads": [
+    {
+      "path": "desktop-unfinished-draft.json",
+      "bytes": 587,
+      "sha256": "87b3c83d01dfd1b1752cba21566e23115653df1933fcb147015078700b515439"
+    },
+    {
+      "path": "desktop-review-unknown.json",
+      "bytes": 3293,
+      "sha256": "4adf5ec896a243110fed8b386954873e0c37d0312fbe7a7ecb9beca3128f69f2"
+    },
+    {
+      "path": "desktop-review-reconciled.json",
+      "bytes": 3528,
+      "sha256": "5d349835049421b9ba633fcd6d3ac6823f8df73fd0a61afb6daea1143b719fd2"
+    }
+  ],
+  "native_browser_receipt_sha256": "f68aeb6b31f647840eb4f2753fb9a17eb7c2e46735d820b096a7d0b555dd1f67",
+  "screenshots_inspected": [
+    "desktop-unfinished-preview.png",
+    "desktop-unknown-restored.png"
+  ],
+  "visual_observation": "Replacement preview and Cancel preserve the existing form; restored review shows literal evidence, unknown capture/explicit lookup, approved counts and exact simulated amounts. Existing font requests were blocked, as recorded. Screenshots are viewport captures, not new layout qualification.",
+  "scope": "Historical actual-public release receiving at the recorded time for source8a; current branch advanced later. No rerun, provider/live-payment claim, workflow change or application mutation.",
+  "failures_preserved": [
+    "Chromium Snap isolated-profile SingletonLock failure before any page",
+    "Chromium --version wrapper timeout before any page"
+  ],
+  "readme_sha256": "039e6792d2c216ad2920f48cfdb71f85d1002ab2e6d73573bb861950b83a1bd2",
+  "public_input_sha256": "2eddba639023bee3a753c5fc6f287321aec5fae3d6fa5a2343abb099798717e0"
+}
