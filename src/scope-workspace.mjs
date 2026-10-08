@@ -1,3 +1,4 @@
+import { mountCheckpointImport } from './scope-checkpoint-import-ui.mjs';
 import { createDraftRemovalRecovery } from './scope-draft-removal.mjs';
 import { mountScopeHistory } from './scope-history-view.mjs';
 import { createScopeReviewDocument, SCOPE_REVIEW_FILENAME } from './scope-review-export.mjs';
@@ -425,6 +426,7 @@ function cancelOpen(message = '') {
 }
 
 function workspaceChanged() {
+  checkpointImport.retire();
   if (readingWorkspace || pendingWorkspace || chooserWorkspace) {
     cancelOpen('Your workspace changed. Choose the saved file again when you are ready to replace it.');
   }
@@ -554,6 +556,7 @@ $('#scope-open-apply').addEventListener('click', () => {
   if (!pendingWorkspace || !currentOpen(pendingWorkspace.request)) return;
   const next = pendingWorkspace.admitted;
   cancelOpen();
+  checkpointImport.retire();
   clearDraftRemoval();
   draft = structuredClone(next.draft);
   review = next.review;
@@ -585,4 +588,29 @@ $('#scope-open-apply').addEventListener('click', () => {
   $('#scope-file-origin').hidden = false;
   fileStatus('Saved workspace opened. The file records a fictional fixture; it does not verify real approvals or payments.');
   (review ? $('#review-title') : $('#scope-label')).focus();
+});
+
+
+const checkpointImport = mountCheckpointImport({
+  root: $('#scope-checkpoint-import'),
+  getCurrent: () => ({
+    editable: !review && !form.hidden,
+    value: workspaceValue(),
+    count: readDraft().checkpoints.length
+  }),
+  append: checkpoints => {
+    if (review || form.hidden) throw new Error('Return to an editable draft before adding checkpoints.');
+    const current = readDraft();
+    if (current.checkpoints.length + checkpoints.length > MAX_CHECKPOINTS) {
+      throw new Error('The draft can contain at most 12 checkpoints.');
+    }
+    const first = current.checkpoints.length;
+    clearDraftRemoval();
+    workspaceChanged();
+    current.checkpoints.push(...checkpoints);
+    draft = current;
+    clearErrors();
+    renderDraftRows();
+    $(`#draft-${first}-title`).focus();
+  }
 });
