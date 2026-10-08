@@ -1,0 +1,111 @@
+--- a/src/scope-workspace.mjs
++++ b/src/scope-workspace.mjs
+@@ -1,3 +1,4 @@
++import { mountScopeHistory } from './scope-history-view.mjs';
+ import { createScopeReviewDocument, SCOPE_REVIEW_FILENAME } from './scope-review-export.mjs';
+ import { createScopeRevisionDraft, SCOPE_REVISION_FILENAME } from './scope-revision-draft.mjs';
+ import { MAX_CHECKPOINTS, draftFromFixture, draftBudget, validateScopeDraft, createScopeReview, formatUSD as money } from './scope-plan.mjs';
+@@ -9,6 +10,7 @@
+ let draft = draftFromFixture();
+ let review = null;
+ const evidenceDrafts = new Map();
++const scopeHistory = mountScopeHistory($('#scope-history'));
+ 
+ function element(tag, text, className) {
+   const node = document.createElement(tag);
+@@ -33,6 +35,7 @@
+ }
+ 
+ function renderDraftRows() {
++  scopeHistory.clear();
+   const list = $('#scope-draft-list');
+   list.replaceChildren();
+   draft.checkpoints.forEach((cp, index) => {
+@@ -230,6 +233,7 @@
+     );
+     body.append(row);
+   }
++  scopeHistory.update(() => encodeScopeWorkspace({ draft, review, evidenceDrafts }));
+ }
+ 
+ $('#scope-label').value = draft.label;
+--- a/scope.html
++++ b/scope.html
+@@ -8,6 +8,7 @@
+   <title>Build a fixture scope — ScopeSignal</title>
+   <link rel="stylesheet" href="./styles.css">
+   <link rel="stylesheet" href="./scope-workspace.css">
++  <link rel="stylesheet" href="./scope-history.css">
+   <script type="module" src="./src/scope-workspace.mjs"></script>
+ </head>
+ <body>
+@@ -87,6 +88,36 @@
+         <p class="scope-help">These are simulated events for this scope, not payment evidence. Lost responses remain unknown until you simulate a transaction lookup.</p>
+         <div class="table-wrap"><table><caption class="sr-only">Events recorded by explicit decisions in the authored fixture</caption><thead><tr><th scope="col">#</th><th scope="col">CHECKPOINT</th><th scope="col">EVENT</th><th scope="col">RESULT</th></tr></thead><tbody id="scope-event-body"></tbody></table></div>
+       </section>
++      <details id="scope-history" class="scope-history" hidden>
++        <summary>Inspect this scope, event by event</summary>
++        <p id="scope-history-source" class="scope-history-source"></p>
++        <p class="scope-help">Explore the recorded decisions for this authored fixture. These controls only change this historical view. They do not roll back, approve, repeat or reconcile anything in your workspace.</p>
++        <p id="scope-history-current" class="microcopy"></p>
++        <div class="scope-history-controls">
++          <label for="scope-history-event">Recorded point<select id="scope-history-event" disabled></select></label>
++          <button id="scope-history-previous" class="button button-outline" type="button" disabled>Previous event</button>
++          <button id="scope-history-next" class="button button-outline" type="button" disabled>Next event</button>
++          <button id="scope-history-latest" class="button button-outline" type="button" disabled>Latest recorded point</button>
++        </div>
++        <p id="scope-history-status" role="status" aria-live="polite" aria-atomic="true"></p>
++        <div id="scope-history-display" hidden>
++          <p id="scope-history-position"></p>
++          <h3 id="scope-history-title"></h3>
++          <p id="scope-history-description" class="scope-help"></p>
++          <div class="summary-grid" aria-label="Historical authored fixture totals">
++            <article><span>APPROVED AT THIS POINT</span><strong id="scope-history-approved"></strong></article>
++            <article><span>SIMULATED CAPTURED</span><strong id="scope-history-captured"></strong></article>
++            <article><span>ALLOCATED REMAINING</span><strong id="scope-history-remaining"></strong></article>
++            <article><span>UNALLOCATED CAP</span><strong id="scope-history-unallocated"></strong></article>
++          </div>
++          <div id="scope-history-checkpoints" class="scope-history-checkpoints"></div>
++          <details class="scope-history-event-fields">
++            <summary>Recorded event fields</summary>
++            <p class="microcopy">Sequence numbers and logical times belong to this fictional record. They are not real payment times or evidence of a human action. Pending editor notes are not historical approvals.</p>
++            <pre id="scope-history-event-json"></pre>
++          </details>
++        </div>
++      </details>
+       <p class="scope-help">Use Download revision draft above to keep the original terms for a new review. To return to the example instead, <a href="./scope.html">start a fresh fixture</a>; this clears the current in-memory plan and events.</p>
+     </section>
+     <noscript><p class="scope-errors">This interactive fixture needs JavaScript. The <a href="./index.html">example page</a> describes the payment model.</p></noscript>
+--- a/README.md
++++ b/README.md
+@@ -194,6 +194,30 @@
+ an unsigned fictional draft, with no assertion that the old approval or
+ simulated payment applies to its revised terms.
+ 
++## Inspect an authored scope's history
++
++After **Review this scope**, open **Inspect this scope, event by event** below
++the event ledger. Use the recorded-point selector, **Previous event**, **Next
++event**, or **Latest recorded point** to inspect the state before any event and
++after each recorded decision in your own plan.
++
++Each point shows every checkpoint's capture state, the amount counted then,
++planned evidence, and accepted evidence from approvals already recorded at that
++point. **Recorded event fields** reveals the exact selected fixture event.
++Pending editor notes are excluded. An unknown capture remains uncounted through
++webhook receipts until reconciliation; an ordinary pending capture can resolve
++through its receipt.
++
++Navigation changes only this panel. Current approvals, pending evidence,
++workspace downloads and a prepared file-open preview remain intact. Recording
++another decision refreshes the panel to the latest event. Editing or replacing
++the scope retires the earlier history; reopening an admitted workspace builds
++its history from that file's complete checked record. These remain unsigned,
++fictional events with logical times.
++
++See [the authored-history guide](docs/authored-scope-history.md) for behavior,
++scope boundaries and optional native browser receiving commands.
++
+ ## Download an authored scope review
+ 
+ In the authored workspace, **Download scope review** saves

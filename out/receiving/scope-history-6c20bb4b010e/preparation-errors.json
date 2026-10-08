@@ -1,0 +1,35 @@
+{
+  "schema": "scopesignal.history.preparation-errors.v1",
+  "productResultsClaimedFromFailures": false,
+  "errors": [
+    {
+      "phase": "corrected-browser-transport",
+      "message": "exec_command failed before process creation: Argument list too long (os error 7). No browser or source execution occurred.",
+      "retainedOriginalSource": true
+    },
+    {
+      "phase": "author-lifecycle-r1-retention",
+      "message": "First lifecycle execution returned output beginning with Warning and could not be parsed as JSON (Unexpected token W). Large screenshot payload exceeded the return path. No lifecycle product result is claimed from that attempt; exact source and probe remain retained. The next execution changes only result packaging.",
+      "sourceUnchangedFromCore": true
+    },
+    {
+      "phase": "materialize-reviewed-evidence",
+      "message": "ENOSPC during a new exclusive copy of a previously retained screenshot. Textual before/after receipts, source manifest and native suite files had completed.",
+      "commandExitCode": 1,
+      "stderr": "node:internal/fs/utils:349\n    throw err;\n    ^\n\nError: ENOSPC: no space left on device, write\n    at Object.writeSync (node:fs:978:3)\n    at Object.writeFileSync (node:fs:2503:26)\n    at put ([stdin]:5:175)\n    at [stdin]:16:159\n    at runScriptInThisContext (node:internal/vm:219:10)\n    at node:internal/process/execution:451:12\n    at [stdin]-wrapper:6:24\n    at runScriptInContext (node:internal/process/execution:449:60)\n    at evalFunction (node:internal/process/execution:283:30)\n    at evalTypeScript (node:internal/process/execution:295:3) {\n  errno: -28,\n  syscall: 'write',\n  code: 'ENOSPC'\n}\n\nNode.js v24.19.0\n",
+      "excludedPartial": {
+        "path": "evidence/author-lifecycle/phone-history.png",
+        "bytes": 61440,
+        "sha256": "fec1cb25db7bfcf568e7830d37a1a6b4fdb3a5e78cac9baf63d9224e1afe36db"
+      },
+      "originalComplete": {
+        "path": "/dev/shm/hamon-scopesignal-history-6c20bb4b010e-U0Z3DV/phone-history.png",
+        "bytes": 97088,
+        "sha256": "6fed022954460a90514c42ac14e78b4fa7aab6ecdaadbfe8f157055047a2e356"
+      },
+      "frozenSourceFilesRechecked": 39,
+      "sourceDrift": [],
+      "sourceManifestSha256": "3543e463d7a51da98b0b474fa85f05be773487f11dacce8528ae4aa44e5449da"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "baseline-missing",
+    "rawBytes": 23187,
+    "rawSha256": "c29053b8b3683e60f6c09f56759b8dd157eb207524450fea06287eb2df7c80ea",
+    "gzipBytes": 6245,
+    "gzipSha256": "b51cd78e8a6d8c47484e52477005e495118067fbe04e4e303a7bac35701039f3"
+  },
+  {
+    "name": "original-selector-run",
+    "rawBytes": 15648,
+    "rawSha256": "bd450ca264707639ee07e0a13a5152e4409d6dbdb5c64835f3635fa5dcb64198",
+    "gzipBytes": 4064,
+    "gzipSha256": "a1ed8ad15b3b8d39108503f9139c0a377ca59e55581f6db33ee817d96bc417d5"
+  },
+  {
+    "name": "author-core",
+    "rawBytes": 18754,
+    "rawSha256": "621ce18725bbee65e4040910657a88797c2206e371856e2eb12c57cfb019c13c",
+    "gzipBytes": 3516,
+    "gzipSha256": "8c3a69fe7f3af601c215a81fc31316cc9279264b6d34431ded7d9eb9a8a748a7"
+  },
+  {
+    "name": "author-lifecycle",
+    "rawBytes": 15977,
+    "rawSha256": "22bd2662abb7a42a84cd7dd0d61f0ccbe5a1522c4bd8f74e655fa0c822238dca",
+    "gzipBytes": 3827,
+    "gzipSha256": "662cd6fcfa6b50cf9c4d0f2c9ee7d1df7a178e00c114b655700c5924f3e0059c"
+  }
+]
