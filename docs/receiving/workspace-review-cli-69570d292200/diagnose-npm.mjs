@@ -1,0 +1,12 @@
+import { spawnSync } from 'node:child_process';
+import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+const root = resolve('docs/receiving/workspace-review-cli-69570d292200');
+const cache = resolve(root, 'npm-diagnostic-cache');
+await mkdir(cache, { recursive: true });
+const env = { ...process.env, npm_config_cache: cache };
+const relevant = Object.fromEntries(Object.entries(env).filter(([key]) => /^(TMPDIR|NODE_TEST_CONTEXT|npm_config_cache|npm_config_local_prefix|npm_config_prefix|npm_execpath|npm_node_execpath|INIT_CWD|npm_lifecycle_event|npm_lifecycle_script)$/i.test(key)));
+const child = spawnSync('npm', ['--loglevel=verbose', 'run', 'review:workspace', '--', root + '/reviewed.json', root + '/diagnostic-package.html'], { env, encoding: 'utf8', timeout: 10000 });
+await writeFile(root + '/diagnostic-npm.stdout', child.stdout ?? '');
+await writeFile(root + '/diagnostic-npm.stderr', child.stderr ?? '');
+console.log(JSON.stringify({ node: process.version, relevant, child: { status: child.status, signal: child.signal, error: child.error?.message, stdout: child.stdout, stderr: child.stderr } }, null, 2));

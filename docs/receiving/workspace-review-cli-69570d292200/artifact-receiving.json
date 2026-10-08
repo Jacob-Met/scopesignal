@@ -1,0 +1,18 @@
+{
+  "result": "PASS",
+  "unchangedNativeInputs": 52,
+  "artifacts": [
+    {
+      "name": "reviewed",
+      "outputBytes": 9039,
+      "sha256": "80e8a3043a715b994b9f41a20d7b3671f2020a6bede0981264a07bfcef7a27d0",
+      "equalsOriginalNativeExport": true
+    },
+    {
+      "name": "unfinished",
+      "outputBytes": 4546,
+      "sha256": "151ba57bf3b4869edab7db88ce930c5b9f5d9701bac4fc683e30c1fe240e6d77",
+      "equalsOriginalNativeExport": true
+    }
+  ]
+}

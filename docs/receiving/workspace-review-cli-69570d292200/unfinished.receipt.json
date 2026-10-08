@@ -1,0 +1,22 @@
+{
+  "schema": "scopesignal.scope-review-receipt",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "input": {
+    "path": "/dev/evaluation-69570d292200/scope-workspace-cli/docs/receiving/workspace-review-cli-69570d292200/unfinished.json",
+    "bytes": 435,
+    "sha256": "9b624ebe2556420b495becb703dba70012490a2dbc16d3753c43869b08815ad0"
+  },
+  "output": {
+    "path": "/dev/evaluation-69570d292200/scope-workspace-cli/docs/receiving/workspace-review-cli-69570d292200/unfinished.cli.html",
+    "bytes": 4546,
+    "sha256": "151ba57bf3b4869edab7db88ce930c5b9f5d9701bac4fc683e30c1fe240e6d77"
+  },
+  "workspace": {
+    "stage": "draft",
+    "checkpoints": 1,
+    "approved": 0,
+    "events": 0
+  }
+}

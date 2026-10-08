@@ -1,0 +1,38 @@
+✔ help and usage are explicit and create no files (461.271987ms)
+✔ reviewed history produces byte-exact existing HTML and a measured receipt in Unicode paths (179.722652ms)
+✔ unfinished fields, a UTF-8 BOM, and literal leading-dash paths use the unchanged draft exporter (79.892844ms)
+▶ admission and HTML-only refusals create no output and preserve source bytes
+  ✔ malformed (77.103492ms)
+  ✔ wrong-schema (74.888015ms)
+  ✔ forged-history (87.301201ms)
+  ✔ invalid-utf8 (72.185225ms)
+  ✔ too-large (75.099259ms)
+  ✔ html-only (79.844846ms)
+✔ admission and HTML-only refusals create no output and preserve source bytes (472.542935ms)
+✔ the exact 1 MiB input boundary is accepted and the consumed-byte hash includes JSON padding (79.468534ms)
+✔ existing output, the saved input itself, and hardlink aliases remain unchanged (266.300092ms)
+▶ existing and dangling destination symlinks are never followed or replaced
+  ✔ false (76.961198ms)
+  ✔ true (83.596631ms)
+✔ existing and dangling destination symlinks are never followed or replaced (167.859947ms)
+✔ missing and nonregular input or unusable output parents refuse before publication (420.426726ms)
+✔ input symlinks are explicitly refused (80.233461ms)
+✔ a FIFO input is refused without waiting for a writer (83.703221ms)
+✔ concurrent invocations publish exactly one complete review (132.876995ms)
+✔ the public package command returns the same physical artifact and JSON receipt (375.006321ms)
+✔ unfinished fields remain an unapproved raw draft without invented monetary totals (2.316269ms)
+✔ review uses recorded acceptance and preserves separate pending evidence and unallocated cap (4.484994ms)
+✔ every allowed first-checkpoint phase exports native current state and exact recorded fields (11.03563ms)
+✔ a completed first checkpoint does not hide a second unknown capture or count its duplicate receipt (9.175529ms)
+✔ a portable review keeps literal authored markup inert and has no executable or external resources (0.804421ms)
+✔ large valid cent amounts retain exact cents rather than rounded floating dollar values (0.636398ms)
+✔ inconsistent caller snapshots and invalid source are refused without mutating a valid prior review (1.491606ms)
+✔ HTML-normalized text is preserved by references or refused before creating a lossy document (0.77022ms)
+ℹ tests 28
+ℹ suites 0
+ℹ pass 28
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2901.919656

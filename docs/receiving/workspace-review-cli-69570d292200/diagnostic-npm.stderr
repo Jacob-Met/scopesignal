@@ -1,0 +1,28 @@
+npm verbose cli /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/npm
+npm info using npm@11.9.0
+npm info using node@v24.19.0
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+npm verbose title npm run review:workspace /dev/evaluation-69570d292200/scope-workspace-cli/docs/receiving/workspace-review-cli-69570d292200/reviewed.json /dev/evaluation-69570d292200/scope-workspace-cli/docs/receiving/workspace-review-cli-69570d292200/diagnostic-package.html
+npm verbose argv "--loglevel" "verbose" "run" "review:workspace" "--" "/dev/evaluation-69570d292200/scope-workspace-cli/docs/receiving/workspace-review-cli-69570d292200/reviewed.json" "/dev/evaluation-69570d292200/scope-workspace-cli/docs/receiving/workspace-review-cli-69570d292200/diagnostic-package.html"
+npm verbose logfile logs-max:10 dir:/root/.npm/_logs/2026-10-08T19_50_14_500Z-
+npm verbose stack Error: ENOSPC: no space left on device, write
+npm verbose stack     at Object.writeSync (node:fs:978:3)
+npm verbose stack     at [_write] (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/node_modules/fs-minipass/lib/index.js:425:12)
+npm verbose stack     at WriteStreamSync.write (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/node_modules/fs-minipass/lib/index.js:331:17)
+npm verbose stack     at LogFiles.load (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/lib/utils/log-file.js:78:25)
+npm verbose stack     at #load (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/lib/npm.js:180:43)
+npm verbose stack     at async Npm.load (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/lib/npm.js:81:14)
+npm verbose stack     at async module.exports (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/lib/cli/entry.js:35:37)
+npm error code ENOSPC
+npm error syscall write
+npm error errno -28
+npm error nospc ENOSPC: no space left on device, write
+npm error nospc There appears to be insufficient space on your system to finish.
+npm error nospc Clear up some disk space and try again.
+npm verbose cwd /dev/evaluation-69570d292200/scope-workspace-cli
+npm verbose os Linux 6.18.44
+npm verbose node v24.19.0
+npm verbose npm  v11.9.0
+npm verbose exit -28
+npm verbose code -28
+npm error A complete log of this run can be found in: /root/.npm/_logs/2026-10-08T19_50_14_500Z-debug-0.log

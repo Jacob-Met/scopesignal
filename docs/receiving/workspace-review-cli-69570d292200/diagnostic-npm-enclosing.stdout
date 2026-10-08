@@ -1,0 +1,21 @@
+{
+  "node": "v24.19.0",
+  "relevant": {
+    "npm_node_execpath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "npm_config_local_prefix": "/dev/evaluation-69570d292200/scope-workspace-cli",
+    "TMPDIR": "/dev/evaluation-69570d292200/tmp",
+    "npm_config_prefix": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node",
+    "npm_config_cache": "/dev/evaluation-69570d292200/scope-workspace-cli/docs/receiving/workspace-review-cli-69570d292200/npm-diagnostic-cache",
+    "npm_lifecycle_script": "\"node\"",
+    "npm_lifecycle_event": "npx",
+    "NPM_CONFIG_CACHE": "/root/.npm",
+    "npm_execpath": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/bin/npm-cli.js",
+    "INIT_CWD": "/dev/evaluation-69570d292200/scope-workspace-cli"
+  },
+  "child": {
+    "status": 228,
+    "signal": null,
+    "stdout": "",
+    "stderr": "npm verbose cli /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/npm\nnpm info using npm@11.9.0\nnpm info using node@v24.19.0\nnpm warn Unknown env config \"http-proxy\". This will stop working in the next major version of npm.\nnpm verbose title npm run review:workspace /dev/evaluation-69570d292200/scope-workspace-cli/docs/receiving/workspace-review-cli-69570d292200/reviewed.json /dev/evaluation-69570d292200/scope-workspace-cli/docs/receiving/workspace-review-cli-69570d292200/diagnostic-package.html\nnpm verbose argv \"--loglevel\" \"verbose\" \"run\" \"review:workspace\" \"--\" \"/dev/evaluation-69570d292200/scope-workspace-cli/docs/receiving/workspace-review-cli-69570d292200/reviewed.json\" \"/dev/evaluation-69570d292200/scope-workspace-cli/docs/receiving/workspace-review-cli-69570d292200/diagnostic-package.html\"\nnpm verbose logfile logs-max:10 dir:/root/.npm/_logs/2026-10-08T19_50_14_500Z-\nnpm verbose stack Error: ENOSPC: no space left on device, write\nnpm verbose stack     at Object.writeSync (node:fs:978:3)\nnpm verbose stack     at [_write] (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/node_modules/fs-minipass/lib/index.js:425:12)\nnpm verbose stack     at WriteStreamSync.write (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/node_modules/fs-minipass/lib/index.js:331:17)\nnpm verbose stack     at LogFiles.load (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/lib/utils/log-file.js:78:25)\nnpm verbose stack     at #load (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/lib/npm.js:180:43)\nnpm verbose stack     at async Npm.load (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/lib/npm.js:81:14)\nnpm verbose stack     at async module.exports (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/lib/node_modules/npm/lib/cli/entry.js:35:37)\nnpm error code ENOSPC\nnpm error syscall write\nnpm error errno -28\nnpm error nospc ENOSPC: no space left on device, write\nnpm error nospc There appears to be insufficient space on your system to finish.\nnpm error nospc Clear up some disk space and try again.\nnpm verbose cwd /dev/evaluation-69570d292200/scope-workspace-cli\nnpm verbose os Linux 6.18.44\nnpm verbose node v24.19.0\nnpm verbose npm  v11.9.0\nnpm verbose exit -28\nnpm verbose code -28\nnpm error A complete log of this run can be found in: /root/.npm/_logs/2026-10-08T19_50_14_500Z-debug-0.log\n"
+  }
+}

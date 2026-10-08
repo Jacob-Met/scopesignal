@@ -1,0 +1,88 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "review",
+  "draft": {
+    "label": "Harbor wayfinding — 李",
+    "brief": "Compare the north and south routes.\nRetain literal <sample> text.",
+    "cap": "920.47",
+    "checkpoints": [
+      {
+        "title": "Route sketches",
+        "amount": "231.19",
+        "evidence": "Two labeled planned alternatives"
+      },
+      {
+        "title": "Pocket guide",
+        "amount": "517.03",
+        "evidence": "Readable planned field guide"
+      }
+    ]
+  },
+  "events": [
+    {
+      "seq": 1,
+      "type": "checkpoint.approved",
+      "at": "T+001",
+      "checkpointId": "scope-1",
+      "approver": "human-reviewer",
+      "acceptedEvidence": "Accepted north-route evidence — ✓"
+    },
+    {
+      "seq": 2,
+      "type": "paypal.order.created",
+      "at": "T+002",
+      "checkpointId": "scope-1",
+      "orderId": "SANDBOX-SCOPE-1",
+      "amount": 23119,
+      "currency": "USD",
+      "environment": "sandbox"
+    },
+    {
+      "seq": 3,
+      "type": "paypal.capture.requested",
+      "at": "T+003",
+      "checkpointId": "scope-1",
+      "orderId": "SANDBOX-SCOPE-1",
+      "environment": "sandbox"
+    },
+    {
+      "seq": 4,
+      "type": "paypal.capture.response_lost",
+      "at": "T+004",
+      "checkpointId": "scope-1",
+      "orderId": "SANDBOX-SCOPE-1",
+      "outcome": "unknown"
+    },
+    {
+      "seq": 5,
+      "type": "paypal.webhook.received",
+      "at": "T+005",
+      "checkpointId": "scope-1",
+      "eventId": "WH-SCOPE-1",
+      "captureId": "CAP-SCOPE-1",
+      "duplicate": false,
+      "amount": 23119,
+      "currency": "USD"
+    },
+    {
+      "seq": 6,
+      "type": "paypal.webhook.received",
+      "at": "T+006",
+      "checkpointId": "scope-1",
+      "eventId": "WH-SCOPE-1",
+      "captureId": "CAP-SCOPE-1",
+      "duplicate": true,
+      "amount": 23119,
+      "currency": "USD"
+    }
+  ],
+  "evidenceDrafts": [
+    {
+      "checkpointId": "scope-2",
+      "text": "Pending guide note\nNot an approval"
+    }
+  ]
+}

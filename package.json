@@ -6,7 +6,8 @@
   "description": "Fixture-first acceptance checkpoints and auditable Sandbox milestone payments",
   "scripts": {
     "test": "node --test",
-    "serve": "node scripts/serve.mjs"
+    "serve": "node scripts/serve.mjs",
+    "review:workspace": "node scripts/review-workspace.mjs"
   },
   "engines": { "node": ">=24" }
 }

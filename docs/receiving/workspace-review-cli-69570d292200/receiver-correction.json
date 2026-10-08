@@ -1,0 +1,14 @@
+{
+  "kind": "receiver-only correction",
+  "originalTestBlob": "be59b23aa67061e69583d48a1d045fa3fd2c596f",
+  "observations": [
+    "Direct node focused run passed 28/28 with the original receiver.",
+    "Unqualified default-cache npm test exited228 with empty stdout/stderr.",
+    "Owned lowercase-cache npm test passed202/203; nested npm was the only failure, exit228 with empty stdout/stderr.",
+    "Verbose nested npm diagnostic reports ENOSPC during npm LogFiles.load; inherited uppercase NPM_CONFIG_CACHE selected the full shared filesystem despite a lowercase owned-cache setting.",
+    "Receiver now removes case variants before setting its private cache and invokes the installed npm JavaScript entry with Node, avoiding a shell-dependent Windows .cmd launch.",
+    "No maintained CLI, codec, exporter, fixture, limit, assertion, or expected HTML changed."
+  ],
+  "before": "  const result = spawnSync(process.platform === 'win32' ? 'npm.cmd' : 'npm', ['run', '--silent', 'review:workspace', '--', input, output], {\n    cwd: repository, encoding: 'utf8', timeout: 10000,\n    env: { ...process.env, npm_config_cache: join(directory, 'npm-cache') },\n    shell: process.platform === 'win32'\n  });",
+  "after": "  // npm run may inherit both uppercase and lowercase cache settings. Retire\n  // both spellings before supplying this test's private cache.\n  const env = Object.fromEntries(Object.entries(process.env).filter(([key]) => key.toLowerCase() !== 'npm_config_cache'));\n  env.npm_config_cache = join(directory, 'npm-cache');\n  const npmCli = process.env.npm_execpath ?? resolve(dirname(process.execPath),\n    process.platform === 'win32' ? 'node_modules/npm/bin/npm-cli.js' : '../lib/node_modules/npm/bin/npm-cli.js');\n  const result = spawnSync(process.execPath, [npmCli, 'run', '--silent', 'review:workspace', '--', input, output], {\n    cwd: repository, encoding: 'utf8', timeout: 10000, env\n  });"
+}
