@@ -1,0 +1,47 @@
+browserType.launch: Target page, context or browser has been closed
+Browser logs:
+Chromium sandboxing failed!
+================================
+To avoid the sandboxing issue, do either of the following:
+  - (preferred): Configure your environment to support sandboxing
+  - (alternative): Launch Chromium without sandbox using 'chromiumSandbox: false' option
+================================
+
+Call log:
+[2m  - <launching> /home/jacob/.cache/puppeteer/chrome/linux-154.0.8037.57/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --disable-background-networking --disable-sync --no-first-run --user-data-dir=/tmp/playwright_chromiumdev_profile-Nqypzq --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=3865571[22m
+[2m  - [pid=3865571][err] [3865571:3865571:1008/171621.768504:FATAL:content/browser/zygote_host/zygote_host_impl_linux.cc:129] No usable sandbox! If you are running on Ubuntu 23.10+ or another Linux distro that has disabled unprivileged user namespaces with AppArmor, see https://chromium.googlesource.com/chromium/src/+/main/docs/security/apparmor-userns-restrictions.md. Otherwise see https://chromium.googlesource.com/chromium/src/+/main/docs/linux/suid_sandbox_development.md for more information on developing with the (older) SUID sandbox. If you want to live dangerously and need an immediate workaround, you can try using --no-sandbox.[22m
+[2m  - [pid=3865571][err] Received signal 6[22m
+[2m  - [pid=3865571][err] #0 0x6463b681ee73 (/home/jacob/.cache/puppeteer/chrome/linux-154.0.8037.57/chrome-linux64/chrome+0x696be72)[22m
+[2m  - [pid=3865571][err] #1 0x6463bb69d894 (/home/jacob/.cache/puppeteer/chrome/linux-154.0.8037.57/chrome-linux64/chrome+0xb7ea893)[22m
+[2m  - [pid=3865571][err] #2 0x70802be45cb0 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x45caf)[22m
+[2m  - [pid=3865571][err] #3 0x70802be45b7e (/usr/lib/x86_64-linux-gnu/libc.so.6+0x45b7d)[22m
+[2m  - [pid=3865571][err] #4 0x70802be288ec (/usr/lib/x86_64-linux-gnu/libc.so.6+0x288eb)[22m
+[2m  - [pid=3865571][err] #5 0x6463bb694155 (/home/jacob/.cache/puppeteer/chrome/linux-154.0.8037.57/chrome-linux64/chrome+0xb7e1154)[22m
+[2m  - [pid=3865571][err] #6 0x6463bb6554ad (/home/jacob/.cache/puppeteer/chrome/linux-154.0.8037.57/chrome-linux64/chrome+0xb7a24ac)[22m
+[2m  - [pid=3865571][err] #7 0x6463bb65543e (/home/jacob/.cache/puppeteer/chrome/linux-154.0.8037.57/chrome-linux64/chrome+0xb7a243d)[22m
+[2m  - [pid=3865571][err] #8 0x6463b6560293 (/home/jacob/.cache/puppeteer/chrome/linux-154.0.8037.57/chrome-linux64/chrome+0x66ad292)[22m
+[2m  - [pid=3865571][err] #9 0x6463b5ad38d9 (/home/jacob/.cache/puppeteer/chrome/linux-154.0.8037.57/chrome-linux64/chrome+0x5c208d8)[22m
+[2m  - [pid=3865571][err] #10 0x6463b57d89cb (/home/jacob/.cache/puppeteer/chrome/linux-154.0.8037.57/chrome-linux64/chrome+0x59259ca)[22m
+[2m  - [pid=3865571][err] #11 0x6463ba8307f8 (/home/jacob/.cache/puppeteer/chrome/linux-154.0.8037.57/chrome-linux64/chrome+0xa97d7f7)[22m
+[2m  - [pid=3865571][err] #12 0x6463b5a19ae3 (/home/jacob/.cache/puppeteer/chrome/linux-154.0.8037.57/chrome-linux64/chrome+0x5b66ae2)[22m
+[2m  - [pid=3865571][err] #13 0x6463b5a18f20 (/home/jacob/.cache/puppeteer/chrome/linux-154.0.8037.57/chrome-linux64/chrome+0x5b65f1f)[22m
+[2m  - [pid=3865571][err] #14 0x70802be2a601 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x2a600)[22m
+[2m  - [pid=3865571][err] #15 0x70802be2a718 (/usr/lib/x86_64-linux-gnu/libc.so.6+0x2a717)[22m
+[2m  - [pid=3865571][err] #16 0x6463b6afe0aa (/home/jacob/.cache/puppeteer/chrome/linux-154.0.8037.57/chrome-linux64/chrome+0x6c4b0a9)[22m
+[2m  - [pid=3865571][err]   r8: 0000000000000016  r9: 0000000000000001 r10: 000024b0000dc269 r11: 0000000000000246[22m
+[2m  - [pid=3865571][err]  r12: 0000000000000006 r13: 000024b0000dc000 r14: 0000000000000269 r15: 00007ffd8d32d6f8[22m
+[2m  - [pid=3865571][err]   di: 00000000003afbe3  si: 00000000003afbe3  bp: 00007ffd8d32d060  bx: 00000000003afbe3[22m
+[2m  - [pid=3865571][err]   dx: 0000000000000006  ax: 0000000000000000  cx: 000070802bea61ac  sp: 00007ffd8d32d020[22m
+[2m  - [pid=3865571][err]   ip: 000070802bea61ac efl: 0000000000000246 cgf: 002b000000000033 erf: 0000000000000000[22m
+[2m  - [pid=3865571][err]  trp: 0000000000000000 msk: 0000000000000000 cr2: 0000000000000000[22m
+[2m  - [pid=3865571][err] [end of stack trace][22m
+[2m  - [pid=3865571] <gracefully close start>[22m
+[2m  - [pid=3865571] <kill>[22m
+[2m  - [pid=3865571] <will force kill>[22m
+[2m  - [pid=3865571] <process did exit: exitCode=null, signal=SIGABRT>[22m
+[2m  - [pid=3865571] starting temporary directories cleanup[22m
+[2m  - [pid=3865571] finished temporary directories cleanup[22m
+[2m  - [pid=3865571] <gracefully close end>[22m
+
+    at /home/jacob/.local/lib/node_modules/@wonderwhy-er/desktop-commander/dist/[eval1]:4:34

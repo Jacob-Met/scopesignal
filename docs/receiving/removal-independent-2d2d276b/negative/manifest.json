@@ -1,0 +1,17 @@
+[
+  {
+    "name": "chrome.log",
+    "bytes": 354,
+    "sha256": "98aa981a3eaf5f70dc4033ea497bb5455bff27284d87fa92b8b71702648c5225"
+  },
+  {
+    "name": "mutated-scope-draft-removal.mjs",
+    "bytes": 1387,
+    "sha256": "57fc2265791963577fa1c04894717f74bcd69da4052b810aba6913911a75ac90"
+  },
+  {
+    "name": "receipt.json",
+    "bytes": 3956,
+    "sha256": "febb893f04ed9ec000ee30331b12594d9b8277a4c2dded48022afd0503baea1d"
+  }
+]
