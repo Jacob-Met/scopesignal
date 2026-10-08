@@ -1,0 +1,76 @@
+{
+  "schema": "scopesignal.removal-receiving-packet.v1",
+  "sourceCommit": "b2dccc7e6c47b3f6b5d6f49e1858725eb3a099ea",
+  "files": [
+    {
+      "path": "baseline-node24.log",
+      "bytes": 29858,
+      "sha256": "2bc6dceb580bba02a867f0976da12bcca16341e225b8f2b296eb5f841258b48c"
+    },
+    {
+      "path": "candidate-node24.log",
+      "bytes": 31250,
+      "sha256": "1e07d4afd63065311dbd505fa5856dfbe4f795a1cf2d22372ace1cabb8c69f15"
+    },
+    {
+      "path": "initial-scroll-receiver.mjs",
+      "bytes": 10599,
+      "sha256": "39a35f4f4a51290a769710eb09fa1bbb8719c2bf5f5ad6d4eef6f2a9532026d4"
+    },
+    {
+      "path": "baseline-initial-scroll-failure.json",
+      "bytes": 4309,
+      "sha256": "3c15b345e869ae425514a405d82e206dd3f985dfa4a287475a0f8899f2ba6ce1"
+    },
+    {
+      "path": "baseline-receiver.mjs",
+      "bytes": 10697,
+      "sha256": "f2b62f9086859ca6e593585c6b19bbf5a168559ec1bedf82aad51b0a23a35cf9"
+    },
+    {
+      "path": "baseline-browser.json",
+      "bytes": 4366,
+      "sha256": "679b903e0e88f53aa55643c1c693dc14de87902d1c9bae63a485513123e240b0"
+    },
+    {
+      "path": "candidate-key-receiver.mjs",
+      "bytes": 17622,
+      "sha256": "dc51df565a9b50716c0bb12352522787db18f95a3452f9ad028cc9b4f6eecf2d"
+    },
+    {
+      "path": "candidate-key-event-failure.json",
+      "bytes": 4190,
+      "sha256": "4a70e9babfccaabec50da5c9f3f6c03d368deaddc609cf5f0a57e98a0fb4382d"
+    },
+    {
+      "path": "candidate-download-receiver.mjs",
+      "bytes": 17658,
+      "sha256": "b6ec7e8d66b8585accb4e5c4f6e63b46932d6738766e3e25c63ad01715907b04"
+    },
+    {
+      "path": "candidate-download-name-failure.json",
+      "bytes": 5483,
+      "sha256": "7fb85d37b7b138631d176913b94796b2e44dfa4d766e2a6bd4be818058e801d3"
+    },
+    {
+      "path": "candidate-browser.json",
+      "bytes": 7033,
+      "sha256": "06202c82b88efdefa0843a5d8d47c5aeec970f158bd975a68dd987a789d9f074"
+    },
+    {
+      "path": "downloads/original-workspace.json",
+      "bytes": 1003,
+      "sha256": "2a9f450507f2c643923e0be6ef156664f9f6e9b162bec576b2973f21e11fe3c3"
+    },
+    {
+      "path": "downloads/removed-workspace.json",
+      "bytes": 807,
+      "sha256": "75e0728375cc77d946534ad67b8476a24becfaa1b627ecc808cc1116ef13aeb1"
+    },
+    {
+      "path": "phone.png",
+      "bytes": 32690,
+      "sha256": "749229b6a45f66bc2da3ac97c88cc79e85473e83f24d777529033e3a83d964a1"
+    }
+  ]
+}
