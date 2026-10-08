@@ -1,0 +1,55 @@
+{
+  "schema": "scopesignal.browser-receiving.v1",
+  "scope": "current-capture",
+  "at": "2026-10-08T07:31:52.318Z",
+  "node": "v26.3.0",
+  "browser": "154.0.8037.98",
+  "source": "/private/tmp/scopesignal-receiving-81ba1ed0179c/candidate-main",
+  "sourceCommit": "f62e44a323318cb3acd0188faa89ca3b9a9f6025+current-capture",
+  "origin": "http://127.0.0.1:49528",
+  "servedSha256": {
+    "app.mjs": "1c0a5aac3ddfaea69e5b40c5c464cf5066247056680dc76916d73c658490c606",
+    "index.html": "a736620791d7cbbb559904fdb2dfa762dc5395fe0a2b1ce92cfe6a8d25d917a7",
+    "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+    "src/ledger.mjs": "9a6953b0b00810a50665ef6fab2780b1de59786764fdaba4c0a273ac360717f8",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "styles.css": "59172817201e8e1ae3f5df6ea03e109a4351ad9686199917b48af99a429a608e"
+  },
+  "checks": [
+    {
+      "name": "desktop: current capture callout agrees with the reduced ledger",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: recovery reviewer describes the current resolved state",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: layout retains a usable viewport",
+      "result": "pass"
+    },
+    {
+      "name": "phone: current capture callout agrees with the reduced ledger",
+      "result": "pass"
+    },
+    {
+      "name": "phone: recovery reviewer describes the current resolved state",
+      "result": "pass"
+    },
+    {
+      "name": "phone: layout retains a usable viewport",
+      "result": "pass"
+    },
+    {
+      "name": "no browser script errors or unexpected external request attempts",
+      "result": "pass"
+    }
+  ],
+  "failures": [],
+  "pageErrors": [],
+  "externalRequests": [
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+  ],
+  "passed": true
+}

@@ -1,0 +1,28 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> scopesignal@0.1.0 test
+> node --test
+
+✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (1.955612ms)
+✔ order and capture require prior explicit human approval and order (0.408444ms)
+✔ lost response cannot be blindly captured again; reconcile is one-time (0.248854ms)
+✔ same webhook event ID is idempotent and cannot double count (0.157507ms)
+✔ reducer never counts duplicate webhook in fixture stream (0.140972ms)
+✔ role previews are explicit local rules and never claim AI output (15.922699ms)
+✔ Workers AI adapter fails closed without binding and has no paid fallback (0.463216ms)
+✔ schema validation rejects malformed model output (0.340753ms)
+✔ every shipped replay prefix presents its current reduced capture state (1.981921ms)
+✔ ordinary webhook capture does not invent a reconciliation (0.432921ms)
+✔ missing and unrecognized states do not become captured or safe-to-retry labels (0.198789ms)
+✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (2.073889ms)
+✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (0.383537ms)
+✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (0.336216ms)
+✔ pending and never-requested captures remain distinct from resolved captures (0.281063ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 132.900688

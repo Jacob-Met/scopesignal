@@ -1,0 +1,35 @@
+
+> scopesignal@0.1.0 test
+> node --test
+
+✔ approving one checkpoint preserves another pending draft, including initial line feeds (23.688625ms)
+✔ refused approval retains empty and multiline drafts across repeated rerenders (1.974125ms)
+✔ a suggestion survives approval of a different checkpoint (2.388334ms)
+✔ accepted evidence comes from its recorded event and its controls cannot edit approval (1.484ms)
+✔ literal textarea-like text is preserved without adding editors (1.289708ms)
+✔ successive approvals retain accepted evidence and count each approval once (2.513958ms)
+✔ fixture totals and explicit replay behavior remain intact (1.075708ms)
+✔ webhook rows describe receipt without claiming an unknown capture was counted (1.157333ms)
+✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (2.347083ms)
+✔ order and capture require prior explicit human approval and order (0.671958ms)
+✔ lost response cannot be blindly captured again; reconcile is one-time (0.288083ms)
+✔ same webhook event ID is idempotent and cannot double count (1.286542ms)
+✔ reducer never counts duplicate webhook in fixture stream (0.33975ms)
+✔ role previews are explicit local rules and never claim AI output (14.9905ms)
+✔ Workers AI adapter fails closed without binding and has no paid fallback (0.263333ms)
+✔ schema validation rejects malformed model output (0.118333ms)
+✔ every shipped replay prefix presents its current reduced capture state (2.452042ms)
+✔ ordinary webhook capture does not invent a reconciliation (0.216542ms)
+✔ missing and unrecognized states do not become captured or safe-to-retry labels (0.079375ms)
+✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (1.345166ms)
+✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (0.166208ms)
+✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (0.583375ms)
+✔ pending and never-requested captures remain distinct from resolved captures (0.854959ms)
+ℹ tests 23
+ℹ suites 0
+ℹ pass 23
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 159.253792

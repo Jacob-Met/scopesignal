@@ -1,0 +1,27 @@
+
+> scopesignal@0.1.0 test
+> node --test
+
+✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (1.842042ms)
+✔ order and capture require prior explicit human approval and order (0.227917ms)
+✔ lost response cannot be blindly captured again; reconcile is one-time (0.504375ms)
+✔ same webhook event ID is idempotent and cannot double count (0.24925ms)
+✔ reducer never counts duplicate webhook in fixture stream (0.164375ms)
+✔ role previews are explicit local rules and never claim AI output (23.035208ms)
+✔ Workers AI adapter fails closed without binding and has no paid fallback (0.261375ms)
+✔ schema validation rejects malformed model output (0.119625ms)
+✔ every shipped replay prefix presents its current reduced capture state (1.202333ms)
+✔ ordinary webhook capture does not invent a reconciliation (0.169ms)
+✔ missing and unrecognized states do not become captured or safe-to-retry labels (0.071042ms)
+✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (1.639334ms)
+✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (0.146166ms)
+✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (0.151667ms)
+✔ pending and never-requested captures remain distinct from resolved captures (0.07775ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 129.41675

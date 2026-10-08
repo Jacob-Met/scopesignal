@@ -15,6 +15,10 @@ npm run serve
 
 Open `http://127.0.0.1:4173`. The fixture has three $400.00 milestones, a $1,200.00 project cap, and a deterministic seven-event path. The first checkpoint is human-approved, creates a Sandbox-labeled fixture order, loses the capture response, receives the same webhook twice, and reconciles once. Captured value remains $400.00, never $800.00.
 
+The capture callout and recovery reviewer describe the current reduced ledger. After the complete replay, they show the captured outcome; the lost response remains visible in the event history. Before reconciliation, the outcome stays unknown even after the duplicate webhook. A pending request is also kept distinct from a captured outcome.
+
+Optional browser receiving checks run with `node scripts/check-browser.mjs`. They require an existing Playwright and Chromium installation; `SCOPESIGNAL_PLAYWRIGHT` may point to its entry module and `SCOPESIGNAL_CHROME` to its browser executable. The command serves this source on an ephemeral loopback port, launches fresh desktop and phone contexts, blocks external requests and writes a receipt under `out/browser-receiving/`. The existing Google Fonts stylesheet attempts are recorded and blocked, so captures use fallback fonts. `SCOPESIGNAL_CHECK_SCOPE=combined-drafts` additionally checks the separate draft-preservation and webhook-label PRs when those changes have been incorporated into the tested source.
+
 ## Payment safety model
 
 - A milestone cannot create an order until a human explicitly approves it.

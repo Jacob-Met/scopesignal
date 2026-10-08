@@ -1,0 +1,19 @@
+{
+  "sourceBase": "f62e44a323318cb3acd0188faa89ca3b9a9f6025",
+  "ownerStack": "fcce3f7d4780aa29f0e961b9b098abfbd3b804aa",
+  "currentCapturePatchSha256": "d455bee7dcc180be0d9c86c8cd526aae080d9071a8af647e908b7bbd955a0ed8",
+  "ownerAppPatchSha256": "ffb9c773a75e41ba8029908a8f6bc2516a8a2b5bfbe4fa80acdf71b3faedc751",
+  "commands": [
+    {
+      "command": "git apply --check -p2 /workspace/scratch/81ba1ed0179c/scopesignal-composition/owner-app.patch",
+      "exitCode": 0
+    },
+    {
+      "command": "git apply -p2 /workspace/scratch/81ba1ed0179c/scopesignal-composition/owner-app.patch",
+      "exitCode": 0
+    }
+  ],
+  "composedAppSha256": "5ae662e8a18ee0e603615a15f6315db274cfb81f4e0d1d6420f75103e7c57719",
+  "matchesBrowserTestedCombinedApp": true,
+  "adapterNote": "The owned draft Node DOM adapter needs the two new capture text element IDs; that adaptation exists only in the disposable composition candidate, not this default-branch contribution."
+}

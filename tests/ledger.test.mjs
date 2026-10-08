@@ -47,7 +47,8 @@ test('reducer never counts duplicate webhook in fixture stream', () => {
 test('role previews are explicit local rules and never claim AI output', () => {
  assert.equal(roles.briefInterpreter().mode, 'local rule preview');
  assert.equal(roles.paymentPolicy(FIXTURE.checkpoints[0]).executable, false);
- assert.match(roles.recoveryReview(replayFixture().events).guidance, /Do not retry blindly/);
+ assert.match(roles.recoveryReview(replayFixture().events).guidance, /no uncertain capture remains/);
+ assert.match(roles.recoveryReview(replayFixture().events.slice(0, 4)).guidance, /Do not retry blindly/);
 });
 
 test('Workers AI adapter fails closed without binding and has no paid fallback', async () => {

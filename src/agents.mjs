@@ -1,4 +1,5 @@
-import { FIXTURE } from './ledger.mjs';
+import { FIXTURE, reduce } from './ledger.mjs';
+import { recoveryGuidance } from './payment-status.mjs';
 
 // Clearly separated deterministic, local-only role previews. These are rules,
 // not model outputs and never make payment decisions or approvals.
@@ -14,8 +15,7 @@ export const roles = Object.freeze({
     return { role: 'Payment policy', mode: 'local rule preview', checkpoint: checkpoint.title, rule: `No order before human approval; release only ${new Intl.NumberFormat('en-US', { style: 'currency', currency: FIXTURE.currency }).format(checkpoint.amount / 100)} after accepted evidence.`, executable: false };
   },
   recoveryReview(events) {
-    const lost = events.some(e => e.type === 'paypal.capture.response_lost');
     const dup = events.some(e => e.type === 'paypal.webhook.received' && e.duplicate);
-    return { role: 'Recovery reviewer', mode: 'local rule preview', guidance: lost ? 'Keep capture unknown. Do not retry blindly; look up the existing Sandbox transaction and reconcile once.' : 'No uncertain capture response in this replay.', duplicateWebhook: dup ? 'Duplicate event ignored by idempotency key.' : 'No duplicate webhook observed.' };
+    return { role: 'Recovery reviewer', mode: 'local rule preview', guidance: recoveryGuidance(reduce(events)), duplicateWebhook: dup ? 'Duplicate event ignored by idempotency key.' : 'No duplicate webhook observed.' };
   }
 });

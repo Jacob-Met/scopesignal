@@ -1,0 +1,118 @@
+{
+  "schema": "scopesignal.browser-receiving.v1",
+  "at": "2026-10-08T07:23:02.655Z",
+  "node": "v26.3.0",
+  "browser": "154.0.8037.98",
+  "source": "/private/tmp/scopesignal-receiving-81ba1ed0179c/baseline",
+  "sourceCommit": "fcce3f7d4780aa29f0e961b9b098abfbd3b804aa",
+  "origin": "http://127.0.0.1:64537",
+  "servedSha256": {
+    "app.mjs": "3a175cc720e16b24fd6d46efe9f30314ca04b6637d64298648f703ecc5ae1830",
+    "index.html": "2bde666d2d02c30b38c4f900ac88bc994abf0d36200dc0fc1555c8216927a44e",
+    "src/agents.mjs": "6074c2004cbb40c6a13ad7ef3e0a5b0d2606a48ff13bb513086f3130290cbfaa",
+    "src/ledger.mjs": "9a6953b0b00810a50665ef6fab2780b1de59786764fdaba4c0a273ac360717f8",
+    "styles.css": "59172817201e8e1ae3f5df6ea03e109a4351ad9686199917b48af99a429a608e"
+  },
+  "checks": [
+    {
+      "name": "desktop: current capture callout agrees with the reduced ledger",
+      "result": "fail",
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'Capture state: unknown'\n- 'Capture state: captured'\n                  ^\n"
+    },
+    {
+      "name": "desktop: recovery reviewer describes the current resolved state",
+      "result": "fail",
+      "error": "The input did not match the regular expression /no uncertain capture remains/. Input:\n\n'Keep capture unknown. Do not retry blindly; look up the existing Sandbox transaction and reconcile once.'\n"
+    },
+    {
+      "name": "desktop: pending literal draft survives another approval",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: refused approval retains its draft and recorded approvals",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: final approval preserves exact accepted evidence and one captured amount",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: explicit replay restores fixture state",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: layout retains a usable viewport",
+      "result": "pass"
+    },
+    {
+      "name": "phone: current capture callout agrees with the reduced ledger",
+      "result": "fail",
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'Capture state: unknown'\n- 'Capture state: captured'\n                  ^\n"
+    },
+    {
+      "name": "phone: recovery reviewer describes the current resolved state",
+      "result": "fail",
+      "error": "The input did not match the regular expression /no uncertain capture remains/. Input:\n\n'Keep capture unknown. Do not retry blindly; look up the existing Sandbox transaction and reconcile once.'\n"
+    },
+    {
+      "name": "phone: pending literal draft survives another approval",
+      "result": "pass"
+    },
+    {
+      "name": "phone: refused approval retains its draft and recorded approvals",
+      "result": "pass"
+    },
+    {
+      "name": "phone: final approval preserves exact accepted evidence and one captured amount",
+      "result": "pass"
+    },
+    {
+      "name": "phone: explicit replay restores fixture state",
+      "result": "pass"
+    },
+    {
+      "name": "phone: layout retains a usable viewport",
+      "result": "pass"
+    },
+    {
+      "name": "no browser script errors or external requests",
+      "result": "fail",
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap',\n+   'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap',\n+   'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap',\n+   'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap'\n+ ]\n- []\n"
+    }
+  ],
+  "failures": [
+    {
+      "name": "desktop: current capture callout agrees with the reduced ledger",
+      "result": "fail",
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'Capture state: unknown'\n- 'Capture state: captured'\n                  ^\n"
+    },
+    {
+      "name": "desktop: recovery reviewer describes the current resolved state",
+      "result": "fail",
+      "error": "The input did not match the regular expression /no uncertain capture remains/. Input:\n\n'Keep capture unknown. Do not retry blindly; look up the existing Sandbox transaction and reconcile once.'\n"
+    },
+    {
+      "name": "phone: current capture callout agrees with the reduced ledger",
+      "result": "fail",
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'Capture state: unknown'\n- 'Capture state: captured'\n                  ^\n"
+    },
+    {
+      "name": "phone: recovery reviewer describes the current resolved state",
+      "result": "fail",
+      "error": "The input did not match the regular expression /no uncertain capture remains/. Input:\n\n'Keep capture unknown. Do not retry blindly; look up the existing Sandbox transaction and reconcile once.'\n"
+    },
+    {
+      "name": "no browser script errors or external requests",
+      "result": "fail",
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap',\n+   'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap',\n+   'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap',\n+   'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap'\n+ ]\n- []\n"
+    }
+  ],
+  "pageErrors": [],
+  "externalRequests": [
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+  ],
+  "passed": false
+}
