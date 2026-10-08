@@ -1,0 +1,111 @@
+{
+  "retained_on": "hamon-thinkpad",
+  "at": "2026-10-08T17:33:56.846Z",
+  "artifacts": [
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/baseline/baseline-comparison.png",
+      "bytes": 568215,
+      "sha256": "a98e51b15774aac9e2fc7eb0046485b8463dd42d200cfe94116cee33a4978cc0"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/baseline/receipt.json",
+      "bytes": 1401,
+      "sha256": "1a8805689813fa12c6da648b14ececafa4805dacce9045a5746713ba8a6d0c23"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v1/receipt.json",
+      "bytes": 2252,
+      "sha256": "659c823cdf7b9cb6770bc2a9e1f6b260a7a41d03d1286545d0126cee8b540b21"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v1/receiver.mjs",
+      "bytes": 13816,
+      "sha256": "a9b358143c584613d350d5763fb06294c2383fe25586d03c63088e8c7da6dca7"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v2/comparison-1.html",
+      "bytes": 19579,
+      "sha256": "7bb02be2a1263cea80f04b87d958b7300f71974f70a2cb957559f27aa2f51855"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v2/comparison-2.html",
+      "bytes": 19546,
+      "sha256": "e19a347f320ae581489f057f38cfdaabbb3df25a660b1d31f66483df55be7c25"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v2/comparison-3.html",
+      "bytes": 19546,
+      "sha256": "b4ddce081473a9b796750441d3a3a40ad674d2d99aba46a4d8903529bedb055e"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v2/comparison-4.html",
+      "bytes": 19579,
+      "sha256": "c6aa12706e4ca5bfedd409be4a8031e440142d0472a06d26cc0ecad113841628"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v2/comparison-5.html",
+      "bytes": 19579,
+      "sha256": "c6aa12706e4ca5bfedd409be4a8031e440142d0472a06d26cc0ecad113841628"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v2/comparison-6.html",
+      "bytes": 18911,
+      "sha256": "2c4b773e7b18af119a284c067a9272202aebc3a89198044a276794c0276dd7f0"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v2/comparison-desktop.png",
+      "bytes": 575938,
+      "sha256": "1304566cd9e7a3608c36c11934e4b23e1051ca1944b46c7198497341735797a5"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v2/comparison-phone.png",
+      "bytes": 515780,
+      "sha256": "487458bc29349cebe1d3a5ec60655729bc22626c2dd1225f31dc47a6d673291c"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v2/first-download.json",
+      "bytes": 100,
+      "sha256": "3303b89a2bc426f38fd4c905b8c3e6353f493a7c971e5eb7a66b2882e16cbea1"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v2/receipt.json",
+      "bytes": 2156,
+      "sha256": "1bb174bd4b13a9e092216284d4618500274eecf9c63fb8a26d13e64e3c13ecfa"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v2/report-desktop.png",
+      "bytes": 787811,
+      "sha256": "6bcf338e4fb7b70c68852427aac789fe51038691e96bb73acac341cf16a03728"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v2/report-phone.png",
+      "bytes": 720509,
+      "sha256": "4565667ca6e72d4a7ddc64e429fee4a8cd8b80d3150809448fa10e7cf1c58c95"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/candidate-v2/report-print.pdf",
+      "bytes": 62817,
+      "sha256": "ba542ec59a05ccb6dda57c5f0e6d16398c635dc9880553bb61918d7e756c6d7b"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/native-tests.log",
+      "bytes": 38314,
+      "sha256": "ee6e414ad33947ee628ef4435a4b0760a7127641c423a9564541d6c425aeb158"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-export-0378a7b6-proof/msi-independent/REVIEW.md",
+      "bytes": 2288,
+      "sha256": "3093a61913e015963fa461763bed1498851bf4379439a49859d58ecb0b64acfe"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-export-0378a7b6-proof/msi-independent/all-fields.html",
+      "bytes": 32726,
+      "sha256": "dad73937b696e47e10492b69153f913940d834ca92d9133aac778873690ba273"
+    },
+    {
+      "path": "/home/jacob/scopesignal-comparison-export-0378a7b6-proof/msi-independent/receipt.json",
+      "bytes": 1602,
+      "sha256": "3f953504eb40c0aa4c7c612751fb430bb90601770fa271804dff1b6e07e4814e"
+    }
+  ]
+}

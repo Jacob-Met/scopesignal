@@ -1,0 +1,259 @@
+{
+  "preparation_failure": {
+    "attempt": "compose-authored-history.mjs",
+    "observed_exit": 1,
+    "inspection": "composition-failure-inspection.json",
+    "reason": "The initial composition guard incorrectly assumed the owned README section was appended. Read-only inspection proved it is a 29-line insertion before Revise a scope after approval; the guard stopped before any Git mutation. This attempt preserves the exact insertion and complete incoming document."
+  },
+  "recorded_at": "2026-10-08T19:05:39.964Z",
+  "worker": "chatgpt-0378a7b6b7c2/root",
+  "previous_native_commit": "698f79be43c4b38ac5658b28a46df8b9d39295c9",
+  "published_pr_head": "e018fb9c4a582cf78c0c88ff89fa75687323e83f",
+  "receiving_parent": "fb6d8771db190fc6499db0c63644ef8a016fe7b7",
+  "receiving_parent_tree": "48f0cdfd20f79ab96893de6d0adb5d23cdcab5a6",
+  "staged_source_tree": "bdc2238a44ed27c0b50594482433b7a38dc9afe1",
+  "incoming_paths": [
+    "README.md",
+    "docs/authored-scope-history.md",
+    "out/receiving/scope-history-6c20bb4b010e/README.md",
+    "out/receiving/scope-history-6c20bb4b010e/additive-edits.json",
+    "out/receiving/scope-history-6c20bb4b010e/archive-identities.json",
+    "out/receiving/scope-history-6c20bb4b010e/author-core/current-after-history.json",
+    "out/receiving/scope-history-6c20bb4b010e/author-core/current-before-history.json",
+    "out/receiving/scope-history-6c20bb4b010e/author-core/packet.json",
+    "out/receiving/scope-history-6c20bb4b010e/author-core/result.json",
+    "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/authored-replacement-draft.json",
+    "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/desktop-history.png",
+    "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/packet.json",
+    "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/pending-after-navigation.json",
+    "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/pending-before-navigation.json",
+    "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/phone-history.png",
+    "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/replacement-review-zero.json",
+    "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/result.json",
+    "out/receiving/scope-history-6c20bb4b010e/baseline-missing/current-before-history.json",
+    "out/receiving/scope-history-6c20bb4b010e/baseline-missing/packet.json",
+    "out/receiving/scope-history-6c20bb4b010e/baseline-missing/result.json",
+    "out/receiving/scope-history-6c20bb4b010e/composition-549.json",
+    "out/receiving/scope-history-6c20bb4b010e/current-composition.json",
+    "out/receiving/scope-history-6c20bb4b010e/current-composition.patch",
+    "out/receiving/scope-history-6c20bb4b010e/current-native/README.md",
+    "out/receiving/scope-history-6c20bb4b010e/current-native/packet.json",
+    "out/receiving/scope-history-6c20bb4b010e/current-native/publication-manifest.json",
+    "out/receiving/scope-history-6c20bb4b010e/current-publication-manifest.json",
+    "out/receiving/scope-history-6c20bb4b010e/independent/source-review-archive.json",
+    "out/receiving/scope-history-6c20bb4b010e/native-suite-receipt.json",
+    "out/receiving/scope-history-6c20bb4b010e/native-suite.stderr.txt",
+    "out/receiving/scope-history-6c20bb4b010e/native-suite.stdout.tap",
+    "out/receiving/scope-history-6c20bb4b010e/original-selector-run/current-before-history.json",
+    "out/receiving/scope-history-6c20bb4b010e/original-selector-run/packet.json",
+    "out/receiving/scope-history-6c20bb4b010e/original-selector-run/result.json",
+    "out/receiving/scope-history-6c20bb4b010e/preparation-errors.json",
+    "out/receiving/scope-history-6c20bb4b010e/probes/original-authored-history.cjs",
+    "out/receiving/scope-history-6c20bb4b010e/qualified-r1-to-current-inputs.patch",
+    "out/receiving/scope-history-6c20bb4b010e/source-freeze-r1.json",
+    "scope-history.css",
+    "scope.html",
+    "scripts/check-scope-history-lifecycle.cjs",
+    "scripts/check-scope-history.cjs",
+    "src/scope-history-view.mjs",
+    "src/scope-history.mjs",
+    "src/scope-workspace.mjs",
+    "tests/scope-history.test.mjs"
+  ],
+  "readme_resolution": "Preserve the complete incoming README byte for byte after removing only our exact previously accepted inserted comparison-review section.",
+  "readme_suffix_sha256": "e4bbcabe9ef9c598050de543a2c6e03b20943c07c5ac5472515d0f4b5cdcb663",
+  "accepted_non_readme_blobs": [
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/README.md",
+      "expected": "7572fb6d23e8c0fd55a9b9720c2ab01e6d92cafb",
+      "actual": "7572fb6d23e8c0fd55a9b9720c2ab01e6d92cafb"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/baseline/receipt.json",
+      "expected": "21f09a8c25a79b68dcac837f6469ab89b94c680d",
+      "actual": "21f09a8c25a79b68dcac837f6469ab89b94c680d"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v1/receipt.json",
+      "expected": "bcf83d6d9e0c33296406dd1864338e0cb99b3409",
+      "actual": "bcf83d6d9e0c33296406dd1864338e0cb99b3409"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v1/receiver.mjs",
+      "expected": "b5df4fba6dbdc63de8688518809a4ac54b42e532",
+      "actual": "b5df4fba6dbdc63de8688518809a4ac54b42e532"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-1.html",
+      "expected": "945d01ee03ee88b6a02d722619f0ae59690e1d6d",
+      "actual": "945d01ee03ee88b6a02d722619f0ae59690e1d6d"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-2.html",
+      "expected": "4f01759113844b238e4c0365bbfe5da59639d12c",
+      "actual": "4f01759113844b238e4c0365bbfe5da59639d12c"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-3.html",
+      "expected": "503e8e0a13c9b60f2f63d3733c5ee8a0af3ca845",
+      "actual": "503e8e0a13c9b60f2f63d3733c5ee8a0af3ca845"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-4.html",
+      "expected": "a2783d146642152412d9758d8ec04680952712de",
+      "actual": "a2783d146642152412d9758d8ec04680952712de"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-5.html",
+      "expected": "a2783d146642152412d9758d8ec04680952712de",
+      "actual": "a2783d146642152412d9758d8ec04680952712de"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-6.html",
+      "expected": "e3b1029d563f92ed9c5bcdb96c4a7cc3f7eae78f",
+      "actual": "e3b1029d563f92ed9c5bcdb96c4a7cc3f7eae78f"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/first-download.json",
+      "expected": "7e04894a87e7eba37e5b40c2edf974034e0e9a1f",
+      "actual": "7e04894a87e7eba37e5b40c2edf974034e0e9a1f"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/receipt.json",
+      "expected": "ef7f0638d6b47510df90896b9f39f69f5c618627",
+      "actual": "ef7f0638d6b47510df90896b9f39f69f5c618627"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/claim-before-publication.json",
+      "expected": "cc1a0fef37e499f151e21b2b4877086abece7b39",
+      "actual": "cc1a0fef37e499f151e21b2b4877086abece7b39"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/claim.json",
+      "expected": "98711bb695ba4372b1aa4491d5371e59c3772219",
+      "actual": "98711bb695ba4372b1aa4491d5371e59c3772219"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/current-parent-composition.json",
+      "expected": "96ffde62421585615c7909e6b3a7ca224b51295c",
+      "actual": "96ffde62421585615c7909e6b3a7ca224b51295c"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/independent/REVIEW.md",
+      "expected": "98c1a2a669e85bc57dd8e7f73d33bb5d55462611",
+      "actual": "98c1a2a669e85bc57dd8e7f73d33bb5d55462611"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/independent/all-fields.html",
+      "expected": "b483c36227cb882448cc0aef461697b3064d019f",
+      "actual": "b483c36227cb882448cc0aef461697b3064d019f"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/independent/receipt.json",
+      "expected": "af4840fa7d3986311b954d99da086b0f666af384",
+      "actual": "af4840fa7d3986311b954d99da086b0f666af384"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/independent/receive_msi_independent.mjs",
+      "expected": "9d329d5d1fbd01a1cab7a2a603a2f0d8c8649dcb",
+      "actual": "9d329d5d1fbd01a1cab7a2a603a2f0d8c8649dcb"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/local-node24-receipt.json",
+      "expected": "32fb6d0c7394f9d04e6abe69cb8872040e70895b",
+      "actual": "32fb6d0c7394f9d04e6abe69cb8872040e70895b"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/local-node24-tests.log",
+      "expected": "f95d23390d83cbd922dc2546bdbfe53a6ff6494b",
+      "actual": "f95d23390d83cbd922dc2546bdbfe53a6ff6494b"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/native-artifacts.json",
+      "expected": "33ee49f0fa79bbe2ce05a93fd39b2d5b0aa3f42f",
+      "actual": "33ee49f0fa79bbe2ce05a93fd39b2d5b0aa3f42f"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/native-node22-tests.log",
+      "expected": "bb7acf1fa92dbf261b097c9cec758c2e2582ee24",
+      "actual": "bb7acf1fa92dbf261b097c9cec758c2e2582ee24"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/source-preservation.json",
+      "expected": "9bf5b302df09f3fe3a7e6afbc61bd03dd30c8592",
+      "actual": "9bf5b302df09f3fe3a7e6afbc61bd03dd30c8592"
+    },
+    {
+      "path": "scope-compare.html",
+      "expected": "746a563caa69b6db5b11c01463816b5496e3ca48",
+      "actual": "746a563caa69b6db5b11c01463816b5496e3ca48"
+    },
+    {
+      "path": "scripts/check-scope-comparison-export.mjs",
+      "expected": "91e920c90a9c9abacf1ced19e4f54700903d03ff",
+      "actual": "91e920c90a9c9abacf1ced19e4f54700903d03ff"
+    },
+    {
+      "path": "src/scope-compare-ui.mjs",
+      "expected": "c8d4686b7986506c03ad3e76e1f739ec534bfa29",
+      "actual": "c8d4686b7986506c03ad3e76e1f739ec534bfa29"
+    },
+    {
+      "path": "src/scope-comparison-export.mjs",
+      "expected": "642fad5c2664b2153e2f27ebf0f50aed801d899f",
+      "actual": "642fad5c2664b2153e2f27ebf0f50aed801d899f"
+    },
+    {
+      "path": "tests/scope-comparison-export.test.mjs",
+      "expected": "af64444d190d08af72c788bb1fb1592cff4d153b",
+      "actual": "af64444d190d08af72c788bb1fb1592cff4d153b"
+    }
+  ],
+  "unchanged_parent_leaves": 567,
+  "comparison_runtime_dependencies": [
+    {
+      "path": "src/ledger.mjs",
+      "before": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "after": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    },
+    {
+      "path": "src/scope-compare-ui.mjs",
+      "before": "c8d4686b7986506c03ad3e76e1f739ec534bfa29",
+      "after": "c8d4686b7986506c03ad3e76e1f739ec534bfa29"
+    },
+    {
+      "path": "src/scope-compare.mjs",
+      "before": "f2dd4d5240131b18aa0ee86ba59dcd5a3076eb28",
+      "after": "f2dd4d5240131b18aa0ee86ba59dcd5a3076eb28"
+    },
+    {
+      "path": "src/scope-comparison-export.mjs",
+      "before": "642fad5c2664b2153e2f27ebf0f50aed801d899f",
+      "after": "642fad5c2664b2153e2f27ebf0f50aed801d899f"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "before": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "after": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "before": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "after": "d9141b3e1ac74b33f996ec6d68756ece5c190162"
+    }
+  ],
+  "native_runtime": "v22.22.1",
+  "native_tests": {
+    "tests": 175,
+    "pass": 175,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "native_test_log": {
+    "path": "/home/jacob/scopesignal-comparison-proof-0378a7b6/authored-history-integration-tests.log",
+    "sha256": "8aaab95dfc7c933d18a56271c1420b5dd684ee466355728c81d497af888f93e5"
+  },
+  "browser_receiving": "All accepted comparison-page runtime dependencies remain byte-exact. Original eight-group native browser receiving applies; deployed public receiving will follow actual integration."
+}

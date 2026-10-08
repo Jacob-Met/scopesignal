@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Scope comparison review — ScopeSignal</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f1e8;color:#18332f;font:16px/1.55 system-ui,sans-serif}main{max-width:1080px;margin:auto;padding:40px 28px}h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.1;margin:.6rem 0 1.5rem}h2{font-size:1.5rem;margin:2.4rem 0 1rem}h3{font-size:1.15rem}h4{font-size:1rem}h1,h2,h3,h4,p,dt,dd{overflow-wrap:anywhere}.eyebrow{font-size:.75rem;letter-spacing:.1em;font-weight:750}.notice{border:2px solid #18332f;background:#fffefa;padding:20px}.file-grid,.unpaired-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.file-grid h2{font-size:1.1rem;margin:0 0 .7rem}.file-name,dd,td{white-space:pre-wrap;overflow-wrap:anywhere}.file-name{font-weight:650}.card{border:1px solid #c9d5cb;border-radius:8px;padding:20px;background:#fffefa;margin:18px 0}.card h3{margin:0 0 .7rem}.pair-label{font-size:.85rem;color:#52685e}table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.9rem;margin:16px 0}caption{text-align:left;font-weight:700;margin-bottom:10px}th,td{vertical-align:top;text-align:left;padding:10px;border-bottom:1px solid #c9d5cb;overflow-wrap:anywhere}th:first-child{width:30%}thead th{background:#e7eee6}.changed th{border-left:3px solid #b24b30}.changed td{background:#fff0e5}.tag{display:block;color:#8b321e;font-size:.7rem;margin-top:4px}dt{font-weight:700;font-size:.82rem;color:#52685e}dd{margin:3px 0 12px;min-height:1.5em}.events{padding-left:24px}.events li{border-top:1px solid #c9d5cb;padding:12px 0}.events h4{margin:0 0 10px}.events dl>div{display:grid;grid-template-columns:minmax(100px,1fr) 3fr;gap:14px}.events dd{margin-top:0}footer{border-top:1px solid #c9d5cb;margin-top:32px;padding-top:18px;font-size:.85rem}@media(max-width:600px){main{padding:24px 14px}.file-grid,.unpaired-grid{grid-template-columns:1fr;gap:0}.card{padding:14px}table{font-size:.8rem}th,td{padding:7px}.events dl>div{display:block}.notice{padding:14px}}@media print{body{background:white;color:#111;font-size:10pt}main{max-width:none;padding:0}h1{font-size:24pt}h2,h3,h4,caption{break-after:avoid}thead{display:table-header-group}tr{break-inside:avoid}.card,.notice{border-color:#888;border-radius:0}.file-grid,.unpaired-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.file-grid .card{break-inside:avoid}table{font-size:9pt}.events li{break-inside:auto}.events dd{min-width:0}.tag{color:#111}.changed th{border-left-color:#555}@page{margin:16mm}}
+</style></head><body><main>
+<header><p class="eyebrow">SCOPESIGNAL · PORTABLE COMPARISON</p><h1>Scope comparison review</h1></header>
+<aside class="notice"><strong>Fictional saved workspaces · no live payments</strong><p>This unsigned review compares the two displayed files and the chosen checkpoint pairs. It does not establish identity, chronology, authorship, real human approval or payment.</p><p>All saved fields and both complete fixture event lists are included, even when the comparison screen shows only changed fields. Open this file offline and use the browser's Print command to print or save a PDF. Keep the original JSON files to reopen editable workspaces or change the pairing.</p></aside>
+<section class="file-grid" aria-label="Compared files">
+<article class="card"><h2>File A</h2><p class="file-name" data-file="a">A&#13;
+&lt;iframe&gt;.json</p><p>Editable draft · 12 checkpoints · 0 events</p></article>
+<article class="card"><h2>File B</h2><p class="file-name" data-file="b">B &amp; Ω.json</p><p>Editable draft · 12 checkpoints · 0 events</p></article>
+</section>
+<section id="project"><h2>Project and amounts</h2><p>Saved text stays literal. Unavailable values are not zero. Unallocated cap and allocated remaining are separate; pending and unknown captures count nothing.</p><table><caption>Saved project fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="stage"><th scope="row">Saved stage</th><td data-side="a">Editable draft</td><td data-side="b">Editable draft</td></tr>
+<tr data-field="label" class="changed"><th scope="row">Project name<span class="tag">Changed</span></th><td data-side="a">Study &amp; literal &quot;name&quot;</td><td data-side="b">Different file</td></tr>
+<tr data-field="brief"><th scope="row">Creative brief</th><td data-side="a">All-fields receiving
+second line</td><td data-side="b">All-fields receiving
+second line</td></tr>
+<tr data-field="capText"><th scope="row">Saved project cap text (USD)</th><td data-side="a">not yet set</td><td data-side="b">not yet set</td></tr></tbody></table><table><caption>Amounts and recorded fixture totals</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="cap"><th scope="row">Parsed project cap</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr>
+<tr data-field="allocated"><th scope="row">Allocated to milestones</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr>
+<tr data-field="unallocated"><th scope="row">Unallocated within cap</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approvals</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr>
+<tr data-field="captured"><th scope="row">Simulated captured total</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr>
+<tr data-field="remaining"><th scope="row">Allocated remaining</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr></tbody></table></section>
+<section id="pairing"><h2>Chosen checkpoint pairs</h2><p>12 pairs · 12 same definitions · 0 unpaired in A · 0 unpaired in B</p><p>Pairing is a comparison choice. Same definition means identical saved deliverable, amount text and planned evidence; row numbers and fixture IDs do not prove historical identity.</p><article class="card" data-pair="0-11">
+<h3>A checkpoint 1 ↔ B checkpoint 12</h3>
+<p class="pair-label">Same definition · Different row numbers</p>
+<table><caption>Checkpoint fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="title"><th scope="row">Deliverable</th><td data-side="a">Checkpoint 0 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td><td data-side="b">Checkpoint 0 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td></tr>
+<tr data-field="amountText"><th scope="row">Saved amount text (USD)</th><td data-side="a">00.50</td><td data-side="b">00.50</td></tr>
+<tr data-field="amountCents"><th scope="row">Parsed milestone amount</th><td data-side="a">$0.50</td><td data-side="b">$0.50</td></tr>
+<tr data-field="plannedEvidence"><th scope="row">Planned acceptance evidence</th><td data-side="a">Evidence 0 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td><td data-side="b">Evidence 0 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approval</th><td data-side="a">Not reviewed</td><td data-side="b">Not reviewed</td></tr>
+<tr data-field="acceptedEvidence"><th scope="row">Accepted evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="pendingEvidence"><th scope="row">Pending review evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureStatus"><th scope="row">Simulated capture state</th><td data-side="a">No reviewed state</td><td data-side="b">No reviewed state</td></tr>
+<tr data-field="orderId"><th scope="row">Fixture order ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureId"><th scope="row">Counted fixture capture ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="counted"><th scope="row">Simulated amount counted</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr></tbody></table>
+</article>
+<article class="card" data-pair="1-10">
+<h3>A checkpoint 2 ↔ B checkpoint 11</h3>
+<p class="pair-label">Same definition · Different row numbers</p>
+<table><caption>Checkpoint fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="title"><th scope="row">Deliverable</th><td data-side="a">Checkpoint 1 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td><td data-side="b">Checkpoint 1 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td></tr>
+<tr data-field="amountText"><th scope="row">Saved amount text (USD)</th><td data-side="a">not priced</td><td data-side="b">not priced</td></tr>
+<tr data-field="amountCents"><th scope="row">Parsed milestone amount</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr>
+<tr data-field="plannedEvidence"><th scope="row">Planned acceptance evidence</th><td data-side="a">Evidence 1 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td><td data-side="b">Evidence 1 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approval</th><td data-side="a">Not reviewed</td><td data-side="b">Not reviewed</td></tr>
+<tr data-field="acceptedEvidence"><th scope="row">Accepted evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="pendingEvidence"><th scope="row">Pending review evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureStatus"><th scope="row">Simulated capture state</th><td data-side="a">No reviewed state</td><td data-side="b">No reviewed state</td></tr>
+<tr data-field="orderId"><th scope="row">Fixture order ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureId"><th scope="row">Counted fixture capture ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="counted"><th scope="row">Simulated amount counted</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr></tbody></table>
+</article>
+<article class="card" data-pair="2-9">
+<h3>A checkpoint 3 ↔ B checkpoint 10</h3>
+<p class="pair-label">Same definition · Different row numbers</p>
+<table><caption>Checkpoint fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="title"><th scope="row">Deliverable</th><td data-side="a">Checkpoint 2 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td><td data-side="b">Checkpoint 2 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td></tr>
+<tr data-field="amountText"><th scope="row">Saved amount text (USD)</th><td data-side="a">00.50</td><td data-side="b">00.50</td></tr>
+<tr data-field="amountCents"><th scope="row">Parsed milestone amount</th><td data-side="a">$0.50</td><td data-side="b">$0.50</td></tr>
+<tr data-field="plannedEvidence"><th scope="row">Planned acceptance evidence</th><td data-side="a">Evidence 2 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td><td data-side="b">Evidence 2 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approval</th><td data-side="a">Not reviewed</td><td data-side="b">Not reviewed</td></tr>
+<tr data-field="acceptedEvidence"><th scope="row">Accepted evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="pendingEvidence"><th scope="row">Pending review evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureStatus"><th scope="row">Simulated capture state</th><td data-side="a">No reviewed state</td><td data-side="b">No reviewed state</td></tr>
+<tr data-field="orderId"><th scope="row">Fixture order ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureId"><th scope="row">Counted fixture capture ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="counted"><th scope="row">Simulated amount counted</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr></tbody></table>
+</article>
+<article class="card" data-pair="3-8">
+<h3>A checkpoint 4 ↔ B checkpoint 9</h3>
+<p class="pair-label">Same definition · Different row numbers</p>
+<table><caption>Checkpoint fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="title"><th scope="row">Deliverable</th><td data-side="a">Checkpoint 3 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td><td data-side="b">Checkpoint 3 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td></tr>
+<tr data-field="amountText"><th scope="row">Saved amount text (USD)</th><td data-side="a">not priced</td><td data-side="b">not priced</td></tr>
+<tr data-field="amountCents"><th scope="row">Parsed milestone amount</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr>
+<tr data-field="plannedEvidence"><th scope="row">Planned acceptance evidence</th><td data-side="a">Evidence 3 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td><td data-side="b">Evidence 3 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approval</th><td data-side="a">Not reviewed</td><td data-side="b">Not reviewed</td></tr>
+<tr data-field="acceptedEvidence"><th scope="row">Accepted evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="pendingEvidence"><th scope="row">Pending review evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureStatus"><th scope="row">Simulated capture state</th><td data-side="a">No reviewed state</td><td data-side="b">No reviewed state</td></tr>
+<tr data-field="orderId"><th scope="row">Fixture order ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureId"><th scope="row">Counted fixture capture ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="counted"><th scope="row">Simulated amount counted</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr></tbody></table>
+</article>
+<article class="card" data-pair="4-7">
+<h3>A checkpoint 5 ↔ B checkpoint 8</h3>
+<p class="pair-label">Same definition · Different row numbers</p>
+<table><caption>Checkpoint fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="title"><th scope="row">Deliverable</th><td data-side="a">Checkpoint 4 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td><td data-side="b">Checkpoint 4 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td></tr>
+<tr data-field="amountText"><th scope="row">Saved amount text (USD)</th><td data-side="a">00.50</td><td data-side="b">00.50</td></tr>
+<tr data-field="amountCents"><th scope="row">Parsed milestone amount</th><td data-side="a">$0.50</td><td data-side="b">$0.50</td></tr>
+<tr data-field="plannedEvidence"><th scope="row">Planned acceptance evidence</th><td data-side="a">Evidence 4 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td><td data-side="b">Evidence 4 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approval</th><td data-side="a">Not reviewed</td><td data-side="b">Not reviewed</td></tr>
+<tr data-field="acceptedEvidence"><th scope="row">Accepted evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="pendingEvidence"><th scope="row">Pending review evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureStatus"><th scope="row">Simulated capture state</th><td data-side="a">No reviewed state</td><td data-side="b">No reviewed state</td></tr>
+<tr data-field="orderId"><th scope="row">Fixture order ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureId"><th scope="row">Counted fixture capture ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="counted"><th scope="row">Simulated amount counted</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr></tbody></table>
+</article>
+<article class="card" data-pair="5-6">
+<h3>A checkpoint 6 ↔ B checkpoint 7</h3>
+<p class="pair-label">Same definition · Different row numbers</p>
+<table><caption>Checkpoint fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="title"><th scope="row">Deliverable</th><td data-side="a">Checkpoint 5 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td><td data-side="b">Checkpoint 5 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td></tr>
+<tr data-field="amountText"><th scope="row">Saved amount text (USD)</th><td data-side="a">not priced</td><td data-side="b">not priced</td></tr>
+<tr data-field="amountCents"><th scope="row">Parsed milestone amount</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr>
+<tr data-field="plannedEvidence"><th scope="row">Planned acceptance evidence</th><td data-side="a">Evidence 5 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td><td data-side="b">Evidence 5 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approval</th><td data-side="a">Not reviewed</td><td data-side="b">Not reviewed</td></tr>
+<tr data-field="acceptedEvidence"><th scope="row">Accepted evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="pendingEvidence"><th scope="row">Pending review evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureStatus"><th scope="row">Simulated capture state</th><td data-side="a">No reviewed state</td><td data-side="b">No reviewed state</td></tr>
+<tr data-field="orderId"><th scope="row">Fixture order ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureId"><th scope="row">Counted fixture capture ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="counted"><th scope="row">Simulated amount counted</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr></tbody></table>
+</article>
+<article class="card" data-pair="6-5">
+<h3>A checkpoint 7 ↔ B checkpoint 6</h3>
+<p class="pair-label">Same definition · Different row numbers</p>
+<table><caption>Checkpoint fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="title"><th scope="row">Deliverable</th><td data-side="a">Checkpoint 6 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td><td data-side="b">Checkpoint 6 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td></tr>
+<tr data-field="amountText"><th scope="row">Saved amount text (USD)</th><td data-side="a">00.50</td><td data-side="b">00.50</td></tr>
+<tr data-field="amountCents"><th scope="row">Parsed milestone amount</th><td data-side="a">$0.50</td><td data-side="b">$0.50</td></tr>
+<tr data-field="plannedEvidence"><th scope="row">Planned acceptance evidence</th><td data-side="a">Evidence 6 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td><td data-side="b">Evidence 6 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approval</th><td data-side="a">Not reviewed</td><td data-side="b">Not reviewed</td></tr>
+<tr data-field="acceptedEvidence"><th scope="row">Accepted evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="pendingEvidence"><th scope="row">Pending review evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureStatus"><th scope="row">Simulated capture state</th><td data-side="a">No reviewed state</td><td data-side="b">No reviewed state</td></tr>
+<tr data-field="orderId"><th scope="row">Fixture order ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureId"><th scope="row">Counted fixture capture ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="counted"><th scope="row">Simulated amount counted</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr></tbody></table>
+</article>
+<article class="card" data-pair="7-4">
+<h3>A checkpoint 8 ↔ B checkpoint 5</h3>
+<p class="pair-label">Same definition · Different row numbers</p>
+<table><caption>Checkpoint fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="title"><th scope="row">Deliverable</th><td data-side="a">Checkpoint 7 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td><td data-side="b">Checkpoint 7 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td></tr>
+<tr data-field="amountText"><th scope="row">Saved amount text (USD)</th><td data-side="a">not priced</td><td data-side="b">not priced</td></tr>
+<tr data-field="amountCents"><th scope="row">Parsed milestone amount</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr>
+<tr data-field="plannedEvidence"><th scope="row">Planned acceptance evidence</th><td data-side="a">Evidence 7 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td><td data-side="b">Evidence 7 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approval</th><td data-side="a">Not reviewed</td><td data-side="b">Not reviewed</td></tr>
+<tr data-field="acceptedEvidence"><th scope="row">Accepted evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="pendingEvidence"><th scope="row">Pending review evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureStatus"><th scope="row">Simulated capture state</th><td data-side="a">No reviewed state</td><td data-side="b">No reviewed state</td></tr>
+<tr data-field="orderId"><th scope="row">Fixture order ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureId"><th scope="row">Counted fixture capture ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="counted"><th scope="row">Simulated amount counted</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr></tbody></table>
+</article>
+<article class="card" data-pair="8-3">
+<h3>A checkpoint 9 ↔ B checkpoint 4</h3>
+<p class="pair-label">Same definition · Different row numbers</p>
+<table><caption>Checkpoint fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="title"><th scope="row">Deliverable</th><td data-side="a">Checkpoint 8 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td><td data-side="b">Checkpoint 8 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td></tr>
+<tr data-field="amountText"><th scope="row">Saved amount text (USD)</th><td data-side="a">00.50</td><td data-side="b">00.50</td></tr>
+<tr data-field="amountCents"><th scope="row">Parsed milestone amount</th><td data-side="a">$0.50</td><td data-side="b">$0.50</td></tr>
+<tr data-field="plannedEvidence"><th scope="row">Planned acceptance evidence</th><td data-side="a">Evidence 8 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td><td data-side="b">Evidence 8 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approval</th><td data-side="a">Not reviewed</td><td data-side="b">Not reviewed</td></tr>
+<tr data-field="acceptedEvidence"><th scope="row">Accepted evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="pendingEvidence"><th scope="row">Pending review evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureStatus"><th scope="row">Simulated capture state</th><td data-side="a">No reviewed state</td><td data-side="b">No reviewed state</td></tr>
+<tr data-field="orderId"><th scope="row">Fixture order ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureId"><th scope="row">Counted fixture capture ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="counted"><th scope="row">Simulated amount counted</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr></tbody></table>
+</article>
+<article class="card" data-pair="9-2">
+<h3>A checkpoint 10 ↔ B checkpoint 3</h3>
+<p class="pair-label">Same definition · Different row numbers</p>
+<table><caption>Checkpoint fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="title"><th scope="row">Deliverable</th><td data-side="a">Checkpoint 9 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td><td data-side="b">Checkpoint 9 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td></tr>
+<tr data-field="amountText"><th scope="row">Saved amount text (USD)</th><td data-side="a">not priced</td><td data-side="b">not priced</td></tr>
+<tr data-field="amountCents"><th scope="row">Parsed milestone amount</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr>
+<tr data-field="plannedEvidence"><th scope="row">Planned acceptance evidence</th><td data-side="a">Evidence 9 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td><td data-side="b">Evidence 9 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approval</th><td data-side="a">Not reviewed</td><td data-side="b">Not reviewed</td></tr>
+<tr data-field="acceptedEvidence"><th scope="row">Accepted evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="pendingEvidence"><th scope="row">Pending review evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureStatus"><th scope="row">Simulated capture state</th><td data-side="a">No reviewed state</td><td data-side="b">No reviewed state</td></tr>
+<tr data-field="orderId"><th scope="row">Fixture order ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureId"><th scope="row">Counted fixture capture ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="counted"><th scope="row">Simulated amount counted</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr></tbody></table>
+</article>
+<article class="card" data-pair="10-1">
+<h3>A checkpoint 11 ↔ B checkpoint 2</h3>
+<p class="pair-label">Same definition · Different row numbers</p>
+<table><caption>Checkpoint fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="title"><th scope="row">Deliverable</th><td data-side="a">Checkpoint 10 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td><td data-side="b">Checkpoint 10 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td></tr>
+<tr data-field="amountText"><th scope="row">Saved amount text (USD)</th><td data-side="a">00.50</td><td data-side="b">00.50</td></tr>
+<tr data-field="amountCents"><th scope="row">Parsed milestone amount</th><td data-side="a">$0.50</td><td data-side="b">$0.50</td></tr>
+<tr data-field="plannedEvidence"><th scope="row">Planned acceptance evidence</th><td data-side="a">Evidence 10 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td><td data-side="b">Evidence 10 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approval</th><td data-side="a">Not reviewed</td><td data-side="b">Not reviewed</td></tr>
+<tr data-field="acceptedEvidence"><th scope="row">Accepted evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="pendingEvidence"><th scope="row">Pending review evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureStatus"><th scope="row">Simulated capture state</th><td data-side="a">No reviewed state</td><td data-side="b">No reviewed state</td></tr>
+<tr data-field="orderId"><th scope="row">Fixture order ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureId"><th scope="row">Counted fixture capture ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="counted"><th scope="row">Simulated amount counted</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr></tbody></table>
+</article>
+<article class="card" data-pair="11-0">
+<h3>A checkpoint 12 ↔ B checkpoint 1</h3>
+<p class="pair-label">Same definition · Different row numbers</p>
+<table><caption>Checkpoint fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="title"><th scope="row">Deliverable</th><td data-side="a">Checkpoint 11 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td><td data-side="b">Checkpoint 11 &lt;/td&gt;&lt;svg/onload=alert(1)&gt;</td></tr>
+<tr data-field="amountText"><th scope="row">Saved amount text (USD)</th><td data-side="a">not priced</td><td data-side="b">not priced</td></tr>
+<tr data-field="amountCents"><th scope="row">Parsed milestone amount</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr>
+<tr data-field="plannedEvidence"><th scope="row">Planned acceptance evidence</th><td data-side="a">Evidence 11 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td><td data-side="b">Evidence 11 &amp; &lt;style&gt;bad&lt;/style&gt;
+雪</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approval</th><td data-side="a">Not reviewed</td><td data-side="b">Not reviewed</td></tr>
+<tr data-field="acceptedEvidence"><th scope="row">Accepted evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="pendingEvidence"><th scope="row">Pending review evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureStatus"><th scope="row">Simulated capture state</th><td data-side="a">No reviewed state</td><td data-side="b">No reviewed state</td></tr>
+<tr data-field="orderId"><th scope="row">Fixture order ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureId"><th scope="row">Counted fixture capture ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="counted"><th scope="row">Simulated amount counted</th><td data-side="a">Not available</td><td data-side="b">Not available</td></tr></tbody></table>
+</article></section>
+<section id="unpaired"><h2>Unpaired checkpoints</h2><div class="unpaired-grid"><div><p>No unpaired checkpoints in file A.</p></div><div><p>No unpaired checkpoints in file B.</p></div></div></section>
+<section id="history"><h2>Recorded fixture histories</h2><p data-relationship="not-reviewed">At least one file is an editable draft. No shared review history is asserted.</p><p>A shared sequence does not establish chronology or authorship. Sequence and time fields are fictional markers. Raw event amounts are integer cents in their recorded currency: amount 40000 with currency USD means $400.00. Summary and checkpoint amounts above are formatted in dollars.</p>
+<section id="history-a"><h3>File A · 0 events</h3><p>No events recorded in this file.</p></section>
+<section id="history-b"><h3>File B · 0 events</h3><p>No events recorded in this file.</p></section>
+</section>
+<footer>ScopeSignal · read-only fictional comparison · file names label the supplied files and do not verify their origin · no scripts, external resources or payment controls</footer>
+</main></body></html>

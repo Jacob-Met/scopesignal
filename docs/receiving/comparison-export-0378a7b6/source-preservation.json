@@ -1,0 +1,48 @@
+{
+  "base_commit": "847505d2fe9f8295110fc13a3fb9e05ec71f6644",
+  "base_tree": "cac1d2bbdd38e2e4c2aed7249c2593ec174c0eaa",
+  "checked_at": "2026-10-08T17:36:00.465Z",
+  "base_leaf_count": 521,
+  "preserved_unowned_leaf_count": 518,
+  "original_paths_changed": [
+    "README.md",
+    "scope-compare.html",
+    "src/scope-compare-ui.mjs"
+  ],
+  "new_paths": [
+    "docs/receiving/comparison-export-0378a7b6/README.md",
+    "docs/receiving/comparison-export-0378a7b6/baseline/receipt.json",
+    "docs/receiving/comparison-export-0378a7b6/candidate-v1/receipt.json",
+    "docs/receiving/comparison-export-0378a7b6/candidate-v1/receiver.mjs",
+    "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-1.html",
+    "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-2.html",
+    "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-3.html",
+    "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-4.html",
+    "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-5.html",
+    "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-6.html",
+    "docs/receiving/comparison-export-0378a7b6/candidate-v2/first-download.json",
+    "docs/receiving/comparison-export-0378a7b6/candidate-v2/receipt.json",
+    "docs/receiving/comparison-export-0378a7b6/claim-before-publication.json",
+    "docs/receiving/comparison-export-0378a7b6/claim.json",
+    "docs/receiving/comparison-export-0378a7b6/independent/REVIEW.md",
+    "docs/receiving/comparison-export-0378a7b6/independent/all-fields.html",
+    "docs/receiving/comparison-export-0378a7b6/independent/receipt.json",
+    "docs/receiving/comparison-export-0378a7b6/independent/receive_msi_independent.mjs",
+    "docs/receiving/comparison-export-0378a7b6/local-node24-receipt.json",
+    "docs/receiving/comparison-export-0378a7b6/local-node24-tests.log",
+    "docs/receiving/comparison-export-0378a7b6/native-artifacts.json",
+    "docs/receiving/comparison-export-0378a7b6/native-node22-tests.log",
+    "scripts/check-scope-comparison-export.mjs",
+    "src/scope-comparison-export.mjs",
+    "tests/scope-comparison-export.test.mjs"
+  ],
+  "source_sha256": {
+    "README.md": "1aae7f427221a92acd5a77eafd2a3de423b3f2feb4429909e8ab05dcc48c75fb",
+    "scope-compare.html": "fc10e883961d9c9c8f61f72b00cb4376b986465dad569bb9081d1ba8d4a0421a",
+    "src/scope-compare-ui.mjs": "041d36d0254925de033d4596ac86310d8c762ef92b32080e5fa4403debc47c2f",
+    "src/scope-comparison-export.mjs": "2fec30a548cdb8f304c52c3c479e06bd8aaad10ee57c53bbbc1ec5b09e272978",
+    "tests/scope-comparison-export.test.mjs": "190d0557038b0718ae8c96ae085fbc9e62911ed26fbc4cd255dc1ae6196ab234",
+    "scripts/check-scope-comparison-export.mjs": "d6697aa29b54fa2e0308d6a658a3d77f886e2a1f3d8d88ad82c451da5366c169"
+  },
+  "result": "All unowned base Git leaves preserve exact mode and blob identity"
+}
