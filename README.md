@@ -284,6 +284,22 @@ The original seven-event replay and its duplicate-receipt audit remain unchanged
 
 Do not add secrets to this repository. Any later PayPal connector must be Sandbox-only, server-side, host-only configuration; credentials must never enter browser code, source control, logs, or fixture output. Never use customer data. No live-money API is permitted in this slice.
 
+## Start a draft from checkpoint CSV
+
+Open [Convert checkpoint CSV](./scope-csv.html) to reuse a spreadsheet's checkpoint rows. The converter runs in its own tab and prepares an ordinary version 1 **editable draft**. It calls the existing workspace encoder and native scope checks; it creates no approvals, review evidence or payment events.
+
+1. Choose a UTF-8 CSV of at most 1 MiB with the exact header `deliverable,amount,evidence` and 1–12 data rows.
+2. Enter the project name, creative brief and USD project cap separately. Review the literal fields and the native scope-check messages.
+3. Choose **Download draft workspace**. In the [scope workspace](./scope.html), choose **Open saved workspace**, inspect the preview, then explicitly choose **Replace workspace**. Save the current workspace first if you want to keep it.
+
+The converter accepts LF or CRLF record separators and one leading UTF-8 BOM. Quote fields containing commas, double quotes or line breaks; represent a quote inside a quoted field with two quotes. It preserves field whitespace, Unicode, literal formulas and unfinished amount strings. It never infers the cap or changes an invalid amount to zero. Extra columns, missing fields, blank records and malformed quoting are refused; one final record delimiter is allowed.
+
+Native draft admission remains authoritative: deliverable titles are at most 160 characters, amount strings at most 64, and planned evidence at most 5,000. Deliverables and amounts stay on one line. Evidence can contain LF; embedded carriage returns are refused rather than normalized. Project-name, brief and cap limits are unchanged. A structurally admitted draft can still have unfinished scope details or exceed its cap; those native review errors remain visible, and the existing authoring page requires correction before review.
+
+No file is uploaded, automatically downloaded, stored in the browser or applied to another tab. Changing the CSV or any project detail, canceling the review, or leaving the page retires its prepared download. The new page uses local assets only. The current workspace, saved histories, approvals, payment/provider paths and comparison/history tools are unchanged.
+
+The focused parser/codec controls run with the normal `npm test` suite. The optional browser receiver `scripts/check-scope-checkpoint-csv.mjs` uses an already installed Puppeteer and Chromium, isolated fictional files, actual downloads and the unchanged workspace import controls; its native receiving notes record the runtime separately from the required Node 24 CI gate.
+
 ## CI and hosting
 
 - GitHub Actions runs tests on Node 24 and deploys the static fixture to GitHub Pages on `paypal-ai` pushes. Pages is public and free when repository/account settings permit it; deployment can require repository Pages settings to select GitHub Actions.

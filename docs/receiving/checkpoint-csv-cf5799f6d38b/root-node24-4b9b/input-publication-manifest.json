@@ -1,0 +1,55 @@
+{
+  "schema": "scopesignal.root-node24-publication-manifest.v1",
+  "source_tree": "4b9b2580dc31811bdac98109a2763fc34c91a6cd",
+  "qualification": "Node24.19.0 full203 tests,0 fail,0 skips;67 runtime/test files exact before/after. Full576-leaf Git tree independently derived from official history base48f0 plus8 exact contributions;568 incoming leaves preserved. Original3146 receipt and61 source files remain exact.",
+  "files": [
+    {
+      "path": "composition4b9b-root-node24-receipt.json",
+      "native_path": "/tmp/scopesignal-root-node24-cf5799f6d38b-v1/composition4b9b-root-node24-receipt.json",
+      "mode": "100644",
+      "bytes": 34924,
+      "sha256": "fd4ce3b8672893bbbba317566228e744046b19ecb8e0991c730f3937392b1011",
+      "git_blob": "ee504c405caf2f2a00a76d49df340f8201a2f072"
+    },
+    {
+      "path": "composition4b9b-root-node24.stdout.log",
+      "native_path": "/tmp/scopesignal-root-node24-cf5799f6d38b-v1/composition4b9b-root-node24.stdout.log",
+      "mode": "100644",
+      "bytes": 19128,
+      "sha256": "20a7343e1417cc660ca3ceaf7c8e390a0c5aa5babe1cf581c9d14c3e85b0c73b",
+      "git_blob": "0196919d381b34c4b04f457f3003dd2d23a392be"
+    },
+    {
+      "path": "composition4b9b-root-node24.stderr.log",
+      "native_path": "/tmp/scopesignal-root-node24-cf5799f6d38b-v1/composition4b9b-root-node24.stderr.log",
+      "mode": "100644",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "composition4b9b-root-node24-receiver.py",
+      "native_path": "/tmp/scopesignal-root-node24-cf5799f6d38b-v1/composition4b9b-root-node24-receiver.py",
+      "mode": "100644",
+      "bytes": 3546,
+      "sha256": "f3cb5c382a564589e170fb401c22c06a98059dc5efe52f8393764a915d39dffe",
+      "git_blob": "4f48fe14c567c9f19d0318357fae1ff16478fa4e"
+    },
+    {
+      "path": "composition4b9b-root-expected-git-pins.json",
+      "native_path": "/tmp/scopesignal-root-node24-cf5799f6d38b-v1/composition4b9b-root-expected-git-pins.json",
+      "mode": "100644",
+      "bytes": 15562,
+      "sha256": "1328f1a398e0cce2f3a702553560e0f7ddf9ce493a71d2c148919f7794088fbb",
+      "git_blob": "24b8a7ae593c2f5b1a1dd963ac275aa2be783554"
+    },
+    {
+      "path": "composition4b9b-materialize-receiver.py",
+      "native_path": "/tmp/scopesignal-root-node24-cf5799f6d38b-v1/composition4b9b-materialize-receiver.py",
+      "mode": "100644",
+      "bytes": 1928,
+      "sha256": "81d32167115d39460584f5ecd9e399bf8b2d3626a892cd911f89c873824ee949",
+      "git_blob": "f5ec41564a7ca3baa59a5483419690c57e9ce2e8"
+    }
+  ]
+}

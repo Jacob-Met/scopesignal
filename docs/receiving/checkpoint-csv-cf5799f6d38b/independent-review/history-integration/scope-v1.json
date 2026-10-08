@@ -1,0 +1,22 @@
+{
+  "schema": "scopesignal.csv-history-integration-controls.v1",
+  "base": {
+    "head": "fb6d8771db190fc6499db0c63644ef8a016fe7b7",
+    "tree": "48f0cdfd20f79ab96893de6d0adb5d23cdcab5a6"
+  },
+  "qualified_csv_tree": "3146dd1d196d0d0545bcdd2d3db3244c0b0bf7d5",
+  "composed_candidate_read": false,
+  "controls": [
+    {
+      "id": "current-history-and-pending-import-preservation",
+      "oracle": "Open an ordinary native saved reviewed fixture with one approved checkpoint, four events ending in unknown capture, separate planned/accepted evidence and a pending unapproved note. Select history event0 while current review remains1/2 approved with4events. Retain an ordinary pending import. In a separate converter tab, review/download the frozen literal CRLF/BOM CSV. Current active workspace bytes, pending import summary and historical cursor/display stay exact; navigating captured history does not retire the pending preview or alter the active saved record."
+    },
+    {
+      "id": "explicit-csv-replacement-retires-old-history",
+      "oracle": "Previewing and Canceling the actual CSV-derived JSON leaves the reviewed workspace and selected history unchanged. Only explicit Replace workspace adopts exact CSV draft strings. It clears and closes the history panel, removes old event/options/accepted-evidence display, and leaves the native draft events and evidenceDrafts empty. New ordinary Review shows only event0, new project label,0approvals/0events; old four-event review never leaks into this replacement."
+    }
+  ],
+  "transport": "Reuse qualified stable/hit-tested real click transport, real file inputs and actual Chromium downloads. Native source unchanged; isolated fictional fixtures, no provider/payment action. Exact baseline font request is blocked and separately recorded. Node22 supplement; supported Node24/normal hosted result separately attributed.",
+  "excluded": "No repeated native CSV parser, UTF8, row/amount limit or file-read race matrix; no product edit or public deployment claim.",
+  "later_public_receiving": "After root supplies successful exact normal PR and Pages delivery, record merge/run/attempt/artifact identity and final redirected canonical URL, require all served runtime assets to match that delivered tree, then run one actual literal CSV download→native import preview→explicit replace→review zero-events flow. Do not infer public acceptance from a private source run."
+}

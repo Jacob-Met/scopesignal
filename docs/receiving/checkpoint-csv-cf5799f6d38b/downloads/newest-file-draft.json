@@ -1,0 +1,21 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "draft",
+  "draft": {
+    "label": "  Launch & 雪  ",
+    "brief": "A fictional project\nwith exact spacing  ",
+    "cap": "200.00",
+    "checkpoints": [
+      {
+        "title": "Different row",
+        "amount": "1.00",
+        "evidence": "Other evidence"
+      }
+    ]
+  },
+  "events": [],
+  "evidenceDrafts": []
+}
