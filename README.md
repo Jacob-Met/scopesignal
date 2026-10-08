@@ -23,11 +23,23 @@ Optional browser receiving checks run with `node scripts/check-browser.mjs`. The
 
 - A milestone cannot create an order until a human explicitly approves it.
 - Capture requires an approved milestone's order.
-- A lost capture response transitions to `unknown`; capture cannot be retried while uncertain.
-- Duplicate webhook `eventId` is recorded for audit but ignored for counting.
+- A pending capture cannot be requested again. Only a pending request can transition to `unknown` after a lost response; a late loss cannot undo a recorded capture.
+- Duplicate webhook `eventId` is recorded for audit but ignored for counting only when its checkpoint, capture, amount and currency match the original receipt. Conflicting reuse is refused.
+- A capture ID belongs to one checkpoint, and each checkpoint has at most one capture ID. A receipt observed during an unknown outcome retains this binding without counting the amount before reconciliation.
 - Reconciliation is allowed only for an unknown capture and is applied once.
 - The in-memory append-only ledger is deterministic; sequence numbers and logical times are fixture values, not a durable ledger or PayPal records.
 - This demo does not authenticate, authorize, or execute payments.
+
+The ledger methods and `append` use the same transition validation as `reduce`.
+Unsupported events, wrong order/amount/currency/environment bindings and invalid
+transitions throw without changing the stored journal. Returned `events` arrays
+are frozen snapshots. `append` admits supported scalar payloads and rejects
+accessors. The ledger copies its seed at creation, and returned state does not
+expose that seed for mutation. Checkpoint amounts and the project cap must use
+nonnegative safe integer cents; their total must fit the cap. Checkpoint IDs must
+be unique both as authored and under the existing uppercase fixture order-ID
+mapping. These are local fixture consistency checks, not provider verification.
+The original seven-event replay and its duplicate-receipt audit remain unchanged.
 
 ## Separated roles
 
