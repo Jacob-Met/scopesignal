@@ -1,0 +1,12 @@
+/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright-core/lib/coreBundle.js:463
+    throw new Error(message || "Assertion error");
+          ^
+
+Error: Assertion error
+    at assert (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright-core/lib/coreBundle.js:463:11)
+    at _CRSession._onMessage (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright-core/lib/coreBundle.js:34801:11)
+    at CRConnection._onMessage (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright-core/lib/coreBundle.js:34738:20)
+    at Immediate.<anonymous> (/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright-core/lib/coreBundle.js:39193:30)
+    at process.processImmediate (node:internal/timers:534:21)
+
+Node.js v24.19.0

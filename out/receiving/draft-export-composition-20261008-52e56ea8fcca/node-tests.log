@@ -1,0 +1,38 @@
+✔ approving one checkpoint preserves another pending draft, including initial line feeds (24.968299ms)
+✔ refused approval retains empty and multiline drafts across repeated rerenders (4.410512ms)
+✔ a suggestion survives approval of a different checkpoint (4.576403ms)
+✔ accepted evidence comes from its recorded event and its controls cannot edit approval (3.244459ms)
+✔ literal textarea-like text is preserved without adding editors (3.069516ms)
+✔ successive approvals retain accepted evidence and count each approval once (3.617921ms)
+✔ fixture totals and explicit replay behavior remain intact (2.349183ms)
+✔ webhook rows describe receipt without claiming an unknown capture was counted (3.067433ms)
+✔ download has a fixed safe filename and explicit fixture schema and provenance (1.702721ms)
+✔ export records the actual replay events and reduced counted outcome (0.896438ms)
+✔ accepted multiline and literal evidence comes from the exact approval event (0.433772ms)
+✔ unapproved checkpoints have no approval evidence and no authored draft field (0.613793ms)
+✔ every capture prefix exports the current outcome without advancing or inventing events (0.435114ms)
+✔ repeated exports are deterministic and detached from the live in-memory ledger (0.314483ms)
+✔ an empty fixture exports no approval and never represents a successful payment (0.24619ms)
+✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (2.801363ms)
+✔ order and capture require prior explicit human approval and order (0.570669ms)
+✔ lost response cannot be blindly captured again; reconcile is one-time (0.197437ms)
+✔ same webhook event ID is idempotent and cannot double count (0.261914ms)
+✔ reducer never counts duplicate webhook in fixture stream (0.158358ms)
+✔ role previews are explicit local rules and never claim AI output (14.111612ms)
+✔ Workers AI adapter fails closed without binding and has no paid fallback (0.371929ms)
+✔ schema validation rejects malformed model output (0.263887ms)
+✔ every shipped replay prefix presents its current reduced capture state (3.661627ms)
+✔ ordinary webhook capture does not invent a reconciliation (0.353882ms)
+✔ missing and unrecognized states do not become captured or safe-to-retry labels (0.22589ms)
+✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (1.756141ms)
+✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (0.427113ms)
+✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (0.345901ms)
+✔ pending and never-requested captures remain distinct from resolved captures (0.19948ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 170.335741
