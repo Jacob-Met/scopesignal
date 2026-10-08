@@ -119,6 +119,40 @@ browser receiving checks with the same installed Playwright/Chromium variables
 as `scripts/check-browser.mjs`. It blocks external requests and records served
 source hashes, observed behavior, and screenshots. No packages are installed.
 
+## Download an authored scope review
+
+In the authored workspace, **Download scope review** saves
+`scopesignal-scope-review.html`. Open it directly in a browser to read offline,
+or use the browser's Print command to print or save a PDF. The standalone file
+contains no scripts, external resources or payment controls. Event amounts remain
+raw integer cents and are explicitly labeled; checkpoint and summary values are
+formatted in dollars. Printing uses the local browser and its installed fonts.
+Some Unicode symbols may lack glyphs in a resulting PDF; keep the original HTML
+and JSON when exact text matters. The HTML retains the original Unicode text.
+
+An unfinished draft retains the exact entered fields, including empty or
+invalid amounts, and is labeled unfinished without calculated totals. A reviewed
+scope includes its checked terms, separate planned and accepted or pending
+evidence, current simulated capture states, exact USD amounts, and every recorded
+event field. Accepted evidence comes from its recorded approval. Pending editor
+text is never presented as accepted; unknown and pending captures remain uncounted.
+Unallocated cap and allocated remaining amounts are shown separately.
+
+The review is an unsigned fictional snapshot, not evidence of a real approval
+or payment. It cannot restore an editable workspace; keep the separate JSON
+download for that. Exporting changes no approvals, events, drafts or prepared
+open preview. A failed preparation leaves the workspace intact and can be retried.
+Text containing NUL or unpaired UTF-16 surrogates is refused because HTML cannot
+preserve it; the workspace JSON can still retain those original strings.
+
+Native tests run with `npm test`. The optional actual-browser receiver is
+`node scripts/check-scope-review-export.mjs`, using the existing
+`SCOPESIGNAL_PLAYWRIGHT`, `SCOPESIGNAL_CHROME`, `SCOPESIGNAL_SOURCE` and
+`SCOPESIGNAL_EVIDENCE` options described above. It exercises actual downloads,
+offline file reading, phone and keyboard operation, failure/retry, unchanged
+workspace/preview, and Chromium PDF printing. It uses authored fictional inputs
+and blocks external requests; no packages or provider services are needed.
+
 ## Payment safety model
 
 - A milestone cannot create an order until a human explicitly approves it.
