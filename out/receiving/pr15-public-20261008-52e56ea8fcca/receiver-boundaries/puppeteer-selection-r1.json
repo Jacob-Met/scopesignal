@@ -1,0 +1,238 @@
+{
+  "schema": "scopesignal.live-public-receiving.v1",
+  "startedAt": "2026-10-08T11:09:27.766Z",
+  "sourceCommit": "8e50105fdc1645720e64ca83738727473c9f6acf",
+  "sourceTree": "fe302d490b55f9eb4f5cbd7f4d7e9fca7e134820",
+  "publicUrl": "https://jacobmetoyer.com/scopesignal/",
+  "deployment": {
+    "runId": 37766220718,
+    "url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37766220718",
+    "headSha": "8e50105fdc1645720e64ca83738727473c9f6acf",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "id": 113274433716,
+        "name": "test",
+        "conclusion": "success",
+        "completedAt": "2026-10-08T10:51:33Z"
+      },
+      {
+        "id": 113274484385,
+        "name": "deploy",
+        "conclusion": "success",
+        "completedAt": "2026-10-08T10:51:49Z"
+      }
+    ]
+  },
+  "node": "v26.3.0",
+  "platform": "darwin",
+  "expectedAssets": {
+    "app.mjs": {
+      "gitBlob": "7398ab71912a6e5e55a1da8ccef3f8fdee82c135",
+      "sha256": "a33c3519e59445e4ed6c19a2beec81005482e34b5e6bd396f10916cfbfd96a24",
+      "bytes": 5366
+    },
+    "fixture-timeline.css": {
+      "gitBlob": "6fa3b725f49ef21346821cd8db599d0cd6728223",
+      "sha256": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+      "bytes": 2714
+    },
+    "index.html": {
+      "gitBlob": "043b57fce51f0e9571c666139a654bfc36362be0",
+      "sha256": "73171545f26fd82cfaf425ada9ba59b91bd16c5e68118a92152edd9a5c62155c",
+      "bytes": 9090
+    },
+    "record-view.css": {
+      "gitBlob": "ad73b8678228eacdbd7ddf36d56c573b2fc34e4a",
+      "sha256": "71345c822fdf74c7160eb5aa09675fac19abe24603137a75d7431397eb59768d",
+      "bytes": 6493
+    },
+    "record.html": {
+      "gitBlob": "5718956e264ba46e699d21e2c04d54d4ddd14b5d",
+      "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4",
+      "bytes": 2461
+    },
+    "scope-workspace.css": {
+      "gitBlob": "6ea60053690985776e7af70f86f5cc878fe69aae",
+      "sha256": "ce89b3cc94e636388a63c63326ca1e030473c08bac1a6265eb24974083ff1420",
+      "bytes": 4138
+    },
+    "scope.html": {
+      "gitBlob": "1c8e40d9bb37a666af5439b8ef62053b2ca339fa",
+      "sha256": "462ff6bf987d27ac71bb9cd4c2c8a987f29159dea24c8b5fdd47e5cc532abf0b",
+      "bytes": 5970
+    },
+    "src/agents.mjs": {
+      "gitBlob": "ae1141b4f45ac8a064aa684fdcf47e938daf085d",
+      "sha256": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+      "bytes": 1599
+    },
+    "src/fixture-record.mjs": {
+      "gitBlob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "bytes": 1615
+    },
+    "src/fixture-timeline-view.mjs": {
+      "gitBlob": "780e12706ee16ebcbf87692b7a21681c4722092d",
+      "sha256": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+      "bytes": 3336
+    },
+    "src/fixture-timeline.mjs": {
+      "gitBlob": "b686daaf49b53c44a06f4be8d9ef878886acf57e",
+      "sha256": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+      "bytes": 3054
+    },
+    "src/ledger.mjs": {
+      "gitBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "bytes": 12684
+    },
+    "src/payment-status.mjs": {
+      "gitBlob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "bytes": 1959
+    },
+    "src/record-reader.mjs": {
+      "gitBlob": "e6f69a87605b9808058a4e46df6b923ebb22c9dd",
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8",
+      "bytes": 5111
+    },
+    "src/record-view.mjs": {
+      "gitBlob": "08dbca153a600bf7ff6b41fb378b86b62422925f",
+      "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f",
+      "bytes": 8786
+    },
+    "src/scope-plan.mjs": {
+      "gitBlob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "bytes": 6794
+    },
+    "src/scope-workspace.mjs": {
+      "gitBlob": "722d7c800c70d243f320ca18acc69bf5c094e2fe",
+      "sha256": "8c2506cf4ecca18b8b40c979e7aa26a8274e93571f073c732118becaea12a3d7",
+      "bytes": 12530
+    },
+    "src/workers-ai.mjs": {
+      "gitBlob": "7951c2f09b7063bd481d3391ae914d6066d2b241",
+      "sha256": "d69676fceb4a3782e6eaa7edcff4d5a4d1b7d89fc0d4e642d3bdca6e079a938e",
+      "bytes": 3525
+    },
+    "styles.css": {
+      "gitBlob": "31353c93740241c42551710bd12599338c017e45",
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "bytes": 9444
+    }
+  },
+  "browserAssets": {
+    "index.html": {
+      "bytes": 9090,
+      "sha256": "73171545f26fd82cfaf425ada9ba59b91bd16c5e68118a92152edd9a5c62155c",
+      "gitBlob": "043b57fce51f0e9571c666139a654bfc36362be0",
+      "url": "https://jacobmetoyer.com/scopesignal/"
+    },
+    "src/fixture-timeline-view.mjs": {
+      "bytes": 3336,
+      "sha256": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+      "gitBlob": "780e12706ee16ebcbf87692b7a21681c4722092d",
+      "url": "https://jacobmetoyer.com/scopesignal/src/fixture-timeline-view.mjs"
+    },
+    "app.mjs": {
+      "bytes": 5366,
+      "sha256": "a33c3519e59445e4ed6c19a2beec81005482e34b5e6bd396f10916cfbfd96a24",
+      "gitBlob": "7398ab71912a6e5e55a1da8ccef3f8fdee82c135",
+      "url": "https://jacobmetoyer.com/scopesignal/app.mjs"
+    },
+    "fixture-timeline.css": {
+      "bytes": 2714,
+      "sha256": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+      "gitBlob": "6fa3b725f49ef21346821cd8db599d0cd6728223",
+      "url": "https://jacobmetoyer.com/scopesignal/fixture-timeline.css"
+    },
+    "styles.css": {
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "gitBlob": "31353c93740241c42551710bd12599338c017e45",
+      "url": "https://jacobmetoyer.com/scopesignal/styles.css"
+    },
+    "src/agents.mjs": {
+      "bytes": 1599,
+      "sha256": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+      "gitBlob": "ae1141b4f45ac8a064aa684fdcf47e938daf085d",
+      "url": "https://jacobmetoyer.com/scopesignal/src/agents.mjs"
+    },
+    "src/fixture-timeline.mjs": {
+      "bytes": 3054,
+      "sha256": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+      "gitBlob": "b686daaf49b53c44a06f4be8d9ef878886acf57e",
+      "url": "https://jacobmetoyer.com/scopesignal/src/fixture-timeline.mjs"
+    },
+    "src/ledger.mjs": {
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "gitBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "url": "https://jacobmetoyer.com/scopesignal/src/ledger.mjs"
+    },
+    "src/fixture-record.mjs": {
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "gitBlob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "url": "https://jacobmetoyer.com/scopesignal/src/fixture-record.mjs"
+    },
+    "src/payment-status.mjs": {
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "gitBlob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "url": "https://jacobmetoyer.com/scopesignal/src/payment-status.mjs"
+    }
+  },
+  "checks": [
+    {
+      "name": "Actual public approval preserves the literal pending draft and accepted evidence",
+      "pass": false,
+      "error": "#evidence-handoff trusted native text entry\n+ actual - expected\n\n+ 'Desktop and mobile handoff files plus implementation notes.\\n' +\n- '\\n' +\n    '\\n' +\n    'Draft </textarea><img id=\"injected-evidence\" src=x onerror=\"globalThis.injectedEvidence=true\"> & “quoted” 😀\\n'\n"
+    }
+  ],
+  "states": {
+    "initial": {
+      "url": "https://jacobmetoyer.com/scopesignal/",
+      "approved": "1 / 3",
+      "captured": "$400.00",
+      "remaining": "$800.00",
+      "events": "7 events",
+      "draft": "Desktop and mobile handoff files plus implementation notes.",
+      "accepted": "Keyboard-only walkthrough and automated accessibility report for the billing setup.",
+      "acceptedReadonly": false,
+      "results": [
+        "human approval",
+        "Sandbox fixture order",
+        "Sandbox fixture order",
+        "unknown · do not retry",
+        "webhook received",
+        "duplicate ignored",
+        "reconciled · counted once"
+      ],
+      "trace": []
+    }
+  },
+  "downloads": [],
+  "pageErrors": [],
+  "responseErrors": [],
+  "blockedRequests": [
+    {
+      "role": "fixture",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+      "method": "GET"
+    }
+  ],
+  "unexpectedRequests": [],
+  "limitations": [
+    "Synthetic fixture only; no payments, credentials or customer data.",
+    "Desktop native Chrome receiving; physical phone/Safari acceptance is not asserted.",
+    "Existing third-party font requests are blocked; screenshots use fallback fonts."
+  ],
+  "browser": "Chrome/154.0.8037.98",
+  "livePublicPageInteraction": true,
+  "passed": false,
+  "failure": "AssertionError [ERR_ASSERTION]: #evidence-handoff trusted native text entry\n+ actual - expected\n\n+ 'Desktop and mobile handoff files plus implementation notes.\\n' +\n- '\\n' +\n    '\\n' +\n    'Draft </textarea><img id=\"injected-evidence\" src=x onerror=\"globalThis.injectedEvidence=true\"> & “quoted” 😀\\n'\n\n    at fill (/Users/me/workspace/scopesignal-public-receiving-52e56ea8fcca-0rttRJ/check-live-public.cjs:45:10)\n    at async /Users/me/workspace/scopesignal-public-receiving-52e56ea8fcca-0rttRJ/check-live-public.cjs:63:5\n    at async check (/Users/me/workspace/scopesignal-public-receiving-52e56ea8fcca-0rttRJ/check-live-public.cjs:16:36)\n    at async /Users/me/workspace/scopesignal-public-receiving-52e56ea8fcca-0rttRJ/check-live-public.cjs:61:3",
+  "completedAt": "2026-10-08T11:09:34.366Z"
+}

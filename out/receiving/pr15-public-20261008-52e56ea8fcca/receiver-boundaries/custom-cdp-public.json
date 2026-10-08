@@ -1,0 +1,80 @@
+{
+  "schema": "scopesignal.public-receiving.v1",
+  "mode": "baseline",
+  "startedAt": "2026-10-08T10:08:52.345Z",
+  "sourceCommit": "5d8b9ae344c96db3a357da87472c553485daaaf3",
+  "sourceRepository": "Jacob-Met/scopesignal",
+  "defaultBranch": "paypal-ai",
+  "publicUrl": "https://jacobmetoyer.com/scopesignal/",
+  "node": "v26.3.0",
+  "expectedAssets": {
+    "app.mjs": {
+      "gitBlob": "d32f61daee4e65403dc3e9420d833d9dd963cff4"
+    },
+    "index.html": {
+      "gitBlob": "38931b3768a3ad619a059b189d96ad091b4f0fde"
+    }
+  },
+  "fetchAssets": {
+    "app.mjs": {
+      "bytes": 4641,
+      "sha256": "dc8f1e777454eae392e9c693d8cedac11a8839c23b8c423eb7bb2d34852538bf",
+      "gitBlob": "d32f61daee4e65403dc3e9420d833d9dd963cff4",
+      "status": 200,
+      "url": "https://jacobmetoyer.com/scopesignal/app.mjs",
+      "etag": "W/\"6ac76928-1221\""
+    },
+    "index.html": {
+      "bytes": 8898,
+      "sha256": "e1111ad42f478605fdc3d7f483afb905d5d0c6d3d9d58a6dc937fccd475d253a",
+      "gitBlob": "38931b3768a3ad619a059b189d96ad091b4f0fde",
+      "status": 200,
+      "url": "https://jacobmetoyer.com/scopesignal/",
+      "etag": "W/\"6ac76928-22c2\""
+    }
+  },
+  "browserAssets": {
+    "desktop": {}
+  },
+  "checks": [
+    {
+      "name": "public GET assets match immutable source",
+      "pass": true
+    }
+  ],
+  "states": {},
+  "downloads": [],
+  "blockedRequests": [],
+  "unexpectedRequests": [],
+  "pageErrors": [],
+  "automationErrors": [],
+  "limits": [
+    "Synthetic fixture only; no real payments, customer data, credentials or provider calls.",
+    "Fresh native Chrome with third-party font requests blocked; fallback fonts are shown.",
+    "Phone mode is emulated viewport and touch input, not physical phone or Safari acceptance.",
+    "No human preference or source-owner acceptance is claimed."
+  ],
+  "networkTrace": [
+    {
+      "method": "Network.requestWillBeSent",
+      "label": "desktop",
+      "url": "https://jacobmetoyer.com/scopesignal/"
+    },
+    {
+      "method": "Network.loadingFailed",
+      "label": "desktop",
+      "errorText": "net::ERR_ABORTED"
+    }
+  ],
+  "chromeDiagnostics": "hrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS START event to the history log\n[94677:46938892:1008/030912.538957:VERBOSE1:chrome/updater/crash_reporter.cc:124] Crash handler launched and ready.\n[94677:46938892:1008/030912.539555:VERBOSE1:chrome/updater/crash_client.cc:108] Found 0 completed crash reports\n[94677:46938892:1008/030912.539620:VERBOSE1:chrome/updater/crash_client.cc:132] Found 0 pending crash reports\n[94677:46938892:1008/030912.539694:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /Users/me/Library/Application Support/Google/RLZ/Crashpad/settings.dat: No such file or directory (2)\n[94677:46938892:1008/030912.539878:VERBOSE1:chrome/updater/updater.cc:105] Crash reporting initialized.\n[94677:46938892:1008/030912.540028:VERBOSE1:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:61] Run\n[94677:46938912:1008/030912.544125:VERBOSE1:chrome/updater/ipc/update_service_dialer_mac.cc:37] DialUpdateService launcher failure: launcher: posix_spawn failed: No such file or directory\n\n[94677:46938912:1008/030912.544161:VERBOSE1:chrome/updater/ipc/update_service_dialer_posix.cc:56] Failed to connect to remote mojo service, is_internal_service: 1, scope: User, no updater exists.\n[94677:46938892:1008/030912.544193:VERBOSE2:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:119] No endpoint received.\n[94677:46938892:1008/030912.544246:VERBOSE1:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:61] Run\n[94677:46938912:1008/030912.547514:VERBOSE1:chrome/updater/ipc/update_service_dialer_mac.cc:37] DialUpdateService launcher failure: launcher: posix_spawn failed: No such file or directory\n\n[94677:46938912:1008/030912.547537:VERBOSE1:chrome/updater/ipc/update_service_dialer_posix.cc:56] Failed to connect to remote mojo service, is_internal_service: 1, scope: User, no updater exists.\n[94677:46938892:1008/030912.547576:VERBOSE2:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:119] No endpoint received.\n[94677:46938892:1008/030912.547603:VERBOSE1:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:61] Run\n[94677:46938912:1008/030912.552734:VERBOSE1:chrome/updater/ipc/update_service_dialer_mac.cc:37] DialUpdateService launcher failure: launcher: posix_spawn failed: No such file or directory\n\n[94677:46938912:1008/030912.552827:VERBOSE1:chrome/updater/ipc/update_service_dialer_posix.cc:56] Failed to connect to remote mojo service, is_internal_service: 1, scope: User, no updater exists.\n[94677:46938892:1008/030912.552875:VERBOSE2:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:119] No endpoint received.\n[94677:46938892:1008/030912.552911:VERBOSE1:chrome/updater/app/app.cc:52] Shutdown: 0\n[94677:46938892:1008/030912.553169:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[94677:46938892:1008/030912.553184:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--wake) returned 0.\n[94679:46938903:1008/030912.554245:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[94679:46938903:1008/030912.554262:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--crash-handler) returned 0.\n[94665:46938855:1008/030912.555751:VERBOSE1:chrome/updater/app/app_wakeall.cc:68] `/Users/me/Library/Application Support/Google/GoogleUpdater/152.0.7933.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake` exited 0\n[94665:46938826:1008/030912.555812:VERBOSE1:chrome/updater/app/app.cc:52] Shutdown: 0\n[94665:46938826:1008/030912.556028:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[94665:46938826:1008/030912.556038:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--wake-all) returned 0.\n[94667:46938847:1008/030912.557094:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[94667:46938847:1008/030912.557139:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--crash-handler) returned 0.\n",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/154.0.8037.98",
+    "revision": "@b859317bf11f6be47f9b7799ec690a0a42a1fb33",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "jsVersion": "15.4.80.20"
+  },
+  "passed": false,
+  "failure": "Error: CDP timeout Page.navigate\n    at Timeout._onTimeout (/Users/me/workspace/scopesignal-public-receiving-52e56ea8fcca-0rttRJ/public-receiver.cjs:44:65)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)",
+  "completedAt": "2026-10-08T10:09:38.767Z"
+}

@@ -1,0 +1,18 @@
+{
+  "live/live-checkpoints.png": {
+    "bytes": 57794,
+    "sha256": "f66b64845b9db0ef40410e3b671f03586beedc948e88471e067cdd1fcc29208c"
+  },
+  "live/live-record.png": {
+    "bytes": 104570,
+    "sha256": "c162f6506e1c75288092d42a94f106ca75f9eda00716614eafcaed2db68e87f1"
+  },
+  "record-composition/desktop-record.png": {
+    "bytes": 293151,
+    "sha256": "c0a327c3da92e8b2f277cd439a3a80c8ad3a34bb0eac78c8705a2b2da5c5b021"
+  },
+  "record-composition/phone-record.png": {
+    "bytes": 262485,
+    "sha256": "ad3bdfe35e86a67c131e3561da735130da13d8ccec809712335489c18da8b791"
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "schema": "scopesignal.public-receiving.v1",
+  "mode": "baseline",
+  "startedAt": "2026-10-08T10:18:33.713Z",
+  "sourceCommit": "844f32d1a6d9798bc658fd77af79877bd41e5f86",
+  "sourceRepository": "Jacob-Met/scopesignal",
+  "defaultBranch": "paypal-ai",
+  "publicUrl": "https://jacobmetoyer.com/scopesignal/",
+  "node": "v26.3.0",
+  "expectedAssets": {
+    "index.html": {
+      "gitBlob": "38931b3768a3ad619a059b189d96ad091b4f0fde",
+      "bytes": 8898
+    },
+    "app.mjs": {
+      "gitBlob": "d32f61daee4e65403dc3e9420d833d9dd963cff4",
+      "bytes": 4641
+    },
+    "styles.css": {
+      "gitBlob": "31353c93740241c42551710bd12599338c017e45",
+      "bytes": 9444
+    },
+    "fixture-timeline.css": {
+      "gitBlob": "6fa3b725f49ef21346821cd8db599d0cd6728223",
+      "bytes": 2714
+    },
+    "src/ledger.mjs": {
+      "gitBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "bytes": 12684
+    },
+    "src/agents.mjs": {
+      "gitBlob": "ae1141b4f45ac8a064aa684fdcf47e938daf085d",
+      "bytes": 1599
+    },
+    "src/payment-status.mjs": {
+      "gitBlob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "bytes": 1959
+    },
+    "src/fixture-record.mjs": {
+      "gitBlob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "bytes": 1615
+    },
+    "src/fixture-timeline.mjs": {
+      "gitBlob": "b686daaf49b53c44a06f4be8d9ef878886acf57e",
+      "bytes": 3054
+    },
+    "src/fixture-timeline-view.mjs": {
+      "gitBlob": "780e12706ee16ebcbf87692b7a21681c4722092d",
+      "bytes": 3336
+    }
+  },
+  "fetchAssets": {
+    "index.html": {
+      "bytes": 8898,
+      "sha256": "e1111ad42f478605fdc3d7f483afb905d5d0c6d3d9d58a6dc937fccd475d253a",
+      "gitBlob": "38931b3768a3ad619a059b189d96ad091b4f0fde",
+      "status": 200,
+      "url": "https://jacobmetoyer.com/scopesignal/",
+      "etag": "W/\"6ac76bb8-22c2\""
+    },
+    "app.mjs": {
+      "bytes": 4641,
+      "sha256": "dc8f1e777454eae392e9c693d8cedac11a8839c23b8c423eb7bb2d34852538bf",
+      "gitBlob": "d32f61daee4e65403dc3e9420d833d9dd963cff4",
+      "status": 200,
+      "url": "https://jacobmetoyer.com/scopesignal/app.mjs",
+      "etag": "W/\"6ac76bb8-1221\""
+    },
+    "styles.css": {
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "gitBlob": "31353c93740241c42551710bd12599338c017e45",
+      "status": 200,
+      "url": "https://jacobmetoyer.com/scopesignal/styles.css",
+      "etag": "W/\"6ac76bb8-24e4\""
+    },
+    "fixture-timeline.css": {
+      "bytes": 2714,
+      "sha256": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+      "gitBlob": "6fa3b725f49ef21346821cd8db599d0cd6728223",
+      "status": 200,
+      "url": "https://jacobmetoyer.com/scopesignal/fixture-timeline.css",
+      "etag": "W/\"6ac76bb8-a9a\""
+    },
+    "src/ledger.mjs": {
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "gitBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "status": 200,
+      "url": "https://jacobmetoyer.com/scopesignal/src/ledger.mjs",
+      "etag": "W/\"6ac76bb8-318c\""
+    },
+    "src/agents.mjs": {
+      "bytes": 1599,
+      "sha256": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+      "gitBlob": "ae1141b4f45ac8a064aa684fdcf47e938daf085d",
+      "status": 200,
+      "url": "https://jacobmetoyer.com/scopesignal/src/agents.mjs",
+      "etag": "W/\"6ac76bb8-63f\""
+    },
+    "src/payment-status.mjs": {
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "gitBlob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "status": 200,
+      "url": "https://jacobmetoyer.com/scopesignal/src/payment-status.mjs",
+      "etag": "W/\"6ac76bb8-7a7\""
+    },
+    "src/fixture-record.mjs": {
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "gitBlob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "status": 200,
+      "url": "https://jacobmetoyer.com/scopesignal/src/fixture-record.mjs",
+      "etag": "W/\"6ac76bb8-64f\""
+    },
+    "src/fixture-timeline.mjs": {
+      "bytes": 3054,
+      "sha256": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+      "gitBlob": "b686daaf49b53c44a06f4be8d9ef878886acf57e",
+      "status": 200,
+      "url": "https://jacobmetoyer.com/scopesignal/src/fixture-timeline.mjs",
+      "etag": "W/\"6ac76bb8-bee\""
+    },
+    "src/fixture-timeline-view.mjs": {
+      "bytes": 3336,
+      "sha256": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+      "gitBlob": "780e12706ee16ebcbf87692b7a21681c4722092d",
+      "status": 200,
+      "url": "https://jacobmetoyer.com/scopesignal/src/fixture-timeline-view.mjs",
+      "etag": "W/\"6ac76bb8-d08\""
+    }
+  },
+  "browserAssets": {
+    "desktop": {}
+  },
+  "checks": [
+    {
+      "name": "public GET assets match immutable source",
+      "pass": true
+    }
+  ],
+  "states": {},
+  "downloads": [],
+  "blockedRequests": [],
+  "unexpectedRequests": [],
+  "pageErrors": [],
+  "automationErrors": [],
+  "limits": [
+    "Synthetic fixture only; no real payments, customer data, credentials or provider calls.",
+    "Fresh native Chrome with third-party font requests blocked; fallback fonts are shown.",
+    "Phone mode is emulated viewport and touch input, not physical phone or Safari acceptance.",
+    "No human preference or source-owner acceptance is claimed.",
+    "Direct public Chrome navigation timed out before rendering; browser interactions use a byte-identical public snapshot on loopback."
+  ],
+  "networkTrace": [
+    {
+      "method": "Network.requestWillBeSent",
+      "label": "desktop",
+      "url": "http://127.0.0.1:54451/"
+    },
+    {
+      "method": "Network.loadingFailed",
+      "label": "desktop",
+      "errorText": "net::ERR_ABORTED"
+    }
+  ],
+  "execution": {
+    "kind": "untouched public bytes served on owned loopback",
+    "url": "http://127.0.0.1:54451/",
+    "livePublicPageInteraction": false
+  },
+  "chromeDiagnostics": "hrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS START event to the history log\n[38849:47561416:1008/031857.639327:VERBOSE1:chrome/updater/crash_reporter.cc:124] Crash handler launched and ready.\n[38849:47561416:1008/031857.640488:VERBOSE1:chrome/updater/crash_client.cc:108] Found 0 completed crash reports\n[38849:47561416:1008/031857.640773:VERBOSE1:chrome/updater/crash_client.cc:132] Found 0 pending crash reports\n[38849:47561416:1008/031857.641054:ERROR:third_party/crashpad/crashpad/util/file/file_io_posix.cc:145] open /Users/me/Library/Application Support/Google/RLZ/Crashpad/settings.dat: No such file or directory (2)\n[38849:47561416:1008/031857.641591:VERBOSE1:chrome/updater/updater.cc:105] Crash reporting initialized.\n[38849:47561416:1008/031857.641811:VERBOSE1:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:61] Run\n[38849:47561483:1008/031857.646966:VERBOSE1:chrome/updater/ipc/update_service_dialer_mac.cc:37] DialUpdateService launcher failure: launcher: posix_spawn failed: No such file or directory\n\n[38849:47561483:1008/031857.646996:VERBOSE1:chrome/updater/ipc/update_service_dialer_posix.cc:56] Failed to connect to remote mojo service, is_internal_service: 1, scope: User, no updater exists.\n[38849:47561416:1008/031857.647041:VERBOSE2:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:119] No endpoint received.\n[38849:47561416:1008/031857.647149:VERBOSE1:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:61] Run\n[38849:47561483:1008/031857.654141:VERBOSE1:chrome/updater/ipc/update_service_dialer_mac.cc:37] DialUpdateService launcher failure: launcher: posix_spawn failed: No such file or directory\n\n[38849:47561483:1008/031857.654172:VERBOSE1:chrome/updater/ipc/update_service_dialer_posix.cc:56] Failed to connect to remote mojo service, is_internal_service: 1, scope: User, no updater exists.\n[38849:47561416:1008/031857.654203:VERBOSE2:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:119] No endpoint received.\n[38849:47561416:1008/031857.654227:VERBOSE1:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:61] Run\n[38849:47561486:1008/031857.659622:VERBOSE1:chrome/updater/ipc/update_service_dialer_mac.cc:37] DialUpdateService launcher failure: launcher: posix_spawn failed: No such file or directory\n\n[38849:47561486:1008/031857.659689:VERBOSE1:chrome/updater/ipc/update_service_dialer_posix.cc:56] Failed to connect to remote mojo service, is_internal_service: 1, scope: User, no updater exists.\n[38849:47561416:1008/031857.659739:VERBOSE2:chrome/updater/ipc/update_service_internal_proxy_mojo.cc:119] No endpoint received.\n[38849:47561416:1008/031857.659778:VERBOSE1:chrome/updater/app/app.cc:52] Shutdown: 0\n[38849:47561416:1008/031857.660143:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[38849:47561416:1008/031857.660197:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--wake) returned 0.\n[38852:47561448:1008/031857.661371:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[38852:47561448:1008/031857.661393:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--crash-handler) returned 0.\n[38821:47561095:1008/031857.667090:VERBOSE1:chrome/updater/app/app_wakeall.cc:68] `/Users/me/Library/Application Support/Google/GoogleUpdater/152.0.7933.0/GoogleUpdater.app/Contents/MacOS/GoogleUpdater --wake` exited 0\n[38821:47561073:1008/031857.667200:VERBOSE1:chrome/updater/app/app.cc:52] Shutdown: 0\n[38821:47561073:1008/031857.667676:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[38821:47561073:1008/031857.667716:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--wake-all) returned 0.\n[38823:47561086:1008/031857.669133:VERBOSE2:chrome/updater/event_history.cc:265] Emitted a UPDATER_PROCESS END event to the history log\n[38823:47561086:1008/031857.669164:VERBOSE1:chrome/updater/updater.cc:419] UpdaterMain (--crash-handler) returned 0.\n",
+  "browser": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/154.0.8037.98",
+    "revision": "@b859317bf11f6be47f9b7799ec690a0a42a1fb33",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "jsVersion": "15.4.80.20"
+  },
+  "passed": false,
+  "failure": "Error: CDP timeout Page.navigate\n    at Timeout._onTimeout (/Users/me/workspace/scopesignal-public-receiving-52e56ea8fcca-0rttRJ/public-receiver.cjs:47:65)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)",
+  "completedAt": "2026-10-08T10:19:20.507Z"
+}
