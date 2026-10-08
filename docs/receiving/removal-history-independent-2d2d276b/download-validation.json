@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-08T18:58:09.832Z",
+  "runtime": "v24.21.0",
+  "passed": true,
+  "checks": [
+    "restored review has exact title/evidence and zero events",
+    "new decision preserves draft and original approval event",
+    "exactly one new order event added",
+    "pending evidence list byte-value equality across navigation/new decision"
+  ]
+}

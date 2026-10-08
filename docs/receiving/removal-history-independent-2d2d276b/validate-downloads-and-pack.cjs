@@ -1,0 +1,14 @@
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),zlib=require('node:zlib'),assert=require('node:assert/strict');
+const root='C:\\Users\\minec\\hamon-ultra-2d2d276b-scope-removal',out=path.join(root,'independent-current-08b4d1c');
+const read=n=>JSON.parse(fs.readFileSync(path.join(out,'candidate','downloads',n,'scopesignal-workspace-v1.json'),'utf8'));
+const restored=read('restored-review'),before=read('before-navigation'),after=read('after-new-decision');
+assert.equal(restored.stage,'review');assert.equal(restored.events.length,0);assert.equal(restored.draft.checkpoints[1].title,'Independent restored middle row');assert.equal(restored.draft.checkpoints[1].evidence,'LATEST pending review evidence <&> 🧭');
+assert.deepEqual(after.draft,before.draft);assert.deepEqual(after.events.slice(0,1),before.events);assert.equal(after.events.length,2);assert.equal(after.events[1].type,'paypal.order.created');assert.deepEqual(after.evidenceDrafts,before.evidenceDrafts);assert.equal(after.evidenceDrafts[0].text,'Current unapproved evidence must survive navigation');
+const validation={at:new Date().toISOString(),runtime:process.version,passed:true,checks:['restored review has exact title/evidence and zero events','new decision preserves draft and original approval event','exactly one new order event added','pending evidence list byte-value equality across navigation/new decision']};fs.writeFileSync(path.join(out,'download-validation.json'),JSON.stringify(validation,null,2)+'\n');
+fs.copyFileSync(__filename,path.join(out,'validate-downloads-and-pack.cjs'));
+fs.copyFileSync(path.join(root,'independent-current-oracle.txt'),path.join(out,'independent-oracle.txt'));
+fs.copyFileSync(path.join(root,'run-independent-current.cjs'),path.join(out,'run-independent-current.cjs'));
+const list=['execution.json','independent-history-receiver.mjs','independent-oracle.txt','run-independent-current.cjs','validate-downloads-and-pack.cjs','download-validation.json','candidate.stdout.log','candidate.stderr.log','negative.stdout.log','negative.stderr.log','candidate/receipt.json','negative/failure.json','mutation-source/src/scope-workspace.mjs',...['restored-review','before-navigation','after-new-decision'].map(n=>'candidate/downloads/'+n+'/scopesignal-workspace-v1.json')];
+const files=list.map(p=>{const b=fs.readFileSync(path.join(out,p));return{path:p,bytes:b.length,sha256:crypto.createHash('sha256').update(b).digest('hex'),base64:b.toString('base64')}});
+const packet={schema:'scopesignal.independent-current-history-receiving.v1',sourceCommit:'08b4d1cc4656efcb12880bc1f970aa1dfed1d930',files};const raw=zlib.gzipSync(Buffer.from(JSON.stringify(packet)));
+fs.writeFileSync(path.join(root,'independent-current-packet.json.gz.b64'),raw.toString('base64')+'\n');console.log(JSON.stringify({files:files.length,bytes:raw.length,sha256:crypto.createHash('sha256').update(raw).digest('hex'),validation}));

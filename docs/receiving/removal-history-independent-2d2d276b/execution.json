@@ -1,0 +1,24 @@
+{
+  "started": "2026-10-08T18:56:53.707Z",
+  "sourceCommit": "08b4d1cc4656efcb12880bc1f970aa1dfed1d930",
+  "sourceTree": "d8b5638fbd626df5021491f333a92b30a24a3f40",
+  "runtime": "v24.21.0",
+  "transport": "author CDP bootstrap, independent replacement oracle",
+  "driverSha256": "6a51761c2e4cd05a25f33a87aef430e064f6bbf14277305a9717bacf7004f3fd",
+  "originalControllerSha256": "a7d415e04646a8682084369ff539b66556804f140b12ab57c5cafceecbca5ba2",
+  "mutationControllerSha256": "e7c15da8d5d0530611c4b287fbfd9d7c05595ed2011580dd8189454bdedc20ee",
+  "runs": [
+    {
+      "name": "candidate",
+      "status": 0,
+      "signal": null
+    },
+    {
+      "name": "negative",
+      "status": 1,
+      "signal": null
+    }
+  ],
+  "finished": "2026-10-08T18:57:04.688Z",
+  "expectedStatuses": true
+}

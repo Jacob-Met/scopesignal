@@ -1,0 +1,55 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "review",
+  "draft": {
+    "label": "Northstar onboarding refresh",
+    "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+    "cap": "1200.00",
+    "checkpoints": [
+      {
+        "title": "First-run checklist",
+        "amount": "400.00",
+        "evidence": "A screen recording shows the checklist completion path and reset behavior."
+      },
+      {
+        "title": "Independent restored middle row",
+        "amount": "400.00",
+        "evidence": "LATEST pending review evidence <&> 🧭"
+      },
+      {
+        "title": "Survivor edited after removal",
+        "amount": "400.00",
+        "evidence": "Desktop and mobile handoff files plus implementation notes."
+      }
+    ]
+  },
+  "events": [
+    {
+      "seq": 1,
+      "type": "checkpoint.approved",
+      "at": "T+001",
+      "checkpointId": "scope-1",
+      "approver": "human-reviewer",
+      "acceptedEvidence": "Accepted after restored replacement"
+    },
+    {
+      "seq": 2,
+      "type": "paypal.order.created",
+      "at": "T+002",
+      "checkpointId": "scope-1",
+      "orderId": "SANDBOX-SCOPE-1",
+      "amount": 40000,
+      "currency": "USD",
+      "environment": "sandbox"
+    }
+  ],
+  "evidenceDrafts": [
+    {
+      "checkpointId": "scope-3",
+      "text": "Current unapproved evidence must survive navigation"
+    }
+  ]
+}
