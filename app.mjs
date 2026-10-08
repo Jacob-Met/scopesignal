@@ -30,7 +30,7 @@ function render() {
   $('#ledger-body').innerHTML = ledger.events.map(e => `<tr><td>${String(e.seq).padStart(2, '0')}</td><td><code>${escapeHtml(e.type)}</code></td><td>${escapeHtml(e.checkpointId || '')}${e.eventId ? ` · ${escapeHtml(e.eventId)}` : ''}</td><td>${escapeHtml(eventResult(e))}</td></tr>`).join('');
   $('#ledger-count').textContent = `${ledger.events.length} events`;
 }
-function eventResult(e) { return e.type === 'paypal.capture.response_lost' ? 'unknown · do not retry' : e.type === 'paypal.webhook.received' ? (e.duplicate ? 'duplicate ignored' : 'captured once') : e.type === 'paypal.capture.reconciled' ? 'reconciled · counted once' : e.type === 'checkpoint.approved' ? 'human approval' : e.environment === 'sandbox' ? 'Sandbox fixture order' : 'recorded'; }
+function eventResult(e) { return e.type === 'paypal.capture.response_lost' ? 'unknown · do not retry' : e.type === 'paypal.webhook.received' ? (e.duplicate ? 'duplicate ignored' : 'webhook received') : e.type === 'paypal.capture.reconciled' ? 'reconciled · counted once' : e.type === 'checkpoint.approved' ? 'human approval' : e.environment === 'sandbox' ? 'Sandbox fixture order' : 'recorded'; }
 function escapeHtml(v) { return String(v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
 
 $('#checkpoint-list').addEventListener('click', e => {

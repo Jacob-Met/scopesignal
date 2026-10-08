@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { FIXTURE, replayFixture } from '../src/ledger.mjs';
+import { FIXTURE, replayFixture, reduce } from '../src/ledger.mjs';
 import { roles } from '../src/agents.mjs';
 
 let instance = 0;
@@ -159,4 +159,20 @@ test('fixture totals and explicit replay behavior remain intact', async () => {
   assert.equal(app.elements.get('ledger-count').textContent, '7 events');
   app.replay();
   assert.equal(app.reloads(), 1);
+});
+
+// A recorded webhook does not itself prove this event counted a capture: the
+// fixture deliberately keeps an unknown outcome until reconciliation.
+test('webhook rows describe receipt without claiming an unknown capture was counted', async () => {
+  const fixture = replayFixture();
+  const received = fixture.events.findIndex(event => event.type === 'paypal.webhook.received');
+  const prefix = reduce(fixture.events.slice(0, received + 1));
+  assert.equal(prefix.checkpoints.journey.captureStatus, 'unknown');
+  assert.equal(prefix.captured, 0);
+  const app = await openApp();
+  const rows = [...app.elements.get('ledger-body').innerHTML.matchAll(/<tr>(.*?)<\/tr>/g)].map(match => match[1]);
+  assert.match(rows[received], /<td>webhook received<\/td>$/);
+  assert.match(rows[received + 1], /<td>duplicate ignored<\/td>$/);
+  assert.match(rows[received + 2], /<td>reconciled · counted once<\/td>$/);
+  assert.equal(app.elements.get('captured').textContent, '$400.00');
 });
