@@ -1,0 +1,434 @@
+{
+  "format": "scopesignal-final-delivery-receipt/1",
+  "sealed_at": "2026-10-08T21:16:54.346237+00:00",
+  "actor": "chatgpt:68094585a1c2 / delivery_continuation",
+  "attribution": {
+    "original_author": "estate-68094585a1c2 / receiving_review",
+    "author_continuation": "scope_receiving",
+    "independent_receiver": "offhand_delivery",
+    "source_reviewer_and_integrator": "root",
+    "hosted_public_and_final_delivery": "delivery_continuation"
+  },
+  "repository": "Jacob-Met/scopesignal",
+  "pull_request": 46,
+  "issue": 35,
+  "original_source": {
+    "commit": "65209a72c4593358848a6921847a478ce6fba8c3",
+    "tree": "57e70cff603e2e03a590daf9f346c565df4dcead",
+    "base": "cdffd2476cae0c7332dff64677ae814b7f594947"
+  },
+  "qualified_premerge": {
+    "base": "226d6d90cb949ce3d6edf97b99153831bd95e8fb",
+    "head": "47ecf2c41e132bd022d14cc8d20b7d6266f4af74",
+    "tree": "42407f98c0bb6d0d9eab403e92c1c410ce4c3bf2",
+    "actualTestMerge": "f5c9c3d4b62e4067053931e8b609ddc8305fffa0",
+    "run": 37840665837,
+    "job": 113528905488,
+    "node": "24.21.0",
+    "tests": 233,
+    "pass": 233,
+    "fail": 0,
+    "skipped": 0
+  },
+  "actual_merge": {
+    "sha": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+    "parents": [
+      "85864b4c4f145985f3123fd43583b049088f22b4",
+      "47ecf2c41e132bd022d14cc8d20b7d6266f4af74"
+    ],
+    "tree": "245c0dd66c05c17f22e53bf57d9ae5847b36dc9a",
+    "commitAt": "2026-10-08T20:48:09Z",
+    "mergedAt": "2026-10-08T20:48:10Z",
+    "baseLeaves": 750,
+    "mergedLeaves": 763,
+    "contributionPaths": 16,
+    "unownedExact": 747,
+    "changedPaths": [
+      {
+        "path": "README.md",
+        "before": {
+          "path": "README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "9e690b3898a700bdfd4ed9e85b25788394efcb79"
+        },
+        "after": {
+          "path": "README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "70d5fd945f8aa98ab62047389d366044f6d9082d"
+        }
+      },
+      {
+        "path": "scope.html",
+        "before": {
+          "path": "scope.html",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a95c270ca54588fdf596d039f1d97bec36ad9e13"
+        },
+        "after": {
+          "path": "scope.html",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "f7a4877eb88ac111500980978abf6f22abd6d9b5"
+        }
+      },
+      {
+        "path": "src/scope-workspace.mjs",
+        "before": {
+          "path": "src/scope-workspace.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e3dda4a14c8c3bc26d6da1a1baeb9a7f205eb12b"
+        },
+        "after": {
+          "path": "src/scope-workspace.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "fdc06582f2fc9571eb8ca40ab9717b2abafaf799"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/README.md",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "be45a8a26dde4f1efd81f2656b315a487f822760"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/capsule-manifest.json",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/capsule-manifest.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6aee695f843f076568d132ccbb4440e1d98aa27d"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/checkpoint-reuse-evidence.tar.gz",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/checkpoint-reuse-evidence.tar.gz",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a11a4fa9c77423e5a75d3c00e83761b1e60dbae2"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/composition-receipt.json",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/composition-receipt.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4019538c276c7e74e675a5eb1fecbba74fa7b3af"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/receipt.json",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/receipt.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "d8ad5152919e146672e53e011545ae93be08df33"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/root-source-review.json",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/root-source-review.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2518dca759ddf5f2e0998b74d49dab94cab4c681"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/source-against-current.patch",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/source-against-current.patch",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "c1199d813f1360d17a56f0d73bd415b5fec4d217"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/source-manifest.json",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/source-manifest.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4b39f69216562595817b771f1e807926d5cdc715"
+        }
+      },
+      {
+        "path": "scope-checkpoint-import.css",
+        "before": null,
+        "after": {
+          "path": "scope-checkpoint-import.css",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "21dc93c8647add981a584d235d57a584dd02b70a"
+        }
+      },
+      {
+        "path": "scripts/check-scope-checkpoint-import.mjs",
+        "before": null,
+        "after": {
+          "path": "scripts/check-scope-checkpoint-import.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "aa12870fe30f907f6b7c6458b5e422256408ed26"
+        }
+      },
+      {
+        "path": "src/scope-checkpoint-import-ui.mjs",
+        "before": null,
+        "after": {
+          "path": "src/scope-checkpoint-import-ui.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "c40c6640b4d3edcb69c64af98e9d905680128779"
+        }
+      },
+      {
+        "path": "src/scope-checkpoint-import.mjs",
+        "before": null,
+        "after": {
+          "path": "src/scope-checkpoint-import.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "fef003292a5ff99d85ed355bec17a9841fe99618"
+        }
+      },
+      {
+        "path": "tests/scope-checkpoint-import.test.mjs",
+        "before": null,
+        "after": {
+          "path": "tests/scope-checkpoint-import.test.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "777e8478b57dcbbb2ea55e4be0ab03924cf2775d"
+        }
+      }
+    ],
+    "allFourteenOtherContributionFilesExactQualifiedHead": true
+  },
+  "issue_closed_at": "2026-10-08T20:48:11Z",
+  "root_acceptance": {
+    "decision": "accepted actual merged composition after fresh-base race",
+    "received_at": "2026-10-08 21:00:39 UTC",
+    "artifact": {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/root-actual-merge-source-review.json",
+      "native_path": "/tmp/hamon-scopesignal-final-delivery-68094585a1c2/root-actual-merge-source-review.json",
+      "bytes": 15338,
+      "sha256": "9a0f98c5f1060d578b5124b49641436a6cd70c6a76e9003d1b2596662a56ca01",
+      "git_blob": "3daf86666653e051a8878ee60b62325e5dd54026",
+      "mode": "100644",
+      "role": "unaltered-root-actual-composition-acceptance"
+    },
+    "full_dual_inverse_proofs": [
+      {
+        "path": "README.md",
+        "ownInsertions": 1,
+        "ownRemovedEqualsCompleteCurrentBase": true,
+        "libraryRemovedEqualsCompleteQualifiedHead": true,
+        "pins": {
+          "newBase": {
+            "bytes": 29381,
+            "sha256": "331ed3273bcb4a6405f204995b0928eaf8761d749caa6ccf2881c276dff25b5e",
+            "blob": "9e690b3898a700bdfd4ed9e85b25788394efcb79"
+          },
+          "merged": {
+            "bytes": 31668,
+            "sha256": "13831821fa00588b7ec718636171326ff8fd637ecfac3778a34f3217d3a6e388",
+            "blob": "70d5fd945f8aa98ab62047389d366044f6d9082d"
+          }
+        }
+      },
+      {
+        "path": "scope.html",
+        "ownInsertions": 2,
+        "ownRemovedEqualsCompleteCurrentBase": true,
+        "libraryRemovedEqualsCompleteQualifiedHead": true,
+        "pins": {
+          "newBase": {
+            "bytes": 12077,
+            "sha256": "b3216cad973b21341e53a5921f5ed9e951a3276771aef02cfa0b15fa235fa1c5",
+            "blob": "a95c270ca54588fdf596d039f1d97bec36ad9e13"
+          },
+          "merged": {
+            "bytes": 13971,
+            "sha256": "3179243d12803701b4255146853d2ba26d9746bfbcff2de891c9335d0f482cd2",
+            "blob": "f7a4877eb88ac111500980978abf6f22abd6d9b5"
+          }
+        }
+      }
+    ]
+  },
+  "race": {
+    "description": "Another normal merge, saved-workspace library PR43, advanced paypal-ai from 226d6d90 to 85864b4c after the root's premerge read. The expected-head merge guarded head47ec, not the base. Actual merged tree differs from the PR test tree. This review receives the actual composition; historical PR evidence remains historical.",
+    "runtime_boundary": "The saved-workspace library is a separate page with its own modules, CSS, tests and receiving evidence. The sole incoming author-page change is a target=_blank rel=noopener navigation link. No change to the workspace controller, import modules, codec, plan, history, Undo, stylesheet or other imported runtime. README adds one separate library documentation section.",
+    "historical_pr_tree_is_actual_tree": false,
+    "postmerge_input_review_pending_field_is_historical": true
+  },
+  "hosted": {
+    "run": 37842163319,
+    "workflow": "Fixture-mode Pages deployment",
+    "event": "push",
+    "conclusion": "success",
+    "checkout": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+    "test_job": 113533966067,
+    "deploy_job": 113534064044,
+    "node": "24.21.0",
+    "npm": "11.19.0",
+    "tests": 242,
+    "pass": 242,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "todo": 0,
+    "pages_environment_url": "http://jacobmetoyer.com/scopesignal/",
+    "run_completed_at": "2026-10-08T20:48:56Z"
+  },
+  "public_receiving": {
+    "requests": 18,
+    "passed": 18,
+    "all_http200": true,
+    "all_bytes_exact_actual_git_blobs": true,
+    "started_at": "2026-10-08T20:54:01.528739+00:00",
+    "completed_at": "2026-10-08T20:54:02.906611+00:00",
+    "html_url": "http://jacobmetoyer.com/scopesignal/scope.html",
+    "artifact": {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/receipt.json",
+      "native_path": "/tmp/hamon-scopesignal-final-delivery-68094585a1c2/public-assets-v1/receipt.json",
+      "bytes": 34996,
+      "sha256": "f842653de1d2cefcc222b51e8c04bc8cd30810f57d280a15921118c2f7d391cc",
+      "git_blob": "c01afbf1258d7fbb7a03fb017ac6d49fe2208f96",
+      "mode": "100644",
+      "role": "actual-public-byte-receiving-record"
+    },
+    "browser_runs": 0,
+    "product_code_executed": false
+  },
+  "independent_original": {
+    "files": [
+      {
+        "path": "out/checkpoint-reuse-independent-68094585a1c2/README.md",
+        "native_path": "/tmp/hamon-scopesignal-independent-68094585a1c2/publication/README.md",
+        "bytes": 6511,
+        "sha256": "e7db8eb823c4919c85372a2188d99e3fe47ca0d1aeff0771bfd69292da01ce20",
+        "git_blob": "1524f2e56b6233ddf007599f69ac6cdc6ba54d78",
+        "mode": "100644",
+        "role": "unchanged-original-independent-publication"
+      },
+      {
+        "path": "out/checkpoint-reuse-independent-68094585a1c2/receipt.json",
+        "native_path": "/tmp/hamon-scopesignal-independent-68094585a1c2/publication/receipt.json",
+        "bytes": 11629,
+        "sha256": "108000dada53218e796a2519e402ddd0ccfb66379e8c84bed17a1fc75c4b4f17",
+        "git_blob": "130b200d4834771fe09d540ea6e1fb6c647a920c",
+        "mode": "100644",
+        "role": "unchanged-original-independent-publication"
+      },
+      {
+        "path": "out/checkpoint-reuse-independent-68094585a1c2/capsule-manifest.json",
+        "native_path": "/tmp/hamon-scopesignal-independent-68094585a1c2/publication/capsule-manifest.json",
+        "bytes": 24860,
+        "sha256": "3f5668cbc054756d64f073357de4d81893948bdbca857eb4e7cc26cd2d6b463f",
+        "git_blob": "e7be0fcd88e01aeb4b5bed23fbde752dc9d3f5fa",
+        "mode": "100644",
+        "role": "unchanged-original-independent-publication"
+      },
+      {
+        "path": "out/checkpoint-reuse-independent-68094585a1c2/independent-receiving-evidence.tar.gz",
+        "native_path": "/tmp/hamon-scopesignal-independent-68094585a1c2/publication/independent-receiving-evidence.tar.gz",
+        "bytes": 249369,
+        "sha256": "ccf956ce569bdde903d440a2ded0216c664080edb3035a5f9996abfa61bb3dc8",
+        "git_blob": "a642517531ad8457083e27b081ca604ce7f6f6a0",
+        "mode": "100644",
+        "role": "unchanged-original-independent-publication"
+      }
+    ],
+    "archive_members": 106,
+    "archive_bytes": 249369,
+    "archive_sha256": "ccf956ce569bdde903d440a2ded0216c664080edb3035a5f9996abfa61bb3dc8",
+    "native_groups": 5,
+    "unchanged_pins": 44,
+    "runtime": "Node22.22.1; supplemental below supported Node24 floor",
+    "original_four_files_unchanged": true,
+    "archive_regenerated": false
+  },
+  "receiving_inputs": {
+    "premerge": {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/current-premerge-receiving.json",
+      "native_path": "/tmp/hamon-scopesignal-final-delivery-68094585a1c2/current-premerge-receiving.json",
+      "bytes": 894208,
+      "sha256": "c4d6685c73c9a5bdca84bceec6d62393b36fa9e3d65c2e67e326ed2711843aed",
+      "git_blob": "0ce850bbb427b16c5cec413fcc581847c71b8d50",
+      "mode": "100644",
+      "role": "receiving-input-or-observer"
+    },
+    "actual_postmerge": {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/postmerge-receiving-input.json",
+      "native_path": "/tmp/hamon-scopesignal-final-delivery-68094585a1c2/postmerge-receiving-input.json",
+      "bytes": 803747,
+      "sha256": "bef272e2d2843ce6fcb3d4bb0f1ab84f92d904d6b0165750f283d92c86d35694",
+      "git_blob": "49d692f4424b194db5a944a3be39a5b4101e080a",
+      "mode": "100644",
+      "role": "receiving-input-or-observer"
+    }
+  },
+  "limits": {
+    "native_reruns": 0,
+    "browser_reruns": 0,
+    "additional_http_receiving_after_completed_public_witness": 0,
+    "supplemental_current_undo_browser": "UNOBSERVED",
+    "third_browser_attempt": false,
+    "product_defect_established_by_observer_failures": false,
+    "installed_runtime_qualification": false,
+    "source_basis": "Original native and author evidence, exact preserved implementation, full source inverse proofs and lifecycle reasoning; source inference is not a rendered browser observation."
+  },
+  "actions_hold": {
+    "artifact": {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/actions-hold-receipt.json",
+      "native_path": "/tmp/hamon-scopesignal-final-delivery-68094585a1c2/actions-hold-receipt.json",
+      "bytes": 3904,
+      "sha256": "f3ee424a6cf294f65e7e0cd03f84413b7e7e774d979e73f02ffd34418dea00d1",
+      "git_blob": "62c71ed6c2d1427cbd4f0f7d982a0ea30550a4c8",
+      "mode": "100644",
+      "role": "actions-hold-and-nontriggering-publication-proof"
+    },
+    "authority": {
+      "relay_url": "https://github.com/Jacob-Met/hamon/issues/143#issuecomment-6067592767",
+      "comment_id": 6067592767,
+      "direct_owner_update": "2026-10-08T19:32:00Z",
+      "relay_created_at": "2026-10-08T19:36:07Z",
+      "root_learned_and_adopted_at": "approximately 2026-10-08T21:09:00Z",
+      "rule": "No new GitHub Actions executions, including implicit push/PR/merge triggers, dispatches or reruns."
+    },
+    "timing_disclosure": "The actual ScopeSignal merge and automatic push/Pages workflow occurred at 20:48, after the owner's 19:32 update but before this root learned and adopted the relay around 21:09. They are retained as completed historical events; compliant timing is not claimed.",
+    "no_trigger_reason": "The unique evidence branch is not paypal-ai; no pull request or manual dispatch is created. Neither inherited workflow handles create or issue_comment. Workflow files remain unchanged. Both branch publication and the receipt comment therefore match no inherited Actions trigger."
+  },
+  "publication": {
+    "branch": "estate/68094585a1c2/checkpoint-reuse-final-evidence-20261008",
+    "base_commit": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+    "base_tree": "245c0dd66c05c17f22e53bf57d9ae5847b36dc9a",
+    "inherited_leaves": 763,
+    "expected_added_artifacts": 39,
+    "expected_total_leaves": 802,
+    "all_inherited_paths_modes_and_blobs_must_remain_exact": true,
+    "pull_request_created": false,
+    "source_or_default_ref_updated": false,
+    "workflow_files_changed": false,
+    "final_ref_tree_and_comment_readback": "Recorded on PR46 and in the native final-publication-result checkpoint."
+  }
+}

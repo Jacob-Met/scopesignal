@@ -1,0 +1,433 @@
+{
+  "schema": "hamon.root-source-receiving.v1",
+  "actor": "chatgpt:68094585a1c2 / root",
+  "receivedAt": "2026-10-08 21:00:39 UTC",
+  "repository": "Jacob-Met/scopesignal",
+  "pullRequest": 46,
+  "decision": "accepted actual merged composition after fresh-base race",
+  "rootPremergeComment": 6068754428,
+  "qualifiedPremerge": {
+    "base": "226d6d90cb949ce3d6edf97b99153831bd95e8fb",
+    "head": "47ecf2c41e132bd022d14cc8d20b7d6266f4af74",
+    "tree": "42407f98c0bb6d0d9eab403e92c1c410ce4c3bf2",
+    "actualTestMerge": "f5c9c3d4b62e4067053931e8b609ddc8305fffa0",
+    "run": 37840665837,
+    "job": 113528905488,
+    "node": "24.21.0",
+    "tests": 233,
+    "pass": 233,
+    "fail": 0,
+    "skipped": 0
+  },
+  "actualMerge": {
+    "sha": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+    "parents": [
+      "85864b4c4f145985f3123fd43583b049088f22b4",
+      "47ecf2c41e132bd022d14cc8d20b7d6266f4af74"
+    ],
+    "tree": "245c0dd66c05c17f22e53bf57d9ae5847b36dc9a",
+    "commitAt": "2026-10-08T20:48:09Z",
+    "mergedAt": "2026-10-08T20:48:10Z",
+    "baseLeaves": 750,
+    "mergedLeaves": 763,
+    "contributionPaths": 16,
+    "unownedExact": 747,
+    "changedPaths": [
+      {
+        "path": "README.md",
+        "before": {
+          "path": "README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "9e690b3898a700bdfd4ed9e85b25788394efcb79"
+        },
+        "after": {
+          "path": "README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "70d5fd945f8aa98ab62047389d366044f6d9082d"
+        }
+      },
+      {
+        "path": "scope.html",
+        "before": {
+          "path": "scope.html",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a95c270ca54588fdf596d039f1d97bec36ad9e13"
+        },
+        "after": {
+          "path": "scope.html",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "f7a4877eb88ac111500980978abf6f22abd6d9b5"
+        }
+      },
+      {
+        "path": "src/scope-workspace.mjs",
+        "before": {
+          "path": "src/scope-workspace.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "e3dda4a14c8c3bc26d6da1a1baeb9a7f205eb12b"
+        },
+        "after": {
+          "path": "src/scope-workspace.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "fdc06582f2fc9571eb8ca40ab9717b2abafaf799"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/README.md",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "be45a8a26dde4f1efd81f2656b315a487f822760"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/capsule-manifest.json",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/capsule-manifest.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6aee695f843f076568d132ccbb4440e1d98aa27d"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/checkpoint-reuse-evidence.tar.gz",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/checkpoint-reuse-evidence.tar.gz",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "a11a4fa9c77423e5a75d3c00e83761b1e60dbae2"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/composition-receipt.json",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/composition-receipt.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4019538c276c7e74e675a5eb1fecbba74fa7b3af"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/receipt.json",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/receipt.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "d8ad5152919e146672e53e011545ae93be08df33"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/root-source-review.json",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/root-source-review.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2518dca759ddf5f2e0998b74d49dab94cab4c681"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/source-against-current.patch",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/source-against-current.patch",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "c1199d813f1360d17a56f0d73bd415b5fec4d217"
+        }
+      },
+      {
+        "path": "out/checkpoint-reuse-68094585a1c2/source-manifest.json",
+        "before": null,
+        "after": {
+          "path": "out/checkpoint-reuse-68094585a1c2/source-manifest.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "4b39f69216562595817b771f1e807926d5cdc715"
+        }
+      },
+      {
+        "path": "scope-checkpoint-import.css",
+        "before": null,
+        "after": {
+          "path": "scope-checkpoint-import.css",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "21dc93c8647add981a584d235d57a584dd02b70a"
+        }
+      },
+      {
+        "path": "scripts/check-scope-checkpoint-import.mjs",
+        "before": null,
+        "after": {
+          "path": "scripts/check-scope-checkpoint-import.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "aa12870fe30f907f6b7c6458b5e422256408ed26"
+        }
+      },
+      {
+        "path": "src/scope-checkpoint-import-ui.mjs",
+        "before": null,
+        "after": {
+          "path": "src/scope-checkpoint-import-ui.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "c40c6640b4d3edcb69c64af98e9d905680128779"
+        }
+      },
+      {
+        "path": "src/scope-checkpoint-import.mjs",
+        "before": null,
+        "after": {
+          "path": "src/scope-checkpoint-import.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "fef003292a5ff99d85ed355bec17a9841fe99618"
+        }
+      },
+      {
+        "path": "tests/scope-checkpoint-import.test.mjs",
+        "before": null,
+        "after": {
+          "path": "tests/scope-checkpoint-import.test.mjs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "777e8478b57dcbbb2ea55e4be0ab03924cf2775d"
+        }
+      }
+    ],
+    "allFourteenOtherContributionFilesExactQualifiedHead": true
+  },
+  "race": {
+    "description": "Another normal merge, saved-workspace library PR43, advanced paypal-ai from 226d6d90 to 85864b4c after the root's premerge read. The expected-head merge guarded head47ec, not the base. Actual merged tree differs from the PR test tree. This review receives the actual composition; historical PR evidence remains historical.",
+    "incomingCompare": "https://github.com/Jacob-Met/scopesignal/compare/226d6d90cb949ce3d6edf97b99153831bd95e8fb...85864b4c4f145985f3123fd43583b049088f22b4",
+    "incomingFiles": [
+      {
+        "path": "README.md",
+        "status": "modified",
+        "blob": "9e690b3898a700bdfd4ed9e85b25788394efcb79",
+        "additions": 8,
+        "deletions": 0
+      },
+      {
+        "path": "docs/receiving/scope-library-c77045b4/CONTRACT.md",
+        "status": "added",
+        "blob": "3d649b6b94c3e33877b791efc7542134ce2dba55",
+        "additions": 14,
+        "deletions": 0
+      },
+      {
+        "path": "docs/receiving/scope-library-c77045b4/README.md",
+        "status": "added",
+        "blob": "f84b0f73d47816c89b6a8865b37c7b36007f6a64",
+        "additions": 13,
+        "deletions": 0
+      },
+      {
+        "path": "docs/receiving/scope-library-c77045b4/acceptance.json",
+        "status": "added",
+        "blob": "225bcb25c1532ee61e2a6a5f28230fd47b1a3667",
+        "additions": 68,
+        "deletions": 0
+      },
+      {
+        "path": "docs/receiving/scope-library-c77045b4/author-evidence.tar.gz",
+        "status": "added",
+        "blob": "b9faa5ad93af807f3f4de3ec23221bdb4d9fe37a",
+        "additions": 0,
+        "deletions": 0
+      },
+      {
+        "path": "docs/receiving/scope-library-c77045b4/author-manifest.json",
+        "status": "added",
+        "blob": "15a2a7b98f53b997de4bf7f186d34af612fdcded",
+        "additions": 249,
+        "deletions": 0
+      },
+      {
+        "path": "docs/receiving/scope-library-independent-c77045b4/README.md",
+        "status": "added",
+        "blob": "a42c80482c88557ef568709bffba2e7dda558a8d",
+        "additions": 9,
+        "deletions": 0
+      },
+      {
+        "path": "docs/receiving/scope-library-independent-c77045b4/REVIEW.json",
+        "status": "added",
+        "blob": "eab11458b53ccd345ce91115914d90174a07d59f",
+        "additions": 66,
+        "deletions": 0
+      },
+      {
+        "path": "docs/receiving/scope-library-independent-c77045b4/manifest.json",
+        "status": "added",
+        "blob": "7e189bd6dc07223f9ac92ccc5bfe5d9c080b821c",
+        "additions": 17,
+        "deletions": 0
+      },
+      {
+        "path": "docs/receiving/scope-library-independent-c77045b4/native-receiving.zip",
+        "status": "added",
+        "blob": "4f076f3940831404724f467e8bebb119c7556cc7",
+        "additions": 0,
+        "deletions": 0
+      },
+      {
+        "path": "scope-library.css",
+        "status": "added",
+        "blob": "25e6cec50875b2a993c8c5f352018378df569765",
+        "additions": 1,
+        "deletions": 0
+      },
+      {
+        "path": "scope-library.html",
+        "status": "added",
+        "blob": "584c29fbebe72a159c466a979d68abea6d34993b",
+        "additions": 39,
+        "deletions": 0
+      },
+      {
+        "path": "scope.html",
+        "status": "modified",
+        "blob": "a95c270ca54588fdf596d039f1d97bec36ad9e13",
+        "additions": 1,
+        "deletions": 0
+      },
+      {
+        "path": "scripts/check-scope-library.mjs",
+        "status": "added",
+        "blob": "3b1b686634a9505ec77da66d58879b35f9fd8bc6",
+        "additions": 162,
+        "deletions": 0
+      },
+      {
+        "path": "src/scope-library-ui.mjs",
+        "status": "added",
+        "blob": "aa5f0e2f48c5ab1ca6e86bd8f97b92f3380f965b",
+        "additions": 99,
+        "deletions": 0
+      },
+      {
+        "path": "src/scope-library.mjs",
+        "status": "added",
+        "blob": "c8174b56c099ca494c50869e584af715d7522592",
+        "additions": 72,
+        "deletions": 0
+      },
+      {
+        "path": "tests/scope-library.test.mjs",
+        "status": "added",
+        "blob": "886d0360518387985fbda972498ebe1cbdb00a1b",
+        "additions": 77,
+        "deletions": 0
+      }
+    ],
+    "sharedPaths": [
+      "README.md",
+      "scope.html"
+    ],
+    "runtimeBoundary": "The saved-workspace library is a separate page with its own modules, CSS, tests and receiving evidence. The sole incoming author-page change is a target=_blank rel=noopener navigation link. No change to the workspace controller, import modules, codec, plan, history, Undo, stylesheet or other imported runtime. README adds one separate library documentation section."
+  },
+  "sourceReasoning": [
+    "Full recursive before/after maps have truncated:false. The actual750-leaf base is preserved at all747 unowned paths in path/mode/type/blob, with16 owned differences and no deletion.",
+    "The14 contribution files other than README/scope.html are exactly the previously qualified47ec head, including root-source-review.json2518dca759ddf5f2e0998b74d49dab94cab4c681.",
+    "For each shared text file, removing our exact original insertion(s) from the actual merge reproduces the complete85864 current-base file; removing the exact incoming library addition reproduces the complete qualified47ec file. This verifies both directions across full files, not snippets.",
+    "No product revision or additional browser execution is necessary for a separate-page navigation link. The current controller lifecycle source reasoning and original native/browser receipts retain their actual bounds."
+  ],
+  "dualFullFileInverseProof": [
+    {
+      "path": "README.md",
+      "ownInsertions": 1,
+      "ownRemovedEqualsCompleteCurrentBase": true,
+      "libraryRemovedEqualsCompleteQualifiedHead": true,
+      "pins": {
+        "newBase": {
+          "bytes": 29381,
+          "sha256": "331ed3273bcb4a6405f204995b0928eaf8761d749caa6ccf2881c276dff25b5e",
+          "blob": "9e690b3898a700bdfd4ed9e85b25788394efcb79"
+        },
+        "merged": {
+          "bytes": 31668,
+          "sha256": "13831821fa00588b7ec718636171326ff8fd637ecfac3778a34f3217d3a6e388",
+          "blob": "70d5fd945f8aa98ab62047389d366044f6d9082d"
+        }
+      }
+    },
+    {
+      "path": "scope.html",
+      "ownInsertions": 2,
+      "ownRemovedEqualsCompleteCurrentBase": true,
+      "libraryRemovedEqualsCompleteQualifiedHead": true,
+      "pins": {
+        "newBase": {
+          "bytes": 12077,
+          "sha256": "b3216cad973b21341e53a5921f5ed9e951a3276771aef02cfa0b15fa235fa1c5",
+          "blob": "a95c270ca54588fdf596d039f1d97bec36ad9e13"
+        },
+        "merged": {
+          "bytes": 13971,
+          "sha256": "3179243d12803701b4255146853d2ba26d9746bfbcff2de891c9335d0f482cd2",
+          "blob": "f7a4877eb88ac111500980978abf6f22abd6d9b5"
+        }
+      }
+    }
+  ],
+  "postmergeEvidence": {
+    "receivedBy": "/root/delivery_continuation",
+    "workflow": 37842163319,
+    "workflowName": "Fixture-mode Pages deployment",
+    "conclusion": "success",
+    "testJob": 113533966067,
+    "deployJob": 113534064044,
+    "actualCheckout": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+    "tests": 242,
+    "pass": 242,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "rawLogsAndFullMapsBlob": "49d692f4424b194db5a944a3be39a5b4101e080a",
+    "publicReceiving": {
+      "requests": 18,
+      "http200": 18,
+      "allExactActualMerge": true,
+      "at": "2026-10-08T20:54:01Z–2026-10-08T20:54:02Z",
+      "blob": "c01afbf1258d7fbb7a03fb017ac6d49fe2208f96"
+    }
+  },
+  "limits": {
+    "supplementalCurrentUndoImportBrowserSequence": "UNOBSERVED; retained observer failures, no product failure established, no third attempt",
+    "rootThisContinuation": "Git source/maps/full-file inverse and exact hashing only. No native product execution, browser execution or requalification rerun.",
+    "attribution": "Original author receiving_review/scope_receiving; independent offhand_delivery; root source/current integration chatgpt:68094585a1c2; hosted/public/final evidence delivery_continuation."
+  },
+  "receiptPreparationObserverFailure": {
+    "at": "2026-10-08T20:55Z",
+    "stage": "In-memory source composition receipt preparation",
+    "error": "exec-server rejected process creation: Argument list too long (os error 7)",
+    "productExecution": false,
+    "remedy": "Split independent text diff and byte hashing into bounded arguments; no source mutation."
+  },
+  "state": {
+    "implemented": true,
+    "nativeQualified": true,
+    "sourceAccepted": true,
+    "integrated": true,
+    "hostedChecksPassed": true,
+    "pagesDelivered": true,
+    "publicBytesReceived": true,
+    "supplementalUndoBrowserObserved": false,
+    "finalEvidencePublicationPending": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "format": "scopesignal-final-publication-actions-hold/1",
+  "actor": "chatgpt:68094585a1c2 / delivery_continuation",
+  "recorded_at": "2026-10-08T21:14:22.956Z",
+  "authority": {
+    "relay_url": "https://github.com/Jacob-Met/hamon/issues/143#issuecomment-6067592767",
+    "comment_id": 6067592767,
+    "direct_owner_update": "2026-10-08T19:32:00Z",
+    "relay_created_at": "2026-10-08T19:36:07Z",
+    "root_learned_and_adopted_at": "approximately 2026-10-08T21:09:00Z",
+    "rule": "No new GitHub Actions executions, including implicit push/PR/merge triggers, dispatches or reruns."
+  },
+  "timing_disclosure": "The actual ScopeSignal merge and automatic push/Pages workflow occurred at 20:48, after the owner's 19:32 update but before this root learned and adopted the relay around 21:09. They are retained as completed historical events; compliant timing is not claimed.",
+  "publication_base": {
+    "commit": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+    "tree": "245c0dd66c05c17f22e53bf57d9ae5847b36dc9a",
+    "leaf_count": 763
+  },
+  "workflow_inventory": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "git_blob": "2fac275ab0183987bccac3ba787a133795a70016",
+      "trigger": "push only to branch paypal-ai, or explicit workflow_dispatch",
+      "content": "name: Fixture-mode Pages deployment\non:\n  push:\n    branches: [paypal-ai]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pages: write\n  id-token: write\nconcurrency:\n  group: pages\n  cancel-in-progress: true\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-node@v4\n        with:\n          node-version: 24\n      - run: npm test\n  deploy:\n    needs: test\n    environment:\n      name: github-pages\n      url: ${{ steps.deployment.outputs.page_url }}\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/configure-pages@v5\n      - uses: actions/upload-pages-artifact@v3\n        with:\n          name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}\n          path: .\n      - id: deployment\n        uses: actions/deploy-pages@v4\n        with:\n          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}\n"
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "git_blob": "b97f2716367bb4c5ed930693e3c3e7fdc02c792e",
+      "trigger": "pull_request only",
+      "content": "name: Fixture tests\n\non:\n  pull_request:\n\npermissions:\n  contents: read\n\nconcurrency:\n  group: fixture-tests-${{ github.event.pull_request.number }}\n  cancel-in-progress: true\n\njobs:\n  test:\n    runs-on: ubuntu-latest\n    timeout-minutes: 5\n    steps:\n      - uses: actions/checkout@v4\n        with:\n          persist-credentials: false\n      - uses: actions/setup-node@v4\n        with:\n          node-version: 24\n      - run: npm test\n"
+    }
+  ],
+  "allowed_final_actions": {
+    "create_evidence_git_objects": true,
+    "create_unique_evidence_branch": "estate/68094585a1c2/checkpoint-reuse-final-evidence-20261008",
+    "create_pull_request": false,
+    "update_default_or_source_ref": false,
+    "dispatch_or_rerun": false,
+    "add_pr_conversation_receipt": true
+  },
+  "no_trigger_reason": "The unique evidence branch is not paypal-ai; no pull request or manual dispatch is created. Neither inherited workflow handles create or issue_comment. Workflow files remain unchanged. Both branch publication and the receipt comment therefore match no inherited Actions trigger.",
+  "required_final_guard": "Re-read current default commit and confirm the same complete two-file workflow inventory before publishing the evidence ref.",
+  "existing_run_state": "Actual merge run 37842163319 completed successfully at 20:48:56; root's head-filtered read found no queued/running own run. No cancellation was needed for that completed run."
+}

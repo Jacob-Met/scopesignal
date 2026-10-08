@@ -1,0 +1,19 @@
+{"path": "scope-checkpoint-import.css", "status": 200, "exact": true}
+{"path": "scope-history.css", "status": 200, "exact": true}
+{"path": "scope-workspace.css", "status": 200, "exact": true}
+{"path": "package.json", "status": 200, "exact": true}
+{"path": "src/payment-status.mjs", "status": 200, "exact": true}
+{"path": "src/ledger.mjs", "status": 200, "exact": true}
+{"path": "src/scope-checkpoint-import-ui.mjs", "status": 200, "exact": true}
+{"path": "scope.html", "status": 200, "exact": true}
+{"path": "src/scope-checkpoint-import.mjs", "status": 200, "exact": true}
+{"path": "src/scope-history.mjs", "status": 200, "exact": true}
+{"path": "src/scope-history-view.mjs", "status": 200, "exact": true}
+{"path": "src/scope-draft-removal.mjs", "status": 200, "exact": true}
+{"path": "src/scope-plan.mjs", "status": 200, "exact": true}
+{"path": "src/scope-review-export.mjs", "status": 200, "exact": true}
+{"path": "src/scope-revision-draft.mjs", "status": 200, "exact": true}
+{"path": "src/scope-workspace.mjs", "status": 200, "exact": true}
+{"path": "styles.css", "status": 200, "exact": true}
+{"path": "src/scope-workspace-record.mjs", "status": 200, "exact": true}
+{"receipt": "/tmp/hamon-scopesignal-final-delivery-68094585a1c2/public-assets-v1/receipt.json", "request_count": 18, "passed": 18, "all_exact": true}

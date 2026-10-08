@@ -1,0 +1,311 @@
+{
+  "format": "scopesignal-final-delivery-manifest/1",
+  "actor": "chatgpt:68094585a1c2 / delivery_continuation",
+  "entries": [
+    {
+      "path": "out/checkpoint-reuse-independent-68094585a1c2/README.md",
+      "bytes": 6511,
+      "sha256": "e7db8eb823c4919c85372a2188d99e3fe47ca0d1aeff0771bfd69292da01ce20",
+      "git_blob": "1524f2e56b6233ddf007599f69ac6cdc6ba54d78",
+      "mode": "100644",
+      "role": "unchanged-original-independent-publication"
+    },
+    {
+      "path": "out/checkpoint-reuse-independent-68094585a1c2/receipt.json",
+      "bytes": 11629,
+      "sha256": "108000dada53218e796a2519e402ddd0ccfb66379e8c84bed17a1fc75c4b4f17",
+      "git_blob": "130b200d4834771fe09d540ea6e1fb6c647a920c",
+      "mode": "100644",
+      "role": "unchanged-original-independent-publication"
+    },
+    {
+      "path": "out/checkpoint-reuse-independent-68094585a1c2/capsule-manifest.json",
+      "bytes": 24860,
+      "sha256": "3f5668cbc054756d64f073357de4d81893948bdbca857eb4e7cc26cd2d6b463f",
+      "git_blob": "e7be0fcd88e01aeb4b5bed23fbde752dc9d3f5fa",
+      "mode": "100644",
+      "role": "unchanged-original-independent-publication"
+    },
+    {
+      "path": "out/checkpoint-reuse-independent-68094585a1c2/independent-receiving-evidence.tar.gz",
+      "bytes": 249369,
+      "sha256": "ccf956ce569bdde903d440a2ded0216c664080edb3035a5f9996abfa61bb3dc8",
+      "git_blob": "a642517531ad8457083e27b081ca604ce7f6f6a0",
+      "mode": "100644",
+      "role": "unchanged-original-independent-publication"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/current-premerge-receiving.json",
+      "bytes": 894208,
+      "sha256": "c4d6685c73c9a5bdca84bceec6d62393b36fa9e3d65c2e67e326ed2711843aed",
+      "git_blob": "0ce850bbb427b16c5cec413fcc581847c71b8d50",
+      "mode": "100644",
+      "role": "receiving-input-or-observer"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/postmerge-receiving-input.json",
+      "bytes": 803747,
+      "sha256": "bef272e2d2843ce6fcb3d4bb0f1ab84f92d904d6b0165750f283d92c86d35694",
+      "git_blob": "49d692f4424b194db5a944a3be39a5b4101e080a",
+      "mode": "100644",
+      "role": "receiving-input-or-observer"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/receive-public-assets.py",
+      "bytes": 5798,
+      "sha256": "0812dc752e7e11ca9eac5cb7435bc6618c5ba75d1d07988c6f3782d4b3ef62b0",
+      "git_blob": "15610539a6c5007a54499f332e76d2cc8fc6c118",
+      "mode": "100644",
+      "role": "receiving-input-or-observer"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-premerge-plan.json",
+      "bytes": 3998,
+      "sha256": "615bc8de23342983a57ab345cabcfd5ab2cde52ad885294639e9186edadb01c1",
+      "git_blob": "0df540b69842f80358b0863ab5bceb6db017dd14",
+      "mode": "100644",
+      "role": "receiving-input-or-observer"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-plan.json",
+      "bytes": 4731,
+      "sha256": "067ee244da95b1abbf7c8a972c4ac6552aa65ec48ba683a28106224382516a97",
+      "git_blob": "581022be538333ee38e2dc47a96bfd2ba3eaddcf",
+      "mode": "100644",
+      "role": "receiving-input-or-observer"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/logs/pr-job-113528905488.log",
+      "bytes": 42456,
+      "sha256": "164b9efa11f02a8883af2d0d3228d4484bad14e6bd6c69c61a6b9f7d898c0425",
+      "git_blob": "2ca113d1126639e464a8fd8bb764ce1a5d52dbfb",
+      "mode": "100644",
+      "role": "original-hosted-job-log"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/logs/push-job-113533966067.log",
+      "bytes": 41659,
+      "sha256": "04ff863339779a7cf4ddb6234453f0dd03edda688e6b4b44e79591a439da4a74",
+      "git_blob": "b7eb16c31fadc80af5042e5477c6ff6d572970f2",
+      "mode": "100644",
+      "role": "original-hosted-job-log"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/logs/pages-job-113534064044.log",
+      "bytes": 115979,
+      "sha256": "590565d1387ed50731615cbf530808df5e52986146507714c5a4ca9d0bdd32d2",
+      "git_blob": "f53ab5a8224f33e26e9d88feb81376edbea849d0",
+      "mode": "100644",
+      "role": "original-hosted-job-log"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/receipt.json",
+      "bytes": 34996,
+      "sha256": "f842653de1d2cefcc222b51e8c04bc8cd30810f57d280a15921118c2f7d391cc",
+      "git_blob": "c01afbf1258d7fbb7a03fb017ac6d49fe2208f96",
+      "mode": "100644",
+      "role": "actual-public-byte-receiving-record"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1.stdout.log",
+      "bytes": 1320,
+      "sha256": "2d40e6ec232512f6998bad9b8de5dedfc596f620615abe83e33d6eef09e5df16",
+      "git_blob": "e5df93546c78b51e3976bfdd39b6c10f049a0d16",
+      "mode": "100644",
+      "role": "actual-public-byte-receiving-record"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "role": "actual-public-byte-receiving-record"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1.exit.json",
+      "bytes": 102,
+      "sha256": "1b4a4899b6f97a505ab586037ef8de6ffec9ad3d01c832df29b53f4052e9c092",
+      "git_blob": "769cbc1504eb56d5783d2443c12642314263140b",
+      "mode": "100644",
+      "role": "actual-public-byte-receiving-record"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/package.json",
+      "bytes": 305,
+      "sha256": "d73623f2519ca0992e562da7170645d83e103a895dc04479159e6504d5829573",
+      "git_blob": "0144b047cd7b211c7b4a4f642b1f835a148ed355",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/scope-checkpoint-import.css",
+      "bytes": 1317,
+      "sha256": "45587c17cf2db359652b88553b66c88898abb9fa4108380dd6dcb5a8f8e67f2f",
+      "git_blob": "21dc93c8647add981a584d235d57a584dd02b70a",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/scope-history.css",
+      "bytes": 2801,
+      "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69",
+      "git_blob": "993ab82f32c1546d688d949b72f8312f82c432ec",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/scope.html",
+      "bytes": 13971,
+      "sha256": "3179243d12803701b4255146853d2ba26d9746bfbcff2de891c9335d0f482cd2",
+      "git_blob": "f7a4877eb88ac111500980978abf6f22abd6d9b5",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/src/scope-checkpoint-import-ui.mjs",
+      "bytes": 7206,
+      "sha256": "850e8ef9afcc9c63e013d097839a823615d5e66389acf4a970897ce114843195",
+      "git_blob": "c40c6640b4d3edcb69c64af98e9d905680128779",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/src/scope-checkpoint-import.mjs",
+      "bytes": 1771,
+      "sha256": "89019640fbe3a9a5f3955566bb3fd6e7d838fc30c984e41cd24fb43dd6f9788e",
+      "git_blob": "fef003292a5ff99d85ed355bec17a9841fe99618",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/src/scope-draft-removal.mjs",
+      "bytes": 1399,
+      "sha256": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224",
+      "git_blob": "658db4f41e44ce241b24a0fd744be0193d3fe283",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/src/scope-history-view.mjs",
+      "bytes": 5728,
+      "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+      "git_blob": "93abdcd8abbbbfbee99cdb5207c10ea346d3177e",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/src/scope-history.mjs",
+      "bytes": 4297,
+      "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+      "git_blob": "f34a8ca89a897e03a1a1ca1abf7d243f1a42e4b6",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/src/scope-plan.mjs",
+      "bytes": 7200,
+      "sha256": "88a22b221c09eaba16cf78027958ee504b72624638193b1e029d3c15ff177046",
+      "git_blob": "8f43f9eb2336d9a3df7820ab4c4c874e5663a781",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/src/scope-workspace.mjs",
+      "bytes": 26338,
+      "sha256": "39f2abe72f1ebaf09cf687177a858632bacb2a7d4708f0eb960cd23cc07a6e38",
+      "git_blob": "fdc06582f2fc9571eb8ca40ab9717b2abafaf799",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/public-assets-v1/responses/styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "mode": "100644",
+      "role": "exact-public-response-bytes"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/root-actual-merge-source-review.json",
+      "bytes": 15338,
+      "sha256": "9a0f98c5f1060d578b5124b49641436a6cd70c6a76e9003d1b2596662a56ca01",
+      "git_blob": "3daf86666653e051a8878ee60b62325e5dd54026",
+      "mode": "100644",
+      "role": "unaltered-root-actual-composition-acceptance"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/actions-hold-receipt.json",
+      "bytes": 3904,
+      "sha256": "f3ee424a6cf294f65e7e0cd03f84413b7e7e774d979e73f02ffd34418dea00d1",
+      "git_blob": "62c71ed6c2d1427cbd4f0f7d982a0ea30550a4c8",
+      "mode": "100644",
+      "role": "actions-hold-and-nontriggering-publication-proof"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/README.md",
+      "bytes": 7671,
+      "sha256": "72695c3a889a83cec3d5d3cf3f02271661feefed685e7f4d6061a20f0c998974",
+      "git_blob": "3c744810e83cd5f058c1f8a24efe4e4a7e7c0e62",
+      "mode": "100644",
+      "role": "final-delivery-explanation"
+    },
+    {
+      "path": "out/checkpoint-reuse-delivery-68094585a1c2/receipt.json",
+      "bytes": 17238,
+      "sha256": "d064376b8bf542912b2c9a5dbb694622f4da07125028016a1507e4f624ca10a3",
+      "git_blob": "de4a22489521336cd986d261cd279cfab98df2f3",
+      "mode": "100644",
+      "role": "supplemental-final-delivery-receipt"
+    }
+  ],
+  "manifest_excludes_itself": true
+}

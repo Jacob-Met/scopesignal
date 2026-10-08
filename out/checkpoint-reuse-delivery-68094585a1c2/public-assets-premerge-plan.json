@@ -1,0 +1,138 @@
+{
+  "format": "scopesignal-public-asset-receiving-plan/1",
+  "actor": "chatgpt:68094585a1c2 / delivery_continuation",
+  "prepared_at": "2026-10-08T20:46:19.727708+00:00",
+  "source_head": "47ecf2c41e132bd022d14cc8d20b7d6266f4af74",
+  "expected_source_tree": "42407f98c0bb6d0d9eab403e92c1c410ce4c3bf2",
+  "baseline_runtime_path_set": [
+    "package.json",
+    "scope-checkpoint-import.css",
+    "scope-history.css",
+    "scope-workspace.css",
+    "scope.html",
+    "src/ledger.mjs",
+    "src/payment-status.mjs",
+    "src/scope-checkpoint-import-ui.mjs",
+    "src/scope-checkpoint-import.mjs",
+    "src/scope-draft-removal.mjs",
+    "src/scope-history-view.mjs",
+    "src/scope-history.mjs",
+    "src/scope-plan.mjs",
+    "src/scope-review-export.mjs",
+    "src/scope-revision-draft.mjs",
+    "src/scope-workspace-record.mjs",
+    "src/scope-workspace.mjs",
+    "styles.css"
+  ],
+  "expected_assets": [
+    {
+      "path": "package.json",
+      "git_blob": "0144b047cd7b211c7b4a4f642b1f835a148ed355",
+      "mode": "100644",
+      "bytes": 305
+    },
+    {
+      "path": "scope-checkpoint-import.css",
+      "git_blob": "21dc93c8647add981a584d235d57a584dd02b70a",
+      "mode": "100644",
+      "bytes": 1317
+    },
+    {
+      "path": "scope-history.css",
+      "git_blob": "993ab82f32c1546d688d949b72f8312f82c432ec",
+      "mode": "100644",
+      "bytes": 2801
+    },
+    {
+      "path": "scope-workspace.css",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "mode": "100644",
+      "bytes": 5277
+    },
+    {
+      "path": "scope.html",
+      "git_blob": "55c99d6c2b3cba3d61366202250b4cbe58c59eb8",
+      "mode": "100644",
+      "bytes": 13783
+    },
+    {
+      "path": "src/ledger.mjs",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "mode": "100644",
+      "bytes": 12684
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "mode": "100644",
+      "bytes": 1959
+    },
+    {
+      "path": "src/scope-checkpoint-import-ui.mjs",
+      "git_blob": "c40c6640b4d3edcb69c64af98e9d905680128779",
+      "mode": "100644",
+      "bytes": 7206
+    },
+    {
+      "path": "src/scope-checkpoint-import.mjs",
+      "git_blob": "fef003292a5ff99d85ed355bec17a9841fe99618",
+      "mode": "100644",
+      "bytes": 1771
+    },
+    {
+      "path": "src/scope-draft-removal.mjs",
+      "git_blob": "658db4f41e44ce241b24a0fd744be0193d3fe283",
+      "mode": "100644",
+      "bytes": 1399
+    },
+    {
+      "path": "src/scope-history-view.mjs",
+      "git_blob": "93abdcd8abbbbfbee99cdb5207c10ea346d3177e",
+      "mode": "100644",
+      "bytes": 5728
+    },
+    {
+      "path": "src/scope-history.mjs",
+      "git_blob": "f34a8ca89a897e03a1a1ca1abf7d243f1a42e4b6",
+      "mode": "100644",
+      "bytes": 4297
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "git_blob": "8f43f9eb2336d9a3df7820ab4c4c874e5663a781",
+      "mode": "100644",
+      "bytes": 7200
+    },
+    {
+      "path": "src/scope-review-export.mjs",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "mode": "100644",
+      "bytes": 8253
+    },
+    {
+      "path": "src/scope-revision-draft.mjs",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "mode": "100644",
+      "bytes": 667
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "mode": "100644",
+      "bytes": 7421
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "git_blob": "fdc06582f2fc9571eb8ca40ab9717b2abafaf799",
+      "mode": "100644",
+      "bytes": 26338
+    },
+    {
+      "path": "styles.css",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "mode": "100644",
+      "bytes": 9444
+    }
+  ],
+  "execution_condition": "Run only after actual merge and successful Pages deployment are observed; expected source tree must match actual merge. Public HTTP byte receiving only; no browser or installed-runtime qualification."
+}

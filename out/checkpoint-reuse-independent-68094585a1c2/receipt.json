@@ -1,0 +1,307 @@
+{
+  "format": "scopesignal-checkpoint-independent-receiving/1",
+  "sealed_at": "2026-10-08T20:03:02.170394+00:00",
+  "cohort": "chatgpt:68094585a1c2",
+  "attribution": {
+    "original_source_author": "estate-68094585a1c2 / receiving_review",
+    "source_continuation_executor": "scope_receiving",
+    "independent_receiver": "offhand_delivery",
+    "integration_decision_owner": "root"
+  },
+  "repository": "Jacob-Met/scopesignal",
+  "issue": 35,
+  "pull_request": 46,
+  "published_source_commit": "65209a72c4593358848a6921847a478ce6fba8c3",
+  "published_source_tree": "57e70cff603e2e03a590daf9f346c565df4dcead",
+  "publication_base_commit": "cdffd2476cae0c7332dff64677ae814b7f594947",
+  "publication_base_tree": "03775ba5484d768a0bda6a22d51bdad9fd30d184",
+  "frozen_inputs": {
+    "independent-contract-before-candidate.json": {
+      "bytes": 5421,
+      "sha256": "67316e9e5c4e45ed291f92ca49a2ea95105aa7489ad6f137e345434b0e65de39",
+      "git_blob": "91226f4869728fc1416c0b01385e41e73e740ff6"
+    },
+    "frozen-fixtures-receipt.json": {
+      "bytes": 7245,
+      "sha256": "c1b27e44a9a33125d7b3ef073fa7a1b2e993095259742d555d5c2387f71b5b7c",
+      "git_blob": "8f7e047bfd14769e91d3da1b149e39329aa0a4fa"
+    },
+    "native-receiving.json": {
+      "bytes": 4823,
+      "sha256": "efa5ddd8611d3971c4564160f455b2d38f62ce28d56f62c34502e9b3ad0421bb",
+      "git_blob": "16f940079b5627ea2378c52ebe6cc1c2a1469c15"
+    },
+    "current-lifecycle-before-composition.json": {
+      "bytes": 2112,
+      "sha256": "3eb71046faac777cc01d187bf5c48d6dd539f9720cc790effd80265362ae0b09",
+      "git_blob": "66b9ebf0a4b902d84eb09eb009539fbd867b97a4"
+    },
+    "current-composition-source-receiving.json": {
+      "bytes": 13780,
+      "sha256": "0c5e2dbcdd366a7ec2981b6010d99a720e65c6bca9209938b2ed5b1d5cc5024b",
+      "git_blob": "18d490e7c85ff15960ddb9e7a85eaa00e84bd1e3"
+    },
+    "frozen-inputs/expected-current-remove-and-append-four.json": {
+      "bytes": 630,
+      "sha256": "1a0a9e15d0ba34789def7f42afa49d0de7ab916f0497996b6ef50629a9382dce",
+      "git_blob": "443dee5bb85ea0cbdd25a4fddcfca16c5311f865"
+    }
+  },
+  "native_receiving": {
+    "passed": true,
+    "groups": [
+      {
+        "id": "private_review_projects_only_exact_frozen_definitions",
+        "passed": true,
+        "detail": {
+          "source_rows": 5,
+          "original_approvals": 1,
+          "original_events": 4,
+          "original_pending_notes": 2,
+          "projection_fields": [
+            "label",
+            "stage",
+            "checkpoints"
+          ]
+        }
+      },
+      {
+        "id": "permuted_duplicate_occurrences_preserve_literal_destination_and_exact_native_bytes",
+        "passed": true,
+        "detail": {
+          "selected_request": [
+            4,
+            2,
+            0
+          ],
+          "source_order": [
+            0,
+            2,
+            4
+          ],
+          "rows": 5,
+          "bytes": 1064,
+          "sha256": "32f38ffed7baa872f048edda37be64d97de1228c7a48bc48ad603dd0ae651631",
+          "unchanged_destination": true
+        }
+      },
+      {
+        "id": "selection_and_capacity_refuse_atomically_then_admit_exact_twelve",
+        "passed": true,
+        "detail": {
+          "refusals": 20,
+          "exact_boundary_rows": 12,
+          "bytes": 1811,
+          "sha256": "ce3abe24ead4fd2aaff65b5286409c7ed139d07ea7e6d6584f118bfb9168dd03",
+          "partial_mutations": 0
+        }
+      },
+      {
+        "id": "existing_codec_admission_and_unfinished_strings_remain_authoritative",
+        "passed": true,
+        "detail": {
+          "cases": [
+            {
+              "name": "reviewed-five.json",
+              "accepted": true,
+              "bytes": 2160
+            },
+            {
+              "name": "unfinished-source.json",
+              "accepted": true,
+              "bytes": 504
+            },
+            {
+              "name": "exact-one-mib.json",
+              "accepted": true,
+              "bytes": 1048576
+            },
+            {
+              "name": "over-one-mib.json",
+              "accepted": false,
+              "bytes": 1048577
+            },
+            {
+              "name": "malformed.json",
+              "accepted": false,
+              "bytes": 10
+            },
+            {
+              "name": "unsupported.json",
+              "accepted": false,
+              "bytes": 2161
+            }
+          ],
+          "unfinished_strings_exact": true,
+          "utf8_browser_boundary": "not claimed by this text-only model receiver"
+        }
+      },
+      {
+        "id": "normal_new_review_generates_destination_order_without_imported_state",
+        "passed": true,
+        "detail": {
+          "new_ids": [
+            "scope-1",
+            "scope-2",
+            "scope-3",
+            "scope-4",
+            "scope-5"
+          ],
+          "approved": 0,
+          "events": 0,
+          "captured": 0,
+          "pending_notes": 0,
+          "bytes": 1032,
+          "sha256": "341101354f9e5744f18062186ec86a79e43a9a965b4ad10b86146d86993b7051"
+        }
+      }
+    ],
+    "node": "v22.22.1",
+    "fixture_and_runtime_custody": "44 frozen input/runtime paths unchanged at native completion; original-only producer separately retained all 16 baseline inputs.",
+    "declared_runtime_floor": "Node >=24",
+    "qualification_limit": "Node22.22.1 execution is supplemental below the declared floor; the unchanged hosted Node24 gate is a separate owner receipt."
+  },
+  "current_source_receiving": {
+    "passed": true,
+    "shared_file_proofs": {
+      "src/scope-workspace.mjs": {
+        "full_reverse_exact": true,
+        "only_insertions": true,
+        "insertion_blocks": 4
+      },
+      "scope.html": {
+        "full_reverse_exact": true,
+        "only_insertions": true,
+        "insertion_blocks": 2
+      },
+      "README.md": {
+        "full_reverse_exact": true,
+        "only_insertions": true,
+        "insertion_blocks": 1
+      }
+    },
+    "runtime_files_exact": 18,
+    "original_helper_ui_css_identical": true,
+    "history_and_draft_recovery_beforeimages_preserved": true,
+    "append_clear_before_workspace_changed": true,
+    "published_base_leaves": 672,
+    "published_leaves": 684,
+    "inherited_leaves_exact": 669,
+    "modified_inherited_paths": [
+      "README.md",
+      "scope.html",
+      "src/scope-workspace.mjs"
+    ]
+  },
+  "source_final_custody": {
+    "initial/src/scope-checkpoint-import.mjs": {
+      "bytes": 1771,
+      "sha256": "89019640fbe3a9a5f3955566bb3fd6e7d838fc30c984e41cd24fb43dd6f9788e",
+      "git_blob": "fef003292a5ff99d85ed355bec17a9841fe99618"
+    },
+    "initial/src/scope-checkpoint-import-ui.mjs": {
+      "bytes": 7206,
+      "sha256": "850e8ef9afcc9c63e013d097839a823615d5e66389acf4a970897ce114843195",
+      "git_blob": "c40c6640b4d3edcb69c64af98e9d905680128779"
+    },
+    "initial/src/scope-workspace.mjs": {
+      "bytes": 24813,
+      "sha256": "4bc64e884e1f518b8abefaf2f736ee60fd4e97ed47a095fbe978982d649069d8",
+      "git_blob": "ae333d2049dde56d13ddcd4cbe8aa3a66d2eadce"
+    },
+    "initial/scope-checkpoint-import.css": {
+      "bytes": 1317,
+      "sha256": "45587c17cf2db359652b88553b66c88898abb9fa4108380dd6dcb5a8f8e67f2f",
+      "git_blob": "21dc93c8647add981a584d235d57a584dd02b70a"
+    },
+    "initial/scope.html": {
+      "bytes": 10761,
+      "sha256": "3d894b4df7c2b21a2934909fc9c1175d36c4d9aaa6d99b17c84720083793b6a7",
+      "git_blob": "2f86083d5ac936036b60dcb876b8234fc2d6e35c"
+    },
+    "initial/README.md": {
+      "bytes": 23674,
+      "sha256": "d334caa9ca0d87394a9e6aefa9dbeadf9f5affbf2d89450e82b390b0194c98a8",
+      "git_blob": "5428d9f92bba379385c1890c85edbf2d6c31c11b"
+    },
+    "composed/src/scope-checkpoint-import.mjs": {
+      "bytes": 1771,
+      "sha256": "89019640fbe3a9a5f3955566bb3fd6e7d838fc30c984e41cd24fb43dd6f9788e",
+      "git_blob": "fef003292a5ff99d85ed355bec17a9841fe99618"
+    },
+    "composed/src/scope-checkpoint-import-ui.mjs": {
+      "bytes": 7206,
+      "sha256": "850e8ef9afcc9c63e013d097839a823615d5e66389acf4a970897ce114843195",
+      "git_blob": "c40c6640b4d3edcb69c64af98e9d905680128779"
+    },
+    "composed/src/scope-workspace.mjs": {
+      "bytes": 26338,
+      "sha256": "39f2abe72f1ebaf09cf687177a858632bacb2a7d4708f0eb960cd23cc07a6e38",
+      "git_blob": "fdc06582f2fc9571eb8ca40ab9717b2abafaf799"
+    },
+    "composed/scope-checkpoint-import.css": {
+      "bytes": 1317,
+      "sha256": "45587c17cf2db359652b88553b66c88898abb9fa4108380dd6dcb5a8f8e67f2f",
+      "git_blob": "21dc93c8647add981a584d235d57a584dd02b70a"
+    },
+    "composed/scope.html": {
+      "bytes": 13581,
+      "sha256": "b8050abc6ccdf11b9c772c5ddbcc2218592c82eae862c58e81bc2929e5f4de34",
+      "git_blob": "caecbe1628df807d72a2f565a4ddf7f268957671"
+    },
+    "composed/README.md": {
+      "bytes": 27699,
+      "sha256": "c07cd18b097094344287fc92a65992cfb3a6f2ca0c3996932afa753feee111b7",
+      "git_blob": "c628ea8df84d29ddf217be691d3b3db464b95380"
+    }
+  },
+  "composition_only_browser_witness": {
+    "status": "unobserved",
+    "passed": false,
+    "frozen_control": "Pending import must remain retired after Remove/Undo ABA, and a fresh committed append must clear available Undo.",
+    "expected_native_download": {
+      "bytes": 630,
+      "sha256": "1a0a9e15d0ba34789def7f42afa49d0de7ab916f0497996b6ef50629a9382dce",
+      "git_blob": "443dee5bb85ea0cbdd25a4fddcfca16c5311f865"
+    },
+    "actual_download_received": false,
+    "product_defect_established": false,
+    "attempts": 2,
+    "third_attempt_made": false,
+    "limits": [
+      {
+        "id": "initial-owned-namespace-ENOSPC",
+        "record": "environment-failure-1.json",
+        "product_test_started": false,
+        "effect": "First profile directory could not be created; original failure and script preserved."
+      },
+      {
+        "id": "current-browser-v1-unsettled-click",
+        "record": "browser-current-undo-v1/receipt.json",
+        "stdout": "browser-current-undo-v1.log",
+        "stderr": "browser-current-undo-v1/chromium.stderr.log",
+        "tested_composition_steps_completed": 0,
+        "effect": "Whole-open preview displayed, but immediate-coordinate physical click left Northstar fixture unchanged. Existing smooth scroll establishes a concrete observer synchronization flaw; v1 did not record a hit target, so no product conclusion is drawn."
+      },
+      {
+        "id": "current-browser-v2-startup-timeout",
+        "record": "browser-current-undo-v2/receipt.json",
+        "stdout": "browser-current-undo-v2.log",
+        "stderr": "browser-current-undo-v2/chromium.stderr.log",
+        "stderr_bytes": 0,
+        "tested_composition_steps_completed": 0,
+        "effect": "Observer-only correction preserved source and oracle. DevTools startup exceeded the bounded 45 seconds; no page loaded. No third attempt."
+      }
+    ],
+    "v1_source_unchanged_false_means": "v1 exited before its success-only final source check; final sealing independently rehashes both source fences and all 18 composed runtime files exactly."
+  },
+  "independence": {
+    "authored_candidate_tests_read": false,
+    "authored_candidate_scripts_read": false,
+    "authored_browser_suite_repeated": false,
+    "original_native_groups_repeated": false,
+    "browser_changes": "Only independent observer v2 changed; source and frozen expectations did not.",
+    "source_edited": false
+  },
+  "delivery_boundary": "This capsule reports independent native and complete source receiving plus preserved browser limits. Root decides integration; no deployed Pages, installed app, live account or provider result is claimed here."
+}

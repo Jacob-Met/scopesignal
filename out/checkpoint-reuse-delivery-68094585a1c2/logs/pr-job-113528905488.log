@@ -1,0 +1,413 @@
+﻿2026-10-08T20:36:13.3411221Z Current runner version: '2.337.0'
+2026-10-08T20:36:13.3439006Z ##[group]Runner Image Provisioner
+2026-10-08T20:36:13.3440004Z Hosted Compute Agent
+2026-10-08T20:36:13.3440658Z Version: 20261002.596
+2026-10-08T20:36:13.3441380Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+2026-10-08T20:36:13.3442147Z Build Date: 2026-10-02T22:28:27Z
+2026-10-08T20:36:13.3442834Z Worker ID: {f89a7d63-7e0b-48ae-b510-a535b1a64e03}
+2026-10-08T20:36:13.3443698Z Region: westus2
+2026-10-08T20:36:13.3444307Z Cloud: Azure
+2026-10-08T20:36:13.3444916Z ##[endgroup]
+2026-10-08T20:36:13.3446347Z ##[group]Operating System
+2026-10-08T20:36:13.3446984Z Ubuntu
+2026-10-08T20:36:13.3447630Z 24.04.5
+2026-10-08T20:36:13.3448216Z LTS
+2026-10-08T20:36:13.3449165Z ##[endgroup]
+2026-10-08T20:36:13.3449787Z ##[group]Runner Image
+2026-10-08T20:36:13.3450420Z Image: ubuntu-24.04
+2026-10-08T20:36:13.3451110Z Version: 20261004.327.1
+2026-10-08T20:36:13.3452417Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+2026-10-08T20:36:13.3454101Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+2026-10-08T20:36:13.3455123Z ##[endgroup]
+2026-10-08T20:36:13.3456373Z ##[group]GITHUB_TOKEN Permissions
+2026-10-08T20:36:13.3458840Z Contents: read
+2026-10-08T20:36:13.3459569Z Metadata: read
+2026-10-08T20:36:13.3460233Z ##[endgroup]
+2026-10-08T20:36:13.3462448Z Secret source: Actions
+2026-10-08T20:36:13.3463499Z Cache mode: write
+2026-10-08T20:36:13.3464234Z Prepare workflow directory
+2026-10-08T20:36:13.3807397Z Prepare all required actions
+2026-10-08T20:36:13.3877280Z Getting action download info
+2026-10-08T20:36:13.7235301Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+2026-10-08T20:36:13.8254045Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2026-10-08T20:36:14.0165990Z Complete job name: test
+2026-10-08T20:36:14.0924013Z ##[group]Run actions/checkout@v4
+2026-10-08T20:36:14.0924854Z with:
+2026-10-08T20:36:14.0925309Z   persist-credentials: false
+2026-10-08T20:36:14.0925857Z   repository: Jacob-Met/scopesignal
+2026-10-08T20:36:14.0929917Z   token: ***
+2026-10-08T20:36:14.0930366Z   ssh-strict: true
+2026-10-08T20:36:14.0930825Z   ssh-user: git
+2026-10-08T20:36:14.0931257Z   clean: true
+2026-10-08T20:36:14.0931711Z   sparse-checkout-cone-mode: true
+2026-10-08T20:36:14.0932237Z   fetch-depth: 1
+2026-10-08T20:36:14.0932670Z   fetch-tags: false
+2026-10-08T20:36:14.0933120Z   show-progress: true
+2026-10-08T20:36:14.0933571Z   lfs: false
+2026-10-08T20:36:14.0933987Z   submodules: false
+2026-10-08T20:36:14.0934442Z   set-safe-directory: true
+2026-10-08T20:36:14.0934949Z   allow-unsafe-pr-checkout: false
+2026-10-08T20:36:14.0935772Z ##[endgroup]
+2026-10-08T20:36:14.1925555Z Syncing repository: Jacob-Met/scopesignal
+2026-10-08T20:36:14.1928082Z ##[group]Getting Git version info
+2026-10-08T20:36:14.1929520Z Working directory is '/home/runner/work/scopesignal/scopesignal'
+2026-10-08T20:36:14.1931181Z [command]/usr/bin/git version
+2026-10-08T20:36:14.1958058Z git version 2.55.0
+2026-10-08T20:36:14.1978481Z ##[endgroup]
+2026-10-08T20:36:14.1992877Z Temporarily overriding HOME='/home/runner/work/_temp/4f9cbee0-a871-4c38-93bb-3fef85c34082' before making global git config changes
+2026-10-08T20:36:14.1995176Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-08T20:36:14.1997748Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/scopesignal/scopesignal
+2026-10-08T20:36:14.2042691Z Deleting the contents of '/home/runner/work/scopesignal/scopesignal'
+2026-10-08T20:36:14.2046847Z ##[group]Initializing the repository
+2026-10-08T20:36:14.2050690Z [command]/usr/bin/git init /home/runner/work/scopesignal/scopesignal
+2026-10-08T20:36:14.2130661Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-10-08T20:36:14.2132381Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-10-08T20:36:14.2134179Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-10-08T20:36:14.2135335Z hint: call:
+2026-10-08T20:36:14.2135944Z hint:
+2026-10-08T20:36:14.2136722Z hint: 	git config --global init.defaultBranch <name>
+2026-10-08T20:36:14.2137670Z hint:
+2026-10-08T20:36:14.2138559Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-10-08T20:36:14.2140264Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-10-08T20:36:14.2141429Z hint:
+2026-10-08T20:36:14.2142061Z hint: 	git branch -m <name>
+2026-10-08T20:36:14.2142787Z hint:
+2026-10-08T20:36:14.2143755Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-10-08T20:36:14.2145381Z Initialized empty Git repository in /home/runner/work/scopesignal/scopesignal/.git/
+2026-10-08T20:36:14.2167073Z [command]/usr/bin/git remote add origin https://github.com/Jacob-Met/scopesignal
+2026-10-08T20:36:14.2204220Z ##[endgroup]
+2026-10-08T20:36:14.2205065Z ##[group]Disabling automatic garbage collection
+2026-10-08T20:36:14.2209668Z [command]/usr/bin/git config --local gc.auto 0
+2026-10-08T20:36:14.2241461Z ##[endgroup]
+2026-10-08T20:36:14.2242196Z ##[group]Setting up auth
+2026-10-08T20:36:14.2250093Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-08T20:36:14.2284471Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-08T20:36:14.2633882Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-08T20:36:14.2670985Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-08T20:36:14.2929488Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-08T20:36:14.2967313Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-08T20:36:14.3214258Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-10-08T20:36:14.3258242Z ##[endgroup]
+2026-10-08T20:36:14.3259546Z ##[group]Fetching the repository
+2026-10-08T20:36:14.3268053Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f5c9c3d4b62e4067053931e8b609ddc8305fffa0:refs/remotes/pull/46/merge
+2026-10-08T20:36:15.4092926Z From https://github.com/Jacob-Met/scopesignal
+2026-10-08T20:36:15.4094027Z  * [new ref]         f5c9c3d4b62e4067053931e8b609ddc8305fffa0 -> pull/46/merge
+2026-10-08T20:36:15.4097057Z ##[endgroup]
+2026-10-08T20:36:15.4098004Z ##[group]Determining the checkout info
+2026-10-08T20:36:15.4099825Z ##[endgroup]
+2026-10-08T20:36:15.4105701Z [command]/usr/bin/git sparse-checkout disable
+2026-10-08T20:36:15.4157368Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-10-08T20:36:15.4193525Z ##[group]Checking out the ref
+2026-10-08T20:36:15.4196861Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/46/merge
+2026-10-08T20:36:15.5272185Z Note: switching to 'refs/remotes/pull/46/merge'.
+2026-10-08T20:36:15.5273439Z 
+2026-10-08T20:36:15.5274086Z You are in 'detached HEAD' state. You can look around, make experimental
+2026-10-08T20:36:15.5275572Z changes and commit them, and you can discard any commits you make in this
+2026-10-08T20:36:15.5277084Z state without impacting any branches by switching back to a branch.
+2026-10-08T20:36:15.5278311Z 
+2026-10-08T20:36:15.5279359Z If you want to create a new branch to retain commits you create, you may
+2026-10-08T20:36:15.5281325Z do so (now or later) by using -c with the switch command. Example:
+2026-10-08T20:36:15.5282433Z 
+2026-10-08T20:36:15.5283031Z   git switch -c <new-branch-name>
+2026-10-08T20:36:15.5284262Z 
+2026-10-08T20:36:15.5284818Z Or undo this operation with:
+2026-10-08T20:36:15.5285627Z 
+2026-10-08T20:36:15.5286088Z   git switch -
+2026-10-08T20:36:15.5286702Z 
+2026-10-08T20:36:15.5287666Z Turn off this advice by setting config variable advice.detachedHead to false
+2026-10-08T20:36:15.5309657Z 
+2026-10-08T20:36:15.5311360Z HEAD is now at f5c9c3d Merge 47ecf2c41e132bd022d14cc8d20b7d6266f4af74 into 226d6d90cb949ce3d6edf97b99153831bd95e8fb
+2026-10-08T20:36:15.5316535Z ##[endgroup]
+2026-10-08T20:36:15.5346564Z [command]/usr/bin/git log -1 --format=%H
+2026-10-08T20:36:15.5378300Z f5c9c3d4b62e4067053931e8b609ddc8305fffa0
+2026-10-08T20:36:15.5390696Z ##[group]Removing auth
+2026-10-08T20:36:15.5394006Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-08T20:36:15.5440479Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-08T20:36:15.5711834Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-08T20:36:15.5741571Z http.https://github.com/.extraheader
+2026-10-08T20:36:15.5749047Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-10-08T20:36:15.5884647Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-08T20:36:15.6139447Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-08T20:36:15.6177889Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-08T20:36:15.6433827Z ##[endgroup]
+2026-10-08T20:36:15.6817547Z ##[group]Run actions/setup-node@v4
+2026-10-08T20:36:15.6819010Z with:
+2026-10-08T20:36:15.6819886Z   node-version: 24
+2026-10-08T20:36:15.6820888Z   always-auth: false
+2026-10-08T20:36:15.6821868Z   check-latest: false
+2026-10-08T20:36:15.6830893Z   token: ***
+2026-10-08T20:36:15.6831805Z ##[endgroup]
+2026-10-08T20:36:15.8349479Z Found in cache @ /opt/hostedtoolcache/node/24.21.0/x64
+2026-10-08T20:36:15.8353488Z (node:2375) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-08T20:36:15.8357472Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-08T20:36:15.8360436Z ##[group]Environment details
+2026-10-08T20:36:16.1619858Z node: v24.21.0
+2026-10-08T20:36:16.1620324Z npm: 11.19.0
+2026-10-08T20:36:16.1620748Z yarn: 1.22.22
+2026-10-08T20:36:16.1621569Z ##[endgroup]
+2026-10-08T20:36:16.1818134Z ##[group]Run npm test
+2026-10-08T20:36:16.1818525Z [36;1mnpm test[0m
+2026-10-08T20:36:16.2045658Z shell: /usr/bin/bash -e {0}
+2026-10-08T20:36:16.2046015Z ##[endgroup]
+2026-10-08T20:36:16.3199814Z 
+2026-10-08T20:36:16.3207752Z > scopesignal@0.1.0 test
+2026-10-08T20:36:16.3208398Z > node --test
+2026-10-08T20:36:16.3208924Z 
+2026-10-08T20:36:16.5557956Z ✔ review: all deterministic fixture events and reduced values retain exact serialized bytes (5.590994ms)
+2026-10-08T20:36:16.5600402Z ✔ review: money and order identity cannot disagree with approved checkpoint evidence (4.439792ms)
+2026-10-08T20:36:16.5613022Z ✔ review: raw replay preserves approval, order, capture, and reconciliation prerequisites (1.450227ms)
+2026-10-08T20:36:16.5622021Z ✔ review: altered receipt money cannot be disguised as an exact duplicate (1.176289ms)
+2026-10-08T20:36:16.5625146Z ✔ review: accepted independent capture paths serialize and replay at every prefix (17.49136ms)
+2026-10-08T20:36:16.5628936Z ✔ review: seed admission rejects checkpoint IDs that generate the same fixture order (2.401021ms)
+2026-10-08T20:36:16.5631973Z ✔ review: event payload accessors cannot execute a nested append while metadata is reserved (0.354837ms)
+2026-10-08T20:36:16.6173172Z ✔ an unresolved pending capture cannot be requested a second time (4.198293ms)
+2026-10-08T20:36:16.6175707Z ✔ a delayed lost response cannot undo a confirmed capture or be recorded twice (1.724244ms)
+2026-10-08T20:36:16.6177530Z ✔ a webhook event identity cannot be reused for a different capture or checkpoint (1.826606ms)
+2026-10-08T20:36:16.6179442Z ✔ a capture identity cannot count against two different checkpoints (0.686831ms)
+2026-10-08T20:36:16.6181144Z ✔ an unknown receipt reserves its capture identity before any amount is counted (1.433271ms)
+2026-10-08T20:36:16.6191325Z ✔ reconciliation and later receipts share the same capture binding (1.551787ms)
+2026-10-08T20:36:16.6200538Z ✔ one checkpoint cannot acquire a second capture through a new webhook event ID (0.888641ms)
+2026-10-08T20:36:16.6222492Z ✔ webhook and reconciliation identities must be nonempty canonical strings (17.326135ms)
+2026-10-08T20:36:16.6224675Z ✔ exact duplicate webhook delivery remains auditable in every supported capture state (3.871137ms)
+2026-10-08T20:36:16.6226850Z ✔ the public append path and reducer refuse lifecycle violations too (1.272843ms)
+2026-10-08T20:36:16.6230633Z ✔ replay derives receipt identity from history instead of trusting a duplicate flag (0.595605ms)
+2026-10-08T20:36:16.6232729Z ✔ published events cannot be edited or removed and append owns sequence metadata (0.858436ms)
+2026-10-08T20:36:16.6234476Z ✔ a ledger keeps its creation seed stable across caller mutation (2.150378ms)
+2026-10-08T20:36:16.6236154Z ✔ inherited object properties are not checkpoint identities (50.028801ms)
+2026-10-08T20:36:16.6266830Z ✔ three independent checkpoint capture paths compose without double counting (15.684218ms)
+2026-10-08T20:36:16.6421369Z ✔ approving one checkpoint preserves another pending draft, including initial line feeds (54.50127ms)
+2026-10-08T20:36:16.6423421Z ✔ refused approval retains empty and multiline drafts across repeated rerenders (10.698194ms)
+2026-10-08T20:36:16.6425139Z ✔ a suggestion survives approval of a different checkpoint (5.163418ms)
+2026-10-08T20:36:16.6426864Z ✔ accepted evidence comes from its recorded event and its controls cannot edit approval (5.676471ms)
+2026-10-08T20:36:16.6428554Z ✔ literal textarea-like text is preserved without adding editors (4.044305ms)
+2026-10-08T20:36:16.6430340Z ✔ successive approvals retain accepted evidence and count each approval once (6.192529ms)
+2026-10-08T20:36:16.6431783Z ✔ fixture totals and explicit replay behavior remain intact (4.043232ms)
+2026-10-08T20:36:16.6433343Z ✔ webhook rows describe receipt without claiming an unknown capture was counted (9.632043ms)
+2026-10-08T20:36:16.6508145Z ✔ download has a fixed safe filename and explicit fixture schema and provenance (4.9626ms)
+2026-10-08T20:36:16.6512849Z ✔ export records the actual replay events and reduced counted outcome (1.954997ms)
+2026-10-08T20:36:16.6514715Z ✔ accepted multiline and literal evidence comes from the exact approval event (2.902446ms)
+2026-10-08T20:36:16.6517927Z ✔ unapproved checkpoints have no approval evidence and no authored draft field (1.534432ms)
+2026-10-08T20:36:16.6520162Z ✔ every capture prefix exports the current outcome without advancing or inventing events (1.464678ms)
+2026-10-08T20:36:16.6521987Z ✔ repeated exports are deterministic and detached from the live in-memory ledger (1.157271ms)
+2026-10-08T20:36:16.6525726Z ✔ an empty fixture exports no approval and never represents a successful payment (0.368278ms)
+2026-10-08T20:36:16.7021894Z ✔ the timeline exposes every real fixture prefix and counts only after reconciliation (6.457693ms)
+2026-10-08T20:36:16.7060981Z ✔ backward, repeated and out-of-order inspection never changes the fixture or another ledger (3.668495ms)
+2026-10-08T20:36:16.7080702Z ✔ returned event and state objects cannot rewrite later timeline inspection (1.095018ms)
+2026-10-08T20:36:16.7091168Z ✔ invalid navigation refuses the index without losing valid timeline state (0.799059ms)
+2026-10-08T20:36:16.7441287Z ✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (8.122489ms)
+2026-10-08T20:36:16.7458464Z ✔ order and capture require prior explicit human approval and order (1.184662ms)
+2026-10-08T20:36:16.7471962Z ✔ lost response cannot be blindly captured again; reconcile is one-time (2.282149ms)
+2026-10-08T20:36:16.7473703Z ✔ same webhook event ID is idempotent and cannot double count (0.550027ms)
+2026-10-08T20:36:16.7475476Z ✔ reducer never counts duplicate webhook in fixture stream (0.604749ms)
+2026-10-08T20:36:16.7477420Z ✔ role previews are explicit local rules and never claim AI output (17.830555ms)
+2026-10-08T20:36:16.7479458Z ✔ Workers AI adapter fails closed without binding and has no paid fallback (0.42398ms)
+2026-10-08T20:36:16.7481236Z ✔ schema validation rejects malformed model output (0.465933ms)
+2026-10-08T20:36:16.7546417Z ✔ every shipped replay prefix presents its current reduced capture state (6.252598ms)
+2026-10-08T20:36:16.7548344Z ✔ ordinary webhook capture does not invent a reconciliation (0.689375ms)
+2026-10-08T20:36:16.7550549Z ✔ missing and unrecognized states do not become captured or safe-to-retry labels (0.231274ms)
+2026-10-08T20:36:17.1691237Z ✔ saved fixture reader accepts all real recovery prefixes without advancing the outcome (11.572929ms)
+2026-10-08T20:36:17.1702079Z ✔ accepted evidence is exact literal Unicode text and an unapproved draft is absent (1.763562ms)
+2026-10-08T20:36:17.1720273Z ✔ ordinary capture, lookup-only recovery and independent checkpoints use the existing ledger (4.307466ms)
+2026-10-08T20:36:17.1721928Z ✔ JSON key order and whitespace do not change the record, and returned facts are immutable (2.267923ms)
+2026-10-08T20:36:17.1723338Z ✔ invalid JSON, another document and unsupported record versions are refused (4.729763ms)
+2026-10-08T20:36:17.1724920Z ✔ saved summaries, approvals, identities and fixture definitions must match recorded events (14.178634ms)
+2026-10-08T20:36:17.1726452Z ✔ missing, extra and inherited-property fields cannot become trusted record facts (4.56595ms)
+2026-10-08T20:36:17.1728036Z ✔ event order, required metadata and payload types are checked before ledger replay (4.771996ms)
+2026-10-08T20:36:17.1760372Z ✔ shared ledger refuses contradictory lifecycle, money and capture identities in a file (12.732369ms)
+2026-10-08T20:36:17.1800365Z ✔ exact byte limit is inclusive and uses UTF-8 bytes rather than JavaScript characters (15.79625ms)
+2026-10-08T20:36:17.1802424Z ✔ event limit permits a bounded full history and rejects the next exact duplicate (309.747521ms)
+2026-10-08T20:36:17.1940714Z ✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (6.184637ms)
+2026-10-08T20:36:17.1963396Z ✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (1.97695ms)
+2026-10-08T20:36:17.1987115Z ✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (2.940512ms)
+2026-10-08T20:36:17.2012211Z ✔ pending and never-requested captures remain distinct from resolved captures (0.937534ms)
+2026-10-08T20:36:17.2143044Z ✔ literal quoted CSV becomes a native draft; ordinary review remains a separate action (6.051369ms)
+2026-10-08T20:36:17.2174728Z ✔ one leading UTF-8 BOM, quoted headers, CRLF records and a final delimiter are accepted (0.362168ms)
+2026-10-08T20:36:17.2183456Z ✔ a BOM inside a field stays literal (0.402098ms)
+2026-10-08T20:36:17.2221085Z ✔ empty fields and unfinished money remain editable, never silently repriced (1.637274ms)
+2026-10-08T20:36:17.2229826Z ✔ over-budget drafts preserve source amounts and native review refusal (0.934039ms)
+2026-10-08T20:36:17.2251479Z ✔ caller bytes and metadata are unchanged and the prepared record is independent (0.458722ms)
+2026-10-08T20:36:17.2269897Z ✔ all 12 rows, every native maximum and exact large cents survive (12.965706ms)
+2026-10-08T20:36:17.2280303Z ✔ the one MiB boundary is accepted by CSV decoding and one byte more is refused (329.124795ms)
+2026-10-08T20:36:17.2305436Z ✔ input bounds count UTF-8 bytes rather than characters (9.432381ms)
+2026-10-08T20:36:17.2329895Z ✔ refuses empty input without producing a partial workspace (0.43074ms)
+2026-10-08T20:36:17.2359754Z ✔ refuses BOM only without producing a partial workspace (0.274879ms)
+2026-10-08T20:36:17.2360976Z ✔ refuses header only without producing a partial workspace (0.202601ms)
+2026-10-08T20:36:17.2389869Z ✔ refuses more than 12 rows without producing a partial workspace (0.298614ms)
+2026-10-08T20:36:17.2391082Z ✔ refuses reordered header without producing a partial workspace (0.685159ms)
+2026-10-08T20:36:17.2392226Z ✔ refuses duplicate header without producing a partial workspace (0.180238ms)
+2026-10-08T20:36:17.2393259Z ✔ refuses header spaces without producing a partial workspace (0.1545ms)
+2026-10-08T20:36:17.2394370Z ✔ refuses double BOM without producing a partial workspace (0.153919ms)
+2026-10-08T20:36:17.2395469Z ✔ refuses extra header field without producing a partial workspace (0.152717ms)
+2026-10-08T20:36:17.2396617Z ✔ refuses missing row field without producing a partial workspace (0.146167ms)
+2026-10-08T20:36:17.2397781Z ✔ refuses extra row field without producing a partial workspace (0.134861ms)
+2026-10-08T20:36:17.2399217Z ✔ refuses blank record without producing a partial workspace (0.158065ms)
+2026-10-08T20:36:17.2400430Z ✔ refuses bare CR separator without producing a partial workspace (0.161941ms)
+2026-10-08T20:36:17.2401639Z ✔ refuses unterminated quotes without producing a partial workspace (0.150745ms)
+2026-10-08T20:36:17.2402885Z ✔ refuses quote in unquoted field without producing a partial workspace (0.142272ms)
+2026-10-08T20:36:17.2404066Z ✔ refuses text after quote without producing a partial workspace (0.134129ms)
+2026-10-08T20:36:17.2405222Z ✔ refuses space before quote without producing a partial workspace (0.254028ms)
+2026-10-08T20:36:17.2406431Z ✔ refuses space after quote without producing a partial workspace (0.123154ms)
+2026-10-08T20:36:17.2407580Z ✔ invalid UTF-8, UTF-16 input and non-byte callers are refused (0.657788ms)
+2026-10-08T20:36:17.2408978Z ✔ native draft admission remains authoritative for title line break (0.28921ms)
+2026-10-08T20:36:17.2410215Z ✔ native draft admission remains authoritative for amount line break (0.201951ms)
+2026-10-08T20:36:17.2411442Z ✔ native draft admission remains authoritative for quoted CRLF evidence (0.18147ms)
+2026-10-08T20:36:17.2412709Z ✔ native draft admission remains authoritative for quoted bare CR evidence (0.213388ms)
+2026-10-08T20:36:17.2413881Z ✔ native draft admission remains authoritative for title limit (0.247819ms)
+2026-10-08T20:36:17.2414993Z ✔ native draft admission remains authoritative for amount limit (0.204054ms)
+2026-10-08T20:36:17.2416135Z ✔ native draft admission remains authoritative for evidence limit (1.056341ms)
+2026-10-08T20:36:17.2417597Z ✔ native draft admission remains authoritative for label limit (0.338162ms)
+2026-10-08T20:36:17.2449124Z ✔ native draft admission remains authoritative for brief limit (0.175221ms)
+2026-10-08T20:36:17.2450463Z ✔ native draft admission remains authoritative for cap limit (0.17445ms)
+2026-10-08T20:36:17.2451670Z ✔ native draft admission remains authoritative for metadata CR (0.156313ms)
+2026-10-08T20:36:17.2677006Z ✔ reviewed source yields only exact original checkpoint definition strings (14.319133ms)
+2026-10-08T20:36:17.2700527Z ✔ unfinished amounts, empty strings, surrounding spaces and LF evidence remain literal (0.419945ms)
+2026-10-08T20:36:17.2702520Z ✔ equal rows are distinct selections and source order overrides selection order (0.378813ms)
+2026-10-08T20:36:17.2704287Z ✔ returned rows can be edited without altering admitted source or other copies (0.654113ms)
+2026-10-08T20:36:17.2736380Z ✔ the complete append must fit the existing 12-checkpoint limit (0.929042ms)
+2026-10-08T20:36:17.2738106Z ✔ empty, repeated, unknown or malformed selections are refused as a whole (0.492372ms)
+2026-10-08T20:36:17.2740164Z ✔ workspace admission still rejects unsupported records and inconsistent review history (1.643303ms)
+2026-10-08T20:36:17.2741894Z ✔ unfinished strings remain literal and invalid amounts stay unknown (4.813818ms)
+2026-10-08T20:36:17.2744002Z ✔ accepted and empty pending evidence retain their native meanings (7.289229ms)
+2026-10-08T20:36:17.2745623Z ✔ all real lifecycle prefixes retain exact history and capture accounting (32.289226ms)
+2026-10-08T20:36:17.2747233Z ✔ different accepted facts produce divergent histories under the same plan (2.432998ms)
+2026-10-08T20:36:17.2749263Z ✔ different plans never gain a common history from positional IDs or manual pairing (10.20138ms)
+2026-10-08T20:36:17.2769904Z ✔ same-definition pairing follows unique literal content across row numbers (0.663877ms)
+2026-10-08T20:36:17.2771868Z ✔ duplicate definitions and titles never force a positional pairing (0.980888ms)
+2026-10-08T20:36:17.2800232Z ✔ inserting or removing a row leaves explicit unpaired definitions (0.81369ms)
+2026-10-08T20:36:17.2801874Z ✔ manual pairing is injective, reversible, and leaves caller choices intact (2.761136ms)
+2026-10-08T20:36:17.2803351Z ✔ malformed pairing maps are refused before comparison (0.85435ms)
+2026-10-08T20:36:17.2804808Z ✔ textual amount changes remain visible even when parsed cents agree (0.424281ms)
+2026-10-08T20:36:17.2806334Z ✔ money fields preserve native safe cents without a lossy difference calculation (0.404161ms)
+2026-10-08T20:36:17.2807842Z ✔ the original strict decoder refuses changed envelope and event facts (10.253848ms)
+2026-10-08T20:36:17.2809582Z ✔ draft and review quantities remain distinguishable, including zero events (1.100667ms)
+2026-10-08T20:36:17.2811204Z ✔ canonical history checks ignore JSON field order but retain exact event values (9.536801ms)
+2026-10-08T20:36:17.2812837Z ✔ read and compare return immutable values without mutating live source review (2.813474ms)
+2026-10-08T20:36:17.3765932Z ✔ exports a standalone full comparison with both file labels and all chosen pairs (8.370067ms)
+2026-10-08T20:36:17.3815690Z ✔ replays unknown and reconciled outcomes without counting webhook receipts twice (22.960563ms)
+2026-10-08T20:36:17.3818139Z ✔ all real lifecycle prefixes have complete retained event lists and correct direction (60.549895ms)
+2026-10-08T20:36:17.3854967Z ✔ explicit pairing and unpaired rows remain visible without historical identity claims (1.120216ms)
+2026-10-08T20:36:17.3879970Z ✔ duplicate definitions stay unpaired until explicitly chosen (1.168768ms)
+2026-10-08T20:36:17.3895448Z ✔ draft strings, unavailable values, empty evidence and literal markup are preserved distinctly (1.715601ms)
+2026-10-08T20:36:17.3899305Z ✔ large safe cent values keep their exact cents (2.534159ms)
+2026-10-08T20:36:17.3900816Z ✔ different plans and divergent evidence keep their separate history relationships (20.198887ms)
+2026-10-08T20:36:17.3903029Z ✔ malformed files, unsupported data and non-injective pairs are refused before delivery (6.263675ms)
+2026-10-08T20:36:17.3904753Z ✔ caller-supplied snapshots and totals cannot replace the admitted file facts (8.124561ms)
+2026-10-08T20:36:17.3906494Z ✔ HTML-incompatible strings fail without modifying files and a valid retry still succeeds (5.575061ms)
+2026-10-08T20:36:17.4000173Z ✔ removed fields return at their original position with later survivor edits intact (4.29057ms)
+2026-10-08T20:36:17.4001965Z ✔ every admitted row position restores without changing order or fields (7.424957ms)
+2026-10-08T20:36:17.4029972Z ✔ a newer removal replaces the older recovery, without resurrecting both rows (0.368748ms)
+2026-10-08T20:36:17.4059834Z ✔ clear retires recovery at controller lifecycle boundaries (0.327678ms)
+2026-10-08T20:36:17.4089780Z ✔ last-row, out-of-range and malformed removal requests make no change (0.62513ms)
+2026-10-08T20:36:17.4091359Z ✔ invalid extra actions do not replace a valid pending removal (0.236272ms)
+2026-10-08T20:36:17.4120042Z ✔ restoration refuses an incompatible row count and keeps caller input intact (0.395248ms)
+2026-10-08T20:36:17.4150060Z ✔ restored unfinished values still face unchanged scope validation (0.907108ms)
+2026-10-08T20:36:17.6064538Z ✔ a reviewed scope before approval exposes a real zero-event state (5.556062ms)
+2026-10-08T20:36:17.6094604Z ✔ authored mixed capture paths retain every exact event and the count-at-that-point (17.281108ms)
+2026-10-08T20:36:17.6136228Z ✔ accepted evidence starts at its own approval, with unrecorded editor notes excluded (1.746437ms)
+2026-10-08T20:36:17.6173827Z ✔ captured history and returned steps cannot mutate the current review or another step (16.370158ms)
+2026-10-08T20:36:17.6175435Z ✔ complete workspace admission refuses a later corrupted event before exposing history (10.897615ms)
+2026-10-08T20:36:17.6177062Z ✔ drafts, mismatched stage and malformed inputs remain unavailable rather than fabricated history (1.474102ms)
+2026-10-08T20:36:17.6178507Z ✔ invalid positions do not alias a real event or change future reads (6.965568ms)
+2026-10-08T20:36:17.6200455Z ✔ twelve authored checkpoints and their full recovered histories keep exact identities and totals (171.804347ms)
+2026-10-08T20:36:17.6201747Z ✔ maximum safe cent values remain integers at historical points (7.3669ms)
+2026-10-08T20:36:17.6217209Z ✔ an overlong cap stays editable before any approval can lock it (3.028414ms)
+2026-10-08T20:36:17.6219734Z ✔ an overlong amount stays editable before any approval can lock it (0.433154ms)
+2026-10-08T20:36:17.6223061Z ✔ normal and 64-character monetary fields survive approval and all three exports (14.992865ms)
+2026-10-08T20:36:17.6224874Z ✔ unfinished monetary text within the saved limit remains an exact editable draft (0.406054ms)
+2026-10-08T20:36:17.6226501Z ✔ the example becomes a detached editable draft, with no inherited approvals (5.859263ms)
+2026-10-08T20:36:17.6228386Z ✔ an authored brief and checkpoints produce a bounded ledger seed and explicit unallocated cap (0.89425ms)
+2026-10-08T20:36:17.6230288Z ✔ incomplete, malformed and over-cap drafts cannot enter review (1.588222ms)
+2026-10-08T20:36:17.6231738Z ✔ field errors identify the actual editable checkpoint and budget (0.304973ms)
+2026-10-08T20:36:17.6233468Z ✔ USD authoring rejects unsupported notation and avoids silently rounding sub-cent entries (0.300056ms)
+2026-10-08T20:36:17.6235274Z ✔ generated identities remain distinct when titles match or resemble object keys (1.944101ms)
+2026-10-08T20:36:17.6236951Z ✔ every accepted safe cent amount is displayed without floating-dollar rounding (0.655645ms)
+2026-10-08T20:36:17.6238458Z ✔ sparse or absent checkpoint rows are refused as incomplete drafts (0.447355ms)
+2026-10-08T20:36:17.6240407Z ✔ approval uses the explicit reviewed evidence and refuses empty acceptance without any event (2.480018ms)
+2026-10-08T20:36:17.6242265Z ✔ plan, approval evidence and prior events cannot be changed through caller-owned objects (0.699009ms)
+2026-10-08T20:36:17.6244368Z ✔ review controls advance one legal event at a time and do not repeat pending requests (3.039019ms)
+2026-10-08T20:36:17.6246281Z ✔ the authored lost-response path stays unknown through duplicate receipt and reconciles exactly once (2.951088ms)
+2026-10-08T20:36:17.6249480Z ✔ independent checkpoints keep their amounts and receipt identities across mixed outcomes (4.858184ms)
+2026-10-08T20:36:17.6251346Z ✔ an unknown outcome can use the explicit simulated lookup without manufacturing a webhook (1.107027ms)
+2026-10-08T20:36:17.6253138Z ✔ unfinished fields remain an unapproved raw draft without invented monetary totals (3.575406ms)
+2026-10-08T20:36:17.6255324Z ✔ review uses recorded acceptance and preserves separate pending evidence and unallocated cap (8.599859ms)
+2026-10-08T20:36:17.6257223Z ✔ every allowed first-checkpoint phase exports native current state and exact recorded fields (23.212078ms)
+2026-10-08T20:36:17.6259727Z ✔ a completed first checkpoint does not hide a second unknown capture or count its duplicate receipt (18.43204ms)
+2026-10-08T20:36:17.6262049Z ✔ a portable review keeps literal authored markup inert and has no executable or external resources (1.24448ms)
+2026-10-08T20:36:17.6263883Z ✔ large valid cent amounts retain exact cents rather than rounded floating dollar values (4.066687ms)
+2026-10-08T20:36:17.6266243Z ✔ inconsistent caller snapshots and invalid source are refused without mutating a valid prior review (1.903841ms)
+2026-10-08T20:36:17.6268354Z ✔ HTML-normalized text is preserved by references or refused before creating a lossy document (2.457229ms)
+2026-10-08T20:36:17.9474852Z ✔ revision retains raw original terms, order and amount spelling, not accepted or pending evidence (11.568512ms)
+2026-10-08T20:36:17.9476935Z ✔ revision from approved preserves the original current history and creates no inherited events (3.226498ms)
+2026-10-08T20:36:17.9479073Z ✔ revision from order ready preserves the original current history and creates no inherited events (3.939939ms)
+2026-10-08T20:36:17.9481200Z ✔ revision from pending capture preserves the original current history and creates no inherited events (4.719127ms)
+2026-10-08T20:36:17.9483775Z ✔ revision from unknown capture preserves the original current history and creates no inherited events (4.452832ms)
+2026-10-08T20:36:17.9492533Z ✔ revision from unknown with duplicate receipts preserves the original current history and creates no inherited events (5.888747ms)
+2026-10-08T20:36:17.9494619Z ✔ revision from reconciled capture preserves the original current history and creates no inherited events (5.442724ms)
+2026-10-08T20:36:17.9496612Z ✔ revision from direct captured receipt preserves the original current history and creates no inherited events (6.984216ms)
+2026-10-08T20:36:17.9498874Z ✔ unapproved reviews and editable drafts refuse a revision and retain their state (0.7868ms)
+2026-10-08T20:36:17.9500663Z ✔ a reopened approved workspace produces the same revision and the existing format can open it again (4.038926ms)
+2026-10-08T20:36:17.9502393Z ✔ original source terms may be frozen and repeated revision downloads stay identical (2.084409ms)
+2026-10-08T20:36:17.9503926Z ✔ current review/terms inconsistency refuses before producing a derivative (0.584559ms)
+2026-10-08T20:36:17.9507153Z ✔ invalid pending evidence or current event facts are not silently discarded to create a revision (0.748463ms)
+2026-10-08T20:36:17.9509449Z ✔ existing JSON-preservable Unicode, NUL and lone-surrogate draft text remain exact (2.09141ms)
+2026-10-08T20:36:17.9514414Z ✔ all twelve reordered checkpoint definitions and maximum admitted text remain original terms (278.580814ms)
+2026-10-08T20:36:17.9850300Z ✔ an unfinished draft preserves exact raw strings and still needs ordinary review validation (4.109531ms)
+2026-10-08T20:36:17.9853212Z ✔ mixed review restores exact history, accepted and pending evidence, totals, and next action (18.725766ms)
+2026-10-08T20:36:17.9856352Z ✔ every prefix of each ordinary authoring lifecycle reopens at the same next-step boundary (52.898113ms)
+2026-10-08T20:36:17.9859985Z ✔ empty pending evidence survives and never becomes an approval by saving or opening (0.960488ms)
+2026-10-08T20:36:17.9871414Z ✔ unsupported envelopes, constants, stages, types and extra fields are refused (1.129951ms)
+2026-10-08T20:36:17.9872706Z ✔ draft shapes and text bounds are enforced without normalizing unfinished input (1.262468ms)
+2026-10-08T20:36:17.9873586Z ✔ every canonical event field and sequence is checked against the unchanged fixture controls (69.64055ms)
+2026-10-08T20:36:17.9874379Z ✔ saved review drafts must belong to distinct existing unapproved checkpoints (14.696283ms)
+2026-10-08T20:36:17.9880367Z ✔ twelve checkpoints and their complete bounded histories retain exact cent totals (110.593228ms)
+2026-10-08T20:36:17.9882339Z ✔ opening accepts harmless JSON field order changes and makes no authenticity claim (3.123535ms)
+2026-10-08T20:36:17.9891450Z ✔ byte limits, failed saves and mismatched plans preserve the source workspace (8.813136ms)
+2026-10-08T20:36:17.9969632Z ✔ validated suggestions preserve editable text without retaining provider-owned objects (3.853651ms)
+2026-10-08T20:36:17.9970934Z ✔ the existing empty-list and text-length contracts are preserved (1.192583ms)
+2026-10-08T20:36:17.9972072Z ✔ serialized Unicode text at the schema character limits remains valid (2.011311ms)
+2026-10-08T20:36:17.9973216Z ✔ Unicode length limits count code points rather than graphemes (1.434202ms)
+2026-10-08T20:36:17.9973816Z ✔ root fields must be declared own data properties (3.766661ms)
+2026-10-08T20:36:17.9974503Z ✔ checkpoint records cannot smuggle inherited fields or undeclared approval data (0.43711ms)
+2026-10-08T20:36:17.9975191Z ✔ accessor fields are refused without evaluating provider code (0.38285ms)
+2026-10-08T20:36:17.9976304Z ✔ checkpoint lists must contain their own entries and cannot replace iteration (0.395708ms)
+2026-10-08T20:36:17.9977375Z ✔ ordinary and null-prototype data records normalize to the same result (0.300006ms)
+2026-10-08T20:36:17.9978157Z ✔ configured bindings support the existing direct, JSON, and response-string forms (2.120824ms)
+2026-10-08T20:36:17.9979291Z ✔ the async adapter rejects JSON-representable malformed suggestions in every supported response form (4.783664ms)
+2026-10-08T20:36:17.9980048Z ✔ each provider call receives an independent request schema (0.313987ms)
+2026-10-08T20:36:17.9980750Z ✔ inherited or accessor response envelopes do not bypass result validation (0.550369ms)
+2026-10-08T20:36:17.9981418Z ✔ missing or invalid bindings fail closed before any dispatch (0.936853ms)
+2026-10-08T20:36:17.9982108Z ✔ provider errors and malformed results are rejected without retry or fallback (0.766299ms)
+2026-10-08T20:36:17.9982920Z ✔ native field strings and LF pending evidence survive file roundtrips without normalization (7.162922ms)
+2026-10-08T20:36:17.9983735Z ✔ project label refuses external line breaks that native form assignment would change (0.823265ms)
+2026-10-08T20:36:17.9984543Z ✔ creative brief refuses external line breaks that native form assignment would change (0.3225ms)
+2026-10-08T20:36:17.9985338Z ✔ project cap refuses external line breaks that native form assignment would change (0.330181ms)
+2026-10-08T20:36:17.9986140Z ✔ checkpoint title refuses external line breaks that native form assignment would change (0.539212ms)
+2026-10-08T20:36:17.9986967Z ✔ checkpoint amount refuses external line breaks that native form assignment would change (0.325855ms)
+2026-10-08T20:36:17.9987763Z ✔ planned evidence refuses external line breaks that native form assignment would change (0.503799ms)
+2026-10-08T20:36:17.9988555Z ✔ pending review evidence refuses CR and CRLF before a native textarea can rewrite it (0.837706ms)
+2026-10-08T20:36:17.9990384Z ✔ saving incompatible in-memory fields refuses without altering the caller draft (0.828012ms)
+2026-10-08T20:36:17.9990870Z ℹ tests 233
+2026-10-08T20:36:17.9991093Z ℹ suites 0
+2026-10-08T20:36:17.9991314Z ℹ pass 233
+2026-10-08T20:36:17.9991537Z ℹ fail 0
+2026-10-08T20:36:17.9991756Z ℹ cancelled 0
+2026-10-08T20:36:17.9991982Z ℹ skipped 0
+2026-10-08T20:36:17.9992378Z ℹ todo 0
+2026-10-08T20:36:17.9992638Z ℹ duration_ms 1640.975079
+2026-10-08T20:36:18.0241661Z Post job cleanup.
+2026-10-08T20:36:18.1459747Z (node:2588) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+2026-10-08T20:36:18.1460611Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-10-08T20:36:18.1654119Z Post job cleanup.
+2026-10-08T20:36:18.2553301Z [command]/usr/bin/git version
+2026-10-08T20:36:18.2595961Z git version 2.55.0
+2026-10-08T20:36:18.2632712Z Temporarily overriding HOME='/home/runner/work/_temp/12c51a60-1961-46b5-9021-230b8a08de32' before making global git config changes
+2026-10-08T20:36:18.2634181Z Adding repository directory to the temporary git global config as a safe directory
+2026-10-08T20:36:18.2638499Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/scopesignal/scopesignal
+2026-10-08T20:36:18.2680884Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-10-08T20:36:18.2717603Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-10-08T20:36:18.3012564Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-10-08T20:36:18.3051286Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-10-08T20:36:18.3322225Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-10-08T20:36:18.3361372Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-10-08T20:36:18.3772934Z Cleaning up orphan processes
+2026-10-08T20:36:18.4093351Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

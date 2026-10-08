@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e8">
+  <meta name="description" content="Compose a fictional creative scope, review its acceptance checkpoints, and explore a simulated milestone lifecycle.">
+  <title>Build a fixture scope — ScopeSignal</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./scope-workspace.css">
+  <link rel="stylesheet" href="./scope-checkpoint-import.css">
+  <link rel="stylesheet" href="./scope-history.css">
+  <script type="module" src="./src/scope-workspace.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar"><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">S</span> ScopeSignal</a><span class="top-status">Fixture mode · no live payments</span></header>
+  <main id="main" class="workspace scope-workspace">
+    <a class="scope-back" href="./index.html#workspace">← Back to the example fixture</a>
+    <div class="section-head"><div><p class="eyebrow">BRIEF → CHECKPOINTS → HUMAN REVIEW</p><h1>Shape the work.<br><em>Agree on the proof.</em></h1></div><span class="fixture-badge">FICTIONAL PROJECT ONLY</span></div>
+    <p class="lede">Build a scope, agree on what each milestone proves, and explore its payment lifecycle one decision at a time.</p>
+    <p class="scope-session-note">This is a fictional workspace. Download a workspace file to keep your draft or simulation; refreshing otherwise clears it. Files stay on your device. No payment or AI service is called.</p>
+    <p class="scope-help"><a href="./scope-compare.html" target="_blank" rel="noopener">Compare two saved workspaces</a> in a separate tab while keeping this workspace in place.</p>
+    <p class="scope-help"><a href="./scope-library.html" target="_blank" rel="noopener">Review several saved workspaces</a> in a read-only library and download a selected HTML review.</p>
+    <p class="scope-help"><a href="./scope-csv.html" target="_blank" rel="noopener">Convert checkpoint CSV to a draft workspace</a> in a separate tab, then review and open the downloaded JSON here.</p>
+    <section class="scope-files" aria-labelledby="scope-files-title">
+      <h2 id="scope-files-title">Keep this workspace</h2>
+      <p>Save your brief, evidence drafts and simulated history in one file. Opening a file shows a preview before replacing your current work.</p>
+      <div class="scope-file-controls">
+        <button id="scope-save" class="button button-outline" type="button">Download workspace</button>
+        <button id="scope-review-download" class="button button-outline" type="button">Download scope review</button>
+        <button id="scope-revision-download" class="button button-outline" type="button" aria-describedby="scope-revision-help" disabled>Download revision draft</button>
+        <label class="scope-file-open" for="scope-open">Open saved workspace
+          <input id="scope-open" type="file" accept=".json,application/json" aria-describedby="scope-file-help">
+        </label>
+      </div>
+      <p id="scope-file-help" class="microcopy">Version 1 workspace JSON, up to 1 MiB. These unsigned files contain fictional records, not verified approvals or payment evidence.</p>
+      <p class="microcopy">Scope review is a read-only HTML snapshot you can open offline and print, including unfinished fields or recorded review evidence. Keep the workspace JSON to resume editing.</p>
+      <p id="scope-revision-help" class="microcopy">After approval, download a revision draft to reuse the original scope terms. The copy has no approvals, payment events or review notes. Your current workspace stays open; reopen the copied JSON to edit and review it anew.</p>
+      <p id="scope-file-status" role="status" aria-live="polite"></p>
+      <div id="scope-open-preview" class="scope-open-preview" hidden>
+        <h3>Ready to open</h3>
+        <p id="scope-open-summary"></p>
+        <p>Replacing the workspace clears the current page's work. Download it first if you want to keep it.</p>
+        <button id="scope-open-apply" class="button button-dark" type="button">Replace workspace</button>
+      </div>
+      <button id="scope-open-cancel" class="text-button" type="button" hidden>Cancel open</button>
+      <p id="scope-file-origin" class="scope-session-note" hidden>Opened from a saved fixture. All approvals and capture events shown are fictional records from an unsigned file.</p>
+    </section>
+    <ol class="scope-steps" aria-label="Scope workflow"><li id="draft-step" aria-current="step">1 · Draft the scope</li><li id="review-step">2 · Review the evidence</li><li id="simulate-step">3 · Simulate milestones</li></ol>
+
+    <form id="scope-form" novalidate>
+      <div id="scope-errors" class="scope-errors" role="alert" tabindex="-1" hidden></div>
+      <section class="panel" aria-labelledby="scope-details-title">
+        <div class="panel-heading"><h2 id="scope-details-title">The creative brief</h2><span>Editable draft</span></div>
+        <div class="scope-fields">
+          <label for="scope-label">Project name<input id="scope-label" name="label" maxlength="120" required></label>
+          <label for="scope-cap">Project cap (USD)<input id="scope-cap" name="cap" inputmode="decimal" autocomplete="off" aria-describedby="cap-help" required><small id="cap-help">Checkpoint amounts may total less than the cap.</small></label>
+          <label class="scope-wide" for="scope-brief">Creative brief<textarea id="scope-brief" name="brief" rows="3" maxlength="8000" required></textarea></label>
+        </div>
+      </section>
+      <section class="panel" aria-labelledby="draft-checkpoints-title">
+        <div class="panel-heading"><h2 id="draft-checkpoints-title">Define the checkpoints</h2><span>1–12 milestones</span></div>
+        <p class="scope-help">Give each milestone a clear deliverable, an amount, and evidence a person can review. Add, remove, revise, duplicate, and move checkpoints up or down before approval. Each checkpoint's fields move together. Duplicate checkpoint inserts an editable copy immediately after the original, preserving all three field values.</p>
+        <p id="scope-order-status" class="scope-help" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div id="scope-draft-list"></div>
+        <button id="scope-add" class="button button-outline" type="button">+ Add checkpoint</button>
+        <button id="scope-undo-remove" class="button button-outline" type="button" aria-describedby="scope-removal-help" disabled>Undo removal</button>
+        <p id="scope-removal-help" class="microcopy">Undo restores the most recently removed checkpoint and keeps later text edits. It is available until another add, copy or move, or until you review or replace the workspace.</p>
+        <section id="scope-checkpoint-import" class="scope-checkpoint-import" aria-labelledby="scope-checkpoint-import-title">
+          <h3 id="scope-checkpoint-import-title">Reuse saved checkpoints</h3>
+          <p class="scope-help">Choose checkpoint definitions from a saved workspace to add to this draft. Your project details and current checkpoints stay in place. Only deliverables, amounts as saved and planned evidence are copied.</p>
+          <label class="scope-file-open" for="scope-checkpoint-file">Choose saved checkpoints
+            <input id="scope-checkpoint-file" type="file" accept=".json,application/json" aria-describedby="scope-checkpoint-file-help">
+          </label>
+          <p id="scope-checkpoint-file-help" class="microcopy">Version 1 workspace JSON, up to 1 MiB. A saved draft or review can supply definitions; its approvals, review notes and simulated payment events stay in that file. Review checks the copied amounts against your current project cap.</p>
+          <div id="scope-checkpoint-preview" class="scope-checkpoint-preview" hidden>
+            <h4>Choose definitions to add</h4>
+            <p id="scope-checkpoint-source"></p>
+            <div id="scope-checkpoint-options" class="scope-checkpoint-options"></div>
+            <p id="scope-checkpoint-selection" class="scope-help" role="status" aria-live="polite"></p>
+            <button id="scope-checkpoint-apply" class="button button-dark" type="button" aria-describedby="scope-checkpoint-selection" disabled>Add selected checkpoints</button>
+          </div>
+          <button id="scope-checkpoint-cancel" class="text-button" type="button" hidden>Cancel checkpoint reuse</button>
+          <p id="scope-checkpoint-status" class="scope-checkpoint-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        </section>
+      </section>
+      <div class="scope-draft-footer">
+        <p id="scope-budget" class="scope-budget" role="status"></p>
+        <button class="button button-dark" type="submit">Review this scope <span aria-hidden="true">→</span></button>
+      </div>
+      <p class="microcopy">Reviewing the plan does not approve a checkpoint. Each acceptance below needs its own explicit human decision.</p>
+    </form>
+
+    <section id="scope-review" hidden aria-labelledby="review-title">
+      <div class="section-head"><div><p class="eyebrow">YOUR FIXTURE SCOPE</p><h2 id="review-title" tabindex="-1"></h2></div><button id="scope-edit" class="button button-outline" type="button">Edit draft</button></div>
+      <p id="review-brief" class="brief"></p>
+      <p id="scope-lock-note" class="scope-help">You can edit this plan until the first checkpoint is approved.</p>
+      <div class="summary-grid" aria-label="Authored fixture totals">
+        <article><span>PROJECT CAP</span><strong id="scope-total"></strong></article>
+        <article><span>APPROVED</span><strong id="scope-approved"></strong></article>
+        <article><span>SIMULATED CAPTURED</span><strong id="scope-captured"></strong></article>
+        <article><span>ALLOCATED REMAINING</span><strong id="scope-remaining"></strong></article>
+      </div>
+      <p id="scope-unallocated" class="scope-help"></p>
+      <p id="scope-action-status" role="status" aria-live="polite"></p>
+      <div id="scope-review-list"></div>
+      <section class="ledger" aria-labelledby="scope-ledger-title">
+        <div class="panel-heading"><h3 id="scope-ledger-title">Your fixture event ledger</h3><span id="scope-event-count">0 events</span></div>
+        <p class="scope-help">These are simulated events for this scope, not payment evidence. Lost responses remain unknown until you simulate a transaction lookup.</p>
+        <div class="table-wrap"><table><caption class="sr-only">Events recorded by explicit decisions in the authored fixture</caption><thead><tr><th scope="col">#</th><th scope="col">CHECKPOINT</th><th scope="col">EVENT</th><th scope="col">RESULT</th></tr></thead><tbody id="scope-event-body"></tbody></table></div>
+      </section>
+      <details id="scope-history" class="scope-history" hidden>
+        <summary>Inspect this scope, event by event</summary>
+        <p id="scope-history-source" class="scope-history-source"></p>
+        <p class="scope-help">Explore the recorded decisions for this authored fixture. These controls only change this historical view. They do not roll back, approve, repeat or reconcile anything in your workspace.</p>
+        <p id="scope-history-current" class="microcopy"></p>
+        <div class="scope-history-controls">
+          <label for="scope-history-event">Recorded point<select id="scope-history-event" disabled></select></label>
+          <button id="scope-history-previous" class="button button-outline" type="button" disabled>Previous event</button>
+          <button id="scope-history-next" class="button button-outline" type="button" disabled>Next event</button>
+          <button id="scope-history-latest" class="button button-outline" type="button" disabled>Latest recorded point</button>
+        </div>
+        <p id="scope-history-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div id="scope-history-display" hidden>
+          <p id="scope-history-position"></p>
+          <h3 id="scope-history-title"></h3>
+          <p id="scope-history-description" class="scope-help"></p>
+          <div class="summary-grid" aria-label="Historical authored fixture totals">
+            <article><span>APPROVED AT THIS POINT</span><strong id="scope-history-approved"></strong></article>
+            <article><span>SIMULATED CAPTURED</span><strong id="scope-history-captured"></strong></article>
+            <article><span>ALLOCATED REMAINING</span><strong id="scope-history-remaining"></strong></article>
+            <article><span>UNALLOCATED CAP</span><strong id="scope-history-unallocated"></strong></article>
+          </div>
+          <div id="scope-history-checkpoints" class="scope-history-checkpoints"></div>
+          <details class="scope-history-event-fields">
+            <summary>Recorded event fields</summary>
+            <p class="microcopy">Sequence numbers and logical times belong to this fictional record. They are not real payment times or evidence of a human action. Pending editor notes are not historical approvals.</p>
+            <pre id="scope-history-event-json"></pre>
+          </details>
+        </div>
+      </details>
+      <p class="scope-help">Use Download revision draft above to keep the original terms for a new review. To return to the example instead, <a href="./scope.html">start a fresh fixture</a>; this clears the current in-memory plan and events.</p>
+    </section>
+    <noscript><p class="scope-errors">This interactive fixture needs JavaScript. The <a href="./index.html">example page</a> describes the payment model.</p></noscript>
+  </main>
+  <footer><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">S</span> ScopeSignal</a><span>Fixture mode · no live money · no customer data</span></footer>
+</body>
+</html>
