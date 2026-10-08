@@ -71,9 +71,40 @@ seven-event Northstar example remains available from the return link.
    ledger. An uncertain capture cannot be requested again, and receiving a
    webhook while uncertain does not itself reconcile that outcome.
 
-The fictional plan and its events stay in this page's memory. Leaving or
-refreshing clears them. All simulation controls use the local fixture ledger;
-no payment or AI service is called.
+The fictional plan and its events stay in this page's memory. Use **Download
+workspace** to keep an explicit local file before leaving or refreshing.
+**Open saved workspace** checks a chosen file and shows a preview; only
+**Replace workspace** replaces the current page's work. All simulation controls
+continue to use the local fixture ledger; no payment or AI service is called.
+
+### Save and reopen an authored workspace
+
+The workspace file preserves an unfinished draft's exact strings, including
+empty fields or amounts that still need correction. Ordinary validation remains
+in place before review. For a reviewed scope it also preserves the recorded
+fixture events, accepted evidence, other checkpoints' pending evidence drafts,
+current outcomes and available next steps. An unknown capture stays unknown
+and counts nothing until the same explicit simulated lookup.
+
+The fixed filename is `scopesignal-workspace-v1.json`, using schema
+`scopesignal.scope-workspace`, version `1`. The page admits up to 1 MiB of
+UTF-8 JSON, 1–12 checkpoints and 96 canonical fixture events. It reconstructs a
+review through the existing authoring controls and checks every saved event
+against the generated history. Missing, extra, unsupported or inconsistent
+fields, invalid UTF-8, malformed JSON and unreadable or oversized files are
+refused before replacement.
+
+Selecting a file and inspecting its preview keep the active workspace intact.
+Canceling an open, choosing a newer file, or editing the active workspace
+invalidates an older pending read or preview. A refused file leaves the current
+brief, evidence, events and totals unchanged. Re-select the file when ready to
+replace the workspace; download the current work first if you want to keep it.
+
+Saving and opening use no automatic browser storage or network service.
+Reloading still clears memory until a saved file is opened again. These
+unsigned files contain fictional data and do not verify identity, human
+approval or payment. This authored-workspace format is distinct from the fixed
+example's read-only fixture-record download and viewer.
 
 `node scripts/check-scope-workspace.mjs` runs the optional desktop and phone
 browser receiving checks with the same installed Playwright/Chromium variables

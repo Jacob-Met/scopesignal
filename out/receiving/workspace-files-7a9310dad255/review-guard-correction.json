@@ -1,0 +1,5 @@
+{
+  "classification": "Receiver-only source-comparison helper correction",
+  "failure": "Unanchored removal of two-space call suffixes from four-space lines retained leading whitespace and failed exact equality.",
+  "correction": "Remove the whole workspaceChanged call line with an anchored multiline expression. No product source, expectation or behavioral test changed."
+}
