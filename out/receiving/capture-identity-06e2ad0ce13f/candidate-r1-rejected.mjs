@@ -34,23 +34,17 @@ function requireCents(value, label) {
   if (!Number.isSafeInteger(value) || value < 0) throw new Error(`${label} must be nonnegative safe integer cents`);
 }
 
-const fixtureOrderId = checkpointId => `SANDBOX-${checkpointId.toUpperCase()}`;
-
 function copySeed(seed) {
   const copy = structuredClone(seed);
   if (!copy || !Array.isArray(copy.checkpoints)) throw new Error('Checkpoint seed is required');
   requireId(copy.currency, 'Currency');
   requireCents(copy.amount, 'Project cap');
   const ids = new Set();
-  const orderIds = new Set();
   let total = 0;
   for (const cp of copy.checkpoints) {
     requireId(cp?.id, 'Checkpoint ID');
     if (ids.has(cp.id)) throw new Error('Checkpoint IDs must be unique');
     ids.add(cp.id);
-    const orderId = fixtureOrderId(cp.id);
-    if (orderIds.has(orderId)) throw new Error('Checkpoint IDs must produce unique fixture order IDs');
-    orderIds.add(orderId);
     requireCents(cp.amount, 'Checkpoint amount');
     total += cp.amount;
     requireCents(total, 'Checkpoint total');
@@ -65,7 +59,7 @@ function checkpoint(checkpoints, id) {
 }
 
 function validateEnvelope(event) {
-  if (!event || typeof event !== 'object' || Array.isArray(event) || typeof event.type !== 'string' || !Object.hasOwn(EVENT_FIELDS, event.type)) {
+  if (!event || typeof event !== 'object' || Array.isArray(event) || !Object.hasOwn(EVENT_FIELDS, event.type)) {
     throw new Error('Unsupported ledger event');
   }
   const allowed = ['seq', 'type', 'at', ...EVENT_FIELDS[event.type]];
@@ -88,11 +82,8 @@ export function createLedger(seed = FIXTURE) {
   const events = [];
   const append = (type, data = {}) => {
     if (!data || typeof data !== 'object' || Array.isArray(data)) throw new Error('Event data must be an object');
-    const descriptors = Object.getOwnPropertyDescriptors(data);
-    if (Object.values(descriptors).some(descriptor => !Object.hasOwn(descriptor, 'value'))) throw new Error('Event data must not contain accessors');
-    if (['seq', 'type', 'at'].some(key => Object.hasOwn(descriptors, key))) throw new Error('Reserved event metadata');
-    const payload = Object.fromEntries(Object.entries(descriptors).filter(([, descriptor]) => descriptor.enumerable).map(([key, descriptor]) => [key, descriptor.value]));
-    const event = Object.freeze({ seq: events.length + 1, type, at: `T+${String(events.length + 1).padStart(3, '0')}`, ...payload });
+    if (['seq', 'type', 'at'].some(key => Object.hasOwn(data, key))) throw new Error('Reserved event metadata');
+    const event = Object.freeze({ seq: events.length + 1, type, at: `T+${String(events.length + 1).padStart(3, '0')}`, ...structuredClone(data) });
     // Admission and replay use the same state machine. A refusal cannot alter
     // either the existing journal or the next logical sequence number.
     reduce([...events, event], initialSeed);
@@ -112,7 +103,7 @@ export function createLedger(seed = FIXTURE) {
     },
     createOrder: (checkpointId) => {
       const cp = current(checkpointId);
-      append('paypal.order.created', { checkpointId, orderId: fixtureOrderId(checkpointId), amount: cp.amount, currency: initialSeed.currency, environment: 'sandbox' });
+      append('paypal.order.created', { checkpointId, orderId: `SANDBOX-${checkpointId.toUpperCase()}`, amount: cp.amount, currency: initialSeed.currency, environment: 'sandbox' });
     },
     recordCaptureAttempt: (checkpointId) => {
       const cp = current(checkpointId);

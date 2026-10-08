@@ -1,0 +1,38 @@
+✔ an unresolved pending capture cannot be requested a second time (4.170822ms)
+✔ a delayed lost response cannot undo a confirmed capture or be recorded twice (1.338643ms)
+✔ a webhook event identity cannot be reused for a different capture or checkpoint (1.76884ms)
+✔ a capture identity cannot count against two different checkpoints (1.134676ms)
+✔ an unknown receipt reserves its capture identity before any amount is counted (1.689481ms)
+✔ reconciliation and later receipts share the same capture binding (1.38011ms)
+✔ one checkpoint cannot acquire a second capture through a new webhook event ID (0.800925ms)
+✔ webhook and reconciliation identities must be nonempty canonical strings (6.431192ms)
+✔ exact duplicate webhook delivery remains auditable in every supported capture state (1.760988ms)
+✔ the public append path and reducer refuse lifecycle violations too (0.870689ms)
+✔ replay derives receipt identity from history instead of trusting a duplicate flag (0.367492ms)
+✔ published events cannot be edited or removed and append owns sequence metadata (0.503667ms)
+✔ a ledger keeps its creation seed stable across caller mutation (0.619011ms)
+✔ inherited object properties are not checkpoint identities (57.132409ms)
+✔ three independent checkpoint capture paths compose without double counting (7.253027ms)
+✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (3.629438ms)
+✔ order and capture require prior explicit human approval and order (0.749527ms)
+✔ lost response cannot be blindly captured again; reconcile is one-time (1.346575ms)
+✔ same webhook event ID is idempotent and cannot double count (0.522707ms)
+✔ reducer never counts duplicate webhook in fixture stream (0.444629ms)
+✔ role previews are explicit local rules and never claim AI output (14.629019ms)
+✔ Workers AI adapter fails closed without binding and has no paid fallback (0.477708ms)
+✔ schema validation rejects malformed model output (0.271308ms)
+✔ every shipped replay prefix presents its current reduced capture state (4.175489ms)
+✔ ordinary webhook capture does not invent a reconciliation (0.662386ms)
+✔ missing and unrecognized states do not become captured or safe-to-retry labels (0.19928ms)
+✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (4.303682ms)
+✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (0.980144ms)
+✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (2.526049ms)
+✔ pending and never-requested captures remain distinct from resolved captures (0.47202ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 201.013254
