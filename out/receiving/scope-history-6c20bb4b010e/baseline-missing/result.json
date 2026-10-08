@@ -1,0 +1,109 @@
+{
+  "schema": "scopesignal.authored-history.browser.v1",
+  "sourceRoot": "/dev/hamon-scopesignal-history-6c20bb4b010e-gx7Fv9/baseline",
+  "started": "2026-10-08T15:24:13.289Z",
+  "probeSha256": "4553503ec74e12736932ace989880dadc470549eab7069397d6dfe532f631fd3",
+  "sourceBefore": {
+    "scope.html": "f7333f942369ff2f2f77a96796489291146cf62fe08d886fda1d35d0f4f99da6",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "src/scope-workspace.mjs": "1d3145f2b6c5052927f1050189432cfa55035a863fda20ae64e7347dc965afd3",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
+  },
+  "node": "v24.19.0",
+  "groups": [
+    {
+      "name": "native authored scope preserves pending evidence and recovery state",
+      "passed": true
+    },
+    {
+      "name": "authored history exposes every recorded prefix without changing the workspace",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: The authored workspace has no event-by-event history panel.\n\n0 !== 1\n\n    at /dev/hamon-scopesignal-history-6c20bb4b010e-gx7Fv9/check-scope-history.cjs:96:12\n    at async group (/dev/hamon-scopesignal-history-6c20bb4b010e-gx7Fv9/check-scope-history.cjs:24:40)\n    at async /dev/hamon-scopesignal-history-6c20bb4b010e-gx7Fv9/check-scope-history.cjs:95:7"
+    }
+  ],
+  "downloads": [
+    {
+      "file": "current-before-history.json",
+      "suggestedFilename": "scopesignal-workspace-v1.json",
+      "bytes": 3149,
+      "sha256": "d6d0db6f7e11b0d83f774951ab3d8ec015bcbfc52179e6639eafd3a79dcece5c"
+    }
+  ],
+  "externalRequests": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+      "action": "blocked"
+    }
+  ],
+  "pageErrors": [],
+  "served": [
+    {
+      "path": "scope.html",
+      "sha256": "f7333f942369ff2f2f77a96796489291146cf62fe08d886fda1d35d0f4f99da6"
+    },
+    {
+      "path": "styles.css",
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+    },
+    {
+      "path": "scope-workspace.css",
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "sha256": "1d3145f2b6c5052927f1050189432cfa55035a863fda20ae64e7347dc965afd3"
+    },
+    {
+      "path": "src/scope-review-export.mjs",
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    }
+  ],
+  "chromium": "153.0.8010.0",
+  "unknownAfterReceipts": {
+    "eventCount": "6 events",
+    "captured": "$0.00",
+    "state": "Capture state: unknown\n\nThe capture response was lost. Do not retry blindly; look up the existing transaction and reconcile once."
+  },
+  "currentTotals": {
+    "cap": "$700.00",
+    "captured": "$351.25",
+    "remaining": "$0.00",
+    "unallocated": "$351.25 allocated to checkpoints. $348.75 of the project cap remains unallocated."
+  },
+  "error": "AssertionError [ERR_ASSERTION]: The authored workspace has no event-by-event history panel.\n\n0 !== 1\n\n    at /dev/hamon-scopesignal-history-6c20bb4b010e-gx7Fv9/check-scope-history.cjs:96:12\n    at async group (/dev/hamon-scopesignal-history-6c20bb4b010e-gx7Fv9/check-scope-history.cjs:24:40)\n    at async /dev/hamon-scopesignal-history-6c20bb4b010e-gx7Fv9/check-scope-history.cjs:95:7",
+  "sourceAfter": {
+    "scope.html": "f7333f942369ff2f2f77a96796489291146cf62fe08d886fda1d35d0f4f99da6",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "src/scope-workspace.mjs": "1d3145f2b6c5052927f1050189432cfa55035a863fda20ae64e7347dc965afd3",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
+  },
+  "sourceUnchanged": true,
+  "finished": "2026-10-08T15:24:18.908Z",
+  "passed": false
+}

@@ -1,0 +1,230 @@
+{
+  "repository": "Jacob-Met/scopesignal",
+  "run": {
+    "id": 37810302841,
+    "head_sha": "847505d2fe9f8295110fc13a3fb9e05ec71f6644",
+    "path": ".github/workflows/pages.yml",
+    "run_attempt": 1,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-08T16:37:54Z",
+    "updated_at": "2026-10-08T16:38:23Z",
+    "html_url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37810302841"
+  },
+  "jobs": [
+    {
+      "id": 113425120124,
+      "name": "test",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 37810302841,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run npm test",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Post Run actions/setup-node@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        }
+      ]
+    },
+    {
+      "id": 113425197247,
+      "name": "deploy",
+      "status": "completed",
+      "conclusion": "success",
+      "run_id": 37810302841,
+      "logs_url": null,
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Run actions/configure-pages@v5",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Run actions/upload-pages-artifact@v3",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Run actions/deploy-pages@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Post Run actions/checkout@v4",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 11
+        }
+      ]
+    }
+  ],
+  "currentArtifacts": [
+    {
+      "id": 11565196339,
+      "name": "github-pages-37810302841-1",
+      "size_in_bytes": 11661994,
+      "url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/artifacts/11565196339",
+      "archive_download_url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/artifacts/11565196339/zip",
+      "expired": false,
+      "created_at": "2026-10-08T16:38:13Z",
+      "expires_at": "2026-10-09T16:38:12Z",
+      "updated_at": "2026-10-08T16:38:13Z",
+      "digest": "sha256:756a65a5554df57da6a48e4c1f87061b3ec6c07681a4edcdd86e9135040029d7",
+      "workflow_run": {
+        "id": 37810302841,
+        "repository_id": 1408040638,
+        "head_repository_id": 1408040638,
+        "head_branch": "paypal-ai",
+        "head_sha": "847505d2fe9f8295110fc13a3fb9e05ec71f6644"
+      }
+    }
+  ],
+  "priorArtifactsStillPresent": [
+    {
+      "id": 11562156085,
+      "name": "github-pages",
+      "size_in_bytes": 11269165,
+      "url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/artifacts/11562156085",
+      "archive_download_url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/artifacts/11562156085/zip",
+      "expired": false,
+      "created_at": "2026-10-08T15:49:57Z",
+      "expires_at": "2026-10-09T15:49:55Z",
+      "updated_at": "2026-10-08T15:49:57Z",
+      "digest": "sha256:81abe5845641477ea877e8681e6d45fdca63644f9c567a1514a1416278840b6d",
+      "workflow_run": {
+        "id": 37802625312,
+        "repository_id": 1408040638,
+        "head_repository_id": 1408040638,
+        "head_branch": "paypal-ai",
+        "head_sha": "549f6d551d1ad92ee97198b1799c7bcb40aa5e01"
+      }
+    },
+    {
+      "id": 11560528748,
+      "name": "github-pages",
+      "size_in_bytes": 11269154,
+      "url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/artifacts/11560528748",
+      "archive_download_url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/artifacts/11560528748/zip",
+      "expired": false,
+      "created_at": "2026-10-08T15:40:26Z",
+      "expires_at": "2026-10-09T15:40:24Z",
+      "updated_at": "2026-10-08T15:40:26Z",
+      "digest": "sha256:6a1aa691044241dda30483c99f62cf0646927b5864e980f8fbdac04ffb5e8552",
+      "workflow_run": {
+        "id": 37802625312,
+        "repository_id": 1408040638,
+        "head_repository_id": 1408040638,
+        "head_branch": "paypal-ai",
+        "head_sha": "549f6d551d1ad92ee97198b1799c7bcb40aa5e01"
+      }
+    }
+  ],
+  "expectedName": "github-pages-37810302841-1",
+  "workflowGitBlob": "2fac275ab0183987bccac3ba787a133795a70016",
+  "sourceReadback": {
+    "authority": "Parent root independently verified actual merge tree and all 521 leaves",
+    "tree": "cac1d2bbdd38e2e4c2aed7249c2593ec174c0eaa",
+    "parent": "4f0670f0b41b2751ddec958d5ebe3c4d7f991742",
+    "applicationAssetsUnchanged": true
+  },
+  "publicBrowser": {
+    "url": "https://jacobmetoyer.com/scopesignal/scope-compare.html",
+    "source": "4f0670f0b41b2751ddec958d5ebe3c4d7f991742",
+    "receiptSha256": "56937edeb383623b7a1bfa43d177c239630d009a08d32f7a3fd1ef04514e445a",
+    "passedGroups": 3,
+    "httpAssets": 14,
+    "browserAssets": 14,
+    "driverSha256": "5a390d5ace865267add31c5db7485f5100f1cc18d593619d04f27a3ef0a721cc"
+  },
+  "actionContracts": {
+    "upload": {
+      "repository": "actions/upload-pages-artifact",
+      "commit": "56afc609e74202658d3ffba0e8f6dda462b719fa",
+      "path": "action.yml"
+    },
+    "deploy": {
+      "repository": "actions/deploy-pages",
+      "commit": "d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e",
+      "path": "action.yml"
+    },
+    "selector": {
+      "repository": "actions/deploy-pages",
+      "commit": "d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e",
+      "path": "src/internal/api-client.js"
+    },
+    "uploadArtifact": {
+      "repository": "actions/upload-artifact",
+      "commit": "ea165f8d65b6e75b540449e92b4886f43607fa02"
+    }
+  },
+  "schema": "scopesignal.pages-repair-deployed.v1",
+  "frozenAt": "2026-10-08T16:46:05.526204+00:00",
+  "result": "PASS",
+  "rawDeploymentLogSha256": "2d38d0ce0f850f8ea6c2fcf9f39b46cfad446ced0c1f5c2493062f84c99e5136",
+  "deploymentExcerptSha256": "8eb8724615bf9f1fc134f3ad026133acb8d80168027a55579d1569c4be2a039b",
+  "environmentUrl": "http://jacobmetoyer.com/scopesignal/",
+  "observedNameMatchCount": 1,
+  "deployedArtifactId": 11565196339,
+  "deployedCommit": "847505d2fe9f8295110fc13a3fb9e05ec71f6644",
+  "hostedRetryPerformedAfterRepair": false,
+  "qualificationBoundary": "The hosted first attempt verifies the configured name and actual deployment. Attempt isolation is additionally covered by the six pinned-action contract groups; the successful hosted job was not rerun for an artificial retry."
+}

@@ -1,0 +1,127 @@
+{
+  "schema": "scopesignal.authored-history.browser.v1",
+  "sourceRoot": "/dev/hamon-scopesignal-history-6c20bb4b010e-K1d9r4/candidate-r1",
+  "started": "2026-10-08T15:33:10.967Z",
+  "probeSha256": "4553503ec74e12736932ace989880dadc470549eab7069397d6dfe532f631fd3",
+  "sourceBefore": {
+    "scope.html": "28562e2b423a2ff117ddd2f5db085bd71b26afb083abc6ba5cd23a2e357b0f7f",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "src/scope-workspace.mjs": "2d03e57a73e4d47b4177d9249399bb7b926e65b74741c4f1ae2a10af3f128c54",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/scope-history.mjs": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+    "src/scope-history-view.mjs": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+    "scope-history.css": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69"
+  },
+  "node": "v24.19.0",
+  "groups": [
+    {
+      "name": "native authored scope preserves pending evidence and recovery state",
+      "passed": true
+    },
+    {
+      "name": "authored history exposes every recorded prefix without changing the workspace",
+      "passed": false,
+      "error": "locator.click: Error: strict mode violation: locator('#scope-history summary') resolved to 2 elements:\n    1) <summary>Inspect this scope, event by event</summary> aka getByText('Inspect this scope, event by')\n    2) <summary>Recorded event fields</summary> aka getByText('Recorded event fields')\n\nCall log:\n\u001b[2m  - waiting for locator('#scope-history summary')\u001b[22m\n\n    at /dev/hamon-scopesignal-history-6c20bb4b010e-K1d9r4/candidate-r1/scripts/check-scope-history.cjs:97:50\n    at async group (/dev/hamon-scopesignal-history-6c20bb4b010e-K1d9r4/candidate-r1/scripts/check-scope-history.cjs:24:40)\n    at async /dev/hamon-scopesignal-history-6c20bb4b010e-K1d9r4/candidate-r1/scripts/check-scope-history.cjs:95:7"
+    }
+  ],
+  "downloads": [
+    {
+      "file": "current-before-history.json",
+      "suggestedFilename": "scopesignal-workspace-v1.json",
+      "bytes": 3149,
+      "sha256": "d6d0db6f7e11b0d83f774951ab3d8ec015bcbfc52179e6639eafd3a79dcece5c"
+    }
+  ],
+  "externalRequests": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+      "action": "blocked"
+    }
+  ],
+  "pageErrors": [],
+  "served": [
+    {
+      "path": "scope.html",
+      "sha256": "28562e2b423a2ff117ddd2f5db085bd71b26afb083abc6ba5cd23a2e357b0f7f"
+    },
+    {
+      "path": "styles.css",
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+    },
+    {
+      "path": "scope-workspace.css",
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20"
+    },
+    {
+      "path": "scope-history.css",
+      "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "sha256": "2d03e57a73e4d47b4177d9249399bb7b926e65b74741c4f1ae2a10af3f128c54"
+    },
+    {
+      "path": "src/scope-history-view.mjs",
+      "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b"
+    },
+    {
+      "path": "src/scope-review-export.mjs",
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+    },
+    {
+      "path": "src/scope-history.mjs",
+      "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    }
+  ],
+  "chromium": "153.0.8010.0",
+  "unknownAfterReceipts": {
+    "eventCount": "6 events",
+    "captured": "$0.00",
+    "state": "Capture state: unknown\n\nThe capture response was lost. Do not retry blindly; look up the existing transaction and reconcile once."
+  },
+  "currentTotals": {
+    "cap": "$700.00",
+    "captured": "$351.25",
+    "remaining": "$0.00",
+    "unallocated": "$351.25 allocated to checkpoints. $348.75 of the project cap remains unallocated."
+  },
+  "error": "locator.click: Error: strict mode violation: locator('#scope-history summary') resolved to 2 elements:\n    1) <summary>Inspect this scope, event by event</summary> aka getByText('Inspect this scope, event by')\n    2) <summary>Recorded event fields</summary> aka getByText('Recorded event fields')\n\nCall log:\n\u001b[2m  - waiting for locator('#scope-history summary')\u001b[22m\n\n    at /dev/hamon-scopesignal-history-6c20bb4b010e-K1d9r4/candidate-r1/scripts/check-scope-history.cjs:97:50\n    at async group (/dev/hamon-scopesignal-history-6c20bb4b010e-K1d9r4/candidate-r1/scripts/check-scope-history.cjs:24:40)\n    at async /dev/hamon-scopesignal-history-6c20bb4b010e-K1d9r4/candidate-r1/scripts/check-scope-history.cjs:95:7",
+  "sourceAfter": {
+    "scope.html": "28562e2b423a2ff117ddd2f5db085bd71b26afb083abc6ba5cd23a2e357b0f7f",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "src/scope-workspace.mjs": "2d03e57a73e4d47b4177d9249399bb7b926e65b74741c4f1ae2a10af3f128c54",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/scope-history.mjs": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+    "src/scope-history-view.mjs": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+    "scope-history.css": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69"
+  },
+  "sourceUnchanged": true,
+  "finished": "2026-10-08T15:33:14.347Z",
+  "passed": false
+}

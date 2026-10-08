@@ -1,0 +1,157 @@
+{
+  "schema": "scopesignal.authored-history.lifecycle.v1",
+  "sourceRoot": "/dev/hamon-scopesignal-history-6c20bb4b010e-D7h2Km/source",
+  "started": "2026-10-08T15:46:20.855Z",
+  "probeSha256": "55f8edc9421b90e1999f89d889742b47bda3e1fe50adf9f935e92c804dfd9c70",
+  "sourceBefore": {
+    "scope.html": "28562e2b423a2ff117ddd2f5db085bd71b26afb083abc6ba5cd23a2e357b0f7f",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "src/scope-workspace.mjs": "2d03e57a73e4d47b4177d9249399bb7b926e65b74741c4f1ae2a10af3f128c54",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/scope-history.mjs": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+    "src/scope-history-view.mjs": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+    "scope-history.css": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69"
+  },
+  "node": "v24.19.0",
+  "groups": [
+    {
+      "name": "zero-history review and historical navigation preserve current pending evidence",
+      "passed": true
+    },
+    {
+      "name": "native draft replacement clears the earlier scope and review starts at its own zero point",
+      "passed": true
+    },
+    {
+      "name": "a real native serialization refusal disables only history and a valid replacement recovers it",
+      "passed": true
+    },
+    {
+      "name": "historical large safe-cent values remain exact on a narrow native page",
+      "passed": true
+    }
+  ],
+  "downloads": [
+    {
+      "file": "pending-before-navigation.json",
+      "suggestedFilename": "scopesignal-workspace-v1.json",
+      "bytes": 1422,
+      "sha256": "18e5a42b6783f95970166bb47db32cc69c7d6b424a71b94380aa39d7cff9fe36"
+    },
+    {
+      "file": "pending-after-navigation.json",
+      "suggestedFilename": "scopesignal-workspace-v1.json",
+      "bytes": 1422,
+      "sha256": "18e5a42b6783f95970166bb47db32cc69c7d6b424a71b94380aa39d7cff9fe36"
+    },
+    {
+      "file": "replacement-review-zero.json",
+      "suggestedFilename": "scopesignal-workspace-v1.json",
+      "bytes": 494,
+      "sha256": "59be6d9d6fd0d305ad5a8e6f6782d94b9b419d9e3b594fd9ef97ef00d9f9e7f6"
+    }
+  ],
+  "externalRequests": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+      "action": "blocked"
+    }
+  ],
+  "pageErrors": [],
+  "served": [
+    {
+      "path": "scope.html",
+      "sha256": "28562e2b423a2ff117ddd2f5db085bd71b26afb083abc6ba5cd23a2e357b0f7f"
+    },
+    {
+      "path": "styles.css",
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+    },
+    {
+      "path": "scope-workspace.css",
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20"
+    },
+    {
+      "path": "scope-history.css",
+      "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "sha256": "2d03e57a73e4d47b4177d9249399bb7b926e65b74741c4f1ae2a10af3f128c54"
+    },
+    {
+      "path": "src/scope-history-view.mjs",
+      "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b"
+    },
+    {
+      "path": "src/scope-review-export.mjs",
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+    },
+    {
+      "path": "src/scope-history.mjs",
+      "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    }
+  ],
+  "chromium": "153.0.8010.0",
+  "pendingNavigation": {
+    "downloadsIdentical": true,
+    "unrecordedTextExcluded": true,
+    "explicitDecisionAdvancedToLatest": true,
+    "explicitDecisionInvalidatedOpenPreview": true
+  },
+  "replacement": {
+    "oldScopeCleared": true,
+    "newScopeEventCount": 0,
+    "checkpointCount": 1
+  },
+  "historyRefusal": {
+    "cause": "Native review accepts a positive cap with more than 64 entered characters; unchanged workspace serialization refuses it.",
+    "currentApprovalCount": "1 / 1",
+    "oldHistoryCleared": true,
+    "validReplacementRecovered": true
+  },
+  "largeAmount": {
+    "phoneWidth": 390,
+    "noHorizontalOverflow": true,
+    "pendingAmount": "$90,071,992,547,409.91",
+    "latestCaptured": "$90,071,992,547,409.91"
+  },
+  "passed": true,
+  "sourceAfter": {
+    "scope.html": "28562e2b423a2ff117ddd2f5db085bd71b26afb083abc6ba5cd23a2e357b0f7f",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "src/scope-workspace.mjs": "2d03e57a73e4d47b4177d9249399bb7b926e65b74741c4f1ae2a10af3f128c54",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/scope-history.mjs": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+    "src/scope-history-view.mjs": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+    "scope-history.css": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69"
+  },
+  "sourceUnchanged": true,
+  "finished": "2026-10-08T15:46:32.763Z"
+}

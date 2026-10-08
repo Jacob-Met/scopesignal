@@ -1,0 +1,14 @@
+{
+  "schema": "scopesignal.authored-history.native-suite.v1",
+  "command": "npm test",
+  "testScript": "node --test",
+  "node": "v24.19.0",
+  "parent": "bab391c7c6fec1193e221997e4d66d89bd914cfd",
+  "sourceFreezeSha256": "3543e463d7a51da98b0b474fa85f05be773487f11dacce8528ae4aa44e5449da",
+  "started": "2026-10-08T15:51:16.057Z",
+  "finished": "2026-10-08T15:51:16.964Z",
+  "exitCode": 0,
+  "signal": null,
+  "error": null,
+  "sourceUnchanged": true
+}

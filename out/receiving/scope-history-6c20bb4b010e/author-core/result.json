@@ -1,0 +1,207 @@
+{
+  "schema": "scopesignal.authored-history.browser.v1",
+  "sourceRoot": "/dev/hamon-scopesignal-history-6c20bb4b010e-i2QzZM/source",
+  "started": "2026-10-08T15:43:05.876Z",
+  "probeSha256": "d5cb0424a48e94ea7222ca31104f4fda4f7c3e7f8bf35e205065d921d95c3236",
+  "sourceBefore": {
+    "scope.html": "28562e2b423a2ff117ddd2f5db085bd71b26afb083abc6ba5cd23a2e357b0f7f",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "src/scope-workspace.mjs": "2d03e57a73e4d47b4177d9249399bb7b926e65b74741c4f1ae2a10af3f128c54",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/scope-history.mjs": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+    "src/scope-history-view.mjs": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+    "scope-history.css": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69"
+  },
+  "node": "v24.19.0",
+  "groups": [
+    {
+      "name": "native authored scope preserves pending evidence and recovery state",
+      "passed": true
+    },
+    {
+      "name": "authored history exposes every recorded prefix without changing the workspace",
+      "passed": true
+    }
+  ],
+  "downloads": [
+    {
+      "file": "current-before-history.json",
+      "suggestedFilename": "scopesignal-workspace-v1.json",
+      "bytes": 3149,
+      "sha256": "d6d0db6f7e11b0d83f774951ab3d8ec015bcbfc52179e6639eafd3a79dcece5c"
+    },
+    {
+      "file": "current-after-history.json",
+      "suggestedFilename": "scopesignal-workspace-v1.json",
+      "bytes": 3149,
+      "sha256": "d6d0db6f7e11b0d83f774951ab3d8ec015bcbfc52179e6639eafd3a79dcece5c"
+    }
+  ],
+  "externalRequests": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+      "action": "blocked"
+    }
+  ],
+  "pageErrors": [],
+  "served": [
+    {
+      "path": "scope.html",
+      "sha256": "28562e2b423a2ff117ddd2f5db085bd71b26afb083abc6ba5cd23a2e357b0f7f"
+    },
+    {
+      "path": "styles.css",
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+    },
+    {
+      "path": "scope-workspace.css",
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20"
+    },
+    {
+      "path": "scope-history.css",
+      "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "sha256": "2d03e57a73e4d47b4177d9249399bb7b926e65b74741c4f1ae2a10af3f128c54"
+    },
+    {
+      "path": "src/scope-history-view.mjs",
+      "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b"
+    },
+    {
+      "path": "src/scope-review-export.mjs",
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+    },
+    {
+      "path": "src/scope-history.mjs",
+      "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    }
+  ],
+  "chromium": "153.0.8010.0",
+  "unknownAfterReceipts": {
+    "eventCount": "6 events",
+    "captured": "$0.00",
+    "state": "Capture state: unknown\n\nThe capture response was lost. Do not retry blindly; look up the existing transaction and reconcile once."
+  },
+  "currentTotals": {
+    "cap": "$700.00",
+    "captured": "$351.25",
+    "remaining": "$0.00",
+    "unallocated": "$351.25 allocated to checkpoints. $348.75 of the project cap remains unallocated."
+  },
+  "historyPrefixes": [
+    {
+      "index": 0,
+      "captured": "$0.00",
+      "approved": "0 / 2",
+      "alpha": "not_started",
+      "beta": "not_started"
+    },
+    {
+      "index": 1,
+      "captured": "$0.00",
+      "approved": "1 / 2",
+      "alpha": "not_started",
+      "beta": "not_started"
+    },
+    {
+      "index": 3,
+      "captured": "$0.00",
+      "approved": "1 / 2",
+      "alpha": "pending",
+      "beta": "not_started"
+    },
+    {
+      "index": 4,
+      "captured": "$0.00",
+      "approved": "1 / 2",
+      "alpha": "unknown",
+      "beta": "not_started"
+    },
+    {
+      "index": 5,
+      "captured": "$0.00",
+      "approved": "1 / 2",
+      "alpha": "unknown",
+      "beta": "not_started"
+    },
+    {
+      "index": 6,
+      "captured": "$0.00",
+      "approved": "1 / 2",
+      "alpha": "unknown",
+      "beta": "not_started"
+    },
+    {
+      "index": 7,
+      "captured": "$125.50",
+      "approved": "1 / 2",
+      "alpha": "captured",
+      "beta": "not_started"
+    },
+    {
+      "index": 8,
+      "captured": "$125.50",
+      "approved": "2 / 2",
+      "alpha": "captured",
+      "beta": "not_started"
+    },
+    {
+      "index": 10,
+      "captured": "$125.50",
+      "approved": "2 / 2",
+      "alpha": "captured",
+      "beta": "pending"
+    },
+    {
+      "index": 11,
+      "captured": "$351.25",
+      "approved": "2 / 2",
+      "alpha": "captured",
+      "beta": "captured"
+    }
+  ],
+  "phone": {
+    "width": 390,
+    "noHorizontalOverflow": true
+  },
+  "passed": true,
+  "sourceAfter": {
+    "scope.html": "28562e2b423a2ff117ddd2f5db085bd71b26afb083abc6ba5cd23a2e357b0f7f",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "src/scope-workspace.mjs": "2d03e57a73e4d47b4177d9249399bb7b926e65b74741c4f1ae2a10af3f128c54",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/scope-history.mjs": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+    "src/scope-history-view.mjs": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+    "scope-history.css": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69"
+  },
+  "sourceUnchanged": true,
+  "finished": "2026-10-08T15:43:10.451Z"
+}

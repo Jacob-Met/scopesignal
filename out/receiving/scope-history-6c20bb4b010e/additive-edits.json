@@ -1,0 +1,49 @@
+{
+  "schema": "scopesignal.history.additive-edits.v1",
+  "qualifiedParent": "bab391c7c6fec1193e221997e4d66d89bd914cfd",
+  "currentCompositionParent": "549f6d551d1ad92ee97198b1799c7bcb40aa5e01",
+  "edits": [
+    {
+      "path": "src/scope-workspace.mjs",
+      "before": "import { createScopeReviewDocument, SCOPE_REVIEW_FILENAME } from './scope-review-export.mjs';",
+      "after": "import { mountScopeHistory } from './scope-history-view.mjs';\nimport { createScopeReviewDocument, SCOPE_REVIEW_FILENAME } from './scope-review-export.mjs';",
+      "expectedOccurrences": 1
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "before": "const evidenceDrafts = new Map();\n",
+      "after": "const evidenceDrafts = new Map();\nconst scopeHistory = mountScopeHistory($('#scope-history'));\n",
+      "expectedOccurrences": 1
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "before": "function renderDraftRows() {\n",
+      "after": "function renderDraftRows() {\n  scopeHistory.clear();\n",
+      "expectedOccurrences": 1
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "before": "    body.append(row);\n  }\n}\n\n$('#scope-label').value = draft.label;",
+      "after": "    body.append(row);\n  }\n  scopeHistory.update(() => encodeScopeWorkspace({ draft, review, evidenceDrafts }));\n}\n\n$('#scope-label').value = draft.label;",
+      "expectedOccurrences": 1
+    },
+    {
+      "path": "scope.html",
+      "before": "  <link rel=\"stylesheet\" href=\"./scope-workspace.css\">\n",
+      "after": "  <link rel=\"stylesheet\" href=\"./scope-workspace.css\">\n  <link rel=\"stylesheet\" href=\"./scope-history.css\">\n",
+      "expectedOccurrences": 1
+    },
+    {
+      "path": "scope.html",
+      "before": "<tbody id=\"scope-event-body\"></tbody></table></div>\n      </section>\n",
+      "after": "<tbody id=\"scope-event-body\"></tbody></table></div>\n      </section>\n      <details id=\"scope-history\" class=\"scope-history\" hidden>\n        <summary>Inspect this scope, event by event</summary>\n        <p id=\"scope-history-source\" class=\"scope-history-source\"></p>\n        <p class=\"scope-help\">Explore the recorded decisions for this authored fixture. These controls only change this historical view. They do not roll back, approve, repeat or reconcile anything in your workspace.</p>\n        <p id=\"scope-history-current\" class=\"microcopy\"></p>\n        <div class=\"scope-history-controls\">\n          <label for=\"scope-history-event\">Recorded point<select id=\"scope-history-event\" disabled></select></label>\n          <button id=\"scope-history-previous\" class=\"button button-outline\" type=\"button\" disabled>Previous event</button>\n          <button id=\"scope-history-next\" class=\"button button-outline\" type=\"button\" disabled>Next event</button>\n          <button id=\"scope-history-latest\" class=\"button button-outline\" type=\"button\" disabled>Latest recorded point</button>\n        </div>\n        <p id=\"scope-history-status\" role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"></p>\n        <div id=\"scope-history-display\" hidden>\n          <p id=\"scope-history-position\"></p>\n          <h3 id=\"scope-history-title\"></h3>\n          <p id=\"scope-history-description\" class=\"scope-help\"></p>\n          <div class=\"summary-grid\" aria-label=\"Historical authored fixture totals\">\n            <article><span>APPROVED AT THIS POINT</span><strong id=\"scope-history-approved\"></strong></article>\n            <article><span>SIMULATED CAPTURED</span><strong id=\"scope-history-captured\"></strong></article>\n            <article><span>ALLOCATED REMAINING</span><strong id=\"scope-history-remaining\"></strong></article>\n            <article><span>UNALLOCATED CAP</span><strong id=\"scope-history-unallocated\"></strong></article>\n          </div>\n          <div id=\"scope-history-checkpoints\" class=\"scope-history-checkpoints\"></div>\n          <details class=\"scope-history-event-fields\">\n            <summary>Recorded event fields</summary>\n            <p class=\"microcopy\">Sequence numbers and logical times belong to this fictional record. They are not real payment times or evidence of a human action. Pending editor notes are not historical approvals.</p>\n            <pre id=\"scope-history-event-json\"></pre>\n          </details>\n        </div>\n      </details>\n",
+      "expectedOccurrences": 1
+    },
+    {
+      "path": "README.md",
+      "before": "## Download an authored scope review\n",
+      "after": "## Inspect an authored scope's history\n\nAfter **Review this scope**, open **Inspect this scope, event by event** below\nthe event ledger. Use the recorded-point selector, **Previous event**, **Next\nevent**, or **Latest recorded point** to inspect the state before any event and\nafter each recorded decision in your own plan.\n\nEach point shows every checkpoint's capture state, the amount counted then,\nplanned evidence, and accepted evidence from approvals already recorded at that\npoint. **Recorded event fields** reveals the exact selected fixture event.\nPending editor notes are excluded. An unknown capture remains uncounted through\nwebhook receipts until reconciliation; an ordinary pending capture can resolve\nthrough its receipt.\n\nNavigation changes only this panel. Current approvals, pending evidence,\nworkspace downloads and a prepared file-open preview remain intact. Recording\nanother decision refreshes the panel to the latest event. Editing or replacing\nthe scope retires the earlier history; reopening an admitted workspace builds\nits history from that file's complete checked record. These remain unsigned,\nfictional events with logical times.\n\nSee [the authored-history guide](docs/authored-scope-history.md) for behavior,\nscope boundaries and optional native browser receiving commands.\n\n## Download an authored scope review\n",
+      "expectedOccurrences": 1
+    }
+  ]
+}

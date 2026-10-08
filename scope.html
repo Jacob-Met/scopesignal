@@ -8,6 +8,7 @@
   <title>Build a fixture scope — ScopeSignal</title>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./scope-workspace.css">
+  <link rel="stylesheet" href="./scope-history.css">
   <script type="module" src="./src/scope-workspace.mjs"></script>
 </head>
 <body>
@@ -89,6 +90,36 @@
         <p class="scope-help">These are simulated events for this scope, not payment evidence. Lost responses remain unknown until you simulate a transaction lookup.</p>
         <div class="table-wrap"><table><caption class="sr-only">Events recorded by explicit decisions in the authored fixture</caption><thead><tr><th scope="col">#</th><th scope="col">CHECKPOINT</th><th scope="col">EVENT</th><th scope="col">RESULT</th></tr></thead><tbody id="scope-event-body"></tbody></table></div>
       </section>
+      <details id="scope-history" class="scope-history" hidden>
+        <summary>Inspect this scope, event by event</summary>
+        <p id="scope-history-source" class="scope-history-source"></p>
+        <p class="scope-help">Explore the recorded decisions for this authored fixture. These controls only change this historical view. They do not roll back, approve, repeat or reconcile anything in your workspace.</p>
+        <p id="scope-history-current" class="microcopy"></p>
+        <div class="scope-history-controls">
+          <label for="scope-history-event">Recorded point<select id="scope-history-event" disabled></select></label>
+          <button id="scope-history-previous" class="button button-outline" type="button" disabled>Previous event</button>
+          <button id="scope-history-next" class="button button-outline" type="button" disabled>Next event</button>
+          <button id="scope-history-latest" class="button button-outline" type="button" disabled>Latest recorded point</button>
+        </div>
+        <p id="scope-history-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div id="scope-history-display" hidden>
+          <p id="scope-history-position"></p>
+          <h3 id="scope-history-title"></h3>
+          <p id="scope-history-description" class="scope-help"></p>
+          <div class="summary-grid" aria-label="Historical authored fixture totals">
+            <article><span>APPROVED AT THIS POINT</span><strong id="scope-history-approved"></strong></article>
+            <article><span>SIMULATED CAPTURED</span><strong id="scope-history-captured"></strong></article>
+            <article><span>ALLOCATED REMAINING</span><strong id="scope-history-remaining"></strong></article>
+            <article><span>UNALLOCATED CAP</span><strong id="scope-history-unallocated"></strong></article>
+          </div>
+          <div id="scope-history-checkpoints" class="scope-history-checkpoints"></div>
+          <details class="scope-history-event-fields">
+            <summary>Recorded event fields</summary>
+            <p class="microcopy">Sequence numbers and logical times belong to this fictional record. They are not real payment times or evidence of a human action. Pending editor notes are not historical approvals.</p>
+            <pre id="scope-history-event-json"></pre>
+          </details>
+        </div>
+      </details>
       <p class="scope-help">Use Download revision draft above to keep the original terms for a new review. To return to the example instead, <a href="./scope.html">start a fresh fixture</a>; this clears the current in-memory plan and events.</p>
     </section>
     <noscript><p class="scope-errors">This interactive fixture needs JavaScript. The <a href="./index.html">example page</a> describes the payment model.</p></noscript>

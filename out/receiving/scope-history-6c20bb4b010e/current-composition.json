@@ -1,0 +1,310 @@
+{
+  "schema": "scopesignal.history.current-publication-composition-v1",
+  "prepared_utc": "2026-10-08 16:56:45 UTC",
+  "repository": "Jacob-Met/scopesignal",
+  "prepared_by": "/root/memory_receiving",
+  "parent": "847505d2fe9f8295110fc13a3fb9e05ec71f6644",
+  "parent_tree": "cac1d2bbdd38e2e4c2aed7249c2593ec174c0eaa",
+  "parent_leaves": 521,
+  "handoff": {
+    "commit": "f7bbcaa37894ecd90ffd1b942acc827dd550df84",
+    "path": "docs/receipts/scope-history-6c20bb4b010e/root-handoff.json",
+    "git_blob": "112173b38e5a767c21b5ff626a85a3253aebd705",
+    "manifest_sha256": "22c35f2fdb2ba9f1773f11e4cbb3f390831ca71d9ed89f58358fd9e1e812f076",
+    "file_count": 38,
+    "verified_bytes": 500596,
+    "all_bytes_sha256_git_blob_and_modes_verified": true
+  },
+  "historical_qualification": {
+    "parent": "bab391c7c6fec1193e221997e4d66d89bd914cfd",
+    "source_freeze_sha256": "3543e463d7a51da98b0b474fa85f05be773487f11dacce8528ae4aa44e5449da",
+    "all_39_candidate_files_verified": true,
+    "bytes": 273357,
+    "author_execution_results_remain_historical": true
+  },
+  "shared_file_composition": [
+    {
+      "path": "src/scope-workspace.mjs",
+      "incoming_parent_git_blob": "783def69bbe2130c08889572ed27363d89a33b9d",
+      "handoff_expected_parent_git_blob": "f57d31cf8a4e6a9a7ddc140c5c06935fe3ef5004",
+      "guard_matched": false,
+      "uniquely_applied_edits": 4,
+      "original_handoff_output": {
+        "path": "src/scope-workspace.mjs",
+        "sourcePath": "/dev/shm/hamon-scopesignal-history-owner-6c20bb4b010e-7wulh6/candidate/src/scope-workspace.mjs",
+        "compositionRequired": true,
+        "expectedParentGitBlob": "f57d31cf8a4e6a9a7ddc140c5c06935fe3ef5004",
+        "bytes": 21992,
+        "sha256": "2d03e57a73e4d47b4177d9249399bb7b926e65b74741c4f1ae2a10af3f128c54",
+        "gitBlob": "63fe74e9bbafaff2132c9fd89d639cf3a54578c2",
+        "mode": "100644",
+        "kind": "local-file"
+      },
+      "prepared_output": {
+        "bytes": 24137,
+        "sha256": "d68ede63929fba3a5d77e2db20229261ac553e8edfa16f7e7d05428265a70fac",
+        "gitBlob": "2552977c7e01c32bc5621ddf192a9b14a3387eb3",
+        "mode": "100644"
+      }
+    },
+    {
+      "path": "scope.html",
+      "incoming_parent_git_blob": "d1567193c7eb1c78b8e55afbf245151994e913b0",
+      "handoff_expected_parent_git_blob": "08b5d9d6b7d7a60846f1c27dc4317c740da0d516",
+      "guard_matched": false,
+      "uniquely_applied_edits": 2,
+      "original_handoff_output": {
+        "path": "scope.html",
+        "compositionRequired": true,
+        "expectedParentGitBlob": "08b5d9d6b7d7a60846f1c27dc4317c740da0d516",
+        "bytes": 10664,
+        "sha256": "61b390f11b37b108cbc5bce92737a23fd6491fc4d00edb09c46c5f3f93259239",
+        "gitBlob": "8a84675da8e85a0051f691b79f577097d4eca49c",
+        "mode": "100644",
+        "kind": "inline"
+      },
+      "prepared_output": {
+        "bytes": 11304,
+        "sha256": "c61b3a2a4412fde0f6851ad741834365d580efe149b9dab1ed782b97235d128b",
+        "gitBlob": "8df60d976720a8c6215a8996e4b740870e967a7c",
+        "mode": "100644"
+      }
+    },
+    {
+      "path": "README.md",
+      "incoming_parent_git_blob": "0b87681e7e4966d455c0ec4f2d965ddbefd7874f",
+      "handoff_expected_parent_git_blob": "cea5225c1361baf7100694fdddda2f5d3979efa9",
+      "guard_matched": false,
+      "uniquely_applied_edits": 1,
+      "original_handoff_output": {
+        "path": "README.md",
+        "compositionRequired": true,
+        "expectedParentGitBlob": "cea5225c1361baf7100694fdddda2f5d3979efa9",
+        "bytes": 21277,
+        "sha256": "affedff3a96ffe97465accdd588fdc71fabed5b8244fbefb3dfbfa2c1047a3fc",
+        "gitBlob": "362292618b118550a59dc9237ea7b3d558e279c3",
+        "mode": "100644",
+        "kind": "inline"
+      },
+      "prepared_output": {
+        "bytes": 22692,
+        "sha256": "50a05556af219d0dfe766a7be05277df02b6f80d7a573c15dd3e8892b6042e02",
+        "gitBlob": "9e6878a7b8848ba7d0b875a8b374ffba4673cda1",
+        "mode": "100644"
+      }
+    }
+  ],
+  "unchanged_existing_frozen_inputs": [
+    {
+      "path": "app.mjs",
+      "qualified_parent_git_blob": "7398ab71912a6e5e55a1da8ccef3f8fdee82c135",
+      "current_parent_git_blob": "7398ab71912a6e5e55a1da8ccef3f8fdee82c135"
+    },
+    {
+      "path": "index.html",
+      "qualified_parent_git_blob": "043b57fce51f0e9571c666139a654bfc36362be0",
+      "current_parent_git_blob": "043b57fce51f0e9571c666139a654bfc36362be0"
+    },
+    {
+      "path": "package.json",
+      "qualified_parent_git_blob": "0144b047cd7b211c7b4a4f642b1f835a148ed355",
+      "current_parent_git_blob": "0144b047cd7b211c7b4a4f642b1f835a148ed355"
+    },
+    {
+      "path": "scope-workspace.css",
+      "qualified_parent_git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "current_parent_git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded"
+    },
+    {
+      "path": "src/agents.mjs",
+      "qualified_parent_git_blob": "ae1141b4f45ac8a064aa684fdcf47e938daf085d",
+      "current_parent_git_blob": "ae1141b4f45ac8a064aa684fdcf47e938daf085d"
+    },
+    {
+      "path": "src/fixture-record.mjs",
+      "qualified_parent_git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "current_parent_git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8"
+    },
+    {
+      "path": "src/fixture-timeline-view.mjs",
+      "qualified_parent_git_blob": "780e12706ee16ebcbf87692b7a21681c4722092d",
+      "current_parent_git_blob": "780e12706ee16ebcbf87692b7a21681c4722092d"
+    },
+    {
+      "path": "src/fixture-timeline.mjs",
+      "qualified_parent_git_blob": "b686daaf49b53c44a06f4be8d9ef878886acf57e",
+      "current_parent_git_blob": "b686daaf49b53c44a06f4be8d9ef878886acf57e"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "qualified_parent_git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "current_parent_git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "qualified_parent_git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "current_parent_git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    {
+      "path": "src/record-reader.mjs",
+      "qualified_parent_git_blob": "e6f69a87605b9808058a4e46df6b923ebb22c9dd",
+      "current_parent_git_blob": "e6f69a87605b9808058a4e46df6b923ebb22c9dd"
+    },
+    {
+      "path": "src/record-view.mjs",
+      "qualified_parent_git_blob": "08dbca153a600bf7ff6b41fb378b86b62422925f",
+      "current_parent_git_blob": "08dbca153a600bf7ff6b41fb378b86b62422925f"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "qualified_parent_git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "current_parent_git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    {
+      "path": "src/scope-review-export.mjs",
+      "qualified_parent_git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "current_parent_git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "qualified_parent_git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "current_parent_git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162"
+    },
+    {
+      "path": "src/workers-ai.mjs",
+      "qualified_parent_git_blob": "7951c2f09b7063bd481d3391ae914d6066d2b241",
+      "current_parent_git_blob": "7951c2f09b7063bd481d3391ae914d6066d2b241"
+    },
+    {
+      "path": "styles.css",
+      "qualified_parent_git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "current_parent_git_blob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    {
+      "path": "tests/capture-identity-receiving.test.mjs",
+      "qualified_parent_git_blob": "c3fe9b9608203ea4c380bff3686636766165bc39",
+      "current_parent_git_blob": "c3fe9b9608203ea4c380bff3686636766165bc39"
+    },
+    {
+      "path": "tests/capture-identity.test.mjs",
+      "qualified_parent_git_blob": "da6bb46fd523bbc4f75a423036678e11d3f6ea1e",
+      "current_parent_git_blob": "da6bb46fd523bbc4f75a423036678e11d3f6ea1e"
+    },
+    {
+      "path": "tests/evidence-drafts.test.mjs",
+      "qualified_parent_git_blob": "b9c621ad8e350e1dff6febd7085b3c4c18dfafae",
+      "current_parent_git_blob": "b9c621ad8e350e1dff6febd7085b3c4c18dfafae"
+    },
+    {
+      "path": "tests/fixture-record.test.mjs",
+      "qualified_parent_git_blob": "9bfd274a3d8eea072a194dad9ed58fb7ecee056c",
+      "current_parent_git_blob": "9bfd274a3d8eea072a194dad9ed58fb7ecee056c"
+    },
+    {
+      "path": "tests/fixture-timeline.test.mjs",
+      "qualified_parent_git_blob": "7a21b46c09f68b73da79923c82cb628eaa79ef7c",
+      "current_parent_git_blob": "7a21b46c09f68b73da79923c82cb628eaa79ef7c"
+    },
+    {
+      "path": "tests/ledger.test.mjs",
+      "qualified_parent_git_blob": "7099cf44e492946a77ffc7d9432e568eb0b39d50",
+      "current_parent_git_blob": "7099cf44e492946a77ffc7d9432e568eb0b39d50"
+    },
+    {
+      "path": "tests/payment-presentation.test.mjs",
+      "qualified_parent_git_blob": "8a39d57ca330195b62ab483a017490706fffe7ad",
+      "current_parent_git_blob": "8a39d57ca330195b62ab483a017490706fffe7ad"
+    },
+    {
+      "path": "tests/record-reader.test.mjs",
+      "qualified_parent_git_blob": "562f7db7b2052c26f66e29601b4fca931b0a8a48",
+      "current_parent_git_blob": "562f7db7b2052c26f66e29601b4fca931b0a8a48"
+    },
+    {
+      "path": "tests/recovery-current-state.test.mjs",
+      "qualified_parent_git_blob": "e943100360140f6739b8a67f4e5c0d6b5216b11a",
+      "current_parent_git_blob": "e943100360140f6739b8a67f4e5c0d6b5216b11a"
+    },
+    {
+      "path": "tests/scope-plan.test.mjs",
+      "qualified_parent_git_blob": "4dc7bc945f0e0728a79a26363eb276852da8334b",
+      "current_parent_git_blob": "4dc7bc945f0e0728a79a26363eb276852da8334b"
+    },
+    {
+      "path": "tests/scope-review-export.test.mjs",
+      "qualified_parent_git_blob": "b5b6dbcbac2ba71ac82a45d5043f65b46dbea8be",
+      "current_parent_git_blob": "b5b6dbcbac2ba71ac82a45d5043f65b46dbea8be"
+    },
+    {
+      "path": "tests/scope-workspace-record.test.mjs",
+      "qualified_parent_git_blob": "5606ab99933f9665634971662d41c4b5ca93ec83",
+      "current_parent_git_blob": "5606ab99933f9665634971662d41c4b5ca93ec83"
+    },
+    {
+      "path": "tests/workers-ai-contract.test.mjs",
+      "qualified_parent_git_blob": "37f499d284f772a77dfe3702f02e5c01fc7391ec",
+      "current_parent_git_blob": "37f499d284f772a77dfe3702f02e5c01fc7391ec"
+    },
+    {
+      "path": "tests/workspace-form-values.test.mjs",
+      "qualified_parent_git_blob": "961c7ff3c9a58ec1418aede8b0f50194cfcadbbc",
+      "current_parent_git_blob": "961c7ff3c9a58ec1418aede8b0f50194cfcadbbc"
+    }
+  ],
+  "inherited_current_changes": "The current page/controller include checkpoint duplication and revision-draft download controls, their text and import, and the separate saved-workspace comparison link. These current-parent bytes are preserved. Current README and Pages workflow changes remain intact.",
+  "patches": {
+    "minimal_publication_patch": "current-composition.patch",
+    "historical_qualified_ui_and_controller_drift": "qualified-r1-to-current-inputs.patch"
+  },
+  "current_review_reasoning": "The four history-controller insertions retain the same clear-on-renderDraftRows and update-after-renderReview boundaries. New current checkpoint duplication already routes through renderDraftRows. Revision-draft downloading remains an existing separate handler. No additional state-changing history handler or ledger/codec edit is introduced.",
+  "screenshot_inspection": [
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/desktop-history.png",
+      "bytes": 124711,
+      "sha256": "16e6d7d24ee5f6562111793792a6924bb0e0bd67e49ee24cc75d04c57b203d65",
+      "git_blob": "0fe86635aba18fc12569064849b227810b45ebe8",
+      "dimensions": [
+        1062,
+        1036
+      ],
+      "complete_crc_valid_png": true,
+      "actual_image_viewed": true,
+      "observation": "Captured historical point zero remains distinct from current event count; totals, three checkpoints, planned evidence and no-yet-approved labels are readable."
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/phone-history.png",
+      "bytes": 97088,
+      "sha256": "6fed022954460a90514c42ac14e78b4fa7aab6ecdaadbfe8f157055047a2e356",
+      "git_blob": "be8a720ec6f580d5480a3be173f4d07f155c5a4d",
+      "dimensions": [
+        350,
+        1374
+      ],
+      "complete_crc_valid_png": true,
+      "actual_image_viewed": true,
+      "observation": "The complete original shows wrapped long literal title, current/frozen captured distinction, visible navigation and wrapped maximum-safe amount. No blocking clipping/overflow was observed in this captured panel.",
+      "source": "Complete original under /dev/shm/hamon-scopesignal-history-6c20bb4b010e-U0Z3DV; the truncated copied image is excluded."
+    }
+  ],
+  "independent_receipt": {
+    "path": "independent/source-review-archive.json",
+    "encoding": "gzip+base64 JSON envelope",
+    "bytes": 4053,
+    "sha256": "a368ce159bd01ab118da6e2942f2c82082965caa8e96ca4b16fc7fcdddc8e980",
+    "decoded_bytes": 6850,
+    "decoded_sha256": "24fd777324e1c9d67498eb59b6fe1a477434c1796dec2f2ba21f20432cea48bb"
+  },
+  "execution": {
+    "new_product_runs": 0,
+    "new_test_runs": 0,
+    "new_browser_runs": 0,
+    "remote_commands": 0,
+    "deployment_or_ref_changes": 0
+  },
+  "limitations": [
+    "Current composition is source-reviewed; no historical test or screenshot is relabeled as a run on this newer parent.",
+    "Unsigned fixture history does not establish real human approval, payment, provider or account state.",
+    "Publication authority is immutable blobs, one tree and one unreferenced commit only. Parent owns refs/PR/merge."
+  ],
+  "integrity_policy": "Three shared files alone are replaced using unique additive anchors. Every other parent leaf must match exactly after tree creation; all owned blobs and modes must match the final map."
+}
