@@ -1,0 +1,21 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "draft",
+  "draft": {
+    "label": "  Unfinished café  ",
+    "brief": "Literal unfinished brief\n",
+    "cap": "later",
+    "checkpoints": [
+      {
+        "title": "  ",
+        "amount": "",
+        "evidence": "Unfinished <evidence> & \"quote\""
+      }
+    ]
+  },
+  "events": [],
+  "evidenceDrafts": []
+}

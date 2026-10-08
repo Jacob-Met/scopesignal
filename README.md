@@ -301,6 +301,10 @@ offline file reading, phone and keyboard operation, failure/retry, unchanged
 workspace/preview, and Chromium PDF printing. It uses authored fictional inputs
 and blocks external requests; no packages or provider services are needed.
 
+### Create the same review from a saved file
+
+With Node 24 or newer, run `npm run --silent review:workspace -- "./saved workspace.json" "./new review.html"` from this source directory. The command reads one explicitly chosen saved workspace through the existing strict decoder and creates the same standalone HTML in a new file. It preserves unfinished fields or exact reviewed history, refuses malformed input and existing destinations, and prints the input/output hashes after success. The saved JSON remains unchanged. See [the command guide](docs/workspace-review-cli.md) for input limits, explicit paths, filesystem behavior, and the receipt.
+
 ## Payment safety model
 
 - A milestone cannot create an order until a human explicitly approves it.

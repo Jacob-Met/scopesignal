@@ -1,0 +1,16 @@
+✔ unfinished fields remain an unapproved raw draft without invented monetary totals (2.410016ms)
+✔ review uses recorded acceptance and preserves separate pending evidence and unallocated cap (4.609805ms)
+✔ every allowed first-checkpoint phase exports native current state and exact recorded fields (13.794322ms)
+✔ a completed first checkpoint does not hide a second unknown capture or count its duplicate receipt (10.581429ms)
+✔ a portable review keeps literal authored markup inert and has no executable or external resources (1.13025ms)
+✔ large valid cent amounts retain exact cents rather than rounded floating dollar values (0.849658ms)
+✔ inconsistent caller snapshots and invalid source are refused without mutating a valid prior review (1.531895ms)
+✔ HTML-normalized text is preserved by references or refused before creating a lossy document (1.287667ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 139.705012

@@ -1,0 +1,17 @@
+{
+  "result": "PASS",
+  "acceptedParent": "5bbb52087aa3c5b33d1694887ff3d1380b826e5e",
+  "acceptedTree": "7bf94d8851045d5619f21c2ef6881c1714149e5c",
+  "unchangedCurrentInputs": 57,
+  "sourceBlob": "fd57d5ad7be3113c9db60cdeb7754e98ed53a06c",
+  "inputBytes": 696,
+  "inputSha256": "73d6ad832198ab5324ac81a05a9596b6b209ccfd8b2972b2515f3353bc28a1ed",
+  "outputBytes": 5078,
+  "outputSha256": "82bd1380baa91af8b131400dd2b21f19ee23d70bbacfbff7b31ae469ef914505",
+  "equalsExistingNativeExport": true,
+  "preservedRawAmounts": [
+    " 040.00 ",
+    "60"
+  ],
+  "boundary": "Actual native command consumes the accepted CSV owner’s real saved artifact. No browser flow or provider action executed."
+}

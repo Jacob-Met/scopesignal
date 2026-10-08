@@ -1,0 +1,396 @@
+{
+  "result": "PASS",
+  "incomingCommit": "226d6d90cb949ce3d6edf97b99153831bd95e8fb",
+  "incomingTree": "19bc2c9589f78fdd82c8345475be2d39f46b8fb0",
+  "priorReviewedHead": "e2fd217148c60165d261262c03c473e444127269",
+  "priorIndependentEvidence": "fe18175d19e4fbee61ae878a334c38d0c839486f",
+  "candidateSourceTree": "0830c632521fde3c087defde5b14e572a0ae3596",
+  "counts": {
+    "incoming": 735,
+    "prior": 783,
+    "candidate": 788,
+    "ownedEntries": 55,
+    "incomingUnrelated": 733
+  },
+  "incomingDelta": [
+    {
+      "path": "README.md",
+      "from": "751b6b77991d030f21b279bf267a9cafd3261c20",
+      "to": "976cb2b52ed5d3fa9917c6c8e2b58dd0acd6472f"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "from": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "to": "8f43f9eb2336d9a3df7820ab4c4c874e5663a781"
+    },
+    {
+      "path": "out/receiving/monetary-length-06e2ad0ce13f/README.md",
+      "to": "fef4ff7b724878297f152412bcca591270e66719"
+    },
+    {
+      "path": "out/receiving/monetary-length-06e2ad0ce13f/baseline.log",
+      "to": "7f93e2ae9c943f7ee8331d566b106938af1a10d0"
+    },
+    {
+      "path": "out/receiving/monetary-length-06e2ad0ce13f/candidate.log",
+      "to": "5f48ea37ad67b8bf90170835fd483e172a73e6fc"
+    },
+    {
+      "path": "out/receiving/monetary-length-06e2ad0ce13f/receipt.json",
+      "to": "7b1f567616fffb752d189817fa3923a796995305"
+    },
+    {
+      "path": "tests/scope-monetary-length.test.mjs",
+      "to": "ea9a9e5f937f902784760bf45eabddb84c88865e"
+    }
+  ],
+  "ownedEntries": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76954e5b38e03a39ca8ec7150707046c133d56b0"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffd06bda6bc74d9ce73f2a099768df056d54ae84"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be711a58d1be29789896021f1ab58f6c07daca99"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/artifact-receiving.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49b749df25809bd4fdc3ee5c6d52fe9849bc59c5"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/artifact-receiving.stderr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/baseline.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfd008b56d63b6b93158ea6a383b7082933865ca"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/baseline.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "809e3092568a934c93abd6fbc475425a79368f43"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/baseline.stderr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-csv/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b41d3676df32f65787166cc5ebf090c5383cc15"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-csv/command-receipt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7662ce965113dd40dca728980c41fc998d4e9562"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-csv/command.stderr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-csv/composition.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c64d61d2e8eea1ada2174826239f3e28a5aa5b7d"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-csv/receive.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40d540aceba433f89ef2e584a7a4ac16824bd880"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-csv/receiving.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "273ff6a43d6a473bfcd648ea8fd44afa2599d6f4"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-csv/receiving.stderr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-csv/scope-note.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b42aed5b2f29afa7a9e37e0f87f20b993c56a87c"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-csv/scope-review.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16854cbbd8a1b6b6f7d1fcd1319639b32a2b6218"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-csv/source-workspace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd57d5ad7be3113c9db60cdeb7754e98ed53a06c"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-csv/suite.stderr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-csv/suite.tap",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5398db6ff9cfe3cf14e58e5ca820a7fbb5e3474"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-suite-owned-cache.stderr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-suite-owned-cache.tap",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab5b6f891833c6ee0a85d031a1775263efc1879d"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-suite.stderr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/current-suite.tap",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/diagnose-npm.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ced0623a5366e8754592975a1c9cb177ce8fc62b"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/diagnostic-npm-enclosing.stderr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83b5f9d4df0d01aa0059b4e2ce67617225986b34"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/diagnostic-npm-enclosing.stdout",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "194c05f5911f3feab27841b3fc82dc8d7257cb0c"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/diagnostic-npm.stderr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb3fc8802e759a07e83b78a7f9226ce8438a432a"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/diagnostic-npm.stdout",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/execution.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc0a971a86e98adc6d436c7302e363712c99029c"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/final-suite.stderr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/final-suite.tap",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e5018a282bd3f1547d6802bf793ade57254890c"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/initial-cli-test-source.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be59b23aa67061e69583d48a1d045fa3fd2c596f"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/initial-cli-tests.stderr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/initial-cli-tests.tap",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0a5994636c05ae6063af0f207c7e0b04718edd6"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/original-export-tests.stderr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/original-export-tests.tap",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1df290b85e0cd3a4dbd61b40885bfff14f947927"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/receive-artifacts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87091ad6eab8753671435dead264aeed52e96b8d"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/receiver-correction.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9da7c7b70dc8495b6a9e765d06bf0f92c0642aa"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/reviewed.cli.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b24e84d07c00b1c5826e383156f4c3e1f9caa01e"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/reviewed.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bf6210ab19891613a2e4baf27ed45ea0f7e55a2"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/reviewed.native.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b24e84d07c00b1c5826e383156f4c3e1f9caa01e"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/reviewed.receipt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1501bfecb82e71f3fe6f3735274568df1be0074b"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/reviewed.stderr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/run-current-suite.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6dd07d31400c8a44eaf031bbf0dcb14ef6e1204"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/source-inputs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d0cb11a25b8763344889ff5c2f8e0d48ccdd9e1"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/transport-observations.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8bd9fa3d04f1a9023d16b8a97e7fca672cc846f"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/unfinished.cli.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4094a2abab97fec197fc58c94e649c6b1b9bf32f"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/unfinished.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "839a068797cded545454c0bc552cea94eb54ac63"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/unfinished.native.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4094a2abab97fec197fc58c94e649c6b1b9bf32f"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/unfinished.receipt.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c33b204bb8a40bc8ee0955c003a890a8d595c7c6"
+    },
+    {
+      "path": "docs/receiving/workspace-review-cli-69570d292200/unfinished.stderr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/workspace-review-cli.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7af2144a680805892cc07906cb9fd635fac09bf"
+    },
+    {
+      "path": "scripts/review-workspace.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da027e88fc9929c873de3d6805a95deb52ece33f"
+    },
+    {
+      "path": "tests/review-workspace-cli.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fe9307032def351106125a8affaebaf6e1fa9b0"
+    }
+  ],
+  "readme": {
+    "incomingBlob": "976cb2b52ed5d3fa9917c6c8e2b58dd0acd6472f",
+    "priorBlob": "0e8f825508ec0cf7e02d38162de6483abd3d72d9",
+    "candidateBlob": "76954e5b38e03a39ca8ec7150707046c133d56b0",
+    "method": "Preserve accepted README and insert exactly the prior 649-byte CLI section at the same unique preceding context.",
+    "insertion": {
+      "prefix": 21831,
+      "context": "ored fictional inputs\nand blocks external requests; no packages or provider services are needed.\n\n##",
+      "insert": "# Create the same review from a saved file\n\nWith Node 24 or newer, run `npm run --silent review:workspace -- \"./saved workspace.json\" \"./new review.html\"` from this source directory. The command reads one explicitly chosen saved workspace through the existing strict decoder and creates the same standalone HTML in a new file. It preserves unfinished fields or exact reviewed history, refuses malformed input and existing destinations, and prints the input/output hashes after success. The saved JSON remains unchanged. See [the command guide](docs/workspace-review-cli.md) for input limits, explicit paths, filesystem behavior, and the receipt.\n\n##"
+    }
+  },
+  "package": {
+    "incoming": "0144b047cd7b211c7b4a4f642b1f835a148ed355",
+    "candidate": "ffd06bda6bc74d9ce73f2a099768df056d54ae84",
+    "method": "Incoming package is unchanged from prior accepted base; exact previously reviewed package adds only review:workspace command; node --test retains automatic discovery of every incoming test."
+  },
+  "boundary": "Git leaf SHA and mode comparison; all accepted leaves preserved except the two declared README/package composition paths. Prior CLI/tests/guide and all prior author qualification files preserved exactly. Separate prior independent and hosted receipt commit remains unchanged and source-attributed."
+}

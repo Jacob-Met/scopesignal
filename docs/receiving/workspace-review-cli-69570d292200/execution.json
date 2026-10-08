@@ -1,0 +1,163 @@
+{
+  "sourceHead": "cdffd2476cae0c7332dff64677ae814b7f594947",
+  "sourceTree": "03775ba5484d768a0bda6a22d51bdad9fd30d184",
+  "owner": "estate-69570d292200/evaluation_lane",
+  "issue": "https://github.com/Jacob-Met/scopesignal/issues/44",
+  "originalOwnerCoordination": "https://github.com/Jacob-Met/scopesignal/issues/41#issuecomment-6067734697",
+  "runtime": {
+    "node": "v24.19.0",
+    "npm": "11.9.0",
+    "platform": "linux"
+  },
+  "retainedSession": {
+    "id": 40470,
+    "root": "/dev/evaluation-69570d292200/scope-workspace-cli",
+    "boundary": "Temporary process-local filesystem; not a shared persistent checkout. Exact source and evidence are preserved in Git. Original ShadeWindow session48395 remains separate."
+  },
+  "runs": [
+    {
+      "name": "original exporter tests",
+      "args": [
+        "node",
+        "--test",
+        "tests/scope-review-export.test.mjs"
+      ],
+      "exit": 0,
+      "pass": 8,
+      "fail": 0,
+      "stdout": "original-export-tests.tap",
+      "stderr": "original-export-tests.stderr"
+    },
+    {
+      "name": "original actual absence and positive control",
+      "args": [
+        "node",
+        "docs/receiving/workspace-review-cli-69570d292200/baseline.mjs"
+      ],
+      "exit": 0,
+      "stdout": "baseline.json",
+      "stderr": "baseline.stderr",
+      "boundary": "Missing new entry is a capability gap, not a defect in the existing exporter."
+    },
+    {
+      "name": "initial CLI and exporter receiving",
+      "args": [
+        "node",
+        "--test",
+        "tests/review-workspace-cli.test.mjs",
+        "tests/scope-review-export.test.mjs"
+      ],
+      "exit": 0,
+      "pass": 28,
+      "fail": 0,
+      "stdout": "initial-cli-tests.tap",
+      "stderr": "initial-cli-tests.stderr",
+      "testSource": "initial-cli-test-source.txt"
+    },
+    {
+      "name": "default-cache npm suite invocation",
+      "args": [
+        "npm",
+        "run",
+        "--silent",
+        "test"
+      ],
+      "exit": 228,
+      "stdout": "current-suite.tap",
+      "stderr": "current-suite.stderr",
+      "boundary": "No tests executed; no output captured."
+    },
+    {
+      "name": "lowercase-cache npm current suite",
+      "args": [
+        "npm",
+        "run",
+        "--silent",
+        "test"
+      ],
+      "envOverride": "npm_config_cache=<owned packet>/npm-cache",
+      "exit": 1,
+      "pass": 202,
+      "fail": 1,
+      "stdout": "current-suite-owned-cache.tap",
+      "stderr": "current-suite-owned-cache.stderr",
+      "testSource": "initial-cli-test-source.txt"
+    },
+    {
+      "name": "verbose nested npm diagnosis",
+      "args": [
+        "npm",
+        "exec",
+        "--offline",
+        "--",
+        "node",
+        "docs/receiving/workspace-review-cli-69570d292200/diagnose-npm.mjs"
+      ],
+      "exit": 0,
+      "nestedExit": 228,
+      "stdout": "diagnostic-npm-enclosing.stdout",
+      "stderr": "diagnostic-npm-enclosing.stderr",
+      "nestedStdout": "diagnostic-npm.stdout",
+      "nestedStderr": "diagnostic-npm.stderr"
+    },
+    {
+      "name": "final current suite",
+      "args": [
+        "npm",
+        "run",
+        "--silent",
+        "test"
+      ],
+      "launcher": "run-current-suite.py",
+      "exit": 0,
+      "pass": 203,
+      "fail": 0,
+      "skipped": 0,
+      "stdout": "final-suite.tap",
+      "stderr": "final-suite.stderr"
+    },
+    {
+      "name": "actual reviewed command",
+      "args": [
+        "node",
+        "scripts/review-workspace.mjs",
+        "docs/receiving/workspace-review-cli-69570d292200/reviewed.json",
+        "docs/receiving/workspace-review-cli-69570d292200/reviewed.cli.html"
+      ],
+      "exit": 0,
+      "stdout": "reviewed.receipt.json",
+      "stderr": "reviewed.stderr"
+    },
+    {
+      "name": "actual unfinished command",
+      "args": [
+        "node",
+        "scripts/review-workspace.mjs",
+        "docs/receiving/workspace-review-cli-69570d292200/unfinished.json",
+        "docs/receiving/workspace-review-cli-69570d292200/unfinished.cli.html"
+      ],
+      "exit": 0,
+      "stdout": "unfinished.receipt.json",
+      "stderr": "unfinished.stderr"
+    },
+    {
+      "name": "artifact and unchanged-source receiving",
+      "program": "receive-artifacts.py",
+      "exit": 0,
+      "stdout": "artifact-receiving.json",
+      "stderr": "artifact-receiving.stderr",
+      "unchangedInputs": 52
+    }
+  ],
+  "corrections": "receiver-correction.json",
+  "remaining": [
+    "Independent source and command receiving",
+    "Ordinary hosted PR Node24 suite",
+    "Actual-current-parent preservation and authorized integration"
+  ],
+  "boundaries": [
+    "No codec/exporter/plan/ledger/browser/dependency/workflow changes.",
+    "No browser, provider, payment, deployment or installed adoption claimed.",
+    "Only five maintained files are contributed; all other source remains at its exact baseline identity."
+  ]
+}

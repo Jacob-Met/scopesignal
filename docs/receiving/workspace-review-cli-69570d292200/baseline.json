@@ -1,0 +1,45 @@
+{
+  "source": "cdffd2476cae0c7332dff64677ae814b7f594947",
+  "node": "v24.19.0",
+  "availableScripts": {
+    "test": "node --test",
+    "serve": "node scripts/serve.mjs"
+  },
+  "controls": [
+    {
+      "name": "reviewed",
+      "inputBytes": 2095,
+      "inputSha256": "2639b92c1d4674cce5f7baef7458e76d7dd5946ab2fcad02a0a4da6f1ac24b1c",
+      "htmlBytes": 9039,
+      "htmlSha256": "80e8a3043a715b994b9f41a20d7b3671f2020a6bede0981264a07bfcef7a27d0",
+      "summary": {
+        "label": "Harbor wayfinding — 李",
+        "stage": "review",
+        "checkpoints": 2,
+        "approved": 1,
+        "events": 6
+      }
+    },
+    {
+      "name": "unfinished",
+      "inputBytes": 435,
+      "inputSha256": "9b624ebe2556420b495becb703dba70012490a2dbc16d3753c43869b08815ad0",
+      "htmlBytes": 4546,
+      "htmlSha256": "151ba57bf3b4869edab7db88ce930c5b9f5d9701bac4fc683e30c1fe240e6d77",
+      "summary": {
+        "label": "  Unfinished café  ",
+        "stage": "draft",
+        "checkpoints": 1,
+        "approved": 0,
+        "events": 0
+      }
+    }
+  ],
+  "proposedCommandBaseline": {
+    "status": 1,
+    "signal": null,
+    "stdout": "",
+    "stderr": "node:internal/modules/cjs/loader:1520\n  throw err;\n  ^\n\nError: Cannot find module '/dev/evaluation-69570d292200/scope-workspace-cli/scripts/review-workspace.mjs'\n    at Module._resolveFilename (node:internal/modules/cjs/loader:1517:15)\n    at wrapResolveFilename (node:internal/modules/cjs/loader:1071:27)\n    at defaultResolveImplForCJSLoading (node:internal/modules/cjs/loader:1095:10)\n    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1122:12)\n    at Module._load (node:internal/modules/cjs/loader:1294:5)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47 {\n  code: 'MODULE_NOT_FOUND',\n  requireStack: []\n}\n\nNode.js v24.19.0\n"
+  },
+  "boundary": "The native decoder and HTML exporter are successful controls. The missing CLI is a new capability gap, not a defect in the existing browser export."
+}

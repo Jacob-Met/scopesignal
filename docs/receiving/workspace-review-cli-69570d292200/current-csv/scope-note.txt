@@ -1,0 +1,1 @@
+Current accepted CSV parent: 5bbb52087aa3c5b33d1694887ff3d1380b826e5e; literal input copied byte-exact from docs/receiving/checkpoint-csv-cf5799f6d38b/downloads/literal-draft.json (Git fd57d5ad7be3113c9db60cdeb7754e98ed53a06c).

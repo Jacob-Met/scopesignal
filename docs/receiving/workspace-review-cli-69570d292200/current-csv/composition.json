@@ -1,0 +1,590 @@
+{
+  "originalContribution": "1b659e2a770db5f554c6af3638dd8df09e4bb7bf",
+  "originalContributionTree": "ee5eb56c3eb63ecd432d9e7c40077f730bf02c8c",
+  "acceptedParent": "5bbb52087aa3c5b33d1694887ff3d1380b826e5e",
+  "acceptedTree": "7bf94d8851045d5619f21c2ef6881c1714149e5c",
+  "incoming": {
+    "changed": [
+      {
+        "path": "README.md",
+        "sha": "751b6b77991d030f21b279bf267a9cafd3261c20",
+        "mode": "100644"
+      },
+      {
+        "path": "scope.html",
+        "sha": "cce5cf1081fe009831be11745952df5841e8368b",
+        "mode": "100644"
+      }
+    ],
+    "added": [
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/README.md",
+        "sha": "cca2c7e979ddadc879666365210682b377af03d8",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/RESTORE.md",
+        "sha": "45f52c01d1e6a5db188934304a43f95a9a1d7670",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/current-source-overlay-manifest.json",
+        "sha": "1e8ca3864696f7853764fdeeb9db03679c42da85",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/downloads/literal-draft.json",
+        "sha": "fd57d5ad7be3113c9db60cdeb7754e98ed53a06c",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/downloads/newest-file-draft.json",
+        "sha": "7f84f5bd470906d111a478166e373dc925cf3699",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/downloads/unfinished-draft.json",
+        "sha": "1b4d1cd66ad02223c6e11307de57c68ac977259d",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/final-custody.json",
+        "sha": "cc0243654c28d52ccdbc31ebf494d0c61474f3d9",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/images/baseline-csv-refusal.png",
+        "sha": "2d78581c9941fd4a24944c7762b6561de5350ca1",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/images/desktop-reviewed-literal-draft.png",
+        "sha": "168bbe0caac609c9f8eb36f23cc68a6d308dd1f9",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/images/phone-reviewed-draft.png",
+        "sha": "9ca536b8f36e5dcb47e2567ff14b28ef73146335",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/README.md",
+        "sha": "c106457b435b32cdbf458836f8e64d4e37d53b87",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/baseline-native-fixtures-v1.json",
+        "sha": "1b8f690878eeaac5969f8d20df0f3660fcf0cc1c",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/browser-independent-v1-diagnostic.mjs",
+        "sha": "7fff568a59f2ebff300fd4c98886826dbd763f7e",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/browser-independent-v1.mjs",
+        "sha": "239b3ca7683989653c5ed4fd3aff3de5c86c1b8e",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/browser-independent-v2.mjs",
+        "sha": "f883b88b81dbf9ddf5d3e0f10d6c9b98433e0072",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/final-custody-and-receiver-proof.json",
+        "sha": "dd0e20735eabbcfecd98b8e8394288388f35dfae",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/README.md",
+        "sha": "245c82dd0a96a3bb24c586870a3ad0dc8c402a72",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/final-integration-proof.json",
+        "sha": "d7b49f1f5d116675e059adb26713015f06743012",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/history-browser-v1.mjs",
+        "sha": "ff707fff38eba421b67c052df47b2cf74051e0f5",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/history-native-fixture-v1.json",
+        "sha": "3a2ed80fe73c5b2e473bd011ef2c31489b1677b8",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/input-publication-manifest.json",
+        "sha": "3b0f6d09774ffb61278a15494467a1841a8fd69a",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/make-history-fixture-v1.mjs",
+        "sha": "c425ae172c4283d79208c6c2a7285bc4e3a8d010",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/raw-receipts-archive.json",
+        "sha": "c60dbcdab43ee53585c92c64b2198c5e0d18a8ef",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/restore-history-review.py",
+        "sha": "c87a13ff69c3349c45dade2440d7417baffc1244",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/scope-v1.json",
+        "sha": "89bab89f842fb3315d5bed8a87b7189b185a3654",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/source-contract-archive.json",
+        "sha": "eb025946cdbc2a40d77b9fc12fcedcac0ff5342e",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/input-publication-manifest.json",
+        "sha": "e5aa69053b5dde717a6b3a84da0e018ad79525d9",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/make-baseline-fixtures-v1.mjs",
+        "sha": "e3384645b4fd978187f8a05ee859dc5b369c3e67",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/native-browser-diagnostic-v1.mjs",
+        "sha": "be1edf9e610c0cdee30fd5033597908b4defb164",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/native-independent-v1.mjs",
+        "sha": "b034a9c290977379743a35086d5875c50cc868aa",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/raw-receipts-archive.json",
+        "sha": "e350ae61505c2f3939708ddba73d539a03b529c8",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/scope-v1.json",
+        "sha": "10776c0a3dc575a381495fb76c7095cbe084326e",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/source-contract-archive.json",
+        "sha": "88cb7807dc1ff7b52d02bf91c5bb0700539c3460",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/unpack-review.py",
+        "sha": "0d244826045ad1302f2b5645466e2b3f53732ba0",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/packaging-custody.json",
+        "sha": "354cd74548fb0dcb507f7dad2d5e6e10a7501f48",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/raw-records.json",
+        "sha": "6ab698a540444ed8c52d8d59b1fa86a6aa0f54dc",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/receiver-tab-selection.patch",
+        "sha": "2177a576cd60c187b64f4179700851a98696fe83",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/restore-records.mjs",
+        "sha": "f30e00fef058fe37abd521fdf1202ceedd330f95",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/root-node24-3146/input-publication-manifest.json",
+        "sha": "29eff57b4c409a010639fc88fde58d21042bccd0",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/root-node24-3146/root-expected-git-pins.json",
+        "sha": "27eb055ef0428b3584a67fc4f72c4abc94c30d62",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/root-node24-3146/root-node24-receipt.json",
+        "sha": "ea357b7bcb94fe2df0f53be0c1ae29fa71e510b5",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/root-node24-3146/root-node24-receiver.py",
+        "sha": "1762867320647bc90dfb2820afb8169f90347040",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/root-node24-3146/root-node24.stderr.log",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/root-node24-3146/root-node24.stdout.log",
+        "sha": "42def92f4f061b1dec05764ffec464c0a0766c34",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/root-node24-4b9b/composition4b9b-materialize-receiver.py",
+        "sha": "f5ec41564a7ca3baa59a5483419690c57e9ce2e8",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/root-node24-4b9b/composition4b9b-root-expected-git-pins.json",
+        "sha": "24b8a7ae593c2f5b1a1dd963ac275aa2be783554",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/root-node24-4b9b/composition4b9b-root-node24-receipt.json",
+        "sha": "ee504c405caf2f2a00a76d49df340f8201a2f072",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/root-node24-4b9b/composition4b9b-root-node24-receiver.py",
+        "sha": "4f48fe14c567c9f19d0318357fae1ff16478fa4e",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/root-node24-4b9b/composition4b9b-root-node24.stderr.log",
+        "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/root-node24-4b9b/composition4b9b-root-node24.stdout.log",
+        "sha": "0196919d381b34c4b04f457f3003dd2d23a392be",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/root-node24-4b9b/input-publication-manifest.json",
+        "sha": "2932dde5d2430540462e31937f4d72817c8db9c3",
+        "mode": "100644"
+      },
+      {
+        "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/source-overlay-manifest.json",
+        "sha": "66e509ece4ab065902d6f1d1ad3a14cea79b3286",
+        "mode": "100644"
+      },
+      {
+        "path": "scope-csv.css",
+        "sha": "ead1550b73fbace9a31bf6828e32cd805effc2a0",
+        "mode": "100644"
+      },
+      {
+        "path": "scope-csv.html",
+        "sha": "3503c05f9ee702ea62a7d16cf811d3fc9c0c7c93",
+        "mode": "100644"
+      },
+      {
+        "path": "scripts/check-scope-checkpoint-csv.mjs",
+        "sha": "a3fee613f599bd69db1a573ebac1cb8606039f70",
+        "mode": "100644"
+      },
+      {
+        "path": "src/scope-checkpoint-csv-ui.mjs",
+        "sha": "b6bd27ee3b1c975ba9491ade683fb8be5e372267",
+        "mode": "100644"
+      },
+      {
+        "path": "src/scope-checkpoint-csv.mjs",
+        "sha": "f75c6d49cd1d118f8418c63b6dab7132f9ead169",
+        "mode": "100644"
+      },
+      {
+        "path": "tests/scope-checkpoint-csv.test.mjs",
+        "sha": "11dbc16eb431d8c8c7e3ca3c9666f4b42d5f3d88",
+        "mode": "100644"
+      }
+    ],
+    "removed": []
+  },
+  "maintained": {
+    "README": {
+      "acceptedBlob": "751b6b77991d030f21b279bf267a9cafd3261c20",
+      "composedBlob": "0e8f825508ec0cf7e02d38162de6483abd3d72d9",
+      "insertedUtf8Bytes": 649,
+      "rule": "Insert the exact original CLI section after the authored review section; removing it recovers all accepted README bytes."
+    },
+    "unchanged": [
+      {
+        "path": "scripts/review-workspace.mjs",
+        "sha": "da027e88fc9929c873de3d6805a95deb52ece33f"
+      },
+      {
+        "path": "tests/review-workspace-cli.test.mjs",
+        "sha": "5fe9307032def351106125a8affaebaf6e1fa9b0"
+      },
+      {
+        "path": "docs/workspace-review-cli.md",
+        "sha": "c7af2144a680805892cc07906cb9fd635fac09bf"
+      },
+      {
+        "path": "package.json",
+        "sha": "ffd06bda6bc74d9ce73f2a099768df056d54ae84"
+      }
+    ]
+  },
+  "native": {
+    "node": "v24.19.0",
+    "exit": 0,
+    "passed": 242,
+    "failed": 0,
+    "skipped": 0,
+    "stdout": "suite.tap",
+    "stderr": "suite.stderr",
+    "unchangedInputs": [
+      {
+        "path": ".github/workflows/pages.yml",
+        "sha": "2fac275ab0183987bccac3ba787a133795a70016"
+      },
+      {
+        "path": ".github/workflows/test.yml",
+        "sha": "b97f2716367bb4c5ed930693e3c3e7fdc02c792e"
+      },
+      {
+        "path": "app.mjs",
+        "sha": "7398ab71912a6e5e55a1da8ccef3f8fdee82c135"
+      },
+      {
+        "path": "fixture-timeline.css",
+        "sha": "6fa3b725f49ef21346821cd8db599d0cd6728223"
+      },
+      {
+        "path": "index.html",
+        "sha": "043b57fce51f0e9571c666139a654bfc36362be0"
+      },
+      {
+        "path": "record-view.css",
+        "sha": "ad73b8678228eacdbd7ddf36d56c573b2fc34e4a"
+      },
+      {
+        "path": "record.html",
+        "sha": "5718956e264ba46e699d21e2c04d54d4ddd14b5d"
+      },
+      {
+        "path": "scope-compare.css",
+        "sha": "c1d4cbb891fec75585b222e020d63fd642db5a62"
+      },
+      {
+        "path": "scope-compare.html",
+        "sha": "746a563caa69b6db5b11c01463816b5496e3ca48"
+      },
+      {
+        "path": "scope-history.css",
+        "sha": "993ab82f32c1546d688d949b72f8312f82c432ec"
+      },
+      {
+        "path": "scope-workspace.css",
+        "sha": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded"
+      },
+      {
+        "path": "scope.html",
+        "sha": "cce5cf1081fe009831be11745952df5841e8368b"
+      },
+      {
+        "path": "src/agents.mjs",
+        "sha": "ae1141b4f45ac8a064aa684fdcf47e938daf085d"
+      },
+      {
+        "path": "src/fixture-record.mjs",
+        "sha": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8"
+      },
+      {
+        "path": "src/fixture-timeline-view.mjs",
+        "sha": "780e12706ee16ebcbf87692b7a21681c4722092d"
+      },
+      {
+        "path": "src/fixture-timeline.mjs",
+        "sha": "b686daaf49b53c44a06f4be8d9ef878886acf57e"
+      },
+      {
+        "path": "src/ledger.mjs",
+        "sha": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+      },
+      {
+        "path": "src/payment-status.mjs",
+        "sha": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+      },
+      {
+        "path": "src/record-reader.mjs",
+        "sha": "e6f69a87605b9808058a4e46df6b923ebb22c9dd"
+      },
+      {
+        "path": "src/record-view.mjs",
+        "sha": "08dbca153a600bf7ff6b41fb378b86b62422925f"
+      },
+      {
+        "path": "src/scope-compare-ui.mjs",
+        "sha": "c8d4686b7986506c03ad3e76e1f739ec534bfa29"
+      },
+      {
+        "path": "src/scope-compare.mjs",
+        "sha": "f2dd4d5240131b18aa0ee86ba59dcd5a3076eb28"
+      },
+      {
+        "path": "src/scope-comparison-export.mjs",
+        "sha": "642fad5c2664b2153e2f27ebf0f50aed801d899f"
+      },
+      {
+        "path": "src/scope-draft-removal.mjs",
+        "sha": "658db4f41e44ce241b24a0fd744be0193d3fe283"
+      },
+      {
+        "path": "src/scope-history-view.mjs",
+        "sha": "93abdcd8abbbbfbee99cdb5207c10ea346d3177e"
+      },
+      {
+        "path": "src/scope-history.mjs",
+        "sha": "f34a8ca89a897e03a1a1ca1abf7d243f1a42e4b6"
+      },
+      {
+        "path": "src/scope-plan.mjs",
+        "sha": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+      },
+      {
+        "path": "src/scope-review-export.mjs",
+        "sha": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad"
+      },
+      {
+        "path": "src/scope-revision-draft.mjs",
+        "sha": "e94e190710a7902b816184333bb40ad2ed90bcc0"
+      },
+      {
+        "path": "src/scope-workspace-record.mjs",
+        "sha": "d9141b3e1ac74b33f996ec6d68756ece5c190162"
+      },
+      {
+        "path": "src/scope-workspace.mjs",
+        "sha": "e3dda4a14c8c3bc26d6da1a1baeb9a7f205eb12b"
+      },
+      {
+        "path": "src/workers-ai.mjs",
+        "sha": "7951c2f09b7063bd481d3391ae914d6066d2b241"
+      },
+      {
+        "path": "styles.css",
+        "sha": "31353c93740241c42551710bd12599338c017e45"
+      },
+      {
+        "path": "tests/capture-identity-receiving.test.mjs",
+        "sha": "c3fe9b9608203ea4c380bff3686636766165bc39"
+      },
+      {
+        "path": "tests/capture-identity.test.mjs",
+        "sha": "da6bb46fd523bbc4f75a423036678e11d3f6ea1e"
+      },
+      {
+        "path": "tests/evidence-drafts.test.mjs",
+        "sha": "b9c621ad8e350e1dff6febd7085b3c4c18dfafae"
+      },
+      {
+        "path": "tests/fixture-record.test.mjs",
+        "sha": "9bfd274a3d8eea072a194dad9ed58fb7ecee056c"
+      },
+      {
+        "path": "tests/fixture-timeline.test.mjs",
+        "sha": "7a21b46c09f68b73da79923c82cb628eaa79ef7c"
+      },
+      {
+        "path": "tests/ledger.test.mjs",
+        "sha": "7099cf44e492946a77ffc7d9432e568eb0b39d50"
+      },
+      {
+        "path": "tests/payment-presentation.test.mjs",
+        "sha": "8a39d57ca330195b62ab483a017490706fffe7ad"
+      },
+      {
+        "path": "tests/record-reader.test.mjs",
+        "sha": "562f7db7b2052c26f66e29601b4fca931b0a8a48"
+      },
+      {
+        "path": "tests/recovery-current-state.test.mjs",
+        "sha": "e943100360140f6739b8a67f4e5c0d6b5216b11a"
+      },
+      {
+        "path": "tests/scope-compare.test.mjs",
+        "sha": "9a819f18159b91091510370d3a33a0e660f5ef49"
+      },
+      {
+        "path": "tests/scope-comparison-export.test.mjs",
+        "sha": "af64444d190d08af72c788bb1fb1592cff4d153b"
+      },
+      {
+        "path": "tests/scope-draft-removal.test.mjs",
+        "sha": "89691157b36094678cab3a4a59b9eea911352787"
+      },
+      {
+        "path": "tests/scope-history.test.mjs",
+        "sha": "dfa2d9aa6938dbb1dd26307b2798c9310506fb8e"
+      },
+      {
+        "path": "tests/scope-plan.test.mjs",
+        "sha": "4dc7bc945f0e0728a79a26363eb276852da8334b"
+      },
+      {
+        "path": "tests/scope-review-export.test.mjs",
+        "sha": "b5b6dbcbac2ba71ac82a45d5043f65b46dbea8be"
+      },
+      {
+        "path": "tests/scope-revision-draft.test.mjs",
+        "sha": "03219dd86a781a7bd8085252533e04b1b9281919"
+      },
+      {
+        "path": "tests/scope-workspace-record.test.mjs",
+        "sha": "5606ab99933f9665634971662d41c4b5ca93ec83"
+      },
+      {
+        "path": "tests/workers-ai-contract.test.mjs",
+        "sha": "37f499d284f772a77dfe3702f02e5c01fc7391ec"
+      },
+      {
+        "path": "tests/workspace-form-values.test.mjs",
+        "sha": "961c7ff3c9a58ec1418aede8b0f50194cfcadbbc"
+      },
+      {
+        "path": "scope-csv.css",
+        "sha": "ead1550b73fbace9a31bf6828e32cd805effc2a0"
+      },
+      {
+        "path": "scope-csv.html",
+        "sha": "3503c05f9ee702ea62a7d16cf811d3fc9c0c7c93"
+      },
+      {
+        "path": "src/scope-checkpoint-csv-ui.mjs",
+        "sha": "b6bd27ee3b1c975ba9491ade683fb8be5e372267"
+      },
+      {
+        "path": "src/scope-checkpoint-csv.mjs",
+        "sha": "f75c6d49cd1d118f8418c63b6dab7132f9ead169"
+      },
+      {
+        "path": "tests/scope-checkpoint-csv.test.mjs",
+        "sha": "11dbc16eb431d8c8c7e3ca3c9666f4b42d5f3d88"
+      }
+    ]
+  },
+  "actualCommand": {
+    "args": [
+      "node",
+      "scripts/review-workspace.mjs",
+      "docs/receiving/workspace-review-cli-69570d292200/current-csv/source-workspace.json",
+      "docs/receiving/workspace-review-cli-69570d292200/current-csv/scope-review.html"
+    ],
+    "exit": 0,
+    "stdout": "command-receipt.json",
+    "stderr": "command.stderr"
+  },
+  "treeRule": "Start from the complete accepted 730-leaf tree; retain all original 43 contribution entries except the composed README; add only this current-csv packet. Preserve 728 unrelated accepted-parent leaves exactly."
+}
