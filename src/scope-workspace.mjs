@@ -1,3 +1,4 @@
+import { createDraftRemovalRecovery } from './scope-draft-removal.mjs';
 import { createScopeReviewDocument, SCOPE_REVIEW_FILENAME } from './scope-review-export.mjs';
 import { createScopeRevisionDraft, SCOPE_REVISION_FILENAME } from './scope-revision-draft.mjs';
 import { MAX_CHECKPOINTS, draftFromFixture, draftBudget, validateScopeDraft, createScopeReview, formatUSD as money } from './scope-plan.mjs';
@@ -9,6 +10,12 @@ const form = $('#scope-form');
 let draft = draftFromFixture();
 let review = null;
 const evidenceDrafts = new Map();
+const draftRemoval = createDraftRemovalRecovery();
+
+function clearDraftRemoval() {
+  draftRemoval.clear();
+  $('#scope-undo-remove').disabled = true;
+}
 
 function element(tag, text, className) {
   const node = document.createElement(tag);
@@ -71,6 +78,7 @@ function renderDraftRows() {
     list.append(row);
   });
   $('#scope-add').disabled = draft.checkpoints.length >= MAX_CHECKPOINTS;
+  $('#scope-undo-remove').disabled = !draftRemoval.available;
   $('#scope-revision-download').disabled = !review || review.snapshot().approved === 0;
   $('#scope-order-status').textContent = '';
   updateBudget();
@@ -240,6 +248,7 @@ form.addEventListener('input', () => { workspaceChanged(); updateBudget(); });
 $('#scope-add').addEventListener('click', () => {
   draft = readDraft();
   if (draft.checkpoints.length >= MAX_CHECKPOINTS) return;
+  clearDraftRemoval();
   workspaceChanged();
   draft.checkpoints.push({ title: '', amount: '', evidence: '' });
   clearErrors();
@@ -254,6 +263,7 @@ $('#scope-draft-list').addEventListener('click', event => {
     const current = readDraft();
     if (!Number.isInteger(index) || index < 0 || index >= current.checkpoints.length
       || current.checkpoints.length >= MAX_CHECKPOINTS) return;
+    clearDraftRemoval();
     workspaceChanged();
     current.checkpoints.splice(index + 1, 0, { ...current.checkpoints[index] });
     draft = current;
@@ -273,6 +283,7 @@ $('#scope-draft-list').addEventListener('click', event => {
     const destination = index + offset;
     if (!offset || !Number.isInteger(index) || index < 0 || index >= current.checkpoints.length
       || destination < 0 || destination >= current.checkpoints.length) return;
+    clearDraftRemoval();
     workspaceChanged();
     // Keep each row's raw inputs together. IDs still come from final draft validation.
     [current.checkpoints[index], current.checkpoints[destination]] = [current.checkpoints[destination], current.checkpoints[index]];
@@ -285,20 +296,35 @@ $('#scope-draft-list').addEventListener('click', event => {
     return;
   }
   const remove = event.target.closest('button[data-remove]');
-  if (!remove || remove.disabled) return;
-  draft = readDraft();
-  const index = Number(remove.dataset.remove);
+  if (!remove || remove.disabled || review || form.hidden) return;
+  const current = readDraft();
+  const removed = draftRemoval.remove(current.checkpoints, Number(remove.dataset.remove));
+  if (!removed) return;
   workspaceChanged();
-  draft.checkpoints.splice(index, 1);
+  draft = { ...current, checkpoints: removed.checkpoints };
   clearErrors();
   renderDraftRows();
-  $(`#draft-${Math.min(index, draft.checkpoints.length - 1)}-title`).focus();
+  $(`#draft-${Math.min(removed.index, draft.checkpoints.length - 1)}-title`).focus();
+  $('#scope-order-status').textContent = `Checkpoint ${removed.index + 1} removed. Undo removal can restore its fields.`;
+});
+$('#scope-undo-remove').addEventListener('click', () => {
+  if ($('#scope-undo-remove').disabled || review || form.hidden) return;
+  const current = readDraft();
+  const restored = draftRemoval.restore(current.checkpoints);
+  if (!restored) { clearDraftRemoval(); return; }
+  workspaceChanged();
+  draft = { ...current, checkpoints: restored.checkpoints };
+  clearErrors();
+  renderDraftRows();
+  $(`#draft-${restored.index}-title`).focus();
+  $('#scope-order-status').textContent = `Checkpoint restored at position ${restored.index + 1} of ${draft.checkpoints.length}. Your other draft edits are kept.`;
 });
 form.addEventListener('submit', event => {
   event.preventDefault();
   draft = readDraft();
   const validation = validateScopeDraft(draft);
   if (!validation.ok) { showErrors(validation.errors); return; }
+  clearDraftRemoval();
   workspaceChanged();
   review = createScopeReview(draft);
   evidenceDrafts.clear();
@@ -524,6 +550,7 @@ $('#scope-open-apply').addEventListener('click', () => {
   if (!pendingWorkspace || !currentOpen(pendingWorkspace.request)) return;
   const next = pendingWorkspace.admitted;
   cancelOpen();
+  clearDraftRemoval();
   draft = structuredClone(next.draft);
   review = next.review;
   evidenceDrafts.clear();
