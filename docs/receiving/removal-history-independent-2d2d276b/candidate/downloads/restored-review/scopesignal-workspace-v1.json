@@ -1,0 +1,31 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "review",
+  "draft": {
+    "label": "Northstar onboarding refresh",
+    "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+    "cap": "1200.00",
+    "checkpoints": [
+      {
+        "title": "First-run checklist",
+        "amount": "400.00",
+        "evidence": "A screen recording shows the checklist completion path and reset behavior."
+      },
+      {
+        "title": "Independent restored middle row",
+        "amount": "400.00",
+        "evidence": "LATEST pending review evidence <&> 🧭"
+      },
+      {
+        "title": "Survivor edited after removal",
+        "amount": "400.00",
+        "evidence": "Desktop and mobile handoff files plus implementation notes."
+      }
+    ]
+  },
+  "events": [],
+  "evidenceDrafts": []
+}

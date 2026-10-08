@@ -1,0 +1,7 @@
+AssertionError [ERR_ASSERTION]: history must be hidden after editing
+
+false !== true
+
+    at file:///C:/Users/minec/hamon-ultra-2d2d276b-scope-removal/independent-current-08b4d1c/independent-history-receiver.mjs:115:12
+    at async check (file:///C:/Users/minec/hamon-ultra-2d2d276b-scope-removal/independent-current-08b4d1c/independent-history-receiver.mjs:40:58)
+    at async file:///C:/Users/minec/hamon-ultra-2d2d276b-scope-removal/independent-current-08b4d1c/independent-history-receiver.mjs:108:3

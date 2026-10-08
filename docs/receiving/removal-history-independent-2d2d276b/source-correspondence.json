@@ -1,0 +1,108 @@
+{
+  "source": "08b4d1cc4656efcb12880bc1f970aa1dfed1d930",
+  "tree": "d8b5638fbd626df5021491f333a92b30a24a3f40",
+  "parents": [
+    "a712464f58fb74f9eaa334f0ec2aac50beda91fc",
+    "fb6d8771db190fc6499db0c63644ef8a016fe7b7"
+  ],
+  "servedPins": 14,
+  "distinctInputs": 23,
+  "correspond": [
+    {
+      "file": "scope.html",
+      "sha256": "5dc208dd5d84fa649e4a54522d71837277d2b120bf3132156637fea617d93288"
+    },
+    {
+      "file": "styles.css",
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+    },
+    {
+      "file": "scope-workspace.css",
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20"
+    },
+    {
+      "file": "src/agents.mjs",
+      "sha256": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2"
+    },
+    {
+      "file": "src/fixture-record.mjs",
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+    },
+    {
+      "file": "src/fixture-timeline-view.mjs",
+      "sha256": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd"
+    },
+    {
+      "file": "src/fixture-timeline.mjs",
+      "sha256": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55"
+    },
+    {
+      "file": "src/ledger.mjs",
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    },
+    {
+      "file": "src/payment-status.mjs",
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
+    },
+    {
+      "file": "src/record-reader.mjs",
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+    },
+    {
+      "file": "src/record-view.mjs",
+      "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f"
+    },
+    {
+      "file": "src/scope-compare-ui.mjs",
+      "sha256": "61d036fe3c4be9bbbaa969031bb90f401878174faf1e98ab67fb9f436af66ee6"
+    },
+    {
+      "file": "src/scope-compare.mjs",
+      "sha256": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c"
+    },
+    {
+      "file": "src/scope-draft-removal.mjs",
+      "sha256": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224"
+    },
+    {
+      "file": "src/scope-history-view.mjs",
+      "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b"
+    },
+    {
+      "file": "src/scope-history.mjs",
+      "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88"
+    },
+    {
+      "file": "src/scope-plan.mjs",
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad"
+    },
+    {
+      "file": "src/scope-review-export.mjs",
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397"
+    },
+    {
+      "file": "src/scope-revision-draft.mjs",
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e"
+    },
+    {
+      "file": "src/scope-workspace-record.mjs",
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+    },
+    {
+      "file": "src/scope-workspace.mjs",
+      "sha256": "a7d415e04646a8682084369ff539b66556804f140b12ab57c5cafceecbca5ba2"
+    },
+    {
+      "file": "src/workers-ai.mjs",
+      "sha256": "d69676fceb4a3782e6eaa7edcff4d5a4d1b7d89fc0d4e642d3bdca6e079a938e"
+    },
+    {
+      "file": "scope-history.css",
+      "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69"
+    }
+  ],
+  "controllerOverlap": "diff --git a/src/scope-workspace.mjs b/src/scope-workspace.mjs\nindex 5499f70..e3dda4a 100644\n--- a/src/scope-workspace.mjs\n+++ b/src/scope-workspace.mjs\n@@ -1,4 +1,5 @@\n import { createDraftRemovalRecovery } from './scope-draft-removal.mjs';\n+import { mountScopeHistory } from './scope-history-view.mjs';\n import { createScopeReviewDocument, SCOPE_REVIEW_FILENAME } from './scope-review-export.mjs';\n import { createScopeRevisionDraft, SCOPE_REVISION_FILENAME } from './scope-revision-draft.mjs';\n import { MAX_CHECKPOINTS, draftFromFixture, draftBudget, validateScopeDraft, createScopeReview, formatUSD as money } from './scope-plan.mjs';\n@@ -11,6 +12,7 @@ let draft = draftFromFixture();\n let review = null;\n const evidenceDrafts = new Map();\n const draftRemoval = createDraftRemovalRecovery();\n+const scopeHistory = mountScopeHistory($('#scope-history'));\n \n function clearDraftRemoval() {\n   draftRemoval.clear();\n@@ -40,6 +42,7 @@ function draftField(index, key, caption, value, options = {}) {\n }\n \n function renderDraftRows() {\n+  scopeHistory.clear();\n   const list = $('#scope-draft-list');\n   list.replaceChildren();\n   draft.checkpoints.forEach((cp, index) => {\n@@ -238,6 +241,7 @@ function renderReview() {\n     );\n     body.append(row);\n   }\n+  scopeHistory.update(() => encodeScopeWorkspace({ draft, review, evidenceDrafts }));\n }\n \n $('#scope-label').value = draft.label;\n",
+  "undoHelperPreserved": true,
+  "readme": "CDP infrastructure reused from author; acceptance steps and negative oracle independently written. Candidate unchanged; mutation only private evidence input.",
+  "at": "2026-10-08T18:59:53.341Z"
+}
