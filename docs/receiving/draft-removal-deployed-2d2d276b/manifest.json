@@ -1,0 +1,66 @@
+{
+  "schema": "scopesignal.deployed-receiving.v1",
+  "merged_commit": "bc2448f08a139538034ee7dff59717e99d8a1213",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2399,
+      "sha256": "38aed5c975f864487ec5e89eafc00535f7fdb668b7515d9e2b38836723ab447b"
+    },
+    {
+      "path": "downloads/history-after/scopesignal-workspace-v1.json",
+      "bytes": 1331,
+      "sha256": "324873c296b3016cb7209f8f91ba342ea40684e1e8f2235ebd80260517b2e1f6"
+    },
+    {
+      "path": "downloads/history-before/scopesignal-workspace-v1.json",
+      "bytes": 1331,
+      "sha256": "324873c296b3016cb7209f8f91ba342ea40684e1e8f2235ebd80260517b2e1f6"
+    },
+    {
+      "path": "execution.json",
+      "bytes": 329,
+      "sha256": "d7a2dc80dbd357a0dd05037d3fab4e8a0ec5990e4fd1c4e1ba945bca452db708"
+    },
+    {
+      "path": "execution.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "execution.stdout.log",
+      "bytes": 170,
+      "sha256": "20c0f519f130637d93d7ae5f460d2fe18280a3d706f5ae9b538590c2ed6fb9fb"
+    },
+    {
+      "path": "hosted-history.png",
+      "bytes": 40363,
+      "sha256": "60ac14a9408f32b0f517d40e42c55a0ba3d0f44fcd16343ccd6737a838712a61"
+    },
+    {
+      "path": "merge-source-receiving.json",
+      "bytes": 970,
+      "sha256": "77dfba380ddf7ebe52f5ac84a60ecf0cc7e40bad85a16d8a4a582b3a75c35c59"
+    },
+    {
+      "path": "pages-workflow.json",
+      "bytes": 4535,
+      "sha256": "9f4089cef4649815e9da4ea215415c060a996a2debb06e7dbea7ae8ef4b7cc91"
+    },
+    {
+      "path": "receipt.json",
+      "bytes": 6652,
+      "sha256": "58913d1372b221bf59f9bb6a645446df65e65b21217946ccf7a25935ef997efe"
+    },
+    {
+      "path": "receiver.mjs",
+      "bytes": 15903,
+      "sha256": "10a9dc165606b4b2ecfc5237e442c1972cabcd3028af5ebd50fdb2ee2f9e0e63"
+    },
+    {
+      "path": "source-correspondence.json",
+      "bytes": 3247,
+      "sha256": "d00c1ced3fb033a47115f96d202478ac7374ef5c37a337e67849e5a63d225a4a"
+    }
+  ]
+}

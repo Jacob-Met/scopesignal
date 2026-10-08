@@ -1,0 +1,30 @@
+{
+  "pr": {
+    "url": "https://github.com/Jacob-Met/scopesignal/pull/40",
+    "state": "closed",
+    "merged": true,
+    "merged_at": "2026-10-08T19:16:18Z",
+    "head": "64f102417f051cf5e7740df95bbf1db60fb70725",
+    "merge_commit": "bc2448f08a139538034ee7dff59717e99d8a1213"
+  },
+  "source": {
+    "commit": "bc2448f08a139538034ee7dff59717e99d8a1213",
+    "tree": "86bfe40ffa3ddbc7834e9d2368aff7fa472db305",
+    "parents": [
+      "fb6d8771db190fc6499db0c63644ef8a016fe7b7",
+      "64f102417f051cf5e7740df95bbf1db60fb70725"
+    ],
+    "all_accepted_product_and_evidence_bytes_preserved": true
+  },
+  "pages_runs": [
+    {
+      "conclusion": "success",
+      "createdAt": "2026-10-08T19:16:21Z",
+      "databaseId": 37830690538,
+      "headSha": "bc2448f08a139538034ee7dff59717e99d8a1213",
+      "status": "completed",
+      "url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37830690538",
+      "workflowName": "Fixture-mode Pages deployment"
+    }
+  ]
+}

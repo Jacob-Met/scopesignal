@@ -1,0 +1,144 @@
+{
+  "received_at": "2026-10-08T19:19:22.370Z",
+  "route": "normal hamon-gh run view; durable id scope-2d2d276b-pages-view-20261008-a",
+  "conclusion": "success",
+  "headSha": "bc2448f08a139538034ee7dff59717e99d8a1213",
+  "jobs": [
+    {
+      "completedAt": "2026-10-08T19:16:31Z",
+      "conclusion": "success",
+      "databaseId": 113494934967,
+      "name": "test",
+      "startedAt": "2026-10-08T19:16:24Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-08T19:16:25Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-08T19:16:24Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-08T19:16:27Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-10-08T19:16:25Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-08T19:16:27Z",
+          "conclusion": "success",
+          "name": "Run actions/setup-node@v4",
+          "number": 3,
+          "startedAt": "2026-10-08T19:16:27Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-08T19:16:29Z",
+          "conclusion": "success",
+          "name": "Run npm test",
+          "number": 4,
+          "startedAt": "2026-10-08T19:16:27Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-08T19:16:29Z",
+          "conclusion": "success",
+          "name": "Post Run actions/setup-node@v4",
+          "number": 7,
+          "startedAt": "2026-10-08T19:16:29Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-08T19:16:29Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 8,
+          "startedAt": "2026-10-08T19:16:29Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-08T19:16:29Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 9,
+          "startedAt": "2026-10-08T19:16:29Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37830690538/job/113494934967"
+    },
+    {
+      "completedAt": "2026-10-08T19:16:50Z",
+      "conclusion": "success",
+      "databaseId": 113495009831,
+      "name": "deploy",
+      "startedAt": "2026-10-08T19:16:35Z",
+      "status": "completed",
+      "steps": [
+        {
+          "completedAt": "2026-10-08T19:16:38Z",
+          "conclusion": "success",
+          "name": "Set up job",
+          "number": 1,
+          "startedAt": "2026-10-08T19:16:36Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-08T19:16:40Z",
+          "conclusion": "success",
+          "name": "Run actions/checkout@v4",
+          "number": 2,
+          "startedAt": "2026-10-08T19:16:38Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-08T19:16:40Z",
+          "conclusion": "success",
+          "name": "Run actions/configure-pages@v5",
+          "number": 3,
+          "startedAt": "2026-10-08T19:16:40Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-08T19:16:41Z",
+          "conclusion": "success",
+          "name": "Run actions/upload-pages-artifact@v3",
+          "number": 4,
+          "startedAt": "2026-10-08T19:16:40Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-08T19:16:48Z",
+          "conclusion": "success",
+          "name": "Run actions/deploy-pages@v4",
+          "number": 5,
+          "startedAt": "2026-10-08T19:16:41Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-08T19:16:48Z",
+          "conclusion": "success",
+          "name": "Post Run actions/checkout@v4",
+          "number": 10,
+          "startedAt": "2026-10-08T19:16:48Z",
+          "status": "completed"
+        },
+        {
+          "completedAt": "2026-10-08T19:16:48Z",
+          "conclusion": "success",
+          "name": "Complete job",
+          "number": 11,
+          "startedAt": "2026-10-08T19:16:48Z",
+          "status": "completed"
+        }
+      ],
+      "url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37830690538/job/113495009831"
+    }
+  ],
+  "status": "completed",
+  "url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37830690538"
+}

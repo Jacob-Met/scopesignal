@@ -1,0 +1,101 @@
+{
+  "mode": "candidate",
+  "source": "C:\\Users\\minec\\hamon-ultra-2d2d276b-scope-removal\\current-08b4d1c",
+  "hostedUrl": "https://jacobmetoyer.com/scopesignal",
+  "qualifiedSource": "08b4d1cc4656efcb12880bc1f970aa1dfed1d930",
+  "runtime": "v24.21.0",
+  "browser": "Chrome/154.0.8037.98",
+  "results": [
+    {
+      "name": "filled middle-row removal preserves surviving rows",
+      "pass": true,
+      "detail": {
+        "exactRawRestoration": true,
+        "laterEditsPreserved": true,
+        "singleUse": true
+      }
+    },
+    {
+      "name": "current authored history follows restored rows and retires on draft editing",
+      "pass": true,
+      "detail": {
+        "restoredReviewRows": 3,
+        "removedReviewRows": 2,
+        "staleHistoryCleared": true
+      }
+    },
+    {
+      "name": "history navigation after undo preserves recorded decisions and current pending evidence",
+      "pass": true,
+      "detail": {
+        "navigationPreservedCurrent": true,
+        "identicalActualDownloads": 2
+      }
+    }
+  ],
+  "sourcePins": {
+    "scope.html": "5dc208dd5d84fa649e4a54522d71837277d2b120bf3132156637fea617d93288",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+    "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+    "src/fixture-timeline-view.mjs": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+    "src/fixture-timeline.mjs": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/record-reader.mjs": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8",
+    "src/record-view.mjs": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f",
+    "src/scope-compare-ui.mjs": "61d036fe3c4be9bbbaa969031bb90f401878174faf1e98ab67fb9f436af66ee6",
+    "src/scope-compare.mjs": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+    "src/scope-draft-removal.mjs": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224",
+    "src/scope-history-view.mjs": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+    "src/scope-history.mjs": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/scope-revision-draft.mjs": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/scope-workspace.mjs": "a7d415e04646a8682084369ff539b66556804f140b12ab57c5cafceecbca5ba2",
+    "src/workers-ai.mjs": "d69676fceb4a3782e6eaa7edcff4d5a4d1b7d89fc0d4e642d3bdca6e079a938e"
+  },
+  "served": {
+    "scope.html": "5dc208dd5d84fa649e4a54522d71837277d2b120bf3132156637fea617d93288",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "scope-history.css": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69",
+    "src/scope-workspace.mjs": "a7d415e04646a8682084369ff539b66556804f140b12ab57c5cafceecbca5ba2",
+    "src/scope-draft-removal.mjs": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224",
+    "src/scope-history-view.mjs": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/scope-revision-draft.mjs": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/scope-history.mjs": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+  },
+  "hostedBodies": {
+    "scope.html": "5dc208dd5d84fa649e4a54522d71837277d2b120bf3132156637fea617d93288",
+    "src/scope-workspace.mjs": "a7d415e04646a8682084369ff539b66556804f140b12ab57c5cafceecbca5ba2",
+    "scope-history.css": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "src/scope-draft-removal.mjs": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224",
+    "src/scope-revision-draft.mjs": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+    "src/scope-history-view.mjs": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-history.mjs": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+  },
+  "blocked": [
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://jacobmetoyer.com/favicon.ico",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://jacobmetoyer.com/favicon.ico",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://jacobmetoyer.com/favicon.ico"
+  ],
+  "pageErrors": []
+}
