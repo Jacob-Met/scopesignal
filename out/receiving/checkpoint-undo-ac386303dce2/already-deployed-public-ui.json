@@ -1,0 +1,67 @@
+{
+  "schema": "scopesignal.public-ui-observation/1",
+  "reviewer": "runtime_execution",
+  "url": "https://jacobmetoyer.com/scopesignal/scope.html",
+  "date": "2026-10-08",
+  "route": "Dedicated cloud Browser through documented cua_repl API, fresh agent-owned tab",
+  "scope": "One direct fictional draft interaction of already deployed PR40 behavior. Does not replay the thirteen-group author or three-group independent native file/download receivers, and does not qualify competing PR42 source.",
+  "deployedByteReceipt": "206923fd091ba7fbbe27eb9bc03b8f80a510251f",
+  "observedSteps": [
+    {
+      "action": "Enter middle checkpoint raw fields",
+      "fields": {
+        "title": "  Public receiving <removed> 🧭  ",
+        "amount": "unfinished",
+        "evidence": "line one\n<&> line two"
+      }
+    },
+    {
+      "action": "Remove checkpoint 2",
+      "observed": "Two surviving rows remain, Undo enabled, removal status at position 2."
+    },
+    {
+      "action": "Edit surviving first title and project name",
+      "fields": {
+        "firstTitle": "Later survivor edit retained",
+        "project": "Fictional public Undo receiving"
+      },
+      "observed": "Undo remains enabled, matching current main's explicit edit-preservation policy."
+    },
+    {
+      "action": "Undo removal",
+      "observed": {
+        "order": [
+          "Later survivor edit retained",
+          "  Public receiving <removed> 🧭  ",
+          "Responsive handoff"
+        ],
+        "middleAmount": "unfinished",
+        "middleEvidence": "line one\n<&> line two",
+        "project": "Fictional public Undo receiving",
+        "undoDisabled": true,
+        "focus": "restored middle title",
+        "status": "Checkpoint restored at position 2 of 3. Your other draft edits are kept."
+      }
+    },
+    {
+      "action": "Review this scope",
+      "observed": "Review refused: Enter a positive USD amount for checkpoint 2, with no more than two decimal places."
+    }
+  ],
+  "screenshots": [
+    {
+      "view": "validation viewport",
+      "bytes": 89014,
+      "sha256": "c59b528c8fc2ff206e70ac2eef42bc5e92e993f11827d292a8554a3655d24191",
+      "visuallyInspected": true
+    },
+    {
+      "view": "restored rows viewport",
+      "bytes": 67525,
+      "sha256": "40b1d6c7066389a1229dbc72d96a02939542d12eb2c45daeaf4a2d5f506e8348",
+      "visuallyInspected": true
+    }
+  ],
+  "fileLimitations": "Full-page capture timed out. Both viewport captures were displayed and directly inspected, and documented shared-path writes returned success, but none synchronized within five seconds; subsequent browser-share read returned ENOENT. Screenshot bytes are not claimed durably archived or available as attachments. No manual container transfer or undocumented route attempted.",
+  "cleanup": "Closed only the agent-created fictional tab. No provider/payment/account, installed browser policy, original profile, native source or service action."
+}

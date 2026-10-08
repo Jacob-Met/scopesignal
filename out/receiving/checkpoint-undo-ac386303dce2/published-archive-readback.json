@@ -1,0 +1,72 @@
+{
+  "schema": "scopesignal.published-archive-readback/1",
+  "repository": "Jacob-Met/scopesignal",
+  "head": "b0d5f8087935d4ca74b238fff466b8126b33a495",
+  "tree": "b63f137f4f78f2d45e19a68afde6d79994e01d55",
+  "method": "Committed file-path base64 readback, exact SHA-256 and Git-blob verification, gzip decode and archive shape inspection in an isolated local RAM-only Python process. No browser run or native source write.",
+  "files": [
+    {
+      "path": "original-evidence.tar.gz",
+      "bytes": 629513,
+      "sha256": "39db7d48ecc88b22878900906da992635618c1f579ffe7f8808a89a944a54b83",
+      "git_blob": "cfe8d391608ed650d72f28e16616d911e2792059",
+      "decompressed_bytes": 1914880,
+      "regular_members": 186,
+      "manifest_members": [
+        {
+          "path": "./manifest.json",
+          "keys": [
+            "schema",
+            "created_at",
+            "originalAuthorFiles",
+            "independentFiles",
+            "payloadFiles",
+            "files"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "current-author-evidence.tar.gz",
+      "bytes": 180279,
+      "sha256": "27144a97676da841c958402fd9999d50eae72c300dcbec85db63c4c104651277",
+      "git_blob": "23a82eb0ec06d7ecb2f04be7d8c3632e6ea1c8eb",
+      "decompressed_bytes": 696320,
+      "regular_members": 66,
+      "manifest_members": [
+        {
+          "path": "manifest.json",
+          "keys": [
+            "schema",
+            "base",
+            "files"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "current-independent-negative.json.gz",
+      "bytes": 71870,
+      "sha256": "4737cc350717979af2539fcce3ef77d9c0b84b90795deecb4ea42345b7753462",
+      "git_blob": "47f30812b0b0e830918b99be4a55a2102682036b",
+      "decompressed_bytes": 235776,
+      "capsule_keys": [
+        "schema",
+        "members"
+      ]
+    },
+    {
+      "path": "windows-startup-negative.json.gz",
+      "bytes": 153898,
+      "sha256": "f595b91735570e4aeb4f58207c5424b62ab945e4c767cfa857419fc4b5e21ef7",
+      "git_blob": "597d33dded981ce1beb7bce74121855aa45cd936",
+      "decompressed_bytes": 324071,
+      "capsule_keys": [
+        "schema",
+        "meaning",
+        "members"
+      ]
+    }
+  ],
+  "note": "Member identity remains bound by each exact previously verified source archive and its manifest; original, current ThinkPad and zero-case Windows receiving outcomes remain distinct."
+}
