@@ -1,0 +1,199 @@
+{
+  "schema": "scopesignal.comparison-linux-receiver-diagnostics.v1",
+  "parent": "e6845560b1e5de54978c71873ef49decba472f94",
+  "conclusion": "No current-parent browser behavior conclusion. Chromium startup/navigation failed before any completed check. SIGTRAP and resource errors do not establish whether storage, memory or another host resource caused the failure.",
+  "attempts": {
+    "browser-e684": {
+      "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/qualification/browser-e684/incomplete.json",
+      "bytes": 277,
+      "sha256": "279b644379b5b4587c0eec7c0f06e0cc9980d72d4bf7fd3a7bb5f9a714e89d64",
+      "content": {
+        "result": "incomplete",
+        "reason": "Outer Node receiver timed out after 240 seconds before any completed group or receipt; process.log is empty. No application conclusion.",
+        "owned_browser_processes_terminated": [],
+        "profile_bytes": 2572643,
+        "free_bytes": 8531968
+      },
+      "process.log": {
+        "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/qualification/browser-e684/process.log",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "receiver.mjs": {
+        "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/qualification/browser-e684/receiver.mjs",
+        "bytes": 24690,
+        "sha256": "c5ebc22009841f9ceda28ad4ce494b993868b759f506b3ef7271a4d7b1e3c7bc"
+      }
+    },
+    "browser-e684-retry": {
+      "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/qualification/browser-e684-retry/receipt.json",
+      "bytes": 2545,
+      "sha256": "73bf91bb4eb2b9f631a399bfe8eb0046a43b36cd09bee8dd0939286eaca57342",
+      "content": {
+        "schema": "scopesignal.scope-compare-receiving.v1",
+        "at": "2026-10-08T14:16:04.305Z",
+        "source": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/receiving-e684",
+        "sourceCommit": "e6845560b1e5de54978c71873ef49decba472f94 + comparison source composition",
+        "node": "v22.22.1",
+        "nodeExecutable": "/usr/bin/node",
+        "browser": "153.0.8010.47",
+        "browserExecutable": "/snap/bin/chromium",
+        "playwright": "/home/jacob/.cache/returnby-backup-8b336fefde84/node_modules/playwright/index.mjs",
+        "sourceBefore": {
+          "scope.html": "04fb1c1e4f8e7999038bcd6a0d308c3bca3f9873e313cb1edb72760e31ef8005",
+          "scope-compare.html": "630c6cdf5e9dcb4ac9b9c2e90507563832a8ba8af431ebbd9b7163783c27c5ee",
+          "scope-compare.css": "22589796d131cbaa0adb049a0f4bf4c5f1f96f0791f6561221d120d6b418a02b",
+          "src/scope-compare.mjs": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+          "src/scope-compare-ui.mjs": "61d036fe3c4be9bbbaa969031bb90f401878174faf1e98ab67fb9f436af66ee6",
+          "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+          "src/scope-workspace.mjs": "82dad1e999b96c461a52ce62d40add9454b61dc040f47d5b8c7041da43e0d1b6",
+          "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+          "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+        },
+        "servedSha256": {
+          "baseline/scope.html": "b606075db25427fc517aa2b08c843fbc1c4521ad7a56d5e6816f43ed8140193a"
+        },
+        "fixtureSha256": {},
+        "checks": [],
+        "failures": [
+          {
+            "after": null,
+            "error": "page.goto: net::ERR_INSUFFICIENT_RESOURCES at http://127.0.0.1:41399/baseline/scope.html\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:41399/baseline/scope.html\", waiting until \"load\"\u001b[22m\n\n    at /home/jacob/hamon-universal-e3a41d2b3368-scope-compare/receiving-e684/scripts/check-scope-compare.mjs:132:15\n    at async check (/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/receiving-e684/scripts/check-scope-compare.mjs:68:3)\n    at async file:///home/jacob/hamon-universal-e3a41d2b3368-scope-compare/receiving-e684/scripts/check-scope-compare.mjs:130:17"
+          }
+        ],
+        "pageErrors": [],
+        "externalRequests": [],
+        "notes": [
+          "Node drives the receiver; page modules execute in Chromium.",
+          "Deferred/error reads instrument File.arrayBuffer only inside the isolated browser receiver.",
+          "All model files use the project codec; A and B are actual authoring-page downloads."
+        ],
+        "passed": false
+      },
+      "process.log": {
+        "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/qualification/browser-e684-retry/process.log",
+        "bytes": 11824,
+        "sha256": "fabcf046a819dc8b8828957a1a714b27031a7b83576e773a3502469f7c051d59"
+      },
+      "runner.json": {
+        "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/qualification/browser-e684-retry/runner.json",
+        "bytes": 194,
+        "sha256": "cc62d3adf06218b8da72256959a2ce555f0ee5f8f4da256b094da37ec4d16c36"
+      }
+    },
+    "browser-e684-owned-temp": {
+      "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/qualification/browser-e684-owned-temp/receipt.json",
+      "bytes": 11549,
+      "sha256": "69841242b34ecff6b739eb77f387b48f89ada9e131552da24afa13630bd08407",
+      "content": {
+        "schema": "scopesignal.scope-compare-receiving.v1",
+        "at": "2026-10-08T14:22:04.866Z",
+        "source": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/receiving-e684",
+        "sourceCommit": "e6845560b1e5de54978c71873ef49decba472f94 + comparison source composition",
+        "node": "v22.22.1",
+        "nodeExecutable": "/usr/bin/node",
+        "browser": null,
+        "browserExecutable": "/snap/bin/chromium",
+        "playwright": "/home/jacob/.cache/returnby-backup-8b336fefde84/node_modules/playwright/index.mjs",
+        "sourceBefore": {
+          "scope.html": "04fb1c1e4f8e7999038bcd6a0d308c3bca3f9873e313cb1edb72760e31ef8005",
+          "scope-compare.html": "630c6cdf5e9dcb4ac9b9c2e90507563832a8ba8af431ebbd9b7163783c27c5ee",
+          "scope-compare.css": "22589796d131cbaa0adb049a0f4bf4c5f1f96f0791f6561221d120d6b418a02b",
+          "src/scope-compare.mjs": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+          "src/scope-compare-ui.mjs": "61d036fe3c4be9bbbaa969031bb90f401878174faf1e98ab67fb9f436af66ee6",
+          "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+          "src/scope-workspace.mjs": "82dad1e999b96c461a52ce62d40add9454b61dc040f47d5b8c7041da43e0d1b6",
+          "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+          "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+        },
+        "servedSha256": {},
+        "fixtureSha256": {},
+        "checks": [],
+        "failures": [
+          {
+            "after": null,
+            "error": "browserType.launchPersistentContext: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> /snap/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --disk-cache-size=1048576 --user-data-dir=/home/jacob/snap/chromium/common/hamon-scope-compare-e3a41d2b3368-e684-owned-temp --remote-debugging-pipe about:blank\n<launched> pid=3122828\n[pid=3122828][err] [3122828:3123384:1008/142203.884131:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=3122828][err] [3122828:3123384:1008/142203.949863:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=3122828][err] [3122828:3123384:1008/142204.238166:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=3122828][err] [3122828:3122828:1008/142204.676048:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=3122828][err] [3122828:3122828:1008/142204.677008:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=3122828][err] [3122828:3123384:1008/142204.677893:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=3122828][err] [3122828:3122828:1008/142204.690888:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type: \n[pid=3122828][err] [3122828:3123384:1008/142204.690983:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\n[pid=3122828][err] [1008/142204.704355:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\n[pid=3122828][err] [1008/142204.708287:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\n[pid=3122828][err] [1008/142204.709168:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\n[pid=3122828][err] [1008/142204.709480:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\n[pid=3122828][err] [1008/142204.761859:ERROR:third_party/crashpad/crashpad/snapshot/elf/elf_dynamic_array_reader.h:64] tag not found\n[pid=3122828][err] [1008/142204.780246:WARNING:third_party/crashpad/crashpad/snapshot/linux/process_reader_linux.cc:146] no stack mapping\nCall log:\n\u001b[2m  - <launching> /snap/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --disk-cache-size=1048576 --user-data-dir=/home/jacob/snap/chromium/common/hamon-scope-compare-e3a41d2b3368-e684-owned-temp --remote-debugging-pipe about:blank\u001b[22m\n\u001b[2m  - <launched> pid=3122828\u001b[22m\n\u001b[2m  - [pid=3122828][err] [3122828:3123384:1008/142203.884131:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\u001b[22m\n\u001b[2m  - [pid=3122828][err] [3122828:3123384:1008/142203.949863:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\u001b[22m\n\u001b[2m  - [pid=3122828][err] [3122828:3123384:1008/142204.238166:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\u001b[22m\n\u001b[2m  - [pid=3122828][err] [3122828:3122828:1008/142204.676048:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type:\u001b[22m\n\u001b[2m  - [pid=3122828][err] [3122828:3122828:1008/142204.677008:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type:\u001b[22m\n\u001b[2m  - [pid=3122828][err] [3122828:3123384:1008/142204.677893:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\u001b[22m\n\u001b[2m  - [pid=3122828][err] [3122828:3122828:1008/142204.690888:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type:\u001b[22m\n\u001b[2m  - [pid=3122828][err] [3122828:3123384:1008/142204.690983:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\u001b[22m\n\u001b[2m  - [pid=3122828][err] [1008/142204.704355:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\u001b[22m\n\u001b[2m  - [pid=3122828][err] [1008/142204.708287:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\u001b[22m\n\u001b[2m  - [pid=3122828][err] [1008/142204.709168:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\u001b[22m\n\u001b[2m  - [pid=3122828][err] [1008/142204.709480:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\u001b[22m\n\u001b[2m  - [pid=3122828][err] [1008/142204.761859:ERROR:third_party/crashpad/crashpad/snapshot/elf/elf_dynamic_array_reader.h:64] tag not found\u001b[22m\n\u001b[2m  - [pid=3122828][err] [1008/142204.780246:WARNING:third_party/crashpad/crashpad/snapshot/linux/process_reader_linux.cc:146] no stack mapping\u001b[22m\n\u001b[2m  - [pid=3122828] <gracefully close start>\u001b[22m\n\u001b[2m  - [pid=3122828] <kill>\u001b[22m\n\u001b[2m  - [pid=3122828] <will force kill>\u001b[22m\n\u001b[2m  - [pid=3122828] <process did exit: exitCode=null, signal=SIGTRAP>\u001b[22m\n\u001b[2m  - [pid=3122828] starting temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=3122828] finished temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=3122828] <gracefully close end>\u001b[22m\n\n    at async file:///home/jacob/hamon-universal-e3a41d2b3368-scope-compare/receiving-e684/scripts/check-scope-compare.mjs:111:13"
+          }
+        ],
+        "pageErrors": [],
+        "externalRequests": [],
+        "notes": [
+          "Node drives the receiver; page modules execute in Chromium.",
+          "Deferred/error reads instrument File.arrayBuffer only inside the isolated browser receiver.",
+          "All model files use the project codec; A and B are actual authoring-page downloads."
+        ],
+        "passed": false
+      },
+      "process.log": {
+        "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/qualification/browser-e684-owned-temp/process.log",
+        "bytes": 16982,
+        "sha256": "49277a3f824e0995e9bc942e3f763c1884a81974b75ce3532a62b640b0e884d7"
+      },
+      "runner.json": {
+        "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/qualification/browser-e684-owned-temp/runner.json",
+        "bytes": 394,
+        "sha256": "6846ef137227befde8abf097addf9673c4af32bf971ed21f3df66f2ee5be2483"
+      }
+    },
+    "browser-e684-resource-limits": {
+      "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/qualification/browser-e684-resource-limits/receipt.json",
+      "bytes": 9800,
+      "sha256": "1a353ae36d6fdfacf1ddd357a9a8053f4e6893adbc9fc45eeefe9c31ef6e96a7",
+      "content": {
+        "schema": "scopesignal.scope-compare-receiving.v1",
+        "at": "2026-10-08T14:27:52.730Z",
+        "source": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/receiving-e684",
+        "sourceCommit": "e6845560b1e5de54978c71873ef49decba472f94 + comparison source composition",
+        "node": "v22.22.1",
+        "nodeExecutable": "/usr/bin/node",
+        "browser": null,
+        "browserExecutable": "/snap/bin/chromium",
+        "chromiumSandbox": true,
+        "launchArgs": [
+          "--disk-cache-size=1048576",
+          "--renderer-process-limit=1",
+          "--num-raster-threads=1"
+        ],
+        "playwright": "/home/jacob/.cache/returnby-backup-8b336fefde84/node_modules/playwright/index.mjs",
+        "sourceBefore": {
+          "scope.html": "04fb1c1e4f8e7999038bcd6a0d308c3bca3f9873e313cb1edb72760e31ef8005",
+          "scope-compare.html": "630c6cdf5e9dcb4ac9b9c2e90507563832a8ba8af431ebbd9b7163783c27c5ee",
+          "scope-compare.css": "22589796d131cbaa0adb049a0f4bf4c5f1f96f0791f6561221d120d6b418a02b",
+          "src/scope-compare.mjs": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+          "src/scope-compare-ui.mjs": "61d036fe3c4be9bbbaa969031bb90f401878174faf1e98ab67fb9f436af66ee6",
+          "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+          "src/scope-workspace.mjs": "82dad1e999b96c461a52ce62d40add9454b61dc040f47d5b8c7041da43e0d1b6",
+          "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+          "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+        },
+        "servedSha256": {},
+        "fixtureSha256": {},
+        "checks": [],
+        "failures": [
+          {
+            "after": null,
+            "error": "browserType.launchPersistentContext: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - <launching> /snap/bin/chromium --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,BlockOriginHeaderModificationOnRedirect,Translate,AutoDeElevate,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --disable-updater-scheduler --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --disk-cache-size=1048576 --renderer-process-limit=1 --num-raster-threads=1 --user-data-dir=/home/jacob/snap/chromium/common/hamon-scope-compare-e3a41d2b3368-e684-limited --remote-debugging-pipe about:blank\u001b[22m\n\u001b[2m  - <launched> pid=3154502\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3155047:1008/142728.098844:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3155047:1008/142728.101039:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3155047:1008/142728.475546:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3154502:1008/142729.084899:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type:\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3154502:1008/142729.084965:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type:\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3155047:1008/142729.085145:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3154502:1008/142729.106200:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type:\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3155047:1008/142729.106638:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3154502:1008/142729.157351:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type:\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3155047:1008/142729.159795:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3154502:1008/142729.159977:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type:\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3154502:1008/142729.249243:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type:\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3155047:1008/142729.250044:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\u001b[22m\n\u001b[2m  - [pid=3154502][err] [1008/142729.265499:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\u001b[22m\n\u001b[2m  - [pid=3154502][err] [1008/142729.270298:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\u001b[22m\n\u001b[2m  - [pid=3154502][err] [1008/142729.271002:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\u001b[22m\n\u001b[2m  - [pid=3154502][err] [1008/142729.271234:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3154502:1008/142729.277150:ERROR:dbus/object_proxy.cc:572] Failed to call method: org.freedesktop.DBus.NameHasOwner: object_path= /org/freedesktop/DBus: unknown error type:\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3154502:3155047:1008/142729.278806:ERROR:dbus/bus.cc:405] Failed to connect to the bus: Could not parse server address: Unknown address type (examples of valid types are \"tcp\" and on UNIX \"unix\")\u001b[22m\n\u001b[2m  - [pid=3154502][err] [1008/142729.389179:ERROR:third_party/crashpad/crashpad/snapshot/elf/elf_dynamic_array_reader.h:64] tag not found\u001b[22m\n\u001b[2m  - [pid=3154502][err] [1008/142729.520817:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\u001b[22m\n\u001b[2m  - [pid=3154502][err] [1008/142729.525158:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\u001b[22m\n\u001b[2m  - [pid=3154502][err] [1008/142729.526666:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\u001b[22m\n\u001b[2m  - [pid=3154502][err] [1008/142729.526916:ERROR:third_party/crashpad/crashpad/util/linux/ptracer.cc:605] ptrace: Input/output error (5)\u001b[22m\n\u001b[2m  - [pid=3154502][err] [1008/142729.620118:ERROR:third_party/crashpad/crashpad/snapshot/elf/elf_dynamic_array_reader.h:64] tag not found\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3155067:3155072:1008/142729.772402:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -3\u001b[22m\n\u001b[2m  - [pid=3154502][err] [3155067:3155072:1008/142729.773312:ERROR:net/socket/ssl_client_socket_impl.cc:949] handshake failed; returned -1, SSL error code 1, net_error -3\u001b[22m\n\u001b[2m  - [pid=3154502] <process did exit: exitCode=null, signal=SIGTRAP>\u001b[22m\n\u001b[2m  - [pid=3154502] starting temporary directories cleanup\u001b[22m\n\u001b[2m  - [pid=3154502] finished temporary directories cleanup\u001b[22m\n\n    at async file:///home/jacob/hamon-universal-e3a41d2b3368-scope-compare/receiving-e684/scripts/check-scope-compare.mjs:115:13"
+          }
+        ],
+        "pageErrors": [],
+        "externalRequests": [],
+        "notes": [
+          "Node drives the receiver; page modules execute in Chromium.",
+          "Deferred/error reads instrument File.arrayBuffer only inside the isolated browser receiver.",
+          "All model files use the project codec; A and B are actual authoring-page downloads."
+        ],
+        "passed": false
+      },
+      "process.log": {
+        "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/qualification/browser-e684-resource-limits/process.log",
+        "bytes": 18111,
+        "sha256": "4cfe923d36423eb92a54fb7f0745ad34e9e27a737e0877802acbea2daad2a961"
+      },
+      "runner.json": {
+        "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/qualification/browser-e684-resource-limits/runner.json",
+        "bytes": 508,
+        "sha256": "71bdec83885ba309a72c1ba803abf4a009b09abdbbab4df878aa69f607eb23a3"
+      }
+    }
+  }
+}

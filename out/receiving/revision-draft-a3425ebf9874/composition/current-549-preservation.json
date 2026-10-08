@@ -1,0 +1,62 @@
+{
+  "schema": "hamon.scopesignal.current-owner-composition.v1",
+  "current_upstream": "549f6d551d1ad92ee97198b1799c7bcb40aa5e01",
+  "current_upstream_tree": "13f727e73a6eb10c08274505b24817752e7db43d",
+  "current_upstream_leaf_count": 403,
+  "revision_evidence_parent": "36683882ca3aef820f0b1f15123e2f863ecc197e",
+  "qualified_revision_source": "9863a0e971da312d2328ffdbb14c5d0cf01da74f",
+  "composition": "Two-parent additive composition retaining accepted comparison PR28 and all prior revision source/evidence.",
+  "shared_files": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37b2de99055241354a7d4b7eff79fdcec44a934e",
+      "bytes": 21144,
+      "sha256": "3643af275fc3642ace31fef0e68aa686b7935f48c6b59a9ffb7e4c3b1aef059c"
+    },
+    {
+      "path": "scope.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b425eb7e20ac90c17b8d7428140a9f0dd5aca628",
+      "bytes": 8743,
+      "sha256": "63b6e390d6265db203532b8a89ce9ce14d99500f907815c23c1348eefe6e06dc"
+    }
+  ],
+  "preservation": {
+    "README": "Remove the revision section to recover exact current-upstream README; remove the comparison section to recover exact qualified revision README.",
+    "html": "Remove the single incoming separate-tab comparison link to recover exact qualified revision HTML. All existing controls, script imports and revision markup remain unchanged.",
+    "source": "All revision runtime/test/harness files retain their qualified blobs; every incoming comparison source/test/style/evidence file remains exact.",
+    "evidence": "All 17 existing revision evidence files remain byte-identical; their original parent/source/runtime attributions are preserved."
+  },
+  "original_independent_runtime_pins": [
+    {
+      "path": "src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "bytes": 22821,
+      "sha256": "cf07a157d84b206eb5664455fc654f280deb51a2d991acde5b0d198157736fa1"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    }
+  ],
+  "gate_scope": "The only combined source changes since received revision source are a separate-tab navigation line and two adjacent documentation sections. No repeated native/browser execution is claimed. The actual combined public head is subject to ordinary hosted CI and the original independent review bound by source parity.",
+  "native_artifact_retrieval": "Pending while ThinkPad is offline. Prior completed browser 7/7 and independently sealed native 39-assertion qualification remain separately attributed; no missing native files or timestamps are reconstructed."
+}
