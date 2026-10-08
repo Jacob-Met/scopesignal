@@ -1,0 +1,303 @@
+{
+  "schema": "scopesignal.duplicate-checkpoint.independent-browser/1",
+  "mode": "candidate",
+  "startedAt": "2026-10-08T15:28:22.045Z",
+  "result": "PASS",
+  "source": "/dev/ae0a1ea0b247-scope-copy-independent-final/independent-copy/candidate-source",
+  "pinsBefore": {
+    "src/scope-workspace.mjs": {
+      "bytes": 22842,
+      "sha256": "b7a147567198fb8b397d2abc65918c8a2fe3ff87bff5d4533917176f84551244",
+      "gitBlob": "ab6d87dae1ba7cbef2d3f8e6c7ef5845307fb7a2"
+    },
+    "scope.html": {
+      "bytes": 8169,
+      "sha256": "0dc84e61c6711a6747352831fc4188921ef2c5060df4b96da74e0d2bee827428",
+      "gitBlob": "f94a38991065dd7322e91f7c848d51a023947408"
+    },
+    "src/scope-plan.mjs": {
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "gitBlob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    "src/payment-status.mjs": {
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "gitBlob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    "src/scope-review-export.mjs": {
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "gitBlob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad"
+    },
+    "src/scope-workspace-record.mjs": {
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "gitBlob": "d9141b3e1ac74b33f996ec6d68756ece5c190162"
+    },
+    "src/ledger.mjs": {
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "gitBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    },
+    "src/fixture-record.mjs": {
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "gitBlob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8"
+    },
+    "styles.css": {
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "gitBlob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    "scope-workspace.css": {
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "gitBlob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded"
+    }
+  },
+  "driver": {
+    "bytes": 18433,
+    "sha256": "b6e4624551cfed48a425694585868427de36a297dfb4b1356087cda76eec4a08",
+    "gitBlob": "c510c691fe606e43ea4df7a8d65d62a2438664eb"
+  },
+  "cases": [
+    {
+      "name": "First, middle and last copies preserve raw fields; later edits and row actions preserve independent values",
+      "result": "PASS",
+      "durationMs": 4260,
+      "evidence": {
+        "rawWhitespaceAndMarkupPreserved": true,
+        "firstMiddleLast": true,
+        "independentLaterEdits": true,
+        "invalidAndEmptyAmountsUnnormalized": true,
+        "existingValidationRefusesReview": true,
+        "downloadSha256": [
+          "9e9ca5126095da92c3cfe467a381a01ed38ede67388565360398d7a294595ff7",
+          "41717601b9b39394869c17ab9504b9be68bdc899ef7629ab8d8c68dfc2fb35e6"
+        ]
+      }
+    },
+    {
+      "name": "Capacity, over-cap validation and phone keyboard focus remain native",
+      "result": "PASS",
+      "durationMs": 6368,
+      "evidence": {
+        "twelveRows": true,
+        "copyAndAddDisabledAtCapacity": true,
+        "removeReenables": true,
+        "overCapReviewRefused": true,
+        "uniqueFieldAssociations": 36,
+        "keyboardCopies": 12,
+        "width": {
+          "document": 390,
+          "viewport": 390
+        },
+        "controls": [
+          {
+            "text": "Move up",
+            "left": 38,
+            "right": 84.953125,
+            "width": 46.953125,
+            "height": 44,
+            "disabled": false
+          },
+          {
+            "text": "Move down",
+            "left": 100.953125,
+            "right": 163.640625,
+            "width": 62.6875,
+            "height": 44,
+            "disabled": false
+          },
+          {
+            "text": "Duplicate checkpoint",
+            "left": 179.640625,
+            "right": 295.8125,
+            "width": 116.171875,
+            "height": 44,
+            "disabled": true
+          },
+          {
+            "text": "Remove checkpoint",
+            "left": 243.59375,
+            "right": 352,
+            "width": 108.40625,
+            "height": 44,
+            "disabled": false
+          }
+        ],
+        "phoneScreenshot": "phone-copy-controls.jpg",
+        "nativeWorkspace": {
+          "bytes": 1679,
+          "sha256": "cf66058917de902c5b5445d0e8bacec58e64ee166f584db4a31fc3e5a2efb1e0",
+          "gitBlob": "5f01172dd56131f0931928fdcd1d6b91c4455da5"
+        }
+      }
+    },
+    {
+      "name": "Copy invalidates genuine preview and held native read before an equal-state undo",
+      "result": "PASS",
+      "durationMs": 1830,
+      "evidence": {
+        "genuineFixture": {
+          "bytes": 782,
+          "sha256": "705efe47c97e0251aa672e4c5d0a0881e8522b2746e0eb2fbe8b7ec772d46dc4",
+          "gitBlob": "5c37d2cd105873423f3e19f13482f8dbf84839c3"
+        },
+        "previewImmediatelyInvalidated": true,
+        "completedNativeReadHeld": true,
+        "copyImmediatelyInvalidates": true,
+        "visibleUndoDoesNotReviveRead": true,
+        "nativeWorkspace": {
+          "bytes": 906,
+          "sha256": "2de0c073105d6f5031a8e10650eea4541770cbfc4d55709fbad52c0f007f5eb7",
+          "gitBlob": "941cf2ce183d29b07aa24965c2273dea0c73a365"
+        }
+      }
+    },
+    {
+      "name": "Latest review evidence is copied and receives native IDs without implicit approval; approval locks editing",
+      "result": "PASS",
+      "durationMs": 1933,
+      "evidence": {
+        "latestEvidencePreserved": true,
+        "nativeIds": [
+          "scope-1",
+          "scope-2",
+          "scope-3",
+          "scope-4"
+        ],
+        "noImplicitEvents": true,
+        "explicitApprovalOnly": "scope-2",
+        "editLocked": true,
+        "workspaceSha256": [
+          "a9aa0261fc15f6cef963a9d49cb4d8ed130e60ae1d833194c004b2bd1eb815d6",
+          "e2635bc2119adf2c712360096d38771fe08c30bd90d412fcb31d6fb3d18536ab",
+          "6195095ce87cd3787c5e61adfb71f3e233bda0cd981f38c1abdb2f20374c4edf"
+        ]
+      }
+    }
+  ],
+  "downloads": [
+    {
+      "path": "downloads/01-raw-copies.json",
+      "nativeFilename": "scopesignal-workspace-v1.json",
+      "bytes": 1047,
+      "sha256": "9e9ca5126095da92c3cfe467a381a01ed38ede67388565360398d7a294595ff7",
+      "gitBlob": "c335d608256f4942d226699029410c5d7dbd9831"
+    },
+    {
+      "path": "downloads/02-empty-amount-copy.json",
+      "nativeFilename": "scopesignal-workspace-v1.json",
+      "bytes": 1178,
+      "sha256": "41717601b9b39394869c17ab9504b9be68bdc899ef7629ab8d8c68dfc2fb35e6",
+      "gitBlob": "3c911526ff46420785d8cb66b37fa218eef8e0be"
+    },
+    {
+      "path": "downloads/03-twelve-phone.json",
+      "nativeFilename": "scopesignal-workspace-v1.json",
+      "bytes": 1679,
+      "sha256": "cf66058917de902c5b5445d0e8bacec58e64ee166f584db4a31fc3e5a2efb1e0",
+      "gitBlob": "5f01172dd56131f0931928fdcd1d6b91c4455da5"
+    },
+    {
+      "path": "downloads/04-after-stale-file.json",
+      "nativeFilename": "scopesignal-workspace-v1.json",
+      "bytes": 906,
+      "sha256": "2de0c073105d6f5031a8e10650eea4541770cbfc4d55709fbad52c0f007f5eb7",
+      "gitBlob": "941cf2ce183d29b07aa24965c2273dea0c73a365"
+    },
+    {
+      "path": "downloads/05-latest-review-evidence-copy.json",
+      "nativeFilename": "scopesignal-workspace-v1.json",
+      "bytes": 993,
+      "sha256": "a9aa0261fc15f6cef963a9d49cb4d8ed130e60ae1d833194c004b2bd1eb815d6",
+      "gitBlob": "55df170ff40b69b8a43c864ca65c621bec37b494"
+    },
+    {
+      "path": "downloads/06-copied-plan-review.json",
+      "nativeFilename": "scopesignal-workspace-v1.json",
+      "bytes": 994,
+      "sha256": "e2635bc2119adf2c712360096d38771fe08c30bd90d412fcb31d6fb3d18536ab",
+      "gitBlob": "45173fa2208d08689c03a8b323ea66e1af5426e5"
+    },
+    {
+      "path": "downloads/07-copied-checkpoint-approved.json",
+      "nativeFilename": "scopesignal-workspace-v1.json",
+      "bytes": 1258,
+      "sha256": "6195095ce87cd3787c5e61adfb71f3e233bda0cd981f38c1abdb2f20374c4edf",
+      "gitBlob": "9366243e041fff15039644192e1bedb86333a5ec"
+    }
+  ],
+  "pageErrors": [],
+  "externalRequests": [
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+  ],
+  "limits": [
+    "Actual local Chromium and native modular app; no hosted deployment or real payment action.",
+    "Only delivery of a completed native File.arrayBuffer result is held for one declared case.",
+    "All form state is entered through browser inputs; no application or model state is injected.",
+    "Receiving is bounded to checkpoint duplication and the exercised editor, file and review transitions.",
+    "The unchanged native page requests a Google Fonts CSS URL. This receiver blocks that exact request and uses installed fallback fonts; other external requests remain a failure."
+  ],
+  "chromium": "153.0.8010.0",
+  "blockedBaselineFontRequests": 4,
+  "pinsAfter": {
+    "src/scope-workspace.mjs": {
+      "bytes": 22842,
+      "sha256": "b7a147567198fb8b397d2abc65918c8a2fe3ff87bff5d4533917176f84551244",
+      "gitBlob": "ab6d87dae1ba7cbef2d3f8e6c7ef5845307fb7a2"
+    },
+    "scope.html": {
+      "bytes": 8169,
+      "sha256": "0dc84e61c6711a6747352831fc4188921ef2c5060df4b96da74e0d2bee827428",
+      "gitBlob": "f94a38991065dd7322e91f7c848d51a023947408"
+    },
+    "src/scope-plan.mjs": {
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "gitBlob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    "src/payment-status.mjs": {
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "gitBlob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    "src/scope-review-export.mjs": {
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "gitBlob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad"
+    },
+    "src/scope-workspace-record.mjs": {
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "gitBlob": "d9141b3e1ac74b33f996ec6d68756ece5c190162"
+    },
+    "src/ledger.mjs": {
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "gitBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    },
+    "src/fixture-record.mjs": {
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "gitBlob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8"
+    },
+    "styles.css": {
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "gitBlob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    "scope-workspace.css": {
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "gitBlob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded"
+    }
+  },
+  "sourceUnchanged": true,
+  "finishedAt": "2026-10-08T15:28:36.842Z"
+}

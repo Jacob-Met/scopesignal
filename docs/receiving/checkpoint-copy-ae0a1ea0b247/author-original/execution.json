@@ -1,0 +1,33 @@
+{
+  "localBaseline": "bd2799fce246186dde64f5ccb66387771282563a",
+  "baselineQualified": true,
+  "runs": [
+    {
+      "kind": "baseline browser",
+      "command": [
+        "node",
+        "/dev/ae0a1-scope-copy-7b5aqf08/packet/author-receiver.mjs"
+      ],
+      "returncode": 1,
+      "seconds": 3.349902629852295
+    },
+    {
+      "kind": "candidate browser",
+      "command": [
+        "node",
+        "/dev/ae0a1-scope-copy-7b5aqf08/packet/author-receiver.mjs"
+      ],
+      "returncode": 1,
+      "seconds": 8.72325086593628
+    },
+    {
+      "kind": "candidate native suite",
+      "command": [
+        "node",
+        "--test"
+      ],
+      "returncode": 0,
+      "seconds": 0.6413061618804932
+    }
+  ]
+}

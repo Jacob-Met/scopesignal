@@ -1,0 +1,7 @@
+{
+  "bytes": 61070,
+  "sha256": "c84f7365ebc5aa06e6f6215ad9f628a611f6e2647362cd0b1ad4341039f5991f",
+  "gitBlob": "bcd2e0a810bd0d1d1407a6eee857d49d7f46b19e",
+  "path": "ae0a1ea0b247-scope-copy-independent-original.reserve",
+  "contents": "Exact original source closure, native baseline control, its actual downloaded workspace and the original font-request receiver failure are preserved unchanged."
+}
