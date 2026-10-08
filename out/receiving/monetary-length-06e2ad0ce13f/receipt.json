@@ -54,16 +54,6 @@
       "gitBlob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
       "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
     },
-    "src/scope-workspace.mjs": {
-      "bytes": 25423,
-      "gitBlob": "69f96172068663c07095488a06ccaebe136f1759",
-      "sha256": "ad49dbe89cfa07242d7443cf1ebb23139e9aa48625ea89700b293357c8e3fca6"
-    },
-    "scope.html": {
-      "bytes": 11904,
-      "gitBlob": "726ff155c56f8bbff109fb82b8db29985d6b25e9",
-      "sha256": "cbb14823feb2b671e18ddd45dfef3210260bf0922e8a2476d33718f04515afe6"
-    },
     "README.md": {
       "bytes": 28154,
       "gitBlob": "976cb2b52ed5d3fa9917c6c8e2b58dd0acd6472f",
@@ -78,6 +68,16 @@
       "bytes": 10569,
       "gitBlob": "4dc7bc945f0e0728a79a26363eb276852da8334b",
       "sha256": "f751de2db9141bf1f446a3071bef20081dbf2bbb4ec3b3ccf84c9e400c18b685"
+    },
+    "src/scope-workspace.mjs": {
+      "bytes": 25404,
+      "gitBlob": "e3dda4a14c8c3bc26d6da1a1baeb9a7f205eb12b",
+      "unchangedFromParent": true
+    },
+    "scope.html": {
+      "bytes": 11889,
+      "gitBlob": "cce5cf1081fe009831be11745952df5841e8368b",
+      "unchangedFromParent": true
     }
   },
   "limits": [
@@ -88,5 +88,12 @@
   "setupCorrections": [
     "Initial projection lacked unchanged payment-status.mjs and stopped before running tests. The exact commit-pinned module was added.",
     "A trailing blank line introduced while materializing that module was removed before the retained final baseline; all executed application dependencies then matched their original Git blobs."
-  ]
+  ],
+  "independentSourceReview": {
+    "reviewer": "estate-06e2ad0ce13f / root",
+    "rejectedCandidate": "ccfff500bcbe9f492adc98f28a1dc6921475dd30",
+    "finding": "maxlength on monetary inputs can clip pasted text before validation and thereby change the numerical value.",
+    "correction": "Removed both maxlength additions. Existing input controls retain the complete raw string; new field-specific plan validation refuses overlength before review.",
+    "nativeRetest": "Not repeated: accepted scope-plan and all executed native dependencies/tests remain byte-identical. Browser receiving belongs to the root reviewer."
+  }
 }

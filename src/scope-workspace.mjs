@@ -52,7 +52,7 @@ function renderDraftRows() {
     const fields = element('div', undefined, 'scope-fields');
     fields.append(
       draftField(index, 'title', 'Deliverable', cp.title, { maxLength: 160 }),
-      draftField(index, 'amount', 'Milestone amount (USD)', cp.amount, { maxLength: 64 }),
+      draftField(index, 'amount', 'Milestone amount (USD)', cp.amount),
       draftField(index, 'evidence', 'Planned acceptance evidence', cp.evidence, { maxLength: 5000 })
     );
     const actions = element('div', undefined, 'scope-draft-actions');
