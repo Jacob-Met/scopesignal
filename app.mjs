@@ -40,7 +40,7 @@ $('#checkpoint-list').addEventListener('click', e => {
     document.getElementById(`evidence-${id}`).value = roles.evidenceMapper(cp).suggestedEvidence;
   }
 });
-$('#add-checkpoint').addEventListener('click', () => alert('This fixture keeps the event model deterministic. In a real project, add and version checkpoints before approval.'));
+$('#add-checkpoint').addEventListener('click', () => { window.location.href = './scope.html'; });
 $('#replay').addEventListener('click', () => { window.location.reload(); });
 $('#export-record').addEventListener('click', () => {
   let url, link;

@@ -1,0 +1,59 @@
+{
+  "verdict": "accepted after the author corrected both independent findings",
+  "reviewed_commit": "562c3a15a4eeeb4726f1ac3916987e267cb6cdc3",
+  "reviewed_tree": "bd8d606350ec7c9d4c0889dcf6efeaf89e0562b9",
+  "negative_control_commit": "a75f85e703f555ef6ad8a45e55f0cae05a394541",
+  "native_tests": {
+    "negative_control": {
+      "passed": 3,
+      "failed": 1,
+      "failure": "sparse checkpoint array incorrectly validates"
+    },
+    "candidate": {
+      "passed": 4,
+      "failed": 0
+    },
+    "ledger_composition": {
+      "passed": 4,
+      "failed": 0
+    },
+    "reachable_checkpoint_pairs": 169,
+    "legal_transitions": 312,
+    "maximum_checkpoints_received": 12,
+    "bigint_decimal_cases": 2847
+  },
+  "browser_tests": {
+    "negative_control": {
+      "passed": 2,
+      "failed": 2,
+      "failure": "accepted high-value cents display incorrectly in budget,cap,milestone,captured"
+    },
+    "candidate": {
+      "passed": 4,
+      "failed": 0
+    },
+    "ledger_composition": {
+      "passed": 4,
+      "failed": 0
+    }
+  },
+  "source_sha256": {
+    "scope.html": "462ff6bf987d27ac71bb9cd4c2c8a987f29159dea24c8b5fdd47e5cc532abf0b",
+    "scope-workspace.css": "ce89b3cc94e636388a63c63326ca1e030473c08bac1a6265eb24974083ff1420",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace.mjs": "8c2506cf4ecca18b8b40c979e7aa26a8274e93571f073c732118becaea12a3d7",
+    "src/ledger.mjs": "9a6953b0b00810a50665ef6fab2780b1de59786764fdaba4c0a273ac360717f8"
+  },
+  "review_script_sha256": {
+    "review-browser.mjs": "068f5aac86ac60cece453a91ebb82eba341a2f91915679a753adfcea2eb296e9",
+    "review-invariants.mjs": "c0aa9fbb272d872092906e0ea8e92cf5ceefcb15071688dab064903b21b982cc"
+  },
+  "ledger_composition_sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+  "scope": "Independent project-native JavaScript and Chromium receiving; no production source edits by reviewer, external service writes, live payment calls or deployment.",
+  "browser_network": {
+    "successful_external_requests": 0,
+    "blocked_google_fonts_requests_per_run": 4,
+    "other_external_requests": 0,
+    "page_errors": 0
+  }
+}

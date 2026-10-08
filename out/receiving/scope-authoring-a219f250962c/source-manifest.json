@@ -1,0 +1,105 @@
+{
+  "schema": "scopesignal.authoring-publication-receiving.v1",
+  "issue": "https://github.com/Jacob-Met/scopesignal/issues/9",
+  "parent_commit": "31d683e35e4a70065a514cc459eb83d8ffc573ca",
+  "parent_tree": "79eed5d03b80d428b0c9163ccc6017a274f38650",
+  "source_tree_before_new_receipts": "c8afde1406a9760e65f5665a7e5b61091b0127e9",
+  "reviewed_local_source_commit": "562c3a15a4eeeb4726f1ac3916987e267cb6cdc3",
+  "reviewed_local_source_tree": "bd8d606350ec7c9d4c0889dcf6efeaf89e0562b9",
+  "source_files": {
+    "README.md": {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "279cb635229df866bc9a81b10b1b351ba138a5e7",
+      "sha256": "89ea22aef3e6c5b505e84696bc58346ee1570a647a0c92cbb0594f90eac19d6f",
+      "bytes": 8753
+    },
+    "app.mjs": {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d32f61daee4e65403dc3e9420d833d9dd963cff4",
+      "sha256": "dc8f1e777454eae392e9c693d8cedac11a8839c23b8c423eb7bb2d34852538bf",
+      "bytes": 4641
+    },
+    "index.html": {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38931b3768a3ad619a059b189d96ad091b4f0fde",
+      "sha256": "e1111ad42f478605fdc3d7f483afb905d5d0c6d3d9d58a6dc937fccd475d253a",
+      "bytes": 8898
+    },
+    "scope.html": {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c8e40d9bb37a666af5439b8ef62053b2ca339fa",
+      "sha256": "462ff6bf987d27ac71bb9cd4c2c8a987f29159dea24c8b5fdd47e5cc532abf0b",
+      "bytes": 5970
+    },
+    "scope-workspace.css": {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ea60053690985776e7af70f86f5cc878fe69aae",
+      "sha256": "ce89b3cc94e636388a63c63326ca1e030473c08bac1a6265eb24974083ff1420",
+      "bytes": 4138
+    },
+    "src/scope-plan.mjs": {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "bytes": 6794
+    },
+    "src/scope-workspace.mjs": {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "722d7c800c70d243f320ca18acc69bf5c094e2fe",
+      "sha256": "8c2506cf4ecca18b8b40c979e7aa26a8274e93571f073c732118becaea12a3d7",
+      "bytes": 12530
+    },
+    "tests/scope-plan.test.mjs": {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dc7bc945f0e0728a79a26363eb276852da8334b",
+      "sha256": "f751de2db9141bf1f446a3071bef20081dbf2bbb4ec3b3ccf84c9e400c18b685",
+      "bytes": 10569
+    },
+    "scripts/check-scope-workspace.mjs": {
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc8bdec72134ef5818aa28a33b65686c3f4536eb",
+      "sha256": "d2537d90f3ec7534a468fb693a7e77455f3942105acbc8980d98646bed20e028",
+      "bytes": 15211
+    }
+  },
+  "base_nonchanged_leaves_verified": 22,
+  "base_receipts": "All original tree leaves outside these nine source changes are retained by the native Git base-tree operation, including earlier receiving.",
+  "receiving": {
+    "frozen_author": {
+      "native_pass": 29,
+      "chromium_groups_pass": 23
+    },
+    "independent": {
+      "native_groups_pass": 4,
+      "chromium_groups_pass": 4,
+      "paired_histories": 169,
+      "legal_transitions": 312,
+      "bigint_cases": 2847
+    },
+    "ledger_8_composition": {
+      "native_pass": 44,
+      "author_browser_groups_pass": 23,
+      "independent_native_groups_pass": 4,
+      "independent_browser_groups_pass": 4,
+      "ledger_sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    },
+    "published_parent_composition": {
+      "native_pass": 40,
+      "timeline_browser_groups_pass": 20,
+      "entry_export_browser_groups_pass": 5,
+      "actual_downloads": 4,
+      "download_bytes_preserved_across_timeline": true
+    }
+  },
+  "runtime_claim": "No public deployment or live provider/payment receiving is claimed by this source publication.",
+  "ci": "Existing pages.yml runs on paypal-ai push/manual dispatch; no PR trigger or workflow dispatch is added."
+}

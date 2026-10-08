@@ -1,0 +1,42 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> scopesignal@0.1.0 test
+> node --test
+
+✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (9.425372ms)
+✔ order and capture require prior explicit human approval and order (1.297713ms)
+✔ lost response cannot be blindly captured again; reconcile is one-time (0.993475ms)
+✔ same webhook event ID is idempotent and cannot double count (0.686603ms)
+✔ reducer never counts duplicate webhook in fixture stream (0.739653ms)
+✔ role previews are explicit local rules and never claim AI output (38.12079ms)
+✔ Workers AI adapter fails closed without binding and has no paid fallback (0.529327ms)
+✔ schema validation rejects malformed model output (0.35243ms)
+✔ every shipped replay prefix presents its current reduced capture state (1.553167ms)
+✔ ordinary webhook capture does not invent a reconciliation (0.258158ms)
+✔ missing and unrecognized states do not become captured or safe-to-retry labels (14.33596ms)
+✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (2.298639ms)
+✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (0.369045ms)
+✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (0.329686ms)
+✔ pending and never-requested captures remain distinct from resolved captures (0.240682ms)
+✔ the example becomes a detached editable draft, with no inherited approvals (2.576507ms)
+✔ an authored brief and checkpoints produce a bounded ledger seed and explicit unallocated cap (0.420372ms)
+✔ incomplete, malformed and over-cap drafts cannot enter review (0.91745ms)
+✔ field errors identify the actual editable checkpoint and budget (0.15916ms)
+✔ USD authoring rejects unsupported notation and avoids silently rounding sub-cent entries (0.168043ms)
+✔ generated identities remain distinct when titles match or resemble object keys (0.701555ms)
+✔ every accepted safe cent amount is displayed without floating-dollar rounding (0.572822ms)
+✔ sparse or absent checkpoint rows are refused as incomplete drafts (0.297067ms)
+✔ approval uses the explicit reviewed evidence and refuses empty acceptance without any event (0.620523ms)
+✔ plan, approval evidence and prior events cannot be changed through caller-owned objects (0.352811ms)
+✔ review controls advance one legal event at a time and do not repeat pending requests (2.07366ms)
+✔ the authored lost-response path stays unknown through duplicate receipt and reconciles exactly once (0.786012ms)
+✔ independent checkpoints keep their amounts and receipt identities across mixed outcomes (1.188899ms)
+✔ an unknown outcome can use the explicit simulated lookup without manufacturing a webhook (0.627695ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 352.99205

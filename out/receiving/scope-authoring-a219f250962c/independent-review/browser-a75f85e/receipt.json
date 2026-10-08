@@ -1,0 +1,48 @@
+{
+  "source": "/workspace/scratch/a219f250962c/estate-product/scopesignal-review/source-a75f85e",
+  "at": "2026-10-08T08:56:11.278Z",
+  "checks": [
+    {
+      "name": "Entered cents remain exact in review and capture: 90071992547409.91",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   '$90,071,992,547,409.90',\n+   '$90,071,992,547,409.90',\n+   '$90,071,992,547,409.90'\n-   '$90,071,992,547,409.91',\n-   '$90,071,992,547,409.91',\n-   '$90,071,992,547,409.91'\n  ]\n"
+    },
+    {
+      "name": "Entered cents remain exact in review and capture: 70368744177664.01",
+      "pass": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n+   '$70,368,744,177,664.02',\n+   '$70,368,744,177,664.02',\n+   '$70,368,744,177,664.02'\n-   '$70,368,744,177,664.01',\n-   '$70,368,744,177,664.01',\n-   '$70,368,744,177,664.01'\n  ]\n"
+    },
+    {
+      "name": "Entered cents remain exact in review and capture: 0.01",
+      "pass": true,
+      "result": {
+        "input": "0.01",
+        "expected": "$0.01",
+        "displayedCap": "$0.01",
+        "displayedMilestone": "$0.01",
+        "captured": "$0.01",
+        "budget": "$0.01 allocated · $0.00 unallocated within the cap"
+      }
+    },
+    {
+      "name": "The first approval locks the scope while retaining other evidence edits after a refused approval",
+      "pass": true
+    }
+  ],
+  "pageErrors": [],
+  "externalRequests": [
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+  ],
+  "sourceSha256": {
+    "scope.html": "462ff6bf987d27ac71bb9cd4c2c8a987f29159dea24c8b5fdd47e5cc532abf0b",
+    "styles.css": "59172817201e8e1ae3f5df6ea03e109a4351ad9686199917b48af99a429a608e",
+    "scope-workspace.css": "007ee3f8b4f6a56984256dc1a3ced5ed6227e03aad51f83e6079e94aa0243df8",
+    "src/scope-workspace.mjs": "3a9ad88774f2169712ed817e19b0ecb10d1b22a55b3ef12acd68e30753e6c279",
+    "src/scope-plan.mjs": "c833be3959f68ba327f2ec1d690e7d9de595905e89292b7a682ac9a18e6b883c",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/ledger.mjs": "9a6953b0b00810a50665ef6fab2780b1de59786764fdaba4c0a273ac360717f8"
+  }
+}

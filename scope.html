@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e8">
+  <meta name="description" content="Compose a fictional creative scope, review its acceptance checkpoints, and explore a simulated milestone lifecycle.">
+  <title>Build a fixture scope — ScopeSignal</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./scope-workspace.css">
+  <script type="module" src="./src/scope-workspace.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar"><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">S</span> ScopeSignal</a><span class="top-status">Fixture mode · no live payments</span></header>
+  <main id="main" class="workspace scope-workspace">
+    <a class="scope-back" href="./index.html#workspace">← Back to the example fixture</a>
+    <div class="section-head"><div><p class="eyebrow">BRIEF → CHECKPOINTS → HUMAN REVIEW</p><h1>Shape the work.<br><em>Agree on the proof.</em></h1></div><span class="fixture-badge">FICTIONAL PROJECT ONLY</span></div>
+    <p class="lede">Build a scope, agree on what each milestone proves, and explore its payment lifecycle one decision at a time.</p>
+    <p class="scope-session-note">This page keeps an in-memory fixture only. Refreshing or leaving clears it. Use fictional details; no data is sent or saved, and no payment or AI service is called.</p>
+    <ol class="scope-steps" aria-label="Scope workflow"><li id="draft-step" aria-current="step">1 · Draft the scope</li><li id="review-step">2 · Review the evidence</li><li id="simulate-step">3 · Simulate milestones</li></ol>
+
+    <form id="scope-form" novalidate>
+      <div id="scope-errors" class="scope-errors" role="alert" tabindex="-1" hidden></div>
+      <section class="panel" aria-labelledby="scope-details-title">
+        <div class="panel-heading"><h2 id="scope-details-title">The creative brief</h2><span>Editable draft</span></div>
+        <div class="scope-fields">
+          <label for="scope-label">Project name<input id="scope-label" name="label" maxlength="120" required></label>
+          <label for="scope-cap">Project cap (USD)<input id="scope-cap" name="cap" inputmode="decimal" autocomplete="off" aria-describedby="cap-help" required><small id="cap-help">Checkpoint amounts may total less than the cap.</small></label>
+          <label class="scope-wide" for="scope-brief">Creative brief<textarea id="scope-brief" name="brief" rows="3" maxlength="8000" required></textarea></label>
+        </div>
+      </section>
+      <section class="panel" aria-labelledby="draft-checkpoints-title">
+        <div class="panel-heading"><h2 id="draft-checkpoints-title">Define the checkpoints</h2><span>1–12 milestones</span></div>
+        <p class="scope-help">Give each milestone a clear deliverable, an amount, and evidence a person can review. Add, remove, and revise checkpoints before approval.</p>
+        <div id="scope-draft-list"></div>
+        <button id="scope-add" class="button button-outline" type="button">+ Add checkpoint</button>
+      </section>
+      <div class="scope-draft-footer">
+        <p id="scope-budget" class="scope-budget" role="status"></p>
+        <button class="button button-dark" type="submit">Review this scope <span aria-hidden="true">→</span></button>
+      </div>
+      <p class="microcopy">Reviewing the plan does not approve a checkpoint. Each acceptance below needs its own explicit human decision.</p>
+    </form>
+
+    <section id="scope-review" hidden aria-labelledby="review-title">
+      <div class="section-head"><div><p class="eyebrow">YOUR FIXTURE SCOPE</p><h2 id="review-title" tabindex="-1"></h2></div><button id="scope-edit" class="button button-outline" type="button">Edit draft</button></div>
+      <p id="review-brief" class="brief"></p>
+      <p id="scope-lock-note" class="scope-help">You can edit this plan until the first checkpoint is approved.</p>
+      <div class="summary-grid" aria-label="Authored fixture totals">
+        <article><span>PROJECT CAP</span><strong id="scope-total"></strong></article>
+        <article><span>APPROVED</span><strong id="scope-approved"></strong></article>
+        <article><span>SIMULATED CAPTURED</span><strong id="scope-captured"></strong></article>
+        <article><span>ALLOCATED REMAINING</span><strong id="scope-remaining"></strong></article>
+      </div>
+      <p id="scope-unallocated" class="scope-help"></p>
+      <p id="scope-action-status" role="status" aria-live="polite"></p>
+      <div id="scope-review-list"></div>
+      <section class="ledger" aria-labelledby="scope-ledger-title">
+        <div class="panel-heading"><h3 id="scope-ledger-title">Your fixture event ledger</h3><span id="scope-event-count">0 events</span></div>
+        <p class="scope-help">These are simulated events for this scope, not payment evidence. Lost responses remain unknown until you simulate a transaction lookup.</p>
+        <div class="table-wrap"><table><caption class="sr-only">Events recorded by explicit decisions in the authored fixture</caption><thead><tr><th scope="col">#</th><th scope="col">CHECKPOINT</th><th scope="col">EVENT</th><th scope="col">RESULT</th></tr></thead><tbody id="scope-event-body"></tbody></table></div>
+      </section>
+      <p class="scope-help">To try a different scope after approval, <a href="./scope.html">start a fresh fixture</a>. The current in-memory plan and events will be cleared.</p>
+    </section>
+    <noscript><p class="scope-errors">This interactive fixture needs JavaScript. The <a href="./index.html">example page</a> describes the payment model.</p></noscript>
+  </main>
+  <footer><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">S</span> ScopeSignal</a><span>Fixture mode · no live money · no customer data</span></footer>
+</body>
+</html>

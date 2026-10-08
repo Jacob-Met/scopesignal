@@ -1,0 +1,86 @@
+{
+  "schema": "scopesignal.current-composition-receiving.v1",
+  "at": "2026-10-08T09:19:03.466Z",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.0",
+  "source": "/dev/shm/scopesignal-current-timeline-a219f250962c",
+  "sourceBase": "31d683e35e4a70065a514cc459eb83d8ffc573ca",
+  "origin": "http://127.0.0.1:45059",
+  "servedSha256": {
+    "app.mjs": "dc8f1e777454eae392e9c693d8cedac11a8839c23b8c423eb7bb2d34852538bf",
+    "fixture-timeline.css": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+    "index.html": "e1111ad42f478605fdc3d7f483afb905d5d0c6d3d9d58a6dc937fccd475d253a",
+    "scope-workspace.css": "ce89b3cc94e636388a63c63326ca1e030473c08bac1a6265eb24974083ff1420",
+    "scope.html": "462ff6bf987d27ac71bb9cd4c2c8a987f29159dea24c8b5fdd47e5cc532abf0b",
+    "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+    "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+    "src/fixture-timeline-view.mjs": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+    "src/fixture-timeline.mjs": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+    "src/ledger.mjs": "9a6953b0b00810a50665ef6fab2780b1de59786764fdaba4c0a273ac360717f8",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace.mjs": "8c2506cf4ecca18b8b40c979e7aa26a8274e93571f073c732118becaea12a3d7",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+  },
+  "checks": [
+    {
+      "name": "desktop: timeline inspection preserves current accepted evidence, pending draft, and exact downloaded record",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: current combined page opens the accepted authoring module with no inherited approvals or events",
+      "result": "pass"
+    },
+    {
+      "name": "phone: timeline inspection preserves current accepted evidence, pending draft, and exact downloaded record",
+      "result": "pass"
+    },
+    {
+      "name": "phone: current combined page opens the accepted authoring module with no inherited approvals or events",
+      "result": "pass"
+    },
+    {
+      "name": "no page errors or unexpected external request attempts",
+      "result": "pass"
+    }
+  ],
+  "failures": [],
+  "downloads": [
+    {
+      "viewport": "desktop",
+      "stage": "before-timeline",
+      "bytes": 3650,
+      "sha256": "e64dec78df90369eb3f1b37b7af033396f6ca8874693cc42bb9ef2f8c1fd0492",
+      "events": 8
+    },
+    {
+      "viewport": "desktop",
+      "stage": "after-timeline",
+      "bytes": 3650,
+      "sha256": "e64dec78df90369eb3f1b37b7af033396f6ca8874693cc42bb9ef2f8c1fd0492",
+      "events": 8
+    },
+    {
+      "viewport": "phone",
+      "stage": "before-timeline",
+      "bytes": 3650,
+      "sha256": "e64dec78df90369eb3f1b37b7af033396f6ca8874693cc42bb9ef2f8c1fd0492",
+      "events": 8
+    },
+    {
+      "viewport": "phone",
+      "stage": "after-timeline",
+      "bytes": 3650,
+      "sha256": "e64dec78df90369eb3f1b37b7af033396f6ca8874693cc42bb9ef2f8c1fd0492",
+      "events": 8
+    }
+  ],
+  "pageErrors": [],
+  "externalRequests": [
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+  ],
+  "passed": true
+}

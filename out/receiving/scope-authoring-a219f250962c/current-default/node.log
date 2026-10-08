@@ -1,0 +1,52 @@
+
+> scopesignal@0.1.0 test
+> node --test
+
+✔ download has a fixed safe filename and explicit fixture schema and provenance (1.919957ms)
+✔ export records the actual replay events and reduced counted outcome (1.186945ms)
+✔ accepted multiline and literal evidence comes from the exact approval event (0.447062ms)
+✔ unapproved checkpoints have no approval evidence and no authored draft field (0.441104ms)
+✔ every capture prefix exports the current outcome without advancing or inventing events (0.443797ms)
+✔ repeated exports are deterministic and detached from the live in-memory ledger (0.315524ms)
+✔ an empty fixture exports no approval and never represents a successful payment (0.208333ms)
+✔ the timeline exposes every real fixture prefix and counts only after reconciliation (3.861006ms)
+✔ backward, repeated and out-of-order inspection never changes the fixture or another ledger (0.796978ms)
+✔ returned event and state objects cannot rewrite later timeline inspection (0.888346ms)
+✔ invalid navigation refuses the index without losing valid timeline state (0.465731ms)
+✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (2.6332ms)
+✔ order and capture require prior explicit human approval and order (0.457378ms)
+✔ lost response cannot be blindly captured again; reconcile is one-time (0.195614ms)
+✔ same webhook event ID is idempotent and cannot double count (0.13973ms)
+✔ reducer never counts duplicate webhook in fixture stream (0.148353ms)
+✔ role previews are explicit local rules and never claim AI output (13.181292ms)
+✔ Workers AI adapter fails closed without binding and has no paid fallback (4.384604ms)
+✔ schema validation rejects malformed model output (0.344267ms)
+✔ every shipped replay prefix presents its current reduced capture state (3.634616ms)
+✔ ordinary webhook capture does not invent a reconciliation (0.395865ms)
+✔ missing and unrecognized states do not become captured or safe-to-retry labels (0.153421ms)
+✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (2.098666ms)
+✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (0.37933ms)
+✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (0.270177ms)
+✔ pending and never-requested captures remain distinct from resolved captures (0.178628ms)
+✔ the example becomes a detached editable draft, with no inherited approvals (3.753975ms)
+✔ an authored brief and checkpoints produce a bounded ledger seed and explicit unallocated cap (0.714835ms)
+✔ incomplete, malformed and over-cap drafts cannot enter review (1.367747ms)
+✔ field errors identify the actual editable checkpoint and budget (0.654655ms)
+✔ USD authoring rejects unsupported notation and avoids silently rounding sub-cent entries (0.549907ms)
+✔ generated identities remain distinct when titles match or resemble object keys (0.99082ms)
+✔ every accepted safe cent amount is displayed without floating-dollar rounding (0.745271ms)
+✔ sparse or absent checkpoint rows are refused as incomplete drafts (0.41892ms)
+✔ approval uses the explicit reviewed evidence and refuses empty acceptance without any event (0.562586ms)
+✔ plan, approval evidence and prior events cannot be changed through caller-owned objects (0.520323ms)
+✔ review controls advance one legal event at a time and do not repeat pending requests (8.879383ms)
+✔ the authored lost-response path stays unknown through duplicate receipt and reconciles exactly once (1.869311ms)
+✔ independent checkpoints keep their amounts and receipt identities across mixed outcomes (0.961566ms)
+✔ an unknown outcome can use the explicit simulated lookup without manufacturing a webhook (0.549927ms)
+ℹ tests 40
+ℹ suites 0
+ℹ pass 40
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 290.219763

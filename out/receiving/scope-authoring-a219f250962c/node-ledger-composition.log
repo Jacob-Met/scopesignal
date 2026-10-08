@@ -1,0 +1,57 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> scopesignal@0.1.0 test
+> node --test
+
+✔ an unresolved pending capture cannot be requested a second time (11.813556ms)
+✔ a delayed lost response cannot undo a confirmed capture or be recorded twice (4.813343ms)
+✔ a webhook event identity cannot be reused for a different capture or checkpoint (4.165578ms)
+✔ a capture identity cannot count against two different checkpoints (2.197416ms)
+✔ an unknown receipt reserves its capture identity before any amount is counted (2.852813ms)
+✔ reconciliation and later receipts share the same capture binding (4.01406ms)
+✔ one checkpoint cannot acquire a second capture through a new webhook event ID (0.662497ms)
+✔ webhook and reconciliation identities must be nonempty canonical strings (26.200203ms)
+✔ exact duplicate webhook delivery remains auditable in every supported capture state (4.323716ms)
+✔ the public append path and reducer refuse lifecycle violations too (2.530398ms)
+✔ replay derives receipt identity from history instead of trusting a duplicate flag (0.682898ms)
+✔ published events cannot be edited or removed and append owns sequence metadata (0.576968ms)
+✔ a ledger keeps its creation seed stable across caller mutation (0.494774ms)
+✔ inherited object properties are not checkpoint identities (164.689595ms)
+✔ three independent checkpoint capture paths compose without double counting (14.300108ms)
+✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (12.590876ms)
+✔ order and capture require prior explicit human approval and order (3.312544ms)
+✔ lost response cannot be blindly captured again; reconcile is one-time (5.614878ms)
+✔ same webhook event ID is idempotent and cannot double count (5.19089ms)
+✔ reducer never counts duplicate webhook in fixture stream (1.848912ms)
+✔ role previews are explicit local rules and never claim AI output (47.669858ms)
+✔ Workers AI adapter fails closed without binding and has no paid fallback (0.544859ms)
+✔ schema validation rejects malformed model output (0.317858ms)
+✔ every shipped replay prefix presents its current reduced capture state (9.436669ms)
+✔ ordinary webhook capture does not invent a reconciliation (0.75096ms)
+✔ missing and unrecognized states do not become captured or safe-to-retry labels (0.201193ms)
+✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (7.466465ms)
+✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (0.980535ms)
+✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (2.502205ms)
+✔ pending and never-requested captures remain distinct from resolved captures (2.138749ms)
+✔ the example becomes a detached editable draft, with no inherited approvals (3.237972ms)
+✔ an authored brief and checkpoints produce a bounded ledger seed and explicit unallocated cap (0.564359ms)
+✔ incomplete, malformed and over-cap drafts cannot enter review (1.718867ms)
+✔ field errors identify the actual editable checkpoint and budget (0.280682ms)
+✔ USD authoring rejects unsupported notation and avoids silently rounding sub-cent entries (0.225029ms)
+✔ generated identities remain distinct when titles match or resemble object keys (2.577608ms)
+✔ every accepted safe cent amount is displayed without floating-dollar rounding (0.616147ms)
+✔ sparse or absent checkpoint rows are refused as incomplete drafts (0.334393ms)
+✔ approval uses the explicit reviewed evidence and refuses empty acceptance without any event (0.961186ms)
+✔ plan, approval evidence and prior events cannot be changed through caller-owned objects (2.047051ms)
+✔ review controls advance one legal event at a time and do not repeat pending requests (2.720814ms)
+✔ the authored lost-response path stays unknown through duplicate receipt and reconciles exactly once (2.65182ms)
+✔ independent checkpoints keep their amounts and receipt identities across mixed outcomes (3.410232ms)
+✔ an unknown outcome can use the explicit simulated lookup without manufacturing a webhook (0.992143ms)
+ℹ tests 44
+ℹ suites 0
+ℹ pass 44
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 432.833461
