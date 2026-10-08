@@ -1,0 +1,104 @@
+{
+  "schema": "scopesignal.csv-independent-publication.v1",
+  "at": "2026-10-08T18:52:38.061405+00:00",
+  "candidate_tree": "3146dd1d196d0d0545bcdd2d3db3244c0b0bf7d5",
+  "scope_sha256": "e07e42641cf16fadea93460fe4ae6d4fe527393031e96207d5d90e2a10c987ae",
+  "native_groups_passed": 5,
+  "browser_groups_passed": 3,
+  "runtime_boundary": "Node22.22.1/Chromium153 supplemental; required >=24 qualification separate",
+  "source_archive_files": 11,
+  "raw_archive_files": 35,
+  "files": [
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/README.md",
+      "bytes": 7600,
+      "mode": "100644",
+      "sha256": "4edb1ece8b1e3e99c6915c24633a6abd56db962a965e5e79f4495ae6e9c7e14d",
+      "git_blob": "c106457b435b32cdbf458836f8e64d4e37d53b87"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/baseline-native-fixtures-v1.json",
+      "bytes": 107481,
+      "mode": "100644",
+      "sha256": "c4add8748106f82f60d9aa00ee57241258e1324c4c5c9cd1c6fb6bf88ec4d550",
+      "git_blob": "1b8f690878eeaac5969f8d20df0f3660fcf0cc1c"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/browser-independent-v1-diagnostic.mjs",
+      "bytes": 17388,
+      "mode": "100644",
+      "sha256": "653a269faaf2bdf011785e1a03a791c87ed7c20e686fd96f23de424f2c251a38",
+      "git_blob": "7fff568a59f2ebff300fd4c98886826dbd763f7e"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/browser-independent-v1.mjs",
+      "bytes": 16121,
+      "mode": "100644",
+      "sha256": "07b7d5cb24aeee912ea7939a9662dc31b2f33dd6e80132c4a5458d0b304433b0",
+      "git_blob": "239b3ca7683989653c5ed4fd3aff3de5c86c1b8e"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/browser-independent-v2.mjs",
+      "bytes": 18305,
+      "mode": "100644",
+      "sha256": "4e6c18acd4b2f2d0668d64520a9528c46a8705919d806788f9c20d69c63def71",
+      "git_blob": "f883b88b81dbf9ddf5d3e0f10d6c9b98433e0072"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/final-custody-and-receiver-proof.json",
+      "bytes": 4361,
+      "mode": "100644",
+      "sha256": "b61c470f6e9853f4113c60f728b533893a6744460d37c30d8487ce2a613c2193",
+      "git_blob": "dd0e20735eabbcfecd98b8e8394288388f35dfae"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/make-baseline-fixtures-v1.mjs",
+      "bytes": 5343,
+      "mode": "100644",
+      "sha256": "9cb5bd6e55b288a18d21261e20b746c387e486bbfda35f93da0f82eeca3dded2",
+      "git_blob": "e3384645b4fd978187f8a05ee859dc5b369c3e67"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/native-browser-diagnostic-v1.mjs",
+      "bytes": 745,
+      "mode": "100644",
+      "sha256": "9425291abf74dbb45d285f4e10e4b62c22d9e38d0b226f044f3adf1fbb2db7c5",
+      "git_blob": "be1edf9e610c0cdee30fd5033597908b4defb164"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/native-independent-v1.mjs",
+      "bytes": 7223,
+      "mode": "100644",
+      "sha256": "75e61cc82e958d8025455b11b1521e04d8b34a7702af00a8bc635508753e4279",
+      "git_blob": "b034a9c290977379743a35086d5875c50cc868aa"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/raw-receipts-archive.json",
+      "bytes": 360477,
+      "mode": "100644",
+      "sha256": "a0149f07f70fef45f652829e6c63a25d983d5191b725a03b5dc4c410adf194cd",
+      "git_blob": "e350ae61505c2f3939708ddba73d539a03b529c8"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/scope-v1.json",
+      "bytes": 5120,
+      "mode": "100644",
+      "sha256": "e07e42641cf16fadea93460fe4ae6d4fe527393031e96207d5d90e2a10c987ae",
+      "git_blob": "10776c0a3dc575a381495fb76c7095cbe084326e"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/source-contract-archive.json",
+      "bytes": 406527,
+      "mode": "100644",
+      "sha256": "bb2a68b0464c3c4f9842e81031255b3b257c86f7c65e127a2f8cbd184025ba0a",
+      "git_blob": "88cb7807dc1ff7b52d02bf91c5bb0700539c3460"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/unpack-review.py",
+      "bytes": 1595,
+      "mode": "100644",
+      "sha256": "abf986157d96f533a8ffa6c7b8ccd9dbc654aa84d1787e7712eb8386c73b835c",
+      "git_blob": "0d244826045ad1302f2b5645466e2b3f53732ba0"
+    }
+  ]
+}

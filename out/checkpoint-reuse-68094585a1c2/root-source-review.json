@@ -1,0 +1,147 @@
+{
+  "format": "scopesignal-root-source-review/1",
+  "actor": "chatgpt:68094585a1c2 / root",
+  "reviewed_at": "2026-10-08 20:36:01 UTC",
+  "attribution": {
+    "original_author": "estate-68094585a1c2 / receiving_review",
+    "source_continuation": "scope_receiving",
+    "independent_receiver": "offhand_delivery",
+    "integration": "root"
+  },
+  "source_head": "65209a72c4593358848a6921847a478ce6fba8c3",
+  "source_tree": "57e70cff603e2e03a590daf9f346c565df4dcead",
+  "original_base": "cdffd2476cae0c7332dff64677ae814b7f594947",
+  "current_base": "226d6d90cb949ce3d6edf97b99153831bd95e8fb",
+  "current_base_tree": "19bc2c9589f78fdd82c8345475be2d39f46b8fb0",
+  "decision": "Source accepted with the explicit browser observation limit below. Current-composition hosted qualification and integration remain pending.",
+  "independent_native": {
+    "contract_sha256": "67316e9e5c4e45ed291f92ca49a2ea95105aa7489ad6f137e345434b0e65de39",
+    "receipt_sha256": "efa5ddd8611d3971c4564160f455b2d38f62ce28d56f62c34502e9b3ad0421bb",
+    "groups": 5,
+    "runtime": "Node22.22.1; supplemental below Node24 floor",
+    "source_order": [
+      0,
+      2,
+      4
+    ],
+    "requested_selection": [
+      4,
+      2,
+      0
+    ],
+    "exact_unfinished_json_bytes": 1064,
+    "atomic_refusals": 20,
+    "codec_admission_cases": 6,
+    "exact_capacity": 12,
+    "fresh_review": {
+      "approvals": 0,
+      "events": 0,
+      "captured": 0,
+      "pending_notes": 0
+    },
+    "unchanged_inputs": 44
+  },
+  "independent_capsule": {
+    "bytes": 249369,
+    "members": 106,
+    "sha256": "ccf956ce569bdde903d440a2ded0216c664080edb3035a5f9996abfa61bb3dc8",
+    "receipt_sha256": "108000dada53218e796a2519e402ddd0ccfb66379e8c84bed17a1fc75c4b4f17",
+    "inverse_receipt_sha256": "0c5e2dbcdd366a7ec2981b6010d99a720e65c6bca9209938b2ed5b1d5cc5024b"
+  },
+  "root_review": {
+    "read": "Complete two new modules, shared controller and source diff, focused native tests, preserved independent receipt and lifecycle freeze, actual author desktop and390px captures.",
+    "data": "Existing strict codec admits files. Only original title/amount/evidence strings are projected. A complete selection/capacity check precedes distinct editable copies in source order; project fields and review/payment state are not copied.",
+    "lifecycle_inference": "Both current Remove and Undo handlers call workspaceChanged on success. This calls checkpointImport.retire, advancing generation, clearing pending and disabling Apply. Identical restored draft values cannot restore the old generation. A stale apply sees no pending choice. Successful append clears the removal recovery object and disables Undo before workspaceChanged and mutation. These are source deductions, not newly observed browser behavior.",
+    "rendering": "Literal textContent/pre-wrap, source-index checkboxes, strict UTF-8 and byte bounds, complete workspace/generation checks, and the previously corrected refused-chooser input clear are retained.",
+    "current_composition": [
+      {
+        "path": "README.md",
+        "original_base_blob": "32b410c69f5803521a389c5d85a986ab00443d25",
+        "original_head_blob": "c628ea8df84d29ddf217be691d3b3db464b95380",
+        "current_before_blob": "976cb2b52ed5d3fa9917c6c8e2b58dd0acd6472f",
+        "insertions": 1,
+        "old_forward_exact": true,
+        "current_inverse_exact": true
+      },
+      {
+        "path": "scope.html",
+        "original_base_blob": "e21602dc0e6c4f9017a723dfb9ce193bc0da6c68",
+        "original_head_blob": "caecbe1628df807d72a2f565a4ddf7f268957671",
+        "current_before_blob": "cce5cf1081fe009831be11745952df5841e8368b",
+        "insertions": 2,
+        "old_forward_exact": true,
+        "current_inverse_exact": true
+      }
+    ],
+    "preserved_hooks": [
+      "history clear at renderDraftRows entry",
+      "history update after renderReview",
+      "removal/Undo module and handlers",
+      "whole-workspace replacement and existing file custody",
+      "current separate-page CSV converter link",
+      "codec, ledger, provider and workflow source"
+    ],
+    "current_core_delta": "PR50 adds only two64-character monetary-string checks to validateScopeDraft; its MAX_CHECKPOINTS and remaining plan behavior are unchanged. Preserve that authoritative current fix. Saved-source codec already bounds amount strings; selected-definition projection/capacity does not depend on monetary validation. New supported CI must qualify the complete current composition, including the new monetary and CSV tests.",
+    "source_correction_requested": false,
+    "new_native_or_browser_run": false,
+    "source_paths": [
+      "README.md",
+      "scope.html",
+      "scope-checkpoint-import.css",
+      "scripts/check-scope-checkpoint-import.mjs",
+      "src/scope-checkpoint-import-ui.mjs",
+      "src/scope-checkpoint-import.mjs",
+      "src/scope-workspace.mjs",
+      "tests/scope-checkpoint-import.test.mjs"
+    ]
+  },
+  "browser": {
+    "author_groups": "Seven earlier groups plus five on corrected final UI; original134-member author capsule SHA359fbefb48edddd56e9db2bce89c3821529d519b82fc2ad1ba569cb721efeac2 unchanged.",
+    "root_viewed": [
+      {
+        "path": "evidence/browser-candidate-v3/reviewed-definitions-preview.png",
+        "sha256": "0c22569eb777b06c38930000de21f65e62b3d649a573dd326b7e84eb08398b93"
+      },
+      {
+        "path": "evidence/browser-candidate-v6-remaining/phone-keyboard-selection.png",
+        "sha256": "5abca590c706d33e828ae3fa798ed9ea24d5fd2d5065c892f8c09907f60f1cac"
+      }
+    ],
+    "current_undo_witness": "unobserved",
+    "supplement_freeze_sha256": "3eb71046faac777cc01d187bf5c48d6dd539f9720cc790effd80265362ae0b09",
+    "limits": [
+      "Initial owned-profile ENOSPC before browser launch",
+      "V1 whole-open physical click sampled coordinates during existing smooth scroll; no import/Undo step completed",
+      "V2 changed only observer scroll/hit synchronization, then exceeded45seconds starting DevTools; zero page checks and empty stderr"
+    ],
+    "third_attempt": false,
+    "product_defect_established": false,
+    "acceptance_basis": "Substantial independent native controls, successful author controls on unchanged import UI, complete current source inverse proof and explicit lifecycle reasoning support integration after current hosted qualification. The supplemental browser witness remains a documented observation limit."
+  },
+  "previous_supported_gate": {
+    "run": 37834321918,
+    "job": 113507362526,
+    "node": "24.21.0",
+    "npm": "11.19.0",
+    "tests": 190,
+    "pass": 190,
+    "fail": 0,
+    "skip": 0,
+    "checkout": "cf5cd76dcb008e3564b63a45fe20fb4d9cf17e59",
+    "tree": "57e70cff603e2e03a590daf9f346c565df4dcead",
+    "new_gate_required": true
+  },
+  "preservation": {
+    "current_base_leaves": 735,
+    "expected_result_leaves": 748,
+    "contribution_paths": 16,
+    "unowned_current_leaves": 732,
+    "all_modes_and_types_preserved": true
+  },
+  "continuation": "Root transient store/agent state reset before publication; abandoned preparation made no Git write. Recoverable native capsules/Git source stayed intact and prior actors remain credited. An image-path rg discovery exited127 because rg is absent; canonical capsule manifest supplied the two actual viewed paths. No qualification rerun.",
+  "state": {
+    "integrated": false,
+    "deployed": false,
+    "installed": false
+  }
+}
