@@ -1,5 +1,6 @@
 import { MAX_WORKSPACE_BYTES } from './scope-workspace-record.mjs';
 import { formatUSD } from './scope-plan.mjs';
+import { createScopeComparisonDocument, SCOPE_COMPARISON_FILENAME } from './scope-comparison-export.mjs';
 import {
   readComparisonWorkspace, sameDefinitionPairs, pairCheckpoint,
   compareWorkspaces, checkpointFields
@@ -220,7 +221,7 @@ for (const side of ['a', 'b']) {
       const workspace = readComparisonWorkspace(contents);
       if (request !== sides[side].request) return;
       sides[side].pending = false;
-      sides[side].document = { name: file.name, bytes: bytes.byteLength, workspace };
+      sides[side].document = { name: file.name, bytes: bytes.byteLength, workspace, contents };
       resetPairing(); render();
       status(side, 'Opened ' + file.name + '. Pairing now reflects the displayed files.');
       $('#comparison-status').textContent = 'The displayed file ' + side.toUpperCase() + ' was replaced. Review its checkpoint pairing.';
@@ -257,6 +258,24 @@ $('#reset-pairs').addEventListener('click', () => {
   $('#comparison-status').textContent = 'Pairing reset to unique same definitions. Repeated and changed definitions remain unpaired.';
 });
 $('#changes-only').addEventListener('change', render);
+$('#download-comparison').addEventListener('click', () => {
+  let url;
+  try {
+    const contents = createScopeComparisonDocument({
+      left: sides.a.document, right: sides.b.document, pairs
+    });
+    url = URL.createObjectURL(new Blob([contents], { type: 'text/html;charset=utf-8' }));
+    const link = el('a');
+    link.href = url; link.download = SCOPE_COMPARISON_FILENAME;
+    document.body.append(link);
+    try { link.click(); } finally { link.remove(); }
+    $('#comparison-status').textContent = 'Comparison review download prepared from the displayed files and chosen pairs. All fields and event histories are included.';
+  } catch (error) {
+    $('#comparison-status').textContent = 'Could not prepare the comparison review. ' + error.message + ' The displayed files and pairing are unchanged.';
+  } finally {
+    if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+});
 $('#swap').addEventListener('click', () => {
   if (!sides.a.document || !sides.b.document) return;
   for (const side of ['a', 'b']) { sides[side].request += 1; sides[side].pending = false; $('#file-' + side).value = ''; }

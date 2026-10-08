@@ -1,0 +1,55 @@
+{
+  "schema": "scopesignal.comparison-export.receiving.v1",
+  "source": "/home/jacob/scopesignal-comparison-export-0378a7b6",
+  "mode": "candidate",
+  "outcome": "pass",
+  "checks": [
+    {
+      "name": "real native saved files retain unknown A, captured B and chosen pairing",
+      "result": "pass"
+    },
+    {
+      "name": "actual HTML download opens offline with complete correct fields and histories",
+      "result": "pass"
+    },
+    {
+      "name": "manual pairing and unpaired rows survive export and side swap",
+      "result": "pass"
+    },
+    {
+      "name": "changed-only view still exports the complete comparison with explicit wording",
+      "result": "pass"
+    },
+    {
+      "name": "export while another file read is pending binds to displayed files",
+      "result": "pass"
+    },
+    {
+      "name": "HTML refusal and download preparation failure preserve state and permit retry",
+      "result": "pass"
+    },
+    {
+      "name": "keyboard activation, desktop and phone layout, and printable static output",
+      "result": "pass"
+    },
+    {
+      "name": "isolated route has no storage writes, script exceptions or external resource requests",
+      "result": "pass"
+    }
+  ],
+  "browser": "153.0.8010.47",
+  "node": "v22.22.1",
+  "sourceHashes": {
+    "scope-compare.html": "fc10e883961d9c9c8f61f72b00cb4376b986465dad569bb9081d1ba8d4a0421a",
+    "scope-compare.css": "22589796d131cbaa0adb049a0f4bf4c5f1f96f0791f6561221d120d6b418a02b",
+    "src/scope-compare-ui.mjs": "041d36d0254925de033d4596ac86310d8c762ef92b32080e5fa4403debc47c2f",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-comparison-export.mjs": "2fec30a548cdb8f304c52c3c479e06bd8aaad10ee57c53bbbc1ec5b09e272978",
+    "src/scope-compare.mjs": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+  },
+  "pageErrors": [],
+  "externalRequests": [],
+  "receivedAt": "2026-10-08T17:27:03.512Z"
+}

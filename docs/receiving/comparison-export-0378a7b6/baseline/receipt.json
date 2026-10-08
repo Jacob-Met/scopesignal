@@ -1,0 +1,34 @@
+{
+  "schema": "scopesignal.comparison-export.receiving.v1",
+  "source": "/home/jacob/scopesignal-comparison-baseline-0378a7b6",
+  "mode": "original",
+  "outcome": "pass",
+  "checks": [
+    {
+      "name": "real native saved files retain unknown A, captured B and chosen pairing",
+      "result": "pass"
+    },
+    {
+      "name": "original source has no downloadable comparison review",
+      "result": "pass"
+    },
+    {
+      "name": "isolated route has no storage writes, script exceptions or external resource requests",
+      "result": "pass"
+    }
+  ],
+  "browser": "153.0.8010.47",
+  "node": "v22.22.1",
+  "sourceHashes": {
+    "scope-compare.html": "630c6cdf5e9dcb4ac9b9c2e90507563832a8ba8af431ebbd9b7163783c27c5ee",
+    "scope-compare.css": "22589796d131cbaa0adb049a0f4bf4c5f1f96f0791f6561221d120d6b418a02b",
+    "src/scope-compare-ui.mjs": "61d036fe3c4be9bbbaa969031bb90f401878174faf1e98ab67fb9f436af66ee6",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-compare.mjs": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+  },
+  "pageErrors": [],
+  "externalRequests": [],
+  "receivedAt": "2026-10-08T17:24:02.470Z"
+}

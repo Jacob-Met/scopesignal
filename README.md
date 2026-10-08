@@ -173,6 +173,35 @@ receiver makes actual authoring downloads, opens both files through native file
 inputs, checks divergent and invalid files, exercises competing reads and
 keyboard pairing, and records desktop/phone screenshots plus source hashes.
 
+### Download a comparison review
+
+On the comparison page, choose **Download comparison review** to save
+`scopesignal-comparison-review.html`. The standalone file keeps the two displayed
+file labels, the current checkpoint pairing, all paired and unpaired fields, and
+both complete recorded event lists. It includes unchanged fields even when
+**Show changed fields only** is selected on screen.
+
+Open the HTML directly to read it offline, print it, or save a PDF with the
+browser's Print command. The report has no scripts, remote assets or payment
+controls. Keep the separate JSON files to reopen an editable workspace or change
+the comparison. File labels and shared event prefixes do not establish identity,
+chronology, authorship or a real payment.
+
+A file selection still being read does not replace a displayed file in the
+download. Wait for it to open, review the new pairing and download again when
+you want that replacement included. Exporting preserves the comparison, filter,
+chosen pairs and pending reads. If a download cannot be prepared, those remain
+in place for retry. Text containing NUL or an unpaired UTF-16 surrogate is
+refused because HTML cannot preserve it; the original JSON files stay unchanged.
+
+The optional actual-browser receiver is
+`node scripts/check-scope-comparison-export.mjs`, using the existing
+`SCOPESIGNAL_PLAYWRIGHT`, `SCOPESIGNAL_CHROME`, `SCOPESIGNAL_SOURCE` and
+`SCOPESIGNAL_EVIDENCE` settings. It receives actual downloads, offline reading,
+chosen pairs, pending file reads, refusal/retry, keyboard use, phone layout and
+Chromium printing in a fresh context. Set `SCOPESIGNAL_EXPECT_EXPORT=0` only when
+checking the retained original source for its missing download action.
+
 ## Revise a scope after approval
 
 Once a checkpoint is approved, **Download revision draft** saves

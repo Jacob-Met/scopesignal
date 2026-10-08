@@ -1,0 +1,32 @@
+{
+  "schema": "hamon.external_contribution.v1",
+  "worker_id": "chatgpt-0378a7b6b7c2/root",
+  "identity_kind": "external source contributor; no resident goal or lease",
+  "source_base": "847505d2fe9f8295110fc13a3fb9e05ec71f6644",
+  "repository": "Jacob-Met/scopesignal",
+  "objective": "Download a standalone printable comparison review of two already admitted saved workspaces, retaining chosen one-to-one pairs, all fields and complete event lists",
+  "scope": [
+    "new src/scope-comparison-export.mjs",
+    "new tests/scope-comparison-export.test.mjs",
+    "new scripts/check-scope-comparison-export.mjs",
+    "src/scope-compare-ui.mjs export action/import and retained admitted contents only",
+    "scope-compare.html button/help only",
+    "README.md additive usage",
+    "docs/receiving/comparison-export-0378a7b6/"
+  ],
+  "preserve": [
+    "ledger/plan/codec/comparison semantics",
+    "authored history issue29",
+    "all authoring/payment/storage/provider code",
+    "dependencies and workflows"
+  ],
+  "coordination": {
+    "github_issue": "https://github.com/Jacob-Met/scopesignal/issues/33",
+    "native": "installed hamon-goals cannot cd /opt/hamon-macros; central coord root-owned not writable",
+    "read": "complete public source/open issues+PRs, latest central140,166 native JSON records with13 unreadable; no known export owner",
+    "central_comment": "https://github.com/Jacob-Met/hamon/issues/140#issuecomment-6065385104"
+  },
+  "state": "Implemented, browser-qualified and independently accepted; native source commit and GitHub integration pending",
+  "created_at": "2026-10-08T17:18:02.525Z",
+  "updated_at": "2026-10-08T17:33:56.642Z"
+}

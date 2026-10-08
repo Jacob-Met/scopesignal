@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>Scope comparison review — ScopeSignal</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f1e8;color:#18332f;font:16px/1.55 system-ui,sans-serif}main{max-width:1080px;margin:auto;padding:40px 28px}h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.1;margin:.6rem 0 1.5rem}h2{font-size:1.5rem;margin:2.4rem 0 1rem}h3{font-size:1.15rem}h4{font-size:1rem}h1,h2,h3,h4,p,dt,dd{overflow-wrap:anywhere}.eyebrow{font-size:.75rem;letter-spacing:.1em;font-weight:750}.notice{border:2px solid #18332f;background:#fffefa;padding:20px}.file-grid,.unpaired-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.file-grid h2{font-size:1.1rem;margin:0 0 .7rem}.file-name,dd,td{white-space:pre-wrap;overflow-wrap:anywhere}.file-name{font-weight:650}.card{border:1px solid #c9d5cb;border-radius:8px;padding:20px;background:#fffefa;margin:18px 0}.card h3{margin:0 0 .7rem}.pair-label{font-size:.85rem;color:#52685e}table{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.9rem;margin:16px 0}caption{text-align:left;font-weight:700;margin-bottom:10px}th,td{vertical-align:top;text-align:left;padding:10px;border-bottom:1px solid #c9d5cb;overflow-wrap:anywhere}th:first-child{width:30%}thead th{background:#e7eee6}.changed th{border-left:3px solid #b24b30}.changed td{background:#fff0e5}.tag{display:block;color:#8b321e;font-size:.7rem;margin-top:4px}dt{font-weight:700;font-size:.82rem;color:#52685e}dd{margin:3px 0 12px;min-height:1.5em}.events{padding-left:24px}.events li{border-top:1px solid #c9d5cb;padding:12px 0}.events h4{margin:0 0 10px}.events dl>div{display:grid;grid-template-columns:minmax(100px,1fr) 3fr;gap:14px}.events dd{margin-top:0}footer{border-top:1px solid #c9d5cb;margin-top:32px;padding-top:18px;font-size:.85rem}@media(max-width:600px){main{padding:24px 14px}.file-grid,.unpaired-grid{grid-template-columns:1fr;gap:0}.card{padding:14px}table{font-size:.8rem}th,td{padding:7px}.events dl>div{display:block}.notice{padding:14px}}@media print{body{background:white;color:#111;font-size:10pt}main{max-width:none;padding:0}h1{font-size:24pt}h2,h3,h4,caption{break-after:avoid}thead{display:table-header-group}tr{break-inside:avoid}.card,.notice{border-color:#888;border-radius:0}.file-grid,.unpaired-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.file-grid .card{break-inside:avoid}table{font-size:9pt}.events li{break-inside:auto}.events dd{min-width:0}.tag{color:#111}.changed th{border-left-color:#555}@page{margin:16mm}}
+</style></head><body><main>
+<header><p class="eyebrow">SCOPESIGNAL · PORTABLE COMPARISON</p><h1>Scope comparison review</h1></header>
+<aside class="notice"><strong>Fictional saved workspaces · no live payments</strong><p>This unsigned review compares the two displayed files and the chosen checkpoint pairs. It does not establish identity, chronology, authorship, real human approval or payment.</p><p>All saved fields and both complete fixture event lists are included, even when the comparison screen shows only changed fields. Open this file offline and use the browser's Print command to print or save a PDF. Keep the original JSON files to reopen editable workspaces or change the pairing.</p></aside>
+<section class="file-grid" aria-label="Compared files">
+<article class="card"><h2>File A</h2><p class="file-name" data-file="a">Captured B.json</p><p>Reviewed fixture · 3 checkpoints · 7 events</p></article>
+<article class="card"><h2>File B</h2><p class="file-name" data-file="b">Unknown &lt;A&gt;.json</p><p>Reviewed fixture · 3 checkpoints · 6 events</p></article>
+</section>
+<section id="project"><h2>Project and amounts</h2><p>Saved text stays literal. Unavailable values are not zero. Unallocated cap and allocated remaining are separate; pending and unknown captures count nothing.</p><table><caption>Saved project fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="stage"><th scope="row">Saved stage</th><td data-side="a">Reviewed fixture</td><td data-side="b">Reviewed fixture</td></tr>
+<tr data-field="label"><th scope="row">Project name</th><td data-side="a">Northstar onboarding refresh</td><td data-side="b">Northstar onboarding refresh</td></tr>
+<tr data-field="brief"><th scope="row">Creative brief</th><td data-side="a">Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.</td><td data-side="b">Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.</td></tr>
+<tr data-field="capText"><th scope="row">Saved project cap text (USD)</th><td data-side="a">1200.00</td><td data-side="b">1200.00</td></tr></tbody></table><table><caption>Amounts and recorded fixture totals</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="cap"><th scope="row">Parsed project cap</th><td data-side="a">$1,200.00</td><td data-side="b">$1,200.00</td></tr>
+<tr data-field="allocated"><th scope="row">Allocated to milestones</th><td data-side="a">$1,200.00</td><td data-side="b">$1,200.00</td></tr>
+<tr data-field="unallocated"><th scope="row">Unallocated within cap</th><td data-side="a">$0.00</td><td data-side="b">$0.00</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approvals</th><td data-side="a">1</td><td data-side="b">1</td></tr>
+<tr data-field="captured" class="changed"><th scope="row">Simulated captured total<span class="tag">Changed</span></th><td data-side="a">$400.00</td><td data-side="b">$0.00</td></tr>
+<tr data-field="remaining" class="changed"><th scope="row">Allocated remaining<span class="tag">Changed</span></th><td data-side="a">$800.00</td><td data-side="b">$1,200.00</td></tr></tbody></table></section>
+<section id="pairing"><h2>Chosen checkpoint pairs</h2><p>2 pairs · 1 same definitions · 1 unpaired in A · 1 unpaired in B</p><p>Pairing is a comparison choice. Same definition means identical saved deliverable, amount text and planned evidence; row numbers and fixture IDs do not prove historical identity.</p><article class="card" data-pair="1-0">
+<h3>A checkpoint 2 ↔ B checkpoint 1</h3>
+<p class="pair-label">Paired for review · Different row numbers</p>
+<table><caption>Checkpoint fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="title" class="changed"><th scope="row">Deliverable<span class="tag">Changed</span></th><td data-side="a">Accessible billing setup</td><td data-side="b">First-run checklist</td></tr>
+<tr data-field="amountText"><th scope="row">Saved amount text (USD)</th><td data-side="a">400.00</td><td data-side="b">400.00</td></tr>
+<tr data-field="amountCents"><th scope="row">Parsed milestone amount</th><td data-side="a">$400.00</td><td data-side="b">$400.00</td></tr>
+<tr data-field="plannedEvidence" class="changed"><th scope="row">Planned acceptance evidence<span class="tag">Changed</span></th><td data-side="a">Keyboard-only walkthrough and automated accessibility report for the billing setup.</td><td data-side="b">A screen recording shows the checklist completion path and reset behavior.</td></tr>
+<tr data-field="approved" class="changed"><th scope="row">Recorded fixture approval<span class="tag">Changed</span></th><td data-side="a">No</td><td data-side="b">Yes</td></tr>
+<tr data-field="acceptedEvidence" class="changed"><th scope="row">Accepted evidence<span class="tag">Changed</span></th><td data-side="a">None recorded</td><td data-side="b">Recorded proof &lt;literal&gt; &amp; “quoted” 雪</td></tr>
+<tr data-field="pendingEvidence" class="changed"><th scope="row">Pending review evidence<span class="tag">Changed</span></th><td data-side="a">Pending only
+&lt;img id=&quot;injected&quot; src=&quot;https://invalid.test/x&quot; onerror=&quot;globalThis.injected=true&quot;&gt;</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureStatus" class="changed"><th scope="row">Simulated capture state<span class="tag">Changed</span></th><td data-side="a">not_started</td><td data-side="b">unknown</td></tr>
+<tr data-field="orderId" class="changed"><th scope="row">Fixture order ID<span class="tag">Changed</span></th><td data-side="a">None recorded</td><td data-side="b">SANDBOX-SCOPE-1</td></tr>
+<tr data-field="captureId"><th scope="row">Counted fixture capture ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="counted"><th scope="row">Simulated amount counted</th><td data-side="a">$0.00</td><td data-side="b">$0.00</td></tr></tbody></table>
+</article>
+<article class="card" data-pair="2-2">
+<h3>A checkpoint 3 ↔ B checkpoint 3</h3>
+<p class="pair-label">Same definition</p>
+<table><caption>Checkpoint fields</caption><thead><tr><th scope="col">Field</th><th scope="col">File A</th><th scope="col">File B</th></tr></thead><tbody><tr data-field="title"><th scope="row">Deliverable</th><td data-side="a">Responsive handoff</td><td data-side="b">Responsive handoff</td></tr>
+<tr data-field="amountText"><th scope="row">Saved amount text (USD)</th><td data-side="a">400.00</td><td data-side="b">400.00</td></tr>
+<tr data-field="amountCents"><th scope="row">Parsed milestone amount</th><td data-side="a">$400.00</td><td data-side="b">$400.00</td></tr>
+<tr data-field="plannedEvidence"><th scope="row">Planned acceptance evidence</th><td data-side="a">Desktop and mobile handoff files plus implementation notes.</td><td data-side="b">Desktop and mobile handoff files plus implementation notes.</td></tr>
+<tr data-field="approved"><th scope="row">Recorded fixture approval</th><td data-side="a">No</td><td data-side="b">No</td></tr>
+<tr data-field="acceptedEvidence"><th scope="row">Accepted evidence</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="pendingEvidence"><th scope="row">Pending review evidence</th><td data-side="a">Desktop and mobile handoff files plus implementation notes.</td><td data-side="b">Desktop and mobile handoff files plus implementation notes.</td></tr>
+<tr data-field="captureStatus"><th scope="row">Simulated capture state</th><td data-side="a">not_started</td><td data-side="b">not_started</td></tr>
+<tr data-field="orderId"><th scope="row">Fixture order ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="captureId"><th scope="row">Counted fixture capture ID</th><td data-side="a">None recorded</td><td data-side="b">None recorded</td></tr>
+<tr data-field="counted"><th scope="row">Simulated amount counted</th><td data-side="a">$0.00</td><td data-side="b">$0.00</td></tr></tbody></table>
+</article></section>
+<section id="unpaired"><h2>Unpaired checkpoints</h2><div class="unpaired-grid"><div><article class="card" data-unpaired="a-0">
+<h3>Unpaired A checkpoint 1</h3>
+<p>This row is not paired for comparison; no addition or removal is inferred.</p>
+<dl><div><dt>Deliverable</dt><dd>First-run checklist</dd></div>
+<div><dt>Saved amount text (USD)</dt><dd>400.00</dd></div>
+<div><dt>Parsed milestone amount</dt><dd>$400.00</dd></div>
+<div><dt>Planned acceptance evidence</dt><dd>A screen recording shows the checklist completion path and reset behavior.</dd></div>
+<div><dt>Recorded fixture approval</dt><dd>Yes</dd></div>
+<div><dt>Accepted evidence</dt><dd>Recorded proof &lt;literal&gt; &amp; “quoted” 雪</dd></div>
+<div><dt>Pending review evidence</dt><dd>None recorded</dd></div>
+<div><dt>Simulated capture state</dt><dd>captured</dd></div>
+<div><dt>Fixture order ID</dt><dd>SANDBOX-SCOPE-1</dd></div>
+<div><dt>Counted fixture capture ID</dt><dd>CAP-SCOPE-1</dd></div>
+<div><dt>Simulated amount counted</dt><dd>$400.00</dd></div></dl>
+</article></div><div><article class="card" data-unpaired="b-1">
+<h3>Unpaired B checkpoint 2</h3>
+<p>This row is not paired for comparison; no addition or removal is inferred.</p>
+<dl><div><dt>Deliverable</dt><dd>Accessible billing setup</dd></div>
+<div><dt>Saved amount text (USD)</dt><dd>400.00</dd></div>
+<div><dt>Parsed milestone amount</dt><dd>$400.00</dd></div>
+<div><dt>Planned acceptance evidence</dt><dd>Keyboard-only walkthrough and automated accessibility report for the billing setup.</dd></div>
+<div><dt>Recorded fixture approval</dt><dd>No</dd></div>
+<div><dt>Accepted evidence</dt><dd>None recorded</dd></div>
+<div><dt>Pending review evidence</dt><dd>Pending only
+&lt;img id=&quot;injected&quot; src=&quot;https://invalid.test/x&quot; onerror=&quot;globalThis.injected=true&quot;&gt;</dd></div>
+<div><dt>Simulated capture state</dt><dd>not_started</dd></div>
+<div><dt>Fixture order ID</dt><dd>None recorded</dd></div>
+<div><dt>Counted fixture capture ID</dt><dd>None recorded</dd></div>
+<div><dt>Simulated amount counted</dt><dd>$0.00</dd></div></dl>
+</article></div></div></section>
+<section id="history"><h2>Recorded fixture histories</h2><p data-relationship="b-prefix">All 6 events in B match the beginning of A. A contains 1 additional saved events.</p><p>A shared sequence does not establish chronology or authorship. Sequence and time fields are fictional markers. Raw event amounts are integer cents in their recorded currency: amount 40000 with currency USD means $400.00. Summary and checkpoint amounts above are formatted in dollars.</p>
+<section id="history-a"><h3>File A · 7 events</h3><ol class="events"><li data-event="a-1"><h4>Event 1 · checkpoint.approved</h4><dl><div><dt>seq</dt><dd>1</dd></div>
+<div><dt>type</dt><dd>checkpoint.approved</dd></div>
+<div><dt>at</dt><dd>T+001</dd></div>
+<div><dt>checkpointId</dt><dd>scope-1</dd></div>
+<div><dt>approver</dt><dd>human-reviewer</dd></div>
+<div><dt>acceptedEvidence</dt><dd>Recorded proof &lt;literal&gt; &amp; “quoted” 雪</dd></div></dl></li>
+<li data-event="a-2"><h4>Event 2 · paypal.order.created</h4><dl><div><dt>seq</dt><dd>2</dd></div>
+<div><dt>type</dt><dd>paypal.order.created</dd></div>
+<div><dt>at</dt><dd>T+002</dd></div>
+<div><dt>checkpointId</dt><dd>scope-1</dd></div>
+<div><dt>orderId</dt><dd>SANDBOX-SCOPE-1</dd></div>
+<div><dt>amount</dt><dd>40000</dd></div>
+<div><dt>currency</dt><dd>USD</dd></div>
+<div><dt>environment</dt><dd>sandbox</dd></div></dl></li>
+<li data-event="a-3"><h4>Event 3 · paypal.capture.requested</h4><dl><div><dt>seq</dt><dd>3</dd></div>
+<div><dt>type</dt><dd>paypal.capture.requested</dd></div>
+<div><dt>at</dt><dd>T+003</dd></div>
+<div><dt>checkpointId</dt><dd>scope-1</dd></div>
+<div><dt>orderId</dt><dd>SANDBOX-SCOPE-1</dd></div>
+<div><dt>environment</dt><dd>sandbox</dd></div></dl></li>
+<li data-event="a-4"><h4>Event 4 · paypal.capture.response_lost</h4><dl><div><dt>seq</dt><dd>4</dd></div>
+<div><dt>type</dt><dd>paypal.capture.response_lost</dd></div>
+<div><dt>at</dt><dd>T+004</dd></div>
+<div><dt>checkpointId</dt><dd>scope-1</dd></div>
+<div><dt>orderId</dt><dd>SANDBOX-SCOPE-1</dd></div>
+<div><dt>outcome</dt><dd>unknown</dd></div></dl></li>
+<li data-event="a-5"><h4>Event 5 · paypal.webhook.received</h4><dl><div><dt>seq</dt><dd>5</dd></div>
+<div><dt>type</dt><dd>paypal.webhook.received</dd></div>
+<div><dt>at</dt><dd>T+005</dd></div>
+<div><dt>checkpointId</dt><dd>scope-1</dd></div>
+<div><dt>eventId</dt><dd>WH-SCOPE-1</dd></div>
+<div><dt>captureId</dt><dd>CAP-SCOPE-1</dd></div>
+<div><dt>duplicate</dt><dd>false</dd></div>
+<div><dt>amount</dt><dd>40000</dd></div>
+<div><dt>currency</dt><dd>USD</dd></div></dl></li>
+<li data-event="a-6"><h4>Event 6 · paypal.webhook.received</h4><dl><div><dt>seq</dt><dd>6</dd></div>
+<div><dt>type</dt><dd>paypal.webhook.received</dd></div>
+<div><dt>at</dt><dd>T+006</dd></div>
+<div><dt>checkpointId</dt><dd>scope-1</dd></div>
+<div><dt>eventId</dt><dd>WH-SCOPE-1</dd></div>
+<div><dt>captureId</dt><dd>CAP-SCOPE-1</dd></div>
+<div><dt>duplicate</dt><dd>true</dd></div>
+<div><dt>amount</dt><dd>40000</dd></div>
+<div><dt>currency</dt><dd>USD</dd></div></dl></li>
+<li data-event="a-7"><h4>Event 7 · paypal.capture.reconciled</h4><dl><div><dt>seq</dt><dd>7</dd></div>
+<div><dt>type</dt><dd>paypal.capture.reconciled</dd></div>
+<div><dt>at</dt><dd>T+007</dd></div>
+<div><dt>checkpointId</dt><dd>scope-1</dd></div>
+<div><dt>captureId</dt><dd>CAP-SCOPE-1</dd></div>
+<div><dt>outcome</dt><dd>captured</dd></div>
+<div><dt>source</dt><dd>sandbox-transaction-lookup</dd></div></dl></li></ol></section>
+<section id="history-b"><h3>File B · 6 events</h3><ol class="events"><li data-event="b-1"><h4>Event 1 · checkpoint.approved</h4><dl><div><dt>seq</dt><dd>1</dd></div>
+<div><dt>type</dt><dd>checkpoint.approved</dd></div>
+<div><dt>at</dt><dd>T+001</dd></div>
+<div><dt>checkpointId</dt><dd>scope-1</dd></div>
+<div><dt>approver</dt><dd>human-reviewer</dd></div>
+<div><dt>acceptedEvidence</dt><dd>Recorded proof &lt;literal&gt; &amp; “quoted” 雪</dd></div></dl></li>
+<li data-event="b-2"><h4>Event 2 · paypal.order.created</h4><dl><div><dt>seq</dt><dd>2</dd></div>
+<div><dt>type</dt><dd>paypal.order.created</dd></div>
+<div><dt>at</dt><dd>T+002</dd></div>
+<div><dt>checkpointId</dt><dd>scope-1</dd></div>
+<div><dt>orderId</dt><dd>SANDBOX-SCOPE-1</dd></div>
+<div><dt>amount</dt><dd>40000</dd></div>
+<div><dt>currency</dt><dd>USD</dd></div>
+<div><dt>environment</dt><dd>sandbox</dd></div></dl></li>
+<li data-event="b-3"><h4>Event 3 · paypal.capture.requested</h4><dl><div><dt>seq</dt><dd>3</dd></div>
+<div><dt>type</dt><dd>paypal.capture.requested</dd></div>
+<div><dt>at</dt><dd>T+003</dd></div>
+<div><dt>checkpointId</dt><dd>scope-1</dd></div>
+<div><dt>orderId</dt><dd>SANDBOX-SCOPE-1</dd></div>
+<div><dt>environment</dt><dd>sandbox</dd></div></dl></li>
+<li data-event="b-4"><h4>Event 4 · paypal.capture.response_lost</h4><dl><div><dt>seq</dt><dd>4</dd></div>
+<div><dt>type</dt><dd>paypal.capture.response_lost</dd></div>
+<div><dt>at</dt><dd>T+004</dd></div>
+<div><dt>checkpointId</dt><dd>scope-1</dd></div>
+<div><dt>orderId</dt><dd>SANDBOX-SCOPE-1</dd></div>
+<div><dt>outcome</dt><dd>unknown</dd></div></dl></li>
+<li data-event="b-5"><h4>Event 5 · paypal.webhook.received</h4><dl><div><dt>seq</dt><dd>5</dd></div>
+<div><dt>type</dt><dd>paypal.webhook.received</dd></div>
+<div><dt>at</dt><dd>T+005</dd></div>
+<div><dt>checkpointId</dt><dd>scope-1</dd></div>
+<div><dt>eventId</dt><dd>WH-SCOPE-1</dd></div>
+<div><dt>captureId</dt><dd>CAP-SCOPE-1</dd></div>
+<div><dt>duplicate</dt><dd>false</dd></div>
+<div><dt>amount</dt><dd>40000</dd></div>
+<div><dt>currency</dt><dd>USD</dd></div></dl></li>
+<li data-event="b-6"><h4>Event 6 · paypal.webhook.received</h4><dl><div><dt>seq</dt><dd>6</dd></div>
+<div><dt>type</dt><dd>paypal.webhook.received</dd></div>
+<div><dt>at</dt><dd>T+006</dd></div>
+<div><dt>checkpointId</dt><dd>scope-1</dd></div>
+<div><dt>eventId</dt><dd>WH-SCOPE-1</dd></div>
+<div><dt>captureId</dt><dd>CAP-SCOPE-1</dd></div>
+<div><dt>duplicate</dt><dd>true</dd></div>
+<div><dt>amount</dt><dd>40000</dd></div>
+<div><dt>currency</dt><dd>USD</dd></div></dl></li></ol></section>
+</section>
+<footer>ScopeSignal · read-only fictional comparison · file names label the supplied files and do not verify their origin · no scripts, external resources or payment controls</footer>
+</main></body></html>

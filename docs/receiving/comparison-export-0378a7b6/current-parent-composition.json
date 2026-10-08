@@ -1,0 +1,166 @@
+{
+  "recorded_at": "2026-10-08T18:39:11.993Z",
+  "worker": "chatgpt-0378a7b6b7c2/root",
+  "accepted_commit": "659f081a8d104f3235cb6adca62af139041e36c8",
+  "accepted_tree": "e8b05ea0bfe0bc8ea14beb242d8ef00a75f3155a",
+  "receiving_parent": "982a402e40fec3a9b2f358ee12fa1c131b94287c",
+  "receiving_parent_tree": "319e7d3110032be215664f2906f1e31e3323012e",
+  "composition_merge": "70fc83261bbb55d8500220884cc5289ddfe2ee6f",
+  "incoming_paths": [
+    "out/receiving/pages-artifact-attempt-e3a41d2b3368/deployed/deployment.excerpt.log",
+    "out/receiving/pages-artifact-attempt-e3a41d2b3368/deployed/receipt.json",
+    "out/receiving/scope-compare-e3a41d2b3368/pages-current/ACCEPTANCE.json",
+    "out/receiving/scope-compare-e3a41d2b3368/pages-current/FILES.json",
+    "out/receiving/scope-compare-e3a41d2b3368/pages-current/README.md",
+    "out/receiving/scope-compare-e3a41d2b3368/pages-current/evidence.tar.gz"
+  ],
+  "accepted_contribution_blobs_checked": [
+    {
+      "path": "README.md",
+      "expected": "f8c1d771d5660c12118acd01a47d1d007e6cb942",
+      "actual": "f8c1d771d5660c12118acd01a47d1d007e6cb942"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/README.md",
+      "expected": "7572fb6d23e8c0fd55a9b9720c2ab01e6d92cafb",
+      "actual": "7572fb6d23e8c0fd55a9b9720c2ab01e6d92cafb"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/baseline/receipt.json",
+      "expected": "21f09a8c25a79b68dcac837f6469ab89b94c680d",
+      "actual": "21f09a8c25a79b68dcac837f6469ab89b94c680d"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v1/receipt.json",
+      "expected": "bcf83d6d9e0c33296406dd1864338e0cb99b3409",
+      "actual": "bcf83d6d9e0c33296406dd1864338e0cb99b3409"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v1/receiver.mjs",
+      "expected": "b5df4fba6dbdc63de8688518809a4ac54b42e532",
+      "actual": "b5df4fba6dbdc63de8688518809a4ac54b42e532"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-1.html",
+      "expected": "945d01ee03ee88b6a02d722619f0ae59690e1d6d",
+      "actual": "945d01ee03ee88b6a02d722619f0ae59690e1d6d"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-2.html",
+      "expected": "4f01759113844b238e4c0365bbfe5da59639d12c",
+      "actual": "4f01759113844b238e4c0365bbfe5da59639d12c"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-3.html",
+      "expected": "503e8e0a13c9b60f2f63d3733c5ee8a0af3ca845",
+      "actual": "503e8e0a13c9b60f2f63d3733c5ee8a0af3ca845"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-4.html",
+      "expected": "a2783d146642152412d9758d8ec04680952712de",
+      "actual": "a2783d146642152412d9758d8ec04680952712de"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-5.html",
+      "expected": "a2783d146642152412d9758d8ec04680952712de",
+      "actual": "a2783d146642152412d9758d8ec04680952712de"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-6.html",
+      "expected": "e3b1029d563f92ed9c5bcdb96c4a7cc3f7eae78f",
+      "actual": "e3b1029d563f92ed9c5bcdb96c4a7cc3f7eae78f"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/first-download.json",
+      "expected": "7e04894a87e7eba37e5b40c2edf974034e0e9a1f",
+      "actual": "7e04894a87e7eba37e5b40c2edf974034e0e9a1f"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/candidate-v2/receipt.json",
+      "expected": "ef7f0638d6b47510df90896b9f39f69f5c618627",
+      "actual": "ef7f0638d6b47510df90896b9f39f69f5c618627"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/claim-before-publication.json",
+      "expected": "cc1a0fef37e499f151e21b2b4877086abece7b39",
+      "actual": "cc1a0fef37e499f151e21b2b4877086abece7b39"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/claim.json",
+      "expected": "98711bb695ba4372b1aa4491d5371e59c3772219",
+      "actual": "98711bb695ba4372b1aa4491d5371e59c3772219"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/independent/REVIEW.md",
+      "expected": "98c1a2a669e85bc57dd8e7f73d33bb5d55462611",
+      "actual": "98c1a2a669e85bc57dd8e7f73d33bb5d55462611"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/independent/all-fields.html",
+      "expected": "b483c36227cb882448cc0aef461697b3064d019f",
+      "actual": "b483c36227cb882448cc0aef461697b3064d019f"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/independent/receipt.json",
+      "expected": "af4840fa7d3986311b954d99da086b0f666af384",
+      "actual": "af4840fa7d3986311b954d99da086b0f666af384"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/independent/receive_msi_independent.mjs",
+      "expected": "9d329d5d1fbd01a1cab7a2a603a2f0d8c8649dcb",
+      "actual": "9d329d5d1fbd01a1cab7a2a603a2f0d8c8649dcb"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/local-node24-receipt.json",
+      "expected": "32fb6d0c7394f9d04e6abe69cb8872040e70895b",
+      "actual": "32fb6d0c7394f9d04e6abe69cb8872040e70895b"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/local-node24-tests.log",
+      "expected": "f95d23390d83cbd922dc2546bdbfe53a6ff6494b",
+      "actual": "f95d23390d83cbd922dc2546bdbfe53a6ff6494b"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/native-artifacts.json",
+      "expected": "33ee49f0fa79bbe2ce05a93fd39b2d5b0aa3f42f",
+      "actual": "33ee49f0fa79bbe2ce05a93fd39b2d5b0aa3f42f"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/native-node22-tests.log",
+      "expected": "bb7acf1fa92dbf261b097c9cec758c2e2582ee24",
+      "actual": "bb7acf1fa92dbf261b097c9cec758c2e2582ee24"
+    },
+    {
+      "path": "docs/receiving/comparison-export-0378a7b6/source-preservation.json",
+      "expected": "9bf5b302df09f3fe3a7e6afbc61bd03dd30c8592",
+      "actual": "9bf5b302df09f3fe3a7e6afbc61bd03dd30c8592"
+    },
+    {
+      "path": "scope-compare.html",
+      "expected": "746a563caa69b6db5b11c01463816b5496e3ca48",
+      "actual": "746a563caa69b6db5b11c01463816b5496e3ca48"
+    },
+    {
+      "path": "scripts/check-scope-comparison-export.mjs",
+      "expected": "91e920c90a9c9abacf1ced19e4f54700903d03ff",
+      "actual": "91e920c90a9c9abacf1ced19e4f54700903d03ff"
+    },
+    {
+      "path": "src/scope-compare-ui.mjs",
+      "expected": "c8d4686b7986506c03ad3e76e1f739ec534bfa29",
+      "actual": "c8d4686b7986506c03ad3e76e1f739ec534bfa29"
+    },
+    {
+      "path": "src/scope-comparison-export.mjs",
+      "expected": "642fad5c2664b2153e2f27ebf0f50aed801d899f",
+      "actual": "642fad5c2664b2153e2f27ebf0f50aed801d899f"
+    },
+    {
+      "path": "tests/scope-comparison-export.test.mjs",
+      "expected": "af64444d190d08af72c788bb1fb1592cff4d153b",
+      "actual": "af64444d190d08af72c788bb1fb1592cff4d153b"
+    }
+  ],
+  "unchanged_parent_leaves": 524,
+  "verification": "All 29 accepted contribution blobs and all unrelated current-parent modes/blobs are exact. Incoming paths are six deployment evidence files only. Prior native and browser receiving remains applicable to identical product inputs; normal PR Fixture tests will run on the published composition."
+}

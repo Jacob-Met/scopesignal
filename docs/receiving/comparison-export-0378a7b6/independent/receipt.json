@@ -1,0 +1,23 @@
+{
+  "time": "2026-10-08T17:28:02.773Z",
+  "reviewer": "chatgpt-0378a7b6b7c2/msi_product",
+  "checks": [
+    "Maximum12-row reverse pairing yields all11fields and no discarded row",
+    "Empty pairing retains all24 unpaired rows and complete field inventories",
+    "Filename CR/newline, markup-like labels and multiline Unicode evidence stay literal",
+    "Static output has no script/frame/image/resource tags and denies external resources",
+    "Pair reorder does not mutate admitted snapshots or caller pair list",
+    "Non-injective, negative and wrong-type pair controls refuse"
+  ],
+  "source_sha256": {
+    "src/scope-comparison-export.mjs": "2fec30a548cdb8f304c52c3c479e06bd8aaad10ee57c53bbbc1ec5b09e272978",
+    "src/scope-compare-ui.mjs": "041d36d0254925de033d4596ac86310d8c762ef92b32080e5fa4403debc47c2f",
+    "scope-compare.html": "fc10e883961d9c9c8f61f72b00cb4376b986465dad569bb9081d1ba8d4a0421a",
+    "src/scope-compare.mjs": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+  },
+  "output_sha256": "dad73937b696e47e10492b69153f913940d834ca92d9133aac778873690ba273",
+  "result": "PASS",
+  "limitations": "Independent source review plus native model challenge; no additional browser or payment/account action.",
+  "setup_failure": "First receiver-file write returned ENOENT because the sibling proof directory did not exist; subsequent launch returned MODULE_NOT_FOUND. The directory was then created and this exact receiver ran. Product source was not changed."
+}
