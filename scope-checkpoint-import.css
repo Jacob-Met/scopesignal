@@ -1,0 +1,17 @@
+.scope-checkpoint-import { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line, #c7c4b9); }
+.scope-checkpoint-import h3 { margin: 0 0 .5rem; }
+.scope-checkpoint-import input[type="file"] { max-width: 100%; }
+.scope-checkpoint-preview { margin-top: 1rem; }
+.scope-checkpoint-options { display: grid; gap: 1rem; margin: 1rem 0; }
+.scope-checkpoint-option { min-width: 0; margin: 0; padding: 1rem; border: 1px solid var(--line, #c7c4b9); border-radius: .5rem; }
+.scope-checkpoint-option legend { padding: 0 .3rem; font-weight: 700; }
+.scope-checkpoint-option label { display: inline-flex; align-items: center; gap: .35rem; min-height: 44px; cursor: pointer; }
+.scope-checkpoint-option input[type="checkbox"] { width: 1.15rem; height: 1.15rem; margin: 0; flex: none; }
+.scope-checkpoint-option dl { margin: .5rem 0 0; }
+.scope-checkpoint-option dt { margin-top: .75rem; font-size: .8rem; font-weight: 700; }
+.scope-checkpoint-option dd { margin: .25rem 0 0; }
+.scope-checkpoint-literal { white-space: pre-wrap; overflow-wrap: anywhere; }
+.scope-checkpoint-literal em { color: var(--muted, #68675e); font-size: .9rem; }
+.scope-checkpoint-status { min-height: 1.5em; }
+.scope-checkpoint-status.error { color: #9a3527; }
+.scope-checkpoint-import button:disabled { opacity: .55; cursor: not-allowed; }

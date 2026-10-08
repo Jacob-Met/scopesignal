@@ -1,0 +1,493 @@
+{
+  "schema": "hamon.scopesignal-checkpoint-reuse.current-composition/1",
+  "createdAt": "2026-10-08T19:35:40.743058+00:00",
+  "worker": "estate-68094585a1c2 / receiving_review",
+  "continuationExecutor": "scope_receiving",
+  "repository": "Jacob-Met/scopesignal",
+  "issue": 35,
+  "currentParent": "cdffd2476cae0c7332dff64677ae814b7f594947",
+  "currentTree": "03775ba5484d768a0bda6a22d51bdad9fd30d184",
+  "currentLeaves": 672,
+  "originalParent": "847505d2fe9f8295110fc13a3fb9e05ec71f6644",
+  "originalTree": "cac1d2bbdd38e2e4c2aed7249c2593ec174c0eaa",
+  "originalLeaves": 521,
+  "admittedAdvance": {
+    "modified": [
+      "README.md",
+      "scope-compare.html",
+      "scope.html",
+      "src/scope-compare-ui.mjs",
+      "src/scope-workspace.mjs"
+    ],
+    "added": [
+      "docs/authored-scope-history.md",
+      "docs/receiving/comparison-export-0378a7b6/README.md",
+      "docs/receiving/comparison-export-0378a7b6/authored-history-composition.json",
+      "docs/receiving/comparison-export-0378a7b6/authored-history-tests.log",
+      "docs/receiving/comparison-export-0378a7b6/baseline/receipt.json",
+      "docs/receiving/comparison-export-0378a7b6/candidate-v1/receipt.json",
+      "docs/receiving/comparison-export-0378a7b6/candidate-v1/receiver.mjs",
+      "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-1.html",
+      "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-2.html",
+      "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-3.html",
+      "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-4.html",
+      "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-5.html",
+      "docs/receiving/comparison-export-0378a7b6/candidate-v2/comparison-6.html",
+      "docs/receiving/comparison-export-0378a7b6/candidate-v2/first-download.json",
+      "docs/receiving/comparison-export-0378a7b6/candidate-v2/receipt.json",
+      "docs/receiving/comparison-export-0378a7b6/claim-before-publication.json",
+      "docs/receiving/comparison-export-0378a7b6/claim.json",
+      "docs/receiving/comparison-export-0378a7b6/current-parent-composition.json",
+      "docs/receiving/comparison-export-0378a7b6/independent/REVIEW.md",
+      "docs/receiving/comparison-export-0378a7b6/independent/all-fields.html",
+      "docs/receiving/comparison-export-0378a7b6/independent/receipt.json",
+      "docs/receiving/comparison-export-0378a7b6/independent/receive_msi_independent.mjs",
+      "docs/receiving/comparison-export-0378a7b6/local-node24-receipt.json",
+      "docs/receiving/comparison-export-0378a7b6/local-node24-tests.log",
+      "docs/receiving/comparison-export-0378a7b6/native-artifacts.json",
+      "docs/receiving/comparison-export-0378a7b6/native-node22-tests.log",
+      "docs/receiving/comparison-export-0378a7b6/source-preservation.json",
+      "docs/receiving/draft-removal-2d2d276b/README.md",
+      "docs/receiving/draft-removal-2d2d276b/baseline-browser.json",
+      "docs/receiving/draft-removal-2d2d276b/baseline-initial-scroll-failure.json",
+      "docs/receiving/draft-removal-2d2d276b/baseline-node24.log",
+      "docs/receiving/draft-removal-2d2d276b/baseline-receiver.mjs",
+      "docs/receiving/draft-removal-2d2d276b/candidate-browser.json",
+      "docs/receiving/draft-removal-2d2d276b/candidate-download-name-failure.json",
+      "docs/receiving/draft-removal-2d2d276b/candidate-download-receiver.mjs",
+      "docs/receiving/draft-removal-2d2d276b/candidate-key-event-failure.json",
+      "docs/receiving/draft-removal-2d2d276b/candidate-key-receiver.mjs",
+      "docs/receiving/draft-removal-2d2d276b/candidate-node24.log",
+      "docs/receiving/draft-removal-2d2d276b/downloads/original-workspace.json",
+      "docs/receiving/draft-removal-2d2d276b/downloads/removed-workspace.json",
+      "docs/receiving/draft-removal-2d2d276b/initial-scroll-receiver.mjs",
+      "docs/receiving/draft-removal-2d2d276b/manifest.json",
+      "docs/receiving/draft-removal-2d2d276b/phone.png",
+      "docs/receiving/draft-removal-2d2d276b/source-correspondence.json",
+      "docs/receiving/draft-removal-current-2d2d276b/README.md",
+      "docs/receiving/draft-removal-current-2d2d276b/browser.stderr.log",
+      "docs/receiving/draft-removal-current-2d2d276b/browser.stdout.log",
+      "docs/receiving/draft-removal-current-2d2d276b/browser/downloads/history-after/scopesignal-workspace-v1.json",
+      "docs/receiving/draft-removal-current-2d2d276b/browser/downloads/history-before/scopesignal-workspace-v1.json",
+      "docs/receiving/draft-removal-current-2d2d276b/browser/downloads/removed/scopesignal-workspace-v1.json",
+      "docs/receiving/draft-removal-current-2d2d276b/browser/downloads/scopesignal-workspace-v1.json",
+      "docs/receiving/draft-removal-current-2d2d276b/browser/phone.png",
+      "docs/receiving/draft-removal-current-2d2d276b/browser/receipt.json",
+      "docs/receiving/draft-removal-current-2d2d276b/composition.json",
+      "docs/receiving/draft-removal-current-2d2d276b/current-browser-receiver.mjs",
+      "docs/receiving/draft-removal-current-2d2d276b/execution.json",
+      "docs/receiving/draft-removal-current-2d2d276b/manifest.json",
+      "docs/receiving/draft-removal-current-2d2d276b/node.stderr.log",
+      "docs/receiving/draft-removal-current-2d2d276b/node.stdout.log",
+      "docs/receiving/draft-removal-current-2d2d276b/source.json",
+      "docs/receiving/removal-history-independent-2d2d276b/README.md",
+      "docs/receiving/removal-history-independent-2d2d276b/candidate.stderr.log",
+      "docs/receiving/removal-history-independent-2d2d276b/candidate.stdout.log",
+      "docs/receiving/removal-history-independent-2d2d276b/candidate/downloads/after-new-decision/scopesignal-workspace-v1.json",
+      "docs/receiving/removal-history-independent-2d2d276b/candidate/downloads/before-navigation/scopesignal-workspace-v1.json",
+      "docs/receiving/removal-history-independent-2d2d276b/candidate/downloads/restored-review/scopesignal-workspace-v1.json",
+      "docs/receiving/removal-history-independent-2d2d276b/candidate/receipt.json",
+      "docs/receiving/removal-history-independent-2d2d276b/download-validation.json",
+      "docs/receiving/removal-history-independent-2d2d276b/execution.json",
+      "docs/receiving/removal-history-independent-2d2d276b/independent-history-receiver.mjs",
+      "docs/receiving/removal-history-independent-2d2d276b/independent-oracle.txt",
+      "docs/receiving/removal-history-independent-2d2d276b/manifest.json",
+      "docs/receiving/removal-history-independent-2d2d276b/mutation-source/src/scope-workspace.mjs",
+      "docs/receiving/removal-history-independent-2d2d276b/negative.stderr.log",
+      "docs/receiving/removal-history-independent-2d2d276b/negative.stdout.log",
+      "docs/receiving/removal-history-independent-2d2d276b/negative/failure.json",
+      "docs/receiving/removal-history-independent-2d2d276b/run-independent-current.cjs",
+      "docs/receiving/removal-history-independent-2d2d276b/source-correspondence.json",
+      "docs/receiving/removal-history-independent-2d2d276b/validate-downloads-and-pack.cjs",
+      "docs/receiving/removal-independent-2d2d276b/README.md",
+      "docs/receiving/removal-independent-2d2d276b/candidate/chrome.log",
+      "docs/receiving/removal-independent-2d2d276b/candidate/downloads/removed-review/de31d59b-3730-4d11-83f8-5c02a93b427e",
+      "docs/receiving/removal-independent-2d2d276b/candidate/downloads/removed-workspace/d1d5cb8d-9184-49fa-9206-3399b1ffcc86",
+      "docs/receiving/removal-independent-2d2d276b/candidate/downloads/replacement-workspace/59363ab6-556a-4e86-bd3b-dbee8984c610",
+      "docs/receiving/removal-independent-2d2d276b/candidate/manifest.json",
+      "docs/receiving/removal-independent-2d2d276b/candidate/receipt.json",
+      "docs/receiving/removal-independent-2d2d276b/candidate/restored-phone.png",
+      "docs/receiving/removal-independent-2d2d276b/linux-preflight/failure.txt",
+      "docs/receiving/removal-independent-2d2d276b/linux-preflight/receipt.json",
+      "docs/receiving/removal-independent-2d2d276b/manifest.json",
+      "docs/receiving/removal-independent-2d2d276b/negative/chrome.log",
+      "docs/receiving/removal-independent-2d2d276b/negative/manifest.json",
+      "docs/receiving/removal-independent-2d2d276b/negative/mutated-scope-draft-removal.mjs",
+      "docs/receiving/removal-independent-2d2d276b/negative/receipt.json",
+      "docs/receiving/removal-independent-2d2d276b/packet-verification.json",
+      "docs/receiving/removal-independent-2d2d276b/source-pin.json",
+      "out/receiving/pages-artifact-attempt-e3a41d2b3368/deployed/deployment.excerpt.log",
+      "out/receiving/pages-artifact-attempt-e3a41d2b3368/deployed/receipt.json",
+      "out/receiving/scope-compare-e3a41d2b3368/pages-current/ACCEPTANCE.json",
+      "out/receiving/scope-compare-e3a41d2b3368/pages-current/FILES.json",
+      "out/receiving/scope-compare-e3a41d2b3368/pages-current/README.md",
+      "out/receiving/scope-compare-e3a41d2b3368/pages-current/evidence.tar.gz",
+      "out/receiving/scope-history-6c20bb4b010e/README.md",
+      "out/receiving/scope-history-6c20bb4b010e/additive-edits.json",
+      "out/receiving/scope-history-6c20bb4b010e/archive-identities.json",
+      "out/receiving/scope-history-6c20bb4b010e/author-core/current-after-history.json",
+      "out/receiving/scope-history-6c20bb4b010e/author-core/current-before-history.json",
+      "out/receiving/scope-history-6c20bb4b010e/author-core/packet.json",
+      "out/receiving/scope-history-6c20bb4b010e/author-core/result.json",
+      "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/authored-replacement-draft.json",
+      "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/desktop-history.png",
+      "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/packet.json",
+      "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/pending-after-navigation.json",
+      "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/pending-before-navigation.json",
+      "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/phone-history.png",
+      "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/replacement-review-zero.json",
+      "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/result.json",
+      "out/receiving/scope-history-6c20bb4b010e/baseline-missing/current-before-history.json",
+      "out/receiving/scope-history-6c20bb4b010e/baseline-missing/packet.json",
+      "out/receiving/scope-history-6c20bb4b010e/baseline-missing/result.json",
+      "out/receiving/scope-history-6c20bb4b010e/composition-549.json",
+      "out/receiving/scope-history-6c20bb4b010e/current-composition.json",
+      "out/receiving/scope-history-6c20bb4b010e/current-composition.patch",
+      "out/receiving/scope-history-6c20bb4b010e/current-native/README.md",
+      "out/receiving/scope-history-6c20bb4b010e/current-native/packet.json",
+      "out/receiving/scope-history-6c20bb4b010e/current-native/publication-manifest.json",
+      "out/receiving/scope-history-6c20bb4b010e/current-publication-manifest.json",
+      "out/receiving/scope-history-6c20bb4b010e/independent/source-review-archive.json",
+      "out/receiving/scope-history-6c20bb4b010e/native-suite-receipt.json",
+      "out/receiving/scope-history-6c20bb4b010e/native-suite.stderr.txt",
+      "out/receiving/scope-history-6c20bb4b010e/native-suite.stdout.tap",
+      "out/receiving/scope-history-6c20bb4b010e/original-selector-run/current-before-history.json",
+      "out/receiving/scope-history-6c20bb4b010e/original-selector-run/packet.json",
+      "out/receiving/scope-history-6c20bb4b010e/original-selector-run/result.json",
+      "out/receiving/scope-history-6c20bb4b010e/preparation-errors.json",
+      "out/receiving/scope-history-6c20bb4b010e/probes/original-authored-history.cjs",
+      "out/receiving/scope-history-6c20bb4b010e/qualified-r1-to-current-inputs.patch",
+      "out/receiving/scope-history-6c20bb4b010e/source-freeze-r1.json",
+      "scope-history.css",
+      "scripts/check-removal-independent-2d2d276b.mjs",
+      "scripts/check-scope-comparison-export.mjs",
+      "scripts/check-scope-draft-removal.mjs",
+      "scripts/check-scope-history-lifecycle.cjs",
+      "scripts/check-scope-history.cjs",
+      "src/scope-comparison-export.mjs",
+      "src/scope-draft-removal.mjs",
+      "src/scope-history-view.mjs",
+      "src/scope-history.mjs",
+      "tests/scope-comparison-export.test.mjs",
+      "tests/scope-draft-removal.test.mjs",
+      "tests/scope-history.test.mjs"
+    ],
+    "deleted": []
+  },
+  "incomingBeforeImages": [
+    {
+      "path": "README.md",
+      "bytes": 25412,
+      "sha256": "70e1d7d47378c59c9be197a7d6cbfc575584fbd10e191145345edf8fc1a676b9",
+      "git_blob": "32b410c69f5803521a389c5d85a986ab00443d25"
+    },
+    {
+      "path": "scope.html",
+      "bytes": 11687,
+      "sha256": "5dc208dd5d84fa649e4a54522d71837277d2b120bf3132156637fea617d93288",
+      "git_blob": "e21602dc0e6c4f9017a723dfb9ce193bc0da6c68"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "bytes": 25404,
+      "sha256": "a7d415e04646a8682084369ff539b66556804f140b12ab57c5cafceecbca5ba2",
+      "git_blob": "e3dda4a14c8c3bc26d6da1a1baeb9a7f205eb12b"
+    },
+    {
+      "path": "src/scope-history.mjs",
+      "bytes": 4297,
+      "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+      "git_blob": "f34a8ca89a897e03a1a1ca1abf7d243f1a42e4b6"
+    },
+    {
+      "path": "src/scope-history-view.mjs",
+      "bytes": 5728,
+      "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+      "git_blob": "93abdcd8abbbbfbee99cdb5207c10ea346d3177e"
+    },
+    {
+      "path": "src/scope-draft-removal.mjs",
+      "bytes": 1399,
+      "sha256": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224",
+      "git_blob": "658db4f41e44ce241b24a0fd744be0193d3fe283"
+    },
+    {
+      "path": "scope-history.css",
+      "bytes": 2801,
+      "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69",
+      "git_blob": "993ab82f32c1546d688d949b72f8312f82c432ec"
+    }
+  ],
+  "source": [
+    {
+      "path": "README.md",
+      "bytes": 27699,
+      "sha256": "c07cd18b097094344287fc92a65992cfb3a6f2ca0c3996932afa753feee111b7",
+      "git_blob": "c628ea8df84d29ddf217be691d3b3db464b95380"
+    },
+    {
+      "path": "scope.html",
+      "bytes": 13581,
+      "sha256": "b8050abc6ccdf11b9c772c5ddbcc2218592c82eae862c58e81bc2929e5f4de34",
+      "git_blob": "caecbe1628df807d72a2f565a4ddf7f268957671"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "bytes": 26338,
+      "sha256": "39f2abe72f1ebaf09cf687177a858632bacb2a7d4708f0eb960cd23cc07a6e38",
+      "git_blob": "fdc06582f2fc9571eb8ca40ab9717b2abafaf799"
+    },
+    {
+      "path": "scope-checkpoint-import.css",
+      "bytes": 1317,
+      "sha256": "45587c17cf2db359652b88553b66c88898abb9fa4108380dd6dcb5a8f8e67f2f",
+      "git_blob": "21dc93c8647add981a584d235d57a584dd02b70a"
+    },
+    {
+      "path": "scripts/check-scope-checkpoint-import.mjs",
+      "bytes": 18804,
+      "sha256": "87df950276aff94dc7c11a55130bac914b37cae560866b85008ab8658c4d636a",
+      "git_blob": "aa12870fe30f907f6b7c6458b5e422256408ed26"
+    },
+    {
+      "path": "src/scope-checkpoint-import-ui.mjs",
+      "bytes": 7206,
+      "sha256": "850e8ef9afcc9c63e013d097839a823615d5e66389acf4a970897ce114843195",
+      "git_blob": "c40c6640b4d3edcb69c64af98e9d905680128779"
+    },
+    {
+      "path": "src/scope-checkpoint-import.mjs",
+      "bytes": 1771,
+      "sha256": "89019640fbe3a9a5f3955566bb3fd6e7d838fc30c984e41cd24fb43dd6f9788e",
+      "git_blob": "fef003292a5ff99d85ed355bec17a9841fe99618"
+    },
+    {
+      "path": "tests/scope-checkpoint-import.test.mjs",
+      "bytes": 4988,
+      "sha256": "17eae6447a19284b1e2d9ea7f54355e725d4a0d306b7545d8c98395229c5dea9",
+      "git_blob": "777e8478b57dcbbb2ea55e4be0ab03924cf2775d"
+    }
+  ],
+  "runtime": [
+    {
+      "path": "README.md",
+      "bytes": 27699,
+      "sha256": "c07cd18b097094344287fc92a65992cfb3a6f2ca0c3996932afa753feee111b7",
+      "git_blob": "c628ea8df84d29ddf217be691d3b3db464b95380"
+    },
+    {
+      "path": "package.json",
+      "bytes": 305,
+      "sha256": "d73623f2519ca0992e562da7170645d83e103a895dc04479159e6504d5829573",
+      "git_blob": "0144b047cd7b211c7b4a4f642b1f835a148ed355"
+    },
+    {
+      "path": "scope-checkpoint-import.css",
+      "bytes": 1317,
+      "sha256": "45587c17cf2db359652b88553b66c88898abb9fa4108380dd6dcb5a8f8e67f2f",
+      "git_blob": "21dc93c8647add981a584d235d57a584dd02b70a"
+    },
+    {
+      "path": "scope-history.css",
+      "bytes": 2801,
+      "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69",
+      "git_blob": "993ab82f32c1546d688d949b72f8312f82c432ec"
+    },
+    {
+      "path": "scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded"
+    },
+    {
+      "path": "scope.html",
+      "bytes": 13581,
+      "sha256": "b8050abc6ccdf11b9c772c5ddbcc2218592c82eae862c58e81bc2929e5f4de34",
+      "git_blob": "caecbe1628df807d72a2f565a4ddf7f268957671"
+    },
+    {
+      "path": "scripts/check-scope-checkpoint-import.mjs",
+      "bytes": 18804,
+      "sha256": "87df950276aff94dc7c11a55130bac914b37cae560866b85008ab8658c4d636a",
+      "git_blob": "aa12870fe30f907f6b7c6458b5e422256408ed26"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    {
+      "path": "src/scope-checkpoint-import-ui.mjs",
+      "bytes": 7206,
+      "sha256": "850e8ef9afcc9c63e013d097839a823615d5e66389acf4a970897ce114843195",
+      "git_blob": "c40c6640b4d3edcb69c64af98e9d905680128779"
+    },
+    {
+      "path": "src/scope-checkpoint-import.mjs",
+      "bytes": 1771,
+      "sha256": "89019640fbe3a9a5f3955566bb3fd6e7d838fc30c984e41cd24fb43dd6f9788e",
+      "git_blob": "fef003292a5ff99d85ed355bec17a9841fe99618"
+    },
+    {
+      "path": "src/scope-draft-removal.mjs",
+      "bytes": 1399,
+      "sha256": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224",
+      "git_blob": "658db4f41e44ce241b24a0fd744be0193d3fe283"
+    },
+    {
+      "path": "src/scope-history-view.mjs",
+      "bytes": 5728,
+      "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+      "git_blob": "93abdcd8abbbbfbee99cdb5207c10ea346d3177e"
+    },
+    {
+      "path": "src/scope-history.mjs",
+      "bytes": 4297,
+      "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+      "git_blob": "f34a8ca89a897e03a1a1ca1abf7d243f1a42e4b6"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    {
+      "path": "src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad"
+    },
+    {
+      "path": "src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "bytes": 26338,
+      "sha256": "39f2abe72f1ebaf09cf687177a858632bacb2a7d4708f0eb960cd23cc07a6e38",
+      "git_blob": "fdc06582f2fc9571eb8ca40ab9717b2abafaf799"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    {
+      "path": "tests/scope-checkpoint-import.test.mjs",
+      "bytes": 4988,
+      "sha256": "17eae6447a19284b1e2d9ea7f54355e725d4a0d306b7545d8c98395229c5dea9",
+      "git_blob": "777e8478b57dcbbb2ea55e4be0ab03924cf2775d"
+    },
+    {
+      "path": "tests/scope-plan.test.mjs",
+      "bytes": 10569,
+      "sha256": "f751de2db9141bf1f446a3071bef20081dbf2bbb4ec3b3ccf84c9e400c18b685",
+      "git_blob": "4dc7bc945f0e0728a79a26363eb276852da8334b"
+    },
+    {
+      "path": "tests/scope-revision-draft.test.mjs",
+      "bytes": 8867,
+      "sha256": "4cf167dcb036a2d1112c7e989eb563c36cc495bd9d41dc2bd453174443711614",
+      "git_blob": "03219dd86a781a7bd8085252533e04b1b9281919"
+    },
+    {
+      "path": "tests/scope-workspace-record.test.mjs",
+      "bytes": 13625,
+      "sha256": "c3c194289a14c0786473ff73f625f40a6a7cfccd09883ea6733dffc37c707905",
+      "git_blob": "5606ab99933f9665634971662d41c4b5ca93ec83"
+    },
+    {
+      "path": "tests/workspace-form-values.test.mjs",
+      "bytes": 3257,
+      "sha256": "316f000073c2d659e629192ac3edc419771e19215487845b051c5df25d797685",
+      "git_blob": "961c7ff3c9a58ec1418aede8b0f50194cfcadbbc"
+    }
+  ],
+  "modifiedCurrentPaths": [
+    "README.md",
+    "scope.html",
+    "src/scope-workspace.mjs"
+  ],
+  "currentOtherLeavesPreserved": 669,
+  "sealedComponent": {
+    "sourceManifest": {
+      "path": "/tmp/hamon-scopesignal-checkpoint-import-68094585a1c2/source-manifest.json",
+      "bytes": 10755,
+      "sha256": "12d38d5ba9a367e6117d5c9243c6d23bd3e607280a38fafacb698c48e382a0bf",
+      "git_blob": "4b39f69216562595817b771f1e807926d5cdc715"
+    },
+    "receipt": {
+      "path": "/tmp/hamon-scopesignal-checkpoint-import-68094585a1c2/component-receipt.json",
+      "bytes": 12286,
+      "sha256": "8f62b05bf05837794d96251e01ce27d2bbee43ce96649c2a08717d86c948f4a2",
+      "git_blob": "d8ad5152919e146672e53e011545ae93be08df33"
+    },
+    "capsule": {
+      "path": "/tmp/hamon-scopesignal-checkpoint-import-68094585a1c2/checkpoint-reuse-evidence.tar.gz",
+      "bytes": 1184761,
+      "sha256": "359fbefb48edddd56e9db2bce89c3821529d519b82fc2ad1ba569cb721efeac2",
+      "git_blob": "a11a4fa9c77423e5a75d3c00e83761b1e60dbae2"
+    }
+  },
+  "compositionAssertions": {
+    "currentREADMERecoveredExactlyWhenOwnAdditionRemoved": true,
+    "currentHTMLRecoveredExactlyWhenOwnStyleAndSectionRemoved": true,
+    "currentControllerRecoveredExactlyWhenOwnImportRetireHooksAndAppendRemoved": true,
+    "unchangedOwnFiveNewFiles": true,
+    "historyClearAndUpdatePreserved": true,
+    "currentUndoRetainsOrdinaryTextEdits": true,
+    "appendExplicitlyClearsRemovalRecovery": true,
+    "wholeWorkspaceApplyRetiresImportThenUsesExistingRemovalClear": true,
+    "currentRuntimePinsMatchAdmittedFullTree": true
+  },
+  "syntaxChecks": [
+    {
+      "command": [
+        "node",
+        "--check",
+        "src/scope-workspace.mjs"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "src/scope-checkpoint-import-ui.mjs"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "node",
+        "--check",
+        "src/scope-checkpoint-import.mjs"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "qualificationScope": "Component has sealed 7 native groups and 7 earlier browser groups plus 5 groups on corrected final UI. Independent original-native receiver has its own frozen contract. This composition adds current Undo retirement; current-composition actual browser and supported Node24 hosted checks remain pending."
+}

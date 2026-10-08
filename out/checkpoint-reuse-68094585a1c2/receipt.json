@@ -1,0 +1,318 @@
+{
+  "schema": "scopesignal.checkpoint-reuse.component/1",
+  "at": "2026-10-08T19:16:13.214922+00:00",
+  "worker": "estate-68094585a1c2 / receiving_review",
+  "continuation_executor": "scope_receiving",
+  "repository": "Jacob-Met/scopesignal",
+  "issue": 35,
+  "parent": "847505d2fe9f8295110fc13a3fb9e05ec71f6644",
+  "tree": "cac1d2bbdd38e2e4c2aed7249c2593ec174c0eaa",
+  "contract_sha256": "21ee8b3d2c18bd6589805c02a054698fb6ae38898ac67f10bf11518b7e437daf",
+  "source_manifest_sha256": "12d38d5ba9a367e6117d5c9243c6d23bd3e607280a38fafacb698c48e382a0bf",
+  "source_patch_sha256": "6ec1c20688cbc01bf251c1d23212f104db39a24f94f9f13e5e63a4053ea23c00",
+  "source_fence": {
+    "modified": [
+      "README.md",
+      "scope.html",
+      "src/scope-workspace.mjs"
+    ],
+    "added": [
+      "scope-checkpoint-import.css",
+      "scripts/check-scope-checkpoint-import.mjs",
+      "src/scope-checkpoint-import-ui.mjs",
+      "src/scope-checkpoint-import.mjs",
+      "tests/scope-checkpoint-import.test.mjs"
+    ],
+    "protected_input_count": 13,
+    "full_tree_preservation": "Root integration must compose against the fresh complete repository tree; these are the exact owned input and changed-path pins."
+  },
+  "native": {
+    "tests_passed": 7,
+    "tests_failed": 0,
+    "receipt": "evidence/native-candidate-v1/receipt.json",
+    "receipt_sha256": "6f306a9ba15580146c6f9bb6ea3a24b2746648cb1f2030799b2d658864c95846",
+    "runtime": "Node22.22.1 below declared >=24 floor; supported hosted gate remains pending",
+    "pure_helper_unchanged_after_native_tests": true
+  },
+  "browser": {
+    "distinct_groups_passed": 12,
+    "runs": [
+      {
+        "evidence": "evidence/browser-candidate-v3/receipt.json",
+        "sha256": "998bc64a6c9e06cc2c910839814abd60748b4437c69eec855eac9aad08fb9e06",
+        "reported_pass": false,
+        "completed_groups": [
+          {
+            "name": "native reviewed-source preview starts empty and preserves draft and whole-open preview",
+            "pass": true
+          }
+        ],
+        "source_pins": [
+          {
+            "path": "README.md",
+            "bytes": 23674,
+            "sha256": "d334caa9ca0d87394a9e6aefa9dbeadf9f5affbf2d89450e82b390b0194c98a8"
+          },
+          {
+            "path": "scope.html",
+            "bytes": 10761,
+            "sha256": "3d894b4df7c2b21a2934909fc9c1175d36c4d9aaa6d99b17c84720083793b6a7"
+          },
+          {
+            "path": "scope-workspace.css",
+            "bytes": 5277,
+            "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20"
+          },
+          {
+            "path": "scope-checkpoint-import.css",
+            "bytes": 1317,
+            "sha256": "45587c17cf2db359652b88553b66c88898abb9fa4108380dd6dcb5a8f8e67f2f"
+          },
+          {
+            "path": "src/scope-plan.mjs",
+            "bytes": 6794,
+            "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad"
+          },
+          {
+            "path": "src/scope-workspace-record.mjs",
+            "bytes": 7421,
+            "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+          },
+          {
+            "path": "src/scope-workspace.mjs",
+            "bytes": 24813,
+            "sha256": "4bc64e884e1f518b8abefaf2f736ee60fd4e97ed47a095fbe978982d649069d8"
+          },
+          {
+            "path": "src/scope-checkpoint-import.mjs",
+            "bytes": 1771,
+            "sha256": "89019640fbe3a9a5f3955566bb3fd6e7d838fc30c984e41cd24fb43dd6f9788e"
+          },
+          {
+            "path": "src/scope-checkpoint-import-ui.mjs",
+            "bytes": 7164,
+            "sha256": "830a14f5fbf78e1da30d5cdf8d3d38f5cce1b2a0ad55195e62a936fc5d177345"
+          }
+        ],
+        "browser": "Chrome/153.0.8010.47"
+      },
+      {
+        "evidence": "evidence/browser-candidate-v4-remaining/receipt.json",
+        "sha256": "9f63964a2bce28ec751ee447c9a15c5732a26a7fe7d9957f9331ddfc089b53ce",
+        "reported_pass": false,
+        "completed_groups": [
+          {
+            "name": "selective append preserves source order and exports zero transferred review state",
+            "pass": true
+          },
+          {
+            "name": "unfinished strings and equal rows remain literal and ordinary review still validates",
+            "pass": true
+          },
+          {
+            "name": "12-row capacity refuses whole append and supports a smaller retry",
+            "pass": true
+          },
+          {
+            "name": "A-to-B-to-A edits retire preview and final identity detects edits without input",
+            "pass": true
+          },
+          {
+            "name": "delayed reads cannot revive after a same-value draft roundtrip",
+            "pass": true
+          },
+          {
+            "name": "new selection wins overlapping reads and cancellation retires an in-flight read",
+            "pass": true
+          }
+        ],
+        "source_pins": [
+          {
+            "path": "README.md",
+            "bytes": 23674,
+            "sha256": "d334caa9ca0d87394a9e6aefa9dbeadf9f5affbf2d89450e82b390b0194c98a8"
+          },
+          {
+            "path": "scope.html",
+            "bytes": 10761,
+            "sha256": "3d894b4df7c2b21a2934909fc9c1175d36c4d9aaa6d99b17c84720083793b6a7"
+          },
+          {
+            "path": "scope-workspace.css",
+            "bytes": 5277,
+            "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20"
+          },
+          {
+            "path": "scope-checkpoint-import.css",
+            "bytes": 1317,
+            "sha256": "45587c17cf2db359652b88553b66c88898abb9fa4108380dd6dcb5a8f8e67f2f"
+          },
+          {
+            "path": "src/scope-plan.mjs",
+            "bytes": 6794,
+            "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad"
+          },
+          {
+            "path": "src/scope-workspace-record.mjs",
+            "bytes": 7421,
+            "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+          },
+          {
+            "path": "src/scope-workspace.mjs",
+            "bytes": 24813,
+            "sha256": "4bc64e884e1f518b8abefaf2f736ee60fd4e97ed47a095fbe978982d649069d8"
+          },
+          {
+            "path": "src/scope-checkpoint-import.mjs",
+            "bytes": 1771,
+            "sha256": "89019640fbe3a9a5f3955566bb3fd6e7d838fc30c984e41cd24fb43dd6f9788e"
+          },
+          {
+            "path": "src/scope-checkpoint-import-ui.mjs",
+            "bytes": 7164,
+            "sha256": "830a14f5fbf78e1da30d5cdf8d3d38f5cce1b2a0ad55195e62a936fc5d177345"
+          }
+        ],
+        "browser": "Chrome/153.0.8010.47"
+      },
+      {
+        "evidence": "evidence/browser-candidate-v6-remaining/receipt.json",
+        "sha256": "e2414f740b9324712c24c90d9cbc5926d6542aab95d30d87acd17e7bf14cef9b",
+        "reported_pass": true,
+        "completed_groups": [
+          {
+            "name": "chooser-time draft edits refuse old file and permit a fresh selection",
+            "pass": true
+          },
+          {
+            "name": "whole-workspace replacement retires older import even with identical draft values",
+            "pass": true
+          },
+          {
+            "name": "review stage refuses import and Edit draft restores fresh reuse without approvals",
+            "pass": true
+          },
+          {
+            "name": "malformed UTF-8 size and unsupported-source refusals preserve draft and retry",
+            "pass": true
+          },
+          {
+            "name": "phone layout keyboard selection and append focus remain usable",
+            "pass": true
+          }
+        ],
+        "source_pins": [
+          {
+            "path": "README.md",
+            "bytes": 23674,
+            "sha256": "d334caa9ca0d87394a9e6aefa9dbeadf9f5affbf2d89450e82b390b0194c98a8"
+          },
+          {
+            "path": "scope.html",
+            "bytes": 10761,
+            "sha256": "3d894b4df7c2b21a2934909fc9c1175d36c4d9aaa6d99b17c84720083793b6a7"
+          },
+          {
+            "path": "scope-workspace.css",
+            "bytes": 5277,
+            "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20"
+          },
+          {
+            "path": "scope-checkpoint-import.css",
+            "bytes": 1317,
+            "sha256": "45587c17cf2db359652b88553b66c88898abb9fa4108380dd6dcb5a8f8e67f2f"
+          },
+          {
+            "path": "src/scope-plan.mjs",
+            "bytes": 6794,
+            "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad"
+          },
+          {
+            "path": "src/scope-workspace-record.mjs",
+            "bytes": 7421,
+            "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+          },
+          {
+            "path": "src/scope-workspace.mjs",
+            "bytes": 24813,
+            "sha256": "4bc64e884e1f518b8abefaf2f736ee60fd4e97ed47a095fbe978982d649069d8"
+          },
+          {
+            "path": "src/scope-checkpoint-import.mjs",
+            "bytes": 1771,
+            "sha256": "89019640fbe3a9a5f3955566bb3fd6e7d838fc30c984e41cd24fb43dd6f9788e"
+          },
+          {
+            "path": "src/scope-checkpoint-import-ui.mjs",
+            "bytes": 7206,
+            "sha256": "850e8ef9afcc9c63e013d097839a823615d5e66389acf4a970897ce114843195"
+          }
+        ],
+        "browser": "Chrome/153.0.8010.47"
+      }
+    ],
+    "qualification_scope": "Seven groups passed before the narrow stale-chooser file-input retirement correction; five remaining groups passed on the final corrected UI. Their source hashes and failed run boundaries are preserved. Independent receiving of the final source remains pending.",
+    "final_ui_sha256": "850e8ef9afcc9c63e013d097839a823615d5e66389acf4a970897ce114843195",
+    "actual_downloads": [
+      {
+        "file": "selected-draft-download.json",
+        "browserFilename": "scopesignal-workspace-v1.json",
+        "bytes": 1194,
+        "sha256": "56a12f68a8c2221024941108491ecaafafb72beb4e09c369d0597f850a99d696"
+      },
+      {
+        "file": "unfinished-combined-download.json",
+        "browserFilename": "scopesignal-workspace-v1.json",
+        "bytes": 1411,
+        "sha256": "452b112133ab1e1474654b878a6bdf555fff6fbc72b28ac4098e6022b63736bc"
+      }
+    ],
+    "desktop_and_phone_screenshots_inspected": true,
+    "page_errors": 0,
+    "provider_or_account_calls": false,
+    "existing_fonts_blocked": true
+  },
+  "history": [
+    {
+      "path": "evidence/browser-candidate-v1",
+      "result": "Harness pre-execution ENOENT: missing scripts directory. Directory created; no product result."
+    },
+    {
+      "path": "evidence/browser-candidate-v2",
+      "result": "Chromium missed 20-second startup deadline under observed native load. New owned profile and 45-second startup later succeeded; no runtime/cache change."
+    },
+    {
+      "path": "evidence/browser-candidate-v3",
+      "result": "One group passed, then download observation timed out on page CDP session. Owned directory remained empty; attempted recovery refused. Browser-target event/behavior observation later produced exact actual downloads."
+    },
+    {
+      "path": "evidence/browser-candidate-v4-remaining",
+      "result": "Six pending groups passed, then same-file retry after a refused stale chooser timed out. The stale input list was cleared in one early-return branch; raw prior source and correction receipt retained."
+    },
+    {
+      "path": "evidence/browser-candidate-v5-remaining",
+      "result": "Native /home ENOSPC before Chromium. Space became available before any cleanup; no profiles or other worker files were deleted."
+    },
+    {
+      "path": "evidence/browser-candidate-v6-remaining",
+      "result": "Five remaining groups passed on the final corrected UI; browser exited normally."
+    }
+  ],
+  "coordination": {
+    "claim": "https://github.com/Jacob-Met/scopesignal/issues/35",
+    "history_hook_notice": 6066032747,
+    "undo_hook_notice": 6066562935,
+    "preserved_owners": [
+      29,
+      34,
+      33
+    ]
+  },
+  "state": {
+    "implemented": true,
+    "author_qualified": true,
+    "independently_received": false,
+    "integrated": false,
+    "deployed": false
+  }
+}

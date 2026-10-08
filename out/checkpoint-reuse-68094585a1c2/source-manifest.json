@@ -1,0 +1,310 @@
+{
+  "schema": "scopesignal.checkpoint-reuse.source/1",
+  "at": "2026-10-08T19:16:13.214922+00:00",
+  "worker": "estate-68094585a1c2 / receiving_review",
+  "continuation_executor": "scope_receiving",
+  "parent": "847505d2fe9f8295110fc13a3fb9e05ec71f6644",
+  "tree": "cac1d2bbdd38e2e4c2aed7249c2593ec174c0eaa",
+  "modified": [
+    {
+      "path": "README.md",
+      "bytes": 23674,
+      "sha256": "d334caa9ca0d87394a9e6aefa9dbeadf9f5affbf2d89450e82b390b0194c98a8",
+      "git_blob": "5428d9f92bba379385c1890c85edbf2d6c31c11b",
+      "mode": "100644"
+    },
+    {
+      "path": "scope.html",
+      "bytes": 10761,
+      "sha256": "3d894b4df7c2b21a2934909fc9c1175d36c4d9aaa6d99b17c84720083793b6a7",
+      "git_blob": "2f86083d5ac936036b60dcb876b8234fc2d6e35c",
+      "mode": "100644"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "bytes": 24813,
+      "sha256": "4bc64e884e1f518b8abefaf2f736ee60fd4e97ed47a095fbe978982d649069d8",
+      "git_blob": "ae333d2049dde56d13ddcd4cbe8aa3a66d2eadce",
+      "mode": "100644"
+    }
+  ],
+  "added": [
+    {
+      "path": "scope-checkpoint-import.css",
+      "bytes": 1317,
+      "sha256": "45587c17cf2db359652b88553b66c88898abb9fa4108380dd6dcb5a8f8e67f2f",
+      "git_blob": "21dc93c8647add981a584d235d57a584dd02b70a",
+      "mode": "100644"
+    },
+    {
+      "path": "scripts/check-scope-checkpoint-import.mjs",
+      "bytes": 18804,
+      "sha256": "87df950276aff94dc7c11a55130bac914b37cae560866b85008ab8658c4d636a",
+      "git_blob": "aa12870fe30f907f6b7c6458b5e422256408ed26",
+      "mode": "100644"
+    },
+    {
+      "path": "src/scope-checkpoint-import-ui.mjs",
+      "bytes": 7206,
+      "sha256": "850e8ef9afcc9c63e013d097839a823615d5e66389acf4a970897ce114843195",
+      "git_blob": "c40c6640b4d3edcb69c64af98e9d905680128779",
+      "mode": "100644"
+    },
+    {
+      "path": "src/scope-checkpoint-import.mjs",
+      "bytes": 1771,
+      "sha256": "89019640fbe3a9a5f3955566bb3fd6e7d838fc30c984e41cd24fb43dd6f9788e",
+      "git_blob": "fef003292a5ff99d85ed355bec17a9841fe99618",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scope-checkpoint-import.test.mjs",
+      "bytes": 4988,
+      "sha256": "17eae6447a19284b1e2d9ea7f54355e725d4a0d306b7545d8c98395229c5dea9",
+      "git_blob": "777e8478b57dcbbb2ea55e4be0ab03924cf2775d",
+      "mode": "100644"
+    }
+  ],
+  "protected_original_inputs": [
+    {
+      "path": "package.json",
+      "bytes": 305,
+      "sha256": "d73623f2519ca0992e562da7170645d83e103a895dc04479159e6504d5829573",
+      "git_blob": "0144b047cd7b211c7b4a4f642b1f835a148ed355",
+      "mode": "100644"
+    },
+    {
+      "path": "scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "mode": "100644"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "mode": "100644"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "mode": "100644"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "mode": "100644"
+    },
+    {
+      "path": "src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "mode": "100644"
+    },
+    {
+      "path": "src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "mode": "100644"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "mode": "100644"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scope-plan.test.mjs",
+      "bytes": 10569,
+      "sha256": "f751de2db9141bf1f446a3071bef20081dbf2bbb4ec3b3ccf84c9e400c18b685",
+      "git_blob": "4dc7bc945f0e0728a79a26363eb276852da8334b",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scope-revision-draft.test.mjs",
+      "bytes": 8867,
+      "sha256": "4cf167dcb036a2d1112c7e989eb563c36cc495bd9d41dc2bd453174443711614",
+      "git_blob": "03219dd86a781a7bd8085252533e04b1b9281919",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scope-workspace-record.test.mjs",
+      "bytes": 13625,
+      "sha256": "c3c194289a14c0786473ff73f625f40a6a7cfccd09883ea6733dffc37c707905",
+      "git_blob": "5606ab99933f9665634971662d41c4b5ca93ec83",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/workspace-form-values.test.mjs",
+      "bytes": 3257,
+      "sha256": "316f000073c2d659e629192ac3edc419771e19215487845b051c5df25d797685",
+      "git_blob": "961c7ff3c9a58ec1418aede8b0f50194cfcadbbc",
+      "mode": "100644"
+    }
+  ],
+  "candidate_files": [
+    {
+      "path": "README.md",
+      "bytes": 23674,
+      "sha256": "d334caa9ca0d87394a9e6aefa9dbeadf9f5affbf2d89450e82b390b0194c98a8",
+      "git_blob": "5428d9f92bba379385c1890c85edbf2d6c31c11b",
+      "mode": "100644"
+    },
+    {
+      "path": "package.json",
+      "bytes": 305,
+      "sha256": "d73623f2519ca0992e562da7170645d83e103a895dc04479159e6504d5829573",
+      "git_blob": "0144b047cd7b211c7b4a4f642b1f835a148ed355",
+      "mode": "100644"
+    },
+    {
+      "path": "scope-checkpoint-import.css",
+      "bytes": 1317,
+      "sha256": "45587c17cf2db359652b88553b66c88898abb9fa4108380dd6dcb5a8f8e67f2f",
+      "git_blob": "21dc93c8647add981a584d235d57a584dd02b70a",
+      "mode": "100644"
+    },
+    {
+      "path": "scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "mode": "100644"
+    },
+    {
+      "path": "scope.html",
+      "bytes": 10761,
+      "sha256": "3d894b4df7c2b21a2934909fc9c1175d36c4d9aaa6d99b17c84720083793b6a7",
+      "git_blob": "2f86083d5ac936036b60dcb876b8234fc2d6e35c",
+      "mode": "100644"
+    },
+    {
+      "path": "scripts/check-scope-checkpoint-import.mjs",
+      "bytes": 18804,
+      "sha256": "87df950276aff94dc7c11a55130bac914b37cae560866b85008ab8658c4d636a",
+      "git_blob": "aa12870fe30f907f6b7c6458b5e422256408ed26",
+      "mode": "100644"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "mode": "100644"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "mode": "100644"
+    },
+    {
+      "path": "src/scope-checkpoint-import-ui.mjs",
+      "bytes": 7206,
+      "sha256": "850e8ef9afcc9c63e013d097839a823615d5e66389acf4a970897ce114843195",
+      "git_blob": "c40c6640b4d3edcb69c64af98e9d905680128779",
+      "mode": "100644"
+    },
+    {
+      "path": "src/scope-checkpoint-import.mjs",
+      "bytes": 1771,
+      "sha256": "89019640fbe3a9a5f3955566bb3fd6e7d838fc30c984e41cd24fb43dd6f9788e",
+      "git_blob": "fef003292a5ff99d85ed355bec17a9841fe99618",
+      "mode": "100644"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "mode": "100644"
+    },
+    {
+      "path": "src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "mode": "100644"
+    },
+    {
+      "path": "src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "mode": "100644"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "mode": "100644"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "bytes": 24813,
+      "sha256": "4bc64e884e1f518b8abefaf2f736ee60fd4e97ed47a095fbe978982d649069d8",
+      "git_blob": "ae333d2049dde56d13ddcd4cbe8aa3a66d2eadce",
+      "mode": "100644"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scope-checkpoint-import.test.mjs",
+      "bytes": 4988,
+      "sha256": "17eae6447a19284b1e2d9ea7f54355e725d4a0d306b7545d8c98395229c5dea9",
+      "git_blob": "777e8478b57dcbbb2ea55e4be0ab03924cf2775d",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scope-plan.test.mjs",
+      "bytes": 10569,
+      "sha256": "f751de2db9141bf1f446a3071bef20081dbf2bbb4ec3b3ccf84c9e400c18b685",
+      "git_blob": "4dc7bc945f0e0728a79a26363eb276852da8334b",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scope-revision-draft.test.mjs",
+      "bytes": 8867,
+      "sha256": "4cf167dcb036a2d1112c7e989eb563c36cc495bd9d41dc2bd453174443711614",
+      "git_blob": "03219dd86a781a7bd8085252533e04b1b9281919",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/scope-workspace-record.test.mjs",
+      "bytes": 13625,
+      "sha256": "c3c194289a14c0786473ff73f625f40a6a7cfccd09883ea6733dffc37c707905",
+      "git_blob": "5606ab99933f9665634971662d41c4b5ca93ec83",
+      "mode": "100644"
+    },
+    {
+      "path": "tests/workspace-form-values.test.mjs",
+      "bytes": 3257,
+      "sha256": "316f000073c2d659e629192ac3edc419771e19215487845b051c5df25d797685",
+      "git_blob": "961c7ff3c9a58ec1418aede8b0f50194cfcadbbc",
+      "mode": "100644"
+    }
+  ]
+}

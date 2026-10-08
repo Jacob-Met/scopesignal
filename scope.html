@@ -8,6 +8,7 @@
   <title>Build a fixture scope — ScopeSignal</title>
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./scope-workspace.css">
+  <link rel="stylesheet" href="./scope-checkpoint-import.css">
   <link rel="stylesheet" href="./scope-history.css">
   <script type="module" src="./src/scope-workspace.mjs"></script>
 </head>
@@ -66,6 +67,23 @@
         <button id="scope-add" class="button button-outline" type="button">+ Add checkpoint</button>
         <button id="scope-undo-remove" class="button button-outline" type="button" aria-describedby="scope-removal-help" disabled>Undo removal</button>
         <p id="scope-removal-help" class="microcopy">Undo restores the most recently removed checkpoint and keeps later text edits. It is available until another add, copy or move, or until you review or replace the workspace.</p>
+        <section id="scope-checkpoint-import" class="scope-checkpoint-import" aria-labelledby="scope-checkpoint-import-title">
+          <h3 id="scope-checkpoint-import-title">Reuse saved checkpoints</h3>
+          <p class="scope-help">Choose checkpoint definitions from a saved workspace to add to this draft. Your project details and current checkpoints stay in place. Only deliverables, amounts as saved and planned evidence are copied.</p>
+          <label class="scope-file-open" for="scope-checkpoint-file">Choose saved checkpoints
+            <input id="scope-checkpoint-file" type="file" accept=".json,application/json" aria-describedby="scope-checkpoint-file-help">
+          </label>
+          <p id="scope-checkpoint-file-help" class="microcopy">Version 1 workspace JSON, up to 1 MiB. A saved draft or review can supply definitions; its approvals, review notes and simulated payment events stay in that file. Review checks the copied amounts against your current project cap.</p>
+          <div id="scope-checkpoint-preview" class="scope-checkpoint-preview" hidden>
+            <h4>Choose definitions to add</h4>
+            <p id="scope-checkpoint-source"></p>
+            <div id="scope-checkpoint-options" class="scope-checkpoint-options"></div>
+            <p id="scope-checkpoint-selection" class="scope-help" role="status" aria-live="polite"></p>
+            <button id="scope-checkpoint-apply" class="button button-dark" type="button" aria-describedby="scope-checkpoint-selection" disabled>Add selected checkpoints</button>
+          </div>
+          <button id="scope-checkpoint-cancel" class="text-button" type="button" hidden>Cancel checkpoint reuse</button>
+          <p id="scope-checkpoint-status" class="scope-checkpoint-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        </section>
       </section>
       <div class="scope-draft-footer">
         <p id="scope-budget" class="scope-budget" role="status"></p>

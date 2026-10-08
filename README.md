@@ -301,6 +301,42 @@ offline file reading, phone and keyboard operation, failure/retry, unchanged
 workspace/preview, and Chromium PDF printing. It uses authored fictional inputs
 and blocks external requests; no packages or provider services are needed.
 
+## Reuse selected saved checkpoints
+
+While editing a scope, **Choose saved checkpoints** reads one version 1 workspace
+and previews its saved definitions. Check the rows you want, then choose
+**Add selected checkpoints**. The selected definitions append in their original
+source order. Repeated equal rows remain separate choices.
+
+Your current project name, brief, cap and existing checkpoints stay unchanged.
+Only each saved deliverable, exact amount string and planned evidence is copied;
+approvals, accepted or pending review notes, IDs and simulated payment events do
+not transfer. Both editable and reviewed saved workspaces can supply definitions.
+Empty or unfinished strings are retained for you to edit. Ordinary scope review
+still checks amounts and cap fit, and adding never adjusts either automatically.
+
+No rows are selected initially. The whole append must fit the existing 12-row
+limit. File selection, preview, cancellation and refusal leave the current draft
+in place. Editing the draft, changing its rows, moving between draft and review,
+or replacing the workspace retires an older choice, including a delayed file
+read. Choose the file again after those changes. A successful append clears its
+preview and focuses the first copied deliverable. The existing whole-workspace
+open preview and any pending removal recovery are retired by that draft change.
+
+The source stays a local file and is never rewritten. Save the updated workspace
+with its existing download control to keep the combined draft.
+
+The optional actual-browser receiver is
+`node scripts/check-scope-checkpoint-import.mjs`. Set `SCOPESIGNAL_PUPPETEER` to an
+existing Puppeteer module and `SCOPESIGNAL_CHROME` to an installed Chromium binary.
+`SCOPESIGNAL_SOURCE`, `SCOPESIGNAL_EVIDENCE` and `SCOPESIGNAL_BROWSER_FILES` select
+the source, evidence directory and browser-accessible profile/download directory.
+`SCOPESIGNAL_CHECKPOINT_SOURCE` can select an existing native reviewed fixture;
+otherwise the receiver creates a fictional source through the unchanged codec.
+The receiver blocks external requests and checks actual file selection, downloads,
+field custody, stale reads, row capacity, keyboard operation and phone layout.
+It does not install packages or contact an account or payment provider.
+
 ## Payment safety model
 
 - A milestone cannot create an order until a human explicitly approves it.

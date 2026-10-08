@@ -1,0 +1,629 @@
+--- a/README.md
++++ b/README.md
+@@ -299,6 +299,42 @@
+ workspace/preview, and Chromium PDF printing. It uses authored fictional inputs
+ and blocks external requests; no packages or provider services are needed.
+ 
++## Reuse selected saved checkpoints
++
++While editing a scope, **Choose saved checkpoints** reads one version 1 workspace
++and previews its saved definitions. Check the rows you want, then choose
++**Add selected checkpoints**. The selected definitions append in their original
++source order. Repeated equal rows remain separate choices.
++
++Your current project name, brief, cap and existing checkpoints stay unchanged.
++Only each saved deliverable, exact amount string and planned evidence is copied;
++approvals, accepted or pending review notes, IDs and simulated payment events do
++not transfer. Both editable and reviewed saved workspaces can supply definitions.
++Empty or unfinished strings are retained for you to edit. Ordinary scope review
++still checks amounts and cap fit, and adding never adjusts either automatically.
++
++No rows are selected initially. The whole append must fit the existing 12-row
++limit. File selection, preview, cancellation and refusal leave the current draft
++in place. Editing the draft, changing its rows, moving between draft and review,
++or replacing the workspace retires an older choice, including a delayed file
++read. Choose the file again after those changes. A successful append clears its
++preview and focuses the first copied deliverable. The existing whole-workspace
++open preview and any pending removal recovery are retired by that draft change.
++
++The source stays a local file and is never rewritten. Save the updated workspace
++with its existing download control to keep the combined draft.
++
++The optional actual-browser receiver is
++`node scripts/check-scope-checkpoint-import.mjs`. Set `SCOPESIGNAL_PUPPETEER` to an
++existing Puppeteer module and `SCOPESIGNAL_CHROME` to an installed Chromium binary.
++`SCOPESIGNAL_SOURCE`, `SCOPESIGNAL_EVIDENCE` and `SCOPESIGNAL_BROWSER_FILES` select
++the source, evidence directory and browser-accessible profile/download directory.
++`SCOPESIGNAL_CHECKPOINT_SOURCE` can select an existing native reviewed fixture;
++otherwise the receiver creates a fictional source through the unchanged codec.
++The receiver blocks external requests and checks actual file selection, downloads,
++field custody, stale reads, row capacity, keyboard operation and phone layout.
++It does not install packages or contact an account or payment provider.
++
+ ## Payment safety model
+ 
+ - A milestone cannot create an order until a human explicitly approves it.
+--- a/scope.html
++++ b/scope.html
+@@ -8,6 +8,7 @@
+   <title>Build a fixture scope — ScopeSignal</title>
+   <link rel="stylesheet" href="./styles.css">
+   <link rel="stylesheet" href="./scope-workspace.css">
++  <link rel="stylesheet" href="./scope-checkpoint-import.css">
+   <link rel="stylesheet" href="./scope-history.css">
+   <script type="module" src="./src/scope-workspace.mjs"></script>
+ </head>
+@@ -64,6 +65,23 @@
+         <button id="scope-add" class="button button-outline" type="button">+ Add checkpoint</button>
+         <button id="scope-undo-remove" class="button button-outline" type="button" aria-describedby="scope-removal-help" disabled>Undo removal</button>
+         <p id="scope-removal-help" class="microcopy">Undo restores the most recently removed checkpoint and keeps later text edits. It is available until another add, copy or move, or until you review or replace the workspace.</p>
++        <section id="scope-checkpoint-import" class="scope-checkpoint-import" aria-labelledby="scope-checkpoint-import-title">
++          <h3 id="scope-checkpoint-import-title">Reuse saved checkpoints</h3>
++          <p class="scope-help">Choose checkpoint definitions from a saved workspace to add to this draft. Your project details and current checkpoints stay in place. Only deliverables, amounts as saved and planned evidence are copied.</p>
++          <label class="scope-file-open" for="scope-checkpoint-file">Choose saved checkpoints
++            <input id="scope-checkpoint-file" type="file" accept=".json,application/json" aria-describedby="scope-checkpoint-file-help">
++          </label>
++          <p id="scope-checkpoint-file-help" class="microcopy">Version 1 workspace JSON, up to 1 MiB. A saved draft or review can supply definitions; its approvals, review notes and simulated payment events stay in that file. Review checks the copied amounts against your current project cap.</p>
++          <div id="scope-checkpoint-preview" class="scope-checkpoint-preview" hidden>
++            <h4>Choose definitions to add</h4>
++            <p id="scope-checkpoint-source"></p>
++            <div id="scope-checkpoint-options" class="scope-checkpoint-options"></div>
++            <p id="scope-checkpoint-selection" class="scope-help" role="status" aria-live="polite"></p>
++            <button id="scope-checkpoint-apply" class="button button-dark" type="button" aria-describedby="scope-checkpoint-selection" disabled>Add selected checkpoints</button>
++          </div>
++          <button id="scope-checkpoint-cancel" class="text-button" type="button" hidden>Cancel checkpoint reuse</button>
++          <p id="scope-checkpoint-status" class="scope-checkpoint-status" role="status" aria-live="polite" aria-atomic="true"></p>
++        </section>
+       </section>
+       <div class="scope-draft-footer">
+         <p id="scope-budget" class="scope-budget" role="status"></p>
+--- a/src/scope-workspace.mjs
++++ b/src/scope-workspace.mjs
+@@ -1,3 +1,4 @@
++import { mountCheckpointImport } from './scope-checkpoint-import-ui.mjs';
+ import { createDraftRemovalRecovery } from './scope-draft-removal.mjs';
+ import { mountScopeHistory } from './scope-history-view.mjs';
+ import { createScopeReviewDocument, SCOPE_REVIEW_FILENAME } from './scope-review-export.mjs';
+@@ -425,6 +426,7 @@
+ }
+ 
+ function workspaceChanged() {
++  checkpointImport.retire();
+   if (readingWorkspace || pendingWorkspace || chooserWorkspace) {
+     cancelOpen('Your workspace changed. Choose the saved file again when you are ready to replace it.');
+   }
+@@ -554,6 +556,7 @@
+   if (!pendingWorkspace || !currentOpen(pendingWorkspace.request)) return;
+   const next = pendingWorkspace.admitted;
+   cancelOpen();
++  checkpointImport.retire();
+   clearDraftRemoval();
+   draft = structuredClone(next.draft);
+   review = next.review;
+@@ -586,3 +589,28 @@
+   fileStatus('Saved workspace opened. The file records a fictional fixture; it does not verify real approvals or payments.');
+   (review ? $('#review-title') : $('#scope-label')).focus();
+ });
++
++
++const checkpointImport = mountCheckpointImport({
++  root: $('#scope-checkpoint-import'),
++  getCurrent: () => ({
++    editable: !review && !form.hidden,
++    value: workspaceValue(),
++    count: readDraft().checkpoints.length
++  }),
++  append: checkpoints => {
++    if (review || form.hidden) throw new Error('Return to an editable draft before adding checkpoints.');
++    const current = readDraft();
++    if (current.checkpoints.length + checkpoints.length > MAX_CHECKPOINTS) {
++      throw new Error('The draft can contain at most 12 checkpoints.');
++    }
++    const first = current.checkpoints.length;
++    clearDraftRemoval();
++    workspaceChanged();
++    current.checkpoints.push(...checkpoints);
++    draft = current;
++    clearErrors();
++    renderDraftRows();
++    $(`#draft-${first}-title`).focus();
++  }
++});
+--- /dev/null
++++ b/scope-checkpoint-import.css
+@@ -0,0 +1,17 @@
++.scope-checkpoint-import { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line, #c7c4b9); }
++.scope-checkpoint-import h3 { margin: 0 0 .5rem; }
++.scope-checkpoint-import input[type="file"] { max-width: 100%; }
++.scope-checkpoint-preview { margin-top: 1rem; }
++.scope-checkpoint-options { display: grid; gap: 1rem; margin: 1rem 0; }
++.scope-checkpoint-option { min-width: 0; margin: 0; padding: 1rem; border: 1px solid var(--line, #c7c4b9); border-radius: .5rem; }
++.scope-checkpoint-option legend { padding: 0 .3rem; font-weight: 700; }
++.scope-checkpoint-option label { display: inline-flex; align-items: center; gap: .35rem; min-height: 44px; cursor: pointer; }
++.scope-checkpoint-option input[type="checkbox"] { width: 1.15rem; height: 1.15rem; margin: 0; flex: none; }
++.scope-checkpoint-option dl { margin: .5rem 0 0; }
++.scope-checkpoint-option dt { margin-top: .75rem; font-size: .8rem; font-weight: 700; }
++.scope-checkpoint-option dd { margin: .25rem 0 0; }
++.scope-checkpoint-literal { white-space: pre-wrap; overflow-wrap: anywhere; }
++.scope-checkpoint-literal em { color: var(--muted, #68675e); font-size: .9rem; }
++.scope-checkpoint-status { min-height: 1.5em; }
++.scope-checkpoint-status.error { color: #9a3527; }
++.scope-checkpoint-import button:disabled { opacity: .55; cursor: not-allowed; }
+--- /dev/null
++++ b/scripts/check-scope-checkpoint-import.mjs
+@@ -0,0 +1,154 @@
++import fs from 'node:fs';
++import path from 'node:path';
++import os from 'node:os';
++import http from 'node:http';
++import assert from 'node:assert/strict';
++import { createHash } from 'node:crypto';
++import { createRequire } from 'node:module';
++import { pathToFileURL } from 'node:url';
++const require=createRequire(import.meta.url);
++const puppeteer=require(process.env.SCOPESIGNAL_PUPPETEER||'puppeteer');
++const source=path.resolve(process.env.SCOPESIGNAL_SOURCE||path.join(import.meta.dirname,'..'));
++const out=process.env.SCOPESIGNAL_EVIDENCE?path.resolve(process.env.SCOPESIGNAL_EVIDENCE):fs.mkdtempSync(path.join(os.tmpdir(),'scopesignal-checkpoint-receiving-'));
++const browserFiles=path.resolve(process.env.SCOPESIGNAL_BROWSER_FILES||out);
++const profile=path.join(browserFiles,'profile'),downloads=path.join(browserFiles,'downloads');
++for(const folder of[out,profile,downloads])fs.mkdirSync(folder,{recursive:true});
++const native=await import(pathToFileURL(path.join(source,'src/scope-workspace-record.mjs')));
++const plan=await import(pathToFileURL(path.join(source,'src/scope-plan.mjs')));
++const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
++const pins=()=>['README.md','scope.html','scope-workspace.css','scope-checkpoint-import.css','src/scope-plan.mjs','src/scope-workspace-record.mjs','src/scope-workspace.mjs','src/scope-checkpoint-import.mjs','src/scope-checkpoint-import-ui.mjs'].map(name=>{const b=fs.readFileSync(path.join(source,name));return{path:name,bytes:b.length,sha256:hash(b)};});
++const fixtureDraft={label:'Saved editorial package — fictional',brief:'Original source brief.\nDo not replace the new project.',cap:'0500.00',checkpoints:[
++ {title:'  Rough <layout> & proof  ',amount:'00125.50',evidence:'Original proof line 1\nOriginal line 2'},
++ {title:'Caption & localization',amount:'25.00',evidence:'Planned caption evidence'},
++ {title:'Delivery package',amount:'010.00',evidence:'Original archive and manifest'}]};
++let sourceRaw;
++if(process.env.SCOPESIGNAL_CHECKPOINT_SOURCE)sourceRaw=fs.readFileSync(process.env.SCOPESIGNAL_CHECKPOINT_SOURCE);
++else{
++ const review=plan.createScopeReview(fixtureDraft);review.act('scope-1','approve','ACCEPTED review text: distinct from the planned source');
++ for(const action of['order','request','lose'])review.act('scope-1',action);
++ sourceRaw=Buffer.from(native.encodeScopeWorkspace({draft:fixtureDraft,review,evidenceDrafts:new Map([['scope-2','PENDING review note: do not copy as planned evidence']])}));
++}
++const admitted=native.decodeScopeWorkspace(sourceRaw.toString('utf8'));
++assert.equal(admitted.review.snapshot().approved,1);assert.equal(admitted.review.snapshot().events.length,4);
++const sourceFile=path.join(browserFiles,'source-reviewed.json');fs.writeFileSync(sourceFile,sourceRaw);
++const unfinished={label:'Unfinished <source> & literal strings',brief:'Do not copy this brief',cap:'not set',checkpoints:[
++ {title:'',amount:'not set',evidence:'  First line\n\n<img src=x onerror="window.injected=true">  '},
++ {title:'Equal definition',amount:'0007.00',evidence:'Literal identical rows'},
++ {title:'Equal definition',amount:'0007.00',evidence:'Literal identical rows'}]};
++const unfinishedFile=path.join(browserFiles,'source-unfinished.json');fs.writeFileSync(unfinishedFile,native.encodeScopeWorkspace({draft:unfinished}));
++const sourceInputPins=[sourceFile,unfinishedFile].map(file=>({file,sha256:hash(fs.readFileSync(file))}));
++const receipt={schema:'scopesignal.checkpoint-import.browser-receiving/1',started:new Date().toISOString(),node:process.version,sourceBefore:pins(),sourceInputPins,originalSource:{bytes:sourceRaw.length,sha256:hash(sourceRaw)},groups:[],downloads:[],served:[],externalBlocked:[],pageErrors:[],consoleErrors:[]};
++const wait=async(check,ms=8000)=>{const end=Date.now()+ms;while(Date.now()<end){const v=await check();if(v)return v;await new Promise(r=>setTimeout(r,40));}throw new Error('Timed out waiting for checkpoint receiving boundary');};
++const group=name=>{receipt.groups.push({name,pass:true});console.log('PASS '+name);};
++let browser,server;
++try{
++ const types={'.html':'text/html','.mjs':'text/javascript','.css':'text/css','.json':'application/json'};
++ server=http.createServer((req,res)=>{
++  const url=new URL(req.url,'http://127.0.0.1');let rel;try{rel=decodeURIComponent(url.pathname).replace(/^\/+/, '')||'scope.html';}catch{res.writeHead(400);res.end();return;}
++  const file=path.resolve(source,rel);if(!file.startsWith(source+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){res.writeHead(404);res.end();return;}
++  const b=fs.readFileSync(file);receipt.served.push({path:rel,bytes:b.length,sha256:hash(b)});res.writeHead(200,{'Content-Type':types[path.extname(file)]||'application/octet-stream','Cache-Control':'no-store'});res.end(b);
++ });
++ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const origin='http://127.0.0.1:'+server.address().port;
++ browser=await puppeteer.launch({executablePath:process.env.SCOPESIGNAL_CHROME||undefined,headless:true,userDataDir:profile,timeout:Number(process.env.SCOPESIGNAL_STARTUP_TIMEOUT_MS||45000),dumpio:Boolean(process.env.SCOPESIGNAL_BROWSER_STDERR),args:['--no-sandbox','--disable-dev-shm-usage','--disable-background-networking','--disable-component-update','--no-first-run']});
++ receipt.browserVersion=await browser.version();const page=await browser.newPage();await page.setViewport({width:1280,height:1000});
++ await page.setRequestInterception(true);page.on('request',req=>{if(req.url().startsWith(origin+'/')||/^(data:|blob:)/.test(req.url()))req.continue();else{receipt.externalBlocked.push(req.url());req.abort();}});
++ page.on('pageerror',e=>receipt.pageErrors.push(String(e)));page.on('console',m=>{if(m.type()==='error')receipt.consoleErrors.push(m.text());});
++ const cdp=await browser.target().createCDPSession(),completed=[],begun=new Map();
++ cdp.on('Browser.downloadWillBegin',e=>begun.set(e.guid,e.suggestedFilename));
++ cdp.on('Browser.downloadProgress',e=>{if(e.state==='completed')completed.push(e.guid);});
++ await cdp.send('Browser.setDownloadBehavior',{behavior:'allowAndName',downloadPath:downloads,eventsEnabled:true});
++ const read=()=>page.evaluate(()=>({label:document.querySelector('#scope-label').value,brief:document.querySelector('#scope-brief').value,cap:document.querySelector('#scope-cap').value,checkpoints:[...document.querySelectorAll('.scope-row')].map(row=>({title:row.querySelector('[data-field=title]').value,amount:row.querySelector('[data-field=amount]').value,evidence:row.querySelector('[data-field=evidence]').value}))}));
++ const reset=async()=>{await page.goto(origin+'/scope.html',{waitUntil:'networkidle0',timeout:15000});await page.waitForSelector('#draft-2-evidence');};
++ const visible=id=>page.$eval(id,n=>!n.hidden);
++ const upload=async(id,file)=>{await(await page.$(id)).uploadFile(file);};
++ const choose=async(file=sourceFile)=>{await upload('#scope-checkpoint-file',file);await wait(()=>visible('#scope-checkpoint-preview'));};
++ const select=i=>page.click('#scope-checkpoint-choice-'+i);
++ const edit=(selector,value,signal=true)=>page.$eval(selector,(input,value,signal)=>{input.value=value;if(signal)input.dispatchEvent(new Event('input',{bubbles:true}));},value,signal);
++ const forceApply=()=>page.$eval('#scope-checkpoint-apply',b=>{b.disabled=false;b.click();});
++ const download=async name=>{
++  const before=completed.length;await page.click('#scope-save');let guid;try{guid=await wait(()=>completed[before],20000);}catch(error){receipt.downloadDiagnosis={begun:[...begun],completed,files:fs.readdirSync(downloads),fileStatus:await page.$eval('#scope-file-status',n=>n.textContent)};throw error;}const file=path.join(downloads,guid);await wait(()=>fs.existsSync(file));
++  const b=fs.readFileSync(file);fs.writeFileSync(path.join(out,name),b);receipt.downloads.push({file:name,browserFilename:begun.get(guid),bytes:b.length,sha256:hash(b)});return b;
++ };
++ const delayReads=()=>page.evaluate(()=>{window.originalArrayBuffer=File.prototype.arrayBuffer;window.heldReaders=[];File.prototype.arrayBuffer=function(){return new Promise((resolve,reject)=>{const file=this;window.heldReaders.push(()=>window.originalArrayBuffer.call(file).then(resolve,reject));});};});
++ const release=async index=>{await page.evaluate(index=>window.heldReaders[index](),index);await page.evaluate(()=>new Promise(r=>setTimeout(r,50)));};
++ const restoreReads=()=>page.evaluate(()=>{File.prototype.arrayBuffer=window.originalArrayBuffer;});
++
++ await reset();await edit('#scope-label','Current new project — keep <local> & exact');await edit('#scope-brief','Current brief line one\nKeep the second line');const current=await read();
++ await upload('#scope-open',sourceFile);await wait(()=>visible('#scope-open-preview'));await choose();
++ assert.deepEqual(await read(),current);assert.equal(await page.$$eval('#scope-checkpoint-options input:checked',xs=>xs.length),0);assert.equal(await page.$eval('#scope-checkpoint-apply',b=>b.disabled),true);
++ const details=await page.$$eval('#scope-checkpoint-options fieldset',rows=>rows.map(row=>[...row.querySelectorAll('dd')].map(n=>n.textContent)));
++ assert.deepEqual(details,admitted.draft.checkpoints.map(cp=>[cp.title,cp.amount,cp.evidence]));
++ assert.match(await page.$eval('#scope-checkpoint-source',n=>n.textContent),/Reviewed fixture/);
++ await page.screenshot({path:path.join(out,'reviewed-definitions-preview.png'),fullPage:true});
++ await page.click('#scope-checkpoint-cancel');assert.deepEqual(await read(),current);assert.equal(await visible('#scope-open-preview'),true);
++ group('native reviewed-source preview starts empty and preserves draft and whole-open preview');
++
++ await choose();await forceApply();assert.deepEqual(await read(),current);assert.equal(await visible('#scope-checkpoint-preview'),true);
++ await select(2);await select(0);assert.equal(await visible('#scope-open-preview'),true);await page.click('#scope-checkpoint-apply');
++ const appended={...current,checkpoints:[...current.checkpoints,admitted.draft.checkpoints[0],admitted.draft.checkpoints[2]]};
++ assert.deepEqual(await read(),appended);assert.equal(await page.evaluate(()=>document.activeElement.id),'draft-3-title');
++ assert.equal(await visible('#scope-checkpoint-preview'),false);assert.equal(await visible('#scope-open-preview'),false);assert.equal(await page.$eval('#scope-checkpoint-file',n=>n.value),'');
++ const saved=await download('selected-draft-download.json');assert.equal(saved.toString(),native.encodeScopeWorkspace({draft:appended}));
++ assert.equal(JSON.parse(saved).stage,'draft');assert.deepEqual(JSON.parse(saved).events,[]);assert.deepEqual(JSON.parse(saved).evidenceDrafts,[]);
++ group('selective append preserves source order and exports zero transferred review state');
++
++ await reset();const original=await read();await choose(unfinishedFile);await select(2);await select(1);await select(0);await page.click('#scope-checkpoint-apply');
++ const rawDraft={...original,checkpoints:[...original.checkpoints,...unfinished.checkpoints]};assert.deepEqual(await read(),rawDraft);assert.equal(await page.evaluate(()=>window.injected),undefined);
++ assert.equal((await download('unfinished-combined-download.json')).toString(),native.encodeScopeWorkspace({draft:rawDraft}));
++ await page.click('#scope-form button[type=submit]');assert.equal(await visible('#scope-form'),true);assert.equal(await visible('#scope-errors'),true);assert.deepEqual(await read(),rawDraft);
++ group('unfinished strings and equal rows remain literal and ordinary review still validates');
++
++ await reset();for(let i=3;i<11;i++)await page.click('#scope-add');const eleven=await read();await choose();await select(0);await select(1);
++ assert.equal(await page.$eval('#scope-checkpoint-apply',b=>b.disabled),true);await forceApply();assert.deepEqual(await read(),eleven);assert.equal(await visible('#scope-checkpoint-preview'),true);
++ await select(1);await page.click('#scope-checkpoint-apply');assert.equal((await read()).checkpoints.length,12);const twelve=await read();await choose();await select(0);await forceApply();assert.deepEqual(await read(),twelve);
++ group('12-row capacity refuses whole append and supports a smaller retry');
++
++ await reset();const beforeEdit=await read();await choose();await select(0);await edit('#draft-0-title','Temporary changed title');await edit('#draft-0-title',beforeEdit.checkpoints[0].title);
++ assert.equal(await visible('#scope-checkpoint-preview'),false);await forceApply();assert.deepEqual(await read(),beforeEdit);
++ await choose();await select(0);await edit('#scope-brief','Programmatic edit without input',false);const programmatic=await read();await forceApply();assert.deepEqual(await read(),programmatic);assert.equal(await visible('#scope-checkpoint-preview'),false);
++ group('A-to-B-to-A edits retire preview and final identity detects edits without input');
++
++ await reset();await delayReads();const beforeDelay=await read();await upload('#scope-checkpoint-file',sourceFile);await edit('#scope-label','Changed while reading');await edit('#scope-label',beforeDelay.label);
++ await release(0);assert.equal(await visible('#scope-checkpoint-preview'),false);assert.deepEqual(await read(),beforeDelay);await restoreReads();
++ group('delayed reads cannot revive after a same-value draft roundtrip');
++
++ await reset();await delayReads();const beforeOverlap=await read();await upload('#scope-checkpoint-file',sourceFile);await upload('#scope-checkpoint-file',unfinishedFile);
++ await release(0);assert.equal(await visible('#scope-checkpoint-preview'),false);await release(1);await wait(()=>visible('#scope-checkpoint-preview'));assert.match(await page.$eval('#scope-checkpoint-source',n=>n.textContent),/Unfinished <source>/);
++ await page.click('#scope-checkpoint-cancel');await upload('#scope-checkpoint-file',sourceFile);await page.click('#scope-checkpoint-cancel');await release(2);
++ assert.equal(await visible('#scope-checkpoint-preview'),false);assert.deepEqual(await read(),beforeOverlap);await restoreReads();
++ group('new selection wins overlapping reads and cancellation retires an in-flight read');
++
++ await reset();const picker=page.waitForFileChooser();await page.click('#scope-checkpoint-file');const chooser=await picker;
++ await edit('#scope-label','Edited while chooser is open');const duringChooser=await read();await chooser.accept([sourceFile]);
++ assert.equal(await visible('#scope-checkpoint-preview'),false);assert.deepEqual(await read(),duringChooser);await choose();await page.click('#scope-checkpoint-cancel');
++ group('chooser-time draft edits refuse old file and permit a fresh selection');
++
++ await reset();const sameDraft=await read();const sameFile=path.join(browserFiles,'same-current-workspace.json');fs.writeFileSync(sameFile,native.encodeScopeWorkspace({draft:sameDraft}));
++ await choose();await select(0);await upload('#scope-open',sameFile);await wait(()=>visible('#scope-open-preview'));await page.click('#scope-open-apply');
++ assert.deepEqual(await read(),sameDraft);assert.equal(await visible('#scope-checkpoint-preview'),false);await forceApply();assert.deepEqual(await read(),sameDraft);
++ group('whole-workspace replacement retires older import even with identical draft values');
++
++ await reset();await choose();await select(0);await page.click('#scope-form button[type=submit]');assert.equal(await visible('#scope-form'),false);assert.equal(await visible('#scope-checkpoint-preview'),false);
++ await upload('#scope-checkpoint-file',sourceFile);assert.equal(await visible('#scope-checkpoint-preview'),false);assert.equal(await page.$eval('#scope-event-count',n=>n.textContent),'0 events');
++ await page.click('#scope-edit');await choose();await select(0);await page.click('#scope-checkpoint-apply');assert.equal((await read()).checkpoints.length,4);
++ await page.click('#scope-form button[type=submit]');assert.equal(await visible('#scope-form'),true);assert.equal(await visible('#scope-errors'),true);await edit('#scope-cap','1400.00');await page.click('#scope-form button[type=submit]');assert.equal(await page.$eval('#scope-approved',n=>n.textContent),'0 / 4');assert.equal(await page.$eval('#scope-event-count',n=>n.textContent),'0 events');
++ group('review stage refuses import and Edit draft restores fresh reuse without approvals');
++
++ await reset();const beforeBad=await read();const badFiles=[['malformed.json',Buffer.from('{')],['invalid-utf8.json',Buffer.from([255,254])],['oversized.json',Buffer.alloc(native.MAX_WORKSPACE_BYTES+1,32)],['unsupported.json',Buffer.from(JSON.stringify({...JSON.parse(sourceRaw),version:2}))]];
++ for(const[name,b]of badFiles){const file=path.join(browserFiles,name);fs.writeFileSync(file,b);await upload('#scope-checkpoint-file',file);await wait(()=>page.$eval('#scope-checkpoint-status',n=>n.classList.contains('error')));assert.equal(await visible('#scope-checkpoint-preview'),false);assert.deepEqual(await read(),beforeBad);}
++ await choose();await page.click('#scope-checkpoint-cancel');
++ group('malformed UTF-8 size and unsupported-source refusals preserve draft and retry');
++
++ await reset();await page.setViewport({width:390,height:844});await choose();await page.focus('#scope-checkpoint-choice-1');await page.keyboard.press('Space');
++ assert.equal(await page.$eval('#scope-checkpoint-choice-1',n=>n.checked),true);assert.equal(await page.$eval('#scope-checkpoint-options dd.scope-checkpoint-literal',n=>getComputedStyle(n).whiteSpace),'pre-wrap');assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),true);
++ await page.screenshot({path:path.join(out,'phone-keyboard-selection.png'),fullPage:true});await page.focus('#scope-checkpoint-apply');await page.keyboard.press('Enter');
++ assert.equal(await page.evaluate(()=>document.activeElement.id),'draft-3-title');assert.equal((await read()).checkpoints[3].title,admitted.draft.checkpoints[1].title);assert.match(await page.$eval('#scope-checkpoint-status',n=>n.textContent),/1 checkpoint added/);
++ group('phone layout keyboard selection and append focus remain usable');
++
++ assert.equal(receipt.pageErrors.length,0);assert.deepEqual(pins(),receipt.sourceBefore);for(const pin of sourceInputPins)assert.equal(hash(fs.readFileSync(pin.file)),pin.sha256);receipt.pass=true;
++}catch(error){receipt.pass=false;receipt.error={name:error.name,message:error.message,stack:error.stack};process.exitCode=1;}
++finally{
++ if(browser)await browser.close().catch(e=>receipt.browserCloseError=String(e));if(server)await new Promise(resolve=>server.close(resolve));
++ receipt.sourceAfter=pins();receipt.finished=new Date().toISOString();fs.writeFileSync(path.join(out,'receipt.json'),JSON.stringify(receipt,null,2)+'\n');
++ console.log(JSON.stringify({pass:receipt.pass,groups:receipt.groups.length,pageErrors:receipt.pageErrors,error:receipt.error,receipt:path.join(out,'receipt.json')}));
++}
+--- /dev/null
++++ b/src/scope-checkpoint-import-ui.mjs
+@@ -0,0 +1,176 @@
++import { MAX_CHECKPOINTS } from './scope-plan.mjs';
++import { MAX_WORKSPACE_BYTES } from './scope-workspace-record.mjs';
++import { readCheckpointSource, selectCheckpointDefinitions } from './scope-checkpoint-import.mjs';
++
++export function mountCheckpointImport({ root, getCurrent, append }) {
++  const $ = selector => root.querySelector(selector);
++  const fileInput = $('#scope-checkpoint-file');
++  const preview = $('#scope-checkpoint-preview');
++  const list = $('#scope-checkpoint-options');
++  const apply = $('#scope-checkpoint-apply');
++  const cancel = $('#scope-checkpoint-cancel');
++  const status = $('#scope-checkpoint-status');
++  let generation = 0;
++  let chooser = null;
++  let reading = false;
++  let pending = null;
++
++  function message(text, error = false) {
++    status.textContent = text;
++    status.classList.toggle('error', error);
++  }
++
++  function retire(text = '') {
++    generation += 1;
++    reading = false;
++    pending = null;
++    preview.hidden = true;
++    cancel.hidden = true;
++    list.replaceChildren();
++    $('#scope-checkpoint-source').textContent = '';
++    $('#scope-checkpoint-selection').textContent = '';
++    fileInput.value = '';
++    apply.disabled = true;
++    if (text) message(text);
++    // Keep an outstanding chooser's old generation until its change/cancel.
++    // Otherwise an edit while the chooser is open could admit that stale choice.
++  }
++
++  function current(request) {
++    if (request.generation !== generation) return false;
++    const now = getCurrent();
++    if (!now.editable || request.value !== now.value) {
++      retire('Your draft changed. Choose the saved file again before adding checkpoints.');
++      return false;
++    }
++    return true;
++  }
++
++  function capture() {
++    const now = getCurrent();
++    if (!now.editable) throw new Error('Return to an editable draft before reusing checkpoints.');
++    return { generation, value: now.value };
++  }
++
++  const selections = () => [...list.querySelectorAll('input:checked')].map(input => Number(input.value));
++
++  function selectionSummary() {
++    if (!pending || !current(pending.request)) return;
++    const count = selections().length;
++    const remaining = MAX_CHECKPOINTS - getCurrent().count;
++    $('#scope-checkpoint-selection').textContent = `${count} selected · Room for ${remaining} more ${remaining === 1 ? 'checkpoint' : 'checkpoints'}.`
++      + (count > remaining ? ' Choose fewer checkpoints before adding.' : '');
++    apply.disabled = count === 0 || count > remaining;
++  }
++
++  function definition(label, value, row) {
++    const term = document.createElement('dt');
++    term.textContent = label;
++    const detail = document.createElement('dd');
++    detail.className = 'scope-checkpoint-literal';
++    if (value === '') {
++      const empty = document.createElement('em');
++      empty.textContent = 'Empty field';
++      detail.append(empty);
++    } else detail.textContent = value;
++    row.append(term, detail);
++  }
++
++  function showSource(source) {
++    const project = document.createElement('span');
++    project.className = 'scope-checkpoint-literal';
++    project.textContent = source.label || 'Untitled draft';
++    $('#scope-checkpoint-source').append(project, document.createTextNode(
++      ` · ${source.stage === 'draft' ? 'Editable draft' : 'Reviewed fixture'} · ${source.checkpoints.length} saved checkpoints`));
++    source.checkpoints.forEach((checkpoint, index) => {
++      const row = document.createElement('fieldset');
++      row.className = 'scope-checkpoint-option';
++      const legend = document.createElement('legend');
++      const label = document.createElement('label');
++      const input = document.createElement('input');
++      input.type = 'checkbox';
++      input.value = String(index);
++      input.id = `scope-checkpoint-choice-${index}`;
++      label.htmlFor = input.id;
++      label.append(input, document.createTextNode(` Checkpoint ${index + 1}`));
++      legend.append(label);
++      const details = document.createElement('dl');
++      definition('Deliverable', checkpoint.title, details);
++      definition('Amount (USD, as saved)', checkpoint.amount, details);
++      definition('Planned acceptance evidence', checkpoint.evidence, details);
++      row.append(legend, details);
++      list.append(row);
++    });
++    preview.hidden = false;
++    selectionSummary();
++  }
++
++  // These controls manage a pending choice, not the authored form's data.
++  root.addEventListener('input', event => event.stopPropagation());
++  fileInput.addEventListener('click', event => {
++    retire();
++    chooser = null;
++    try { chooser = capture(); }
++    catch (error) { event.preventDefault(); message(error.message, true); }
++  });
++  fileInput.addEventListener('change', async event => {
++    const file = event.currentTarget.files?.[0];
++    const chosen = chooser;
++    chooser = null;
++    if (file && chosen && !current(chosen)) {
++      fileInput.value = '';
++      return;
++    }
++    retire();
++    if (!file) { message('Checkpoint reuse canceled. Your current draft is unchanged.'); return; }
++    let request;
++    try {
++      request = capture();
++      reading = true;
++      cancel.hidden = false;
++      message('Reading the saved checkpoints. Your current draft remains in place.');
++      if (file.size > MAX_WORKSPACE_BYTES) throw new Error('Choose a file no larger than 1 MiB.');
++      const bytes = await file.arrayBuffer();
++      if (!current(request)) return;
++      if (bytes.byteLength > MAX_WORKSPACE_BYTES) throw new Error('Choose a file no larger than 1 MiB.');
++      let contents;
++      try { contents = new TextDecoder('utf-8', { fatal: true }).decode(bytes); }
++      catch { throw new Error('The workspace file must contain valid UTF-8 text.'); }
++      const source = readCheckpointSource(contents);
++      if (!current(request)) return;
++      reading = false;
++      pending = { source, request };
++      showSource(source);
++      message('Choose the checkpoint definitions to add. Your current project and checkpoints will stay in place.');
++    } catch (error) {
++      if (request && !current(request)) return;
++      retire();
++      message('Could not read the saved checkpoints. ' + error.message + ' Your current draft is unchanged.', true);
++    }
++  });
++  list.addEventListener('change', selectionSummary);
++  const cancelChoice = () => {
++    chooser = null;
++    retire('Checkpoint reuse canceled. Your current draft is unchanged.');
++    fileInput.focus();
++  };
++  fileInput.addEventListener('cancel', cancelChoice);
++  cancel.addEventListener('click', cancelChoice);
++  apply.addEventListener('click', () => {
++    if (!pending || !current(pending.request)) return;
++    try {
++      const rows = selectCheckpointDefinitions(pending.source, selections(), getCurrent().count);
++      append(rows);
++      retire();
++      message(`${rows.length} ${rows.length === 1 ? 'checkpoint added' : 'checkpoints added'} to this draft. Review the copied definitions and amounts before continuing.`);
++    } catch (error) {
++      message('Could not add the selected checkpoints. ' + error.message, true);
++    }
++  });
++  return Object.freeze({
++    retire() {
++      const active = reading || pending || chooser;
++      retire(active ? 'Your draft changed. Choose the saved file again before adding checkpoints.' : '');
++    }
++  });
++}
+--- /dev/null
++++ b/src/scope-checkpoint-import.mjs
+@@ -0,0 +1,37 @@
++import { MAX_CHECKPOINTS } from './scope-plan.mjs';
++import { decodeScopeWorkspace } from './scope-workspace-record.mjs';
++
++// Admission remains the existing workspace codec's responsibility. Only the
++// original definition strings cross from that private admission into the editor.
++export function readCheckpointSource(contents) {
++  const admitted = decodeScopeWorkspace(contents);
++  return Object.freeze({
++    label: admitted.draft.label,
++    stage: admitted.summary.stage,
++    checkpoints: Object.freeze(admitted.draft.checkpoints.map(({ title, amount, evidence }) =>
++      Object.freeze({ title, amount, evidence })))
++  });
++}
++
++export function selectCheckpointDefinitions(source, selections, existingCount) {
++  if (!Number.isInteger(existingCount) || existingCount < 1 || existingCount > MAX_CHECKPOINTS) {
++    throw new Error('The current draft must contain 1–12 checkpoints.');
++  }
++  if (!Array.isArray(selections) || selections.length === 0) {
++    throw new Error('Choose at least one checkpoint to add.');
++  }
++  const selected = new Set();
++  for (const index of selections) {
++    if (!Number.isInteger(index) || index < 0 || index >= source.checkpoints.length || selected.has(index)) {
++      throw new Error('Choose each saved checkpoint at most once.');
++    }
++    selected.add(index);
++  }
++  if (existingCount + selected.size > MAX_CHECKPOINTS) {
++    throw new Error('The draft can contain at most 12 checkpoints. Choose fewer saved checkpoints.');
++  }
++  // Source order remains authoritative even when boxes are selected out of order.
++  // Equal definitions at different positions are intentionally separate choices.
++  return source.checkpoints.filter((_, index) => selected.has(index))
++    .map(({ title, amount, evidence }) => ({ title, amount, evidence }));
++}
+--- /dev/null
++++ b/tests/scope-checkpoint-import.test.mjs
+@@ -0,0 +1,99 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import { createScopeReview } from '../src/scope-plan.mjs';
++import { encodeScopeWorkspace } from '../src/scope-workspace-record.mjs';
++import { readCheckpointSource, selectCheckpointDefinitions } from '../src/scope-checkpoint-import.mjs';
++
++const draft = () => ({
++  label: 'Saved terms — fictional', brief: 'Original source brief', cap: '0500.00',
++  checkpoints: [
++    { title: '  <proof> & layout  ', amount: '00125.50', evidence: 'Planned line 1\nPlanned line 2' },
++    { title: 'Caption', amount: '25.00', evidence: 'Original caption evidence' },
++    { title: 'Package', amount: '010.00', evidence: 'Original archive manifest' }
++  ]
++});
++const asSource = value => readCheckpointSource(encodeScopeWorkspace({ draft: value }));
++
++test('reviewed source yields only exact original checkpoint definition strings', () => {
++  const original = draft();
++  const review = createScopeReview(original);
++  review.act('scope-1', 'approve', 'ACCEPTED text must not become planned evidence');
++  review.act('scope-1', 'order');
++  review.act('scope-1', 'request');
++  review.act('scope-1', 'lose');
++  const raw = encodeScopeWorkspace({ draft: original, review,
++    evidenceDrafts: new Map([['scope-2', 'PENDING note must not transfer']]) });
++  const source = readCheckpointSource(raw);
++  assert.deepEqual(Object.keys(source), ['label', 'stage', 'checkpoints']);
++  assert.equal(source.stage, 'review');
++  assert.deepEqual(source.checkpoints, original.checkpoints);
++  assert.deepEqual(selectCheckpointDefinitions(source, [2, 0], 2), [original.checkpoints[0], original.checkpoints[2]]);
++  assert.equal(review.snapshot().approved, 1);
++  assert.equal(review.snapshot().events.length, 4);
++});
++
++test('unfinished amounts, empty strings, surrounding spaces and LF evidence remain literal', () => {
++  const original = draft();
++  original.label = ''; original.cap = 'still deciding';
++  original.checkpoints[0] = { title: '', amount: 'not set', evidence: '' };
++  original.checkpoints[1].evidence = '  First line\n\nLast line  ';
++  const source = asSource(original);
++  assert.equal(source.stage, 'draft');
++  assert.deepEqual(selectCheckpointDefinitions(source, [1, 0], 1), original.checkpoints.slice(0, 2));
++});
++
++test('equal rows are distinct selections and source order overrides selection order', () => {
++  const original = draft();
++  original.checkpoints[2] = { ...original.checkpoints[0] };
++  const source = asSource(original);
++  const result = selectCheckpointDefinitions(source, [2, 0], 3);
++  assert.equal(result.length, 2);
++  assert.deepEqual(result, [original.checkpoints[0], original.checkpoints[2]]);
++  assert.notEqual(result[0], result[1]);
++});
++
++test('returned rows can be edited without altering admitted source or other copies', () => {
++  const source = asSource(draft());
++  const before = JSON.stringify(source);
++  assert.equal(Object.isFrozen(source), true);
++  assert.equal(Object.isFrozen(source.checkpoints), true);
++  assert.equal(Object.isFrozen(source.checkpoints[0]), true);
++  const result = selectCheckpointDefinitions(source, [0], 2);
++  result[0].title = 'New destination title';
++  assert.equal(JSON.stringify(source), before);
++  assert.equal(selectCheckpointDefinitions(source, [0], 2)[0].title, draft().checkpoints[0].title);
++});
++
++test('the complete append must fit the existing 12-checkpoint limit', () => {
++  const source = asSource(draft());
++  assert.equal(selectCheckpointDefinitions(source, [1, 2], 10).length, 2);
++  assert.throws(() => selectCheckpointDefinitions(source, [0, 1, 2], 10), /at most 12/);
++  assert.throws(() => selectCheckpointDefinitions(source, [0], 12), /at most 12/);
++  assert.deepEqual(source.checkpoints, draft().checkpoints);
++});
++
++test('empty, repeated, unknown or malformed selections are refused as a whole', () => {
++  const source = asSource(draft());
++  for (const value of [[], [0, 0], [-1], [3], [0.5], [true], ['0'], null, {}]) {
++    assert.throws(() => selectCheckpointDefinitions(source, value, 1));
++  }
++  for (const count of [0, 13, 1.5, '1']) {
++    assert.throws(() => selectCheckpointDefinitions(source, [0], count));
++  }
++});
++
++test('workspace admission still rejects unsupported records and inconsistent review history', () => {
++  const original = draft();
++  const record = JSON.parse(encodeScopeWorkspace({ draft: original }));
++  for (const mutate of [value => { value.version = 2; }, value => { value.paymentEvidence = true; },
++    value => { value.draft.checkpoints[0].approved = true; },
++    value => { value.events = [{ type: 'checkpoint.approved' }]; }]) {
++    const bad = structuredClone(record); mutate(bad);
++    assert.throws(() => readCheckpointSource(JSON.stringify(bad)));
++  }
++  const review = createScopeReview(original);
++  review.act('scope-1', 'approve', 'Approved fixture proof');
++  const bad = JSON.parse(encodeScopeWorkspace({ draft: original, review }));
++  bad.events[0].checkpointId = 'scope-99';
++  assert.throws(() => readCheckpointSource(JSON.stringify(bad)));
++});
