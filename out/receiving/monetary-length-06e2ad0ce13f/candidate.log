@@ -1,0 +1,26 @@
+✔ an overlong cap stays editable before any approval can lock it (2.565078ms)
+✔ an overlong amount stays editable before any approval can lock it (0.329005ms)
+✔ normal and 64-character monetary fields survive approval and all three exports (15.97377ms)
+✔ unfinished monetary text within the saved limit remains an exact editable draft (0.333341ms)
+✔ the example becomes a detached editable draft, with no inherited approvals (3.659905ms)
+✔ an authored brief and checkpoints produce a bounded ledger seed and explicit unallocated cap (0.621895ms)
+✔ incomplete, malformed and over-cap drafts cannot enter review (1.257922ms)
+✔ field errors identify the actual editable checkpoint and budget (0.369636ms)
+✔ USD authoring rejects unsupported notation and avoids silently rounding sub-cent entries (0.248504ms)
+✔ generated identities remain distinct when titles match or resemble object keys (3.78204ms)
+✔ every accepted safe cent amount is displayed without floating-dollar rounding (1.454187ms)
+✔ sparse or absent checkpoint rows are refused as incomplete drafts (0.620884ms)
+✔ approval uses the explicit reviewed evidence and refuses empty acceptance without any event (0.774775ms)
+✔ plan, approval evidence and prior events cannot be changed through caller-owned objects (2.188452ms)
+✔ review controls advance one legal event at a time and do not repeat pending requests (1.45581ms)
+✔ the authored lost-response path stays unknown through duplicate receipt and reconciles exactly once (2.644768ms)
+✔ independent checkpoints keep their amounts and receipt identities across mixed outcomes (3.705093ms)
+✔ an unknown outcome can use the explicit simulated lookup without manufacturing a webhook (4.106087ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 146.196215

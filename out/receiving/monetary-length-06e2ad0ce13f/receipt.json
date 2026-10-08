@@ -1,0 +1,92 @@
+{
+  "owner": "estate-06e2ad0ce13f / scope_continue",
+  "issue": "https://github.com/Jacob-Met/scopesignal/issues/49",
+  "parent": "5bbb52087aa3c5b33d1694887ff3d1380b826e5e",
+  "parentTree": "7bf94d8851045d5619f21c2ef6881c1714149e5c",
+  "scope": "Native exact-source dependency projection and focused Node tests; not a full repository checkout or browser run.",
+  "runtime": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "before": {
+    "command": "node --test tests/scope-monetary-length.test.mjs",
+    "exitCode": 1,
+    "passed": 2,
+    "failed": 2
+  },
+  "after": {
+    "command": "node --test tests/scope-plan.test.mjs tests/scope-monetary-length.test.mjs",
+    "exitCode": 0,
+    "passed": 18,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0
+  },
+  "source": {
+    "src/scope-plan.mjs": {
+      "bytes": 7200,
+      "gitBlob": "8f43f9eb2336d9a3df7820ab4c4c874e5663a781",
+      "sha256": "88a22b221c09eaba16cf78027958ee504b72624638193b1e029d3c15ff177046"
+    },
+    "src/scope-workspace-record.mjs": {
+      "bytes": 7421,
+      "gitBlob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+    },
+    "src/ledger.mjs": {
+      "bytes": 12684,
+      "gitBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    },
+    "src/scope-review-export.mjs": {
+      "bytes": 8253,
+      "gitBlob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397"
+    },
+    "src/scope-revision-draft.mjs": {
+      "bytes": 667,
+      "gitBlob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e"
+    },
+    "src/payment-status.mjs": {
+      "bytes": 1959,
+      "gitBlob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
+    },
+    "src/scope-workspace.mjs": {
+      "bytes": 25423,
+      "gitBlob": "69f96172068663c07095488a06ccaebe136f1759",
+      "sha256": "ad49dbe89cfa07242d7443cf1ebb23139e9aa48625ea89700b293357c8e3fca6"
+    },
+    "scope.html": {
+      "bytes": 11904,
+      "gitBlob": "726ff155c56f8bbff109fb82b8db29985d6b25e9",
+      "sha256": "cbb14823feb2b671e18ddd45dfef3210260bf0922e8a2476d33718f04515afe6"
+    },
+    "README.md": {
+      "bytes": 28154,
+      "gitBlob": "976cb2b52ed5d3fa9917c6c8e2b58dd0acd6472f",
+      "sha256": "41d8a28bda668690da8b434e846d17be055de7c0feac78fd18f34a892bcdb0d5"
+    },
+    "tests/scope-monetary-length.test.mjs": {
+      "bytes": 3509,
+      "gitBlob": "ea9a9e5f937f902784760bf45eabddb84c88865e",
+      "sha256": "300bfe79854f93f5f208230ce16a1d223d4013df7106edaa7000fdc5d417c0f0"
+    },
+    "tests/scope-plan.test.mjs": {
+      "bytes": 10569,
+      "gitBlob": "4dc7bc945f0e0728a79a26363eb276852da8334b",
+      "sha256": "f751de2db9141bf1f446a3071bef20081dbf2bbb4ec3b3ccf84c9e400c18b685"
+    }
+  },
+  "limits": [
+    "No browser receiving by the author",
+    "No full native npm test under shared ENOSPC",
+    "No provider, payment or deployed behavior qualification"
+  ],
+  "setupCorrections": [
+    "Initial projection lacked unchanged payment-status.mjs and stopped before running tests. The exact commit-pinned module was added.",
+    "A trailing blank line introduced while materializing that module was removed before the retained final baseline; all executed application dependencies then matched their original Git blobs."
+  ]
+}
