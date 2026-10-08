@@ -1,0 +1,58 @@
+{
+  "schema": "scopesignal.independent-receiving-review.v1",
+  "at": "2026-10-08T08:08:44.356Z",
+  "reviewer": "06e2ad0ce13f/live_access",
+  "independent_authoring": true,
+  "blind_review": false,
+  "baseline_commit": "33f021aaacd6d7ed68c508d92901e7442d99586c",
+  "candidate_commit": "aa08e8d4ed791a449f8d2e2002dcc5320059a784",
+  "node": "v24.19.0",
+  "test_file": "tests/capture-identity-receiving.test.mjs",
+  "test_sha256": "b633cb0fb06babd19f96b0e9f4c536d7084a5f4be2c6f502e5d011f646f6dad3",
+  "fixture_pins": {
+    "events_sha256": "8327831a138dbb31d9442b09ef8177bf2d7c5cc92fb536b24d636069cb2a4afe",
+    "snapshot_sha256": "3e38e07847d0880ae8bcfe9e241cf118f0f0a0ffa27efbe316946cde7fdd735f"
+  },
+  "results": [
+    {
+      "label": "baseline",
+      "source": "/workspace/scratch/06e2ad0ce13f/independent-ledger/baseline.mjs",
+      "git_blob": "dc324dda071f82071be10cb7f6327b953ccf6b1e",
+      "sha256": "9a6953b0b00810a50665ef6fab2780b1de59786764fdaba4c0a273ac360717f8",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "summary": [
+        "ℹ tests 7",
+        "ℹ pass 2",
+        "ℹ fail 5"
+      ]
+    },
+    {
+      "label": "candidate-r1",
+      "source": "/workspace/scratch/06e2ad0ce13f/scopesignal-ledger/out/receiving/capture-identity-06e2ad0ce13f/candidate-r1-rejected.mjs",
+      "git_blob": "942e5dfba2f5ad202b6e0a68e4d032b178da6b77",
+      "sha256": "02e7d4226193c5ee954410db05228f49e9f938d63f51e0d1286d25ab79870355",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "summary": [
+        "ℹ tests 7",
+        "ℹ pass 5",
+        "ℹ fail 2"
+      ]
+    },
+    {
+      "label": "candidate-final",
+      "source": "/workspace/scratch/06e2ad0ce13f/scopesignal-ledger/src/ledger.mjs",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "summary": [
+        "ℹ tests 7",
+        "ℹ pass 7",
+        "ℹ fail 0"
+      ]
+    }
+  ],
+  "scope": "Offline native ledger receiving; no browser or provider execution"
+}

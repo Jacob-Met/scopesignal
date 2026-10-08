@@ -1,0 +1,46 @@
+✔ an unresolved pending capture cannot be requested a second time (3.513224ms)
+✔ a delayed lost response cannot undo a confirmed capture or be recorded twice (1.878966ms)
+✔ a webhook event identity cannot be reused for a different capture or checkpoint (2.157675ms)
+✔ a capture identity cannot count against two different checkpoints (0.839412ms)
+✔ an unknown receipt reserves its capture identity before any amount is counted (3.119962ms)
+✔ reconciliation and later receipts share the same capture binding (2.772179ms)
+✔ one checkpoint cannot acquire a second capture through a new webhook event ID (2.881163ms)
+✔ webhook and reconciliation identities must be nonempty canonical strings (11.866116ms)
+✔ exact duplicate webhook delivery remains auditable in every supported capture state (4.26831ms)
+✔ the public append path and reducer refuse lifecycle violations too (1.520477ms)
+✔ replay derives receipt identity from history instead of trusting a duplicate flag (0.660193ms)
+✔ published events cannot be edited or removed and append owns sequence metadata (0.65171ms)
+✔ a ledger keeps its creation seed stable across caller mutation (0.69102ms)
+✔ inherited object properties are not checkpoint identities (70.445136ms)
+✔ three independent checkpoint capture paths compose without double counting (9.554019ms)
+✔ approving one checkpoint preserves another pending draft, including initial line feeds (30.794867ms)
+✔ refused approval retains empty and multiline drafts across repeated rerenders (5.33281ms)
+✔ a suggestion survives approval of a different checkpoint (6.851404ms)
+✔ accepted evidence comes from its recorded event and its controls cannot edit approval (4.534109ms)
+✔ literal textarea-like text is preserved without adding editors (3.017148ms)
+✔ successive approvals retain accepted evidence and count each approval once (4.218976ms)
+✔ fixture totals and explicit replay behavior remain intact (3.471692ms)
+✔ webhook rows describe receipt without claiming an unknown capture was counted (4.077683ms)
+✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (4.22871ms)
+✔ order and capture require prior explicit human approval and order (0.807495ms)
+✔ lost response cannot be blindly captured again; reconcile is one-time (2.098046ms)
+✔ same webhook event ID is idempotent and cannot double count (0.376396ms)
+✔ reducer never counts duplicate webhook in fixture stream (0.413582ms)
+✔ role previews are explicit local rules and never claim AI output (18.248486ms)
+✔ Workers AI adapter fails closed without binding and has no paid fallback (0.371859ms)
+✔ schema validation rejects malformed model output (1.400366ms)
+✔ every shipped replay prefix presents its current reduced capture state (5.635315ms)
+✔ ordinary webhook capture does not invent a reconciliation (0.661956ms)
+✔ missing and unrecognized states do not become captured or safe-to-retry labels (1.078843ms)
+✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (3.816931ms)
+✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (0.978943ms)
+✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (2.706481ms)
+✔ pending and never-requested captures remain distinct from resolved captures (0.530528ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 226.373992

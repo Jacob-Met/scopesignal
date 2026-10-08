@@ -1,0 +1,144 @@
+{
+  "schema": "scopesignal.capture-identity.provenance.v1",
+  "at": "2026-10-08T08:13:40.835Z",
+  "contributor": "estate-06e2ad0ce13f",
+  "coordination": "https://github.com/Jacob-Met/scopesignal/issues/5",
+  "baseline": {
+    "commit": "33f021aaacd6d7ed68c508d92901e7442d99586c",
+    "tree": "4b7b68a48acb7bd83665f7e97239d68c018f61ed",
+    "ledgerBlob": "dc324dda071f82071be10cb7f6327b953ccf6b1e"
+  },
+  "implementation": {
+    "localCommit": "aa08e8d4ed791a449f8d2e2002dcc5320059a784",
+    "publishedCommit": "a928a03f8f169933dad90715b2b53a1f1e81f973",
+    "identicalCompleteTree": "59433e4c0b84c525a5fc47039419665300af82b3",
+    "ledgerBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+  },
+  "runtime": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "architecture": "x64"
+  },
+  "verification": {
+    "command": "npm test",
+    "passed": 37,
+    "failed": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "log": "out/receiving/capture-identity-06e2ad0ce13f/final-npm-test.log",
+    "independentPassed": 7,
+    "independentFailed": 0,
+    "browserExecuted": false,
+    "deploymentExecuted": false
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5730,
+      "gitBlob": "498b76147640b366be862e0963227b845f0bb8b9",
+      "sha256": "3901ca240d60cabc1e1dbb38aaa1638ab3695fe48195485952636475a4dbce7a"
+    },
+    {
+      "path": "out/receiving/capture-identity-06e2ad0ce13f/README.md",
+      "bytes": 6017,
+      "gitBlob": "43fa6c6fa34404fa4e534d9fa49031d93f721b23",
+      "sha256": "fcebc76ebba0137244983d15a74c9950630068d35a22271010df4d94689c66a2"
+    },
+    {
+      "path": "out/receiving/capture-identity-06e2ad0ce13f/baseline-fixture.json",
+      "bytes": 2957,
+      "gitBlob": "b57cd6c4ef6827d4e36cce60e0e722e9fd0ee62f",
+      "sha256": "1695b14bbb2b6c79a8adf8d090725593f62b84ee4dec53b1e88b18ae4bb3119f"
+    },
+    {
+      "path": "out/receiving/capture-identity-06e2ad0ce13f/baseline-test.log",
+      "bytes": 14678,
+      "gitBlob": "9f9c10cffa7650ec786c5793b20fc83641135098",
+      "sha256": "54a66aca8b9bb0d83aad30c7ce8ac3389426a7640c29629265d16200d12a1a88"
+    },
+    {
+      "path": "out/receiving/capture-identity-06e2ad0ce13f/candidate-author-test.log",
+      "bytes": 2782,
+      "gitBlob": "3d11ae0e61d1dc605417531bec94e8057480cf4e",
+      "sha256": "357bc4824d5f9d58e465a1fc08dd37084898a1da68e1799518f674d9c8278317"
+    },
+    {
+      "path": "out/receiving/capture-identity-06e2ad0ce13f/candidate-r1-rejected.mjs",
+      "bytes": 11998,
+      "gitBlob": "942e5dfba2f5ad202b6e0a68e4d032b178da6b77",
+      "sha256": "02e7d4226193c5ee954410db05228f49e9f938d63f51e0d1286d25ab79870355"
+    },
+    {
+      "path": "out/receiving/capture-identity-06e2ad0ce13f/composition-test.log",
+      "bytes": 3501,
+      "gitBlob": "6242401602d0b971830bb236a56dab96d1394daa",
+      "sha256": "d3446f6404ec7530ea6d631d85b994debb6e23113606608643698af906dd912e"
+    },
+    {
+      "path": "out/receiving/capture-identity-06e2ad0ce13f/composition.json",
+      "bytes": 763,
+      "gitBlob": "947cf48c6a3607ffef850324a6e833b34c165209",
+      "sha256": "adf024523e479aaa2f1b027583cf5d4d02cf6fd7a87bd4b3ea47bdf1bd64ef41"
+    },
+    {
+      "path": "out/receiving/capture-identity-06e2ad0ce13f/final-npm-test.log",
+      "bytes": 3628,
+      "gitBlob": "edfc9d0be6a88b9da1b49cffd14f9cbefe844dee",
+      "sha256": "16bfad21ab427cb2aac6f76f6fcc3deee4900bcdafa07682c4d04213cb5b08b1"
+    },
+    {
+      "path": "out/receiving/capture-identity-06e2ad0ce13f/independent-baseline.log",
+      "bytes": 5911,
+      "gitBlob": "e4ed677c6abb3c076fdc310e3fa3a6207da2d0b8",
+      "sha256": "629e5d0363e986892bd5cd63280e110275d51c0edc8f8aeb3b4e325e3a9b6ff5"
+    },
+    {
+      "path": "out/receiving/capture-identity-06e2ad0ce13f/independent-candidate-final.log",
+      "bytes": 820,
+      "gitBlob": "0f4939e243536cf5a767911684ab185db7968448",
+      "sha256": "eb9aa82dcbc10cbf6e7dd40e9ae8732589f94251b84f2c47cadbe0893f420813"
+    },
+    {
+      "path": "out/receiving/capture-identity-06e2ad0ce13f/independent-candidate-r1.log",
+      "bytes": 2758,
+      "gitBlob": "8548e32fd97d6f20ac70e1a9367b19084cd93c7d",
+      "sha256": "7c53aef3370ee2b76e2fc48186e24d4899aa2fcb4a30045aef95ea43992170ed"
+    },
+    {
+      "path": "out/receiving/capture-identity-06e2ad0ce13f/independent-review.json",
+      "bytes": 2114,
+      "gitBlob": "260f43e0b40a907f27d9cfd86740e9057066b698",
+      "sha256": "832d6cde0fe2b14e4772015c93bbc04deec75ceba4a099dcf228d778dd266ac3"
+    },
+    {
+      "path": "out/receiving/capture-identity-06e2ad0ce13f/independent-review.md",
+      "bytes": 3595,
+      "gitBlob": "e47ab592ab15c5b2e4f3fabe3ef2d91ea02ccf59",
+      "sha256": "9caa697b275e2a005cc67511b3b3054c78ee4f5b14ffbd2f3dc1aea6c5ee2d75"
+    },
+    {
+      "path": "out/receiving/capture-identity-06e2ad0ce13f/publication-block.json",
+      "bytes": 828,
+      "gitBlob": "effde7f2cc02aa1a4eb610c70db0b63f079cd62d",
+      "sha256": "a5641f1034f09d58dc4c04b53b8fca6c4c47d13ef72b7913bf73d2ac6b2b6ae2"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "bytes": 12684,
+      "gitBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    },
+    {
+      "path": "tests/capture-identity-receiving.test.mjs",
+      "bytes": 7841,
+      "gitBlob": "c3fe9b9608203ea4c380bff3686636766165bc39",
+      "sha256": "b633cb0fb06babd19f96b0e9f4c536d7084a5f4be2c6f502e5d011f646f6dad3"
+    },
+    {
+      "path": "tests/capture-identity.test.mjs",
+      "bytes": 12316,
+      "gitBlob": "da6bb46fd523bbc4f75a423036678e11d3f6ea1e",
+      "sha256": "9ba91cf025d7588aebdcf8b6e70bdd4ef97de3e5c2bc9c519499db56146bb2a6"
+    }
+  ]
+}

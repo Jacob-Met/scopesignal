@@ -1,0 +1,285 @@
+✖ an unresolved pending capture cannot be requested a second time (2.644385ms)
+✖ a delayed lost response cannot undo a confirmed capture or be recorded twice (0.380672ms)
+✖ a webhook event identity cannot be reused for a different capture or checkpoint (0.42585ms)
+✖ a capture identity cannot count against two different checkpoints (0.344889ms)
+✖ an unknown receipt reserves its capture identity before any amount is counted (0.438429ms)
+✖ reconciliation and later receipts share the same capture binding (0.320902ms)
+✖ one checkpoint cannot acquire a second capture through a new webhook event ID (0.226771ms)
+✖ webhook and reconciliation identities must be nonempty canonical strings (0.296505ms)
+✔ exact duplicate webhook delivery remains auditable in every supported capture state (1.14385ms)
+✖ the public append path and reducer refuse lifecycle violations too (0.531169ms)
+✖ replay derives receipt identity from history instead of trusting a duplicate flag (0.258158ms)
+✖ published events cannot be edited or removed and append owns sequence metadata (5.757916ms)
+✖ a ledger keeps its creation seed stable across caller mutation (0.270456ms)
+✖ inherited object properties are not checkpoint identities (90.30097ms)
+✔ three independent checkpoint capture paths compose without double counting (2.579628ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 2
+ℹ fail 13
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 239.187371
+
+✖ failing tests:
+
+test at tests/capture-identity.test.mjs:27:1
+✖ an unresolved pending capture cannot be requested a second time (2.644385ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at refusedWithoutChange (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:22:10)
+      at TestContext.<anonymous> (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:30:3)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /pending/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/capture-identity.test.mjs:36:1
+✖ a delayed lost response cannot undo a confirmed capture or be recorded twice (0.380672ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at refusedWithoutChange (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:22:10)
+      at TestContext.<anonymous> (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:40:3)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /pending/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/capture-identity.test.mjs:50:1
+✖ a webhook event identity cannot be reused for a different capture or checkpoint (0.42585ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at refusedWithoutChange (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:22:10)
+      at TestContext.<anonymous> (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:54:3)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /Webhook event identity conflict/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/capture-identity.test.mjs:61:1
+✖ a capture identity cannot count against two different checkpoints (0.344889ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at refusedWithoutChange (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:22:10)
+      at TestContext.<anonymous> (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:65:3)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /Capture identity conflict/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/capture-identity.test.mjs:71:1
+✖ an unknown receipt reserves its capture identity before any amount is counted (0.438429ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at refusedWithoutChange (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:22:10)
+      at TestContext.<anonymous> (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:76:3)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /Capture identity conflict/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/capture-identity.test.mjs:84:1
+✖ reconciliation and later receipts share the same capture binding (0.320902ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at refusedWithoutChange (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:22:10)
+      at TestContext.<anonymous> (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:88:3)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /Capture identity conflict/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/capture-identity.test.mjs:95:1
+✖ one checkpoint cannot acquire a second capture through a new webhook event ID (0.226771ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at refusedWithoutChange (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:22:10)
+      at TestContext.<anonymous> (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:98:3)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /Capture identity conflict/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/capture-identity.test.mjs:104:1
+✖ webhook and reconciliation identities must be nonempty canonical strings (0.296505ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at refusedWithoutChange (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:22:10)
+      at TestContext.<anonymous> (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:107:5)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /Webhook event ID/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/capture-identity.test.mjs:133:1
+✖ the public append path and reducer refuse lifecycle violations too (0.531169ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at refusedWithoutChange (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:22:10)
+      at TestContext.<anonymous> (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:137:3)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /pending/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/capture-identity.test.mjs:146:1
+✖ replay derives receipt identity from history instead of trusting a duplicate flag (0.258158ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:150:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /Webhook duplicate marker/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/capture-identity.test.mjs:156:1
+✖ published events cannot be edited or removed and append owns sequence metadata (5.757916ms)
+  AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+  
+    assert.ok(Object.isFrozen(published))
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:159:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: '==',
+    diff: 'simple'
+  }
+
+test at tests/capture-identity.test.mjs:169:1
+✖ a ledger keeps its creation seed stable across caller mutation (0.270456ms)
+  Error: Order required before webhook
+      at Object.recordWebhook (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/src/ledger.mjs:57:31)
+      at TestContext.<anonymous> (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:176:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7)
+
+test at tests/capture-identity.test.mjs:182:1
+✖ inherited object properties are not checkpoint identities (90.30097ms)
+  AssertionError [ERR_ASSERTION]: node:internal/modules/run_main:107
+      triggerUncaughtException(
+      ^
+  
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/[eval1]:6:14
+      at ModuleJob.run (node:internal/modules/esm/module_job:439:25)
+      at async node:internal/modules/esm/loader:224:26
+      at async ModuleLoader.executeModuleJob (node:internal/modules/esm/loader:221:20)
+      at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /Unknown checkpoint/,
+    operator: 'throws',
+    diff: 'simple'
+  }
+  
+  Node.js v24.19.0
+  
+  
+  1 !== 0
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/06e2ad0ce13f/scopesignal-ledger/tests/capture-identity.test.mjs:202:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 1,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
