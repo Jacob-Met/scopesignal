@@ -1,0 +1,187 @@
+{
+  "schema": "scopesignal.independent-windows-startup-negative/1",
+  "bytes": 153898,
+  "sha256": "f595b91735570e4aeb4f58207c5424b62ab945e4c767cfa857419fc4b5e21ef7",
+  "members": [
+    {
+      "path": "adapter-receipt.json",
+      "bytes": 789,
+      "sha256": "8414bc3168827b09245ca59d464b5cdf9976e853fafe797a2ad626abc06e25d9"
+    },
+    {
+      "path": "native-output.log",
+      "bytes": 1185,
+      "sha256": "71da3e1da178b9b14fc2a05ddf4f7b5aa76049343a393e47613e1c03d0b9bf61"
+    },
+    {
+      "path": "packet.part-0",
+      "bytes": 3000,
+      "sha256": "6771c35341f0fed41807720f8941b17498785888f5127e01de35a5efa316633a"
+    },
+    {
+      "path": "packet.part-1",
+      "bytes": 3000,
+      "sha256": "0abab277a281c8f7754d0827f9a79a2367d99caa85632a44658c253669586a57"
+    },
+    {
+      "path": "packet.part-10",
+      "bytes": 3000,
+      "sha256": "7788ce97cecd44c430c167cceafb1aaeb8da6ad27263bcd673c4f79cd9c46f08"
+    },
+    {
+      "path": "packet.part-11",
+      "bytes": 3000,
+      "sha256": "d46e6cc793d7be7ebde7043c8fce1f0c07268d0bcad4c93bcadfb5bbeb2bf222"
+    },
+    {
+      "path": "packet.part-12",
+      "bytes": 2008,
+      "sha256": "2b482aed66520f94543d48f886e9aa0e0e3eed583f913d194a9f9cfffd537e90"
+    },
+    {
+      "path": "packet.part-2",
+      "bytes": 3000,
+      "sha256": "12cf7cd3bee7d8b280f450ac80a985b520262945160ac67e588ea915634ecfd5"
+    },
+    {
+      "path": "packet.part-3",
+      "bytes": 3000,
+      "sha256": "fb2803a68940294294174f069d742c20a7a0cdf2d80518cbf49ef8fabdf7e216"
+    },
+    {
+      "path": "packet.part-4",
+      "bytes": 3000,
+      "sha256": "46fe0482fb98a71fd9bde8b211363f1ee18fa69ccbe87a7f031771a8259674bc"
+    },
+    {
+      "path": "packet.part-5",
+      "bytes": 3000,
+      "sha256": "5a9c6b4b9718fbc7cd2bfe4cc761fc3dd46e51a6dc290c4396399142b5fa40aa"
+    },
+    {
+      "path": "packet.part-6",
+      "bytes": 3000,
+      "sha256": "172e099bbf1571b81d8e93caad1a9a37e17e660a8e850905cb17b4e03d135fbe"
+    },
+    {
+      "path": "packet.part-7",
+      "bytes": 3000,
+      "sha256": "cd6fdee84d27db525a1743ab266d63354d8c4fe14cca1033d245ccb8d9cd6cb2"
+    },
+    {
+      "path": "packet.part-8",
+      "bytes": 3000,
+      "sha256": "066ca33cd5b56d16569542c8ff69ae6638ef97e2396ad64feebf56d3508f0e3d"
+    },
+    {
+      "path": "packet.part-9",
+      "bytes": 3000,
+      "sha256": "0d25f90553459753298d7defa22a5c1fe1e0165b55964decf5c5cbcafdea66d2"
+    },
+    {
+      "path": "receiving-packet.json.gz",
+      "bytes": 38008,
+      "sha256": "72fd53197934d9a8266055e2fb1173e804932fbfd64c5da25fcdca182cb8fd6c"
+    },
+    {
+      "path": "run-review.cjs",
+      "bytes": 1690,
+      "sha256": "c4bea405aaa01f4094acbec672aae3a62c75ba860696de821f15c2b1ee971a6c"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/evidence/chromium.log",
+      "bytes": 2976,
+      "sha256": "727c09540160784e63bef33298c5f1c54f9f467e437b0288fb70f15fe75d859e"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/evidence/reproduce.cjs",
+      "bytes": 21032,
+      "sha256": "30786c9fc3960339a484ad8a5ccceeaa6f5ef1fb55401717ca47e24fc5b3ebbd"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/evidence/result.json",
+      "bytes": 6413,
+      "sha256": "122929632b46dfdcb44c1140e8aa9a6609305ed716bf82285ff5ba1fdf5c56fa"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/source/scope-history.css",
+      "bytes": 2801,
+      "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/source/scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/source/scope.html",
+      "bytes": 11637,
+      "sha256": "eb083506992aea01ade9fa529017e308c627d7bc5dbe57ab7bf5d8ef871f81b7"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/source/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/source/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/source/src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/source/src/scope-history-view.mjs",
+      "bytes": 5728,
+      "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/source/src/scope-history.mjs",
+      "bytes": 4297,
+      "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/source/src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/source/src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/source/src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/source/src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/source/src/scope-workspace.mjs",
+      "bytes": 25530,
+      "sha256": "bb8ade4a133b1499c29441178fcc6cf6ed858c4fa731e1c4d7cfa320551c42cb"
+    },
+    {
+      "path": "scopesignal-independent-ac386303dce2-YLDfAi/source/styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+    },
+    {
+      "path": "source-binding.json",
+      "bytes": 3415,
+      "sha256": "bc41e76b716b247a72d996867b2fb9c9186d2614b87151341cef78ddd5bf1643"
+    },
+    {
+      "path": "windows-reproduce.cjs",
+      "bytes": 21032,
+      "sha256": "30786c9fc3960339a484ad8a5ccceeaa6f5ef1fb55401717ca47e24fc5b3ebbd"
+    }
+  ]
+}

@@ -11,6 +11,7 @@ let draft = draftFromFixture();
 let review = null;
 const evidenceDrafts = new Map();
 const scopeHistory = mountScopeHistory($('#scope-history'));
+let checkpointRemoval = null;
 
 function element(tag, text, className) {
   const node = document.createElement(tag);
@@ -88,6 +89,14 @@ function readDraft() {
       evidence: row.querySelector('[data-field="evidence"]').value
     }))
   };
+}
+
+function clearCheckpointRemoval() {
+  const hadRemoval = checkpointRemoval !== null;
+  checkpointRemoval = null;
+  $('#scope-undo-remove').hidden = true;
+  $('#scope-undo-remove').disabled = true;
+  if (hadRemoval) $('#scope-order-status').textContent = '';
 }
 
 function updateBudget() {
@@ -250,6 +259,23 @@ $('#scope-add').addEventListener('click', () => {
   renderDraftRows();
   $(`#draft-${draft.checkpoints.length - 1}-title`).focus();
 });
+$('#scope-undo-remove').addEventListener('click', () => {
+  if (!checkpointRemoval || review || form.hidden) return;
+  const removal = checkpointRemoval;
+  const current = readDraft();
+  if (JSON.stringify(current) !== removal.remaining) {
+    clearCheckpointRemoval();
+    $('#scope-order-status').textContent = 'The draft changed. This removal can no longer be undone.';
+    return;
+  }
+  workspaceChanged();
+  current.checkpoints.splice(removal.index, 0, removal.checkpoint);
+  draft = current;
+  clearErrors();
+  renderDraftRows();
+  $(`#draft-${removal.index}-title`).focus();
+  $('#scope-order-status').textContent = `Checkpoint ${removal.index + 1} restored with its original fields.`;
+});
 $('#scope-draft-list').addEventListener('click', event => {
   const duplicate = event.target.closest('button[data-duplicate]');
   if (duplicate) {
@@ -292,11 +318,16 @@ $('#scope-draft-list').addEventListener('click', event => {
   if (!remove || remove.disabled) return;
   draft = readDraft();
   const index = Number(remove.dataset.remove);
+  const checkpoint = { ...draft.checkpoints[index] };
   workspaceChanged();
   draft.checkpoints.splice(index, 1);
   clearErrors();
   renderDraftRows();
+  checkpointRemoval = { index, checkpoint, remaining: JSON.stringify(readDraft()) };
+  $('#scope-undo-remove').hidden = false;
+  $('#scope-undo-remove').disabled = false;
   $(`#draft-${Math.min(index, draft.checkpoints.length - 1)}-title`).focus();
+  $('#scope-order-status').textContent = `Checkpoint ${index + 1} removed. Undo is available until the next draft change.`;
 });
 form.addEventListener('submit', event => {
   event.preventDefault();
@@ -399,6 +430,7 @@ function cancelOpen(message = '') {
 }
 
 function workspaceChanged() {
+  clearCheckpointRemoval();
   if (readingWorkspace || pendingWorkspace || chooserWorkspace) {
     cancelOpen('Your workspace changed. Choose the saved file again when you are ready to replace it.');
   }
@@ -528,6 +560,7 @@ $('#scope-open-apply').addEventListener('click', () => {
   if (!pendingWorkspace || !currentOpen(pendingWorkspace.request)) return;
   const next = pendingWorkspace.admitted;
   cancelOpen();
+  clearCheckpointRemoval();
   draft = structuredClone(next.draft);
   review = next.review;
   evidenceDrafts.clear();

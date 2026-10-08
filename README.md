@@ -78,6 +78,13 @@ seven-event Northstar example remains available from the return link.
    ledger. An uncertain capture cannot be requested again, and receiving a
    webhook while uncertain does not itself reconcile that outcome.
 
+After removing a draft checkpoint, **Undo last checkpoint removal** restores
+that row's exact fields and original position, then focuses its deliverable.
+No earlier download is needed. Only the most recent removal can be restored:
+another draft edit, added/copied/moved checkpoint, successful review, or
+workspace replacement retires it. Downloading a file or canceling its opening
+does not change the draft. Undo also cancels any pending replacement preview.
+
 The fictional plan and its events stay in this page's memory. Use **Download
 workspace** to keep an explicit local file before leaving or refreshing.
 **Open saved workspace** checks a chosen file and shows a preview; only
@@ -92,6 +99,15 @@ output directories. The receiver uses a fresh headless profile and local
 fictional drafts, blocks external requests, and records keyboard/pointer
 movement, validation, native workspace downloads/reopening and stale-read
 invalidation. It does not install a browser or call a provider.
+
+`node scripts/check-scope-checkpoint-undo.cjs` checks the removal/Undo workflow
+in an installed Chrome or Chromium through its standard debugging protocol.
+Set `SCOPESIGNAL_CHROME` to the executable and optionally
+`SCOPESIGNAL_SOURCE` and `SCOPESIGNAL_EVIDENCE` to the source and a new evidence
+directory that the browser can write. The receiver uses fictional raw drafts,
+native downloads and file selection, fresh owned profiles, and no provider.
+It covers one-step restoration, later edits, review/approval boundaries,
+pending file completion, exact file replacement and narrow keyboard access.
 
 ### Save and reopen an authored workspace
 

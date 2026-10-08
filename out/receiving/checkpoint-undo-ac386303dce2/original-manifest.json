@@ -1,0 +1,1304 @@
+{
+  "schema": "scopesignal.undo.publication-custody/1",
+  "created_at": "2026-10-08T18:52:26.364Z",
+  "originalAuthorFiles": 158,
+  "independentFiles": 24,
+  "payloadFiles": 185,
+  "files": [
+    {
+      "path": "baseline-boundaries/evidence/01-incoming-preview.json",
+      "bytes": 1016,
+      "sha256": "56437c2a1d234dc936e1a304156bb756e6fd08af3de5a090f6d309b33213f8d6",
+      "git_blob": "08e68cfbfc061e717c8b836c91e63a9fb07ff71e",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/evidence/01-incoming-preview.json"
+    },
+    {
+      "path": "baseline-boundaries/evidence/02-incoming-held.json",
+      "bytes": 993,
+      "sha256": "3dca3de8ec54f6652cebd8e3115c396f17d03a888793eda710b0e6b64069a6ab",
+      "git_blob": "a520e3d6a25cdcfc6fcf4fea96d6136902b972cc",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/evidence/02-incoming-held.json"
+    },
+    {
+      "path": "baseline-boundaries/evidence/chromium.log",
+      "bytes": 3891,
+      "sha256": "edbbe479d11fc67d261e98ee694f6054d6c6179cdc4c76293a46b68da53f1d6d",
+      "git_blob": "1e6e9d155b6b2db81a9b2fcfc70526de3b2a2f95",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/evidence/chromium.log"
+    },
+    {
+      "path": "baseline-boundaries/evidence/held-workspace.json",
+      "bytes": 993,
+      "sha256": "3dca3de8ec54f6652cebd8e3115c396f17d03a888793eda710b0e6b64069a6ab",
+      "git_blob": "a520e3d6a25cdcfc6fcf4fea96d6136902b972cc",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/evidence/held-workspace.json"
+    },
+    {
+      "path": "baseline-boundaries/evidence/reproduce.cjs",
+      "bytes": 25225,
+      "sha256": "55aad4f600a7a325e66b7caf33273e2796d4c40ce109156cd51f83db1f03641c",
+      "git_blob": "707d7cfda1633751f049945b2cedcbefd62d02c7",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/evidence/reproduce.cjs"
+    },
+    {
+      "path": "baseline-boundaries/evidence/result.json",
+      "bytes": 40494,
+      "sha256": "dace358fdffbe60f74b8618bf82a2da4fd6f782a60770c33623ba32a6d479a9d",
+      "git_blob": "0ad2a0a71ce2caf8a7a41cb00be9b1668aad32be",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/evidence/result.json"
+    },
+    {
+      "path": "baseline-boundaries/source/scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/source/scope-workspace.css"
+    },
+    {
+      "path": "baseline-boundaries/source/scope.html",
+      "bytes": 8867,
+      "sha256": "74d5d0b7dc212dcd6881e1ca14b2a9fcfdbc632b00e55d1dc9a1bb2521dafb4a",
+      "git_blob": "d1567193c7eb1c78b8e55afbf245151994e913b0",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/source/scope.html"
+    },
+    {
+      "path": "baseline-boundaries/source/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/source/src/fixture-record.mjs"
+    },
+    {
+      "path": "baseline-boundaries/source/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/source/src/ledger.mjs"
+    },
+    {
+      "path": "baseline-boundaries/source/src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/source/src/payment-status.mjs"
+    },
+    {
+      "path": "baseline-boundaries/source/src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/source/src/scope-plan.mjs"
+    },
+    {
+      "path": "baseline-boundaries/source/src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/source/src/scope-review-export.mjs"
+    },
+    {
+      "path": "baseline-boundaries/source/src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/source/src/scope-revision-draft.mjs"
+    },
+    {
+      "path": "baseline-boundaries/source/src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/source/src/scope-workspace-record.mjs"
+    },
+    {
+      "path": "baseline-boundaries/source/src/scope-workspace.mjs",
+      "bytes": 23904,
+      "sha256": "a71f7ecfca0c3ddb40177c8114846de1cdfcdf3bebd6f4be8c2faa74ea5584b9",
+      "git_blob": "783def69bbe2130c08889572ed27363d89a33b9d",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/source/src/scope-workspace.mjs"
+    },
+    {
+      "path": "baseline-boundaries/source/styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-y3hbA0/source/styles.css"
+    },
+    {
+      "path": "baseline-two-cases/evidence/chromium.log",
+      "bytes": 3138,
+      "sha256": "4b94bc3b450f8990971f68b991fd7905f7eb7ef9c31f9245c2610f2e980c2955",
+      "git_blob": "a367c73c992b0da5d18a31e7a5bb59159751ba47",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/evidence/chromium.log"
+    },
+    {
+      "path": "baseline-two-cases/evidence/complete-desktop-after.json",
+      "bytes": 722,
+      "sha256": "1ad6e33d3cd8ebc090e4fdd41047e65acafefad3fd810b431db4cd650f722720",
+      "git_blob": "4474d5f368bc806bec5d9d506a4ef162d651137c",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/evidence/complete-desktop-after.json"
+    },
+    {
+      "path": "baseline-two-cases/evidence/complete-desktop-before.json",
+      "bytes": 897,
+      "sha256": "7b6401e73a805025e0f4fb67ae46b6b3a08d413a3b8b22d36c68f4073c594a65",
+      "git_blob": "eb61f3a41a1f598b6c4e63e937dc26e8b01d630e",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/evidence/complete-desktop-before.json"
+    },
+    {
+      "path": "baseline-two-cases/evidence/complete-desktop.png",
+      "bytes": 65163,
+      "sha256": "af01dbe9353bf80d2f009f1056457ab4bb62762f6e29c0a778b9f803c8a628f3",
+      "git_blob": "95e43ede7501b09dde37c39e7f87b8eeb382660e",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/evidence/complete-desktop.png"
+    },
+    {
+      "path": "baseline-two-cases/evidence/reproduce.cjs",
+      "bytes": 15130,
+      "sha256": "a92bffb0655301c1ea278be35afce710a34fe80921730fff61eb5b20ab726d7a",
+      "git_blob": "b08df861b169af6a5f85749280a17b5e948db2d4",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/evidence/reproduce.cjs"
+    },
+    {
+      "path": "baseline-two-cases/evidence/result.json",
+      "bytes": 24088,
+      "sha256": "5f823ad90ea16245866dd0769578f386ca80a721b127fdf094c1cc1f201fde58",
+      "git_blob": "feff9fe3633237553087d5a63753e68ca4b52d0d",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/evidence/result.json"
+    },
+    {
+      "path": "baseline-two-cases/evidence/unfinished-phone-after.json",
+      "bytes": 722,
+      "sha256": "1ad6e33d3cd8ebc090e4fdd41047e65acafefad3fd810b431db4cd650f722720",
+      "git_blob": "4474d5f368bc806bec5d9d506a4ef162d651137c",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/evidence/unfinished-phone-after.json"
+    },
+    {
+      "path": "baseline-two-cases/evidence/unfinished-phone-before.json",
+      "bytes": 850,
+      "sha256": "e71e50a8e448965fd8cce5c41279997e799bb7f8f79045ff733dc0a47070e44b",
+      "git_blob": "707c18ba2ef45bf51ecf53f727b47b1c0c908e93",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/evidence/unfinished-phone-before.json"
+    },
+    {
+      "path": "baseline-two-cases/evidence/unfinished-phone.png",
+      "bytes": 43511,
+      "sha256": "276d304e2130576dc6d012a7f6972dac3a783ef86337efcb564a1649d0c1df3c",
+      "git_blob": "eecafe652df6d370d8ba59d1e49ba1206bddf40a",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/evidence/unfinished-phone.png"
+    },
+    {
+      "path": "baseline-two-cases/source/scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/source/scope-workspace.css"
+    },
+    {
+      "path": "baseline-two-cases/source/scope.html",
+      "bytes": 8867,
+      "sha256": "74d5d0b7dc212dcd6881e1ca14b2a9fcfdbc632b00e55d1dc9a1bb2521dafb4a",
+      "git_blob": "d1567193c7eb1c78b8e55afbf245151994e913b0",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/source/scope.html"
+    },
+    {
+      "path": "baseline-two-cases/source/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/source/src/fixture-record.mjs"
+    },
+    {
+      "path": "baseline-two-cases/source/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/source/src/ledger.mjs"
+    },
+    {
+      "path": "baseline-two-cases/source/src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/source/src/payment-status.mjs"
+    },
+    {
+      "path": "baseline-two-cases/source/src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/source/src/scope-plan.mjs"
+    },
+    {
+      "path": "baseline-two-cases/source/src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/source/src/scope-review-export.mjs"
+    },
+    {
+      "path": "baseline-two-cases/source/src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/source/src/scope-revision-draft.mjs"
+    },
+    {
+      "path": "baseline-two-cases/source/src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/source/src/scope-workspace-record.mjs"
+    },
+    {
+      "path": "baseline-two-cases/source/src/scope-workspace.mjs",
+      "bytes": 23904,
+      "sha256": "a71f7ecfca0c3ddb40177c8114846de1cdfcdf3bebd6f4be8c2faa74ea5584b9",
+      "git_blob": "783def69bbe2130c08889572ed27363d89a33b9d",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/source/src/scope-workspace.mjs"
+    },
+    {
+      "path": "baseline-two-cases/source/styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-mnju4D/source/styles.css"
+    },
+    {
+      "path": "candidate-boundaries/evidence/01-removed.json",
+      "bytes": 681,
+      "sha256": "487e8a1381496a64e64869fe1a5630aa15291d4b07aa748cf0c0195d712749c2",
+      "git_blob": "68a1e868efb91493b3bda6bfb36620d456e0e9a5",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/01-removed.json"
+    },
+    {
+      "path": "candidate-boundaries/evidence/02-restored.json",
+      "bytes": 832,
+      "sha256": "f85bfdf8d52d1a983cc3d99ebdec40fce8c408637412a1c4b87709935daf3a62",
+      "git_blob": "165b993273a485ff6726111c51c9a54088b82ebf",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/02-restored.json"
+    },
+    {
+      "path": "candidate-boundaries/evidence/03-unfinished-0.json",
+      "bytes": 937,
+      "sha256": "6492a004ed32d9fffa4c11356ab1c300575c0c2a0bfddc30d7c2e5f346cfeb0c",
+      "git_blob": "874e172921433fd905311acc4f1c354d298cd0bd",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/03-unfinished-0.json"
+    },
+    {
+      "path": "candidate-boundaries/evidence/04-unfinished-2.json",
+      "bytes": 953,
+      "sha256": "38b46cb5331d65e209c7c0d49f3fc23c3b5c14bc998193df4d05aee40a7985b4",
+      "git_blob": "ce8423a99fea5f3aa918b959b9fd61be9ebb010b",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/04-unfinished-2.json"
+    },
+    {
+      "path": "candidate-boundaries/evidence/05-review.json",
+      "bytes": 808,
+      "sha256": "fcdd34838e6ea27791faeaaf70ce711ae71a93800e404036b817d4344a3e56c9",
+      "git_blob": "da0c4e7cc523af702df20654a909f9ff9de9d177",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/05-review.json"
+    },
+    {
+      "path": "candidate-boundaries/evidence/06-review-unchanged.json",
+      "bytes": 808,
+      "sha256": "fcdd34838e6ea27791faeaaf70ce711ae71a93800e404036b817d4344a3e56c9",
+      "git_blob": "da0c4e7cc523af702df20654a909f9ff9de9d177",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/06-review-unchanged.json"
+    },
+    {
+      "path": "candidate-boundaries/evidence/07-approved.json",
+      "bytes": 1069,
+      "sha256": "3322aa33efc32608cf75e49e8da24d7496b2c2f242b691c90a40f44107d9ff7a",
+      "git_blob": "7ff1c71913022c642cec736c541bf90873b262d8",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/07-approved.json"
+    },
+    {
+      "path": "candidate-boundaries/evidence/08-approved-unchanged.json",
+      "bytes": 1069,
+      "sha256": "3322aa33efc32608cf75e49e8da24d7496b2c2f242b691c90a40f44107d9ff7a",
+      "git_blob": "7ff1c71913022c642cec736c541bf90873b262d8",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/08-approved-unchanged.json"
+    },
+    {
+      "path": "candidate-boundaries/evidence/09-incoming-preview.json",
+      "bytes": 1016,
+      "sha256": "56437c2a1d234dc936e1a304156bb756e6fd08af3de5a090f6d309b33213f8d6",
+      "git_blob": "08e68cfbfc061e717c8b836c91e63a9fb07ff71e",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/09-incoming-preview.json"
+    },
+    {
+      "path": "candidate-boundaries/evidence/10-incoming-held.json",
+      "bytes": 993,
+      "sha256": "3dca3de8ec54f6652cebd8e3115c396f17d03a888793eda710b0e6b64069a6ab",
+      "git_blob": "a520e3d6a25cdcfc6fcf4fea96d6136902b972cc",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/10-incoming-held.json"
+    },
+    {
+      "path": "candidate-boundaries/evidence/11-same-remaining.json",
+      "bytes": 807,
+      "sha256": "75e0728375cc77d946534ad67b8476a24becfaa1b627ecc808cc1116ef13aeb1",
+      "git_blob": "d97146b77caa4ce5b8f1fa348fba9b86f6576c1a",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/11-same-remaining.json"
+    },
+    {
+      "path": "candidate-boundaries/evidence/chromium.log",
+      "bytes": 3730,
+      "sha256": "8fbb2d1da04dbf3022c4f4be7c0d08fa04a6a7e59f5e7c4edddcb2e14bcc6d54",
+      "git_blob": "45726657e40650b0b91baaf4487be9a5fef23277",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/chromium.log"
+    },
+    {
+      "path": "candidate-boundaries/evidence/held-workspace.json",
+      "bytes": 993,
+      "sha256": "3dca3de8ec54f6652cebd8e3115c396f17d03a888793eda710b0e6b64069a6ab",
+      "git_blob": "a520e3d6a25cdcfc6fcf4fea96d6136902b972cc",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/held-workspace.json"
+    },
+    {
+      "path": "candidate-boundaries/evidence/invalid-workspace.json",
+      "bytes": 1,
+      "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96",
+      "git_blob": "81750b96f9d83b395f285233d54ec0c9df9ab93d",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/invalid-workspace.json"
+    },
+    {
+      "path": "candidate-boundaries/evidence/phone-undo-action.png",
+      "bytes": 43557,
+      "sha256": "8467ff1db9ab58584fb89d77cbc26e08d6601d28566be3fad31a85bc0ce8427b",
+      "git_blob": "0afdf65db8e9e89ef0e61b7920d6db53d68f59fe",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/phone-undo-action.png"
+    },
+    {
+      "path": "candidate-boundaries/evidence/reproduce.cjs",
+      "bytes": 25225,
+      "sha256": "55aad4f600a7a325e66b7caf33273e2796d4c40ce109156cd51f83db1f03641c",
+      "git_blob": "707d7cfda1633751f049945b2cedcbefd62d02c7",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/reproduce.cjs"
+    },
+    {
+      "path": "candidate-boundaries/evidence/result.json",
+      "bytes": 80987,
+      "sha256": "41ab3954528a5eb289f39f172c6c82c1161954a7ac8cc94205e5e818277b56a3",
+      "git_blob": "4c830704c8ae61d218116ea4a3eb968ecabb2ece",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/evidence/result.json"
+    },
+    {
+      "path": "candidate-boundaries/source/scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/source/scope-workspace.css"
+    },
+    {
+      "path": "candidate-boundaries/source/scope.html",
+      "bytes": 9200,
+      "sha256": "b663dad1e86d86c827efb547a6f2337a9940c3c9b5b21d6192c8020964a0a94b",
+      "git_blob": "5a7931b321f076b2bed8bcc2ef67d7242ed3784e",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/source/scope.html"
+    },
+    {
+      "path": "candidate-boundaries/source/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/source/src/fixture-record.mjs"
+    },
+    {
+      "path": "candidate-boundaries/source/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/source/src/ledger.mjs"
+    },
+    {
+      "path": "candidate-boundaries/source/src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/source/src/payment-status.mjs"
+    },
+    {
+      "path": "candidate-boundaries/source/src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/source/src/scope-plan.mjs"
+    },
+    {
+      "path": "candidate-boundaries/source/src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/source/src/scope-review-export.mjs"
+    },
+    {
+      "path": "candidate-boundaries/source/src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/source/src/scope-revision-draft.mjs"
+    },
+    {
+      "path": "candidate-boundaries/source/src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/source/src/scope-workspace-record.mjs"
+    },
+    {
+      "path": "candidate-boundaries/source/src/scope-workspace.mjs",
+      "bytes": 25297,
+      "sha256": "676c4b3d331cfb8efe7a62cccbb7420de583271f3865e3270e2ddfdc8cd47db1",
+      "git_blob": "2f2a97a859812c94c028babe2e0c4cd31f940dd7",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/source/src/scope-workspace.mjs"
+    },
+    {
+      "path": "candidate-boundaries/source/styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZhJl5V/source/styles.css"
+    },
+    {
+      "path": "candidate-two-cases/evidence/chromium.log",
+      "bytes": 3891,
+      "sha256": "204b9e47ccd9e4d1269c04aab5253dcb1b92ae27587ac56cfe6ad21c5e32ddcf",
+      "git_blob": "bfdbdc965be439df8da35cd2fda446be169d9948",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/evidence/chromium.log"
+    },
+    {
+      "path": "candidate-two-cases/evidence/complete-desktop-after.json",
+      "bytes": 722,
+      "sha256": "1ad6e33d3cd8ebc090e4fdd41047e65acafefad3fd810b431db4cd650f722720",
+      "git_blob": "4474d5f368bc806bec5d9d506a4ef162d651137c",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/evidence/complete-desktop-after.json"
+    },
+    {
+      "path": "candidate-two-cases/evidence/complete-desktop-before.json",
+      "bytes": 897,
+      "sha256": "7b6401e73a805025e0f4fb67ae46b6b3a08d413a3b8b22d36c68f4073c594a65",
+      "git_blob": "eb61f3a41a1f598b6c4e63e937dc26e8b01d630e",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/evidence/complete-desktop-before.json"
+    },
+    {
+      "path": "candidate-two-cases/evidence/complete-desktop-restored.json",
+      "bytes": 897,
+      "sha256": "7b6401e73a805025e0f4fb67ae46b6b3a08d413a3b8b22d36c68f4073c594a65",
+      "git_blob": "eb61f3a41a1f598b6c4e63e937dc26e8b01d630e",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/evidence/complete-desktop-restored.json"
+    },
+    {
+      "path": "candidate-two-cases/evidence/complete-desktop.png",
+      "bytes": 62256,
+      "sha256": "3e3cb3eac7d99a644711da5cacba0169308cb645770ff85bdbfb18d8f29b5870",
+      "git_blob": "c8605fcf8ef8e93332372c5b4841093a4da7e4a2",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/evidence/complete-desktop.png"
+    },
+    {
+      "path": "candidate-two-cases/evidence/reproduce.cjs",
+      "bytes": 15130,
+      "sha256": "a92bffb0655301c1ea278be35afce710a34fe80921730fff61eb5b20ab726d7a",
+      "git_blob": "b08df861b169af6a5f85749280a17b5e948db2d4",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/evidence/reproduce.cjs"
+    },
+    {
+      "path": "candidate-two-cases/evidence/result.json",
+      "bytes": 29847,
+      "sha256": "68a3e389c8dda4e8b9602c6935753c3cf2d0770e1517ddf30db70a57453a4b80",
+      "git_blob": "e54d700fbe71b1614a0a5c149e018481b1760c87",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/evidence/result.json"
+    },
+    {
+      "path": "candidate-two-cases/evidence/unfinished-phone-after.json",
+      "bytes": 722,
+      "sha256": "1ad6e33d3cd8ebc090e4fdd41047e65acafefad3fd810b431db4cd650f722720",
+      "git_blob": "4474d5f368bc806bec5d9d506a4ef162d651137c",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/evidence/unfinished-phone-after.json"
+    },
+    {
+      "path": "candidate-two-cases/evidence/unfinished-phone-before.json",
+      "bytes": 850,
+      "sha256": "e71e50a8e448965fd8cce5c41279997e799bb7f8f79045ff733dc0a47070e44b",
+      "git_blob": "707c18ba2ef45bf51ecf53f727b47b1c0c908e93",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/evidence/unfinished-phone-before.json"
+    },
+    {
+      "path": "candidate-two-cases/evidence/unfinished-phone-restored.json",
+      "bytes": 850,
+      "sha256": "e71e50a8e448965fd8cce5c41279997e799bb7f8f79045ff733dc0a47070e44b",
+      "git_blob": "707c18ba2ef45bf51ecf53f727b47b1c0c908e93",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/evidence/unfinished-phone-restored.json"
+    },
+    {
+      "path": "candidate-two-cases/evidence/unfinished-phone.png",
+      "bytes": 41514,
+      "sha256": "ed237c78e0c0811d7ee3cb9355fcc15dd6d62f9472e19e58119bc0eb54148123",
+      "git_blob": "71160668c6b35bc7265ecdef1f1847fcabbc625b",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/evidence/unfinished-phone.png"
+    },
+    {
+      "path": "candidate-two-cases/source/scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/source/scope-workspace.css"
+    },
+    {
+      "path": "candidate-two-cases/source/scope.html",
+      "bytes": 9200,
+      "sha256": "b663dad1e86d86c827efb547a6f2337a9940c3c9b5b21d6192c8020964a0a94b",
+      "git_blob": "5a7931b321f076b2bed8bcc2ef67d7242ed3784e",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/source/scope.html"
+    },
+    {
+      "path": "candidate-two-cases/source/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/source/src/fixture-record.mjs"
+    },
+    {
+      "path": "candidate-two-cases/source/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/source/src/ledger.mjs"
+    },
+    {
+      "path": "candidate-two-cases/source/src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/source/src/payment-status.mjs"
+    },
+    {
+      "path": "candidate-two-cases/source/src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/source/src/scope-plan.mjs"
+    },
+    {
+      "path": "candidate-two-cases/source/src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/source/src/scope-review-export.mjs"
+    },
+    {
+      "path": "candidate-two-cases/source/src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/source/src/scope-revision-draft.mjs"
+    },
+    {
+      "path": "candidate-two-cases/source/src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/source/src/scope-workspace-record.mjs"
+    },
+    {
+      "path": "candidate-two-cases/source/src/scope-workspace.mjs",
+      "bytes": 25297,
+      "sha256": "676c4b3d331cfb8efe7a62cccbb7420de583271f3865e3270e2ddfdc8cd47db1",
+      "git_blob": "2f2a97a859812c94c028babe2e0c4cd31f940dd7",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/source/src/scope-workspace.mjs"
+    },
+    {
+      "path": "candidate-two-cases/source/styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "origin": "/home/jacob/scopesignal-receiving-ac386303dce2-ZjalpQ/source/styles.css"
+    },
+    {
+      "path": "chromium-environment-home-refused/evidence/chromium.log",
+      "bytes": 557,
+      "sha256": "f9590150b53982da9f1fe454b50612ca98b81d2820e973ce0576d0f8ba1fdbe0",
+      "git_blob": "3a83de07bc33a3f836ffbc983594b761e2b5a36a",
+      "origin": "/home/jacob/.commander-tp-2/scopesignal-receiving-ac386303dce2-mVsx9d/evidence/chromium.log"
+    },
+    {
+      "path": "chromium-environment-home-refused/evidence/reproduce.cjs",
+      "bytes": 15121,
+      "sha256": "ade358b3257ad665c5463d64bbd30fec1328e3877024a951b2f6b168fb7333c2",
+      "git_blob": "fe6d9f261cb74957d4c4107f26eb08ac7c4bfb89",
+      "origin": "/home/jacob/.commander-tp-2/scopesignal-receiving-ac386303dce2-mVsx9d/evidence/reproduce.cjs"
+    },
+    {
+      "path": "chromium-environment-home-refused/evidence/result.json",
+      "bytes": 5223,
+      "sha256": "9230945cbde9afa7be7c41557dadbc70a9b66277570cface56e52c695522c9be",
+      "git_blob": "46ca1d6bfb9106ed9e807971c7b2447b3f088a00",
+      "origin": "/home/jacob/.commander-tp-2/scopesignal-receiving-ac386303dce2-mVsx9d/evidence/result.json"
+    },
+    {
+      "path": "chromium-environment-home-refused/source/scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "origin": "/home/jacob/.commander-tp-2/scopesignal-receiving-ac386303dce2-mVsx9d/source/scope-workspace.css"
+    },
+    {
+      "path": "chromium-environment-home-refused/source/scope.html",
+      "bytes": 8867,
+      "sha256": "74d5d0b7dc212dcd6881e1ca14b2a9fcfdbc632b00e55d1dc9a1bb2521dafb4a",
+      "git_blob": "d1567193c7eb1c78b8e55afbf245151994e913b0",
+      "origin": "/home/jacob/.commander-tp-2/scopesignal-receiving-ac386303dce2-mVsx9d/source/scope.html"
+    },
+    {
+      "path": "chromium-environment-home-refused/source/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "origin": "/home/jacob/.commander-tp-2/scopesignal-receiving-ac386303dce2-mVsx9d/source/src/fixture-record.mjs"
+    },
+    {
+      "path": "chromium-environment-home-refused/source/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "origin": "/home/jacob/.commander-tp-2/scopesignal-receiving-ac386303dce2-mVsx9d/source/src/ledger.mjs"
+    },
+    {
+      "path": "chromium-environment-home-refused/source/src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "origin": "/home/jacob/.commander-tp-2/scopesignal-receiving-ac386303dce2-mVsx9d/source/src/payment-status.mjs"
+    },
+    {
+      "path": "chromium-environment-home-refused/source/src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "origin": "/home/jacob/.commander-tp-2/scopesignal-receiving-ac386303dce2-mVsx9d/source/src/scope-plan.mjs"
+    },
+    {
+      "path": "chromium-environment-home-refused/source/src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "origin": "/home/jacob/.commander-tp-2/scopesignal-receiving-ac386303dce2-mVsx9d/source/src/scope-review-export.mjs"
+    },
+    {
+      "path": "chromium-environment-home-refused/source/src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "origin": "/home/jacob/.commander-tp-2/scopesignal-receiving-ac386303dce2-mVsx9d/source/src/scope-revision-draft.mjs"
+    },
+    {
+      "path": "chromium-environment-home-refused/source/src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "origin": "/home/jacob/.commander-tp-2/scopesignal-receiving-ac386303dce2-mVsx9d/source/src/scope-workspace-record.mjs"
+    },
+    {
+      "path": "chromium-environment-home-refused/source/src/scope-workspace.mjs",
+      "bytes": 23904,
+      "sha256": "a71f7ecfca0c3ddb40177c8114846de1cdfcdf3bebd6f4be8c2faa74ea5584b9",
+      "git_blob": "783def69bbe2130c08889572ed27363d89a33b9d",
+      "origin": "/home/jacob/.commander-tp-2/scopesignal-receiving-ac386303dce2-mVsx9d/source/src/scope-workspace.mjs"
+    },
+    {
+      "path": "chromium-environment-home-refused/source/styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "origin": "/home/jacob/.commander-tp-2/scopesignal-receiving-ac386303dce2-mVsx9d/source/styles.css"
+    },
+    {
+      "path": "independent/evidence/01-locked-uncertain-incoming.json",
+      "bytes": 1898,
+      "sha256": "4ca9bcdd6d6b7cf0523b3b304a07c24012c94ff39430ddab28a7d59029cae960",
+      "git_blob": "12e3155f6c4d8492b75080f5423d72b554f2797e",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/evidence/01-locked-uncertain-incoming.json"
+    },
+    {
+      "path": "independent/evidence/02-locked-received.json",
+      "bytes": 1898,
+      "sha256": "4ca9bcdd6d6b7cf0523b3b304a07c24012c94ff39430ddab28a7d59029cae960",
+      "git_blob": "12e3155f6c4d8492b75080f5423d72b554f2797e",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/evidence/02-locked-received.json"
+    },
+    {
+      "path": "independent/evidence/03-locked-after-stale-undo.json",
+      "bytes": 1898,
+      "sha256": "4ca9bcdd6d6b7cf0523b3b304a07c24012c94ff39430ddab28a7d59029cae960",
+      "git_blob": "12e3155f6c4d8492b75080f5423d72b554f2797e",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/evidence/03-locked-after-stale-undo.json"
+    },
+    {
+      "path": "independent/evidence/04-reduced-draft.json",
+      "bytes": 818,
+      "sha256": "3f7d0131685febfabc1c90b63efe3b7f440beb75f8ac7ca31434913b8a8068c9",
+      "git_blob": "fb34bc7d1c2b2f6fdc94869233b58e57dd036227",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/evidence/04-reduced-draft.json"
+    },
+    {
+      "path": "independent/evidence/05-restored-draft.json",
+      "bytes": 1023,
+      "sha256": "dd13223e3f12129070af4572be8f84ab3520ff793292f8c58b854e52ef8edc45",
+      "git_blob": "c857a34d9c45f296c47d106d9d589e42353215a6",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/evidence/05-restored-draft.json"
+    },
+    {
+      "path": "independent/evidence/06-reopened-reduced-draft.json",
+      "bytes": 818,
+      "sha256": "3f7d0131685febfabc1c90b63efe3b7f440beb75f8ac7ca31434913b8a8068c9",
+      "git_blob": "fb34bc7d1c2b2f6fdc94869233b58e57dd036227",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/evidence/06-reopened-reduced-draft.json"
+    },
+    {
+      "path": "independent/evidence/07-reduced-review.html",
+      "bytes": 5162,
+      "sha256": "0de2fc65dc7cbf2f23883b239bdf3237ca7dce085bf0113e8db5e6b2bf3f32ce",
+      "git_blob": "f837fea17595cf1aa5a272eb4b0a686b26da8eac",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/evidence/07-reduced-review.html"
+    },
+    {
+      "path": "independent/evidence/chromium.log",
+      "bytes": 3695,
+      "sha256": "e4edfdbebef4db4bd208891e29bb409adcb5767bfc0e7650d2b715a125afea51",
+      "git_blob": "369b07a754c3fdc00fc48be27f4b8a29a62eff17",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/evidence/chromium.log"
+    },
+    {
+      "path": "independent/evidence/reproduce.cjs",
+      "bytes": 19327,
+      "sha256": "067bc57f467b1dddd8be324fb55e0f33615d8ba6bf1cda0220e9b3e1a98eeaf9",
+      "git_blob": "f46bc02e164bc2030f5f35ab7e09c51648e93dd2",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/evidence/reproduce.cjs"
+    },
+    {
+      "path": "independent/evidence/result.json",
+      "bytes": 25078,
+      "sha256": "0babe0e1d8984fccddaec9b18b759f7f1e389baee34dccdaad6701cbbafb21d9",
+      "git_blob": "8bd7109a063acbfa06a963757f3e0aa260d9d5ba",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/evidence/result.json"
+    },
+    {
+      "path": "independent/file-manifest.json",
+      "bytes": 3905,
+      "sha256": "0076ede91d1582366ecf4771d55af0a75cbc793e1b533e15c569cc6e19acb7ac",
+      "git_blob": "5f173d859cba622445b8cc25e2b3ee654e713c62",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/file-manifest.json"
+    },
+    {
+      "path": "independent/QUALIFICATION.md",
+      "bytes": 4013,
+      "sha256": "5a85a8e42419022949c191d744d36b61e778e090d8238dc5419b378d539e5848",
+      "git_blob": "9a0a30063ec4f81e035fd1f841b357575c665203",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/QUALIFICATION.md"
+    },
+    {
+      "path": "independent/run-review.cjs",
+      "bytes": 1645,
+      "sha256": "d8e5e0f12796128eee9f505ff85ae79ff3eb052b88bf61397e2359edd5c6a2be",
+      "git_blob": "28ba0147f9e62eac42a78c4665db878159d8b20f",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/run-review.cjs"
+    },
+    {
+      "path": "independent/source/scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/source/scope-workspace.css"
+    },
+    {
+      "path": "independent/source/scope.html",
+      "bytes": 9200,
+      "sha256": "b663dad1e86d86c827efb547a6f2337a9940c3c9b5b21d6192c8020964a0a94b",
+      "git_blob": "5a7931b321f076b2bed8bcc2ef67d7242ed3784e",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/source/scope.html"
+    },
+    {
+      "path": "independent/source/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/source/src/fixture-record.mjs"
+    },
+    {
+      "path": "independent/source/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/source/src/ledger.mjs"
+    },
+    {
+      "path": "independent/source/src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/source/src/payment-status.mjs"
+    },
+    {
+      "path": "independent/source/src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/source/src/scope-plan.mjs"
+    },
+    {
+      "path": "independent/source/src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/source/src/scope-review-export.mjs"
+    },
+    {
+      "path": "independent/source/src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/source/src/scope-revision-draft.mjs"
+    },
+    {
+      "path": "independent/source/src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/source/src/scope-workspace-record.mjs"
+    },
+    {
+      "path": "independent/source/src/scope-workspace.mjs",
+      "bytes": 25297,
+      "sha256": "676c4b3d331cfb8efe7a62cccbb7420de583271f3865e3270e2ddfdc8cd47db1",
+      "git_blob": "2f2a97a859812c94c028babe2e0c4cd31f940dd7",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/source/src/scope-workspace.mjs"
+    },
+    {
+      "path": "independent/source/styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "origin": "/home/jacob/scopesignal-independent-ac386303dce2-E2V55V/source/styles.css"
+    },
+    {
+      "path": "maintained-cli/cli.log",
+      "bytes": 7226,
+      "sha256": "78533fa231566b23874867a05326cf0f397b88400bfcf73958dcb128e18e0876",
+      "git_blob": "95704fa1a5f1eeeadc897fe496d140426138490c",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/cli.log"
+    },
+    {
+      "path": "maintained-cli/handoff.json",
+      "bytes": 2282,
+      "sha256": "baacefad761705d86a808668225e97c7a62fc5ababa3a4b25e8830972c8586c2",
+      "git_blob": "7a7b15a20125d4f3dec2147d052b4eadbe4b3d93",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/handoff.json"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/01-removed.json",
+      "bytes": 681,
+      "sha256": "487e8a1381496a64e64869fe1a5630aa15291d4b07aa748cf0c0195d712749c2",
+      "git_blob": "68a1e868efb91493b3bda6bfb36620d456e0e9a5",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/01-removed.json"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/02-restored.json",
+      "bytes": 832,
+      "sha256": "f85bfdf8d52d1a983cc3d99ebdec40fce8c408637412a1c4b87709935daf3a62",
+      "git_blob": "165b993273a485ff6726111c51c9a54088b82ebf",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/02-restored.json"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/03-unfinished-0.json",
+      "bytes": 937,
+      "sha256": "6492a004ed32d9fffa4c11356ab1c300575c0c2a0bfddc30d7c2e5f346cfeb0c",
+      "git_blob": "874e172921433fd905311acc4f1c354d298cd0bd",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/03-unfinished-0.json"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/04-unfinished-2.json",
+      "bytes": 953,
+      "sha256": "38b46cb5331d65e209c7c0d49f3fc23c3b5c14bc998193df4d05aee40a7985b4",
+      "git_blob": "ce8423a99fea5f3aa918b959b9fd61be9ebb010b",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/04-unfinished-2.json"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/05-review.json",
+      "bytes": 808,
+      "sha256": "fcdd34838e6ea27791faeaaf70ce711ae71a93800e404036b817d4344a3e56c9",
+      "git_blob": "da0c4e7cc523af702df20654a909f9ff9de9d177",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/05-review.json"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/06-review-unchanged.json",
+      "bytes": 808,
+      "sha256": "fcdd34838e6ea27791faeaaf70ce711ae71a93800e404036b817d4344a3e56c9",
+      "git_blob": "da0c4e7cc523af702df20654a909f9ff9de9d177",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/06-review-unchanged.json"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/07-approved.json",
+      "bytes": 1069,
+      "sha256": "3322aa33efc32608cf75e49e8da24d7496b2c2f242b691c90a40f44107d9ff7a",
+      "git_blob": "7ff1c71913022c642cec736c541bf90873b262d8",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/07-approved.json"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/08-approved-unchanged.json",
+      "bytes": 1069,
+      "sha256": "3322aa33efc32608cf75e49e8da24d7496b2c2f242b691c90a40f44107d9ff7a",
+      "git_blob": "7ff1c71913022c642cec736c541bf90873b262d8",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/08-approved-unchanged.json"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/09-incoming-preview.json",
+      "bytes": 1016,
+      "sha256": "56437c2a1d234dc936e1a304156bb756e6fd08af3de5a090f6d309b33213f8d6",
+      "git_blob": "08e68cfbfc061e717c8b836c91e63a9fb07ff71e",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/09-incoming-preview.json"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/10-incoming-held.json",
+      "bytes": 993,
+      "sha256": "3dca3de8ec54f6652cebd8e3115c396f17d03a888793eda710b0e6b64069a6ab",
+      "git_blob": "a520e3d6a25cdcfc6fcf4fea96d6136902b972cc",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/10-incoming-held.json"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/11-same-remaining.json",
+      "bytes": 807,
+      "sha256": "75e0728375cc77d946534ad67b8476a24becfaa1b627ecc808cc1116ef13aeb1",
+      "git_blob": "d97146b77caa4ce5b8f1fa348fba9b86f6576c1a",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/11-same-remaining.json"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/chromium.log",
+      "bytes": 3440,
+      "sha256": "c0667c964ca98e244932f9dc487f65fa1c3b0f266df3125e595a6e4d5e5951af",
+      "git_blob": "d8017d53060f41366b9d5bf4eaa03f062d0e1920",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/chromium.log"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/held-workspace.json",
+      "bytes": 993,
+      "sha256": "3dca3de8ec54f6652cebd8e3115c396f17d03a888793eda710b0e6b64069a6ab",
+      "git_blob": "a520e3d6a25cdcfc6fcf4fea96d6136902b972cc",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/held-workspace.json"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/invalid-workspace.json",
+      "bytes": 1,
+      "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96",
+      "git_blob": "81750b96f9d83b395f285233d54ec0c9df9ab93d",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/invalid-workspace.json"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/phone-undo-action.png",
+      "bytes": 43557,
+      "sha256": "8467ff1db9ab58584fb89d77cbc26e08d6601d28566be3fad31a85bc0ce8427b",
+      "git_blob": "0afdf65db8e9e89ef0e61b7920d6db53d68f59fe",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/phone-undo-action.png"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/reproduce.cjs",
+      "bytes": 26603,
+      "sha256": "698d1c9eae4c69a5d5fe7b707e950e8954a2a674ad322ee4fdda582c696405b9",
+      "git_blob": "65615a4333f274846ffdd5d4a0821e979b201d06",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/reproduce.cjs"
+    },
+    {
+      "path": "maintained-cli/receiving/evidence/result.json",
+      "bytes": 81288,
+      "sha256": "e769f15f5d00a0793b5a13f9b21f31d16fa2e9d1faf2bdd51938aac6d25d244c",
+      "git_blob": "24e39147557ee3c70067464cf0211a6d605ce40d",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/evidence/result.json"
+    },
+    {
+      "path": "maintained-cli/receiving/source/scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/source/scope-workspace.css"
+    },
+    {
+      "path": "maintained-cli/receiving/source/scope.html",
+      "bytes": 9200,
+      "sha256": "b663dad1e86d86c827efb547a6f2337a9940c3c9b5b21d6192c8020964a0a94b",
+      "git_blob": "5a7931b321f076b2bed8bcc2ef67d7242ed3784e",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/source/scope.html"
+    },
+    {
+      "path": "maintained-cli/receiving/source/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/source/src/fixture-record.mjs"
+    },
+    {
+      "path": "maintained-cli/receiving/source/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/source/src/ledger.mjs"
+    },
+    {
+      "path": "maintained-cli/receiving/source/src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/source/src/payment-status.mjs"
+    },
+    {
+      "path": "maintained-cli/receiving/source/src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/source/src/scope-plan.mjs"
+    },
+    {
+      "path": "maintained-cli/receiving/source/src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/source/src/scope-review-export.mjs"
+    },
+    {
+      "path": "maintained-cli/receiving/source/src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/source/src/scope-revision-draft.mjs"
+    },
+    {
+      "path": "maintained-cli/receiving/source/src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/source/src/scope-workspace-record.mjs"
+    },
+    {
+      "path": "maintained-cli/receiving/source/src/scope-workspace.mjs",
+      "bytes": 25297,
+      "sha256": "676c4b3d331cfb8efe7a62cccbb7420de583271f3865e3270e2ddfdc8cd47db1",
+      "git_blob": "2f2a97a859812c94c028babe2e0c4cd31f940dd7",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/source/src/scope-workspace.mjs"
+    },
+    {
+      "path": "maintained-cli/receiving/source/styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/receiving/source/styles.css"
+    },
+    {
+      "path": "maintained-cli/source-pins.json",
+      "bytes": 740,
+      "sha256": "2a9efaf2b1d7282667f319aed26047e52859dce2f027444ce717b5d4108bf6ce",
+      "git_blob": "03d2607204d9d0edca12f337d20ddb1b0b657dc8",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/source-pins.json"
+    },
+    {
+      "path": "maintained-cli/source/README.md",
+      "bytes": 22447,
+      "sha256": "6f656450e46ceb9171329774d7b9a802cf93c374c59155620732c2c3a8c96b63",
+      "git_blob": "a6b32731949a596a852a03572d92d3359c023f7c",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/source/README.md"
+    },
+    {
+      "path": "maintained-cli/source/scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/source/scope-workspace.css"
+    },
+    {
+      "path": "maintained-cli/source/scope.html",
+      "bytes": 9200,
+      "sha256": "b663dad1e86d86c827efb547a6f2337a9940c3c9b5b21d6192c8020964a0a94b",
+      "git_blob": "5a7931b321f076b2bed8bcc2ef67d7242ed3784e",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/source/scope.html"
+    },
+    {
+      "path": "maintained-cli/source/scripts/check-scope-checkpoint-undo.cjs",
+      "bytes": 26603,
+      "sha256": "698d1c9eae4c69a5d5fe7b707e950e8954a2a674ad322ee4fdda582c696405b9",
+      "git_blob": "65615a4333f274846ffdd5d4a0821e979b201d06",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/source/scripts/check-scope-checkpoint-undo.cjs"
+    },
+    {
+      "path": "maintained-cli/source/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/source/src/fixture-record.mjs"
+    },
+    {
+      "path": "maintained-cli/source/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/source/src/ledger.mjs"
+    },
+    {
+      "path": "maintained-cli/source/src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/source/src/payment-status.mjs"
+    },
+    {
+      "path": "maintained-cli/source/src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/source/src/scope-plan.mjs"
+    },
+    {
+      "path": "maintained-cli/source/src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/source/src/scope-review-export.mjs"
+    },
+    {
+      "path": "maintained-cli/source/src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/source/src/scope-revision-draft.mjs"
+    },
+    {
+      "path": "maintained-cli/source/src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/source/src/scope-workspace-record.mjs"
+    },
+    {
+      "path": "maintained-cli/source/src/scope-workspace.mjs",
+      "bytes": 25297,
+      "sha256": "676c4b3d331cfb8efe7a62cccbb7420de583271f3865e3270e2ddfdc8cd47db1",
+      "git_blob": "2f2a97a859812c94c028babe2e0c4cd31f940dd7",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/source/src/scope-workspace.mjs"
+    },
+    {
+      "path": "maintained-cli/source/styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "origin": "/home/jacob/scopesignal-undo-cli-ac386303dce2-iPE9te/source/styles.css"
+    },
+    {
+      "path": "playwright-driver-missing/evidence/reproduce.py",
+      "bytes": 8900,
+      "sha256": "c7f047e4cbdbaacdf02451723a6e0dbfbc696aaf4c298e595a9f9c0c93d9c33d",
+      "git_blob": "a0ee8a89f595de0f2210d617c65a29aab2f9b2f3",
+      "origin": "/tmp/scopesignal-remove-recovery-ac386303dce2-d5nahfx9/evidence/reproduce.py"
+    },
+    {
+      "path": "playwright-driver-missing/evidence/result.json",
+      "bytes": 3974,
+      "sha256": "1f3dc8e55ceebc47cf95486b0dd0c36a85545bcbc1042f61a5bd772ccdf63ce4",
+      "git_blob": "5b306d85511aff31c187dffd4fe22f891ffa1f9d",
+      "origin": "/tmp/scopesignal-remove-recovery-ac386303dce2-d5nahfx9/evidence/result.json"
+    },
+    {
+      "path": "playwright-driver-missing/source/scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "origin": "/tmp/scopesignal-remove-recovery-ac386303dce2-d5nahfx9/source/scope-workspace.css"
+    },
+    {
+      "path": "playwright-driver-missing/source/scope.html",
+      "bytes": 8867,
+      "sha256": "74d5d0b7dc212dcd6881e1ca14b2a9fcfdbc632b00e55d1dc9a1bb2521dafb4a",
+      "git_blob": "d1567193c7eb1c78b8e55afbf245151994e913b0",
+      "origin": "/tmp/scopesignal-remove-recovery-ac386303dce2-d5nahfx9/source/scope.html"
+    },
+    {
+      "path": "playwright-driver-missing/source/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "origin": "/tmp/scopesignal-remove-recovery-ac386303dce2-d5nahfx9/source/src/fixture-record.mjs"
+    },
+    {
+      "path": "playwright-driver-missing/source/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "origin": "/tmp/scopesignal-remove-recovery-ac386303dce2-d5nahfx9/source/src/ledger.mjs"
+    },
+    {
+      "path": "playwright-driver-missing/source/src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "origin": "/tmp/scopesignal-remove-recovery-ac386303dce2-d5nahfx9/source/src/payment-status.mjs"
+    },
+    {
+      "path": "playwright-driver-missing/source/src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "origin": "/tmp/scopesignal-remove-recovery-ac386303dce2-d5nahfx9/source/src/scope-plan.mjs"
+    },
+    {
+      "path": "playwright-driver-missing/source/src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "origin": "/tmp/scopesignal-remove-recovery-ac386303dce2-d5nahfx9/source/src/scope-review-export.mjs"
+    },
+    {
+      "path": "playwright-driver-missing/source/src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "origin": "/tmp/scopesignal-remove-recovery-ac386303dce2-d5nahfx9/source/src/scope-revision-draft.mjs"
+    },
+    {
+      "path": "playwright-driver-missing/source/src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "origin": "/tmp/scopesignal-remove-recovery-ac386303dce2-d5nahfx9/source/src/scope-workspace-record.mjs"
+    },
+    {
+      "path": "playwright-driver-missing/source/src/scope-workspace.mjs",
+      "bytes": 23904,
+      "sha256": "a71f7ecfca0c3ddb40177c8114846de1cdfcdf3bebd6f4be8c2faa74ea5584b9",
+      "git_blob": "783def69bbe2130c08889572ed27363d89a33b9d",
+      "origin": "/tmp/scopesignal-remove-recovery-ac386303dce2-d5nahfx9/source/src/scope-workspace.mjs"
+    },
+    {
+      "path": "playwright-driver-missing/source/styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "origin": "/tmp/scopesignal-remove-recovery-ac386303dce2-d5nahfx9/source/styles.css"
+    },
+    {
+      "path": "QUALIFICATION.md",
+      "bytes": 7219,
+      "sha256": "eb3ad771d35f751f8779223e07934cf982b68b82e3e2f514f4c6bb48b9446887",
+      "git_blob": "98c8273b1c8d45279d4744a95e526e8d1e99416d",
+      "origin": null
+    },
+    {
+      "path": "source-delta.patch",
+      "bytes": 5178,
+      "sha256": "0fb24ca4f16c6660d8a8a93c88fa0eb9c67c37dd826fb2e529b2f4b5c86b034d",
+      "git_blob": "cd67f39d01bca0233c662b3d69c0af672267a00e",
+      "origin": null
+    },
+    {
+      "path": "source-pins.json",
+      "bytes": 1051,
+      "sha256": "e9700bed21ab4fdbf262820786cc715fd4dc1703e58c7cc02362c5c1fc6c3992",
+      "git_blob": "2183d6d7d51e6e37a673189df29f891af37377a9",
+      "origin": null
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schema": "scopesignal.independent-current-tree-preservation/1",
+  "reviewer": "research_integration (separate contributor sharing repository connection)",
+  "base": "48f0cdfd20f79ab96893de6d0adb5d23cdcab5a6",
+  "tree": "61814bbff1424306ea2c5974e5494caeed9e95c3",
+  "changed": [
+    {
+      "path": "README.md",
+      "sha": "f1c1fa4bbd621f30d9b70ab746d84355d634884e",
+      "kind": "changed"
+    },
+    {
+      "path": "out/receiving/checkpoint-undo-ac386303dce2/README.md",
+      "sha": "9f9612def02081d422186117cb50040016ebce29",
+      "kind": "added"
+    },
+    {
+      "path": "out/receiving/checkpoint-undo-ac386303dce2/current-author-evidence.tar.gz",
+      "sha": "23a82eb0ec06d7ecb2f04be7d8c3632e6ea1c8eb",
+      "kind": "added"
+    },
+    {
+      "path": "out/receiving/checkpoint-undo-ac386303dce2/current-author-manifest.json",
+      "sha": "6df9d02842bacf9fc0c1521fe2fcbce213d786e0",
+      "kind": "added"
+    },
+    {
+      "path": "out/receiving/checkpoint-undo-ac386303dce2/current-author-receiving.json",
+      "sha": "3cd26454dc0ad81b36e1e7dc93d1667a1283a376",
+      "kind": "added"
+    },
+    {
+      "path": "out/receiving/checkpoint-undo-ac386303dce2/current-independent-boundary.json",
+      "sha": "9b5bf5f8dbe531254e816dbcc4422cf7de1217d4",
+      "kind": "added"
+    },
+    {
+      "path": "out/receiving/checkpoint-undo-ac386303dce2/current-independent-manifest.json",
+      "sha": "6ace317ab8dab76d0de59c05e411557891c5f6f1",
+      "kind": "added"
+    },
+    {
+      "path": "out/receiving/checkpoint-undo-ac386303dce2/current-independent-negative.json.gz",
+      "sha": "47f30812b0b0e830918b99be4a55a2102682036b",
+      "kind": "added"
+    },
+    {
+      "path": "out/receiving/checkpoint-undo-ac386303dce2/independent-qualification.md",
+      "sha": "9a0a30063ec4f81e035fd1f841b357575c665203",
+      "kind": "added"
+    },
+    {
+      "path": "out/receiving/checkpoint-undo-ac386303dce2/original-evidence.tar.gz",
+      "sha": "cfe8d391608ed650d72f28e16616d911e2792059",
+      "kind": "added"
+    },
+    {
+      "path": "out/receiving/checkpoint-undo-ac386303dce2/original-manifest.json",
+      "sha": "3f3ff3d86378e07c9b32040e609a9aa5de88b49e",
+      "kind": "added"
+    },
+    {
+      "path": "scope.html",
+      "sha": "67879a2a202d147cd556233b7ec12450d24eeeeb",
+      "kind": "changed"
+    },
+    {
+      "path": "scripts/check-scope-checkpoint-undo.cjs",
+      "sha": "65615a4333f274846ffdd5d4a0821e979b201d06",
+      "kind": "added"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "sha": "33628aebe7279fe7f1a97a796b65e53ec1a8ac4a",
+      "kind": "changed"
+    }
+  ],
+  "deleted": [],
+  "preserved": 567,
+  "sourcePins": {
+    "controller": "bb8ade4a133b1499c29441178fcc6cf6ed858c4fa731e1c4d7cfa320551c42cb",
+    "html": "eb083506992aea01ade9fa529017e308c627d7bc5dbe57ab7bf5d8ef871f81b7",
+    "checker": "698d1c9eae4c69a5d5fe7b707e950e8954a2a674ad322ee4fdda582c696405b9"
+  },
+  "disposition": "PASS for frozen current-main source/evidence preservation; current independent browser receiving remains held. Original 3/3, current ThinkPad 1/3 plus I/O errors and Windows zero-case startup result are distinct.",
+  "negativeCustody": {
+    "thinkpad": "47f30812b0b0e830918b99be4a55a2102682036b",
+    "windows": "597d33dded981ce1beb7bce74121855aa45cd936",
+    "windowsManifest": "d0d9684c3e442233e94245cb13fb73b7bb605822",
+    "windowsReceipt": "f561321836bb8668e714f12ba5d1c8e46515e794"
+  }
+}

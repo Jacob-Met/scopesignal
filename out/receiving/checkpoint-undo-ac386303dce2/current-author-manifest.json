@@ -1,0 +1,461 @@
+{
+  "schema": "scopesignal.current-author-custody/1",
+  "base": "fb6d8771db190fc6499db0c63644ef8a016fe7b7",
+  "files": [
+    {
+      "path": "base-README.md",
+      "bytes": 21387,
+      "sha256": "1a5d3a0c1b075340d99e9dfc1470dee4f1ae76c6638378fa73f940117293165a",
+      "git_blob": "0b87681e7e4966d455c0ec4f2d965ddbefd7874f",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/base-README.md"
+    },
+    {
+      "path": "composition.json",
+      "bytes": 2368,
+      "sha256": "eac9a5a4c560dcc19aadb01d949457c6a0d97063d0ce3b680e6f81db916d713b",
+      "git_blob": "dfd211b7b003df7464d9a5e764b500dbe7d9e50c",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/composition.json"
+    },
+    {
+      "path": "evidence/README.md.merge",
+      "bytes": 23752,
+      "sha256": "90b7d1834646de6395130c34caf325d2b2aeebb569ac9660999d36373821736b",
+      "git_blob": "f1c1fa4bbd621f30d9b70ab746d84355d634884e",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/evidence/README.md.merge"
+    },
+    {
+      "path": "evidence/README.md.merge.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/evidence/README.md.merge.stderr"
+    },
+    {
+      "path": "evidence/current-main-to-composed.patch",
+      "bytes": 8020,
+      "sha256": "d5df970ae4658f932cd2d6fa33ba03ab33c6abf55a5e26fd83bb755e16389847",
+      "git_blob": "f5476d05857355f1d5298d45ab96bfb38a837c87",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/evidence/current-main-to-composed.patch"
+    },
+    {
+      "path": "evidence/scope.html.merge",
+      "bytes": 11637,
+      "sha256": "eb083506992aea01ade9fa529017e308c627d7bc5dbe57ab7bf5d8ef871f81b7",
+      "git_blob": "67879a2a202d147cd556233b7ec12450d24eeeeb",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/evidence/scope.html.merge"
+    },
+    {
+      "path": "evidence/scope.html.merge.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/evidence/scope.html.merge.stderr"
+    },
+    {
+      "path": "evidence/src_scope-workspace.mjs.merge",
+      "bytes": 25734,
+      "sha256": "b47ea2acf811a4c53a8528cb2d7b381ca55458c6b6230c279dc67fd420b0acc1",
+      "git_blob": "67674f60e1a4747957d79a069ffd220b81a1d7fa",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/evidence/src_scope-workspace.mjs.merge"
+    },
+    {
+      "path": "evidence/src_scope-workspace.mjs.merge.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/evidence/src_scope-workspace.mjs.merge.stderr"
+    },
+    {
+      "path": "incoming/README.md",
+      "bytes": 22692,
+      "sha256": "50a05556af219d0dfe766a7be05277df02b6f80d7a573c15dd3e8892b6042e02",
+      "git_blob": "9e6878a7b8848ba7d0b875a8b374ffba4673cda1",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/incoming/README.md"
+    },
+    {
+      "path": "incoming/scope-history.css",
+      "bytes": 2801,
+      "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69",
+      "git_blob": "993ab82f32c1546d688d949b72f8312f82c432ec",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/incoming/scope-history.css"
+    },
+    {
+      "path": "incoming/scope.html",
+      "bytes": 11304,
+      "sha256": "c61b3a2a4412fde0f6851ad741834365d580efe149b9dab1ed782b97235d128b",
+      "git_blob": "8df60d976720a8c6215a8996e4b740870e967a7c",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/incoming/scope.html"
+    },
+    {
+      "path": "incoming/src/scope-history-view.mjs",
+      "bytes": 5728,
+      "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+      "git_blob": "93abdcd8abbbbfbee99cdb5207c10ea346d3177e",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/incoming/src/scope-history-view.mjs"
+    },
+    {
+      "path": "incoming/src/scope-history.mjs",
+      "bytes": 4297,
+      "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+      "git_blob": "f34a8ca89a897e03a1a1ca1abf7d243f1a42e4b6",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/incoming/src/scope-history.mjs"
+    },
+    {
+      "path": "incoming/src/scope-workspace.mjs",
+      "bytes": 24137,
+      "sha256": "d68ede63929fba3a5d77e2db20229261ac553e8edfa16f7e7d05428265a70fac",
+      "git_blob": "2552977c7e01c32bc5621ddf192a9b14a3387eb3",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/incoming/src/scope-workspace.mjs"
+    },
+    {
+      "path": "native-composition-receipt.json",
+      "bytes": 3131,
+      "sha256": "298afbbf8b78f5a4eadc39371760b175c4641bbe11709b5f38affbb15c2aefd7",
+      "git_blob": "de1a4fc709c59757ce0b4e8472f8d6c898e9181f",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/native-composition-receipt.json"
+    },
+    {
+      "path": "native-composition.log",
+      "bytes": 7219,
+      "sha256": "6f233fdb481d263fcf3d93da893918a1ea33cc63a79e042f876152c0995aec9b",
+      "git_blob": "2a816fabc43cbc6a6674f2c0d26328efb4cfe657",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/native-composition.log"
+    },
+    {
+      "path": "receiving/evidence/01-removed.json",
+      "bytes": 681,
+      "sha256": "487e8a1381496a64e64869fe1a5630aa15291d4b07aa748cf0c0195d712749c2",
+      "git_blob": "68a1e868efb91493b3bda6bfb36620d456e0e9a5",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/01-removed.json"
+    },
+    {
+      "path": "receiving/evidence/02-restored.json",
+      "bytes": 832,
+      "sha256": "f85bfdf8d52d1a983cc3d99ebdec40fce8c408637412a1c4b87709935daf3a62",
+      "git_blob": "165b993273a485ff6726111c51c9a54088b82ebf",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/02-restored.json"
+    },
+    {
+      "path": "receiving/evidence/03-unfinished-0.json",
+      "bytes": 937,
+      "sha256": "6492a004ed32d9fffa4c11356ab1c300575c0c2a0bfddc30d7c2e5f346cfeb0c",
+      "git_blob": "874e172921433fd905311acc4f1c354d298cd0bd",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/03-unfinished-0.json"
+    },
+    {
+      "path": "receiving/evidence/04-unfinished-2.json",
+      "bytes": 953,
+      "sha256": "38b46cb5331d65e209c7c0d49f3fc23c3b5c14bc998193df4d05aee40a7985b4",
+      "git_blob": "ce8423a99fea5f3aa918b959b9fd61be9ebb010b",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/04-unfinished-2.json"
+    },
+    {
+      "path": "receiving/evidence/05-review.json",
+      "bytes": 808,
+      "sha256": "fcdd34838e6ea27791faeaaf70ce711ae71a93800e404036b817d4344a3e56c9",
+      "git_blob": "da0c4e7cc523af702df20654a909f9ff9de9d177",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/05-review.json"
+    },
+    {
+      "path": "receiving/evidence/06-review-unchanged.json",
+      "bytes": 808,
+      "sha256": "fcdd34838e6ea27791faeaaf70ce711ae71a93800e404036b817d4344a3e56c9",
+      "git_blob": "da0c4e7cc523af702df20654a909f9ff9de9d177",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/06-review-unchanged.json"
+    },
+    {
+      "path": "receiving/evidence/07-approved.json",
+      "bytes": 1069,
+      "sha256": "3322aa33efc32608cf75e49e8da24d7496b2c2f242b691c90a40f44107d9ff7a",
+      "git_blob": "7ff1c71913022c642cec736c541bf90873b262d8",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/07-approved.json"
+    },
+    {
+      "path": "receiving/evidence/08-approved-unchanged.json",
+      "bytes": 1069,
+      "sha256": "3322aa33efc32608cf75e49e8da24d7496b2c2f242b691c90a40f44107d9ff7a",
+      "git_blob": "7ff1c71913022c642cec736c541bf90873b262d8",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/08-approved-unchanged.json"
+    },
+    {
+      "path": "receiving/evidence/09-incoming-preview.json",
+      "bytes": 1016,
+      "sha256": "56437c2a1d234dc936e1a304156bb756e6fd08af3de5a090f6d309b33213f8d6",
+      "git_blob": "08e68cfbfc061e717c8b836c91e63a9fb07ff71e",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/09-incoming-preview.json"
+    },
+    {
+      "path": "receiving/evidence/10-incoming-held.json",
+      "bytes": 993,
+      "sha256": "3dca3de8ec54f6652cebd8e3115c396f17d03a888793eda710b0e6b64069a6ab",
+      "git_blob": "a520e3d6a25cdcfc6fcf4fea96d6136902b972cc",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/10-incoming-held.json"
+    },
+    {
+      "path": "receiving/evidence/11-same-remaining.json",
+      "bytes": 807,
+      "sha256": "75e0728375cc77d946534ad67b8476a24becfaa1b627ecc808cc1116ef13aeb1",
+      "git_blob": "d97146b77caa4ce5b8f1fa348fba9b86f6576c1a",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/11-same-remaining.json"
+    },
+    {
+      "path": "receiving/evidence/chromium.log",
+      "bytes": 3404,
+      "sha256": "47e3609a54ff4207fa78f56bd931d7191c1ffc0a3092da2ac4fb0980bd0feb94",
+      "git_blob": "7df22988b01282222d556b34063b6fb23f4623b5",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/chromium.log"
+    },
+    {
+      "path": "receiving/evidence/held-workspace.json",
+      "bytes": 993,
+      "sha256": "3dca3de8ec54f6652cebd8e3115c396f17d03a888793eda710b0e6b64069a6ab",
+      "git_blob": "a520e3d6a25cdcfc6fcf4fea96d6136902b972cc",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/held-workspace.json"
+    },
+    {
+      "path": "receiving/evidence/invalid-workspace.json",
+      "bytes": 1,
+      "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96",
+      "git_blob": "81750b96f9d83b395f285233d54ec0c9df9ab93d",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/invalid-workspace.json"
+    },
+    {
+      "path": "receiving/evidence/phone-undo-action.png",
+      "bytes": 43557,
+      "sha256": "8467ff1db9ab58584fb89d77cbc26e08d6601d28566be3fad31a85bc0ce8427b",
+      "git_blob": "0afdf65db8e9e89ef0e61b7920d6db53d68f59fe",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/phone-undo-action.png"
+    },
+    {
+      "path": "receiving/evidence/reproduce.cjs",
+      "bytes": 26603,
+      "sha256": "698d1c9eae4c69a5d5fe7b707e950e8954a2a674ad322ee4fdda582c696405b9",
+      "git_blob": "65615a4333f274846ffdd5d4a0821e979b201d06",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/reproduce.cjs"
+    },
+    {
+      "path": "receiving/evidence/result.json",
+      "bytes": 94088,
+      "sha256": "75c533e4ce851da0dde6aa29cc66daf8c8403a02bbeba1b799b0429fdb9f577f",
+      "git_blob": "37dd49d5bf5ed4a7b05a4122ab71724f928fb54b",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/result.json"
+    },
+    {
+      "path": "receiving/source/scope-history.css",
+      "bytes": 2801,
+      "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69",
+      "git_blob": "993ab82f32c1546d688d949b72f8312f82c432ec",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/source/scope-history.css"
+    },
+    {
+      "path": "receiving/source/scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/source/scope-workspace.css"
+    },
+    {
+      "path": "receiving/source/scope.html",
+      "bytes": 11637,
+      "sha256": "eb083506992aea01ade9fa529017e308c627d7bc5dbe57ab7bf5d8ef871f81b7",
+      "git_blob": "67879a2a202d147cd556233b7ec12450d24eeeeb",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/source/scope.html"
+    },
+    {
+      "path": "receiving/source/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/source/src/fixture-record.mjs"
+    },
+    {
+      "path": "receiving/source/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/source/src/ledger.mjs"
+    },
+    {
+      "path": "receiving/source/src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/source/src/payment-status.mjs"
+    },
+    {
+      "path": "receiving/source/src/scope-history-view.mjs",
+      "bytes": 5728,
+      "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+      "git_blob": "93abdcd8abbbbfbee99cdb5207c10ea346d3177e",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/source/src/scope-history-view.mjs"
+    },
+    {
+      "path": "receiving/source/src/scope-history.mjs",
+      "bytes": 4297,
+      "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+      "git_blob": "f34a8ca89a897e03a1a1ca1abf7d243f1a42e4b6",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/source/src/scope-history.mjs"
+    },
+    {
+      "path": "receiving/source/src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/source/src/scope-plan.mjs"
+    },
+    {
+      "path": "receiving/source/src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/source/src/scope-review-export.mjs"
+    },
+    {
+      "path": "receiving/source/src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/source/src/scope-revision-draft.mjs"
+    },
+    {
+      "path": "receiving/source/src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/source/src/scope-workspace-record.mjs"
+    },
+    {
+      "path": "receiving/source/src/scope-workspace.mjs",
+      "bytes": 25530,
+      "sha256": "bb8ade4a133b1499c29441178fcc6cf6ed858c4fa731e1c4d7cfa320551c42cb",
+      "git_blob": "33628aebe7279fe7f1a97a796b65e53ec1a8ac4a",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/source/src/scope-workspace.mjs"
+    },
+    {
+      "path": "receiving/source/styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/source/styles.css"
+    },
+    {
+      "path": "resolved-composition.json",
+      "bytes": 1371,
+      "sha256": "2d3ccf950dd66b1fc0822f98b60c8af42a0262a6c68c95c2525d9bcecddf7bff",
+      "git_blob": "0199cae28cbb6feba364a437d95c95489aa460ad",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/resolved-composition.json"
+    },
+    {
+      "path": "source/README.md",
+      "bytes": 23752,
+      "sha256": "90b7d1834646de6395130c34caf325d2b2aeebb569ac9660999d36373821736b",
+      "git_blob": "f1c1fa4bbd621f30d9b70ab746d84355d634884e",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/README.md"
+    },
+    {
+      "path": "source/scope-history.css",
+      "bytes": 2801,
+      "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69",
+      "git_blob": "993ab82f32c1546d688d949b72f8312f82c432ec",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/scope-history.css"
+    },
+    {
+      "path": "source/scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "git_blob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/scope-workspace.css"
+    },
+    {
+      "path": "source/scope.html",
+      "bytes": 11637,
+      "sha256": "eb083506992aea01ade9fa529017e308c627d7bc5dbe57ab7bf5d8ef871f81b7",
+      "git_blob": "67879a2a202d147cd556233b7ec12450d24eeeeb",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/scope.html"
+    },
+    {
+      "path": "source/scripts/check-scope-checkpoint-undo.cjs",
+      "bytes": 26603,
+      "sha256": "698d1c9eae4c69a5d5fe7b707e950e8954a2a674ad322ee4fdda582c696405b9",
+      "git_blob": "65615a4333f274846ffdd5d4a0821e979b201d06",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/scripts/check-scope-checkpoint-undo.cjs"
+    },
+    {
+      "path": "source/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/src/fixture-record.mjs"
+    },
+    {
+      "path": "source/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/src/ledger.mjs"
+    },
+    {
+      "path": "source/src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/src/payment-status.mjs"
+    },
+    {
+      "path": "source/src/scope-history-view.mjs",
+      "bytes": 5728,
+      "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+      "git_blob": "93abdcd8abbbbfbee99cdb5207c10ea346d3177e",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/src/scope-history-view.mjs"
+    },
+    {
+      "path": "source/src/scope-history.mjs",
+      "bytes": 4297,
+      "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+      "git_blob": "f34a8ca89a897e03a1a1ca1abf7d243f1a42e4b6",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/src/scope-history.mjs"
+    },
+    {
+      "path": "source/src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/src/scope-plan.mjs"
+    },
+    {
+      "path": "source/src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "git_blob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/src/scope-review-export.mjs"
+    },
+    {
+      "path": "source/src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/src/scope-revision-draft.mjs"
+    },
+    {
+      "path": "source/src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/src/scope-workspace-record.mjs"
+    },
+    {
+      "path": "source/src/scope-workspace.mjs",
+      "bytes": 25530,
+      "sha256": "bb8ade4a133b1499c29441178fcc6cf6ed858c4fa731e1c4d7cfa320551c42cb",
+      "git_blob": "33628aebe7279fe7f1a97a796b65e53ec1a8ac4a",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/src/scope-workspace.mjs"
+    },
+    {
+      "path": "source/styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "origin": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/source/styles.css"
+    }
+  ]
+}

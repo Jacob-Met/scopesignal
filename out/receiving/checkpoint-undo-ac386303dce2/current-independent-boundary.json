@@ -1,0 +1,27 @@
+{
+  "schema": "scopesignal.current-main-independent-receiving-boundary.v1",
+  "base": "fb6d8771db190fc6499db0c63644ef8a016fe7b7",
+  "tree": "48f0cdfd20f79ab96893de6d0adb5d23cdcab5a6",
+  "controller_sha256": "bb8ade4a133b1499c29441178fcc6cf6ed858c4fa731e1c4d7cfa320551c42cb",
+  "html_sha256": "eb083506992aea01ade9fa529017e308c627d7bc5dbe57ab7bf5d8ef871f81b7",
+  "probe_sha256": "067bc57f467b1dddd8be324fb55e0f33615d8ba6bf1cda0220e9b3e1a98eeaf9",
+  "source_disposition": "The exact same accepted Undo delta is composed onto current main; all six incoming files and all twelve unscoped application inputs match authoritative Git blobs.",
+  "execution": {
+    "completed": true,
+    "result": "1 passed, 2 native-download timeouts",
+    "source_unchanged": true,
+    "page_errors": 0,
+    "browser_exit": 0,
+    "owned_profile_removed": true,
+    "first_five_downloads_complete": true
+  },
+  "environment_observation": {
+    "at": "2026-10-08T19:09:42.339Z",
+    "available_bytes": "906678272",
+    "free_bytes": "6022070272",
+    "chromium": "Download DB update errors coincide with the later failing waits; temporary disk-cache index writes also fail.",
+    "concurrent_author_observation": "Runtime contributor reports ENOSPC on a small native evidence write after its completed13-case composed-source run."
+  },
+  "disposition": "Final independent current-source download receiving is held pending usable native I/O. These timeouts are preserved, not reported as passing and not attributed to a production defect without further evidence. Original3/3 source qualification and all original capsules remain unchanged.",
+  "ownership": "Only the receiver's own new capsules were written. Author source remained read-only; no cleanup, runtime/service, capacity or floor action."
+}

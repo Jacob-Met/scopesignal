@@ -1,0 +1,150 @@
+{
+  "schema": "scopesignal.undo.current-git-custody/1",
+  "base": "fb6d8771db190fc6499db0c63644ef8a016fe7b7",
+  "objects": {
+    "archive": {
+      "bytes": 180279,
+      "sha256": "27144a97676da841c958402fd9999d50eae72c300dcbec85db63c4c104651277",
+      "git_blob": "23a82eb0ec06d7ecb2f04be7d8c3632e6ea1c8eb"
+    },
+    "manifest": {
+      "bytes": 22222,
+      "sha256": "2ebb26aba3fa665b4095b61e127b81337facc37c7e8b9045cf62523331fa7c13",
+      "git_blob": "6df9d02842bacf9fc0c1521fe2fcbce213d786e0"
+    }
+  },
+  "regularMembers": 66,
+  "source_pins": {
+    "root": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl",
+    "base": "fb6d8771db190fc6499db0c63644ef8a016fe7b7",
+    "tree": "48f0cdfd20f79ab96893de6d0adb5d23cdcab5a6",
+    "resolution": "Only adjacent independent top-level declarations conflicted; retain current scopeHistory mount followed by checkpointRemoval state. All other merge-file output unchanged.",
+    "sourcePins": [
+      {
+        "path": "src/scope-workspace.mjs",
+        "bytes": 25530,
+        "sha256": "bb8ade4a133b1499c29441178fcc6cf6ed858c4fa731e1c4d7cfa320551c42cb",
+        "git_blob": "33628aebe7279fe7f1a97a796b65e53ec1a8ac4a"
+      },
+      {
+        "path": "scope.html",
+        "bytes": 11637,
+        "sha256": "eb083506992aea01ade9fa529017e308c627d7bc5dbe57ab7bf5d8ef871f81b7",
+        "git_blob": "67879a2a202d147cd556233b7ec12450d24eeeeb"
+      },
+      {
+        "path": "README.md",
+        "bytes": 23752,
+        "sha256": "90b7d1834646de6395130c34caf325d2b2aeebb569ac9660999d36373821736b",
+        "git_blob": "f1c1fa4bbd621f30d9b70ab746d84355d634884e"
+      },
+      {
+        "path": "scripts/check-scope-checkpoint-undo.cjs",
+        "bytes": 26603,
+        "sha256": "698d1c9eae4c69a5d5fe7b707e950e8954a2a674ad322ee4fdda582c696405b9",
+        "git_blob": "65615a4333f274846ffdd5d4a0821e979b201d06"
+      }
+    ],
+    "deltaSha256": "d5df970ae4658f932cd2d6fa33ba03ab33c6abf55a5e26fd83bb755e16389847",
+    "syntaxExit": 0
+  },
+  "author_receiving": {
+    "root": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl",
+    "started": "2026-10-08T19:03:35.111Z",
+    "finished": "2026-10-08T19:04:40.293Z",
+    "code": 0,
+    "signal": null,
+    "resultPath": "/home/jacob/scopesignal-undo-composed-ac386303dce2-RQv4Gl/receiving/evidence/result.json",
+    "resultSha256": "75c533e4ce851da0dde6aa29cc66daf8c8403a02bbeba1b799b0429fdb9f577f",
+    "result": "PASS",
+    "cases": [
+      {
+        "name": "Initial unavailable action and native last-row bound",
+        "result": "PASS"
+      },
+      {
+        "name": "Keyboard undo preserves complete raw draft, focus and native download",
+        "result": "PASS"
+      },
+      {
+        "name": "First and final unfinished rows restore without validation or normalization",
+        "result": "PASS"
+      },
+      {
+        "name": "Later native field edits retire recovery without replacing newer work",
+        "result": "PASS"
+      },
+      {
+        "name": "Add, duplicate and reorder retire recovery",
+        "result": "PASS"
+      },
+      {
+        "name": "A silent field change cannot be overwritten by stale recovery",
+        "result": "PASS"
+      },
+      {
+        "name": "Repeated removals restore only the latest row once",
+        "result": "PASS"
+      },
+      {
+        "name": "Restoring the twelfth row reinstates native maximum controls",
+        "result": "PASS"
+      },
+      {
+        "name": "Invalid review preserves undo; actual review, edit and approval retire it",
+        "result": "PASS"
+      },
+      {
+        "name": "Undo retires a prepared different-file replacement preview",
+        "result": "PASS"
+      },
+      {
+        "name": "Completed native file read released after Undo cannot revive a preview",
+        "result": "PASS"
+      },
+      {
+        "name": "Invalid and canceled native files preserve undo; identical replacement consumes it",
+        "result": "PASS"
+      },
+      {
+        "name": "Narrow viewport exposes the action and keyboard restores the intended row",
+        "result": "PASS"
+      }
+    ],
+    "browserClosed": true,
+    "profileRemoved": true,
+    "pageErrors": [],
+    "sourceUnchanged": true,
+    "sourcePins": [
+      {
+        "path": "src/scope-workspace.mjs",
+        "bytes": 25530,
+        "sha256": "bb8ade4a133b1499c29441178fcc6cf6ed858c4fa731e1c4d7cfa320551c42cb",
+        "git_blob": "33628aebe7279fe7f1a97a796b65e53ec1a8ac4a",
+        "unchanged": true
+      },
+      {
+        "path": "scope.html",
+        "bytes": 11637,
+        "sha256": "eb083506992aea01ade9fa529017e308c627d7bc5dbe57ab7bf5d8ef871f81b7",
+        "git_blob": "67879a2a202d147cd556233b7ec12450d24eeeeb",
+        "unchanged": true
+      },
+      {
+        "path": "README.md",
+        "bytes": 23752,
+        "sha256": "90b7d1834646de6395130c34caf325d2b2aeebb569ac9660999d36373821736b",
+        "git_blob": "f1c1fa4bbd621f30d9b70ab746d84355d634884e",
+        "unchanged": true
+      },
+      {
+        "path": "scripts/check-scope-checkpoint-undo.cjs",
+        "bytes": 26603,
+        "sha256": "698d1c9eae4c69a5d5fe7b707e950e8954a2a674ad322ee4fdda582c696405b9",
+        "git_blob": "65615a4333f274846ffdd5d4a0821e979b201d06",
+        "unchanged": true
+      }
+    ],
+    "logSha256": "6f233fdb481d263fcf3d93da893918a1ea33cc63a79e042f876152c0995aec9b"
+  }
+}

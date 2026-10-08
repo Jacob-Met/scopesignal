@@ -58,10 +58,13 @@
       </section>
       <section class="panel" aria-labelledby="draft-checkpoints-title">
         <div class="panel-heading"><h2 id="draft-checkpoints-title">Define the checkpoints</h2><span>1–12 milestones</span></div>
-        <p class="scope-help">Give each milestone a clear deliverable, an amount, and evidence a person can review. Add, remove, revise, duplicate, and move checkpoints up or down before approval. Each checkpoint's fields move together. Duplicate checkpoint inserts an editable copy immediately after the original, preserving all three field values.</p>
+        <p class="scope-help">Give each milestone a clear deliverable, an amount, and evidence a person can review. Add, remove, revise, duplicate, and move checkpoints up or down before approval. Each checkpoint's fields move together. Duplicate checkpoint inserts an editable copy immediately after the original, preserving all three field values. Undo last checkpoint removal restores its original fields until you make another draft change, enter review, or replace the workspace.</p>
         <p id="scope-order-status" class="scope-help" role="status" aria-live="polite" aria-atomic="true"></p>
         <div id="scope-draft-list"></div>
-        <button id="scope-add" class="button button-outline" type="button">+ Add checkpoint</button>
+        <div class="scope-draft-actions">
+          <button id="scope-add" class="button button-outline" type="button">+ Add checkpoint</button>
+          <button id="scope-undo-remove" class="button button-outline" type="button" hidden disabled>Undo last checkpoint removal</button>
+        </div>
       </section>
       <div class="scope-draft-footer">
         <p id="scope-budget" class="scope-budget" role="status"></p>
