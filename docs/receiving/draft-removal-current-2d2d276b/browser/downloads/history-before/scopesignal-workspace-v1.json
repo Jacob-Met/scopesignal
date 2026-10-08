@@ -1,0 +1,45 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "review",
+  "draft": {
+    "label": "Northstar onboarding refresh",
+    "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+    "cap": "1200.00",
+    "checkpoints": [
+      {
+        "title": "First-run checklist",
+        "amount": "400.00",
+        "evidence": "A screen recording shows the checklist completion path and reset behavior."
+      },
+      {
+        "title": "Accessible billing setup",
+        "amount": "400.00",
+        "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+      },
+      {
+        "title": "Responsive handoff",
+        "amount": "400.00",
+        "evidence": "Desktop and mobile handoff files plus implementation notes."
+      }
+    ]
+  },
+  "events": [
+    {
+      "seq": 1,
+      "type": "checkpoint.approved",
+      "at": "T+001",
+      "checkpointId": "scope-1",
+      "approver": "human-reviewer",
+      "acceptedEvidence": "Exact accepted evidence <history> 🧭"
+    }
+  ],
+  "evidenceDrafts": [
+    {
+      "checkpointId": "scope-2",
+      "text": "Unapproved pending edit stays current"
+    }
+  ]
+}
