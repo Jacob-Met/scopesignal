@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-08T19:31:37.812991+00:00",
+  "qualified_source_tree": "4b9b2580dc31811bdac98109a2763fc34c91a6cd",
+  "source_leaves": 576,
+  "all_source_bytes_modes_git_exact": true,
+  "historical_sources": [
+    {
+      "source": "baseline",
+      "manifest_sha256": "47f7582be1eecf9d3d6741119d6eb1c3165e485b8e64ed510498d248d9b6741f",
+      "leaves": 521,
+      "all_exact": true
+    },
+    {
+      "source": "candidate",
+      "manifest_sha256": "8a567d39f9f59b0d6a1614f36a17da9aa8177ff0e2e2afbdf2554e763565f7d8",
+      "leaves": 527,
+      "all_exact": true
+    },
+    {
+      "source": "candidate-r3",
+      "manifest_sha256": "5b05b3931937b41f2170609f13a351d116ccb868559cddae3c6a1e784b6ee9c4",
+      "leaves": 527,
+      "all_exact": true
+    }
+  ],
+  "incoming568_unowned_exact": true,
+  "six_new_csv_files_equal_3146": true,
+  "root203": {
+    "manifest": "/tmp/scopesignal-root-node24-cf5799f6d38b-v1/composition4b9b-manifest.json",
+    "sha256": "191f1baf230238a5eecdbb91f40730f68530803e337b5799a49191bdf42826b2",
+    "files": 6
+  },
+  "history_peer": {
+    "manifest": "/home/jacob/scopesignal-csv-history-peer-cf5799f6d38b-m2uxc8g2/review-manifest.json",
+    "sha256": "008fa3605cfdf13226c1d3a53133d122192de17fe11e74b0d05df7bf7311dc24",
+    "files": 9
+  },
+  "archive_aliases": 138,
+  "all_aliases_restored_exact": true,
+  "product_runs_by_packager": 0
+}

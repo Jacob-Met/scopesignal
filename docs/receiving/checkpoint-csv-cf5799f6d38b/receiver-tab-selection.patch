@@ -1,0 +1,124 @@
+diff --git a/scripts/check-scope-checkpoint-csv.mjs b/scripts/check-scope-checkpoint-csv.mjs
+index e713569..a3fee61 100644
+--- a/scripts/check-scope-checkpoint-csv.mjs
++++ b/scripts/check-scope-checkpoint-csv.mjs
+@@ -84,11 +84,15 @@ async function check(name, run) {
+   console.log('START ' + name); const started = performance.now();
+   await run(); checks.push({name,result:'pass',milliseconds:Math.round(performance.now()-started)}); console.log('PASS ' + name);
+ }
++async function click(target, selector) {
++  await target.bringToFront();
++  await target.click(selector);
++}
+ async function choose(target, selector, file) {
+-  const waiting = target.waitForFileChooser(); await target.click(selector); const chooser = await waiting; await chooser.accept([file]);
++  const waiting = target.waitForFileChooser(); await click(target, selector); const chooser = await waiting; await chooser.accept([file]);
+ }
+ async function fill(target, selector, value) {
+-  await target.click(selector);
++  await click(target, selector);
+   await target.keyboard.down('Control'); await target.keyboard.press('KeyA'); await target.keyboard.up('Control');
+   await target.keyboard.press('Backspace'); await target.keyboard.type(value);
+ }
+@@ -102,7 +106,7 @@ async function values(target) {
+   }));
+ }
+ async function download(target, selector, name) {
+-  const count = downloads.length; await target.click(selector);
++  const count = downloads.length; await click(target, selector);
+   await until(() => downloads.length > count, 'No actual browser download event');
+   const item = downloads[count];
+   await until(() => item.state === 'completed' || item.state === 'canceled', 'Browser download did not finish');
+@@ -115,7 +119,7 @@ async function download(target, selector, name) {
+ async function previewCsv(file, metadata = details) {
+   await choose(page, '#csv-file', file);
+   await fill(page, '#csv-label', metadata.label); await fill(page, '#csv-brief', metadata.brief); await fill(page, '#csv-cap', metadata.cap);
+-  await page.click('#csv-review');
++  await click(page, '#csv-review');
+   await page.waitForFunction(() => !document.querySelector('#csv-preview').hidden);
+ }
+ async function nativeOpen(file) {
+@@ -123,7 +127,7 @@ async function nativeOpen(file) {
+   await choose(author, '#scope-open', file);
+   await author.waitForFunction(() => !document.querySelector('#scope-open-preview').hidden);
+   assert.deepEqual(await values(author), before);
+-  await author.click('#scope-open-apply');
++  await click(author, '#scope-open-apply');
+ }
+ async function holdNextRead(fileName) {
+   await page.evaluate(name => {
+@@ -166,7 +170,7 @@ try {
+   await author.goto(origin+'/scope.html',{waitUntil:'networkidle0'});
+   const initialAuthor=await values(author);
+   await check('review requires an explicit CSV choice and starts no download',async()=>{
+-    await page.click('#csv-review');
++    await click(page, '#csv-review');
+     await page.waitForFunction(()=>!document.querySelector('#csv-errors').hidden);
+     assert.match(await page.$eval('#csv-errors',n=>n.textContent),/Choose a checkpoint CSV/);
+     assert.equal(await page.$eval('#csv-download',n=>n.disabled),true);
+@@ -187,12 +191,12 @@ try {
+     assert.equal(result.bytes.toString('utf8'),encodeScopeWorkspace({draft:draftA}));
+     assert.deepEqual(decodeScopeWorkspace(result.bytes.toString('utf8')).draft,draftA);
+     await nativeOpen(result.path);assert.deepEqual(await values(author),draftA);
+-    await author.click('#scope-form button[type="submit"]');
++    await click(author, '#scope-form button[type="submit"]');
+     await author.waitForFunction(()=>!document.querySelector('#scope-review').hidden);
+     assert.equal(await author.$eval('#scope-event-count',n=>n.textContent),'0 events');
+     assert.equal(await author.$eval('#scope-approved',n=>n.textContent),'0 / 2');
+     assert.deepEqual(await injectionState(author),{node:false,flag:false});
+-    await author.click('#scope-edit');
++    await click(author, '#scope-edit');
+     await page.screenshot({path:resolve(out,'desktop-reviewed-literal-draft.png'),fullPage:true});
+   });
+   await check('unfinished formula amounts stay literal and the ordinary workspace still refuses scope review',async()=>{
+@@ -202,7 +206,7 @@ try {
+     const record=JSON.parse(result.bytes.toString('utf8'));
+     assert.equal(record.draft.checkpoints[0].amount,'=SUM(A1:A2)');
+     assert.equal(record.stage,'draft');assert.deepEqual(record.events,[]);assert.deepEqual(record.evidenceDrafts,[]);
+-    await nativeOpen(result.path);await author.click('#scope-form button[type="submit"]');
++    await nativeOpen(result.path);await click(author, '#scope-form button[type="submit"]');
+     assert.equal(await author.$eval('#scope-form',n=>n.hidden),false);
+     assert.equal(await author.$eval('#scope-review',n=>n.hidden),true);
+     assert.match(await author.$eval('#scope-errors',n=>n.textContent),/positive USD amount/);
+@@ -210,9 +214,9 @@ try {
+   });
+   await check('metadata changes and cancel retire genuine in-flight file reads',async()=>{
+     for(const mode of ['metadata','cancel']){
+-      await choose(page,'#csv-file',fileA);await holdNextRead('checkpoint-A.csv');await page.click('#csv-review');
++      await choose(page,'#csv-file',fileA);await holdNextRead('checkpoint-A.csv');await click(page, '#csv-review');
+       await page.waitForFunction(()=>globalThis.csvReadHeld===true);
+-      if(mode==='metadata')await fill(page,'#csv-cap','200.00');else await page.click('#csv-cancel');
++      if(mode==='metadata')await fill(page,'#csv-cap','200.00');else await click(page, '#csv-cancel');
+       await page.evaluate(()=>globalThis.csvReleaseRead());
+       await page.waitForFunction(()=>document.querySelector('#csv-preview').hidden&&document.querySelector('#csv-download').disabled);
+       await sleep(80);
+@@ -220,9 +224,9 @@ try {
+       assert.equal(await page.$eval('#csv-download',n=>n.disabled),true);
+       assert.equal(await page.$eval('#csv-review',n=>n.disabled),false);
+     }
+-    await choose(page,'#csv-file',fileA);await holdNextRead('checkpoint-A.csv');await page.click('#csv-review');
++    await choose(page,'#csv-file',fileA);await holdNextRead('checkpoint-A.csv');await click(page, '#csv-review');
+     await page.waitForFunction(()=>globalThis.csvReadHeld===true);
+-    await choose(page,'#csv-file',fileB);await page.click('#csv-review');
++    await choose(page,'#csv-file',fileB);await click(page, '#csv-review');
+     await page.waitForFunction(()=>!document.querySelector('#csv-preview').hidden);
+     await page.evaluate(()=>globalThis.csvReleaseRead());await sleep(80);
+     assert.equal(await page.$eval('#csv-preview-rows td[data-field="title"]',n=>n.textContent),'Different row');
+@@ -232,7 +236,7 @@ try {
+   await check('malformed, embedded-CR and oversized files refuse without exporting a prefix or changing another workspace',async()=>{
+     const before=await values(author), count=downloads.length;
+     for(const [file,pattern]of [[malformed,/unclosed quoted field/],[carriage,/LF line breaks/],[oversized,/no larger than 1 MiB/]]){
+-      await choose(page,'#csv-file',file);await page.click('#csv-review');
++      await choose(page,'#csv-file',file);await click(page, '#csv-review');
+       await page.waitForFunction(()=>!document.querySelector('#csv-errors').hidden);
+       assert.match(await page.$eval('#csv-errors',n=>n.textContent),pattern);
+       assert.equal(await page.$eval('#csv-preview',n=>n.hidden),true);
+@@ -244,7 +248,7 @@ try {
+   await check('download preparation failure preserves the reviewed bytes for an explicit retry',async()=>{
+     await previewCsv(fileA);
+     await page.evaluate(()=>{globalThis.csvOriginalObjectUrl=URL.createObjectURL;URL.createObjectURL=()=>{throw new Error('receiver preparation failure');};});
+-    const count=downloads.length;await page.click('#csv-download');
++    const count=downloads.length;await click(page, '#csv-download');
+     assert.match(await page.$eval('#csv-status',n=>n.textContent),/could not start/);
+     assert.equal(await page.$eval('#csv-download',n=>n.disabled),false);assert.equal(downloads.length,count);
+     await page.evaluate(()=>{URL.createObjectURL=globalThis.csvOriginalObjectUrl;});

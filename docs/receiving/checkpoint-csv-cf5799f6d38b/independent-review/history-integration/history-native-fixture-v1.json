@@ -1,0 +1,66 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "review",
+  "draft": {
+    "label": "PEER previous reviewed scope",
+    "brief": "Retain this active fictional review while another draft is prepared.",
+    "cap": "30.00",
+    "checkpoints": [
+      {
+        "title": "Prior approved checkpoint",
+        "amount": "10.00",
+        "evidence": "Original planned evidence"
+      },
+      {
+        "title": "Prior unfinished review",
+        "amount": "5.00",
+        "evidence": "Other planned evidence"
+      }
+    ]
+  },
+  "events": [
+    {
+      "seq": 1,
+      "type": "checkpoint.approved",
+      "at": "T+001",
+      "checkpointId": "scope-1",
+      "approver": "human-reviewer",
+      "acceptedEvidence": "Distinct accepted evidence\nwith a second line"
+    },
+    {
+      "seq": 2,
+      "type": "paypal.order.created",
+      "at": "T+002",
+      "checkpointId": "scope-1",
+      "orderId": "SANDBOX-SCOPE-1",
+      "amount": 1000,
+      "currency": "USD",
+      "environment": "sandbox"
+    },
+    {
+      "seq": 3,
+      "type": "paypal.capture.requested",
+      "at": "T+003",
+      "checkpointId": "scope-1",
+      "orderId": "SANDBOX-SCOPE-1",
+      "environment": "sandbox"
+    },
+    {
+      "seq": 4,
+      "type": "paypal.capture.response_lost",
+      "at": "T+004",
+      "checkpointId": "scope-1",
+      "orderId": "SANDBOX-SCOPE-1",
+      "outcome": "unknown"
+    }
+  ],
+  "evidenceDrafts": [
+    {
+      "checkpointId": "scope-2",
+      "text": "  Pending unapproved note\nkept literally  "
+    }
+  ]
+}

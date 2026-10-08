@@ -55,6 +55,7 @@ export function validateScopeDraft(draft) {
   const brief = text(draft?.brief, 'brief', 'Creative brief', 8000);
   const cap = parseDollars(draft?.cap);
   if (cap === null) errors.push({ field: 'cap', message: 'Enter a positive project cap in USD with no more than two decimal places.' });
+  if (typeof draft?.cap === 'string' && draft.cap.length > 64) errors.push({ field: 'cap', message: 'Project cap must be 64 characters or fewer, including spaces and leading zeros.' });
   const rows = Array.isArray(draft?.checkpoints) ? draft.checkpoints : [];
   if (rows.length < 1 || rows.length > MAX_CHECKPOINTS) {
     errors.push({ field: 'checkpoints', message: `Use between 1 and ${MAX_CHECKPOINTS} checkpoints.` });
@@ -65,6 +66,7 @@ export function validateScopeDraft(draft) {
     const evidence = text(cp?.evidence, `${prefix}.evidence`, `Checkpoint ${index + 1} acceptance evidence`, 5000);
     const amount = parseDollars(cp?.amount);
     if (amount === null) errors.push({ field: `${prefix}.amount`, message: `Enter a positive USD amount for checkpoint ${index + 1}, with no more than two decimal places.` });
+    if (typeof cp?.amount === 'string' && cp.amount.length > 64) errors.push({ field: `${prefix}.amount`, message: `Checkpoint ${index + 1} amount must be 64 characters or fewer, including spaces and leading zeros.` });
     // Identifiers belong to this draft, never to user-entered titles or receipts.
     return { id: `scope-${index + 1}`, title, amount, evidence };
   });
