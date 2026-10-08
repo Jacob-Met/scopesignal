@@ -1,0 +1,229 @@
+{
+  "schema": "scopesignal.pages-attempt-artifact-repair.v1",
+  "frozenAt": "2026-10-08T16:15:03.368645+00:00",
+  "repository": "Jacob-Met/scopesignal",
+  "branch": "paypal-ai",
+  "expectedParent": "c99a291600fff8f56fb2acc3194feeb9a4822d07",
+  "expectedTree": "fefe8f31f32e624f767f832c63337b2afdc7b4fe",
+  "productionScope": [
+    ".github/workflows/pages.yml"
+  ],
+  "sourceBefore": {
+    "sha256": "ed6e9bb310c54237902f18d928d166c1b572bb3ce9dd842894d22a47fda8a3ae",
+    "blob": "17f31c8aa4e6d508c670a175faa6a5e16b07da8d"
+  },
+  "sourceAfter": {
+    "sha256": "29079efa600bff732c7612251ff52458dc44fd87388d80264dd27a972e910735",
+    "blob": "2fac275ab0183987bccac3ba787a133795a70016"
+  },
+  "workflowQualification": {
+    "yamlParser": "PyYAML 6.0.3",
+    "passed": true,
+    "before": {
+      "sha256": "ed6e9bb310c54237902f18d928d166c1b572bb3ce9dd842894d22a47fda8a3ae",
+      "blob": "17f31c8aa4e6d508c670a175faa6a5e16b07da8d"
+    },
+    "after": {
+      "sha256": "29079efa600bff732c7612251ff52458dc44fd87388d80264dd27a972e910735",
+      "blob": "2fac275ab0183987bccac3ba787a133795a70016"
+    },
+    "expression": "github-pages-${{ github.run_id }}-${{ github.run_attempt }}",
+    "otherWorkflowSemanticsUnchanged": true,
+    "contracts": {
+      "uploadInput": "name",
+      "deployInput": "artifact_name"
+    },
+    "selectorSha256": "3696f6887732928e80b81c93a95e917cf3af3c7a1d17bc7a0ad7bd133a955c10"
+  },
+  "actionQualification": {
+    "schema": "scopesignal.pages-action-contract.v1",
+    "node": "v24.19.0",
+    "nodeExecutable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "actionCommit": "d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e",
+    "selectorSha256": "3696f6887732928e80b81c93a95e917cf3af3c7a1d17bc7a0ad7bd133a955c10",
+    "passed": 6,
+    "cases": [
+      {
+        "name": "observed initial empty list is refused",
+        "result": "pass"
+      },
+      {
+        "name": "observed two same-named retry artifacts are refused",
+        "result": "pass"
+      },
+      {
+        "name": "unchanged single-artifact control selects its actual id",
+        "result": "pass"
+      },
+      {
+        "name": "candidate attempt selects only its own artifact while old artifacts stay present",
+        "result": "pass"
+      },
+      {
+        "name": "new run identity is distinct even at the same attempt",
+        "result": "pass"
+      },
+      {
+        "name": "candidate missing or duplicate names remain refused",
+        "result": "pass"
+      }
+    ],
+    "artifactIds": [
+      11562156085,
+      11560528748
+    ],
+    "candidateNames": [
+      "github-pages-37802625312-1",
+      "github-pages-37802625312-2"
+    ],
+    "notes": [
+      "Executes the complete unchanged pinned action api-client.js with only external dependencies replaced by read-only metadata stubs.",
+      "Original empty/two-artifact failures use the observed shapes; candidate artifact names and ids 101-104 are synthetic contract fixtures.",
+      "No artifact upload, deletion or deployment occurs in this receiver.",
+      "This contract result does not claim hosted deployment."
+    ]
+  },
+  "actionContracts": {
+    "upload": {
+      "repository": "actions/upload-pages-artifact",
+      "commit": "56afc609e74202658d3ffba0e8f6dda462b719fa",
+      "path": "action.yml"
+    },
+    "deploy": {
+      "repository": "actions/deploy-pages",
+      "commit": "d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e",
+      "path": "action.yml"
+    },
+    "selector": {
+      "repository": "actions/deploy-pages",
+      "commit": "d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e",
+      "path": "src/internal/api-client.js"
+    },
+    "uploadArtifact": {
+      "repository": "actions/upload-artifact",
+      "commit": "ea165f8d65b6e75b540449e92b4886f43607fa02"
+    }
+  },
+  "observed": {
+    "failedRun": 37802625312,
+    "source": "549f6d551d1ad92ee97198b1799c7bcb40aa5e01",
+    "initialJobs": [
+      {
+        "id": 113398520319,
+        "name": "test",
+        "started_at": "2026-10-08T15:40:03Z",
+        "completed_at": "2026-10-08T15:40:11Z",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37802625312/job/113398520319"
+      },
+      {
+        "id": 113398601782,
+        "name": "deploy",
+        "started_at": "2026-10-08T15:40:19Z",
+        "completed_at": "2026-10-08T15:40:30Z",
+        "status": "completed",
+        "conclusion": "failure",
+        "html_url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37802625312/job/113398601782"
+      }
+    ],
+    "retriedJobs": [
+      {
+        "id": 113403133935,
+        "name": "test",
+        "started_at": "2026-10-08T15:40:03Z",
+        "completed_at": "2026-10-08T15:40:11Z",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37802625312/job/113403133935"
+      },
+      {
+        "id": 113403137995,
+        "name": "deploy",
+        "started_at": "2026-10-08T15:49:49Z",
+        "completed_at": "2026-10-08T15:50:01Z",
+        "status": "completed",
+        "conclusion": "failure",
+        "html_url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37802625312/job/113403137995"
+      }
+    ],
+    "retryAcknowledgment": {
+      "success": true
+    },
+    "artifacts": [
+      {
+        "id": 11562156085,
+        "name": "github-pages",
+        "size_in_bytes": 11269165,
+        "url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/artifacts/11562156085",
+        "archive_download_url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/artifacts/11562156085/zip",
+        "expired": false,
+        "created_at": "2026-10-08T15:49:57Z",
+        "expires_at": "2026-10-09T15:49:55Z",
+        "updated_at": "2026-10-08T15:49:57Z",
+        "digest": "sha256:81abe5845641477ea877e8681e6d45fdca63644f9c567a1514a1416278840b6d",
+        "workflow_run": {
+          "id": 37802625312,
+          "repository_id": 1408040638,
+          "head_repository_id": 1408040638,
+          "head_branch": "paypal-ai",
+          "head_sha": "549f6d551d1ad92ee97198b1799c7bcb40aa5e01"
+        }
+      },
+      {
+        "id": 11560528748,
+        "name": "github-pages",
+        "size_in_bytes": 11269154,
+        "url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/artifacts/11560528748",
+        "archive_download_url": "https://api.github.com/repos/Jacob-Met/scopesignal/actions/artifacts/11560528748/zip",
+        "expired": false,
+        "created_at": "2026-10-08T15:40:26Z",
+        "expires_at": "2026-10-09T15:40:24Z",
+        "updated_at": "2026-10-08T15:40:26Z",
+        "digest": "sha256:6a1aa691044241dda30483c99f62cf0646927b5864e980f8fbdac04ffb5e8552",
+        "workflow_run": {
+          "id": 37802625312,
+          "repository_id": 1408040638,
+          "head_repository_id": 1408040638,
+          "head_branch": "paypal-ai",
+          "head_sha": "549f6d551d1ad92ee97198b1799c7bcb40aa5e01"
+        }
+      }
+    ],
+    "freshSuccessfulRun": {
+      "run": 37805160191,
+      "source": "c99a291600fff8f56fb2acc3194feeb9a4822d07",
+      "testJob": 113407413243,
+      "deployJob": 113407534380,
+      "artifact": 11563430369,
+      "artifactZipSha256": "89ee0552ed9a1cd188c2da5e647309ff8946c5a75e7bb141c3c7974322d34a45",
+      "workflowUnchanged": true
+    }
+  },
+  "rawLogPins": {
+    "attempt1": {
+      "sha256": "37baf09fb1a1311a94d416199fe465eec842e9631202326320cda49eb93a3d1d",
+      "bytes": 69912
+    },
+    "attempt2": {
+      "sha256": "585a18a6555f04012549c6405922141a41239da4e0a81ecda8957bcdb5a7c9f5",
+      "bytes": 69855
+    },
+    "freshRun": {
+      "sha256": "483382b6c6ee263c73f0c71a66bdb5e1f3b25b075687022d1bb1134b32cdffe4",
+      "bytes": 83449
+    }
+  },
+  "setupDiagnostics": [
+    "Initial packet-builder tool evaluation failed before any native command due to embedded string quoting; corrected without source or receiver changes."
+  ],
+  "status": "Qualified source candidate; hosted repair CI and deployment pending",
+  "limitations": [
+    "The failed initial upload was later observable. A single authorized failed-deploy-job retry then produced a second same-named artifact and failed exact-name selection.",
+    "This repair prevents attempts from selecting prior-attempt artifacts; it does not guarantee that transient empty artifact listings never occur.",
+    "The complete pinned selector ran unchanged with metadata-only dependency stubs. Candidate artifact ids/names are synthetic contract fixtures.",
+    "The original passing test job retained its original timestamps in the second-attempt job listing; it was not re-executed.",
+    "Both original workflow artifacts remain unmodified in GitHub under its existing expiration policy. Their metadata and zip digests are preserved; archive payload bytes were not downloaded.",
+    "A separate unchanged-workflow fresh run for checkpoint-copy merge c99a2916 succeeded. Live delivery is being verified separately."
+  ]
+}
