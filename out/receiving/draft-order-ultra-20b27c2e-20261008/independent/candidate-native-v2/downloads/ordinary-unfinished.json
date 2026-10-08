@@ -1,0 +1,31 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "draft",
+  "draft": {
+    "label": "  Lead fixture · 文  ",
+    "brief": "A local fictional brief.\nNo provider action.",
+    "cap": "1000.00",
+    "checkpoints": [
+      {
+        "title": " Same visible title ",
+        "amount": " 00012.50 ",
+        "evidence": "α first\n  spaces stay  "
+      },
+      {
+        "title": " Same visible title ",
+        "amount": "1e2",
+        "evidence": "<b>literal</b>\n第二行"
+      },
+      {
+        "title": "Final ✨",
+        "amount": ".",
+        "evidence": ""
+      }
+    ]
+  },
+  "events": [],
+  "evidenceDrafts": []
+}

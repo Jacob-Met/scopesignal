@@ -1,0 +1,76 @@
+{
+  "schema": "scopesignal.draft-movement-receiving-drift.v1",
+  "qualifiedSourceCommit": "7cde8b30595fe5fecc97a923e0dad443e951ef47",
+  "qualifiedTree": "e755e7276ad38aff9502e5f57fbe96cbd3898868",
+  "receivingCommit": "e6845560b1e5de54978c71873ef49decba472f94",
+  "receivingTree": "27301a9df1e958c05080579d04975c426f82cd81",
+  "actualParents": [
+    "7cde8b30595fe5fecc97a923e0dad443e951ef47",
+    "377d34a8b07932fe0fb2cfacfc98a212ee4d0f4b"
+  ],
+  "priorLeaves": 318,
+  "currentLeaves": 324,
+  "allPriorLeavesModesTypesPreserved": true,
+  "changedOrMissing": [],
+  "additions": [
+    {
+      "path": "out/receiving/workspace-files-7a9310dad255/public-release/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f4bf706c4f5ce3e5e7bad7ce08bab85265eec57",
+      "size": 3086,
+      "url": "https://api.github.com/repos/Jacob-Met/scopesignal/git/blobs/4f4bf706c4f5ce3e5e7bad7ce08bab85265eec57"
+    },
+    {
+      "path": "out/receiving/workspace-files-7a9310dad255/public-release/independent-binding.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "601af3eee2fb7c7d518e7149a6917f288f4ba2c4",
+      "size": 7733,
+      "url": "https://api.github.com/repos/Jacob-Met/scopesignal/git/blobs/601af3eee2fb7c7d518e7149a6917f288f4ba2c4"
+    },
+    {
+      "path": "out/receiving/workspace-files-7a9310dad255/public-release/public-input.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1163ead38e1322e499eabe469cf8cc884991b27d",
+      "size": 106569,
+      "url": "https://api.github.com/repos/Jacob-Met/scopesignal/git/blobs/1163ead38e1322e499eabe469cf8cc884991b27d"
+    },
+    {
+      "path": "out/receiving/workspace-files-7a9310dad255/public-release/public-release-receiving.tar.gz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c3f309646bc084a3f389d7101fb2ba626b19844",
+      "size": 256651,
+      "url": "https://api.github.com/repos/Jacob-Met/scopesignal/git/blobs/0c3f309646bc084a3f389d7101fb2ba626b19844"
+    },
+    {
+      "path": "out/receiving/workspace-files-7a9310dad255/public-release/publication-manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69388e1ebcf474635740a6b6cd12761b08e1e95d",
+      "size": 12128,
+      "url": "https://api.github.com/repos/Jacob-Met/scopesignal/git/blobs/69388e1ebcf474635740a6b6cd12761b08e1e95d"
+    },
+    {
+      "path": "out/receiving/workspace-files-7a9310dad255/public-release/verify-public-packet.cjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fd5f817612e40fd2528a0b3cfde59188eea1f1e",
+      "size": 7229,
+      "url": "https://api.github.com/repos/Jacob-Met/scopesignal/git/blobs/5fd5f817612e40fd2528a0b3cfde59188eea1f1e"
+    }
+  ],
+  "qualifiedNativeOriginals": 48,
+  "qualification": "The exact same native source and resources remain in the current base. Only six existing owner's public-release evidence files were added. No source composition or repeated browser/Node run is required for this drift.",
+  "independentCurrentReceiptSha256": "b6c77eecd6100c6c0fe0514ac6a272a1a85e2d100dda66bc7b5629656b5a9441",
+  "independentProbeSha256": "82234bba0d7cf084c61dde0c5c4633656c1e110addb0edcd94cfb25955686973",
+  "pending": [
+    "Exact published-head hosted test gate",
+    "Normal expected-head merge",
+    "Actual merge tree and actual first-parent preservation",
+    "Existing Pages release receiving"
+  ]
+}
+

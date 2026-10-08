@@ -1,0 +1,40 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "review",
+  "draft": {
+    "label": "  Lead fixture · 文  ",
+    "brief": "A local fictional brief.\nNo provider action.",
+    "cap": "20.00",
+    "checkpoints": [
+      {
+        "title": "  A proof  ",
+        "amount": "001.25",
+        "evidence": "A before"
+      },
+      {
+        "title": "Same title",
+        "amount": "3.75",
+        "evidence": "C before"
+      },
+      {
+        "title": "Same title",
+        "amount": "2.50",
+        "evidence": "B accepted <em>literal</em>\nsecond line"
+      }
+    ]
+  },
+  "events": [
+    {
+      "seq": 1,
+      "type": "checkpoint.approved",
+      "at": "T+001",
+      "checkpointId": "scope-3",
+      "approver": "human-reviewer",
+      "acceptedEvidence": "B accepted <em>literal</em>\nsecond line"
+    }
+  ],
+  "evidenceDrafts": []
+}

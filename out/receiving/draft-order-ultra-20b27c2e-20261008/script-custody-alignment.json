@@ -1,0 +1,19 @@
+{
+  "productionChanged": false,
+  "changes": [
+    {
+      "path": "probe-before.mjs",
+      "beforeSha256": "aba0fed60eb32fc3f0463c58acc3f2b07024d3f9a53effbbdb2d13de17e86620",
+      "afterSha256": "b34eefc36075d72b68f40af23f435465780d43c7e3f01a49a7b243c6cad321a8",
+      "removedBytes": 1,
+      "note": "The local patch writer added one extra final LF; align the local receiving script with the exact unchanged native-tested bytes."
+    },
+    {
+      "path": "candidate/scripts/check-scope-draft-order.mjs",
+      "beforeSha256": "21931a04b1f246074b41cb187a6ea5026dbb0fa5713b949a3759ee2b0d53c515",
+      "afterSha256": "a7a8bea8becb7e9bc6aaa12bdebae2312a1f4da716692ddcdd796fe32b060e3b",
+      "removedBytes": 1,
+      "note": "The local patch writer added one extra final LF; align the local receiving script with the exact unchanged native-tested bytes."
+    }
+  ]
+}

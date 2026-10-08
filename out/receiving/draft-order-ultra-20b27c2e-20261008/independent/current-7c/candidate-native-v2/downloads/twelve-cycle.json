@@ -1,0 +1,76 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "draft",
+  "draft": {
+    "label": "  Lead fixture · 文  ",
+    "brief": "A local fictional brief.\nNo provider action.",
+    "cap": "1000.00",
+    "checkpoints": [
+      {
+        "title": "位置 1",
+        "amount": ".",
+        "evidence": "Tuple 0\nSame-looking title is not identity."
+      },
+      {
+        "title": "Duplicate title",
+        "amount": "  ",
+        "evidence": "Tuple 1\nSame-looking title is not identity."
+      },
+      {
+        "title": "位置 3",
+        "amount": "1e2",
+        "evidence": "Tuple 2\nSame-looking title is not identity."
+      },
+      {
+        "title": "Duplicate title",
+        "amount": "0001.20",
+        "evidence": "Tuple 3\nSame-looking title is not identity."
+      },
+      {
+        "title": "位置 5",
+        "amount": ".",
+        "evidence": "Tuple 4\nSame-looking title is not identity."
+      },
+      {
+        "title": "Duplicate title",
+        "amount": "  ",
+        "evidence": "Tuple 5\nSame-looking title is not identity."
+      },
+      {
+        "title": "位置 7",
+        "amount": "1e2",
+        "evidence": "Tuple 6\nSame-looking title is not identity."
+      },
+      {
+        "title": "Duplicate title",
+        "amount": "0001.20",
+        "evidence": "Tuple 7\nSame-looking title is not identity."
+      },
+      {
+        "title": "位置 9",
+        "amount": ".",
+        "evidence": "Tuple 8\nSame-looking title is not identity."
+      },
+      {
+        "title": "Duplicate title",
+        "amount": "  ",
+        "evidence": "Tuple 9\nSame-looking title is not identity."
+      },
+      {
+        "title": "位置 11",
+        "amount": "1e2",
+        "evidence": "Tuple 10\nSame-looking title is not identity."
+      },
+      {
+        "title": "Duplicate title",
+        "amount": "0001.20",
+        "evidence": "Tuple 11\nSame-looking title is not identity."
+      }
+    ]
+  },
+  "events": [],
+  "evidenceDrafts": []
+}

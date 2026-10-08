@@ -56,7 +56,11 @@ seven-event Northstar example remains available from the return link.
 
 1. Edit the project name, brief, USD cap, and each checkpoint's deliverable,
    amount, and planned acceptance evidence. Add or remove checkpoints before
-   review; the plan supports 1–12 checkpoints. All amounts must be positive,
+   review, and use **Move up** or **Move down** to arrange their order. Each
+   checkpoint's three fields move together, preserving unfinished input. The
+   controls also work with Tab and Enter or Space; movement announces the new
+   position and keeps focus with the moved checkpoint. The plan supports 1–12
+   checkpoints. All amounts must be positive,
    use at most two decimal places, and fit within the project cap. Unallocated
    cap is shown separately from the remaining allocated milestones.
 2. Select **Review this scope**. This prepares an unapproved plan with zero
@@ -76,6 +80,15 @@ workspace** to keep an explicit local file before leaving or refreshing.
 **Open saved workspace** checks a chosen file and shows a preview; only
 **Replace workspace** replaces the current page's work. All simulation controls
 continue to use the local fixture ledger; no payment or AI service is called.
+
+`node scripts/check-scope-draft-order.mjs` runs optional desktop and phone
+receiving for checkpoint movement. Set `SCOPESIGNAL_PUPPETEER` to an installed
+Puppeteer module and `SCOPESIGNAL_CHROME` to an installed Chrome/Chromium
+executable. `SCOPESIGNAL_SOURCE` and `SCOPESIGNAL_EVIDENCE` select the source and
+output directories. The receiver uses a fresh headless profile and local
+fictional drafts, blocks external requests, and records keyboard/pointer
+movement, validation, native workspace downloads/reopening and stale-read
+invalidation. It does not install a browser or call a provider.
 
 ### Save and reopen an authored workspace
 

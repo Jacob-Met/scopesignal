@@ -1,0 +1,14 @@
+Independent receiving contract frozen before candidate implementation or author tests were read.
+Primary source: scopesignal paypal-ai@8a241c9ce409fa9b22ab0bbdc339e46fd4b38525, tree 7686f7568c398f522df4d32f75a98814b1c4cd1d.
+Lead reads the existing controller, model, codec and HTML directly from pinned GitHub files.
+
+Checks use native Chrome in a fresh owned profile and fixture-only loopback origin. Production APIs are not imported as an expected-result oracle.
+1. Existing raw unfinished draft download and actual file reopen is an unchanged positive control.
+2. Twelve distinct tuples (with duplicate visible titles and invalid amount strings) survive a last-to-first-to-last keyboard movement cycle. Each observed position, focus membership, disabled boundary and unchanged totals are checked independently.
+3. An invalid amount moves with its checkpoint; after renewed validation, the native error link and aria-invalid attach to its new position.
+4. Moving while an older file is previewed cancels replacement. A later activation of the old Apply element must not restore the earlier draft.
+5. Pending evidence edited in review remains paired with its tuple through Edit, movement and renewed Review; scope IDs follow final order. One explicit fixture approval records that tuple and locks further editing.
+6. One checkpoint keeps both movement boundaries disabled. A narrow 320 CSS pixel browser viewport retains visible usable movement controls.
+7. Every served response is from the pinned source; source/probe bytes are unchanged, no page errors or permitted nonlocal requests. Actual downloads and images are retained.
+
+Limitations: native desktop Chrome headless fixtures, not OS mobile or assistive-technology execution; no user profile, existing customer data, provider or actual payment action. File chooser event timing repair remains with owner #22; this receiver checks move-triggered preview invalidation only.

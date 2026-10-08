@@ -14,3 +14,6 @@
 .scope-open-preview { padding: 1rem; margin: 1rem 0; border-left: 3px solid #2d6553; background: #edf4ed; }
 #scope-open-cancel { margin: .75rem 0; }
 .scope-files [hidden] { display: none; }
+.scope-draft-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-top: .5rem; }
+.scope-draft-actions button { min-height: 44px; }
+.scope-draft-actions .scope-remove { margin-top: 0; margin-left: auto; }

@@ -1,0 +1,159 @@
+{
+  "schema": "scopesignal.draft-movement-before.v1",
+  "at": "2026-10-08T12:56:54.870Z",
+  "source": "/tmp/ultra-20b27c2e-memory-scope-movement/candidate",
+  "node": "v26.3.0",
+  "browser": "Chrome/154.0.8037.98",
+  "profileIsFresh": true,
+  "servedSha256": {
+    "scope.html": "c7d3a6659f6084d338fef0ab2d663814afcdea81eb01f7f53941a2871f876ebc",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "src/scope-workspace.mjs": "890a18dfa3ec01e6a69ee1affd77f6650286fcbcd700f32621645a2188d2bab7",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace-record.mjs": "db5f4a99f5279127d4940904ff184f3e1d15b6df940807169a7253239f9212dd",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+  },
+  "checks": [
+    {
+      "name": "native draft accepts the distinct raw checkpoint values",
+      "passed": true
+    },
+    {
+      "name": "existing add/remove preserves the authored fields and budget",
+      "passed": true
+    },
+    {
+      "name": "each editable checkpoint offers explicit movement controls",
+      "passed": true
+    },
+    {
+      "name": "the first checkpoint moves down with all three fields intact",
+      "passed": true
+    },
+    {
+      "name": "the existing review derives IDs from displayed order and stays unapproved",
+      "passed": true
+    },
+    {
+      "name": "native page has no JavaScript errors or fixture-origin escape",
+      "passed": true
+    }
+  ],
+  "records": {
+    "before": {
+      "label": "  Fictional observatory launch  ",
+      "brief": "Draft-only local fixture. Nothing is approved.",
+      "cap": " 0900.50 ",
+      "checkpoints": [
+        {
+          "title": "  First concept <literal>  ",
+          "amount": " 0100.50 ",
+          "evidence": "\nFirst proof\n  λ & 😀  \n"
+        },
+        {
+          "title": "Second review",
+          "amount": "200.00",
+          "evidence": "Second proof\nTwo views."
+        },
+        {
+          "title": "Third handoff",
+          "amount": "300.00",
+          "evidence": "Third proof stays with its amount."
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "text": "Move up",
+        "label": "Move checkpoint 1 up",
+        "disabled": true
+      },
+      {
+        "text": "Move down",
+        "label": "Move checkpoint 1 down",
+        "disabled": false
+      },
+      {
+        "text": "Remove checkpoint",
+        "label": "Remove checkpoint 1",
+        "disabled": false
+      },
+      {
+        "text": "Move up",
+        "label": "Move checkpoint 2 up",
+        "disabled": false
+      },
+      {
+        "text": "Move down",
+        "label": "Move checkpoint 2 down",
+        "disabled": false
+      },
+      {
+        "text": "Remove checkpoint",
+        "label": "Remove checkpoint 2",
+        "disabled": false
+      },
+      {
+        "text": "Move up",
+        "label": "Move checkpoint 3 up",
+        "disabled": false
+      },
+      {
+        "text": "Move down",
+        "label": "Move checkpoint 3 down",
+        "disabled": true
+      },
+      {
+        "text": "Remove checkpoint",
+        "label": "Remove checkpoint 3",
+        "disabled": false
+      }
+    ],
+    "after": {
+      "label": "  Fictional observatory launch  ",
+      "brief": "Draft-only local fixture. Nothing is approved.",
+      "cap": " 0900.50 ",
+      "checkpoints": [
+        {
+          "title": "Second review",
+          "amount": "200.00",
+          "evidence": "Second proof\nTwo views."
+        },
+        {
+          "title": "  First concept <literal>  ",
+          "amount": " 0100.50 ",
+          "evidence": "\nFirst proof\n  λ & 😀  \n"
+        },
+        {
+          "title": "Third handoff",
+          "amount": "300.00",
+          "evidence": "Third proof stays with its amount."
+        }
+      ]
+    },
+    "review": [
+      {
+        "id": "scope-1",
+        "title": "Second review",
+        "evidence": "Second proof\nTwo views."
+      },
+      {
+        "id": "scope-2",
+        "title": "First concept <literal>",
+        "evidence": "First proof\n  λ & 😀"
+      },
+      {
+        "id": "scope-3",
+        "title": "Third handoff",
+        "evidence": "Third proof stays with its amount."
+      }
+    ]
+  },
+  "pageErrors": [],
+  "blockedRequests": [
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+  ],
+  "passed": true
+}

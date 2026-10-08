@@ -1,0 +1,652 @@
+TAP version 13
+# Subtest: review: all deterministic fixture events and reduced values retain exact serialized bytes
+ok 1 - review: all deterministic fixture events and reduced values retain exact serialized bytes
+  ---
+  duration_ms: 4.922673
+  type: 'test'
+  ...
+# Subtest: review: money and order identity cannot disagree with approved checkpoint evidence
+ok 2 - review: money and order identity cannot disagree with approved checkpoint evidence
+  ---
+  duration_ms: 5.238237
+  type: 'test'
+  ...
+# Subtest: review: raw replay preserves approval, order, capture, and reconciliation prerequisites
+ok 3 - review: raw replay preserves approval, order, capture, and reconciliation prerequisites
+  ---
+  duration_ms: 1.825616
+  type: 'test'
+  ...
+# Subtest: review: altered receipt money cannot be disguised as an exact duplicate
+ok 4 - review: altered receipt money cannot be disguised as an exact duplicate
+  ---
+  duration_ms: 1.327376
+  type: 'test'
+  ...
+# Subtest: review: accepted independent capture paths serialize and replay at every prefix
+ok 5 - review: accepted independent capture paths serialize and replay at every prefix
+  ---
+  duration_ms: 26.387083
+  type: 'test'
+  ...
+# Subtest: review: seed admission rejects checkpoint IDs that generate the same fixture order
+ok 6 - review: seed admission rejects checkpoint IDs that generate the same fixture order
+  ---
+  duration_ms: 0.849027
+  type: 'test'
+  ...
+# Subtest: review: event payload accessors cannot execute a nested append while metadata is reserved
+ok 7 - review: event payload accessors cannot execute a nested append while metadata is reserved
+  ---
+  duration_ms: 0.236255
+  type: 'test'
+  ...
+# Subtest: an unresolved pending capture cannot be requested a second time
+ok 8 - an unresolved pending capture cannot be requested a second time
+  ---
+  duration_ms: 3.908948
+  type: 'test'
+  ...
+# Subtest: a delayed lost response cannot undo a confirmed capture or be recorded twice
+ok 9 - a delayed lost response cannot undo a confirmed capture or be recorded twice
+  ---
+  duration_ms: 2.037584
+  type: 'test'
+  ...
+# Subtest: a webhook event identity cannot be reused for a different capture or checkpoint
+ok 10 - a webhook event identity cannot be reused for a different capture or checkpoint
+  ---
+  duration_ms: 2.177955
+  type: 'test'
+  ...
+# Subtest: a capture identity cannot count against two different checkpoints
+ok 11 - a capture identity cannot count against two different checkpoints
+  ---
+  duration_ms: 0.916689
+  type: 'test'
+  ...
+# Subtest: an unknown receipt reserves its capture identity before any amount is counted
+ok 12 - an unknown receipt reserves its capture identity before any amount is counted
+  ---
+  duration_ms: 1.929072
+  type: 'test'
+  ...
+# Subtest: reconciliation and later receipts share the same capture binding
+ok 13 - reconciliation and later receipts share the same capture binding
+  ---
+  duration_ms: 1.248418
+  type: 'test'
+  ...
+# Subtest: one checkpoint cannot acquire a second capture through a new webhook event ID
+ok 14 - one checkpoint cannot acquire a second capture through a new webhook event ID
+  ---
+  duration_ms: 0.728506
+  type: 'test'
+  ...
+# Subtest: webhook and reconciliation identities must be nonempty canonical strings
+ok 15 - webhook and reconciliation identities must be nonempty canonical strings
+  ---
+  duration_ms: 8.568146
+  type: 'test'
+  ...
+# Subtest: exact duplicate webhook delivery remains auditable in every supported capture state
+ok 16 - exact duplicate webhook delivery remains auditable in every supported capture state
+  ---
+  duration_ms: 2.438237
+  type: 'test'
+  ...
+# Subtest: the public append path and reducer refuse lifecycle violations too
+ok 17 - the public append path and reducer refuse lifecycle violations too
+  ---
+  duration_ms: 1.678114
+  type: 'test'
+  ...
+# Subtest: replay derives receipt identity from history instead of trusting a duplicate flag
+ok 18 - replay derives receipt identity from history instead of trusting a duplicate flag
+  ---
+  duration_ms: 0.683358
+  type: 'test'
+  ...
+# Subtest: published events cannot be edited or removed and append owns sequence metadata
+ok 19 - published events cannot be edited or removed and append owns sequence metadata
+  ---
+  duration_ms: 0.69176
+  type: 'test'
+  ...
+# Subtest: a ledger keeps its creation seed stable across caller mutation
+ok 20 - a ledger keeps its creation seed stable across caller mutation
+  ---
+  duration_ms: 1.154085
+  type: 'test'
+  ...
+# Subtest: inherited object properties are not checkpoint identities
+ok 21 - inherited object properties are not checkpoint identities
+  ---
+  duration_ms: 97.385237
+  type: 'test'
+  ...
+# Subtest: three independent checkpoint capture paths compose without double counting
+ok 22 - three independent checkpoint capture paths compose without double counting
+  ---
+  duration_ms: 13.919764
+  type: 'test'
+  ...
+# Subtest: approving one checkpoint preserves another pending draft, including initial line feeds
+ok 23 - approving one checkpoint preserves another pending draft, including initial line feeds
+  ---
+  duration_ms: 27.191693
+  type: 'test'
+  ...
+# Subtest: refused approval retains empty and multiline drafts across repeated rerenders
+ok 24 - refused approval retains empty and multiline drafts across repeated rerenders
+  ---
+  duration_ms: 7.331931
+  type: 'test'
+  ...
+# Subtest: a suggestion survives approval of a different checkpoint
+ok 25 - a suggestion survives approval of a different checkpoint
+  ---
+  duration_ms: 3.647276
+  type: 'test'
+  ...
+# Subtest: accepted evidence comes from its recorded event and its controls cannot edit approval
+ok 26 - accepted evidence comes from its recorded event and its controls cannot edit approval
+  ---
+  duration_ms: 6.445102
+  type: 'test'
+  ...
+# Subtest: literal textarea-like text is preserved without adding editors
+ok 27 - literal textarea-like text is preserved without adding editors
+  ---
+  duration_ms: 6.172904
+  type: 'test'
+  ...
+# Subtest: successive approvals retain accepted evidence and count each approval once
+ok 28 - successive approvals retain accepted evidence and count each approval once
+  ---
+  duration_ms: 3.255456
+  type: 'test'
+  ...
+# Subtest: fixture totals and explicit replay behavior remain intact
+ok 29 - fixture totals and explicit replay behavior remain intact
+  ---
+  duration_ms: 6.097826
+  type: 'test'
+  ...
+# Subtest: webhook rows describe receipt without claiming an unknown capture was counted
+ok 30 - webhook rows describe receipt without claiming an unknown capture was counted
+  ---
+  duration_ms: 4.454124
+  type: 'test'
+  ...
+# Subtest: download has a fixed safe filename and explicit fixture schema and provenance
+ok 31 - download has a fixed safe filename and explicit fixture schema and provenance
+  ---
+  duration_ms: 5.060861
+  type: 'test'
+  ...
+# Subtest: export records the actual replay events and reduced counted outcome
+ok 32 - export records the actual replay events and reduced counted outcome
+  ---
+  duration_ms: 1.683071
+  type: 'test'
+  ...
+# Subtest: accepted multiline and literal evidence comes from the exact approval event
+ok 33 - accepted multiline and literal evidence comes from the exact approval event
+  ---
+  duration_ms: 3.952535
+  type: 'test'
+  ...
+# Subtest: unapproved checkpoints have no approval evidence and no authored draft field
+ok 34 - unapproved checkpoints have no approval evidence and no authored draft field
+  ---
+  duration_ms: 1.785475
+  type: 'test'
+  ...
+# Subtest: every capture prefix exports the current outcome without advancing or inventing events
+ok 35 - every capture prefix exports the current outcome without advancing or inventing events
+  ---
+  duration_ms: 2.18154
+  type: 'test'
+  ...
+# Subtest: repeated exports are deterministic and detached from the live in-memory ledger
+ok 36 - repeated exports are deterministic and detached from the live in-memory ledger
+  ---
+  duration_ms: 1.006254
+  type: 'test'
+  ...
+# Subtest: an empty fixture exports no approval and never represents a successful payment
+ok 37 - an empty fixture exports no approval and never represents a successful payment
+  ---
+  duration_ms: 0.390117
+  type: 'test'
+  ...
+# Subtest: the timeline exposes every real fixture prefix and counts only after reconciliation
+ok 38 - the timeline exposes every real fixture prefix and counts only after reconciliation
+  ---
+  duration_ms: 6.065492
+  type: 'test'
+  ...
+# Subtest: backward, repeated and out-of-order inspection never changes the fixture or another ledger
+ok 39 - backward, repeated and out-of-order inspection never changes the fixture or another ledger
+  ---
+  duration_ms: 3.065851
+  type: 'test'
+  ...
+# Subtest: returned event and state objects cannot rewrite later timeline inspection
+ok 40 - returned event and state objects cannot rewrite later timeline inspection
+  ---
+  duration_ms: 1.530922
+  type: 'test'
+  ...
+# Subtest: invalid navigation refuses the index without losing valid timeline state
+ok 41 - invalid navigation refuses the index without losing valid timeline state
+  ---
+  duration_ms: 0.849919
+  type: 'test'
+  ...
+# Subtest: fixture deterministically replays lost response, duplicate webhook, and one reconcile
+ok 42 - fixture deterministically replays lost response, duplicate webhook, and one reconcile
+  ---
+  duration_ms: 4.643203
+  type: 'test'
+  ...
+# Subtest: order and capture require prior explicit human approval and order
+ok 43 - order and capture require prior explicit human approval and order
+  ---
+  duration_ms: 0.813483
+  type: 'test'
+  ...
+# Subtest: lost response cannot be blindly captured again; reconcile is one-time
+ok 44 - lost response cannot be blindly captured again; reconcile is one-time
+  ---
+  duration_ms: 1.935551
+  type: 'test'
+  ...
+# Subtest: same webhook event ID is idempotent and cannot double count
+ok 45 - same webhook event ID is idempotent and cannot double count
+  ---
+  duration_ms: 0.625852
+  type: 'test'
+  ...
+# Subtest: reducer never counts duplicate webhook in fixture stream
+ok 46 - reducer never counts duplicate webhook in fixture stream
+  ---
+  duration_ms: 0.420683
+  type: 'test'
+  ...
+# Subtest: role previews are explicit local rules and never claim AI output
+ok 47 - role previews are explicit local rules and never claim AI output
+  ---
+  duration_ms: 15.836045
+  type: 'test'
+  ...
+# Subtest: Workers AI adapter fails closed without binding and has no paid fallback
+ok 48 - Workers AI adapter fails closed without binding and has no paid fallback
+  ---
+  duration_ms: 0.414013
+  type: 'test'
+  ...
+# Subtest: schema validation rejects malformed model output
+ok 49 - schema validation rejects malformed model output
+  ---
+  duration_ms: 0.320341
+  type: 'test'
+  ...
+# Subtest: every shipped replay prefix presents its current reduced capture state
+ok 50 - every shipped replay prefix presents its current reduced capture state
+  ---
+  duration_ms: 5.78493
+  type: 'test'
+  ...
+# Subtest: ordinary webhook capture does not invent a reconciliation
+ok 51 - ordinary webhook capture does not invent a reconciliation
+  ---
+  duration_ms: 0.641815
+  type: 'test'
+  ...
+# Subtest: missing and unrecognized states do not become captured or safe-to-retry labels
+ok 52 - missing and unrecognized states do not become captured or safe-to-retry labels
+  ---
+  duration_ms: 0.271778
+  type: 'test'
+  ...
+# Subtest: saved fixture reader accepts all real recovery prefixes without advancing the outcome
+ok 53 - saved fixture reader accepts all real recovery prefixes without advancing the outcome
+  ---
+  duration_ms: 12.350032
+  type: 'test'
+  ...
+# Subtest: accepted evidence is exact literal Unicode text and an unapproved draft is absent
+ok 54 - accepted evidence is exact literal Unicode text and an unapproved draft is absent
+  ---
+  duration_ms: 1.744123
+  type: 'test'
+  ...
+# Subtest: ordinary capture, lookup-only recovery and independent checkpoints use the existing ledger
+ok 55 - ordinary capture, lookup-only recovery and independent checkpoints use the existing ledger
+  ---
+  duration_ms: 3.669058
+  type: 'test'
+  ...
+# Subtest: JSON key order and whitespace do not change the record, and returned facts are immutable
+ok 56 - JSON key order and whitespace do not change the record, and returned facts are immutable
+  ---
+  duration_ms: 1.475088
+  type: 'test'
+  ...
+# Subtest: invalid JSON, another document and unsupported record versions are refused
+ok 57 - invalid JSON, another document and unsupported record versions are refused
+  ---
+  duration_ms: 2.921594
+  type: 'test'
+  ...
+# Subtest: saved summaries, approvals, identities and fixture definitions must match recorded events
+ok 58 - saved summaries, approvals, identities and fixture definitions must match recorded events
+  ---
+  duration_ms: 8.860404
+  type: 'test'
+  ...
+# Subtest: missing, extra and inherited-property fields cannot become trusted record facts
+ok 59 - missing, extra and inherited-property fields cannot become trusted record facts
+  ---
+  duration_ms: 4.216572
+  type: 'test'
+  ...
+# Subtest: event order, required metadata and payload types are checked before ledger replay
+ok 60 - event order, required metadata and payload types are checked before ledger replay
+  ---
+  duration_ms: 2.84591
+  type: 'test'
+  ...
+# Subtest: shared ledger refuses contradictory lifecycle, money and capture identities in a file
+ok 61 - shared ledger refuses contradictory lifecycle, money and capture identities in a file
+  ---
+  duration_ms: 5.482936
+  type: 'test'
+  ...
+# Subtest: exact byte limit is inclusive and uses UTF-8 bytes rather than JavaScript characters
+ok 62 - exact byte limit is inclusive and uses UTF-8 bytes rather than JavaScript characters
+  ---
+  duration_ms: 9.142529
+  type: 'test'
+  ...
+# Subtest: event limit permits a bounded full history and rejects the next exact duplicate
+ok 63 - event limit permits a bounded full history and rejects the next exact duplicate
+  ---
+  duration_ms: 175.645883
+  type: 'test'
+  ...
+# Subtest: a reconciled fixture no longer asks the reviewer to keep its capture unknown
+ok 64 - a reconciled fixture no longer asks the reviewer to keep its capture unknown
+  ---
+  duration_ms: 3.785603
+  type: 'test'
+  ...
+# Subtest: a lost response and both webhook receipts retain current unknown guidance until reconciliation
+ok 65 - a lost response and both webhook receipts retain current unknown guidance until reconciliation
+  ---
+  duration_ms: 1.220075
+  type: 'test'
+  ...
+# Subtest: another unresolved checkpoint still takes priority over an earlier reconciled capture
+ok 66 - another unresolved checkpoint still takes priority over an earlier reconciled capture
+  ---
+  duration_ms: 2.795534
+  type: 'test'
+  ...
+# Subtest: pending and never-requested captures remain distinct from resolved captures
+ok 67 - pending and never-requested captures remain distinct from resolved captures
+  ---
+  duration_ms: 0.58557
+  type: 'test'
+  ...
+# Subtest: the example becomes a detached editable draft, with no inherited approvals
+ok 68 - the example becomes a detached editable draft, with no inherited approvals
+  ---
+  duration_ms: 4.583343
+  type: 'test'
+  ...
+# Subtest: an authored brief and checkpoints produce a bounded ledger seed and explicit unallocated cap
+ok 69 - an authored brief and checkpoints produce a bounded ledger seed and explicit unallocated cap
+  ---
+  duration_ms: 0.6718
+  type: 'test'
+  ...
+# Subtest: incomplete, malformed and over-cap drafts cannot enter review
+ok 70 - incomplete, malformed and over-cap drafts cannot enter review
+  ---
+  duration_ms: 1.177391
+  type: 'test'
+  ...
+# Subtest: field errors identify the actual editable checkpoint and budget
+ok 71 - field errors identify the actual editable checkpoint and budget
+  ---
+  duration_ms: 0.203756
+  type: 'test'
+  ...
+# Subtest: USD authoring rejects unsupported notation and avoids silently rounding sub-cent entries
+ok 72 - USD authoring rejects unsupported notation and avoids silently rounding sub-cent entries
+  ---
+  duration_ms: 0.274613
+  type: 'test'
+  ...
+# Subtest: generated identities remain distinct when titles match or resemble object keys
+ok 73 - generated identities remain distinct when titles match or resemble object keys
+  ---
+  duration_ms: 1.381838
+  type: 'test'
+  ...
+# Subtest: every accepted safe cent amount is displayed without floating-dollar rounding
+ok 74 - every accepted safe cent amount is displayed without floating-dollar rounding
+  ---
+  duration_ms: 0.716958
+  type: 'test'
+  ...
+# Subtest: sparse or absent checkpoint rows are refused as incomplete drafts
+ok 75 - sparse or absent checkpoint rows are refused as incomplete drafts
+  ---
+  duration_ms: 0.396386
+  type: 'test'
+  ...
+# Subtest: approval uses the explicit reviewed evidence and refuses empty acceptance without any event
+ok 76 - approval uses the explicit reviewed evidence and refuses empty acceptance without any event
+  ---
+  duration_ms: 0.713914
+  type: 'test'
+  ...
+# Subtest: plan, approval evidence and prior events cannot be changed through caller-owned objects
+ok 77 - plan, approval evidence and prior events cannot be changed through caller-owned objects
+  ---
+  duration_ms: 3.276518
+  type: 'test'
+  ...
+# Subtest: review controls advance one legal event at a time and do not repeat pending requests
+ok 78 - review controls advance one legal event at a time and do not repeat pending requests
+  ---
+  duration_ms: 2.110374
+  type: 'test'
+  ...
+# Subtest: the authored lost-response path stays unknown through duplicate receipt and reconciles exactly once
+ok 79 - the authored lost-response path stays unknown through duplicate receipt and reconciles exactly once
+  ---
+  duration_ms: 2.518267
+  type: 'test'
+  ...
+# Subtest: independent checkpoints keep their amounts and receipt identities across mixed outcomes
+ok 80 - independent checkpoints keep their amounts and receipt identities across mixed outcomes
+  ---
+  duration_ms: 3.673485
+  type: 'test'
+  ...
+# Subtest: an unknown outcome can use the explicit simulated lookup without manufacturing a webhook
+ok 81 - an unknown outcome can use the explicit simulated lookup without manufacturing a webhook
+  ---
+  duration_ms: 0.863268
+  type: 'test'
+  ...
+# Subtest: an unfinished draft preserves exact raw strings and still needs ordinary review validation
+ok 82 - an unfinished draft preserves exact raw strings and still needs ordinary review validation
+  ---
+  duration_ms: 3.1393
+  type: 'test'
+  ...
+# Subtest: mixed review restores exact history, accepted and pending evidence, totals, and next action
+ok 83 - mixed review restores exact history, accepted and pending evidence, totals, and next action
+  ---
+  duration_ms: 13.021663
+  type: 'test'
+  ...
+# Subtest: every prefix of each ordinary authoring lifecycle reopens at the same next-step boundary
+ok 84 - every prefix of each ordinary authoring lifecycle reopens at the same next-step boundary
+  ---
+  duration_ms: 28.175414
+  type: 'test'
+  ...
+# Subtest: empty pending evidence survives and never becomes an approval by saving or opening
+ok 85 - empty pending evidence survives and never becomes an approval by saving or opening
+  ---
+  duration_ms: 0.829757
+  type: 'test'
+  ...
+# Subtest: unsupported envelopes, constants, stages, types and extra fields are refused
+ok 86 - unsupported envelopes, constants, stages, types and extra fields are refused
+  ---
+  duration_ms: 0.960374
+  type: 'test'
+  ...
+# Subtest: draft shapes and text bounds are enforced without normalizing unfinished input
+ok 87 - draft shapes and text bounds are enforced without normalizing unfinished input
+  ---
+  duration_ms: 1.111742
+  type: 'test'
+  ...
+# Subtest: every canonical event field and sequence is checked against the unchanged fixture controls
+ok 88 - every canonical event field and sequence is checked against the unchanged fixture controls
+  ---
+  duration_ms: 64.323505
+  type: 'test'
+  ...
+# Subtest: saved review drafts must belong to distinct existing unapproved checkpoints
+ok 89 - saved review drafts must belong to distinct existing unapproved checkpoints
+  ---
+  duration_ms: 8.562467
+  type: 'test'
+  ...
+# Subtest: twelve checkpoints and their complete bounded histories retain exact cent totals
+ok 90 - twelve checkpoints and their complete bounded histories retain exact cent totals
+  ---
+  duration_ms: 73.255189
+  type: 'test'
+  ...
+# Subtest: opening accepts harmless JSON field order changes and makes no authenticity claim
+ok 91 - opening accepts harmless JSON field order changes and makes no authenticity claim
+  ---
+  duration_ms: 2.789855
+  type: 'test'
+  ...
+# Subtest: byte limits, failed saves and mismatched plans preserve the source workspace
+ok 92 - byte limits, failed saves and mismatched plans preserve the source workspace
+  ---
+  duration_ms: 6.794338
+  type: 'test'
+  ...
+# Subtest: validated suggestions preserve editable text without retaining provider-owned objects
+ok 93 - validated suggestions preserve editable text without retaining provider-owned objects
+  ---
+  duration_ms: 2.374942
+  type: 'test'
+  ...
+# Subtest: the existing empty-list and text-length contracts are preserved
+ok 94 - the existing empty-list and text-length contracts are preserved
+  ---
+  duration_ms: 0.912151
+  type: 'test'
+  ...
+# Subtest: serialized Unicode text at the schema character limits remains valid
+ok 95 - serialized Unicode text at the schema character limits remains valid
+  ---
+  duration_ms: 1.834349
+  type: 'test'
+  ...
+# Subtest: Unicode length limits count code points rather than graphemes
+ok 96 - Unicode length limits count code points rather than graphemes
+  ---
+  duration_ms: 3.242777
+  type: 'test'
+  ...
+# Subtest: root fields must be declared own data properties
+ok 97 - root fields must be declared own data properties
+  ---
+  duration_ms: 0.422636
+  type: 'test'
+  ...
+# Subtest: checkpoint records cannot smuggle inherited fields or undeclared approval data
+ok 98 - checkpoint records cannot smuggle inherited fields or undeclared approval data
+  ---
+  duration_ms: 0.325049
+  type: 'test'
+  ...
+# Subtest: accessor fields are refused without evaluating provider code
+ok 99 - accessor fields are refused without evaluating provider code
+  ---
+  duration_ms: 0.449376
+  type: 'test'
+  ...
+# Subtest: checkpoint lists must contain their own entries and cannot replace iteration
+ok 100 - checkpoint lists must contain their own entries and cannot replace iteration
+  ---
+  duration_ms: 0.31282
+  type: 'test'
+  ...
+# Subtest: ordinary and null-prototype data records normalize to the same result
+ok 101 - ordinary and null-prototype data records normalize to the same result
+  ---
+  duration_ms: 0.313992
+  type: 'test'
+  ...
+# Subtest: configured bindings support the existing direct, JSON, and response-string forms
+ok 102 - configured bindings support the existing direct, JSON, and response-string forms
+  ---
+  duration_ms: 0.923699
+  type: 'test'
+  ...
+# Subtest: the async adapter rejects JSON-representable malformed suggestions in every supported response form
+ok 103 - the async adapter rejects JSON-representable malformed suggestions in every supported response form
+  ---
+  duration_ms: 3.46425
+  type: 'test'
+  ...
+# Subtest: each provider call receives an independent request schema
+ok 104 - each provider call receives an independent request schema
+  ---
+  duration_ms: 0.263266
+  type: 'test'
+  ...
+# Subtest: inherited or accessor response envelopes do not bypass result validation
+ok 105 - inherited or accessor response envelopes do not bypass result validation
+  ---
+  duration_ms: 0.39874
+  type: 'test'
+  ...
+# Subtest: missing or invalid bindings fail closed before any dispatch
+ok 106 - missing or invalid bindings fail closed before any dispatch
+  ---
+  duration_ms: 1.625865
+  type: 'test'
+  ...
+# Subtest: provider errors and malformed results are rejected without retry or fallback
+ok 107 - provider errors and malformed results are rejected without retry or fallback
+  ---
+  duration_ms: 0.710108
+  type: 'test'
+  ...
+1..107
+# tests 107
+# suites 0
+# pass 107
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 537.609084

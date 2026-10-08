@@ -1,0 +1,270 @@
+{
+  "schema": "scopesignal.draft-order-receiving.v1",
+  "at": "2026-10-08T13:02:31.353Z",
+  "source": "/tmp/ultra-20b27c2e-memory-scope-movement/candidate",
+  "sourceCommit": null,
+  "node": "v26.3.0",
+  "browser": "Chrome/154.0.8037.98",
+  "freshProfile": true,
+  "servedSha256": {
+    "scope.html": "c7d3a6659f6084d338fef0ab2d663814afcdea81eb01f7f53941a2871f876ebc",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "src/scope-workspace.mjs": "890a18dfa3ec01e6a69ee1affd77f6650286fcbcd700f32621645a2188d2bab7",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/scope-workspace-record.mjs": "db5f4a99f5279127d4940904ff184f3e1d15b6df940807169a7253239f9212dd",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+  },
+  "checks": [
+    {
+      "name": "desktop: pointer and keyboard movement keep raw fields, focus, totals and row labels",
+      "passed": true,
+      "observations": {
+        "order": [
+          " 0100.50 ",
+          "200.00",
+          "300.00"
+        ],
+        "labels": [
+          "Checkpoint 1",
+          "Checkpoint 2",
+          "Checkpoint 3"
+        ],
+        "width": {
+          "viewport": 1280,
+          "scroll": 1280
+        },
+        "focus": "draft-0-title"
+      }
+    },
+    {
+      "name": "desktop: unfinished values remain unchanged and validation follows their new positions",
+      "passed": true,
+      "observations": {
+        "invalidAmount": "1e2",
+        "invalidPosition": 1
+      }
+    },
+    {
+      "name": "desktop: one and twelve checkpoint bounds preserve add/remove and complete row order",
+      "passed": true,
+      "observations": {
+        "first": {
+          "title": "Row 12",
+          "amount": "12.01",
+          "evidence": "Proof 12"
+        },
+        "count": 12,
+        "last": {
+          "title": "",
+          "amount": "",
+          "evidence": ""
+        }
+      }
+    },
+    {
+      "name": "desktop: review evidence moves before approval and final IDs retain the existing approval lock",
+      "passed": true,
+      "observations": {
+        "acceptedCheckpoint": "scope-1",
+        "amount": "200.00",
+        "unknownRemainsUncounted": true
+      }
+    },
+    {
+      "name": "desktop: download and native reopen preserve order; movement invalidates an older preview",
+      "passed": true,
+      "observations": {
+        "openedOrder": [
+          " 0100.50 ",
+          "300.00",
+          "200.00"
+        ],
+        "latestOrder": [
+          "300.00",
+          " 0100.50 ",
+          "200.00"
+        ],
+        "events": 0
+      }
+    },
+    {
+      "name": "desktop: movement invalidates an in-flight file read through the existing workspace boundary",
+      "passed": true,
+      "observations": {
+        "lateReadDidNotReplace": true,
+        "order": [
+          "200.00",
+          " 0100.50 ",
+          "300.00"
+        ]
+      }
+    },
+    {
+      "name": "phone: pointer and keyboard movement keep raw fields, focus, totals and row labels",
+      "passed": true,
+      "observations": {
+        "order": [
+          " 0100.50 ",
+          "200.00",
+          "300.00"
+        ],
+        "labels": [
+          "Checkpoint 1",
+          "Checkpoint 2",
+          "Checkpoint 3"
+        ],
+        "width": {
+          "viewport": 390,
+          "scroll": 390
+        },
+        "focus": "draft-0-title"
+      }
+    },
+    {
+      "name": "phone: unfinished values remain unchanged and validation follows their new positions",
+      "passed": true,
+      "observations": {
+        "invalidAmount": "1e2",
+        "invalidPosition": 1
+      }
+    },
+    {
+      "name": "phone: one and twelve checkpoint bounds preserve add/remove and complete row order",
+      "passed": true,
+      "observations": {
+        "first": {
+          "title": "Row 12",
+          "amount": "12.01",
+          "evidence": "Proof 12"
+        },
+        "count": 12,
+        "last": {
+          "title": "",
+          "amount": "",
+          "evidence": ""
+        }
+      }
+    },
+    {
+      "name": "phone: review evidence moves before approval and final IDs retain the existing approval lock",
+      "passed": true,
+      "observations": {
+        "acceptedCheckpoint": "scope-1",
+        "amount": "200.00",
+        "unknownRemainsUncounted": true
+      }
+    },
+    {
+      "name": "phone: download and native reopen preserve order; movement invalidates an older preview",
+      "passed": true,
+      "observations": {
+        "openedOrder": [
+          " 0100.50 ",
+          "300.00",
+          "200.00"
+        ],
+        "latestOrder": [
+          "300.00",
+          " 0100.50 ",
+          "200.00"
+        ],
+        "events": 0
+      }
+    },
+    {
+      "name": "phone: movement invalidates an in-flight file read through the existing workspace boundary",
+      "passed": true,
+      "observations": {
+        "lateReadDidNotReplace": true,
+        "order": [
+          "200.00",
+          " 0100.50 ",
+          "300.00"
+        ]
+      }
+    },
+    {
+      "name": "no native page errors or external fixture requests",
+      "passed": true
+    }
+  ],
+  "downloads": [
+    {
+      "label": "desktop-approved-order",
+      "path": "downloads/desktop-approved-order/0d41e193-d3ff-4911-9c6b-752cf31f7977",
+      "bytes": 1016,
+      "sha256": "97ae80485bc662c2f05174974330ad0841b114ca82ab5beb23a91c70b70873bd",
+      "suggestedFilename": "scopesignal-workspace-v1.json"
+    },
+    {
+      "label": "desktop-locked-order",
+      "path": "downloads/desktop-locked-order/2d48e69d-df49-4682-b358-4c5d496af84c",
+      "bytes": 1016,
+      "sha256": "97ae80485bc662c2f05174974330ad0841b114ca82ab5beb23a91c70b70873bd",
+      "suggestedFilename": "scopesignal-workspace-v1.json"
+    },
+    {
+      "label": "desktop-draft-order",
+      "path": "downloads/desktop-draft-order/9cd4c0dd-d5dd-4f18-8bc2-2429a3a631ff",
+      "bytes": 764,
+      "sha256": "1ca78e711e6810a41a8733b38c3e66ca9ab9825a094f2ed533ef867b78e56fc9",
+      "suggestedFilename": "scopesignal-workspace-v1.json"
+    },
+    {
+      "label": "desktop-read-race",
+      "path": "downloads/desktop-read-race/bf793d8e-5a17-41ef-8974-daa49635935e",
+      "bytes": 764,
+      "sha256": "9fb8302ad3a079d4e83339363f086e2ad337950a3d29a5130182080ab63661b1",
+      "suggestedFilename": "scopesignal-workspace-v1.json"
+    },
+    {
+      "label": "phone-approved-order",
+      "path": "downloads/phone-approved-order/2dc1e83d-2860-4b3a-8070-94a58b38584d",
+      "bytes": 1016,
+      "sha256": "97ae80485bc662c2f05174974330ad0841b114ca82ab5beb23a91c70b70873bd",
+      "suggestedFilename": "scopesignal-workspace-v1.json"
+    },
+    {
+      "label": "phone-locked-order",
+      "path": "downloads/phone-locked-order/e3c5e5d7-ff22-4193-be54-2a9ca83dc124",
+      "bytes": 1016,
+      "sha256": "97ae80485bc662c2f05174974330ad0841b114ca82ab5beb23a91c70b70873bd",
+      "suggestedFilename": "scopesignal-workspace-v1.json"
+    },
+    {
+      "label": "phone-draft-order",
+      "path": "downloads/phone-draft-order/67e9b152-78ab-44a1-a844-c61f0d9d3e2f",
+      "bytes": 764,
+      "sha256": "1ca78e711e6810a41a8733b38c3e66ca9ab9825a094f2ed533ef867b78e56fc9",
+      "suggestedFilename": "scopesignal-workspace-v1.json"
+    },
+    {
+      "label": "phone-read-race",
+      "path": "downloads/phone-read-race/45169b64-6ec0-4ff2-91bd-b834f2b68332",
+      "bytes": 764,
+      "sha256": "9fb8302ad3a079d4e83339363f086e2ad337950a3d29a5130182080ab63661b1",
+      "suggestedFilename": "scopesignal-workspace-v1.json"
+    }
+  ],
+  "pageErrors": [],
+  "blockedRequests": [
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+  ],
+  "scope": "Fictional local drafts and existing simulated ledger only; no provider operation.",
+  "passed": true
+}

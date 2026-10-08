@@ -1,0 +1,40 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "review",
+  "draft": {
+    "label": "  Fictional observatory launch  ",
+    "brief": "Local fictional brief. No provider action.",
+    "cap": " 0900.50 ",
+    "checkpoints": [
+      {
+        "title": "  Same <literal>  ",
+        "amount": "200.00",
+        "evidence": "\nReviewed second proof\n  exact pending text 😀  \n"
+      },
+      {
+        "title": "  Same <literal>  ",
+        "amount": " 0100.50 ",
+        "evidence": "First proof\n  λ & 😀"
+      },
+      {
+        "title": "Final handoff",
+        "amount": "300.00",
+        "evidence": "Third proof stays with its amount."
+      }
+    ]
+  },
+  "events": [
+    {
+      "seq": 1,
+      "type": "checkpoint.approved",
+      "at": "T+001",
+      "checkpointId": "scope-1",
+      "approver": "human-reviewer",
+      "acceptedEvidence": "Reviewed second proof\n  exact pending text 😀"
+    }
+  ],
+  "evidenceDrafts": []
+}
