@@ -1,0 +1,31 @@
+
+DevTools listening on ws://127.0.0.1:62375/devtools/browser/1d65c57d-ca32-43db-b3ae-ee0ebfb6dfa3
+[51748:19588:1008/102041.310:ERROR:gpu\ipc\client\command_buffer_proxy_impl.cc:490] GPU state invalid after WaitForGetOffsetInRange.
+[51748:19588:1008/102041.310:ERROR:gpu\ipc\client\command_buffer_proxy_impl.cc:490] GPU state invalid after WaitForGetOffsetInRange.
+[51748:19588:1008/102041.311:ERROR:content\browser\gpu\gpu_process_host.cc:1130] GPU process exited unexpectedly: exit_code=34
+[51748:41800:1008/102043.700:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[51748:19588:1008/102043.714:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102043.715:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102043.715:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102043.715:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102043.716:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102043.743:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:41800:1008/102043.749:ERROR:google_apis\gcm\engine\mcs_client.cc:702]   Error code: 401  Error message: Authentication Failed: wrong_secret
+[51748:41800:1008/102043.749:ERROR:google_apis\gcm\engine\mcs_client.cc:704] Failed to log in to GCM, resetting connection.
+[51748:19588:1008/102043.757:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102043.777:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102043.778:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102043.778:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102043.778:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102043.780:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102043.788:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:41800:1008/102043.803:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[51748:41800:1008/102043.807:ERROR:google_apis\gcm\engine\registration_request.cc:291] Registration response error message: PHONE_REGISTRATION_ERROR
+[51748:19588:1008/102045.045:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102045.362:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102045.362:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102045.362:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102045.362:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102045.364:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102045.371:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.
+[51748:19588:1008/102045.382:ERROR:chrome\browser\download\download_status_updater_win.cc:36] Failed initializing an ITaskbarList3 interface.

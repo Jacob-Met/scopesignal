@@ -42,7 +42,7 @@ function draftField(index, key, caption, value, options = {}) {
 }
 
 function renderDraftRows() {
-  scopeHistory.clear();
+  // Independent negative control: omit history clear.
   const list = $('#scope-draft-list');
   list.replaceChildren();
   draft.checkpoints.forEach((cp, index) => {

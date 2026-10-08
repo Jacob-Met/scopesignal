@@ -63,7 +63,12 @@ seven-event Northstar example remains available from the return link.
    values and is available while the draft has fewer than 12 checkpoints. The
    controls also work with Tab and Enter or Space; movement announces the new
    position and keeps focus with the moved checkpoint. The plan supports 1–12
-   checkpoints. All amounts must be positive,
+   checkpoints. **Undo removal** restores the most recently removed checkpoint's
+   exact fields at its original position while keeping later text edits elsewhere.
+   Recovery is single-use and stays available through downloads and file previews.
+   Another removal replaces it; adding, copying, moving, successful review or
+   replacing the workspace clears it. Invalid restored amounts still require
+   correction before review. All amounts must be positive,
    use at most two decimal places, and fit within the project cap. Unallocated
    cap is shown separately from the remaining allocated milestones.
 2. Select **Review this scope**. This prepares an unapproved plan with zero
@@ -92,6 +97,19 @@ output directories. The receiver uses a fresh headless profile and local
 fictional drafts, blocks external requests, and records keyboard/pointer
 movement, validation, native workspace downloads/reopening and stale-read
 invalidation. It does not install a browser or call a provider.
+
+The removal receiver uses an existing Chrome/Chromium installation and native
+Node 24; it installs no packages. Set `SCOPESIGNAL_CHROME` to the executable
+on systems where the default Windows Chrome path does not apply, then run:
+
+```sh
+node scripts/check-scope-draft-removal.mjs . /path/to/new/output candidate
+```
+
+The output directory must not exist. The receiver uses a fresh local profile,
+retains source hashes, actual workspace downloads and a phone screenshot, and
+blocks external page requests. Passing `baseline` instead verifies that an
+older source has no recovery control.
 
 ### Save and reopen an authored workspace
 

@@ -1,0 +1,338 @@
+{
+  "schema": "scopesignal.independent-removal-receiving.v1",
+  "at": "2026-10-08T17:20:45.464Z",
+  "mode": "candidate",
+  "sourceCommit": "b2dccc7e6c47b3f6b5d6f49e1858725eb3a099ea",
+  "sourceTree": "ec3853dcbe4ebe681d28068de36b0d9ea74d22d5",
+  "source": "C:\\Users\\minec\\hamon-ultra-2d2d276b-scope-independent\\source",
+  "node": "v24.21.0",
+  "browserVersion": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/154.0.8037.98",
+    "revision": "@b859317bf11f6be47f9b7799ec690a0a42a1fb33",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "jsVersion": "15.4.80.20"
+  },
+  "driverHash": "dabf88028ca9ba50b1dc9ea171607e766603d1719f47e68df2ee567712e6985a",
+  "inputHashes": {
+    "scope.html": "e979410762e516cc22456a7288b24d92a59807578360eb8a899447eaa1f50225",
+    "src/scope-workspace.mjs": "ff4f51dddb15e132a0245de8c76ec76358807a7cef5783216e3f4a298b32c7bf",
+    "src/scope-draft-removal.mjs": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224"
+  },
+  "served": {
+    "scope.html": "e979410762e516cc22456a7288b24d92a59807578360eb8a899447eaa1f50225",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "src/scope-workspace.mjs": "ff4f51dddb15e132a0245de8c76ec76358807a7cef5783216e3f4a298b32c7bf",
+    "src/scope-draft-removal.mjs": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/scope-revision-draft.mjs": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+  },
+  "mutationHash": null,
+  "records": [
+    {
+      "name": "restore original middle row while preserving current edits",
+      "passed": true,
+      "observation": {
+        "expected": {
+          "label": "Changed scope label",
+          "brief": "Fictional receiver\nNo real payment or provider.",
+          "cap": "2000.00",
+          "checkpoints": [
+            {
+              "title": "Twin <literal>",
+              "amount": " 0012.34 ",
+              "evidence": "FIRST proof\nretain it"
+            },
+            {
+              "title": "Twin <literal>",
+              "amount": "020.50",
+              "evidence": "\nMIDDLE_REMOVED_PROOF\n λ 😀 &  \n"
+            },
+            {
+              "title": "Final handoff",
+              "amount": "30.00",
+              "evidence": "\nEdited surviving last evidence\n"
+            }
+          ]
+        },
+        "actual": {
+          "label": "Changed scope label",
+          "brief": "Fictional receiver\nNo real payment or provider.",
+          "cap": "2000.00",
+          "checkpoints": [
+            {
+              "title": "Twin <literal>",
+              "amount": " 0012.34 ",
+              "evidence": "FIRST proof\nretain it"
+            },
+            {
+              "title": "Twin <literal>",
+              "amount": "020.50",
+              "evidence": "\nMIDDLE_REMOVED_PROOF\n λ 😀 &  \n"
+            },
+            {
+              "title": "Final handoff",
+              "amount": "30.00",
+              "evidence": "\nEdited surviving last evidence\n"
+            }
+          ]
+        },
+        "focus": "draft-1-title"
+      }
+    },
+    {
+      "name": "second removal replaces only the latest recovery",
+      "passed": true,
+      "observation": {
+        "expected": {
+          "label": "  Independent <scope> λ  ",
+          "brief": "Fictional receiver\nNo real payment or provider.",
+          "cap": "1000.00",
+          "checkpoints": [
+            {
+              "title": "Twin <literal>",
+              "amount": " 010.00 ",
+              "evidence": "FIRST proof\nretain it"
+            },
+            {
+              "title": "Final handoff",
+              "amount": "30.00",
+              "evidence": "LAST proof"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "successful add retires prior recovery",
+      "passed": true,
+      "observation": {
+        "draft": {
+          "label": "  Independent <scope> λ  ",
+          "brief": "Fictional receiver\nNo real payment or provider.",
+          "cap": "1000.00",
+          "checkpoints": [
+            {
+              "title": "Twin <literal>",
+              "amount": " 010.00 ",
+              "evidence": "FIRST proof\nretain it"
+            },
+            {
+              "title": "Final handoff",
+              "amount": "30.00",
+              "evidence": "LAST proof"
+            },
+            {
+              "title": "",
+              "amount": "",
+              "evidence": ""
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "successful copy retires prior recovery",
+      "passed": true,
+      "observation": {
+        "draft": {
+          "label": "  Independent <scope> λ  ",
+          "brief": "Fictional receiver\nNo real payment or provider.",
+          "cap": "1000.00",
+          "checkpoints": [
+            {
+              "title": "Twin <literal>",
+              "amount": " 010.00 ",
+              "evidence": "FIRST proof\nretain it"
+            },
+            {
+              "title": "Twin <literal>",
+              "amount": " 010.00 ",
+              "evidence": "FIRST proof\nretain it"
+            },
+            {
+              "title": "Final handoff",
+              "amount": "30.00",
+              "evidence": "LAST proof"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "successful move retires prior recovery",
+      "passed": true,
+      "observation": {
+        "draft": {
+          "label": "  Independent <scope> λ  ",
+          "brief": "Fictional receiver\nNo real payment or provider.",
+          "cap": "1000.00",
+          "checkpoints": [
+            {
+              "title": "Final handoff",
+              "amount": "30.00",
+              "evidence": "LAST proof"
+            },
+            {
+              "title": "Twin <literal>",
+              "amount": " 010.00 ",
+              "evidence": "FIRST proof\nretain it"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "successful review and return to editing cannot revive recovery",
+      "passed": true,
+      "observation": {
+        "draft": {
+          "label": "  Independent <scope> λ  ",
+          "brief": "Fictional receiver\nNo real payment or provider.",
+          "cap": "1000.00",
+          "checkpoints": [
+            {
+              "title": "Twin <literal>",
+              "amount": " 010.00 ",
+              "evidence": "FIRST proof\nretain it"
+            },
+            {
+              "title": "Final handoff",
+              "amount": "30.00",
+              "evidence": "LAST proof"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "failed validation and disabled boundary movement preserve recovery",
+      "passed": true,
+      "observation": {
+        "restoredInvalidDraft": {
+          "label": "  Independent <scope> λ  ",
+          "brief": "Fictional receiver\nNo real payment or provider.",
+          "cap": "1.00",
+          "checkpoints": [
+            {
+              "title": "Twin <literal>",
+              "amount": " 010.00 ",
+              "evidence": "FIRST proof\nretain it"
+            },
+            {
+              "title": "Twin <literal>",
+              "amount": "020.50",
+              "evidence": "\nMIDDLE_REMOVED_PROOF\n λ 😀 &  \n"
+            },
+            {
+              "title": "Final handoff",
+              "amount": "30.00",
+              "evidence": "LAST proof"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "actual downloads and file preview preserve recovery; undo invalidates preview",
+      "passed": true,
+      "observation": {
+        "savedWorkspaceKeys": [
+          "schema",
+          "version",
+          "fixtureOnly",
+          "paymentEvidence",
+          "stage",
+          "draft",
+          "events",
+          "evidenceDrafts"
+        ],
+        "previewCanceledByUndo": true
+      }
+    },
+    {
+      "name": "confirmed workspace replacement retires prior recovery",
+      "passed": true,
+      "observation": {
+        "restoredByFile": true,
+        "oldRecoveryRetired": true
+      }
+    }
+  ],
+  "downloads": [
+    {
+      "label": "removed-workspace",
+      "file": "downloads\\removed-workspace\\d1d5cb8d-9184-49fa-9206-3399b1ffcc86",
+      "suggestedFilename": "scopesignal-workspace-v1.json",
+      "bytes": 585,
+      "sha256": "5cd617116cc2f1b15ac1ae97601cd8e7aa1a097a25bab28c9d51895ebe63e2db"
+    },
+    {
+      "label": "removed-review",
+      "file": "downloads\\removed-review\\de31d59b-3730-4d11-83f8-5c02a93b427e",
+      "suggestedFilename": "scopesignal-scope-review.html",
+      "bytes": 4945,
+      "sha256": "1ce9be8e56b236e9d913a3e69f218ace8659910acbced9ebb1c5cc2e236f7292"
+    },
+    {
+      "label": "replacement-workspace",
+      "file": "downloads\\replacement-workspace\\59363ab6-556a-4e86-bd3b-dbee8984c610",
+      "suggestedFilename": "scopesignal-workspace-v1.json",
+      "bytes": 726,
+      "sha256": "2e80a8ffa884141abe6c747bd208dfe0eb07b1c2b780ffc5e62d93f98fba4817"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "restore original middle row while preserving current edits",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "name": "second removal replaces only the latest recovery",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "name": "successful add retires prior recovery",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "name": "successful copy retires prior recovery",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "name": "successful move retires prior recovery",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "name": "successful review and return to editing cannot revive recovery",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "name": "failed validation and disabled boundary movement preserve recovery",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "name": "actual downloads and file preview preserve recovery; undo invalidates preview",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "name": "confirmed workspace replacement retires prior recovery",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    }
+  ],
+  "pageErrors": [],
+  "harnessError": null,
+  "allPassed": true,
+  "bounds": [
+    "fresh native profile",
+    "no sandbox-disabling flags",
+    "external page requests blocked",
+    "authored fictional fields only",
+    "no product source file edits"
+  ]
+}

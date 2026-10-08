@@ -1,0 +1,29 @@
+{
+  "started": "2026-10-08T18:50:52.108Z",
+  "sourceHead": "08b4d1cc4656efcb12880bc1f970aa1dfed1d930",
+  "sourceTree": "d8b5638fbd626df5021491f333a92b30a24a3f40",
+  "runtime": "v24.21.0",
+  "driverSha256": "8a65b76e394682b116b157c643dde98b297734595150078e8d5e2fa25b1ac45d",
+  "runs": [
+    {
+      "name": "node",
+      "args": [
+        "--test"
+      ],
+      "status": 0,
+      "signal": null
+    },
+    {
+      "name": "browser",
+      "args": [
+        "C:\\Users\\minec\\hamon-ultra-2d2d276b-scope-removal\\current-receiving-08b4d1c\\current-browser-receiver.mjs",
+        "C:\\Users\\minec\\hamon-ultra-2d2d276b-scope-removal\\current-08b4d1c",
+        "C:\\Users\\minec\\hamon-ultra-2d2d276b-scope-removal\\current-receiving-08b4d1c\\browser",
+        "candidate"
+      ],
+      "status": 0,
+      "signal": null
+    }
+  ],
+  "finished": "2026-10-08T18:51:01.067Z"
+}

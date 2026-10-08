@@ -1,0 +1,81 @@
+{
+  "sourceHead": "08b4d1cc4656efcb12880bc1f970aa1dfed1d930",
+  "sourceTree": "d8b5638fbd626df5021491f333a92b30a24a3f40",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1751,
+      "sha256": "75a0489a8ced9d8cf7ee3740f3bcc99ed17d2b98362d822ef6c09a793c9f7e20"
+    },
+    {
+      "path": "browser/downloads/history-after/scopesignal-workspace-v1.json",
+      "bytes": 1331,
+      "sha256": "324873c296b3016cb7209f8f91ba342ea40684e1e8f2235ebd80260517b2e1f6"
+    },
+    {
+      "path": "browser/downloads/history-before/scopesignal-workspace-v1.json",
+      "bytes": 1331,
+      "sha256": "324873c296b3016cb7209f8f91ba342ea40684e1e8f2235ebd80260517b2e1f6"
+    },
+    {
+      "path": "browser/downloads/removed/scopesignal-workspace-v1.json",
+      "bytes": 807,
+      "sha256": "75e0728375cc77d946534ad67b8476a24becfaa1b627ecc808cc1116ef13aeb1"
+    },
+    {
+      "path": "browser/downloads/scopesignal-workspace-v1.json",
+      "bytes": 1003,
+      "sha256": "2a9f450507f2c643923e0be6ef156664f9f6e9b162bec576b2973f21e11fe3c3"
+    },
+    {
+      "path": "browser/phone.png",
+      "bytes": 32690,
+      "sha256": "749229b6a45f66bc2da3ac97c88cc79e85473e83f24d777529033e3a83d964a1"
+    },
+    {
+      "path": "browser/receipt.json",
+      "bytes": 8409,
+      "sha256": "43c216cbf5f556fd8d240130cffcb26c20736d17d23c88612a7897b5e726d81f"
+    },
+    {
+      "path": "browser.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "browser.stdout.log",
+      "bytes": 181,
+      "sha256": "df8643c5d47c6f895694a91cc657b5256d155a4b5bf9151676b51580dda15131"
+    },
+    {
+      "path": "composition.json",
+      "bytes": 11106,
+      "sha256": "6388d43bcf5373b86ffe8aac0ce7f2fad8376f74ccbec09f4003b878fd840af0"
+    },
+    {
+      "path": "current-browser-receiver.mjs",
+      "bytes": 21736,
+      "sha256": "8a65b76e394682b116b157c643dde98b297734595150078e8d5e2fa25b1ac45d"
+    },
+    {
+      "path": "execution.json",
+      "bytes": 875,
+      "sha256": "063e92d6d85a96fcb0a39c8c0327e3f1ccd539c735e8487477bc3d93ae57e70e"
+    },
+    {
+      "path": "node.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "node.stdout.log",
+      "bytes": 16289,
+      "sha256": "a230b75e91ad92a0ea08479f699432f098718eb6d72c4289b5fe6988d483c3ff"
+    },
+    {
+      "path": "source.json",
+      "bytes": 11077,
+      "sha256": "54be37915e43e65dae4a186c560dcf5c5bcf4d7d1defbabc13a70c05309c216e"
+    }
+  ]
+}

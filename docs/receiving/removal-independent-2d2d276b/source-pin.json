@@ -1,0 +1,32 @@
+{
+  "commit": "b2dccc7e6c47b3f6b5d6f49e1858725eb3a099ea",
+  "tree": "ec3853dcbe4ebe681d28068de36b0d9ea74d22d5",
+  "files": {
+    "fixture-timeline.css": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+    "index.html": "73171545f26fd82cfaf425ada9ba59b91bd16c5e68118a92152edd9a5c62155c",
+    "record-view.css": "71345c822fdf74c7160eb5aa09675fac19abe24603137a75d7431397eb59768d",
+    "record.html": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4",
+    "scope-compare.css": "22589796d131cbaa0adb049a0f4bf4c5f1f96f0791f6561221d120d6b418a02b",
+    "scope-compare.html": "630c6cdf5e9dcb4ac9b9c2e90507563832a8ba8af431ebbd9b7163783c27c5ee",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "scope.html": "e979410762e516cc22456a7288b24d92a59807578360eb8a899447eaa1f50225",
+    "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+    "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+    "src/fixture-timeline-view.mjs": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+    "src/fixture-timeline.mjs": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/record-reader.mjs": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8",
+    "src/record-view.mjs": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f",
+    "src/scope-compare-ui.mjs": "61d036fe3c4be9bbbaa969031bb90f401878174faf1e98ab67fb9f436af66ee6",
+    "src/scope-compare.mjs": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+    "src/scope-draft-removal.mjs": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/scope-revision-draft.mjs": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/scope-workspace.mjs": "ff4f51dddb15e132a0245de8c76ec76358807a7cef5783216e3f4a298b32c7bf",
+    "src/workers-ai.mjs": "d69676fceb4a3782e6eaa7edcff4d5a4d1b7d89fc0d4e642d3bdca6e079a938e",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+  }
+}
