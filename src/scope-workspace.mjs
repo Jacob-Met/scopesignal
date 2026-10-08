@@ -1,0 +1,286 @@
+import { MAX_CHECKPOINTS, draftFromFixture, draftBudget, validateScopeDraft, createScopeReview, formatUSD as money } from './scope-plan.mjs';
+import { capturePresentation } from './payment-status.mjs';
+
+const $ = selector => document.querySelector(selector);
+const form = $('#scope-form');
+let draft = draftFromFixture();
+let review = null;
+const evidenceDrafts = new Map();
+
+function element(tag, text, className) {
+  const node = document.createElement(tag);
+  if (text !== undefined) node.textContent = text;
+  if (className) node.className = className;
+  return node;
+}
+
+function draftField(index, key, caption, value, options = {}) {
+  const label = element('label', caption, key === 'evidence' ? 'scope-wide' : undefined);
+  const input = element(key === 'evidence' ? 'textarea' : 'input');
+  input.id = `draft-${index}-${key}`;
+  label.htmlFor = input.id;
+  input.dataset.field = key;
+  input.value = value;
+  input.required = true;
+  if (key === 'evidence') input.rows = 3;
+  if (key === 'amount') { input.inputMode = 'decimal'; input.autocomplete = 'off'; }
+  if (options.maxLength) input.maxLength = options.maxLength;
+  label.append(input);
+  return label;
+}
+
+function renderDraftRows() {
+  const list = $('#scope-draft-list');
+  list.replaceChildren();
+  draft.checkpoints.forEach((cp, index) => {
+    const row = element('fieldset', undefined, 'scope-row');
+    row.dataset.index = index;
+    row.append(element('legend', `Checkpoint ${index + 1}`));
+    const fields = element('div', undefined, 'scope-fields');
+    fields.append(
+      draftField(index, 'title', 'Deliverable', cp.title, { maxLength: 160 }),
+      draftField(index, 'amount', 'Milestone amount (USD)', cp.amount),
+      draftField(index, 'evidence', 'Planned acceptance evidence', cp.evidence, { maxLength: 5000 })
+    );
+    const remove = element('button', 'Remove checkpoint', 'text-button scope-remove');
+    remove.type = 'button';
+    remove.dataset.remove = index;
+    remove.setAttribute('aria-label', `Remove checkpoint ${index + 1}`);
+    remove.disabled = draft.checkpoints.length === 1;
+    row.append(fields, remove);
+    list.append(row);
+  });
+  $('#scope-add').disabled = draft.checkpoints.length >= MAX_CHECKPOINTS;
+  updateBudget();
+}
+
+function readDraft() {
+  return {
+    label: $('#scope-label').value, brief: $('#scope-brief').value, cap: $('#scope-cap').value,
+    checkpoints: [...document.querySelectorAll('.scope-row')].map(row => ({
+      title: row.querySelector('[data-field="title"]').value,
+      amount: row.querySelector('[data-field="amount"]').value,
+      evidence: row.querySelector('[data-field="evidence"]').value
+    }))
+  };
+}
+
+function updateBudget() {
+  const budget = draftBudget(readDraft());
+  const over = budget.unallocated !== null && budget.unallocated < 0;
+  $('#scope-budget').classList.toggle('over', over);
+  $('#scope-budget').textContent = budget.allocated === null || budget.cap === null
+    ? 'Enter valid USD amounts to see the allocation.'
+    : `${money(budget.allocated)} allocated · ${money(Math.abs(budget.unallocated))} ${over ? 'over the project cap' : 'unallocated within the cap'}`;
+}
+
+function fieldForError(field) {
+  if (field === 'checkpoints') return $('#scope-add');
+  if (!field.startsWith('checkpoints.')) return $(`#scope-${field}`);
+  const [, index, key] = field.split('.');
+  return $(`#draft-${index}-${key}`);
+}
+
+function clearErrors() {
+  $('#scope-errors').hidden = true;
+  $('#scope-errors').replaceChildren();
+  form.querySelectorAll('[aria-invalid]').forEach(input => input.removeAttribute('aria-invalid'));
+}
+
+function showErrors(errors) {
+  clearErrors();
+  const box = $('#scope-errors');
+  box.append(element('p', 'Review these fields before continuing:'));
+  const list = element('ul');
+  for (const error of errors) {
+    const row = element('li');
+    const field = fieldForError(error.field);
+    if (field) {
+      field.setAttribute('aria-invalid', 'true');
+      const link = element('a', error.message);
+      link.href = `#${field.id}`;
+      link.addEventListener('click', () => field.focus());
+      row.append(link);
+    } else row.textContent = error.message;
+    list.append(row);
+  }
+  box.append(list);
+  box.hidden = false;
+  box.focus();
+}
+
+const actionLabels = {
+  approve: 'Approve this evidence', order: 'Simulate order creation',
+  request: 'Simulate capture request', receipt: 'Simulate webhook receipt',
+  lose: 'Simulate lost response', duplicate: 'Simulate duplicate webhook',
+  reconcile: 'Simulate lookup: captured'
+};
+
+const actionMessages = {
+  approve: 'Evidence approved by the fixture reviewer.', order: 'Sandbox-shaped fixture order recorded.',
+  request: 'Fixture capture request recorded; its outcome is pending.',
+  receipt: 'Fixture webhook recorded. Check the current outcome below.',
+  lose: 'Lost response recorded. The outcome is unknown; do not repeat the capture.',
+  duplicate: 'Duplicate webhook recorded without counting it again.',
+  reconcile: 'Simulated lookup reconciled the capture once.'
+};
+
+function resultText(event) {
+  switch (event.type) {
+    case 'checkpoint.approved': return `Human-approved evidence: ${event.acceptedEvidence}`;
+    case 'paypal.order.created': return event.orderId;
+    case 'paypal.capture.requested': return 'Pending · await an outcome';
+    case 'paypal.capture.response_lost': return 'Unknown · do not retry';
+    case 'paypal.webhook.received': return event.duplicate ? 'Duplicate receipt · ignored for counting' : `Webhook received · ${event.captureId}`;
+    case 'paypal.capture.reconciled': return `Reconciled once · ${event.captureId}`;
+    default: return 'Recorded';
+  }
+}
+
+function renderReview() {
+  const state = review.snapshot();
+  $('#review-title').textContent = state.plan.label;
+  $('#review-brief').textContent = state.plan.brief;
+  $('#scope-total').textContent = money(state.plan.amount);
+  $('#scope-approved').textContent = `${state.approved} / ${state.checkpoints.length}`;
+  $('#scope-captured').textContent = money(state.captured);
+  $('#scope-remaining').textContent = money(state.remaining);
+  $('#scope-unallocated').textContent = `${money(state.total)} allocated to checkpoints. ${money(state.unallocated)} of the project cap remains unallocated.`;
+  $('#scope-edit').disabled = state.events.length > 0;
+  $('#scope-lock-note').textContent = state.events.length > 0
+    ? 'This scope is locked because approval has begun. Accepted evidence remains attached to its recorded decision.'
+    : 'You can edit this plan until the first checkpoint is approved.';
+  $('#draft-step').removeAttribute('aria-current');
+  $('#review-step').toggleAttribute('aria-current', state.approved === 0);
+  $('#simulate-step').toggleAttribute('aria-current', state.approved > 0);
+  const currentStep = state.approved === 0 ? $('#review-step') : $('#simulate-step');
+  currentStep.setAttribute('aria-current', 'step');
+  const list = $('#scope-review-list');
+  list.replaceChildren();
+  state.checkpoints.forEach((cp, index) => {
+    const card = element('article', undefined, 'scope-review-card');
+    card.dataset.checkpoint = cp.id;
+    card.append(element('span', `CHECKPOINT ${index + 1} · ${cp.approved ? 'HUMAN APPROVED' : 'NEEDS REVIEW'}`, 'cp-state'));
+    const heading = element('div', undefined, 'scope-review-heading');
+    const title = element('h3', cp.title);
+    title.id = `review-heading-${cp.id}`;
+    title.tabIndex = -1;
+    heading.append(title, element('strong', money(cp.amount)));
+    card.setAttribute('aria-labelledby', title.id);
+    card.append(heading);
+    const label = element('label', cp.approved ? 'Accepted evidence' : 'Evidence for human review');
+    const textarea = element('textarea', undefined, 'scope-evidence');
+    textarea.id = `review-evidence-${cp.id}`;
+    textarea.dataset.evidence = cp.id;
+    label.htmlFor = textarea.id;
+    textarea.rows = 3;
+    textarea.maxLength = 5000;
+    textarea.value = cp.approved ? cp.acceptedEvidence : evidenceDrafts.get(cp.id) ?? cp.evidence;
+    textarea.readOnly = cp.approved;
+    const actions = element('div', undefined, 'scope-review-actions');
+    for (const action of cp.actions) {
+      const button = element('button', actionLabels[action], `button ${action === 'approve' || action === 'reconcile' ? 'button-dark' : 'button-outline'}`);
+      button.type = 'button';
+      button.dataset.action = action;
+      button.dataset.checkpoint = cp.id;
+      actions.append(button);
+    }
+    const capture = capturePresentation(cp);
+    const status = element('div', undefined, `scope-review-state${cp.captureStatus === 'unknown' ? ' uncertain' : ''}`);
+    status.append(element('strong', capture.title), element('p', capture.guidance));
+    card.append(label, textarea, actions, status);
+    if (cp.orderId) {
+      const receipt = state.events.find(e => e.checkpointId === cp.id && e.captureId);
+      card.append(element('p', `Fixture order: ${cp.orderId}${receipt ? ` · Fixture capture: ${receipt.captureId}` : ''}`, 'scope-receipt-ids'));
+    }
+    list.append(card);
+  });
+  $('#scope-event-count').textContent = `${state.events.length} ${state.events.length === 1 ? 'event' : 'events'}`;
+  const body = $('#scope-event-body');
+  body.replaceChildren();
+  for (const event of state.events) {
+    const row = element('tr');
+    row.append(
+      element('td', String(event.seq).padStart(2, '0')),
+      element('td', state.checkpoints.find(cp => cp.id === event.checkpointId).title),
+      element('td', event.type), element('td', resultText(event))
+    );
+    body.append(row);
+  }
+}
+
+$('#scope-label').value = draft.label;
+$('#scope-brief').value = draft.brief;
+$('#scope-cap').value = draft.cap;
+renderDraftRows();
+form.addEventListener('input', updateBudget);
+$('#scope-add').addEventListener('click', () => {
+  draft = readDraft();
+  if (draft.checkpoints.length >= MAX_CHECKPOINTS) return;
+  draft.checkpoints.push({ title: '', amount: '', evidence: '' });
+  clearErrors();
+  renderDraftRows();
+  $(`#draft-${draft.checkpoints.length - 1}-title`).focus();
+});
+$('#scope-draft-list').addEventListener('click', event => {
+  const remove = event.target.closest('button[data-remove]');
+  if (!remove || remove.disabled) return;
+  draft = readDraft();
+  const index = Number(remove.dataset.remove);
+  draft.checkpoints.splice(index, 1);
+  clearErrors();
+  renderDraftRows();
+  $(`#draft-${Math.min(index, draft.checkpoints.length - 1)}-title`).focus();
+});
+form.addEventListener('submit', event => {
+  event.preventDefault();
+  draft = readDraft();
+  const validation = validateScopeDraft(draft);
+  if (!validation.ok) { showErrors(validation.errors); return; }
+  review = createScopeReview(draft);
+  evidenceDrafts.clear();
+  clearErrors();
+  form.hidden = true;
+  $('#scope-review').hidden = false;
+  $('#scope-action-status').textContent = 'Plan ready for review. No checkpoints are approved and no fixture payment events exist yet.';
+  $('#scope-action-status').classList.remove('error');
+  renderReview();
+  $('#review-title').focus();
+});
+$('#scope-edit').addEventListener('click', () => {
+  if (!review || review.snapshot().events.length > 0) return;
+  // Evidence edits made during review become part of the editable draft.
+  review.snapshot().checkpoints.forEach((cp, index) => {
+    draft.checkpoints[index].evidence = evidenceDrafts.get(cp.id) ?? cp.evidence;
+  });
+  review = null;
+  renderDraftRows();
+  form.hidden = false;
+  $('#scope-review').hidden = true;
+  $('#review-step').removeAttribute('aria-current');
+  $('#simulate-step').removeAttribute('aria-current');
+  $('#draft-step').setAttribute('aria-current', 'step');
+  $('#scope-label').focus();
+});
+$('#scope-review-list').addEventListener('input', event => {
+  if (event.target.dataset.evidence && !event.target.readOnly) evidenceDrafts.set(event.target.dataset.evidence, event.target.value);
+});
+$('#scope-review-list').addEventListener('click', event => {
+  const button = event.target.closest('button[data-action]');
+  if (!button || button.disabled || !review) return;
+  const id = button.dataset.checkpoint;
+  const action = button.dataset.action;
+  const status = $('#scope-action-status');
+  try {
+    const evidence = $(`#review-evidence-${id}`).value;
+    review.act(id, action, evidence);
+    status.textContent = actionMessages[action];
+    status.classList.remove('error');
+    renderReview();
+    $(`#review-heading-${id}`).focus();
+  } catch (error) {
+    status.textContent = error.message;
+    status.classList.add('error');
+    $(`#review-evidence-${id}`).focus();
+  }
+});

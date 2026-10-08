@@ -1,0 +1,59 @@
+{
+  "upstream_commit": "31d683e35e4a70065a514cc459eb83d8ffc573ca",
+  "upstream_tree": "79eed5d03b80d428b0c9163ccc6017a274f38650",
+  "reviewed_source_commit": "562c3a15a4eeeb4726f1ac3916987e267cb6cdc3",
+  "reviewed_source_tree": "bd8d606350ec7c9d4c0889dcf6efeaf89e0562b9",
+  "remote_delta_from_export": [
+    {
+      "path": "README.md",
+      "git_blob": "ac401c187486f461485d50180468ec92966c659f"
+    },
+    {
+      "path": "fixture-timeline.css",
+      "git_blob": "6fa3b725f49ef21346821cd8db599d0cd6728223"
+    },
+    {
+      "path": "index.html",
+      "git_blob": "39582877f21fa9d3f21aac5eaf84d73a0ebb6d14"
+    },
+    {
+      "path": "scripts/check-fixture-timeline.mjs",
+      "git_blob": "415cb4442f05abbc9d33dc9bf52e1b9abac588a5"
+    },
+    {
+      "path": "src/fixture-timeline-view.mjs",
+      "git_blob": "780e12706ee16ebcbf87692b7a21681c4722092d"
+    },
+    {
+      "path": "src/fixture-timeline.mjs",
+      "git_blob": "b686daaf49b53c44a06f4be8d9ef878886acf57e"
+    },
+    {
+      "path": "tests/fixture-timeline.test.mjs",
+      "git_blob": "7a21b46c09f68b73da79923c82cb628eaa79ef7c"
+    }
+  ],
+  "frozen_new_files_sha256": {
+    "scope.html": "462ff6bf987d27ac71bb9cd4c2c8a987f29159dea24c8b5fdd47e5cc532abf0b",
+    "scope-workspace.css": "ce89b3cc94e636388a63c63326ca1e030473c08bac1a6265eb24974083ff1420",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace.mjs": "8c2506cf4ecca18b8b40c979e7aa26a8274e93571f073c732118becaea12a3d7",
+    "tests/scope-plan.test.mjs": "f751de2db9141bf1f446a3071bef20081dbf2bbb4ec3b3ccf84c9e400c18b685",
+    "scripts/check-scope-workspace.mjs": "d2537d90f3ec7534a468fb693a7e77455f3942105acbc8980d98646bed20e028"
+  },
+  "existing_file_seams": {
+    "README.md": {
+      "before_sha256": "e74a3539513e1063c5c92c6d823d5bd67b3c9416dc02774f9ba3a0e72614eb00",
+      "after_sha256": "89ea22aef3e6c5b505e84696bc58346ee1570a647a0c92cbb0594f90eac19d6f"
+    },
+    "app.mjs": {
+      "before_sha256": "3d5e42368d08296c94a87bb3c0bafd9d67c931a48c5971bad59e63349db2d0b1",
+      "after_sha256": "dc8f1e777454eae392e9c693d8cedac11a8839c23b8c423eb7bb2d34852538bf"
+    },
+    "index.html": {
+      "before_sha256": "67aecde7407ce343258bba4e6c9734b586fb9f7b0f4aa380d0f60a601216b27e",
+      "after_sha256": "e1111ad42f478605fdc3d7f483afb905d5d0c6d3d9d58a6dc937fccd475d253a"
+    }
+  },
+  "method": "Exact pinned API timeline delta over the tree-identical export base; six accepted files added unchanged; exact Add handler/label substitutions and additive README section."
+}

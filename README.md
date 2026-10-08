@@ -37,6 +37,39 @@ Accepted evidence comes from its `checkpoint.approved` event. Text still in an u
 
 The file uses schema `scopesignal.fixture-record`, version `1`, and the fixed name `scopesignal-fixture-record-v1.json`. The optional native browser harness can exercise actual downloads with `SCOPESIGNAL_CHECK_SCOPE=fixture-record node scripts/check-browser.mjs`, using the installed browser options described above.
 
+## Author a fixture scope
+
+Choose **Build your own fixture scope** below the example checkpoints, or open
+`http://127.0.0.1:4173/scope.html`. This flow turns an editable fictional brief
+into checkpoints you can actually review and step through. The original
+seven-event Northstar example remains available from the return link.
+
+1. Edit the project name, brief, USD cap, and each checkpoint's deliverable,
+   amount, and planned acceptance evidence. Add or remove checkpoints before
+   review; the plan supports 1–12 checkpoints. All amounts must be positive,
+   use at most two decimal places, and fit within the project cap. Unallocated
+   cap is shown separately from the remaining allocated milestones.
+2. Select **Review this scope**. This prepares an unapproved plan with zero
+   events. You can return to the draft while no checkpoint is approved; edits
+   made to review evidence come back with you.
+3. Review each checkpoint's evidence and explicitly approve it. Its recorded
+   accepted text becomes read-only, other evidence drafts survive, and the
+   scope's deliverables and amounts are locked for that fixture session.
+4. Use the explicit simulation controls to create an order, request capture,
+   record a webhook or lost response, inspect a duplicate, and reconcile an
+   unknown result. Each control records one event in the existing fixture
+   ledger. An uncertain capture cannot be requested again, and receiving a
+   webhook while uncertain does not itself reconcile that outcome.
+
+The fictional plan and its events stay in this page's memory. Leaving or
+refreshing clears them. All simulation controls use the local fixture ledger;
+no payment or AI service is called.
+
+`node scripts/check-scope-workspace.mjs` runs the optional desktop and phone
+browser receiving checks with the same installed Playwright/Chromium variables
+as `scripts/check-browser.mjs`. It blocks external requests and records served
+source hashes, observed behavior, and screenshots. No packages are installed.
+
 ## Payment safety model
 
 - A milestone cannot create an order until a human explicitly approves it.

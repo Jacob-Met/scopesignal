@@ -1,0 +1,126 @@
+{
+  "schema": "scopesignal.scope-workspace-receiving.v1",
+  "mode": "scope-authoring",
+  "at": "2026-10-08T08:58:24.313Z",
+  "source": "/workspace/scratch/a219f250962c/estate-product/scopesignal-identity-composition",
+  "sourceCommit": null,
+  "node": "v24.19.0",
+  "browser": "153.0.8010.0",
+  "servedSha256": {
+    "app.mjs": "da57ada0385314edb4005ee95e999a786e80acac885d8170729222d26083b1bb",
+    "index.html": "069ad94bd9e5dc8ea623e73b6a9da135f4dc97b5a7f599dd5139a5e812653df6",
+    "scope-workspace.css": "ce89b3cc94e636388a63c63326ca1e030473c08bac1a6265eb24974083ff1420",
+    "scope.html": "462ff6bf987d27ac71bb9cd4c2c8a987f29159dea24c8b5fdd47e5cc532abf0b",
+    "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace.mjs": "8c2506cf4ecca18b8b40c979e7aa26a8274e93571f073c732118becaea12a3d7",
+    "styles.css": "59172817201e8e1ae3f5df6ea03e109a4351ad9686199917b48af99a429a608e"
+  },
+  "checks": [
+    {
+      "name": "desktop: example control opens a usable scope draft",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: authored fields survive adding and removing a checkpoint",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: invalid cap prevents review and identifies its field",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: review edits can return to the draft before any acceptance",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: approval records exact evidence while retaining another checkpoint draft",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: empty human acceptance is refused without discarding pending text",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: lost response, duplicate and lookup retain the correct current outcome",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: second checkpoint follows the ordinary receipt path with independent totals",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: layout and focus remain usable at the receiving viewport",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: a fresh fixture resets the session and enforces checkpoint count bounds",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: accepted large cent amounts remain exact throughout visible review and capture",
+      "result": "pass"
+    },
+    {
+      "name": "phone: example control opens a usable scope draft",
+      "result": "pass"
+    },
+    {
+      "name": "phone: authored fields survive adding and removing a checkpoint",
+      "result": "pass"
+    },
+    {
+      "name": "phone: invalid cap prevents review and identifies its field",
+      "result": "pass"
+    },
+    {
+      "name": "phone: review edits can return to the draft before any acceptance",
+      "result": "pass"
+    },
+    {
+      "name": "phone: approval records exact evidence while retaining another checkpoint draft",
+      "result": "pass"
+    },
+    {
+      "name": "phone: empty human acceptance is refused without discarding pending text",
+      "result": "pass"
+    },
+    {
+      "name": "phone: lost response, duplicate and lookup retain the correct current outcome",
+      "result": "pass"
+    },
+    {
+      "name": "phone: second checkpoint follows the ordinary receipt path with independent totals",
+      "result": "pass"
+    },
+    {
+      "name": "phone: layout and focus remain usable at the receiving viewport",
+      "result": "pass"
+    },
+    {
+      "name": "phone: a fresh fixture resets the session and enforces checkpoint count bounds",
+      "result": "pass"
+    },
+    {
+      "name": "phone: accepted large cent amounts remain exact throughout visible review and capture",
+      "result": "pass"
+    },
+    {
+      "name": "no browser script errors or unexpected external requests",
+      "result": "pass"
+    }
+  ],
+  "failures": [],
+  "pageErrors": [],
+  "externalRequests": [
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+  ],
+  "passed": true
+}
