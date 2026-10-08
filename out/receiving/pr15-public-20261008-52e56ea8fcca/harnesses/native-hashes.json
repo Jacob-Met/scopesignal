@@ -1,0 +1,10 @@
+{
+  "check-live-public.cjs": {
+    "bytes": 11351,
+    "sha256": "280f1a19a59899e00b8d4aec8e01b19a800f958dbfcbe8f2b6a703df452f8222"
+  },
+  "fetch-public-snapshot.cjs": {
+    "bytes": 2805,
+    "sha256": "861438a2307df7bae9569ada596bef2549ce1e994853c80f921748eb9ad3340e"
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "schema": "scopesignal.production-receiving-packet.v1",
+  "preparedAt": "2026-10-08T11:31:01.205014+00:00",
+  "sourceCommit": "8e50105fdc1645720e64ca83738727473c9f6acf",
+  "sourceTree": "fe302d490b55f9eb4f5cbd7f4d7e9fca7e134820",
+  "publicUrl": "https://jacobmetoyer.com/scopesignal/",
+  "deployment": {
+    "runId": 37766220718,
+    "url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37766220718",
+    "headSha": "8e50105fdc1645720e64ca83738727473c9f6acf",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "id": 113274433716,
+        "name": "test",
+        "conclusion": "success",
+        "completedAt": "2026-10-08T10:51:33Z"
+      },
+      {
+        "id": 113274484385,
+        "name": "deploy",
+        "conclusion": "success",
+        "completedAt": "2026-10-08T10:51:49Z"
+      }
+    ]
+  },
+  "checks": {
+    "publicAssets": 19,
+    "actualBrowserAssets": 14,
+    "liveGroups": 4,
+    "nativeCompositionGroups": 21,
+    "baselineReproduced": true
+  },
+  "manifestExcludesItself": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5154,
+      "sha256": "7757531178a9fa7eb355f65ef949dc91865c362931f21bb37856500de580680d",
+      "gitBlob": "14b1df74f0fb84450f37a07cecf7fb825e297994"
+    },
+    {
+      "path": "baseline/baseline-after-approval.png",
+      "bytes": 62943,
+      "sha256": "ba5c6bbae5e3d268540714b92f510d3ce1072db319a38f8f7bdcfe0d08fcac14",
+      "gitBlob": "31646432a126d1afe0423a291af0f00946a7f9a2"
+    },
+    {
+      "path": "baseline/baseline-before-approval.png",
+      "bytes": 64078,
+      "sha256": "48d39d57a8dff2e9d42be22a61a31585629fd3d5af92b92b49043bd6b0a3a52a",
+      "gitBlob": "1476caf6cf1ffb90badf1f3a49fb1636ecdc0f29"
+    },
+    {
+      "path": "baseline/browser-receipt.json",
+      "bytes": 5848,
+      "sha256": "812fa2198f5eef45086db083ee66a3d5b9dbb07e668da158cc8ac6c2032dbd67",
+      "gitBlob": "7892e402c233b255435d00aec93573d5b7c2cb79"
+    },
+    {
+      "path": "baseline/public-fetch-receipt.json",
+      "bytes": 10757,
+      "sha256": "a50b29d05256e8e26e290e10ba9acc288c16eebfc10e8830be8bbda400d25b11",
+      "gitBlob": "4ef8921beb7fde73d34a8196a0a91d482df1e00a"
+    },
+    {
+      "path": "harnesses/check-scopesignal-live-public.cjs",
+      "bytes": 11351,
+      "sha256": "280f1a19a59899e00b8d4aec8e01b19a800f958dbfcbe8f2b6a703df452f8222",
+      "gitBlob": "072fcc76d20bee53eb994e509ee4c1b5d9194098"
+    },
+    {
+      "path": "harnesses/check-scopesignal-public-baseline.mjs",
+      "bytes": 7017,
+      "sha256": "7ba24418f8047c212b55eecd6b6028a59168b59290913d12e0af229f15de3f3b",
+      "gitBlob": "8d120fdb8bbe9cf2ab9d570d6f3df506175d1a10"
+    },
+    {
+      "path": "harnesses/fetch-scopesignal-public-snapshot.cjs",
+      "bytes": 2805,
+      "sha256": "861438a2307df7bae9569ada596bef2549ce1e994853c80f921748eb9ad3340e",
+      "gitBlob": "3859a570f4fe3f9ab0d3dd63fea7274a826dd007"
+    },
+    {
+      "path": "harnesses/native-hashes.json",
+      "bytes": 276,
+      "sha256": "36b153d4964b79c57847fedef511fe010b3d1bc322219313cc0b3e02fe4f0d76",
+      "gitBlob": "b853ab28760e42e6281b266a723fdd9f2c5019ef"
+    },
+    {
+      "path": "live/browser-receipt.json",
+      "bytes": 67029,
+      "sha256": "4fb80a6b86073bfb41daecd56a38c4a02d7758a1343881a9139957a01758cb7e",
+      "gitBlob": "2e5d4c45dc44242387844b565df7c05c544d12ce"
+    },
+    {
+      "path": "live/downloads/scopesignal-fixture-record-v1.json",
+      "bytes": 3630,
+      "sha256": "a3775b68037148b39f90222e1bf3469f4aa28b6cfbed80b3404f1be7f72eb189",
+      "gitBlob": "8207a62908b89915d006d64545dc9f5eb08b16ca"
+    },
+    {
+      "path": "live/live-checkpoints.png",
+      "bytes": 57794,
+      "sha256": "f66b64845b9db0ef40410e3b671f03586beedc948e88471e067cdd1fcc29208c",
+      "gitBlob": "7de65205026c9effdae02756af7d0e03df9ba64e"
+    },
+    {
+      "path": "live/live-record.png",
+      "bytes": 104570,
+      "sha256": "c162f6506e1c75288092d42a94f106ca75f9eda00716614eafcaed2db68e87f1",
+      "gitBlob": "dbb3ced088d2592a11d67dbf1969860917893e9a"
+    },
+    {
+      "path": "live/public-fetch-receipt.json",
+      "bytes": 12143,
+      "sha256": "433f3bf2537728b55a7a9ff995a65e70de4de1f18f55b682854b037374709136",
+      "gitBlob": "42c7c9e62d290ddf2630b53c2773d6b41c957045"
+    },
+    {
+      "path": "live/release-config.json",
+      "bytes": 4984,
+      "sha256": "705b4db490aa5031c8401e6c808a1dd7c2edd5edb1cf358d7364bc04f3ee42df",
+      "gitBlob": "d490559a35d8a0b2f60ce1b83861d936665ce102"
+    },
+    {
+      "path": "native-screenshot-hashes.json",
+      "bytes": 579,
+      "sha256": "d53cc0c61399f92e7a9b4ac77fad9239bcd0fd931d5953afe6d74b687b161684",
+      "gitBlob": "0b637f40d0b4bf154fd271665dd5d99c23a783c6"
+    },
+    {
+      "path": "receiver-boundaries/custom-cdp-public.json",
+      "bytes": 6832,
+      "sha256": "0501eed571c43cbbd18f1c44a943e175de309631330659bf4c5c793876a1154e",
+      "gitBlob": "51f3f7be62e611c9ad419f7a9dc614badbb5a4f8"
+    },
+    {
+      "path": "receiver-boundaries/puppeteer-revalidation-r2.json",
+      "bytes": 67389,
+      "sha256": "17992cfbfabea4b5026194a6b7a461f25ee615db5c21832c470af8ea9ffb4ea5",
+      "gitBlob": "054ea28442f801ec554cda30ba316ca151942acb"
+    },
+    {
+      "path": "receiver-boundaries/puppeteer-selection-r1.json",
+      "bytes": 10105,
+      "sha256": "1baca635e51d0ce170264cdfe03635ef3cdc43a3bdcf00d0238d38eb7e4c3a05",
+      "gitBlob": "80039791230694254d2d6b3828e003f41d76a673"
+    },
+    {
+      "path": "record-composition/desktop-record.png",
+      "bytes": 293151,
+      "sha256": "c0a327c3da92e8b2f277cd439a3a80c8ad3a34bb0eac78c8705a2b2da5c5b021",
+      "gitBlob": "aa9aa67ab7b8533a7a954a69e642da84631a6195"
+    },
+    {
+      "path": "record-composition/downloads/scopesignal-fixture-record-v1.json",
+      "bytes": 3912,
+      "sha256": "0e1528a6dea485c467fba8a522f54603ab298f3fa872c1dd70ffda24276e4c70",
+      "gitBlob": "12eba620cd691c49fae5e10c26fa8055fe621783"
+    },
+    {
+      "path": "record-composition/phone-record.png",
+      "bytes": 262485,
+      "sha256": "ad3bdfe35e86a67c131e3561da735130da13d8ccec809712335489c18da8b791",
+      "gitBlob": "1fcdef33987f753e7a7b9e62255729540e79c0eb"
+    },
+    {
+      "path": "record-composition/receipt.json",
+      "bytes": 5705,
+      "sha256": "cdead504bbeaea917459b1bebde197d2babfd55a89204435402ea86e3bfe1976",
+      "gitBlob": "01b6d8774537a1a7da976af3f21b4fc8c86fe5c6"
+    },
+    {
+      "path": "record-composition/source-manifest.json",
+      "bytes": 3189,
+      "sha256": "052cc88244ffc3e200b41e750e2e364d93d9ee2e985b2044bb16983a48b823f6",
+      "gitBlob": "17e2d2b5c02bcdc69a57fce5d9333b60b447546b"
+    }
+  ]
+}

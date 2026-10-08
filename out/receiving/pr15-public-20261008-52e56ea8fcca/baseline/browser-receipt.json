@@ -1,0 +1,153 @@
+{
+  "schema": "scopesignal.public-draft-baseline.v1",
+  "startedAt": "2026-10-08T10:24:00.090Z",
+  "sourceCommit": "844f32d1a6d9798bc658fd77af79877bd41e5f86",
+  "publicUrl": "https://jacobmetoyer.com/scopesignal/",
+  "publicFetchAt": "2026-10-08T10:18:33.713Z",
+  "executionUrl": "http://127.0.0.1:41563",
+  "livePublicPageInteraction": false,
+  "sourceSha256": {
+    "index.html": "e1111ad42f478605fdc3d7f483afb905d5d0c6d3d9d58a6dc937fccd475d253a",
+    "app.mjs": "dc8f1e777454eae392e9c693d8cedac11a8839c23b8c423eb7bb2d34852538bf",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "fixture-timeline.css": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+    "src/fixture-timeline.mjs": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+    "src/fixture-timeline-view.mjs": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd"
+  },
+  "browserSha256": {
+    "index.html": "e1111ad42f478605fdc3d7f483afb905d5d0c6d3d9d58a6dc937fccd475d253a",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "fixture-timeline.css": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+    "app.mjs": "dc8f1e777454eae392e9c693d8cedac11a8839c23b8c423eb7bb2d34852538bf",
+    "src/fixture-timeline-view.mjs": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+    "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/fixture-timeline.mjs": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55"
+  },
+  "pageErrors": [],
+  "blockedRequests": [
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+  ],
+  "states": {
+    "initial": {
+      "draft": "Desktop and mobile handoff files plus implementation notes.",
+      "accepted": "Keyboard-only walkthrough and automated accessibility report for the billing setup.",
+      "acceptedReadonly": false,
+      "approved": "1 / 3",
+      "events": "7 events",
+      "captured": "$400.00",
+      "inputs": []
+    },
+    "beforeApproval": {
+      "draft": "\n\nDraft </textarea><img id=\"injected-evidence\" src=x onerror=\"globalThis.injectedEvidence=true\"> & “quoted” 😀\n",
+      "accepted": "  Human reviewed\naccessibility evidence  ",
+      "acceptedReadonly": false,
+      "approved": "1 / 3",
+      "events": "7 events",
+      "captured": "$400.00",
+      "inputs": [
+        {
+          "type": "input",
+          "trusted": true,
+          "target": "evidence-handoff"
+        },
+        {
+          "type": "input",
+          "trusted": true,
+          "target": "evidence-handoff"
+        },
+        {
+          "type": "input",
+          "trusted": true,
+          "target": "evidence-handoff"
+        },
+        {
+          "type": "input",
+          "trusted": true,
+          "target": "evidence-handoff"
+        },
+        {
+          "type": "input",
+          "trusted": true,
+          "target": "evidence-accessibility"
+        },
+        {
+          "type": "input",
+          "trusted": true,
+          "target": "evidence-accessibility"
+        },
+        {
+          "type": "input",
+          "trusted": true,
+          "target": "evidence-accessibility"
+        }
+      ]
+    },
+    "afterApproval": {
+      "draft": "Desktop and mobile handoff files plus implementation notes.",
+      "accepted": "Keyboard-only walkthrough and automated accessibility report for the billing setup.",
+      "acceptedReadonly": false,
+      "approved": "2 / 3",
+      "events": "8 events",
+      "captured": "$400.00",
+      "inputs": [
+        {
+          "type": "input",
+          "trusted": true,
+          "target": "evidence-handoff"
+        },
+        {
+          "type": "input",
+          "trusted": true,
+          "target": "evidence-handoff"
+        },
+        {
+          "type": "input",
+          "trusted": true,
+          "target": "evidence-handoff"
+        },
+        {
+          "type": "input",
+          "trusted": true,
+          "target": "evidence-handoff"
+        },
+        {
+          "type": "input",
+          "trusted": true,
+          "target": "evidence-accessibility"
+        },
+        {
+          "type": "input",
+          "trusted": true,
+          "target": "evidence-accessibility"
+        },
+        {
+          "type": "input",
+          "trusted": true,
+          "target": "evidence-accessibility"
+        },
+        {
+          "type": "click",
+          "trusted": true,
+          "target": "accessibility"
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Direct native Mac Chrome navigation to the public URL timed out before rendering.",
+    "This actual browser interaction executes untouched, hash-verified public response bytes from an owned loopback origin.",
+    "Synthetic fixture only; no payment, provider, credential or customer-data operations.",
+    "Third-party font requests blocked; screenshots show fallback fonts."
+  ],
+  "browser": "153.0.8010.0",
+  "baselineReproduced": true,
+  "passed": true,
+  "completedAt": "2026-10-08T10:24:01.797Z"
+}

@@ -1,0 +1,41 @@
+{
+  "schema": "scopesignal.receiving-files.v1",
+  "files": [
+    {
+      "path": "source-freeze.json",
+      "bytes": 12578,
+      "sha256": "2a1e4db676def0ceabd7ba4884138b6d04332ca7f6537ecc38be48ec3c2c1594",
+      "gitBlob": "01ac404b56a629bf76357ae19ea392b14d0b5595"
+    },
+    {
+      "path": "node-tests.log",
+      "bytes": 9081,
+      "sha256": "9654e8e19a7f7f47b2348bce66f6392cb1e02315e89b22e3684c8e98352f030c",
+      "gitBlob": "829a9017e2965d05faa64ca7f1391439a781b4fd"
+    },
+    {
+      "path": "combined-drafts.log",
+      "bytes": 3806,
+      "sha256": "510f801d92e9dc81e15232e26ec880273695f961b52ca07dc5543ca4a2fa2561",
+      "gitBlob": "b5b87eba05415de650f9a24058011b5ba0197fcf"
+    },
+    {
+      "path": "combined-drafts/desktop.png",
+      "bytes": 247483,
+      "sha256": "8abdac30afdade27d1054c430ebb0b9b79c6fe4cede81457266ff329c225d9e3",
+      "gitBlob": "d231d59d36eded17549a0978688cd54ae3364866"
+    },
+    {
+      "path": "combined-drafts/phone.png",
+      "bytes": 232963,
+      "sha256": "070236ca381f720fdec7b9a2fea9c56fa2e035e9068ec3769b5de5acc6c78f03",
+      "gitBlob": "9d621f36967944b0df4dce1b7d73259f47900516"
+    },
+    {
+      "path": "combined-drafts/receipt.json",
+      "bytes": 3806,
+      "sha256": "510f801d92e9dc81e15232e26ec880273695f961b52ca07dc5543ca4a2fa2561",
+      "gitBlob": "b5b87eba05415de650f9a24058011b5ba0197fcf"
+    }
+  ]
+}
