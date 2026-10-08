@@ -33,9 +33,19 @@ Optional browser receiving checks run with `node scripts/check-browser.mjs`. The
 
 Choose **Download fixture record** above the event ledger to save a versioned JSON snapshot. The file includes this fictional fixture's checkpoint definitions, recorded approvals, exact accepted evidence, current reduced capture outcomes and event history. It is explicitly labeled synthetic fixture data and is not a payment receipt or evidence of a real transaction.
 
-Accepted evidence comes from its `checkpoint.approved` event. Text still in an unapproved textarea, or an unrecorded edit to an already-approved field, is not an approval and is not included. Downloading does not change the ledger or save anything in browser storage. Keep the file if you want the recorded review after a page reload; this slice does not import it or restore a review from it.
+Accepted evidence comes from its `checkpoint.approved` event. Text still in an unapproved textarea, or an unrecorded edit to an already-approved field, is not an approval and is not included. Downloading does not change the ledger or save anything in browser storage. Keep the file if you want to inspect the recorded review after a page reload. The separate saved-record viewer can read it locally; it does not restore the active fixture.
 
 The file uses schema `scopesignal.fixture-record`, version `1`, and the fixed name `scopesignal-fixture-record-v1.json`. The optional native browser harness can exercise actual downloads with `SCOPESIGNAL_CHECK_SCOPE=fixture-record node scripts/check-browser.mjs`, using the installed browser options described above.
+
+## Inspect a saved record
+
+Choose **Inspect a saved record** beside the download button. It opens record.html in a separate tab, keeping the current fixture and unapproved drafts in their original tab. Choose a saved version 1 fixture-record JSON file to read its exact accepted evidence, checkpoint outcomes, totals and complete recorded event fields. The viewer accepts the fixed fixture format, up to 1 MiB of UTF-8 JSON and 512 events. It supports unfinished histories as well as completed recovery; an unknown outcome remains unknown.
+
+The reader checks the saved facts against the same ledger and exporter used by the fixture. Missing, extra, unsupported or inconsistent fields are refused. Invalid JSON, unsupported versions, file-read errors and oversized files leave the previously opened record intact. Choosing another file replaces the display only after it passes these checks; a slower earlier selection cannot replace a newer one. **Clear view** removes the displayed record and cancels any pending selection.
+
+The file stays on the device. The viewer has no external assets, network service, browser-storage writes or payment controls. Reloading clears the view; choose the saved file again to reopen it. These unsigned synthetic files are not proof of identity, human action, payment or a real transaction. This page inspects the existing fixed-fixture export and does not import an editable scope plan into the ledger.
+
+Reader tests run with npm test. Optional native browser receiving runs with node scripts/check-record-view.mjs and requires an existing Puppeteer Core and Chromium installation. Set SCOPESIGNAL_PUPPETEER to the Puppeteer Core module and SCOPESIGNAL_CHROME to the browser executable; SCOPESIGNAL_SOURCE and SCOPESIGNAL_EVIDENCE can choose the source and output directories. The receiver uses fresh desktop and phone contexts, actual exported downloads and native file selection, blocks external requests, and retains screenshots plus a source-hashed receipt. It also checks keyboard operation, retained reviews after refusal, competing reads and explicit clearing.
 
 ## Author a fixture scope
 
@@ -74,11 +84,23 @@ source hashes, observed behavior, and screenshots. No packages are installed.
 
 - A milestone cannot create an order until a human explicitly approves it.
 - Capture requires an approved milestone's order.
-- A lost capture response transitions to `unknown`; capture cannot be retried while uncertain.
-- Duplicate webhook `eventId` is recorded for audit but ignored for counting.
+- A pending capture cannot be requested again. Only a pending request can transition to `unknown` after a lost response; a late loss cannot undo a recorded capture.
+- Duplicate webhook `eventId` is recorded for audit but ignored for counting only when its checkpoint, capture, amount and currency match the original receipt. Conflicting reuse is refused.
+- A capture ID belongs to one checkpoint, and each checkpoint has at most one capture ID. A receipt observed during an unknown outcome retains this binding without counting the amount before reconciliation.
 - Reconciliation is allowed only for an unknown capture and is applied once.
 - The in-memory append-only ledger is deterministic; sequence numbers and logical times are fixture values, not a durable ledger or PayPal records.
 - This demo does not authenticate, authorize, or execute payments.
+
+The ledger methods and `append` use the same transition validation as `reduce`.
+Unsupported events, wrong order/amount/currency/environment bindings and invalid
+transitions throw without changing the stored journal. Returned `events` arrays
+are frozen snapshots. `append` admits supported scalar payloads and rejects
+accessors. The ledger copies its seed at creation, and returned state does not
+expose that seed for mutation. Checkpoint amounts and the project cap must use
+nonnegative safe integer cents; their total must fit the cap. Checkpoint IDs must
+be unique both as authored and under the existing uppercase fixture order-ID
+mapping. These are local fixture consistency checks, not provider verification.
+The original seven-event replay and its duplicate-receipt audit remain unchanged.
 
 ## Separated roles
 

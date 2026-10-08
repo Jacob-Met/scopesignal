@@ -1,0 +1,19 @@
+{
+  "operation": "create_pull_request",
+  "repository": "Jacob-Met/scopesignal",
+  "at": "2026-10-08T08:04:50Z",
+  "httpStatus": 403,
+  "reason": "GitHub secondary content-creation rate limit; temporary block",
+  "requestId": "76EC:E1A7E:AF07C:23F70A:6AC74E9F",
+  "sourceBranch": "estate/06e2ad0ce13f-capture-identity",
+  "publishedSourceCommit": "a928a03f8f169933dad90715b2b53a1f1e81f973",
+  "disposition": "Paused GitHub content writes; no credential or endpoint substitution.",
+  "delayedRetry": {
+    "at": "2026-10-08T08:09:35Z",
+    "elapsedSeconds": 285,
+    "httpStatus": 403,
+    "requestId": "5753:19024C:157E25:46844E:6AC74FA8",
+    "reason": "Same GitHub secondary content-creation rate limit",
+    "disposition": "No further GitHub writes before 2026-10-08T08:19:05Z; then one bounded retry if still needed."
+  }
+}

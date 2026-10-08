@@ -1,0 +1,13 @@
+{
+  "schema": "scopesignal.capture-identity.composition.v1",
+  "candidateCommit": "aa08e8d4ed791a449f8d2e2002dcc5320059a784",
+  "ownerUiBase": "f62e44a323318cb3acd0188faa89ca3b9a9f6025",
+  "ownerUiHead": "fcce3f7d4780aa29f0e961b9b098abfbd3b804aa",
+  "ledgerBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+  "appBlob": "eb52f2bf07efe99f026c47e6f1491d07324acd14",
+  "adaptedOwnerTestBlob": "caf890f13d7f927922a4d8dfd1e5fe9c5c9b1c82",
+  "adapterChange": "Only add capture-title and capture-guidance elements already required by default-branch PR #4; existing assertions unchanged.",
+  "node": "v24.19.0",
+  "status": 0,
+  "scope": "Isolated source compatibility only; owner PR2/3 branches and dispositions unchanged; no browser execution or public deployment."
+}

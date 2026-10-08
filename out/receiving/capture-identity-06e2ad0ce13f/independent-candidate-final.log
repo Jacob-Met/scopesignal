@@ -1,0 +1,15 @@
+✔ review: all deterministic fixture events and reduced values retain exact serialized bytes (3.926546ms)
+✔ review: money and order identity cannot disagree with approved checkpoint evidence (3.930512ms)
+✔ review: raw replay preserves approval, order, capture, and reconciliation prerequisites (1.665345ms)
+✔ review: altered receipt money cannot be disguised as an exact duplicate (0.939984ms)
+✔ review: accepted independent capture paths serialize and replay at every prefix (10.30427ms)
+✔ review: seed admission rejects checkpoint IDs that generate the same fixture order (0.999033ms)
+✔ review: event payload accessors cannot execute a nested append while metadata is reserved (0.350727ms)
+ℹ tests 7
+ℹ suites 0
+ℹ pass 7
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 121.909147
