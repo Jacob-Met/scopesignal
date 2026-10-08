@@ -1,0 +1,10 @@
+{
+  "issue": "Retired test/ copy remained in root tmpfs staging and Node automatic test discovery executed the fourteen tests twice. It was not on the seven-path product publication allowlist.",
+  "prior_log": "current-parent-node-tests.log",
+  "prior_reported_tests": 124,
+  "repeated_first_test_occurrences": 2,
+  "removed_path": "test/scope-draft-file.test.mjs",
+  "preserved_retired_sha256": "a7ca1a63c1c5e663ea12caeacd3e97418008552932e4f7e265742cc46deb8c04",
+  "production_change": false,
+  "final_test_log": "current-parent-canonical-node-tests.log"
+}

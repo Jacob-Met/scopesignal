@@ -1,0 +1,48 @@
+{
+  "schema": "scopesignal-draft-file-source-tests-v1",
+  "runtime": "v24.19.0",
+  "command": "node --test",
+  "initial_base": "317c1aad0bc6d68e4f4d3c70863b481741a61fb5",
+  "current_base": "8e50105fdc1645720e64ca83738727473c9f6acf",
+  "final_pass": 110,
+  "final_fail": 0,
+  "final_skip": 0,
+  "logs": [
+    {
+      "file": "current-parent-canonical-node-tests.log",
+      "sha256": "0d423e8e77145f61425de11c2fbdf7224534b61b564b18e985267a6cbcf3b183",
+      "bytes": 10392,
+      "totals": [
+        "ℹ tests 110",
+        "ℹ pass 110",
+        "ℹ fail 0",
+        "ℹ skipped 0"
+      ],
+      "role": "Canonical current-parent8e + seven-file feature; retired test absent"
+    },
+    {
+      "file": "current-parent-node-tests.log",
+      "sha256": "801aa1769368a53674fb1f87bcd5a96060c49ed7e009c00014c9590d3f181130",
+      "bytes": 11719,
+      "totals": [
+        "ℹ tests 124",
+        "ℹ pass 124",
+        "ℹ fail 0",
+        "ℹ skipped 0"
+      ],
+      "role": "Retained staging run with fourteen duplicate tests; superseded by canonical run"
+    },
+    {
+      "file": "source-tests.log",
+      "sha256": "799834b314ce19c4824bd998c0370eeed0561a04ec48c9ea97ec0fdbc8e5a66c",
+      "bytes": 9682,
+      "totals": [
+        "ℹ tests 102",
+        "ℹ pass 102",
+        "ℹ fail 0",
+        "ℹ skipped 0"
+      ],
+      "role": "Initial source-base317 + seven-file feature"
+    }
+  ]
+}

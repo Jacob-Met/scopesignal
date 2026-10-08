@@ -1,0 +1,234 @@
+{
+  "exit": 1,
+  "seconds": 29.458331707981415,
+  "source_mismatches": [],
+  "free_before": 1273884672,
+  "free_after": 1258606592,
+  "cases": [
+    {
+      "name": "desktop: actual incomplete download, reload, preview, cancel and reopen",
+      "passed": true,
+      "ms": 2152,
+      "raw_fields_equal": true,
+      "checkpoint_rows": 4,
+      "layout": {
+        "inner": 1440,
+        "scroll": 1440,
+        "save": {
+          "x": 1054.296875,
+          "right": 1146.328125,
+          "width": 92.03125,
+          "height": 38
+        },
+        "open": {
+          "x": 1156.328125,
+          "right": 1251,
+          "width": 94.671875,
+          "height": 38
+        }
+      },
+      "keyboard_open_cancel_replace": true
+    },
+    {
+      "name": "desktop: native file chooser cancellation preserves current draft",
+      "passed": true,
+      "ms": 969,
+      "current_draft_preserved": true,
+      "status": "Open canceled. Your current draft is unchanged."
+    },
+    {
+      "name": "desktop: valid draft starts fresh review; approvals cannot be resumed by file",
+      "passed": true,
+      "ms": 1731,
+      "unapproved_edit_retained": true,
+      "prior_approval_not_in_file": true,
+      "fresh_reopened_review": true
+    },
+    {
+      "name": "desktop: malformed/unsupported/state-bearing/oversized/invalid-UTF8 imports refuse without draft mutation",
+      "passed": true,
+      "ms": 1636,
+      "refused": [
+        {
+          "name": "malformed.json",
+          "status": "That file is not valid JSON. Choose a saved ScopeSignal draft."
+        },
+        {
+          "name": "unsupported-version.json",
+          "status": "Choose a ScopeSignal draft file saved by this page (version 1)."
+        },
+        {
+          "name": "wrong-schema.json",
+          "status": "Choose a ScopeSignal draft file saved by this page (version 1)."
+        },
+        {
+          "name": "approval-history.json",
+          "status": "The draft file has missing or unsupported fields."
+        },
+        {
+          "name": "row-approval.json",
+          "status": "Checkpoint 1 has missing or unsupported fields."
+        },
+        {
+          "name": "not-fixture.json",
+          "status": "Choose a ScopeSignal draft file saved by this page (version 1)."
+        },
+        {
+          "name": "zero-rows.json",
+          "status": "A draft must have 1\u201312 checkpoints."
+        },
+        {
+          "name": "too-many-rows.json",
+          "status": "A draft must have 1\u201312 checkpoints."
+        },
+        {
+          "name": "nontext-cap.json",
+          "status": "Draft cap must be text."
+        },
+        {
+          "name": "cr-textarea.json",
+          "status": "Draft brief must use LF line breaks, as saved by this page."
+        },
+        {
+          "name": "newline-input.json",
+          "status": "Draft label must stay on one line."
+        },
+        {
+          "name": "invalid-utf8.json",
+          "status": "Choose a UTF-8 JSON draft file. This file could not be decoded."
+        },
+        {
+          "name": "oversized.json",
+          "status": "Draft files must be 1 MiB or smaller."
+        }
+      ],
+      "original_input_nodes_preserved": true
+    },
+    {
+      "name": "desktop: UTF8 BOM and CRLF JSON layout preserve LF field values",
+      "passed": true,
+      "ms": 1112,
+      "values_equal_after_native_import_and_download": true
+    },
+    {
+      "name": "desktop: edit while native chooser is outstanding cannot be overwritten",
+      "passed": true,
+      "ms": 1134,
+      "current_edit_retained": true
+    },
+    {
+      "name": "desktop: edit during asynchronous native read invalidates pending file",
+      "passed": true,
+      "ms": 1128,
+      "current_edit_retained": true
+    },
+    {
+      "name": "desktop: later selection wins after older successful read",
+      "passed": true,
+      "ms": 1250,
+      "later_selection_received": true,
+      "older_success_suppressed": true
+    },
+    {
+      "name": "desktop: older read error cannot overwrite newer preview or status",
+      "passed": true,
+      "ms": 1139,
+      "newer_preview_preserved": true,
+      "older_error_suppressed": true
+    },
+    {
+      "name": "desktop: unreadable chosen file preserves fields and allows retry",
+      "passed": true,
+      "ms": 923,
+      "status": "The file could not be read. Your current draft is unchanged.",
+      "same_file_retry_succeeded": true
+    },
+    {
+      "name": "desktop: oversized native file is rejected before reading bytes",
+      "passed": true,
+      "ms": 593,
+      "read_calls": 0
+    },
+    {
+      "name": "desktop: edit or row change after preview invalidates replacement",
+      "passed": true,
+      "ms": 3059,
+      "results": [
+        {
+          "action": "type",
+          "stale_replacement_refused": true
+        },
+        {
+          "action": "add",
+          "stale_replacement_refused": true
+        },
+        {
+          "action": "remove",
+          "stale_replacement_refused": true
+        }
+      ]
+    },
+    {
+      "name": "desktop: raw DOM value change without input event blocks stale replacement",
+      "passed": true,
+      "ms": 1033,
+      "raw_current_values_checked": true
+    },
+    {
+      "name": "desktop: entering review during read invalidates import and stale errors",
+      "passed": true,
+      "ms": 1116,
+      "review_and_edit_preserved": true
+    },
+    {
+      "name": "desktop: no application storage or cross-origin effects",
+      "passed": false,
+      "ms": 15,
+      "error": "Expected values to be strictly equal:\n\n18 !== 0\n",
+      "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n18 !== 0\n\n    at file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/receiving/check-scope-draft-candidate.mjs:401:14\n    at async record (file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/receiving/check-scope-draft-candidate.mjs:109:20)\n    at async file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/receiving/check-scope-draft-candidate.mjs:398:5",
+      "status": ""
+    },
+    {
+      "name": "phone: actual incomplete download, reload, preview, cancel and reopen",
+      "passed": true,
+      "ms": 2331,
+      "raw_fields_equal": true,
+      "checkpoint_rows": 4,
+      "layout": {
+        "inner": 390,
+        "scroll": 390,
+        "save": {
+          "x": 39,
+          "right": 190,
+          "width": 151,
+          "height": 38
+        },
+        "open": {
+          "x": 200,
+          "right": 351,
+          "width": 151,
+          "height": 38
+        }
+      },
+      "keyboard_open_cancel_replace": true
+    },
+    {
+      "name": "phone: native file chooser cancellation preserves current draft",
+      "passed": true,
+      "ms": 804,
+      "current_draft_preserved": true,
+      "status": "Open canceled. Your current draft is unchanged."
+    },
+    {
+      "name": "phone: valid draft starts fresh review; approvals cannot be resumed by file",
+      "passed": true,
+      "ms": 1695,
+      "unapproved_edit_retained": true,
+      "prior_approval_not_in_file": true,
+      "fresh_reopened_review": true
+    }
+  ],
+  "fatal": null,
+  "page_errors": [],
+  "stderr": ""
+}

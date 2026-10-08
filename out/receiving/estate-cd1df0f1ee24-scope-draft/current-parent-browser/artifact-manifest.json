@@ -1,0 +1,90 @@
+{
+  "parent_commit": "8e50105fdc1645720e64ca83738727473c9f6acf",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6393,
+      "sha256": "9757abe6d5ac923a7d90a08ca87487999bf57fe826e423b58fd4f5fcdfdb2590"
+    },
+    {
+      "path": "composition-driver.json",
+      "bytes": 10257,
+      "sha256": "0530abb98d3d6e9a6c98beeb4ad37c8607001315ffec8571e3d535bf65a4b3b6"
+    },
+    {
+      "path": "composition-driver.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "composition-driver.stdout",
+      "bytes": 7865,
+      "sha256": "db61f64991cdbf6dd5fdc6df5729979b8b7f4ce4f09c4492256b78f2662e9cf3"
+    },
+    {
+      "path": "composition-evidence/phone-reopened.png",
+      "bytes": 185567,
+      "sha256": "b2e03c21929f4632ca84bc14dd35bd4a3d7e81f39ca9c1a23fc10ee7146a0676"
+    },
+    {
+      "path": "composition-evidence/receipt.json",
+      "bytes": 9576,
+      "sha256": "1ce48a5105dcea2f32e267222ab3227685cf3352d46cbf7ddafaaad3230a6963"
+    },
+    {
+      "path": "composition-evidence/scopesignal-scope-draft-v1.json",
+      "bytes": 772,
+      "sha256": "b24435101cf22d88977105aa360127069f540e8a5870d56244dd5a0d8a3b45dd"
+    },
+    {
+      "path": "composition-final-driver.json",
+      "bytes": 9614,
+      "sha256": "4397e446a5a738b88289015e947ac5de1d9fe6bc15c2af08a7142d19a54d96f7"
+    },
+    {
+      "path": "composition-final-driver.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "composition-final-driver.stdout",
+      "bytes": 7110,
+      "sha256": "d29c8ed5d862edcff8fc9f4eb573f22122582c680e1374eb7fa4f88bf659d26b"
+    },
+    {
+      "path": "composition-final-evidence/phone-reopened.png",
+      "bytes": 185567,
+      "sha256": "b2e03c21929f4632ca84bc14dd35bd4a3d7e81f39ca9c1a23fc10ee7146a0676"
+    },
+    {
+      "path": "composition-final-evidence/receipt.json",
+      "bytes": 8900,
+      "sha256": "8bbbdf5856669bf4426dc074ee43ec161d32f6def260fad87a8bb371cc7b04ea"
+    },
+    {
+      "path": "composition-final-evidence/scopesignal-scope-draft-v1.json",
+      "bytes": 772,
+      "sha256": "b24435101cf22d88977105aa360127069f540e8a5870d56244dd5a0d8a3b45dd"
+    },
+    {
+      "path": "composition-manifest.json",
+      "bytes": 11799,
+      "sha256": "1041c90d9f0ca349787061c2e273da234866899cbe2179aee2644f89d7635747"
+    },
+    {
+      "path": "pages-custody-readback.json",
+      "bytes": 2909,
+      "sha256": "a26f6cca0f8936a2cde99c958f001123f9f8ff4e0d7f6e78b554212834fe37ff"
+    },
+    {
+      "path": "receiving/check-scope-draft-positive-corrected.mjs",
+      "bytes": 10638,
+      "sha256": "99e776e717d82d3c127d4a6088cb7dc07a110314026d5d8c203522b82127896f"
+    },
+    {
+      "path": "receiving/check-scope-draft-positive.mjs",
+      "bytes": 10422,
+      "sha256": "e229922f3b6f0be4a68df67aa0b61657011b313d3444dc1a510aad9a1c6cc697"
+    }
+  ]
+}

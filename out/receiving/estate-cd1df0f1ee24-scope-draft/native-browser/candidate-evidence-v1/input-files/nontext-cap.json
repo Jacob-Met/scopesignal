@@ -1,0 +1,22 @@
+{
+  "schema": "scopesignal.scope-draft",
+  "version": 1,
+  "fixtureOnly": true,
+  "draft": {
+    "label": "  Fictional reopened project 日本語 😀  ",
+    "brief": "\nFirst line & <brief>\nSecond line — naïve\n",
+    "cap": 90,
+    "checkpoints": [
+      {
+        "title": "  Design <concept>  ",
+        "amount": "0040.10",
+        "evidence": "\nEvidence α\nLiteral <img id=\"scope-injected\" src=\"https://example.invalid/no\"> 😀\n"
+      },
+      {
+        "title": "Delivery",
+        "amount": "20.00",
+        "evidence": "Human reviews the fictional deliverable."
+      }
+    ]
+  }
+}

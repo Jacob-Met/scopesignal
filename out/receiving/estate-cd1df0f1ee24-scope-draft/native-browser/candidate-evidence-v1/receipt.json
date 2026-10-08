@@ -1,0 +1,417 @@
+{
+  "captured_at": "2026-10-08T11:16:03.821Z",
+  "mode": "candidate-v1",
+  "source": "/Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/candidate-v1",
+  "node": "v26.3.0",
+  "host": "Mac.lan",
+  "os": "25.6.0",
+  "browser": "Chrome/154.0.8037.98",
+  "puppeteer_entry": "/Users/me/.npm/_npx/4b4c857f6efdfb61/node_modules/puppeteer-core/lib/puppeteer/puppeteer-core.js",
+  "base_commit": "317c1aad0bc6d68e4f4d3c70863b481741a61fb5",
+  "cases": [
+    {
+      "name": "desktop: actual incomplete download, reload, preview, cancel and reopen",
+      "passed": true,
+      "ms": 2152,
+      "raw_fields_equal": true,
+      "checkpoint_rows": 4,
+      "layout": {
+        "inner": 1440,
+        "scroll": 1440,
+        "save": {
+          "x": 1054.296875,
+          "right": 1146.328125,
+          "width": 92.03125,
+          "height": 38
+        },
+        "open": {
+          "x": 1156.328125,
+          "right": 1251,
+          "width": 94.671875,
+          "height": 38
+        }
+      },
+      "keyboard_open_cancel_replace": true
+    },
+    {
+      "name": "desktop: native file chooser cancellation preserves current draft",
+      "passed": true,
+      "ms": 969,
+      "current_draft_preserved": true,
+      "status": "Open canceled. Your current draft is unchanged."
+    },
+    {
+      "name": "desktop: valid draft starts fresh review; approvals cannot be resumed by file",
+      "passed": true,
+      "ms": 1731,
+      "unapproved_edit_retained": true,
+      "prior_approval_not_in_file": true,
+      "fresh_reopened_review": true
+    },
+    {
+      "name": "desktop: malformed/unsupported/state-bearing/oversized/invalid-UTF8 imports refuse without draft mutation",
+      "passed": true,
+      "ms": 1636,
+      "refused": [
+        {
+          "name": "malformed.json",
+          "status": "That file is not valid JSON. Choose a saved ScopeSignal draft."
+        },
+        {
+          "name": "unsupported-version.json",
+          "status": "Choose a ScopeSignal draft file saved by this page (version 1)."
+        },
+        {
+          "name": "wrong-schema.json",
+          "status": "Choose a ScopeSignal draft file saved by this page (version 1)."
+        },
+        {
+          "name": "approval-history.json",
+          "status": "The draft file has missing or unsupported fields."
+        },
+        {
+          "name": "row-approval.json",
+          "status": "Checkpoint 1 has missing or unsupported fields."
+        },
+        {
+          "name": "not-fixture.json",
+          "status": "Choose a ScopeSignal draft file saved by this page (version 1)."
+        },
+        {
+          "name": "zero-rows.json",
+          "status": "A draft must have 1–12 checkpoints."
+        },
+        {
+          "name": "too-many-rows.json",
+          "status": "A draft must have 1–12 checkpoints."
+        },
+        {
+          "name": "nontext-cap.json",
+          "status": "Draft cap must be text."
+        },
+        {
+          "name": "cr-textarea.json",
+          "status": "Draft brief must use LF line breaks, as saved by this page."
+        },
+        {
+          "name": "newline-input.json",
+          "status": "Draft label must stay on one line."
+        },
+        {
+          "name": "invalid-utf8.json",
+          "status": "Choose a UTF-8 JSON draft file. This file could not be decoded."
+        },
+        {
+          "name": "oversized.json",
+          "status": "Draft files must be 1 MiB or smaller."
+        }
+      ],
+      "original_input_nodes_preserved": true
+    },
+    {
+      "name": "desktop: UTF8 BOM and CRLF JSON layout preserve LF field values",
+      "passed": true,
+      "ms": 1112,
+      "values_equal_after_native_import_and_download": true
+    },
+    {
+      "name": "desktop: edit while native chooser is outstanding cannot be overwritten",
+      "passed": true,
+      "ms": 1134,
+      "current_edit_retained": true
+    },
+    {
+      "name": "desktop: edit during asynchronous native read invalidates pending file",
+      "passed": true,
+      "ms": 1128,
+      "current_edit_retained": true
+    },
+    {
+      "name": "desktop: later selection wins after older successful read",
+      "passed": true,
+      "ms": 1250,
+      "later_selection_received": true,
+      "older_success_suppressed": true
+    },
+    {
+      "name": "desktop: older read error cannot overwrite newer preview or status",
+      "passed": true,
+      "ms": 1139,
+      "newer_preview_preserved": true,
+      "older_error_suppressed": true
+    },
+    {
+      "name": "desktop: unreadable chosen file preserves fields and allows retry",
+      "passed": true,
+      "ms": 923,
+      "status": "The file could not be read. Your current draft is unchanged.",
+      "same_file_retry_succeeded": true
+    },
+    {
+      "name": "desktop: oversized native file is rejected before reading bytes",
+      "passed": true,
+      "ms": 593,
+      "read_calls": 0
+    },
+    {
+      "name": "desktop: edit or row change after preview invalidates replacement",
+      "passed": true,
+      "ms": 3059,
+      "results": [
+        {
+          "action": "type",
+          "stale_replacement_refused": true
+        },
+        {
+          "action": "add",
+          "stale_replacement_refused": true
+        },
+        {
+          "action": "remove",
+          "stale_replacement_refused": true
+        }
+      ]
+    },
+    {
+      "name": "desktop: raw DOM value change without input event blocks stale replacement",
+      "passed": true,
+      "ms": 1033,
+      "raw_current_values_checked": true
+    },
+    {
+      "name": "desktop: entering review during read invalidates import and stale errors",
+      "passed": true,
+      "ms": 1116,
+      "review_and_edit_preserved": true
+    },
+    {
+      "name": "desktop: no application storage or cross-origin effects",
+      "passed": false,
+      "ms": 15,
+      "error": "Expected values to be strictly equal:\n\n18 !== 0\n",
+      "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n18 !== 0\n\n    at file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/receiving/check-scope-draft-candidate.mjs:401:14\n    at async record (file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/receiving/check-scope-draft-candidate.mjs:109:20)\n    at async file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/receiving/check-scope-draft-candidate.mjs:398:5",
+      "status": ""
+    },
+    {
+      "name": "phone: actual incomplete download, reload, preview, cancel and reopen",
+      "passed": true,
+      "ms": 2331,
+      "raw_fields_equal": true,
+      "checkpoint_rows": 4,
+      "layout": {
+        "inner": 390,
+        "scroll": 390,
+        "save": {
+          "x": 39,
+          "right": 190,
+          "width": 151,
+          "height": 38
+        },
+        "open": {
+          "x": 200,
+          "right": 351,
+          "width": 151,
+          "height": 38
+        }
+      },
+      "keyboard_open_cancel_replace": true
+    },
+    {
+      "name": "phone: native file chooser cancellation preserves current draft",
+      "passed": true,
+      "ms": 804,
+      "current_draft_preserved": true,
+      "status": "Open canceled. Your current draft is unchanged."
+    },
+    {
+      "name": "phone: valid draft starts fresh review; approvals cannot be resumed by file",
+      "passed": true,
+      "ms": 1695,
+      "unapproved_edit_retained": true,
+      "prior_approval_not_in_file": true,
+      "fresh_reopened_review": true
+    }
+  ],
+  "production_downloads": [
+    {
+      "name": "desktop-unfinished",
+      "path": "downloads/desktop-unfinished/scopesignal-scope-draft-v1.json",
+      "bytes": 917,
+      "sha256": "ebc46ed478781a895b92c3c5f56176adab8af94af9dcfa816e29372f0c8c71cb",
+      "native_download": true
+    },
+    {
+      "name": "desktop-edited-before-review",
+      "path": "downloads/desktop-edited-before-review/scopesignal-scope-draft-v1.json",
+      "bytes": 549,
+      "sha256": "b2c8952c0d6eddc75e16f31803ecd0cba792a82b7964fa7a882e35f6664f0f00",
+      "native_download": true
+    },
+    {
+      "name": "bom-roundtrip",
+      "path": "downloads/bom-roundtrip/scopesignal-scope-draft-v1.json",
+      "bytes": 612,
+      "sha256": "fa9813efc209ec0f56fa0de890f075654363ae69f4071d38d9bb10bb9f4a2500",
+      "native_download": true
+    },
+    {
+      "name": "phone-unfinished",
+      "path": "downloads/phone-unfinished/scopesignal-scope-draft-v1.json",
+      "bytes": 915,
+      "sha256": "ea2598c113605151370cbc264933e7b9fc1b6347f4b44c8014055f69e3ea5a40",
+      "native_download": true
+    },
+    {
+      "name": "phone-edited-before-review",
+      "path": "downloads/phone-edited-before-review/scopesignal-scope-draft-v1.json",
+      "bytes": 549,
+      "sha256": "b2c8952c0d6eddc75e16f31803ecd0cba792a82b7964fa7a882e35f6664f0f00",
+      "native_download": true
+    }
+  ],
+  "served": {
+    "scope.html": {
+      "bytes": 7675,
+      "sha256": "e9c53faed5eb11ef5db15962a39984f2a9c779ea664d3b79b3a542b2d0fede25",
+      "git_blob": "7da0457c813daeb2e084819837f79abc184716a7"
+    },
+    "src/scope-workspace.mjs": {
+      "bytes": 13205,
+      "sha256": "b199b86bb219f8fbb7a4ac2a59282cb8ee686d059dc02fe547474d5bfd6255d9",
+      "git_blob": "f10826a229d1ce578a8e9929f91070c42e74fc9a"
+    },
+    "styles.css": {
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    "scope-workspace.css": {
+      "bytes": 5756,
+      "sha256": "ae39af44bf48acb9ef83cbaf5613eb865de200c78a2cf9e31d61ed55abccdfc5",
+      "git_blob": "f227f7b10cd7d81a393e240eb6d84f9482588622"
+    },
+    "src/payment-status.mjs": {
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    "src/scope-plan.mjs": {
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    "src/scope-draft-controls.mjs": {
+      "bytes": 5785,
+      "sha256": "cefca1bd57ed65e3fca252e11f4aacc19a42c0e3a0e3b5d7ab1832bfefbe7ab8",
+      "git_blob": "cd4000f762d97533812075e56a22d29110a76251"
+    },
+    "src/scope-draft-file.mjs": {
+      "bytes": 4291,
+      "sha256": "6aca755bea26043b3975d2142b2065d51894c5f73f985997d69a6d10008ae44a",
+      "git_blob": "0f14cfe06d23a9597a2f5ca7315b4becc26a0218"
+    },
+    "src/ledger.mjs": {
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    }
+  },
+  "external_requests_blocked": [
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "phone",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "phone",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "phone",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "phone",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "view": "phone",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    }
+  ],
+  "page_errors": [],
+  "fatal": null,
+  "independent_oracle": "Observed actual form strings and native downloaded JSON. No application implementation, parser, validator or ledger imported by this driver.",
+  "limits": "Native Chrome with two viewport sizes, private temporary profile and loopback frozen source. Controlled File read promises exercise async boundaries. No Safari/Firefox/real phone, deployment or installed-service adoption claimed."
+}

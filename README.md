@@ -71,9 +71,44 @@ seven-event Northstar example remains available from the return link.
    ledger. An uncertain capture cannot be requested again, and receiving a
    webhook while uncertain does not itself reconcile that outcome.
 
-The fictional plan and its events stay in this page's memory. Leaving or
-refreshing clears them. All simulation controls use the local fixture ledger;
-no payment or AI service is called.
+The current plan and its simulated events stay in this page's memory. Save the
+editable draft before leaving or refreshing to keep your authored plan. All
+simulation controls use the local fixture ledger; no payment or AI service is
+called.
+
+### Save and reopen an authored draft
+
+In the draft step, choose **Save draft** to download
+`scopesignal-scope-draft-v1.json`. It preserves the project name, brief, cap,
+checkpoint order, amount text and planned acceptance evidence, including blank
+fields and unfinished amounts. Saving does not require a review-ready plan and
+does not trim text or round amounts. Keep the downloaded file; there is no
+automatic browser storage.
+
+Choose **Open draft** and select the file to preview its name, readiness, brief,
+cap and checkpoints. **Replace this draft** applies it; **Cancel** keeps the
+current draft. Save any current edits you want to retain before replacing them.
+Malformed, unsupported, unreadable or oversized files leave the current draft
+intact. A later file selection supersedes an earlier read. Editing the draft,
+changing its checkpoint rows or entering review cancels a pending open, so a
+delayed read or an old preview cannot overwrite newer work.
+
+These files contain editable fictional plans. They carry no approvals, accepted
+payment evidence or simulated ledger events; every reopened plan enters review
+with zero approvals and zero events. While reviewing an unapproved plan, use
+**Edit draft** to return before saving. The existing approval lock remains in
+place once decisions have been recorded. The original fixture-record download
+and its separate read-only viewer keep their existing format and behavior.
+
+Draft files use schema `scopesignal.scope-draft`, version `1`, and
+`fixtureOnly: true`, with a `draft` object containing only `label`, `brief`,
+`cap`, and 1–12 `checkpoints`. Each checkpoint contains only `title`, `amount`,
+and `evidence`. All editable values are strings. UTF-8 JSON is limited to
+1 MiB; a UTF-8 BOM and CRLF JSON layout are accepted. Field values follow the
+native form: the brief and evidence use LF newlines, and the other fields stay
+on one line. Incompatible external field line breaks are refused rather than
+silently changed. The ordinary review action remains responsible for required
+text, field lengths, valid USD amounts and the project cap.
 
 `node scripts/check-scope-workspace.mjs` runs the optional desktop and phone
 browser receiving checks with the same installed Playwright/Chromium variables

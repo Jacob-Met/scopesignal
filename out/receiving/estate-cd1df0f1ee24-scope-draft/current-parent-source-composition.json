@@ -1,0 +1,272 @@
+{
+  "schema": "scopesignal-draft-source-composition-v1",
+  "parent_commit": "8e50105fdc1645720e64ca83738727473c9f6acf",
+  "parent_tree": "fe302d490b55f9eb4f5cbd7f4d7e9fca7e134820",
+  "initial_source_base": "317c1aad0bc6d68e4f4d3c70863b481741a61fb5",
+  "source_files": 45,
+  "prior_source_files": 42,
+  "intended_payload": [
+    "README.md",
+    "scope.html",
+    "scope-workspace.css",
+    "src/scope-workspace.mjs",
+    "src/scope-draft-file.mjs",
+    "src/scope-draft-controls.mjs",
+    "tests/scope-draft-file.test.mjs"
+  ],
+  "inherited_source": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "parent_git_blob": "17f31c8aa4e6d508c670a175faa6a5e16b07da8d",
+      "actual_git_blob": "17f31c8aa4e6d508c670a175faa6a5e16b07da8d",
+      "intended_change": false
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "parent_git_blob": "b97f2716367bb4c5ed930693e3c3e7fdc02c792e",
+      "actual_git_blob": "b97f2716367bb4c5ed930693e3c3e7fdc02c792e",
+      "intended_change": false
+    },
+    {
+      "path": ".gitignore",
+      "parent_git_blob": "79e551a6eb925eda4b8adfc5b09c1d9848d5918c",
+      "actual_git_blob": "79e551a6eb925eda4b8adfc5b09c1d9848d5918c",
+      "intended_change": false
+    },
+    {
+      "path": ".gitlab-ci.yml",
+      "parent_git_blob": "b42479b2717d0d50d7a2407bbe16807f78153205",
+      "actual_git_blob": "b42479b2717d0d50d7a2407bbe16807f78153205",
+      "intended_change": false
+    },
+    {
+      "path": "LICENSE",
+      "parent_git_blob": "1a541dd5e3dfd1749e02875412cb764012813675",
+      "actual_git_blob": "1a541dd5e3dfd1749e02875412cb764012813675",
+      "intended_change": false
+    },
+    {
+      "path": "README.md",
+      "parent_git_blob": "bed1ddb51e4e2307ba2e6bc54041a9ad298ed327",
+      "actual_git_blob": "25677a64fc14e35cd8f8c08f3a1cda268813eda0",
+      "intended_change": true
+    },
+    {
+      "path": "app.mjs",
+      "parent_git_blob": "7398ab71912a6e5e55a1da8ccef3f8fdee82c135",
+      "actual_git_blob": "7398ab71912a6e5e55a1da8ccef3f8fdee82c135",
+      "intended_change": false
+    },
+    {
+      "path": "fixture-timeline.css",
+      "parent_git_blob": "6fa3b725f49ef21346821cd8db599d0cd6728223",
+      "actual_git_blob": "6fa3b725f49ef21346821cd8db599d0cd6728223",
+      "intended_change": false
+    },
+    {
+      "path": "index.html",
+      "parent_git_blob": "043b57fce51f0e9571c666139a654bfc36362be0",
+      "actual_git_blob": "043b57fce51f0e9571c666139a654bfc36362be0",
+      "intended_change": false
+    },
+    {
+      "path": "package.json",
+      "parent_git_blob": "0144b047cd7b211c7b4a4f642b1f835a148ed355",
+      "actual_git_blob": "0144b047cd7b211c7b4a4f642b1f835a148ed355",
+      "intended_change": false
+    },
+    {
+      "path": "record-view.css",
+      "parent_git_blob": "ad73b8678228eacdbd7ddf36d56c573b2fc34e4a",
+      "actual_git_blob": "ad73b8678228eacdbd7ddf36d56c573b2fc34e4a",
+      "intended_change": false
+    },
+    {
+      "path": "record.html",
+      "parent_git_blob": "5718956e264ba46e699d21e2c04d54d4ddd14b5d",
+      "actual_git_blob": "5718956e264ba46e699d21e2c04d54d4ddd14b5d",
+      "intended_change": false
+    },
+    {
+      "path": "scope-workspace.css",
+      "parent_git_blob": "6ea60053690985776e7af70f86f5cc878fe69aae",
+      "actual_git_blob": "f227f7b10cd7d81a393e240eb6d84f9482588622",
+      "intended_change": true
+    },
+    {
+      "path": "scope.html",
+      "parent_git_blob": "1c8e40d9bb37a666af5439b8ef62053b2ca339fa",
+      "actual_git_blob": "7da0457c813daeb2e084819837f79abc184716a7",
+      "intended_change": true
+    },
+    {
+      "path": "scripts/check-browser.mjs",
+      "parent_git_blob": "b91751539e244718ff22d688ff2fec4d1622e18f",
+      "actual_git_blob": "b91751539e244718ff22d688ff2fec4d1622e18f",
+      "intended_change": false
+    },
+    {
+      "path": "scripts/check-fixture-timeline.mjs",
+      "parent_git_blob": "415cb4442f05abbc9d33dc9bf52e1b9abac588a5",
+      "actual_git_blob": "415cb4442f05abbc9d33dc9bf52e1b9abac588a5",
+      "intended_change": false
+    },
+    {
+      "path": "scripts/check-record-view.mjs",
+      "parent_git_blob": "8a183cb5a0aef21a240a35f0c7019ae9609c8ec5",
+      "actual_git_blob": "8a183cb5a0aef21a240a35f0c7019ae9609c8ec5",
+      "intended_change": false
+    },
+    {
+      "path": "scripts/check-scope-workspace.mjs",
+      "parent_git_blob": "bc8bdec72134ef5818aa28a33b65686c3f4536eb",
+      "actual_git_blob": "bc8bdec72134ef5818aa28a33b65686c3f4536eb",
+      "intended_change": false
+    },
+    {
+      "path": "scripts/serve.mjs",
+      "parent_git_blob": "b13193a08acaeb5d45146cb5c60c30848c37a0ab",
+      "actual_git_blob": "b13193a08acaeb5d45146cb5c60c30848c37a0ab",
+      "intended_change": false
+    },
+    {
+      "path": "src/agents.mjs",
+      "parent_git_blob": "ae1141b4f45ac8a064aa684fdcf47e938daf085d",
+      "actual_git_blob": "ae1141b4f45ac8a064aa684fdcf47e938daf085d",
+      "intended_change": false
+    },
+    {
+      "path": "src/fixture-record.mjs",
+      "parent_git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "actual_git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "intended_change": false
+    },
+    {
+      "path": "src/fixture-timeline-view.mjs",
+      "parent_git_blob": "780e12706ee16ebcbf87692b7a21681c4722092d",
+      "actual_git_blob": "780e12706ee16ebcbf87692b7a21681c4722092d",
+      "intended_change": false
+    },
+    {
+      "path": "src/fixture-timeline.mjs",
+      "parent_git_blob": "b686daaf49b53c44a06f4be8d9ef878886acf57e",
+      "actual_git_blob": "b686daaf49b53c44a06f4be8d9ef878886acf57e",
+      "intended_change": false
+    },
+    {
+      "path": "src/ledger.mjs",
+      "parent_git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "actual_git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "intended_change": false
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "parent_git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "actual_git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "intended_change": false
+    },
+    {
+      "path": "src/record-reader.mjs",
+      "parent_git_blob": "e6f69a87605b9808058a4e46df6b923ebb22c9dd",
+      "actual_git_blob": "e6f69a87605b9808058a4e46df6b923ebb22c9dd",
+      "intended_change": false
+    },
+    {
+      "path": "src/record-view.mjs",
+      "parent_git_blob": "08dbca153a600bf7ff6b41fb378b86b62422925f",
+      "actual_git_blob": "08dbca153a600bf7ff6b41fb378b86b62422925f",
+      "intended_change": false
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "parent_git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "actual_git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "intended_change": false
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "parent_git_blob": "722d7c800c70d243f320ca18acc69bf5c094e2fe",
+      "actual_git_blob": "f10826a229d1ce578a8e9929f91070c42e74fc9a",
+      "intended_change": true
+    },
+    {
+      "path": "src/workers-ai.mjs",
+      "parent_git_blob": "7951c2f09b7063bd481d3391ae914d6066d2b241",
+      "actual_git_blob": "7951c2f09b7063bd481d3391ae914d6066d2b241",
+      "intended_change": false
+    },
+    {
+      "path": "styles.css",
+      "parent_git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "actual_git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "intended_change": false
+    },
+    {
+      "path": "tests/capture-identity-receiving.test.mjs",
+      "parent_git_blob": "c3fe9b9608203ea4c380bff3686636766165bc39",
+      "actual_git_blob": "c3fe9b9608203ea4c380bff3686636766165bc39",
+      "intended_change": false
+    },
+    {
+      "path": "tests/capture-identity.test.mjs",
+      "parent_git_blob": "da6bb46fd523bbc4f75a423036678e11d3f6ea1e",
+      "actual_git_blob": "da6bb46fd523bbc4f75a423036678e11d3f6ea1e",
+      "intended_change": false
+    },
+    {
+      "path": "tests/evidence-drafts.test.mjs",
+      "parent_git_blob": "b9c621ad8e350e1dff6febd7085b3c4c18dfafae",
+      "actual_git_blob": "b9c621ad8e350e1dff6febd7085b3c4c18dfafae",
+      "intended_change": false
+    },
+    {
+      "path": "tests/fixture-record.test.mjs",
+      "parent_git_blob": "9bfd274a3d8eea072a194dad9ed58fb7ecee056c",
+      "actual_git_blob": "9bfd274a3d8eea072a194dad9ed58fb7ecee056c",
+      "intended_change": false
+    },
+    {
+      "path": "tests/fixture-timeline.test.mjs",
+      "parent_git_blob": "7a21b46c09f68b73da79923c82cb628eaa79ef7c",
+      "actual_git_blob": "7a21b46c09f68b73da79923c82cb628eaa79ef7c",
+      "intended_change": false
+    },
+    {
+      "path": "tests/ledger.test.mjs",
+      "parent_git_blob": "7099cf44e492946a77ffc7d9432e568eb0b39d50",
+      "actual_git_blob": "7099cf44e492946a77ffc7d9432e568eb0b39d50",
+      "intended_change": false
+    },
+    {
+      "path": "tests/payment-presentation.test.mjs",
+      "parent_git_blob": "8a39d57ca330195b62ab483a017490706fffe7ad",
+      "actual_git_blob": "8a39d57ca330195b62ab483a017490706fffe7ad",
+      "intended_change": false
+    },
+    {
+      "path": "tests/record-reader.test.mjs",
+      "parent_git_blob": "562f7db7b2052c26f66e29601b4fca931b0a8a48",
+      "actual_git_blob": "562f7db7b2052c26f66e29601b4fca931b0a8a48",
+      "intended_change": false
+    },
+    {
+      "path": "tests/recovery-current-state.test.mjs",
+      "parent_git_blob": "e943100360140f6739b8a67f4e5c0d6b5216b11a",
+      "actual_git_blob": "e943100360140f6739b8a67f4e5c0d6b5216b11a",
+      "intended_change": false
+    },
+    {
+      "path": "tests/scope-plan.test.mjs",
+      "parent_git_blob": "4dc7bc945f0e0728a79a26363eb276852da8334b",
+      "actual_git_blob": "4dc7bc945f0e0728a79a26363eb276852da8334b",
+      "intended_change": false
+    },
+    {
+      "path": "tests/workers-ai-contract.test.mjs",
+      "parent_git_blob": "37f499d284f772a77dfe3702f02e5c01fc7391ec",
+      "actual_git_blob": "37f499d284f772a77dfe3702f02e5c01fc7391ec",
+      "intended_change": false
+    }
+  ],
+  "statement": "All current-parent non-out source files outside the seven-file allowlist are byte-identical. New PR15 app and tests are retained. The retired test/ staging copy is excluded and absent. Historical out/ leaves are inherited through the complete parent Git tree."
+}

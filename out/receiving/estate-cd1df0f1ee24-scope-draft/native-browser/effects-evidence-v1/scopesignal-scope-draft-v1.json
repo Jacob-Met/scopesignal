@@ -1,0 +1,17 @@
+{
+  "schema": "scopesignal.scope-draft",
+  "version": 1,
+  "fixtureOnly": true,
+  "draft": {
+    "label": "FICTIONAL-SCOPE-RECEIVER-ONLY-α-7f4c1 import",
+    "brief": "Two lines\nFICTIONAL-SCOPE-RECEIVER-ONLY-α-7f4c1",
+    "cap": "0090.00",
+    "checkpoints": [
+      {
+        "title": "Proof FICTIONAL-SCOPE-RECEIVER-ONLY-α-7f4c1",
+        "amount": "0040.10",
+        "evidence": "<img id=\"scope-injected\" src=\"https://example.invalid/no\"> FICTIONAL-SCOPE-RECEIVER-ONLY-α-7f4c1"
+      }
+    ]
+  }
+}

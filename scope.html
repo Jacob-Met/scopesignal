@@ -17,10 +17,25 @@
     <a class="scope-back" href="./index.html#workspace">← Back to the example fixture</a>
     <div class="section-head"><div><p class="eyebrow">BRIEF → CHECKPOINTS → HUMAN REVIEW</p><h1>Shape the work.<br><em>Agree on the proof.</em></h1></div><span class="fixture-badge">FICTIONAL PROJECT ONLY</span></div>
     <p class="lede">Build a scope, agree on what each milestone proves, and explore its payment lifecycle one decision at a time.</p>
-    <p class="scope-session-note">This page keeps an in-memory fixture only. Refreshing or leaving clears it. Use fictional details; no data is sent or saved, and no payment or AI service is called.</p>
+    <p class="scope-session-note">Save your draft to a local file and open it here to keep editing. Refreshing clears the page's current plan and simulated events. Use fictional details; no data is sent and no payment or AI service is called.</p>
     <ol class="scope-steps" aria-label="Scope workflow"><li id="draft-step" aria-current="step">1 · Draft the scope</li><li id="review-step">2 · Review the evidence</li><li id="simulate-step">3 · Simulate milestones</li></ol>
 
     <form id="scope-form" novalidate>
+      <section class="scope-files" aria-labelledby="scope-files-title">
+        <div><h2 id="scope-files-title">Keep your draft</h2><p>Save unfinished work and reopen it later. Draft files contain the plan and planned evidence; approvals and simulated payment events stay in this session.</p></div>
+        <div class="scope-file-actions"><button id="scope-draft-save" class="button button-outline" type="button">Save draft</button><button id="scope-draft-open" class="button button-outline" type="button">Open draft</button></div>
+        <input id="scope-draft-file" type="file" accept=".json,application/json" hidden>
+        <p id="scope-file-status" class="scope-file-status" role="status" aria-live="polite"></p>
+        <section id="scope-file-preview" class="scope-file-preview" aria-labelledby="scope-file-preview-title" hidden>
+          <h3 id="scope-file-preview-title" tabindex="-1">Open this draft?</h3>
+          <p id="scope-file-name" class="scope-file-name"></p>
+          <strong id="scope-file-label"></strong>
+          <p id="scope-file-summary"></p>
+          <details id="scope-file-details"><summary>View the draft's brief and checkpoints</summary><p id="scope-file-brief"></p><p id="scope-file-cap"></p><ol id="scope-file-checkpoints"></ol></details>
+          <p>This replaces the current draft. Save any current edits you want to keep before continuing.</p>
+          <div class="scope-file-actions"><button id="scope-file-replace" class="button button-dark" type="button">Replace this draft</button><button id="scope-file-cancel" class="button button-outline" type="button">Cancel</button></div>
+        </section>
+      </section>
       <div id="scope-errors" class="scope-errors" role="alert" tabindex="-1" hidden></div>
       <section class="panel" aria-labelledby="scope-details-title">
         <div class="panel-heading"><h2 id="scope-details-title">The creative brief</h2><span>Editable draft</span></div>

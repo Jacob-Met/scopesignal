@@ -1,0 +1,91 @@
+{
+  "captured_at": "2026-10-08T10:59:06.566Z",
+  "mode": "baseline",
+  "source": "/Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/baseline",
+  "node": "v26.3.0",
+  "host": "Mac.lan",
+  "os": "25.6.0",
+  "browser": "Chrome/154.0.8037.98",
+  "puppeteer_entry": "/Users/me/.npm/_npx/4b4c857f6efdfb61/node_modules/puppeteer-core/lib/puppeteer/puppeteer-core.js",
+  "source_commit": "317c1aad0bc6d68e4f4d3c70863b481741a61fb5",
+  "cases": [
+    {
+      "viewport": "desktop",
+      "authored_fields_survive_row_addition": true,
+      "save_draft_present": false,
+      "open_draft_present": false,
+      "incomplete_authored_draft_lost_on_reload": true,
+      "intended_save_open_gate": "failed: controls absent",
+      "fixture_review_visible": false
+    },
+    {
+      "viewport": "phone",
+      "authored_fields_survive_row_addition": true,
+      "save_draft_present": false,
+      "open_draft_present": false,
+      "incomplete_authored_draft_lost_on_reload": true,
+      "intended_save_open_gate": "failed: controls absent",
+      "fixture_review_visible": false
+    }
+  ],
+  "production_downloads": [],
+  "served": {
+    "scope.html": {
+      "bytes": 5970,
+      "sha256": "462ff6bf987d27ac71bb9cd4c2c8a987f29159dea24c8b5fdd47e5cc532abf0b",
+      "git_blob": "1c8e40d9bb37a666af5439b8ef62053b2ca339fa"
+    },
+    "styles.css": {
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    "scope-workspace.css": {
+      "bytes": 4138,
+      "sha256": "ce89b3cc94e636388a63c63326ca1e030473c08bac1a6265eb24974083ff1420",
+      "git_blob": "6ea60053690985776e7af70f86f5cc878fe69aae"
+    },
+    "src/scope-workspace.mjs": {
+      "bytes": 12530,
+      "sha256": "8c2506cf4ecca18b8b40c979e7aa26a8274e93571f073c732118becaea12a3d7",
+      "git_blob": "722d7c800c70d243f320ca18acc69bf5c094e2fe"
+    },
+    "src/scope-plan.mjs": {
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    "src/payment-status.mjs": {
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    "src/ledger.mjs": {
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    }
+  },
+  "external_requests_blocked": [
+    {
+      "viewport": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "viewport": "desktop",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "viewport": "phone",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "viewport": "phone",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    }
+  ],
+  "page_errors": [],
+  "fatal": null,
+  "baseline_negative": "Both viewports lack draft Save/Open and reload erases authored fields. DOM JSON files are observation artifacts, not product downloads.",
+  "limits": "Fresh isolated native Chromium contexts; no signed-in browser, provider, live payment or browser-storage use. No candidate qualification in this revision."
+}

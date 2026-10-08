@@ -1,0 +1,11 @@
+{
+  "schema": "scopesignal.scope-draft",
+  "version": 1,
+  "fixtureOnly": true,
+  "draft": {
+    "label": "  Fictional reopened project 日本語 😀  ",
+    "brief": "\nFirst line & <brief>\nSecond line — naïve\n",
+    "cap": "0090.00",
+    "checkpoints": []
+  }
+}

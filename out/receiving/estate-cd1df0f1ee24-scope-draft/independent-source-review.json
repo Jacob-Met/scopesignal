@@ -1,0 +1,157 @@
+{
+  "schema": "scopesignal-scope-draft-independent-source-review-v1",
+  "reviewer": "estate-cd1df0f1ee24/native_qualification",
+  "verdict": "ACCEPT: no concrete source defect found in the seven frozen v1 payload files or their current-parent dependency composition.",
+  "review_kind": "Independent source and hash review only; no new tests, browser execution, build, source edit, or GitHub mutation.",
+  "source_root": "/dev/shm/hamon-scope-draft-cd1df0f1ee24/candidate",
+  "manifest": "/dev/shm/hamon-scope-draft-cd1df0f1ee24/candidate-frozen-v1.json",
+  "original_authoring_base": "317c1aad0bc6d68e4f4d3c70863b481741a61fb5",
+  "composition_parent": "8e50105fdc1645720e64ca83738727473c9f6acf",
+  "composition_parent_tree": "fe302d490b55f9eb4f5cbd7f4d7e9fca7e134820",
+  "manifest_provenance": "The frozen manifest names the original authoring base and an older candidate pathname. This review reads the seven matching files from the explicit /dev/shm candidate path. The separately saved publication-parent.json identifies current composition parent 8e50105f.",
+  "findings": [
+    {
+      "area": "Lossless editable-field semantics",
+      "result": "pass",
+      "basis": [
+        "scope-draft-file.mjs: copyDraft validates and copies exact string values without trimming, amount parsing, coercion, sorting or review validation. It reconstructs detached draft/row objects and preserves dense checkpoint order.",
+        "serializeScopeDraft fixes only the versioned JSON envelope and formatting; parseScopeDraftFile returns the exact editable fields. Unfinished amounts, blanks, whitespace and Unicode remain strings.",
+        "scope-workspace.mjs readDraft reads actual native field values; replaceDraft writes those values directly. Preview-only label trimming and display fallbacks do not mutate pending.draft.",
+        "CR/LF restrictions match the supported native fields: LF is accepted in brief/evidence; CR and single-line input newlines are refused before replacement. This avoids accepting values the form would normalize."
+      ]
+    },
+    {
+      "area": "Finite admission and field separation",
+      "result": "pass",
+      "basis": [
+        "Actual file.size is checked against 1 MiB before arrayBuffer(); fatal UTF-8 decoding precedes JSON parsing; the parser separately counts encoded bytes.",
+        "Exact own-key sets are enforced for the envelope, draft and each checkpoint. The envelope requires schema scopesignal.scope-draft, version 1 and fixtureOnly true; all editable values must be strings.",
+        "Dense arrays are constrained to 1 through MAX_CHECKPOINTS (12). Sparse lists, extra properties, unsupported fields and own accessors are refused.",
+        "Required text, field lengths, valid positive USD and project-cap checks remain in validateScopeDraft at review time; unfinished drafts are intentionally saveable."
+      ]
+    },
+    {
+      "area": "Approval and event exclusion",
+      "result": "pass",
+      "basis": [
+        "The file allowlist has no approval, accepted-decision, ledger-event, ID or capture fields; extra fields are rejected rather than ignored.",
+        "File handlers require review === null and a visible draft form. The existing edit action refuses any review whose event list is nonempty.",
+        "Opening does not create or modify a ledger. Review submission invalidates the file request and calls createScopeReview, which creates a fresh ledger with an empty event list and unapproved checkpoints.",
+        "Unapproved review evidence may return as editable planned text through the existing Edit draft path; it cannot carry a recorded approval."
+      ]
+    },
+    {
+      "area": "Asynchronous invalidation",
+      "result": "pass",
+      "basis": [
+        "Each open request captures selection, revision and JSON.stringify(readDraft()). current() checks all three plus editing state.",
+        "Selection increments on reset and actual read initiation. Superseded asynchronous resolutions and rejections return without replacing the form or status.",
+        "Input edits, checkpoint additions/removals, review entry and return to editing invalidate intent and pending data. A value snapshot also detects programmatic field changes without an input event.",
+        "Replace repeats current(pending.request), so a stale preview cannot overwrite intervening changes even after a successful parse."
+      ]
+    },
+    {
+      "area": "Atomic application at the product boundary",
+      "result": "pass",
+      "basis": [
+        "Read, UTF-8 decode, JSON parse and complete structural validation finish before a pending draft is exposed.",
+        "Preview writes only preview elements. The current authored form remains untouched until an explicit Replace this draft click with a still-current request.",
+        "Replacement then runs synchronously using the fully validated dense, bounded draft; no asynchronous operation interrupts the form update.",
+        "Cancel, invalid/unreadable/oversized inputs and stale reads do not call replaceDraft. The atomicity claim concerns these application paths, not exceptional platform failures such as out-of-memory or externally removed DOM nodes."
+      ]
+    },
+    {
+      "area": "Literal DOM and local data handling",
+      "result": "pass",
+      "basis": [
+        "File names, field previews, summaries, checkpoint rows, statuses and reviewed values use textContent; editable fields use .value.",
+        "No file-derived HTML, selector, script, URL or executable markup is constructed. The only download href is an application-created Blob URL with a constant filename.",
+        "The added modules contain no fetch, XMLHttpRequest, WebSocket, browser-storage or payment calls. Download links are removed and Blob URLs are revoked on a later task.",
+        "Save/Open/Replace/Cancel controls have type=button; status and preview focus targets are present in scope.html."
+      ]
+    },
+    {
+      "area": "Publication scope and existing test evidence",
+      "result": "pass with explicit scope",
+      "basis": [
+        "All seven file byte lengths, SHA256 values and independently computed Git blob IDs match candidate-frozen-v1.json.",
+        "The retired test/scope-draft-file.test.mjs copy was present in the initial local inventory, outside the seven-file allowlist. Root removed its own copy; it is now absent and must remain absent from the published payload.",
+        "The raw 124-test count included 14 duplicate executions. Root reports a preserved correction record and a clean canonical run with 110 passes. This source receipt does not re-execute or independently re-count those tests.",
+        "The browser receiver's 17 functional cases and request/storage supplement are separate execution evidence. This gate adds independent source reasoning and exact payload pins."
+      ]
+    }
+  ],
+  "publication_constraints": [
+    "Accept only the seven listed payload file paths, plus deliberately selected evidence files owned by root; never include the retired test/ copy or local staging accommodations.",
+    "Bind the hosted commit to these seven exact Git blobs/SHA256 values before recording the published-source acceptance.",
+    "Root owns full-tree preservation and final hosted CI interpretation. This review verifies the referenced runtime dependencies against the locally preserved current-parent tree, not an independently fetched hosted full tree.",
+    "No source change or additional test execution was needed for this review."
+  ],
+  "qualified_files": [
+    {
+      "path": "README.md",
+      "bytes": 14246,
+      "sha256": "72a11c97e5086c3c6fd5ddd9f25a012a0d3d08fb678459b28ebc5378303600b1",
+      "git_blob": "25677a64fc14e35cd8f8c08f3a1cda268813eda0"
+    },
+    {
+      "path": "scope.html",
+      "bytes": 7675,
+      "sha256": "e9c53faed5eb11ef5db15962a39984f2a9c779ea664d3b79b3a542b2d0fede25",
+      "git_blob": "7da0457c813daeb2e084819837f79abc184716a7"
+    },
+    {
+      "path": "scope-workspace.css",
+      "bytes": 5756,
+      "sha256": "ae39af44bf48acb9ef83cbaf5613eb865de200c78a2cf9e31d61ed55abccdfc5",
+      "git_blob": "f227f7b10cd7d81a393e240eb6d84f9482588622"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "bytes": 13205,
+      "sha256": "b199b86bb219f8fbb7a4ac2a59282cb8ee686d059dc02fe547474d5bfd6255d9",
+      "git_blob": "f10826a229d1ce578a8e9929f91070c42e74fc9a"
+    },
+    {
+      "path": "src/scope-draft-file.mjs",
+      "bytes": 4291,
+      "sha256": "6aca755bea26043b3975d2142b2065d51894c5f73f985997d69a6d10008ae44a",
+      "git_blob": "0f14cfe06d23a9597a2f5ca7315b4becc26a0218"
+    },
+    {
+      "path": "src/scope-draft-controls.mjs",
+      "bytes": 5785,
+      "sha256": "cefca1bd57ed65e3fca252e11f4aacc19a42c0e3a0e3b5d7ab1832bfefbe7ab8",
+      "git_blob": "cd4000f762d97533812075e56a22d29110a76251"
+    },
+    {
+      "path": "tests/scope-draft-file.test.mjs",
+      "bytes": 6845,
+      "sha256": "a7ca1a63c1c5e663ea12caeacd3e97418008552932e4f7e265742cc46deb8c04",
+      "git_blob": "5856ef06f399f72abe5c0d8063691ab4b441b3e3"
+    }
+  ],
+  "all_seven_exact_pins_match": true,
+  "unchanged_parent_dependencies": [
+    {
+      "path": "src/scope-plan.mjs",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+      "parent_match": true
+    },
+    {
+      "path": "src/ledger.mjs",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "parent_match": true
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+      "parent_match": true
+    },
+    {
+      "path": "styles.css",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45",
+      "parent_match": true
+    }
+  ]
+}

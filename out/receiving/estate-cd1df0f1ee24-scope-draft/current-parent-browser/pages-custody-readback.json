@@ -1,0 +1,66 @@
+{
+  "captured_at": "2026-10-08T11:57:18.632Z",
+  "repository": "Jacob-Met/scopesignal",
+  "parent": {
+    "sha": "8e50105fdc1645720e64ca83738727473c9f6acf",
+    "tree": "fe302d490b55f9eb4f5cbd7f4d7e9fca7e134820",
+    "parents": [
+      "317c1aad0bc6d68e4f4d3c70863b481741a61fb5",
+      "87c8bc083dc8e0e40887fe80eda7b13a58649cbd"
+    ],
+    "non_archive_changes": [
+      {
+        "path": "app.mjs",
+        "sha": "7398ab71912a6e5e55a1da8ccef3f8fdee82c135",
+        "status": "modified"
+      },
+      {
+        "path": "tests/evidence-drafts.test.mjs",
+        "sha": "b9c621ad8e350e1dff6febd7085b3c4c18dfafae",
+        "status": "added"
+      }
+    ]
+  },
+  "current_pages_run": {
+    "id": 37766220718,
+    "url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37766220718",
+    "event": "push",
+    "head_sha": "8e50105fdc1645720e64ca83738727473c9f6acf",
+    "conclusion": "success",
+    "test_job": 113274433716,
+    "deploy_job": 113274484385,
+    "test_summary": [
+      "2026-10-08T10:51:31.5044848Z ℹ tests 96",
+      "2026-10-08T10:51:31.5047186Z ℹ pass 96",
+      "2026-10-08T10:51:31.5047951Z ℹ fail 0",
+      "2026-10-08T10:51:31.5048729Z ℹ skipped 0"
+    ],
+    "deployment_summary": [
+      "2026-10-08T10:51:40.8502666Z SHA256 digest of uploaded artifact zip is f0796f2e23ac16aa2a24135218bd04499431cec38c1a3a5b9d236e502506433d",
+      "2026-10-08T10:51:41.0640085Z Artifact github-pages has been successfully uploaded! Final size is 4856677 bytes. Artifact ID is 11544572572",
+      "2026-10-08T10:51:42.7977305Z Created deployment for 8e50105fdc1645720e64ca83738727473c9f6acf, ID: 8e50105fdc1645720e64ca83738727473c9f6acf",
+      "2026-10-08T10:51:48.2045988Z Evaluated environment url: http://jacobmetoyer.com/scopesignal/"
+    ]
+  },
+  "workflow": {
+    "path": ".github/workflows/pages.yml",
+    "trigger_branch": "paypal-ai",
+    "manual_trigger_exists": true,
+    "dispatch_performed": false,
+    "concurrency_group": "pages",
+    "cancel_in_progress": true
+  },
+  "public_route": {
+    "source_comment": "https://github.com/Jacob-Met/scopesignal/pull/10#issuecomment-6057168179",
+    "https_url": "https://jacobmetoyer.com/scopesignal/scope.html",
+    "current_public_byte_receiving_performed": false
+  },
+  "custody": {
+    "our_claim": "https://github.com/Jacob-Met/scopesignal/pull/10#issuecomment-6058523510",
+    "yielded_overlap": "https://github.com/Jacob-Met/scopesignal/pull/10#issuecomment-6058750874",
+    "yielding_worker": "estate-401c5d17da79",
+    "yield_scope": "Overlapping local draft-file authored UI/source integration; their valid-plan source and tests remain their own qualification.",
+    "pr15_source_retained": true
+  },
+  "connector_limit": "Direct /pages and /deployments fetches returned unsupported-endpoint HTTP400; existing workflow/run/job/log endpoints supplied the current release evidence. No deployment or configuration mutation."
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "scopesignal.scope-draft",
+  "version": 1,
+  "fixtureOnly": true,
+  "draft": {
+    "label": "  Fictional draft α 😀 desktop  ",
+    "brief": "\nA proposed scope\nwith Unicode 日本語\n",
+    "cap": "not finished",
+    "checkpoints": [
+      {
+        "title": "  Concept <review> & design  ",
+        "amount": "0040.10",
+        "evidence": "\nProof </textarea><img id=\"scope-injected\" src=\"https://example.invalid/no\"> 😀\n"
+      },
+      {
+        "title": "Accessible billing setup",
+        "amount": "400.00",
+        "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+      },
+      {
+        "title": "Responsive handoff",
+        "amount": "400.00",
+        "evidence": "Desktop and mobile handoff files plus implementation notes."
+      },
+      {
+        "title": "",
+        "amount": "",
+        "evidence": ""
+      }
+    ]
+  }
+}

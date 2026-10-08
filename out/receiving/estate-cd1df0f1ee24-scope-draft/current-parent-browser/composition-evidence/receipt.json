@@ -1,0 +1,249 @@
+{
+  "passed": false,
+  "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   {\n+     body: null,\n+     method: 'GET',\n+     resource_type: 'other',\n+     url: 'http://127.0.0.1:57798/favicon.ico'\n+   },\n+   {\n+     body: null,\n+     method: 'GET',\n+     resource_type: 'other',\n+     url: 'http://127.0.0.1:57798/favicon.ico'\n+   },\n+   {\n+     body: null,\n+     method: 'GET',\n+     resource_type: 'other',\n+     url: 'http://127.0.0.1:57798/favicon.ico'\n+   }\n+ ]\n- []\n",
+  "stack": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   {\n+     body: null,\n+     method: 'GET',\n+     resource_type: 'other',\n+     url: 'http://127.0.0.1:57798/favicon.ico'\n+   },\n+   {\n+     body: null,\n+     method: 'GET',\n+     resource_type: 'other',\n+     url: 'http://127.0.0.1:57798/favicon.ico'\n+   },\n+   {\n+     body: null,\n+     method: 'GET',\n+     resource_type: 'other',\n+     url: 'http://127.0.0.1:57798/favicon.ico'\n+   }\n+ ]\n- []\n\n    at file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/receiving/check-scope-draft-positive.mjs:112:10",
+  "captured_at": "2026-10-08T11:48:49.061Z",
+  "mode": "current-parent-loopback",
+  "expected_commit": null,
+  "parent_commit": "8e50105fdc1645720e64ca83738727473c9f6acf",
+  "origin": "http://127.0.0.1:57798/",
+  "responses": [
+    {
+      "path": "styles.css",
+      "status": 200,
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    {
+      "path": "fixture-timeline.css",
+      "status": 200,
+      "bytes": 2714,
+      "sha256": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+      "git_blob": "6fa3b725f49ef21346821cd8db599d0cd6728223"
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 9090,
+      "sha256": "73171545f26fd82cfaf425ada9ba59b91bd16c5e68118a92152edd9a5c62155c",
+      "git_blob": "043b57fce51f0e9571c666139a654bfc36362be0"
+    },
+    {
+      "path": "app.mjs",
+      "status": 200,
+      "bytes": 5366,
+      "sha256": "a33c3519e59445e4ed6c19a2beec81005482e34b5e6bd396f10916cfbfd96a24",
+      "git_blob": "7398ab71912a6e5e55a1da8ccef3f8fdee82c135"
+    },
+    {
+      "path": "src/fixture-timeline-view.mjs",
+      "status": 200,
+      "bytes": 3336,
+      "sha256": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+      "git_blob": "780e12706ee16ebcbf87692b7a21681c4722092d"
+    },
+    {
+      "path": "src/agents.mjs",
+      "status": 200,
+      "bytes": 1599,
+      "sha256": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+      "git_blob": "ae1141b4f45ac8a064aa684fdcf47e938daf085d"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "status": 200,
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "status": 200,
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    {
+      "path": "src/fixture-record.mjs",
+      "status": 200,
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8"
+    },
+    {
+      "path": "src/fixture-timeline.mjs",
+      "status": 200,
+      "bytes": 3054,
+      "sha256": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+      "git_blob": "b686daaf49b53c44a06f4be8d9ef878886acf57e"
+    },
+    {
+      "path": "scope.html",
+      "status": 200,
+      "bytes": 7675,
+      "sha256": "e9c53faed5eb11ef5db15962a39984f2a9c779ea664d3b79b3a542b2d0fede25",
+      "git_blob": "7da0457c813daeb2e084819837f79abc184716a7"
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    {
+      "path": "scope-workspace.css",
+      "status": 200,
+      "bytes": 5756,
+      "sha256": "ae39af44bf48acb9ef83cbaf5613eb865de200c78a2cf9e31d61ed55abccdfc5",
+      "git_blob": "f227f7b10cd7d81a393e240eb6d84f9482588622"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "status": 200,
+      "bytes": 13205,
+      "sha256": "b199b86bb219f8fbb7a4ac2a59282cb8ee686d059dc02fe547474d5bfd6255d9",
+      "git_blob": "f10826a229d1ce578a8e9929f91070c42e74fc9a"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "status": 200,
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "status": 200,
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    {
+      "path": "src/scope-draft-controls.mjs",
+      "status": 200,
+      "bytes": 5785,
+      "sha256": "cefca1bd57ed65e3fca252e11f4aacc19a42c0e3a0e3b5d7ab1832bfefbe7ab8",
+      "git_blob": "cd4000f762d97533812075e56a22d29110a76251"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "status": 200,
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    },
+    {
+      "path": "src/scope-draft-file.mjs",
+      "status": 200,
+      "bytes": 4291,
+      "sha256": "6aca755bea26043b3975d2142b2065d51894c5f73f985997d69a6d10008ae44a",
+      "git_blob": "0f14cfe06d23a9597a2f5ca7315b4becc26a0218"
+    },
+    {
+      "path": "scope.html",
+      "status": 200,
+      "bytes": 7675,
+      "sha256": "e9c53faed5eb11ef5db15962a39984f2a9c779ea664d3b79b3a542b2d0fede25",
+      "git_blob": "7da0457c813daeb2e084819837f79abc184716a7"
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "status": 200,
+      "bytes": 13205,
+      "sha256": "b199b86bb219f8fbb7a4ac2a59282cb8ee686d059dc02fe547474d5bfd6255d9",
+      "git_blob": "f10826a229d1ce578a8e9929f91070c42e74fc9a"
+    },
+    {
+      "path": "scope-workspace.css",
+      "status": 200,
+      "bytes": 5756,
+      "sha256": "ae39af44bf48acb9ef83cbaf5613eb865de200c78a2cf9e31d61ed55abccdfc5",
+      "git_blob": "f227f7b10cd7d81a393e240eb6d84f9482588622"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "status": 200,
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "status": 200,
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    {
+      "path": "src/scope-draft-controls.mjs",
+      "status": 200,
+      "bytes": 5785,
+      "sha256": "cefca1bd57ed65e3fca252e11f4aacc19a42c0e3a0e3b5d7ab1832bfefbe7ab8",
+      "git_blob": "cd4000f762d97533812075e56a22d29110a76251"
+    },
+    {
+      "path": "src/scope-draft-file.mjs",
+      "status": 200,
+      "bytes": 4291,
+      "sha256": "6aca755bea26043b3975d2142b2065d51894c5f73f985997d69a6d10008ae44a",
+      "git_blob": "0f14cfe06d23a9597a2f5ca7315b4becc26a0218"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "status": 200,
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    }
+  ],
+  "response_errors": [],
+  "blocked": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+      "method": "GET",
+      "body": null,
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:57798/favicon.ico",
+      "method": "GET",
+      "body": null,
+      "resource_type": "other"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+      "method": "GET",
+      "body": null,
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:57798/favicon.ico",
+      "method": "GET",
+      "body": null,
+      "resource_type": "other"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+      "method": "GET",
+      "body": null,
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:57798/favicon.ico",
+      "method": "GET",
+      "body": null,
+      "resource_type": "other"
+    }
+  ],
+  "page_errors": [],
+  "limits": "One fresh native Chrome viewport and bounded positive workflow. Normal browser certificate verification. No asynchronous-suite rerun, no live payment/provider calls, no deployment dispatch or installed-state mutation."
+}

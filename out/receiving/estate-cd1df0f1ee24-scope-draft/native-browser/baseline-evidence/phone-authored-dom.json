@@ -1,0 +1,27 @@
+{
+  "label": "  Fictional draft α 😀 phone  ",
+  "brief": "\nA proposed scope\nwith Unicode 日本語 and a second line\n",
+  "cap": "not finished",
+  "checkpoints": [
+    {
+      "title": "Launch <concept> & design",
+      "amount": "0040.10",
+      "evidence": "\n\nProof </textarea><img id=\"draft-injected\" src=\"https://example.invalid/should-not-load\"> & “quoted” 😀\n"
+    },
+    {
+      "title": "Accessible billing setup",
+      "amount": "400.00",
+      "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+    },
+    {
+      "title": "Responsive handoff",
+      "amount": "400.00",
+      "evidence": "Desktop and mobile handoff files plus implementation notes."
+    },
+    {
+      "title": "",
+      "amount": "",
+      "evidence": ""
+    }
+  ]
+}

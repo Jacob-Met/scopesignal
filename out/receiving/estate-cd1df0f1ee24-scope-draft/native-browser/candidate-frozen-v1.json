@@ -1,0 +1,49 @@
+{
+  "source_base": "317c1aad0bc6d68e4f4d3c70863b481741a61fb5",
+  "branch": "paypal-ai",
+  "candidate": "/workspace/scratch/cd1df0f1ee24/scope-draft/candidate",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 14246,
+      "sha256": "72a11c97e5086c3c6fd5ddd9f25a012a0d3d08fb678459b28ebc5378303600b1",
+      "git_blob": "25677a64fc14e35cd8f8c08f3a1cda268813eda0"
+    },
+    {
+      "path": "scope.html",
+      "bytes": 7675,
+      "sha256": "e9c53faed5eb11ef5db15962a39984f2a9c779ea664d3b79b3a542b2d0fede25",
+      "git_blob": "7da0457c813daeb2e084819837f79abc184716a7"
+    },
+    {
+      "path": "scope-workspace.css",
+      "bytes": 5756,
+      "sha256": "ae39af44bf48acb9ef83cbaf5613eb865de200c78a2cf9e31d61ed55abccdfc5",
+      "git_blob": "f227f7b10cd7d81a393e240eb6d84f9482588622"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "bytes": 13205,
+      "sha256": "b199b86bb219f8fbb7a4ac2a59282cb8ee686d059dc02fe547474d5bfd6255d9",
+      "git_blob": "f10826a229d1ce578a8e9929f91070c42e74fc9a"
+    },
+    {
+      "path": "src/scope-draft-file.mjs",
+      "bytes": 4291,
+      "sha256": "6aca755bea26043b3975d2142b2065d51894c5f73f985997d69a6d10008ae44a",
+      "git_blob": "0f14cfe06d23a9597a2f5ca7315b4becc26a0218"
+    },
+    {
+      "path": "src/scope-draft-controls.mjs",
+      "bytes": 5785,
+      "sha256": "cefca1bd57ed65e3fca252e11f4aacc19a42c0e3a0e3b5d7ab1832bfefbe7ab8",
+      "git_blob": "cd4000f762d97533812075e56a22d29110a76251"
+    },
+    {
+      "path": "tests/scope-draft-file.test.mjs",
+      "bytes": 6845,
+      "sha256": "a7ca1a63c1c5e663ea12caeacd3e97418008552932e4f7e265742cc46deb8c04",
+      "git_blob": "5856ef06f399f72abe5c0d8063691ab4b441b3e3"
+    }
+  ]
+}

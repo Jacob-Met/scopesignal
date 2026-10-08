@@ -1,5 +1,6 @@
 import { MAX_CHECKPOINTS, draftFromFixture, draftBudget, validateScopeDraft, createScopeReview, formatUSD as money } from './scope-plan.mjs';
 import { capturePresentation } from './payment-status.mjs';
+import { mountScopeDraftFiles } from './scope-draft-controls.mjs';
 
 const $ = selector => document.querySelector(selector);
 const form = $('#scope-form');
@@ -213,13 +214,31 @@ $('#scope-label').value = draft.label;
 $('#scope-brief').value = draft.brief;
 $('#scope-cap').value = draft.cap;
 renderDraftRows();
-form.addEventListener('input', updateBudget);
+const draftFiles = mountScopeDraftFiles({
+  readDraft,
+  isEditing: () => review === null && !form.hidden,
+  replaceDraft(next) {
+    draft = next;
+    $('#scope-label').value = draft.label;
+    $('#scope-brief').value = draft.brief;
+    $('#scope-cap').value = draft.cap;
+    clearErrors();
+    renderDraftRows();
+    $('#scope-label').focus();
+  }
+});
+form.addEventListener('input', event => {
+  if (!event.target.matches('#scope-label, #scope-brief, #scope-cap, .scope-row input, .scope-row textarea')) return;
+  draftFiles.changed();
+  updateBudget();
+});
 $('#scope-add').addEventListener('click', () => {
   draft = readDraft();
   if (draft.checkpoints.length >= MAX_CHECKPOINTS) return;
   draft.checkpoints.push({ title: '', amount: '', evidence: '' });
   clearErrors();
   renderDraftRows();
+  draftFiles.changed();
   $(`#draft-${draft.checkpoints.length - 1}-title`).focus();
 });
 $('#scope-draft-list').addEventListener('click', event => {
@@ -230,6 +249,7 @@ $('#scope-draft-list').addEventListener('click', event => {
   draft.checkpoints.splice(index, 1);
   clearErrors();
   renderDraftRows();
+  draftFiles.changed();
   $(`#draft-${Math.min(index, draft.checkpoints.length - 1)}-title`).focus();
 });
 form.addEventListener('submit', event => {
@@ -237,6 +257,7 @@ form.addEventListener('submit', event => {
   draft = readDraft();
   const validation = validateScopeDraft(draft);
   if (!validation.ok) { showErrors(validation.errors); return; }
+  draftFiles.leave();
   review = createScopeReview(draft);
   evidenceDrafts.clear();
   clearErrors();
@@ -255,6 +276,7 @@ $('#scope-edit').addEventListener('click', () => {
   });
   review = null;
   renderDraftRows();
+  draftFiles.changed();
   form.hidden = false;
   $('#scope-review').hidden = true;
   $('#review-step').removeAttribute('aria-current');
