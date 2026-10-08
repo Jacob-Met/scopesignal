@@ -1,0 +1,79 @@
+{
+  "schema": "scopesignal.independent-workers-ai-receiving.v1",
+  "recordedAt": "2026-10-08T09:04:50.604Z",
+  "reviewer": "406d0fb04c43/native_engine",
+  "authorSourceModified": false,
+  "independentHarness": {
+    "file": "independent-receiving.test.mjs",
+    "sha256": "7eb26adb6b05dcc121fb6b4158a9684c4b8b4f48e778d0798ef13d3297bc2e43"
+  },
+  "node": "v24.19.0",
+  "platform": "linux",
+  "architecture": "x64",
+  "base": "33f021aaacd6d7ed68c508d92901e7442d99586c",
+  "head": "c9e1530f0f6c2baa78bf5107cfeb634f09a68b83",
+  "headTree": "ed342ef9ef43a3349b06c4e9a15b9e84617a9cfd",
+  "sourcePinsFile": "source-pins.json",
+  "sourcePinsSha256": "fd0f0f939daec063d0fdddb0ca22f659685bf0455c8cfa9cc3bfeb3c8993dea3",
+  "candidate": {
+    "command": "SCOPESIGNAL_REVIEW_SOURCE=/workspace/scratch/406d0fb04c43/agents/native-engine/reviews/scopesignal/candidate node --test --test-reporter=tap independent-receiving.test.mjs",
+    "exit": 0,
+    "tests": 15,
+    "pass": 15,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "logFile": "candidate-independent.tap",
+    "logSha256": "04cf717c192efcf9518a0b16a90ef5a7dc07454420ac404b494dcb4b487fae20"
+  },
+  "baseline": {
+    "command": "SCOPESIGNAL_REVIEW_SOURCE=/workspace/scratch/406d0fb04c43/agents/native-engine/reviews/scopesignal/baseline node --test --test-reporter=tap independent-receiving.test.mjs",
+    "exit": 1,
+    "tests": 15,
+    "pass": 9,
+    "fail": 6,
+    "cancelled": 0,
+    "skipped": 0,
+    "logFile": "baseline-independent.tap",
+    "logSha256": "9582eeae937e0bac2457572c46a873e9123692a632a27b1052fb7fa3bf1c06e1"
+  },
+  "blockingFindings": [],
+  "decision": "No blocking findings for the frozen source contribution; independent receiving supports publication and normal repository integration gates.",
+  "verified": {
+    "serializedUnicodeBoundary": "Four mixed-scalar exact-limit examples accepted through actual async literal JSON/escaped response-envelope paths; all four were refused by the base.",
+    "oneAboveBoundary": "Four matching one-above cases remain rejected.",
+    "asciiAndEscaping": "Four exact-limit ASCII/control/quote/backslash cases remain accepted verbatim.",
+    "asyncIsolation": "Overlapping calls settle in reverse order with separate nested schemas, correct result routing and pristine later-call schema.",
+    "editableSnapshot": "Deeply frozen ordinary parsed JSON receives as editable output without changing retained input.",
+    "errorSettlement": "Delayed binding rejection preserves original error identity, leaves another result intact, and dispatches no retry."
+  },
+  "workflowReview": {
+    "sourceReviewed": true,
+    "executed": false,
+    "trigger": "pull_request",
+    "runtime": "Node24",
+    "command": "npm test",
+    "permissions": "contents:read",
+    "timeoutMinutes": 5,
+    "deploymentJobs": 0,
+    "persistCheckoutCredentials": false,
+    "sourceSha256": "65600373a689661f1e448e2b22e7973235ef002317f93a1d87394a692bc995ff"
+  },
+  "scopeLimits": [
+    "All AI.run methods are local synthetic doubles; no model, provider, remote runtime or UI connection occurred.",
+    "The shipped UI has no adapter consumer. Receiving establishes the exported JavaScript boundary, not live AI adoption.",
+    "Schema and result-object isolation are JavaScript object-origin contract findings, not evidence of a live exploitation path.",
+    "The existing nonblank-text requirement and unlimited checkpoint count are preserved; they are not newly claimed JSON Schema rules.",
+    "The full author suite was not rerun; this packet contains the separately authored fifteen-case adapter receiving suite."
+  ],
+  "references": [
+    {
+      "url": "https://json-schema.org/draft/2020-12/json-schema-validation#section-6.3.1",
+      "purpose": "String length is measured in characters."
+    },
+    {
+      "url": "https://www.rfc-editor.org/rfc/rfc8259#section-7",
+      "purpose": "An escaped surrogate pair represents one extended character."
+    }
+  ]
+}
