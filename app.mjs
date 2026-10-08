@@ -1,6 +1,7 @@
 import { FIXTURE, replayFixture } from './src/ledger.mjs';
 import { roles } from './src/agents.mjs';
 import { capturePresentation } from './src/payment-status.mjs';
+import { FIXTURE_RECORD_FILENAME, serializeFixtureRecord } from './src/fixture-record.mjs';
 
 const ledger = replayFixture();
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -23,6 +24,7 @@ function render() {
   $('#role-cards').innerHTML = [roles.briefInterpreter(), roles.evidenceMapper(first), roles.paymentPolicy(first), roles.recoveryReview(ledger.events)].map(role => `<article class="role-card"><span>${escapeHtml(role.role)}</span><small>${escapeHtml(role.mode)}</small><p>${escapeHtml(role.summary || role.suggestedEvidence || role.rule || role.guidance)}</p></article>`).join('');
   $('#ledger-body').innerHTML = ledger.events.map(e => `<tr><td>${String(e.seq).padStart(2, '0')}</td><td><code>${escapeHtml(e.type)}</code></td><td>${escapeHtml(e.checkpointId || '')}${e.eventId ? ` · ${escapeHtml(e.eventId)}` : ''}</td><td>${escapeHtml(eventResult(e))}</td></tr>`).join('');
   $('#ledger-count').textContent = `${ledger.events.length} events`;
+  $('#export-status').textContent = '';
 }
 function eventResult(e) { return e.type === 'paypal.capture.response_lost' ? 'unknown · do not retry' : e.type === 'paypal.webhook.received' ? (e.duplicate ? 'duplicate ignored' : 'captured once') : e.type === 'paypal.capture.reconciled' ? 'reconciled · counted once' : e.type === 'checkpoint.approved' ? 'human approval' : e.environment === 'sandbox' ? 'Sandbox fixture order' : 'recorded'; }
 function escapeHtml(v) { return String(v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])); }
@@ -40,4 +42,23 @@ $('#checkpoint-list').addEventListener('click', e => {
 });
 $('#add-checkpoint').addEventListener('click', () => alert('This fixture keeps the event model deterministic. In a real project, add and version checkpoints before approval.'));
 $('#replay').addEventListener('click', () => { window.location.reload(); });
+$('#export-record').addEventListener('click', () => {
+  let url, link;
+  try {
+    const json = serializeFixtureRecord(ledger.events);
+    url = URL.createObjectURL(new Blob([json], { type: 'application/json;charset=utf-8' }));
+    link = document.createElement('a');
+    link.href = url;
+    link.download = FIXTURE_RECORD_FILENAME;
+    link.hidden = true;
+    document.body.append(link);
+    link.click();
+    $('#export-status').textContent = 'Fixture record prepared for download.';
+  } catch {
+    $('#export-status').textContent = 'Could not prepare the fixture record. Your current review is unchanged; try again.';
+  } finally {
+    link?.remove();
+    if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+});
 render();

@@ -10,13 +10,14 @@ import { pathToFileURL } from 'node:url';
 const root = resolve(process.env.SCOPESIGNAL_SOURCE || '.');
 const output = resolve(process.env.SCOPESIGNAL_EVIDENCE || 'out/browser-receiving');
 const scope = process.env.SCOPESIGNAL_CHECK_SCOPE || 'current-capture';
-assert(['current-capture', 'combined-drafts'].includes(scope), 'Unknown receiving scope');
+assert(['current-capture', 'combined-drafts', 'fixture-record'].includes(scope), 'Unknown receiving scope');
 const modulePath = process.env.SCOPESIGNAL_PLAYWRIGHT;
 const { chromium } = await import(modulePath ? pathToFileURL(modulePath).href : 'playwright');
 const { replayFixture } = await import(pathToFileURL(resolve(root, 'src/ledger.mjs')).href);
 const recorded = replayFixture().snapshot();
 const served = new Map();
 const failures = [], checks = [], errors = [], externalRequests = [];
+const downloads = [];
 const fixtureFontStylesheet = 'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap';
 const types = { '.html': 'text/html; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8' };
 const server = createServer(async (req, res) => {
@@ -41,7 +42,7 @@ async function check(name, run) {
 try {
   browser = await chromium.launch({ headless: true, ...(process.env.SCOPESIGNAL_CHROME ? { executablePath: process.env.SCOPESIGNAL_CHROME } : {}) });
   for (const [label, viewport] of [['desktop', { width: 1440, height: 1000 }], ['phone', { width: 390, height: 844 }]]) {
-    const context = await browser.newContext({ viewport });
+    const context = await browser.newContext({ viewport, acceptDownloads: true });
     await context.route('**/*', route => {
       if (new URL(route.request().url()).origin === origin) return route.continue();
       externalRequests.push(route.request().url());
@@ -65,6 +66,85 @@ try {
       assert.match(review, /no uncertain capture remains/);
       assert.doesNotMatch(review, /Keep capture unknown/);
     });
+    if (scope === 'fixture-record') {
+      async function downloadRecord() {
+        const pending = page.waitForEvent('download', { timeout: 5000 });
+        await page.locator('#export-record').click();
+        const item = await pending;
+        assert.equal(item.suggestedFilename(), 'scopesignal-fixture-record-v1.json');
+        const text = await readFile(await item.path(), 'utf8');
+        const record = JSON.parse(text);
+        downloads.push({ viewport: label, filename: item.suggestedFilename(), bytes: Buffer.byteLength(text), sha256: createHash('sha256').update(text).digest('hex'), eventCount: record.events.length });
+        await mkdir(output, { recursive: true });
+        await writeFile(resolve(output, `${label}-fixture-record.json`), text);
+        return { text, record };
+      }
+      let acceptedDownload;
+      await check(`${label}: actual download has the fixture schema and recorded outcome`, async () => {
+        const { record } = await downloadRecord();
+        assert.equal(record.schema, 'scopesignal.fixture-record');
+        assert.equal(record.version, 1);
+        assert.equal(record.fixtureOnly, true);
+        assert.equal(record.paymentEvidence, false);
+        assert.match(record.notice, /not a payment receipt/);
+        assert.equal(record.summary.captured, 40000);
+        assert.equal(record.events.length, 7);
+        assert.equal(await page.locator('#ledger-count').innerText(), '7 events');
+        assert.equal(await page.locator('a[download]').count(), 0);
+      });
+      await check(`${label}: download uses approval events and excludes unrecorded textarea values`, async () => {
+        const accepted = 'Reviewed <literal> & “quoted” 😀\nsecond evidence line';
+        await page.locator('#evidence-accessibility').fill(`  ${accepted}  `);
+        await page.locator('.approve[data-id="accessibility"]').click();
+        assert.equal(await page.locator('#export-status').innerText(), '');
+        // Deliberately distinguish current DOM values from the recorded event.
+        // The existing default renderer and the separately owned draft renderer
+        // can display different values; neither supplies export authority.
+        await page.locator('#evidence-accessibility').evaluate(element => { element.value = 'UNRECORDED_AFTER_APPROVAL'; });
+        await page.locator('#evidence-handoff').fill('UNAPPROVED_DRAFT_ONLY');
+        acceptedDownload = await downloadRecord();
+        const { text, record } = acceptedDownload;
+        const approval = record.checkpoints.find(checkpoint => checkpoint.id === 'accessibility').approval;
+        assert.equal(approval.source, 'checkpoint.approved');
+        assert.equal(approval.eventSequence, 8);
+        assert.equal(approval.acceptedEvidence, accepted);
+        assert.equal(record.events.at(-1).acceptedEvidence, accepted);
+        assert.equal(record.checkpoints.find(checkpoint => checkpoint.id === 'handoff').approval, null);
+        assert(!text.includes('UNRECORDED_AFTER_APPROVAL'));
+        assert(!text.includes('UNAPPROVED_DRAFT_ONLY'));
+        assert.equal(await page.locator('#evidence-handoff').inputValue(), 'UNAPPROVED_DRAFT_ONLY');
+        assert.equal(await page.locator('#ledger-count').innerText(), '8 events');
+        assert.equal(await page.locator('#captured').innerText(), '$400.00');
+      });
+      await check(`${label}: failed preparation retains the review and retry downloads the same record`, async () => {
+        await page.evaluate(() => {
+          globalThis.fixtureOriginalObjectURL = URL.createObjectURL;
+          URL.createObjectURL = () => { throw new Error('Synthetic download preparation refusal'); };
+        });
+        try {
+          await page.locator('#export-record').click();
+          assert.match(await page.locator('#export-status').innerText(), /Could not prepare the fixture record/);
+          assert.equal(await page.locator('#ledger-count').innerText(), '8 events');
+          assert.equal(await page.locator('#evidence-handoff').inputValue(), 'UNAPPROVED_DRAFT_ONLY');
+          assert.equal(await page.locator('a[download]').count(), 0);
+        } finally {
+          await page.evaluate(() => { URL.createObjectURL = globalThis.fixtureOriginalObjectURL; delete globalThis.fixtureOriginalObjectURL; });
+        }
+        const retry = await downloadRecord();
+        assert.equal(retry.text, acceptedDownload.text);
+        assert.equal(await page.locator('#ledger-count').innerText(), '8 events');
+        assert.match(await page.locator('#export-status').innerText(), /prepared for download/);
+      });
+      await check(`${label}: the downloaded record retains accepted evidence after fixture replay`, async () => {
+        await page.locator('#replay').click();
+        await page.waitForLoadState('networkidle');
+        assert.equal(await page.locator('#ledger-count').innerText(), '7 events');
+        const saved = JSON.parse(await readFile(resolve(output, `${label}-fixture-record.json`), 'utf8'));
+        assert.equal(saved.events.length, 8);
+        assert.equal(saved.events.at(-1).acceptedEvidence, acceptedDownload.record.events.at(-1).acceptedEvidence);
+        assert.equal(saved.paymentEvidence, false);
+      });
+    }
     if (scope === 'combined-drafts') {
     await check(`${label}: pending literal draft survives another approval`, async () => {
       const draft = '\n\nDraft </textarea><img id="injected-evidence" src=x onerror="globalThis.injectedEvidence=true"> & “quoted” 😀\n';
@@ -130,7 +210,7 @@ try {
 } catch (error) {
   failures.push({ name: 'browser setup or execution', result: 'fail', error: error.stack });
 } finally {
-  const receipt = { schema: 'scopesignal.browser-receiving.v1', scope, at: new Date().toISOString(), node: process.version, browser: browser?.version() || null, source: root, sourceCommit: process.env.SCOPESIGNAL_SOURCE_COMMIT || null, origin, servedSha256: Object.fromEntries([...served].sort()), checks, failures, pageErrors: errors, externalRequests, passed: failures.length === 0 };
+  const receipt = { schema: 'scopesignal.browser-receiving.v1', scope, at: new Date().toISOString(), node: process.version, browser: browser?.version() || null, source: root, sourceCommit: process.env.SCOPESIGNAL_SOURCE_COMMIT || null, origin, servedSha256: Object.fromEntries([...served].sort()), downloads, checks, failures, pageErrors: errors, externalRequests, passed: failures.length === 0 };
   await mkdir(output, { recursive: true });
   await writeFile(resolve(output, 'receipt.json'), JSON.stringify(receipt, null, 2) + '\n');
   console.log(JSON.stringify(receipt, null, 2));

@@ -1,0 +1,35 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> scopesignal@0.1.0 test
+> node --test
+
+✔ download has a fixed safe filename and explicit fixture schema and provenance (2.082643ms)
+✔ export records the actual replay events and reduced counted outcome (0.862347ms)
+✔ accepted multiline and literal evidence comes from the exact approval event (0.412109ms)
+✔ unapproved checkpoints have no approval evidence and no authored draft field (0.362445ms)
+✔ every capture prefix exports the current outcome without advancing or inventing events (0.501795ms)
+✔ repeated exports are deterministic and detached from the live in-memory ledger (0.314473ms)
+✔ an empty fixture exports no approval and never represents a successful payment (0.170757ms)
+✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (2.130724ms)
+✔ order and capture require prior explicit human approval and order (0.550067ms)
+✔ lost response cannot be blindly captured again; reconcile is one-time (0.193732ms)
+✔ same webhook event ID is idempotent and cannot double count (0.194913ms)
+✔ reducer never counts duplicate webhook in fixture stream (0.164918ms)
+✔ role previews are explicit local rules and never claim AI output (15.776237ms)
+✔ Workers AI adapter fails closed without binding and has no paid fallback (0.531699ms)
+✔ schema validation rejects malformed model output (0.294453ms)
+✔ every shipped replay prefix presents its current reduced capture state (2.374351ms)
+✔ ordinary webhook capture does not invent a reconciliation (0.376016ms)
+✔ missing and unrecognized states do not become captured or safe-to-retry labels (0.199781ms)
+✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (2.050363ms)
+✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (0.353161ms)
+✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (0.373161ms)
+✔ pending and never-requested captures remain distinct from resolved captures (0.29261ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 142.817825
