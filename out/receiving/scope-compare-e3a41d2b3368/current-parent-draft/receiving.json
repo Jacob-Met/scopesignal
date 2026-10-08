@@ -1,0 +1,419 @@
+{
+  "schema": "scopesignal.comparison-draft-receiving.v1",
+  "parent": "e6845560b1e5de54978c71873ef49decba472f94",
+  "coordination": "https://github.com/Jacob-Met/scopesignal/issues/21",
+  "status": "Current-parent real-browser receiving pending; do not infer acceptance from old-parent browser.",
+  "source": {
+    "scope-compare.html": {
+      "sha256": "630c6cdf5e9dcb4ac9b9c2e90507563832a8ba8af431ebbd9b7163783c27c5ee",
+      "gitBlob": "bf63e7971a2145d908d38232d3fb1bd95d26f529",
+      "bytes": 5503
+    },
+    "scope-compare.css": {
+      "sha256": "22589796d131cbaa0adb049a0f4bf4c5f1f96f0791f6561221d120d6b418a02b",
+      "gitBlob": "c1d4cbb891fec75585b222e020d63fd642db5a62",
+      "bytes": 6818
+    },
+    "src/scope-compare.mjs": {
+      "sha256": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+      "gitBlob": "f2dd4d5240131b18aa0ee86ba59dcd5a3076eb28",
+      "bytes": 7743
+    },
+    "src/scope-compare-ui.mjs": {
+      "sha256": "61d036fe3c4be9bbbaa969031bb90f401878174faf1e98ab67fb9f436af66ee6",
+      "gitBlob": "28dd8e2010b159df38148e5bc9df07f4fa09bdb2",
+      "bytes": 12876
+    },
+    "tests/scope-compare.test.mjs": {
+      "sha256": "b8de2f27e6c55a6676f0bc59a243e560d5e25a2fdfac397481b2d340a015b8e9",
+      "gitBlob": "9a819f18159b91091510370d3a33a0e660f5ef49",
+      "bytes": 11289
+    },
+    "scripts/check-scope-compare.mjs": {
+      "sha256": "5783f9f7fdf1925cf0550a263ec0e461f8a38cbb95ac16d4cbea752766dc1bec",
+      "gitBlob": "ccf84433f465079bbc7ded6ddac564110ac5368b",
+      "bytes": 25002
+    },
+    "scope.html": {
+      "sha256": "04fb1c1e4f8e7999038bcd6a0d308c3bca3f9873e313cb1edb72760e31ef8005",
+      "gitBlob": "f86e2c3606de99105f671ca718a26bc6fdffc639",
+      "bytes": 8059
+    },
+    "README.md": {
+      "sha256": "88657e774fee8b15bfcd46589c52470d575c004128279b023dc05eca116ef933",
+      "gitBlob": "c252576008042b549c46c730ae2595842cbe626d",
+      "bytes": 19098
+    }
+  },
+  "currentParentModel": {
+    "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/qualification/e684-focused-model.json",
+    "bytes": 2361,
+    "sha256": "11a58825bcdfd6cf228954675f86491d77a72393352e5981bf391aeb1f02f289",
+    "content": {
+      "parent": "e6845560b1e5de54978c71873ef49decba472f94",
+      "source_native": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/receiving-e684",
+      "node_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "node_version": "v24.19.0",
+      "command": [
+        "node",
+        "--test",
+        "tests/scope-compare.test.mjs",
+        "tests/workspace-form-values.test.mjs"
+      ],
+      "source_before": {
+        "package.json": "d73623f2519ca0992e562da7170645d83e103a895dc04479159e6504d5829573",
+        "src/scope-compare.mjs": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+        "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+        "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+        "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+        "tests/scope-compare.test.mjs": "b8de2f27e6c55a6676f0bc59a243e560d5e25a2fdfac397481b2d340a015b8e9",
+        "tests/workspace-form-values.test.mjs": "316f000073c2d659e629192ac3edc419771e19215487845b051c5df25d797685"
+      },
+      "source_after": {
+        "package.json": "d73623f2519ca0992e562da7170645d83e103a895dc04479159e6504d5829573",
+        "src/scope-compare.mjs": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+        "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+        "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+        "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+        "tests/scope-compare.test.mjs": "b8de2f27e6c55a6676f0bc59a243e560d5e25a2fdfac397481b2d340a015b8e9",
+        "tests/workspace-form-values.test.mjs": "316f000073c2d659e629192ac3edc419771e19215487845b051c5df25d797685"
+      },
+      "source_unchanged": true,
+      "returncode": 0,
+      "elapsed_seconds": 0.3206186294555664,
+      "summary": [
+        "ℹ tests 25",
+        "ℹ suites 0",
+        "ℹ pass 25",
+        "ℹ fail 0",
+        "ℹ cancelled 0",
+        "ℹ skipped 0",
+        "ℹ todo 0",
+        "ℹ duration_ms 222.58779"
+      ],
+      "transfer_archive_sha256": "73b978e677bfc2db10b29a5085ba225e692cd554e0f98014763cab548b6e8aad",
+      "storage_note": "Removed only redundant verified original baseline copy; native baseline and frozen source pin remain durable."
+    }
+  },
+  "currentParentIndependent": {
+    "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/receiving-e684/out/receiving/scope-compare-e3a41d2b3368/current-parent/independent/model-receipt.json",
+    "bytes": 3930,
+    "sha256": "c3aab35d45eccf8f536432e6dd232fb6dd2f34ded9ba9767541d560493ccd1a1",
+    "content": {
+      "reviewer": "autonomous-e3a41d2b3368/root",
+      "node": "v24.19.0",
+      "finishedAt": "2026-10-08T14:03:40.272Z",
+      "harness": {
+        "sha256": "04a3fcebea4688f8381b87aef4c7cb1cf3af181634c1d8ce64c6a02b190c280e"
+      },
+      "source": {
+        "scope-compare.mjs": {
+          "sha256": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+          "bytes": 7743
+        },
+        "scope-workspace-record.mjs": {
+          "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+          "bytes": 7421
+        },
+        "scope-plan.mjs": {
+          "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+          "bytes": 6794
+        },
+        "ledger.mjs": {
+          "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+          "bytes": 12684
+        }
+      },
+      "sourceUnchanged": true,
+      "passed": 12,
+      "failed": 0,
+      "results": [
+        {
+          "name": "draft absence differs from an empty reviewed ledger",
+          "passed": true,
+          "evidence": {
+            "draftCaptured": null,
+            "reviewedCaptured": 0,
+            "history": "not-reviewed"
+          }
+        },
+        {
+          "name": "equal cents retain saved amount text and require explicit pairing",
+          "passed": true,
+          "evidence": {
+            "savedTextChanged": true,
+            "parsedCentsChanged": false
+          }
+        },
+        {
+          "name": "positional coincidence does not establish identity",
+          "passed": true,
+          "evidence": {
+            "pairs": 0,
+            "unpairedEach": 2
+          }
+        },
+        {
+          "name": "repeated definitions stay ambiguous in both directions",
+          "passed": true,
+          "evidence": {
+            "explicitPair": [
+              1,
+              0
+            ],
+            "remainingA": [
+              0
+            ]
+          }
+        },
+        {
+          "name": "pair changes enforce one-to-one coordinates without mutating prior pairs",
+          "passed": true,
+          "evidence": {
+            "invalidCasesRejected": 7,
+            "priorPairsUnchanged": true
+          }
+        },
+        {
+          "name": "reordered unique definitions expose changed row numbers",
+          "passed": true,
+          "evidence": {
+            "pairs": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ],
+            "changedFields": false
+          }
+        },
+        {
+          "name": "accepted and pending evidence retain distinct roles",
+          "passed": true,
+          "evidence": {
+            "acceptedPreserved": true,
+            "emptyPendingPreserved": true,
+            "originalReviewUnchanged": true
+          }
+        },
+        {
+          "name": "equal totals and checkpoint fields do not hide divergent event order",
+          "passed": true,
+          "evidence": {
+            "kind": "divergent",
+            "commonEvents": 0,
+            "leftEvents": 2,
+            "rightEvents": 2
+          }
+        },
+        {
+          "name": "capture comparison follows native reconciliation and duplicate counting",
+          "passed": true,
+          "evidence": {
+            "counted": 2500,
+            "history": {
+              "kind": "a-prefix",
+              "commonEvents": 4,
+              "leftEvents": 4,
+              "rightEvents": 7
+            }
+          }
+        },
+        {
+          "name": "different reviewed plans do not assert a common event prefix",
+          "passed": true,
+          "evidence": {
+            "kind": "different-plans",
+            "commonEvents": null,
+            "leftEvents": 0,
+            "rightEvents": 0
+          }
+        },
+        {
+          "name": "unfinished draft amounts stay unavailable rather than fabricated",
+          "passed": true,
+          "evidence": {
+            "amount": null,
+            "stage": "draft"
+          }
+        },
+        {
+          "name": "immutable data and strict native admission preserve inputs",
+          "passed": true,
+          "evidence": {
+            "deepFreeze": true,
+            "liveActionInterface": false,
+            "extraFieldAndFlagRejected": true
+          }
+        }
+      ],
+      "boundary": "Independent model/API receiving using the actual strict codec and private native fixture replay. Browser behavior is qualified separately."
+    }
+  },
+  "originalParentBrowser": {
+    "path": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/qualification/browser-download-path/receipt.json",
+    "bytes": 8007,
+    "sha256": "cedc9fbb619c82be47b2acb0560dca68408f8cf217c27331cd5d7fee6aa6acf2",
+    "content": {
+      "schema": "scopesignal.scope-compare-receiving.v1",
+      "at": "2026-10-08T13:36:56.352Z",
+      "source": "/home/jacob/hamon-universal-e3a41d2b3368-scope-compare/candidate",
+      "sourceCommit": "17833f58564a6cbed543fe6edbfd82235acb0e1f",
+      "node": "v22.22.1",
+      "nodeExecutable": "/usr/bin/node",
+      "browser": "153.0.8010.47",
+      "browserExecutable": "/snap/bin/chromium",
+      "playwright": "/home/jacob/.cache/returnby-backup-8b336fefde84/node_modules/playwright/index.mjs",
+      "sourceBefore": {
+        "scope.html": "f7579ff6b8db27bb55cf31243ae2d504ded2efc03f1d4131573b7ec211652dcc",
+        "scope-compare.html": "630c6cdf5e9dcb4ac9b9c2e90507563832a8ba8af431ebbd9b7163783c27c5ee",
+        "scope-compare.css": "22589796d131cbaa0adb049a0f4bf4c5f1f96f0791f6561221d120d6b418a02b",
+        "src/scope-compare.mjs": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+        "src/scope-compare-ui.mjs": "61d036fe3c4be9bbbaa969031bb90f401878174faf1e98ab67fb9f436af66ee6",
+        "src/scope-workspace-record.mjs": "db5f4a99f5279127d4940904ff184f3e1d15b6df940807169a7253239f9212dd",
+        "src/scope-workspace.mjs": "a0690095f0806a69564dc4349508fd2332c03076d827c9e5a7a0c9f9405df7b1",
+        "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+        "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+      },
+      "servedSha256": {
+        "baseline/scope-workspace.css": "01f9a70a6f0e4f6be16d693e6a63459fd13c2944aa9d6882b93c23e74418416b",
+        "baseline/scope.html": "eb342ac10d6f09444b912171e5f03fed95ea90b7a42295c71d5390a533a3c546",
+        "baseline/src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+        "baseline/src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+        "baseline/src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+        "baseline/src/scope-workspace-record.mjs": "db5f4a99f5279127d4940904ff184f3e1d15b6df940807169a7253239f9212dd",
+        "baseline/src/scope-workspace.mjs": "a0690095f0806a69564dc4349508fd2332c03076d827c9e5a7a0c9f9405df7b1",
+        "baseline/styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+        "scope-compare.css": "22589796d131cbaa0adb049a0f4bf4c5f1f96f0791f6561221d120d6b418a02b",
+        "scope-compare.html": "630c6cdf5e9dcb4ac9b9c2e90507563832a8ba8af431ebbd9b7163783c27c5ee",
+        "scope-workspace.css": "01f9a70a6f0e4f6be16d693e6a63459fd13c2944aa9d6882b93c23e74418416b",
+        "scope.html": "f7579ff6b8db27bb55cf31243ae2d504ded2efc03f1d4131573b7ec211652dcc",
+        "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+        "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+        "src/scope-compare-ui.mjs": "61d036fe3c4be9bbbaa969031bb90f401878174faf1e98ab67fb9f436af66ee6",
+        "src/scope-compare.mjs": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+        "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+        "src/scope-workspace-record.mjs": "db5f4a99f5279127d4940904ff184f3e1d15b6df940807169a7253239f9212dd",
+        "src/scope-workspace.mjs": "a0690095f0806a69564dc4349508fd2332c03076d827c9e5a7a0c9f9405df7b1",
+        "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+      },
+      "fixtureSha256": {
+        "download-unknown-A.json": "9788fa03b67e3fa503931c68fdf481920c0aec7f9111804a8d5b5dc350c07659",
+        "download-reconciled-B.json": "753cc98bb1479349abf88c53a7b8fda6127a74a422d554220fa298aa6d23891b",
+        "divergent.json": "2c15a50e9d3baf5353aee06cb7e7c7960f4c80ea40772f873d8153f906c77751",
+        "different-plan.json": "38210203446f987baa05992835af2f10d52375141ec285f39decc6bc5660e854",
+        "original-draft.json": "2a9f450507f2c643923e0be6ef156664f9f6e9b162bec576b2973f21e11fe3c3",
+        "reordered-inserted.json": "0cabe09b77e4d3538a528ab4959e0d1935b9b7842765d8670dc5885f7495561e",
+        "duplicate-definitions.json": "2ee8cf9bad80b7ee17699feb991b40b3cee72c557950b26243ea3edffc16a15f",
+        "unsupported.json": "0a43ef43707d5c785b07cb68440f87b960cceee8b8c306679d1728613ddf2157",
+        "inconsistent.json": "0c91f1736be2af538e4523db46ccde1b9d8d6da20aa4bbfef5063b799d488ee1",
+        "invalid-utf8.json": "5f8e3f357eca3664fc07caa7b3d65f601a5941f143c11a3416d5475a805d63d7",
+        "oversized.json": "9d78de4e5b12fc166bed811cd230621ea1e1e353553fe31b92a73bfbf45d68ee",
+        "read-error.json": "9788fa03b67e3fa503931c68fdf481920c0aec7f9111804a8d5b5dc350c07659",
+        "slow-old-A.json": "9788fa03b67e3fa503931c68fdf481920c0aec7f9111804a8d5b5dc350c07659",
+        "slow-independent-A.json": "9788fa03b67e3fa503931c68fdf481920c0aec7f9111804a8d5b5dc350c07659",
+        "slow-independent-B.json": "753cc98bb1479349abf88c53a7b8fda6127a74a422d554220fa298aa6d23891b",
+        "slow-empty-A.json": "9788fa03b67e3fa503931c68fdf481920c0aec7f9111804a8d5b5dc350c07659",
+        "slow-swap-A.json": "753cc98bb1479349abf88c53a7b8fda6127a74a422d554220fa298aa6d23891b",
+        "slow-swap-B.json": "9788fa03b67e3fa503931c68fdf481920c0aec7f9111804a8d5b5dc350c07659",
+        "slow-chooser-A.json": "9788fa03b67e3fa503931c68fdf481920c0aec7f9111804a8d5b5dc350c07659",
+        "unfinished-draft.json": "417874430bcdc77c731bdff1ad4bcfea2ffb2cebdc03e94adf24ea8b8322c846"
+      },
+      "checks": [
+        {
+          "name": "parent has one-file replacement and no two-file comparison entry",
+          "result": "pass"
+        },
+        {
+          "name": "actual authoring downloads preserve unknown and reconciled saved states",
+          "result": "pass"
+        },
+        {
+          "name": "two real saved files expose exact accepted, pending, unknown and captured values",
+          "result": "pass"
+        },
+        {
+          "name": "side swap retains the chosen pairs and reverses event-prefix direction",
+          "result": "pass"
+        },
+        {
+          "name": "same-plan divergent facts and different plans remain distinct",
+          "result": "pass"
+        },
+        {
+          "name": "unique exact definitions follow reordered rows while inserted rows stay unpaired",
+          "result": "pass"
+        },
+        {
+          "name": "duplicate definitions require explicit one-to-one keyboard pairing",
+          "result": "pass"
+        },
+        {
+          "name": "invalid version, inconsistent replay, UTF-8 and oversized files retain both files and pairing",
+          "result": "pass"
+        },
+        {
+          "name": "a slower prior selection cannot replace a newer file on the same side",
+          "result": "pass"
+        },
+        {
+          "name": "simultaneous A and B reads have independent ownership",
+          "result": "pass"
+        },
+        {
+          "name": "clear cancels an initial pending read without changing the other file",
+          "result": "pass"
+        },
+        {
+          "name": "swap and a newer file-chooser intent cancel older pending reads",
+          "result": "pass"
+        },
+        {
+          "name": "literal draft text, unavailable amounts and empty strings remain readable",
+          "result": "pass"
+        },
+        {
+          "name": "desktop and phone comparisons fit the viewport and retain keyboard controls",
+          "result": "pass"
+        },
+        {
+          "name": "the original authoring tab and served runtime remain unchanged",
+          "result": "pass"
+        }
+      ],
+      "failures": [],
+      "pageErrors": [],
+      "externalRequests": [
+        {
+          "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+          "frame": "http://127.0.0.1:45017/baseline/scope.html"
+        },
+        {
+          "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+          "frame": "http://127.0.0.1:45017/scope.html"
+        }
+      ],
+      "notes": [
+        "Node drives the receiver; page modules execute in Chromium.",
+        "Deferred/error reads instrument File.arrayBuffer only inside the isolated browser receiver.",
+        "All model files use the project codec; A and B are actual authoring-page downloads."
+      ],
+      "passed": true
+    }
+  },
+  "currentBrowser": {
+    "status": "pending",
+    "nextReceiver": "isolated macOS Chrome154 / Puppeteer Core25.12; source and assertions unchanged, receiver adapter separate"
+  },
+  "preservation": {
+    "parentLeaves": 324,
+    "unchangedExistingSource": 46,
+    "scopeHtml": "exact parent plus one separate-tab link",
+    "readme": "exact parent plus comparison usage section",
+    "otherOwnerRuntime": "preserved byte-exact"
+  }
+}
