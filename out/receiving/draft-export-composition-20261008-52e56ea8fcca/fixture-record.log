@@ -1,0 +1,134 @@
+{
+  "schema": "scopesignal.browser-receiving.v1",
+  "scope": "fixture-record",
+  "at": "2026-10-08T09:33:26.673Z",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.0",
+  "source": "/dev/shm/hamon-52e56ea8fcca-scope/receiving",
+  "sourceCommit": "ab694a0e6088d2c8b84647c7b4edde54e4b07f43",
+  "origin": "http://127.0.0.1:37569",
+  "servedSha256": {
+    "app.mjs": "e8b76912ddc4ad914bf81af5f890c2c0cd0e80ec0b1083f722450f54f1e0012a",
+    "index.html": "9e9f56fae00f663e0ba498eedbd7586985fd6740291612ea65a1a62b46a30ed5",
+    "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+    "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+    "src/ledger.mjs": "9a6953b0b00810a50665ef6fab2780b1de59786764fdaba4c0a273ac360717f8",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+  },
+  "downloads": [
+    {
+      "viewport": "desktop",
+      "filename": "scopesignal-fixture-record-v1.json",
+      "bytes": 3220,
+      "sha256": "7343d28c7a21a3d8781672e1a10f9513367ea6ca94b348cc423e17c1786c560f",
+      "eventCount": 7
+    },
+    {
+      "viewport": "desktop",
+      "filename": "scopesignal-fixture-record-v1.json",
+      "bytes": 3674,
+      "sha256": "ab1ec74d1bfcb3308bfc2835df3e8dae21df1d12ac269b32d9fda1f269f68ba1",
+      "eventCount": 8
+    },
+    {
+      "viewport": "desktop",
+      "filename": "scopesignal-fixture-record-v1.json",
+      "bytes": 3674,
+      "sha256": "ab1ec74d1bfcb3308bfc2835df3e8dae21df1d12ac269b32d9fda1f269f68ba1",
+      "eventCount": 8
+    },
+    {
+      "viewport": "phone",
+      "filename": "scopesignal-fixture-record-v1.json",
+      "bytes": 3220,
+      "sha256": "7343d28c7a21a3d8781672e1a10f9513367ea6ca94b348cc423e17c1786c560f",
+      "eventCount": 7
+    },
+    {
+      "viewport": "phone",
+      "filename": "scopesignal-fixture-record-v1.json",
+      "bytes": 3674,
+      "sha256": "ab1ec74d1bfcb3308bfc2835df3e8dae21df1d12ac269b32d9fda1f269f68ba1",
+      "eventCount": 8
+    },
+    {
+      "viewport": "phone",
+      "filename": "scopesignal-fixture-record-v1.json",
+      "bytes": 3674,
+      "sha256": "ab1ec74d1bfcb3308bfc2835df3e8dae21df1d12ac269b32d9fda1f269f68ba1",
+      "eventCount": 8
+    }
+  ],
+  "checks": [
+    {
+      "name": "desktop: current capture callout agrees with the reduced ledger",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: recovery reviewer describes the current resolved state",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: actual download has the fixture schema and recorded outcome",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: download uses approval events and excludes unrecorded textarea values",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: failed preparation retains the review and retry downloads the same record",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: the downloaded record retains accepted evidence after fixture replay",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: layout retains a usable viewport",
+      "result": "pass"
+    },
+    {
+      "name": "phone: current capture callout agrees with the reduced ledger",
+      "result": "pass"
+    },
+    {
+      "name": "phone: recovery reviewer describes the current resolved state",
+      "result": "pass"
+    },
+    {
+      "name": "phone: actual download has the fixture schema and recorded outcome",
+      "result": "pass"
+    },
+    {
+      "name": "phone: download uses approval events and excludes unrecorded textarea values",
+      "result": "pass"
+    },
+    {
+      "name": "phone: failed preparation retains the review and retry downloads the same record",
+      "result": "pass"
+    },
+    {
+      "name": "phone: the downloaded record retains accepted evidence after fixture replay",
+      "result": "pass"
+    },
+    {
+      "name": "phone: layout retains a usable viewport",
+      "result": "pass"
+    },
+    {
+      "name": "no browser script errors or unexpected external request attempts",
+      "result": "pass"
+    }
+  ],
+  "failures": [],
+  "pageErrors": [],
+  "externalRequests": [
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+  ],
+  "passed": true
+}

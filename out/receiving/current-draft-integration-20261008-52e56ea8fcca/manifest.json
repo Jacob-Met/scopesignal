@@ -1,0 +1,117 @@
+{
+  "schema": "scopesignal.current-draft-integration.v1",
+  "worker": "estate-52e56ea8fcca",
+  "recordedAt": "2026-10-08T10:04:59.429Z",
+  "receivingParent": "5d8b9ae344c96db3a357da87472c553485daaaf3",
+  "receivingTree": "31899db54e2935c12f0978b8092efefca3716379",
+  "originalHeads": [
+    "0f8afe359b7a00963048f48c8ccec261d224c337",
+    "fcce3f7d4780aa29f0e961b9b098abfbd3b804aa"
+  ],
+  "qualifiedSourceCommit": "f20f60e4be804689cfa30244a4e96a65a69bd61b",
+  "qualifiedSourceTree": "e3e5bc8ce750d435441463821e4e75a165e675c1",
+  "node": {
+    "version": "v24.19.0",
+    "passed": 48,
+    "failed": 0,
+    "log": "out/receiving/current-draft-integration-20261008-52e56ea8fcca/node-tests.log",
+    "sha256": "2383fbab1e1edfa3d0cea81e5989f865600d7f2fcfa884f1b7f1928d98944aae"
+  },
+  "browser": {
+    "combined-drafts": {
+      "path": "out/receiving/current-draft-integration-20261008-52e56ea8fcca/combined-drafts/receipt.json",
+      "sha256": "6ab5008785c88b818d622b2844cd00fc86c13e3e51684e202d8759fb58af12c5",
+      "at": "2026-10-08T09:58:28.228Z",
+      "browser": "153.0.8010.0",
+      "checks": 15,
+      "downloads": 0,
+      "servedSha256": {
+        "app.mjs": "a33c3519e59445e4ed6c19a2beec81005482e34b5e6bd396f10916cfbfd96a24",
+        "fixture-timeline.css": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+        "index.html": "e1111ad42f478605fdc3d7f483afb905d5d0c6d3d9d58a6dc937fccd475d253a",
+        "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+        "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+        "src/fixture-timeline-view.mjs": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+        "src/fixture-timeline.mjs": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+        "src/ledger.mjs": "9a6953b0b00810a50665ef6fab2780b1de59786764fdaba4c0a273ac360717f8",
+        "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+        "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+      }
+    },
+    "fixture-record": {
+      "path": "out/receiving/current-draft-integration-20261008-52e56ea8fcca/fixture-record/receipt.json",
+      "sha256": "24e163a17fcbb937f2db6a83a468c927906aa5be074657bbae9006b91c649b71",
+      "at": "2026-10-08T09:58:37.287Z",
+      "browser": "153.0.8010.0",
+      "checks": 15,
+      "downloads": 6,
+      "servedSha256": {
+        "app.mjs": "a33c3519e59445e4ed6c19a2beec81005482e34b5e6bd396f10916cfbfd96a24",
+        "fixture-timeline.css": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+        "index.html": "e1111ad42f478605fdc3d7f483afb905d5d0c6d3d9d58a6dc937fccd475d253a",
+        "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+        "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+        "src/fixture-timeline-view.mjs": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+        "src/fixture-timeline.mjs": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+        "src/ledger.mjs": "9a6953b0b00810a50665ef6fab2780b1de59786764fdaba4c0a273ac360717f8",
+        "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+        "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+      }
+    },
+    "timeline": {
+      "path": "out/receiving/current-draft-integration-20261008-52e56ea8fcca/timeline/receipt.json",
+      "sha256": "f7ea99da89e671d9e6e52eb28dd3cf17de20934c8af26e3f19c444d3ea23629d",
+      "at": "2026-10-08T09:58:50.189Z",
+      "browser": "153.0.8010.0",
+      "checks": 20,
+      "downloads": 0,
+      "servedSha256": {
+        "app.mjs": "a33c3519e59445e4ed6c19a2beec81005482e34b5e6bd396f10916cfbfd96a24",
+        "fixture-timeline.css": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+        "index.html": "e1111ad42f478605fdc3d7f483afb905d5d0c6d3d9d58a6dc937fccd475d253a",
+        "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+        "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+        "src/fixture-timeline-view.mjs": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+        "src/fixture-timeline.mjs": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+        "src/ledger.mjs": "9a6953b0b00810a50665ef6fab2780b1de59786764fdaba4c0a273ac360717f8",
+        "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+        "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+      }
+    }
+  },
+  "sourceSha256": {
+    ".github/workflows/pages.yml": "ed6e9bb310c54237902f18d928d166c1b572bb3ce9dd842894d22a47fda8a3ae",
+    ".gitignore": "e658f65471f4515ec0c343df902bf30f0259103f40401b2b74e03198d8c2c317",
+    ".gitlab-ci.yml": "8cda04e38f8d343324fd43a9d4a278c751c6e0305997fbc19584eaa7b893efcf",
+    "LICENSE": "3f25841c9348bbf34a89b246075022b77ab309bf6d5102b165a1bf900c5c246f",
+    "README.md": "89ea22aef3e6c5b505e84696bc58346ee1570a647a0c92cbb0594f90eac19d6f",
+    "app.mjs": "a33c3519e59445e4ed6c19a2beec81005482e34b5e6bd396f10916cfbfd96a24",
+    "fixture-timeline.css": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+    "index.html": "e1111ad42f478605fdc3d7f483afb905d5d0c6d3d9d58a6dc937fccd475d253a",
+    "package.json": "d73623f2519ca0992e562da7170645d83e103a895dc04479159e6504d5829573",
+    "scope-workspace.css": "ce89b3cc94e636388a63c63326ca1e030473c08bac1a6265eb24974083ff1420",
+    "scope.html": "462ff6bf987d27ac71bb9cd4c2c8a987f29159dea24c8b5fdd47e5cc532abf0b",
+    "scripts/check-browser.mjs": "1dd3cd5752d910287ca6fad092baa79731e965ff1a1d9dd4ad7854723c607f7d",
+    "scripts/check-fixture-timeline.mjs": "0e94c59e0f3ebdfad8d839e0f9856ed4664fa32393f5e94eef9f8f5615b5140c",
+    "scripts/check-scope-workspace.mjs": "d2537d90f3ec7534a468fb693a7e77455f3942105acbc8980d98646bed20e028",
+    "scripts/serve.mjs": "f5c195cc4aa83a4eb7d1ead87dd64896d87da2fdce9c31de5c6a84d12f398f87",
+    "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+    "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+    "src/fixture-timeline-view.mjs": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+    "src/fixture-timeline.mjs": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+    "src/ledger.mjs": "9a6953b0b00810a50665ef6fab2780b1de59786764fdaba4c0a273ac360717f8",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/scope-workspace.mjs": "8c2506cf4ecca18b8b40c979e7aa26a8274e93571f073c732118becaea12a3d7",
+    "src/workers-ai.mjs": "81c0ae5298b2347c0c4c6ef4372f1d18a673aadc65d154513c7e3304bdf0a165",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "tests/evidence-drafts.test.mjs": "2277cbb6cb01d4ca958bd0c239a7e4aab8092adf5d28af1fd6b0acfaeef62e3d",
+    "tests/fixture-record.test.mjs": "c11e29923f85e05122d8d6e17783438d94547a716c6b3004d389b493de2ff238",
+    "tests/fixture-timeline.test.mjs": "0863902cfb74b3de4054222e37821e044317595057854ad66cfd1ea2d1c8ef81",
+    "tests/ledger.test.mjs": "0d6789f09f2c814ec601a2b7ad00cfa37396be579775ae31af8ab685f76763b0",
+    "tests/payment-presentation.test.mjs": "4541ac2169b0b77a9042841a2f55688c4b90ab71d8dde87a4887f61a436adfa0",
+    "tests/recovery-current-state.test.mjs": "7a1d96153e8d407a1efaa5075ecd66925e5dc5869bb23030a0e6a807c503204e",
+    "tests/scope-plan.test.mjs": "f751de2db9141bf1f446a3071bef20081dbf2bbb4ec3b3ccf84c9e400c18b685"
+  },
+  "publicationClaim": "Source qualification only; native PR and Pages run establish publication and public receiving."
+}

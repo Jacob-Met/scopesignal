@@ -1,0 +1,53 @@
+{
+  "schema": "scopesignal.source-incorporation.v1",
+  "recordedAt": "2026-10-08T08:11:55.480Z",
+  "worker": "estate-52e56ea8fcca/repo-coordination",
+  "repository": "Jacob-Met/scopesignal",
+  "baseBranch": "paypal-ai",
+  "baseCommit": "33f021aaacd6d7ed68c508d92901e7442d99586c",
+  "sourceCommit": "a1b4df241c565c10235500844e06b900d8cc0011",
+  "sourceTree": "d0cea2824e4febc3374dc3e5eaeca84a5942979b",
+  "sourceParents": [
+    "33f021aaacd6d7ed68c508d92901e7442d99586c",
+    "fcce3f7d4780aa29f0e961b9b098abfbd3b804aa"
+  ],
+  "originalCommitsPreserved": [
+    "0f8afe359b7a00963048f48c8ccec261d224c337",
+    "fcce3f7d4780aa29f0e961b9b098abfbd3b804aa"
+  ],
+  "parentLeaves": 38,
+  "preservedParentLeaves": 37,
+  "changedParentPaths": [
+    "app.mjs"
+  ],
+  "addedSourcePaths": [
+    "tests/evidence-drafts.test.mjs"
+  ],
+  "agentsInstructionsInSource": [],
+  "applicationSha256": "5ae662e8a18ee0e603615a15f6315db274cfb81f4e0d1d6420f75103e7c57719",
+  "originalQualificationAppSha256": "5ae662e8a18ee0e603615a15f6315db274cfb81f4e0d1d6420f75103e7c57719",
+  "applicationExactlyMatchesPriorQualification": true,
+  "adapterSha256": "553fd0a947114e4c75a9156b54479df91c54082e8b73de12e3aa640b393190e3",
+  "adapterOnlyAdditionToOriginal": "capture-title and capture-guidance element IDs",
+  "nodeQualification": {
+    "command": "npm test",
+    "node": "v24.19.0",
+    "exitCode": 0,
+    "passed": 23,
+    "failed": 0,
+    "skipped": 0,
+    "sourceBytesUnchangedSinceObservedRun": true
+  },
+  "browserQualification": {
+    "command": "SCOPESIGNAL_CHECK_SCOPE=combined-drafts node scripts/check-browser.mjs (existing Playwright and Chromium explicitly selected)",
+    "receipt": "receipt.json",
+    "receiptSha256": "22f9194a305b1daef0ae86be89e7bea914fa9b133598369438b1387ec27b1c37",
+    "checkedAt": "2026-10-08T08:08:30.124Z",
+    "browser": "153.0.8010.0",
+    "passedGroups": 15,
+    "failedGroups": 0,
+    "externalRequestsBlocked": true,
+    "pageErrors": []
+  },
+  "integrationStatus": "local source composition verified; remote publication and default-branch integration pending independent lead review"
+}

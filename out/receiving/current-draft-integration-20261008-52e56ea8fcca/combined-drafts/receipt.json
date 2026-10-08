@@ -1,0 +1,94 @@
+{
+  "schema": "scopesignal.browser-receiving.v1",
+  "scope": "combined-drafts",
+  "at": "2026-10-08T09:58:28.228Z",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.0",
+  "source": "/dev/shm/hamon-52e56ea8fcca-scope/receiving",
+  "sourceCommit": "f20f60e4be804689cfa30244a4e96a65a69bd61b",
+  "origin": "http://127.0.0.1:43677",
+  "servedSha256": {
+    "app.mjs": "a33c3519e59445e4ed6c19a2beec81005482e34b5e6bd396f10916cfbfd96a24",
+    "fixture-timeline.css": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+    "index.html": "e1111ad42f478605fdc3d7f483afb905d5d0c6d3d9d58a6dc937fccd475d253a",
+    "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+    "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+    "src/fixture-timeline-view.mjs": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+    "src/fixture-timeline.mjs": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+    "src/ledger.mjs": "9a6953b0b00810a50665ef6fab2780b1de59786764fdaba4c0a273ac360717f8",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+  },
+  "downloads": [],
+  "checks": [
+    {
+      "name": "desktop: current capture callout agrees with the reduced ledger",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: recovery reviewer describes the current resolved state",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: pending literal draft survives another approval",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: refused approval retains its draft and recorded approvals",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: final approval preserves exact accepted evidence and one captured amount",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: explicit replay restores fixture state",
+      "result": "pass"
+    },
+    {
+      "name": "desktop: layout retains a usable viewport",
+      "result": "pass"
+    },
+    {
+      "name": "phone: current capture callout agrees with the reduced ledger",
+      "result": "pass"
+    },
+    {
+      "name": "phone: recovery reviewer describes the current resolved state",
+      "result": "pass"
+    },
+    {
+      "name": "phone: pending literal draft survives another approval",
+      "result": "pass"
+    },
+    {
+      "name": "phone: refused approval retains its draft and recorded approvals",
+      "result": "pass"
+    },
+    {
+      "name": "phone: final approval preserves exact accepted evidence and one captured amount",
+      "result": "pass"
+    },
+    {
+      "name": "phone: explicit replay restores fixture state",
+      "result": "pass"
+    },
+    {
+      "name": "phone: layout retains a usable viewport",
+      "result": "pass"
+    },
+    {
+      "name": "no browser script errors or unexpected external request attempts",
+      "result": "pass"
+    }
+  ],
+  "failures": [],
+  "pageErrors": [],
+  "externalRequests": [
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+  ],
+  "passed": true
+}

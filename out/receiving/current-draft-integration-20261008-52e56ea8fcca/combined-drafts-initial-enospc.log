@@ -1,0 +1,25 @@
+{
+  "schema": "scopesignal.browser-receiving.v1",
+  "scope": "combined-drafts",
+  "at": "2026-10-08T09:46:20.926Z",
+  "node": "v24.19.0",
+  "browser": "153.0.8010.0",
+  "source": "/dev/shm/hamon-52e56ea8fcca-scope/receiving",
+  "sourceCommit": "f20f60e4be804689cfa30244a4e96a65a69bd61b",
+  "origin": "http://127.0.0.1:34063",
+  "servedSha256": {
+    "index.html": "e1111ad42f478605fdc3d7f483afb905d5d0c6d3d9d58a6dc937fccd475d253a"
+  },
+  "downloads": [],
+  "checks": [],
+  "failures": [
+    {
+      "name": "browser setup or execution",
+      "result": "fail",
+      "error": "page.goto: net::ERR_INSUFFICIENT_RESOURCES at http://127.0.0.1:34063/\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:34063/\", waiting until \"networkidle\"\u001b[22m\n\n    at /dev/shm/hamon-52e56ea8fcca-scope/receiving/scripts/check-browser.mjs:55:16"
+    }
+  ],
+  "pageErrors": [],
+  "externalRequests": [],
+  "passed": false
+}
