@@ -24,12 +24,14 @@
       <div class="scope-file-controls">
         <button id="scope-save" class="button button-outline" type="button">Download workspace</button>
         <button id="scope-review-download" class="button button-outline" type="button">Download scope review</button>
+        <button id="scope-revision-download" class="button button-outline" type="button" aria-describedby="scope-revision-help" disabled>Download revision draft</button>
         <label class="scope-file-open" for="scope-open">Open saved workspace
           <input id="scope-open" type="file" accept=".json,application/json" aria-describedby="scope-file-help">
         </label>
       </div>
       <p id="scope-file-help" class="microcopy">Version 1 workspace JSON, up to 1 MiB. These unsigned files contain fictional records, not verified approvals or payment evidence.</p>
       <p class="microcopy">Scope review is a read-only HTML snapshot you can open offline and print, including unfinished fields or recorded review evidence. Keep the workspace JSON to resume editing.</p>
+      <p id="scope-revision-help" class="microcopy">After approval, download a revision draft to reuse the original scope terms. The copy has no approvals, payment events or review notes. Your current workspace stays open; reopen the copied JSON to edit and review it anew.</p>
       <p id="scope-file-status" role="status" aria-live="polite"></p>
       <div id="scope-open-preview" class="scope-open-preview" hidden>
         <h3>Ready to open</h3>
@@ -84,7 +86,7 @@
         <p class="scope-help">These are simulated events for this scope, not payment evidence. Lost responses remain unknown until you simulate a transaction lookup.</p>
         <div class="table-wrap"><table><caption class="sr-only">Events recorded by explicit decisions in the authored fixture</caption><thead><tr><th scope="col">#</th><th scope="col">CHECKPOINT</th><th scope="col">EVENT</th><th scope="col">RESULT</th></tr></thead><tbody id="scope-event-body"></tbody></table></div>
       </section>
-      <p class="scope-help">To try a different scope after approval, <a href="./scope.html">start a fresh fixture</a>. The current in-memory plan and events will be cleared.</p>
+      <p class="scope-help">Use Download revision draft above to keep the original terms for a new review. To return to the example instead, <a href="./scope.html">start a fresh fixture</a>; this clears the current in-memory plan and events.</p>
     </section>
     <noscript><p class="scope-errors">This interactive fixture needs JavaScript. The <a href="./index.html">example page</a> describes the payment model.</p></noscript>
   </main>
