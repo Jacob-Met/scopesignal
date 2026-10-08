@@ -132,6 +132,44 @@ browser receiving checks with the same installed Playwright/Chromium variables
 as `scripts/check-browser.mjs`. It blocks external requests and records served
 source hashes, observed behavior, and screenshots. No packages are installed.
 
+### Compare two saved workspaces
+
+Choose **Compare two saved workspaces** on the authoring page. The comparison
+opens in a separate tab, leaving the active draft, evidence and simulation in
+place. Open one saved workspace as **A** and another as **B** to see the exact
+brief and checkpoint terms, accepted and pending evidence, recorded outcomes,
+and available totals. Incomplete draft amounts remain unavailable rather than
+appearing as zero.
+
+Unique rows with identical deliverable, amount text and planned evidence start
+paired as **Same definition**. Repeated or changed definitions stay unpaired;
+use the checkpoint selectors to choose explicit one-to-one pairs. The label
+describes equality of those saved fields. Row numbers and fixture IDs do not
+establish historical identity. Unpaired rows are shown in full without
+inferring an addition or removal. **Swap A and B** preserves chosen pairs;
+**Show changed fields only** narrows the displayed comparison.
+
+The event lists are compared only when both reviewed plan definitions agree.
+The page distinguishes equal sequences, an exact prefix, divergent events,
+different plans and unfinished drafts. These relationships do not establish
+chronology or authorship. The same strict workspace decoder admits each file
+before it replaces a displayed side; an invalid file leaves both the comparison
+and the chosen pairs intact. Clear, swap, and a newer file selection cancel
+older pending reads. Files stay local, with no automatic storage, authoring
+actions, payment controls or external assets on the comparison page.
+
+`node scripts/check-scope-compare.mjs` runs the optional real-file browser
+receiver using an existing Playwright/Chromium installation. Set
+`SCOPESIGNAL_PLAYWRIGHT` to its entry module and `SCOPESIGNAL_CHROME` to the
+browser executable. `SCOPESIGNAL_SOURCE`, `SCOPESIGNAL_EVIDENCE` and
+`SCOPESIGNAL_PROFILE` select this run's source, evidence and disposable browser
+profile directories. The profile must be dedicated to the receiver: it is
+removed after the browser closes. `SCOPESIGNAL_BASELINE` optionally identifies
+the unchanged parent source for the missing-entry negative control. The
+receiver makes actual authoring downloads, opens both files through native file
+inputs, checks divergent and invalid files, exercises competing reads and
+keyboard pairing, and records desktop/phone screenshots plus source hashes.
+
 ## Download an authored scope review
 
 In the authored workspace, **Download scope review** saves

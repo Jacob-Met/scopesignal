@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e8">
+  <meta name="description" content="Compare two saved fictional ScopeSignal workspaces while keeping the authoring workspace in place.">
+  <title>Compare saved scopes — ScopeSignal</title>
+  <link rel="stylesheet" href="./scope-compare.css">
+  <script type="module" src="./src/scope-compare-ui.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to comparison</a>
+  <header class="topbar"><a class="brand" href="./index.html"><span aria-hidden="true">S</span> ScopeSignal</a><span>Fictional scope review</span></header>
+  <main id="main">
+    <p class="eyebrow">TWO SAVED WORKSPACES · ONE CLEAR REVIEW</p>
+    <h1>See what changed.<br><em>Keep both scopes in view.</em></h1>
+    <p class="lede">Open two saved workspaces to compare the brief, checkpoint terms, evidence and simulated outcomes. Your authoring tab stays in place.</p>
+    <div class="file-grid">
+      <section class="file-card" aria-labelledby="a-title">
+        <h2 id="a-title"><span class="side-tag">A</span> First workspace</h2>
+        <label for="file-a">Choose file A</label>
+        <input id="file-a" type="file" accept=".json,application/json" aria-describedby="file-help status-a">
+        <p id="name-a" class="file-name">No file opened</p>
+        <p id="detail-a" class="file-detail">Choose a saved workspace to begin.</p>
+        <button id="clear-a" type="button" class="text-button">Clear A</button>
+        <p id="status-a" class="file-status" role="status" aria-live="polite"></p>
+      </section>
+      <section class="file-card" aria-labelledby="b-title">
+        <h2 id="b-title"><span class="side-tag">B</span> Second workspace</h2>
+        <label for="file-b">Choose file B</label>
+        <input id="file-b" type="file" accept=".json,application/json" aria-describedby="file-help status-b">
+        <p id="name-b" class="file-name">No file opened</p>
+        <p id="detail-b" class="file-detail">Choose a saved workspace to begin.</p>
+        <button id="clear-b" type="button" class="text-button">Clear B</button>
+        <p id="status-b" class="file-status" role="status" aria-live="polite"></p>
+      </section>
+    </div>
+    <p id="file-help" class="help">Use version 1 ScopeSignal workspace JSON, up to 1 MiB per file. Files stay on this device. Invalid files leave the displayed review intact.</p>
+    <p id="waiting" class="empty-state">Choose both files to compare them.</p>
+    <section id="comparison" hidden aria-labelledby="comparison-title">
+      <div class="comparison-head">
+        <div><p class="eyebrow">SAVED CONTENTS</p><h2 id="comparison-title">The comparison</h2></div>
+        <div class="toolbar">
+          <button id="swap" type="button">Swap A and B</button>
+          <label class="checkbox"><input id="changes-only" type="checkbox"> Show changed fields only</label>
+        </div>
+      </div>
+      <p id="comparison-status" role="status" aria-live="polite"></p>
+      <section class="panel" aria-labelledby="project-title">
+        <h3 id="project-title">Project and amounts</h3>
+        <p class="help">Saved draft strings stay exact. A draft may contain incomplete amounts; unavailable values are never treated as zero.</p>
+        <div id="project-fields"></div>
+        <div id="totals"></div>
+      </section>
+      <section class="panel" aria-labelledby="pairing-title">
+        <div class="section-heading"><h3 id="pairing-title">Pair checkpoints for review</h3><button id="reset-pairs" type="button" class="text-button">Reset to same definitions</button></div>
+        <p class="help">Unique identical deliverable, amount-text and planned-evidence values start paired as <strong>same definition</strong>. Repeated definitions stay unpaired. You can pair changed rows yourself, one to one.</p>
+        <p class="help">Row numbers and fixture IDs do not prove that checkpoints share a history. Pairing is a review choice; it does not edit either file.</p>
+        <div id="pair-controls" class="pair-controls"></div>
+        <p id="pair-summary" class="pair-summary"></p>
+      </section>
+      <section aria-labelledby="checkpoint-title">
+        <h3 id="checkpoint-title">Checkpoint details</h3>
+        <div id="paired-rows"></div>
+        <div id="unpaired-rows" class="unpaired-grid"></div>
+      </section>
+      <section class="panel" aria-labelledby="history-title">
+        <h3 id="history-title">Recorded fixture histories</h3>
+        <p id="history-summary"></p>
+        <p class="help">Histories are compared only when both files have the same reviewed plan definitions. A shared event sequence does not establish chronology or authorship.</p>
+        <div class="event-grid">
+          <details id="events-a"><summary>Inspect file A events</summary><div class="event-list"></div></details>
+          <details id="events-b"><summary>Inspect file B events</summary><div class="event-list"></div></details>
+        </div>
+      </section>
+    </section>
+    <noscript><p>This local comparison needs JavaScript. The <a href="./scope.html">authoring workspace</a> explains the saved format.</p></noscript>
+  </main>
+  <footer><strong>ScopeSignal</strong><p>Unsigned fictional files · no verified approvals or payments · no live-money controls</p><a href="./scope.html" target="_blank" rel="noopener">Open an authoring workspace</a></footer>
+</body>
+</html>
+

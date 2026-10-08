@@ -1,0 +1,228 @@
+{
+  "schema": "scopesignal.saved-comparison-browser-acceptance.v1",
+  "repository": "Jacob-Met/scopesignal",
+  "coordination": "https://github.com/Jacob-Met/scopesignal/issues/21",
+  "pullRequest": "https://github.com/Jacob-Met/scopesignal/pull/28",
+  "qualifiedHead": "38e7042dab037cd01227320bc997bf070aea95a7",
+  "qualifiedTree": "9458398a7122eed13a29f728647e968a32090b19",
+  "parent": "bab391c7c6fec1193e221997e4d66d89bd914cfd",
+  "passed": true,
+  "passedGroups": 16,
+  "elapsedSeconds": 4.686,
+  "browser": "Chrome/154.0.8037.98",
+  "browserExecutable": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "driverNode": "v26.3.0",
+  "driverNodeExecutable": "/opt/homebrew/Cellar/node/26.3.0/bin/node",
+  "modelQualificationNode": "24.19.0; previously accepted 25 focused and 12 independent groups, unchanged model/codec closure",
+  "hostedNode24Gate": {
+    "reportedBy": "root",
+    "node": "24.21",
+    "passed": 140,
+    "failed": 0,
+    "skipped": 0,
+    "run": 37797923400,
+    "job": 113382125429
+  },
+  "sourceFilesUnchanged": 102,
+  "driver": {
+    "path": "check-scope-compare.mjs",
+    "sha256": "5783f9f7fdf1925cf0550a263ec0e461f8a38cbb95ac16d4cbea752766dc1bec",
+    "gitBlob": "ccf84433f465079bbc7ded6ddac564110ac5368b",
+    "diffFromPublishedDriver": []
+  },
+  "adapter": {
+    "path": "puppeteer-adapter-v3.mjs",
+    "sha256": "2cb8e3dbb0801be749b52ee78169b7e11cc276d50bbae209f71407553dc54210",
+    "gitBlob": "d01f1e25f0a18f684c66ba554a042e0fef7853a0",
+    "assertionsChanged": false,
+    "applicationChanges": false,
+    "corrections": [
+      "Native accessible-name selector excludes aria-hidden arrow; the first Mac attempt using textContent failed before authoring downloads.",
+      "One focused native-select ArrowDown call uses native b typeahead on macOS; trusted keydown/input/change and exact resulting option are recorded."
+    ]
+  },
+  "receipts": {
+    "browser-bab-v2/receipt.json": "695c9f7b57617b31d73df3fc8a30d2cc94a0a02035d1bc8b912174891a233178",
+    "browser-bab-v2/adapter-receipt.json": "39b819155ae270ef5a38e94a5777985545718d5517c8d70cb5e8bc02f5588214",
+    "browser-bab-v2/runner.json": "332fbf04b7ca37a558cde3018891aef2f09af937c90ccf570a622dfe8ddc598b",
+    "browser-bab-v2/process.log": "b7bf4b2ad624d6da0019bd196057f7db6211657fab691b6352ace5e6819c299c",
+    "BAB-RECEIVING-MANIFEST.json": "9bc8b4af3ae69453bedfc1988cedbaff0dd19679179f56c6de339b554c080495"
+  },
+  "checks": [
+    {
+      "name": "parent has one-file replacement and no two-file comparison entry",
+      "result": "pass"
+    },
+    {
+      "name": "actual authoring downloads preserve unknown and reconciled saved states",
+      "result": "pass"
+    },
+    {
+      "name": "two real saved files expose exact accepted, pending, unknown and captured values",
+      "result": "pass"
+    },
+    {
+      "name": "side swap retains the chosen pairs and reverses event-prefix direction",
+      "result": "pass"
+    },
+    {
+      "name": "same-plan divergent facts and different plans remain distinct",
+      "result": "pass"
+    },
+    {
+      "name": "unique exact definitions follow reordered rows while inserted rows stay unpaired",
+      "result": "pass"
+    },
+    {
+      "name": "duplicate definitions require explicit one-to-one keyboard pairing",
+      "result": "pass"
+    },
+    {
+      "name": "invalid version, inconsistent replay, UTF-8 and oversized files retain both files and pairing",
+      "result": "pass"
+    },
+    {
+      "name": "current native field admission rejects lossy line breaks and accepts CRLF JSON formatting",
+      "result": "pass"
+    },
+    {
+      "name": "a slower prior selection cannot replace a newer file on the same side",
+      "result": "pass"
+    },
+    {
+      "name": "simultaneous A and B reads have independent ownership",
+      "result": "pass"
+    },
+    {
+      "name": "clear cancels an initial pending read without changing the other file",
+      "result": "pass"
+    },
+    {
+      "name": "swap and a newer file-chooser intent cancel older pending reads",
+      "result": "pass"
+    },
+    {
+      "name": "literal draft text, unavailable amounts and empty strings remain readable",
+      "result": "pass"
+    },
+    {
+      "name": "desktop and phone comparisons fit the viewport and retain keyboard controls",
+      "result": "pass"
+    },
+    {
+      "name": "the original authoring tab and served runtime remain unchanged",
+      "result": "pass"
+    }
+  ],
+  "actualDownloads": [
+    {
+      "guid": "790feba8-0609-411a-8c4a-abef8e2fda96",
+      "suggestedFilename": "scopesignal-workspace-v1.json",
+      "url": "blob:http://127.0.0.1:61218/678a6c15-e8b3-4808-8ec7-6728a14a65fc",
+      "state": "completed",
+      "receivedBytes": 2011,
+      "totalBytes": 2011,
+      "savedAs": "/Users/me/.hamon-rdc-seats/seat-5/hamon-e3a41d2b3368-scope-compare/browser-bab-v2/fixtures/download-unknown-A.json",
+      "sha256": "9788fa03b67e3fa503931c68fdf481920c0aec7f9111804a8d5b5dc350c07659"
+    },
+    {
+      "guid": "b5f7127e-bb2b-4dfe-bbdc-a6b52f86fb4d",
+      "suggestedFilename": "scopesignal-workspace-v1.json",
+      "url": "blob:http://127.0.0.1:61218/d2aff455-4d71-4d07-b67a-27c32c4e3948",
+      "state": "completed",
+      "receivedBytes": 2768,
+      "totalBytes": 2768,
+      "savedAs": "/Users/me/.hamon-rdc-seats/seat-5/hamon-e3a41d2b3368-scope-compare/browser-bab-v2/fixtures/download-reconciled-B.json",
+      "sha256": "753cc98bb1479349abf88c53a7b8fda6127a74a422d554220fa298aa6d23891b"
+    }
+  ],
+  "keyboardAdaptations": [
+    {
+      "requested": "ArrowDown",
+      "actual": "b",
+      "reason": "Mac headless native select: verified typeahead, since arrow navigation also fails on a plain native select.",
+      "before": {
+        "id": "pair-0",
+        "current": 0,
+        "next": 1,
+        "options": [
+          {
+            "label": "Unpaired",
+            "value": "",
+            "disabled": false
+          },
+          {
+            "label": "B 1: First-run checklist",
+            "value": "0",
+            "disabled": false
+          },
+          {
+            "label": "B 2: First-run checklist",
+            "value": "1",
+            "disabled": false
+          }
+        ]
+      },
+      "observed": {
+        "id": "pair-0",
+        "value": "0",
+        "events": [
+          {
+            "type": "keydown",
+            "key": "b",
+            "trusted": true,
+            "value": ""
+          },
+          {
+            "type": "input",
+            "key": null,
+            "trusted": true,
+            "value": "0"
+          },
+          {
+            "type": "change",
+            "key": null,
+            "trusted": true,
+            "value": "0"
+          }
+        ]
+      }
+    }
+  ],
+  "postconditions": {
+    "originalAuthorTabUnchanged": true,
+    "noPageErrors": true,
+    "noComparisonExternalRequests": true,
+    "allSourceUnchanged": true,
+    "sandboxEnabled": true,
+    "browserClosed": true,
+    "dedicatedProfileRemoved": true
+  },
+  "visualReview": {
+    "reviewer": "production_work",
+    "images": [
+      "browser-bab-v2/desktop-files.png",
+      "browser-bab-v2/phone-pairing.png"
+    ],
+    "observations": [
+      "Both chosen files and separate A/B controls are legible on desktop.",
+      "Phone totals and pairing controls fit the viewport; amount differences and pairing caveat remain readable."
+    ]
+  },
+  "diagnostics": {
+    "linux": "Already published under out/receiving/scope-compare-e3a41d2b3368/current-parent-draft/linux-browser-diagnostics.json; no current-parent behavior conclusion from startup failures.",
+    "macPreparation": "PREPARATION-DIAGNOSTIC.json: file-tool timeout and absent runner, before browser launch.",
+    "macFirstAttempt": "browser-bab-v1: parent missing-entry control passed; receiver accessible-name lookup failed; source unchanged, browser closed, profile removed.",
+    "nativeSelectControl": {
+      "sourceAgent": "source_work",
+      "sourcePath": "/Users/me/.hamon-rdc-seats/seat-5/recallweave-traces-e3a41d2b3368/keyboard-diagnostic/result.json",
+      "sha256": "b5781e5dd437394c52d751f478ab87cfbcc9998987a83fbbd642c6d9f3373c24",
+      "copy": "independent-native-select-diagnostic.json"
+    }
+  },
+  "boundaries": [
+    "The popup is reloaded once after request interception is attached, before either file is opened.",
+    "Native file choosers, downloaded bytes and trusted keyboard events are used; no application-state fixture replaces the UI.",
+    "No installed package, service, user profile, host setting, dependency installation or deployment changed."
+  ]
+}
