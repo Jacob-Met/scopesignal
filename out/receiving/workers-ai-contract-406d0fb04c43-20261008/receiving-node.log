@@ -1,0 +1,54 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> scopesignal@0.1.0 test
+> node --test
+
+✔ download has a fixed safe filename and explicit fixture schema and provenance (2.332618ms)
+✔ export records the actual replay events and reduced counted outcome (1.310231ms)
+✔ accepted multiline and literal evidence comes from the exact approval event (0.583728ms)
+✔ unapproved checkpoints have no approval evidence and no authored draft field (0.517828ms)
+✔ every capture prefix exports the current outcome without advancing or inventing events (0.622196ms)
+✔ repeated exports are deterministic and detached from the live in-memory ledger (0.480503ms)
+✔ an empty fixture exports no approval and never represents a successful payment (0.216035ms)
+✔ the timeline exposes every real fixture prefix and counts only after reconciliation (3.81005ms)
+✔ backward, repeated and out-of-order inspection never changes the fixture or another ledger (0.904701ms)
+✔ returned event and state objects cannot rewrite later timeline inspection (0.808707ms)
+✔ invalid navigation refuses the index without losing valid timeline state (0.523628ms)
+✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (4.114818ms)
+✔ order and capture require prior explicit human approval and order (0.820514ms)
+✔ lost response cannot be blindly captured again; reconcile is one-time (0.345489ms)
+✔ same webhook event ID is idempotent and cannot double count (0.293621ms)
+✔ reducer never counts duplicate webhook in fixture stream (0.224728ms)
+✔ role previews are explicit local rules and never claim AI output (17.452226ms)
+✔ Workers AI adapter fails closed without binding and has no paid fallback (0.409026ms)
+✔ schema validation rejects malformed model output (0.324378ms)
+✔ every shipped replay prefix presents its current reduced capture state (2.482133ms)
+✔ ordinary webhook capture does not invent a reconciliation (0.249586ms)
+✔ missing and unrecognized states do not become captured or safe-to-retry labels (0.148854ms)
+✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (2.109172ms)
+✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (0.404528ms)
+✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (0.350497ms)
+✔ pending and never-requested captures remain distinct from resolved captures (0.709106ms)
+✔ validated suggestions preserve editable text without retaining provider-owned objects (2.391536ms)
+✔ the existing empty-list and text-length contracts are preserved (0.906764ms)
+✔ serialized Unicode text at the schema character limits remains valid (2.006757ms)
+✔ Unicode length limits count code points rather than graphemes (2.417967ms)
+✔ root fields must be declared own data properties (0.442125ms)
+✔ checkpoint records cannot smuggle inherited fields or undeclared approval data (0.370237ms)
+✔ accessor fields are refused without evaluating provider code (0.347763ms)
+✔ checkpoint lists must contain their own entries and cannot replace iteration (0.321193ms)
+✔ ordinary and null-prototype data records normalize to the same result (0.29869ms)
+✔ configured bindings support the existing direct, JSON, and response-string forms (0.707774ms)
+✔ the async adapter rejects JSON-representable malformed suggestions in every supported response form (3.811893ms)
+✔ each provider call receives an independent request schema (0.305379ms)
+✔ inherited or accessor response envelopes do not bypass result validation (0.451379ms)
+✔ missing or invalid bindings fail closed before any dispatch (0.850389ms)
+✔ provider errors and malformed results are rejected without retry or fallback (0.554684ms)
+ℹ tests 41
+ℹ suites 0
+ℹ pass 41
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 144.69095
