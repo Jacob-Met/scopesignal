@@ -1,0 +1,75 @@
+✖ a reconciled fixture no longer asks the reviewer to keep its capture unknown (1.827038ms)
+✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (0.32558ms)
+✖ another unresolved checkpoint still takes priority over an earlier reconciled capture (0.301323ms)
+✖ pending and never-requested captures remain distinct from resolved captures (0.171318ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 1
+ℹ fail 3
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 89.850698
+
+✖ failing tests:
+
+test at tests/recovery-current-state.test.mjs:6:1
+✖ a reconciled fixture no longer asks the reviewer to keep its capture unknown (1.827038ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /no uncertain capture remains/. Input:
+  
+  'Keep capture unknown. Do not retry blindly; look up the existing Sandbox transaction and reconcile once.'
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/81ba1ed0179c/scopesignal-receiving/tests/recovery-current-state.test.mjs:11:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'Keep capture unknown. Do not retry blindly; look up the existing Sandbox transaction and reconcile once.',
+    expected: /no uncertain capture remains/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests/recovery-current-state.test.mjs:27:1
+✖ another unresolved checkpoint still takes priority over an earlier reconciled capture (0.301323ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /no uncertain capture remains/. Input:
+  
+  'Keep capture unknown. Do not retry blindly; look up the existing Sandbox transaction and reconcile once.'
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/81ba1ed0179c/scopesignal-receiving/tests/recovery-current-state.test.mjs:36:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'Keep capture unknown. Do not retry blindly; look up the existing Sandbox transaction and reconcile once.',
+    expected: /no uncertain capture remains/,
+    operator: 'match',
+    diff: 'simple'
+  }
+
+test at tests/recovery-current-state.test.mjs:39:1
+✖ pending and never-requested captures remain distinct from resolved captures (0.171318ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /No capture has been requested/. Input:
+  
+  'No uncertain capture response in this replay.'
+  
+      at TestContext.<anonymous> (file:///workspace/scratch/81ba1ed0179c/scopesignal-receiving/tests/recovery-current-state.test.mjs:41:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'No uncertain capture response in this replay.',
+    expected: /No capture has been requested/,
+    operator: 'match',
+    diff: 'simple'
+  }
