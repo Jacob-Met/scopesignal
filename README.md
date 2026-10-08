@@ -17,6 +17,16 @@ Open `http://127.0.0.1:4173`. The fixture has three $400.00 milestones, a $1,200
 
 The capture callout and recovery reviewer describe the current reduced ledger. After the complete replay, they show the captured outcome; the lost response remains visible in the event history. Before reconciliation, the outcome stays unknown even after the duplicate webhook. A pending request is also kept distinct from a captured outcome.
 
+Open **Inspect the recovery, event by event** to explore the original payment story from before human approval through all seven events. Use Previous event, Next event, or the event selector to inspect each capture state, recorded identity, approval count, and amount counted. The capture stays unknown and the counted amount stays $0 through both webhook receipts; reconciliation counts $400 once.
+
+This is a read-only view of the original fixture. Navigating it keeps the workspace's current approvals and evidence edits intact. The existing Replay deterministic fixture button still resets the workspace.
+
+Timeline model tests run with the existing test command. Its optional real-browser receiving command is:
+
+    node scripts/check-fixture-timeline.mjs
+
+It uses the same existing Playwright/Chromium environment options described below, writes receipts and screenshots to out/timeline-receiving by default, and checks desktop, phone, keyboard navigation, workspace preservation, and isolated timeline startup failure. SCOPESIGNAL_EVIDENCE can choose another output directory.
+
 Optional browser receiving checks run with `node scripts/check-browser.mjs`. They require an existing Playwright and Chromium installation; `SCOPESIGNAL_PLAYWRIGHT` may point to its entry module and `SCOPESIGNAL_CHROME` to its browser executable. The command serves this source on an ephemeral loopback port, launches fresh desktop and phone contexts, blocks external requests and writes a receipt under `out/browser-receiving/`. The existing Google Fonts stylesheet attempts are recorded and blocked, so captures use fallback fonts. `SCOPESIGNAL_CHECK_SCOPE=combined-drafts` additionally checks the separate draft-preservation and webhook-label PRs when those changes have been incorporated into the tested source.
 
 ## Payment safety model
