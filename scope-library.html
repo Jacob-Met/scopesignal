@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'none'; img-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Saved workspace library — ScopeSignal</title>
+  <link rel="stylesheet" href="scope-library.css">
+</head>
+<body>
+  <header class="masthead"><a href="index.html">ScopeSignal</a><span>FICTIONAL WORKSPACES</span></header>
+  <main>
+    <section class="intro">
+      <p class="eyebrow">SAVED WORKSPACE LIBRARY</p>
+      <h1>Find the scope you want to review.</h1>
+      <p class="lede">Choose several saved workspaces, inspect them side by side in the list, and take one review with you. Your open authoring workspace stays where you left it.</p>
+      <p class="notice"><strong>Local files · read-only · no live payments.</strong> These unsigned fixtures do not establish identity, human approval, a payment, or a payment receipt. Files stay in this tab's memory until you clear or close it.</p>
+    </section>
+    <section class="picker" aria-labelledby="choose-title">
+      <div><h2 id="choose-title">Choose your saved files</h2><p id="file-help">Up to 16 workspace JSON files, 1 MiB each and 8 MiB total. A new selection replaces this list after reading. Same-name files stay separate in selection order.</p></div>
+      <label class="file-label" for="workspace-files">Workspace JSON files</label>
+      <input id="workspace-files" type="file" accept=".json,application/json" multiple aria-describedby="file-help">
+      <button id="clear-batch" type="button">Clear batch</button>
+      <p id="batch-status" role="status" aria-live="polite"></p>
+    </section>
+    <section class="library" aria-label="Saved workspace review">
+      <div class="list-panel"><h2>Selected files</h2><p id="empty-list">Your files will appear here. File dates and names do not establish project identity or revision order.</p><ol id="workspace-list"></ol></div>
+      <section class="detail-panel" aria-labelledby="detail-title">
+        <p class="eyebrow" id="detail-file">READ-ONLY PREVIEW</p><h2 id="detail-title">Select a workspace</h2>
+        <p id="detail-placeholder">An admitted file shows its own draft fields and current fixture outcomes. Each scope keeps its own amounts.</p>
+        <div id="workspace-detail"></div>
+        <div class="export-panel" hidden id="export-panel"><button id="download-review" type="button">Download this HTML review</button><p>Read or print the standalone review offline. Keep your original JSON to continue editing.</p><p id="export-status" role="status" aria-live="polite"></p></div>
+      </section>
+    </section>
+    <footer><a href="scope.html" target="_blank" rel="noopener">Open a separate authoring workspace</a><p>No browser storage, provider requests, combined balances or workspace replacement.</p></footer>
+  </main>
+  <script type="module" src="src/scope-library-ui.mjs"></script>
+</body>
+</html>

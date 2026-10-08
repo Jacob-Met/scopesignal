@@ -1,0 +1,66 @@
+{
+  "at": "2026-10-08T20:43:54.787126+00:00",
+  "originalAcceptedHead": "e54d1929ccb436f7113eba639be588ad3c76de6d",
+  "originalNativeGit": "d13ca54d3a570cb24d596826eb1e69b9730eae18",
+  "originalTests": {
+    "model": 16,
+    "browser": 5,
+    "mutantsExpectedFailures": [
+      3,
+      1
+    ]
+  },
+  "composedSource": {
+    "incoming": "226d6d90cb949ce3d6edf97b99153831bd95e8fb",
+    "nativeComposedHead": "8bffd540c0169848c2cc53d18b6ba40169677408",
+    "nativeComposedTree": "201e8018d373f5e6a7ce02d49307a9e927331b75",
+    "incomingLeaves": 735,
+    "unchangedIncomingLeaves": 733,
+    "modifiedIncoming": [
+      "README.md",
+      "scope.html"
+    ],
+    "exactOriginalAdditions": [
+      "docs/receiving/scope-library-c77045b4/CONTRACT.md",
+      "docs/receiving/scope-library-c77045b4/README.md",
+      "docs/receiving/scope-library-c77045b4/acceptance.json",
+      "docs/receiving/scope-library-c77045b4/author-evidence.tar.gz",
+      "docs/receiving/scope-library-c77045b4/author-manifest.json",
+      "scope-library.css",
+      "scope-library.html",
+      "scripts/check-scope-library.mjs",
+      "src/scope-library-ui.mjs",
+      "src/scope-library.mjs",
+      "tests/scope-library.test.mjs"
+    ],
+    "composedLeaves": 746,
+    "tests": {
+      "fullSuite": 235,
+      "independentModel": 16,
+      "originalBrowserMethod": 5,
+      "navigationExtendedBrowser": 6
+    }
+  },
+  "compositionNativeGit": "75bafaba52aa954fd7722f12274252acdca356c6",
+  "compositionNativeTree": "489a5267da76785b6edaf3b8694ee3b82255d519",
+  "archive": {
+    "bytes": 557106,
+    "sha256": "06e2fdebf52c9b0455d9999b878fd13131ff993bdad15b8b9b7c2f52a5544c6f"
+  },
+  "bundles": {
+    "original": {
+      "bytes": 245883,
+      "sha256": "8fbb0eca5c8d1c6c5a9d3c7a921a3c13b8fb4fe72831477ec4aafac5a07d4ac0"
+    },
+    "composition": {
+      "bytes": 310900,
+      "sha256": "170bdf114379f8df54ecdcb3a86d24042f09c098b54f5aaa69e4425d33c80c82"
+    }
+  },
+  "limitations": [
+    "Final public commit/ordinary hosted checks/merge pending at this evidence seal.",
+    "No deployment qualification.",
+    "Browser profiles excluded; exact helpers, fixtures, sources, screenshots, physical downloads and raw receipts are committed.",
+    "Original setup incidents preserved in SETUP-NOTES.md and failed-init-metadata.zip. Composition fixture-copy encoding error occurred before execution and is documented in composition-context.json."
+  ]
+}

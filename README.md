@@ -359,3 +359,11 @@ The focused parser/codec controls run with the normal `npm test` suite. The opti
 The public slice is not represented as satisfying a contest AI requirement and is not submittable as an AI/Sandbox-integrated product until an approved AI integration and PayPal Sandbox integration are actually configured and exercised. See `out/result.md` for verified implementation/deployment status.
 
 MIT licensed.
+
+## Saved workspace library
+
+Open [the saved workspace library](./scope-library.html) to review several explicitly selected workspace JSON files without replacing an open authoring workspace. Choose up to 16 files (1 MiB each, 8 MiB total). Files remain in selection order, including same-name files; invalid files show their own refusal while admitted drafts and reviews remain available. A completed new selection replaces the list; Clear also retires any pending reads.
+
+Select a row to inspect its exact saved draft fields and current fictional review outcomes, then download that workspace's standalone HTML review for offline reading or printing. Amounts belong to each workspace; unfinished drafts are not totaled, and pending/unknown captures count nothing. The existing exporter can refuse text HTML cannot preserve; the admitted JSON row remains available and the refusal is shown. Keep the original JSON to continue editing. No browser storage, network submission, real payment or authoring-state replacement is performed.
+
+Run `node --test tests/scope-library.test.mjs` for batch admission, ordering, asynchronous retirement and export contracts. The complete existing suite remains `npm test` on Node 24 or later.

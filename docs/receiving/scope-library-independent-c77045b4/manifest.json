@@ -1,0 +1,17 @@
+{
+  "native-receiving.zip": {
+    "bytes": 557106,
+    "sha256": "06e2fdebf52c9b0455d9999b878fd13131ff993bdad15b8b9b7c2f52a5544c6f",
+    "gitBlob": "4f076f3940831404724f467e8bebb119c7556cc7"
+  },
+  "README.md": {
+    "bytes": 2303,
+    "sha256": "6f1afa8bb935fea4705a8187a59d720f0eac538d0bcee70c50c8294a0fa1b409",
+    "gitBlob": "a42c80482c88557ef568709bffba2e7dda558a8d"
+  },
+  "REVIEW.json": {
+    "bytes": 2483,
+    "sha256": "5825a6c41aaa00d63a9f9fd60ee9ea3173015711eb1f33a5c206f3a65e595ee8",
+    "gitBlob": "eab11458b53ccd345ce91115914d90174a07d59f"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "at": "2026-10-08T19:38:37.477Z",
+  "status": "author-qualified-independent-pending",
+  "repository": "Jacob-Met/scopesignal",
+  "base": "cdffd2476cae0c7332dff64677ae814b7f594947",
+  "baseTree": "03775ba5484d768a0bda6a22d51bdad9fd30d184",
+  "canonicalLeaves": 672,
+  "runnableInputs": 73,
+  "unchangedRunnableInputs": 71,
+  "nativeTests": 192,
+  "browserGroups": 6,
+  "files": [
+    {
+      "path": "scope-library.html",
+      "bytes": 3047,
+      "sha256": "c60dde7118e4cb51d3eac9391b40d410e2b5e3916142ac280ee37ba415af4e35",
+      "blob": "584c29fbebe72a159c466a979d68abea6d34993b"
+    },
+    {
+      "path": "scope-library.css",
+      "bytes": 3305,
+      "sha256": "2d8686f72c6aaf6a2308026307b4f713df5cdf5faa73c87e16108074ff08a7c0",
+      "blob": "25e6cec50875b2a993c8c5f352018378df569765"
+    },
+    {
+      "path": "src/scope-library.mjs",
+      "bytes": 3550,
+      "sha256": "8950f2ca8e2ddef094b630260b93ad8580989eb44fe0a3d96bb0baf2f9364ad4",
+      "blob": "c8174b56c099ca494c50869e584af715d7522592"
+    },
+    {
+      "path": "src/scope-library-ui.mjs",
+      "bytes": 6248,
+      "sha256": "7631162c5b7c75ce98434014161adb235c4bf07f8a7d42c96445681cd7a11349",
+      "blob": "aa5f0e2f48c5ab1ca6e86bd8f97b92f3380f965b"
+    },
+    {
+      "path": "tests/scope-library.test.mjs",
+      "bytes": 7191,
+      "sha256": "27f370c5b6c463165d854175676bce37b750d2b38f94d59386844c004cbbf236",
+      "blob": "886d0360518387985fbda972498ebe1cbdb00a1b"
+    },
+    {
+      "path": "scripts/check-scope-library.mjs",
+      "bytes": 15397,
+      "sha256": "643dcf59e4243cc94ff6132f4fa8cc533913634adde716b348160b53c05f0f8f",
+      "blob": "3b1b686634a9505ec77da66d58879b35f9fd8bc6"
+    },
+    {
+      "path": "scope.html",
+      "bytes": 11875,
+      "sha256": "1beab6090e8db88ca0da1d006805474a02168af2290d800b6ac95b617a991d62",
+      "blob": "31e2c67c978d5d8b021ea578ab7df07f82774c4b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 26639,
+      "sha256": "403778562c9639774804818275a89f1861f3e3c6cace9be0b5f48bf9d0e6c76c",
+      "blob": "de5a45b442d5637b5cd596184f351f9d4730b3aa"
+    }
+  ],
+  "archive": {
+    "path": "author-evidence-final.tar.gz",
+    "bytes": 245410,
+    "sha256": "c5e3f8e32b57d5f784f877bcfec0238beabd8e8e33ba71dd8042f399deb643ed"
+  },
+  "packetFiles": 50
+}

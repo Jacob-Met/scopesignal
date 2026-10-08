@@ -1,0 +1,249 @@
+{
+  "files": [
+    {
+      "path": "acceptance.json",
+      "bytes": 2093,
+      "sha256": "2bf2ee378115834770f5cc85b6a438cb4ac4aa4b3bed921035cdd1c3464f5ca0"
+    },
+    {
+      "path": "AUTHOR-REVIEW.md",
+      "bytes": 2078,
+      "sha256": "961bcfe4fa135ffc6ecb2f0bf72fc907fe1495e352186764d915347fbc8596a3"
+    },
+    {
+      "path": "browser-composition/downloads/scopesignal-review-03.html",
+      "bytes": 7739,
+      "sha256": "69ef77b61d140c47e9133a13a9c2892a6aaaf5b70c3e3fe1109539e23dedf1cc"
+    },
+    {
+      "path": "browser-composition/keyboard-before.json",
+      "bytes": 308,
+      "sha256": "e7cbe3943a62ffe81e2a474197c771a1d0c1d4945d5edefd512c248e2e7a8e10"
+    },
+    {
+      "path": "browser-composition/library-desktop.png",
+      "bytes": 48586,
+      "sha256": "c0aabcf4e566fd81836c8bbe9f120a7d8ea6e4a99381909b63389c8253cca1cf"
+    },
+    {
+      "path": "browser-composition/library-narrow.png",
+      "bytes": 32612,
+      "sha256": "f93eae259f389365668170dfcf0b586cd62921e73f9e1f05e735edc9f25131b9"
+    },
+    {
+      "path": "browser-composition/result.json",
+      "bytes": 2512,
+      "sha256": "f33ddaae4b3244e8afdf79b935a9fffead0069bc62eeaa28bab340855f15a24d"
+    },
+    {
+      "path": "browser-composition/rows.json",
+      "bytes": 508,
+      "sha256": "112e3e2229f2ab49cc761de209758fb5cfc1b2dbb3ef382891f6932887087375"
+    },
+    {
+      "path": "browser-v1/failure.json",
+      "bytes": 811,
+      "sha256": "26487d30b6522799d0fb9b1dbf00840466a514a5c813a4c2a3eb22b659e4fa9f"
+    },
+    {
+      "path": "browser-v1/original-driver.mjs",
+      "bytes": 14613,
+      "sha256": "3170822b47c755b9cb960688ec620e90c400c8755274a50d32e21ce543f4546a"
+    },
+    {
+      "path": "browser-v2/driver.mjs",
+      "bytes": 14638,
+      "sha256": "86bee488513ae3e5adf2126a94d1419c4381aa9856d8c9485b4e8409f2c2bcfd"
+    },
+    {
+      "path": "browser-v2/failure.json",
+      "bytes": 507,
+      "sha256": "12b87dd3af3ea48829f091c80219644ace05f8634d34b9b64b302d2e8080055b"
+    },
+    {
+      "path": "browser-v3/driver.mjs",
+      "bytes": 14717,
+      "sha256": "95f28d5657544b98639c343bfc74bab1269d485fdf85910c5b0a75cf4c076564"
+    },
+    {
+      "path": "browser-v3/failure.json",
+      "bytes": 508,
+      "sha256": "1fe8aad624c868f267223fd297f4689785488ae2e951ed4474a45dbcd94e83ad"
+    },
+    {
+      "path": "browser-v3/rows.json",
+      "bytes": 576,
+      "sha256": "7e8f09d95371ad681d8aeda95c583cb2e1bd80635e71d4d5cd20591a72c8522c"
+    },
+    {
+      "path": "browser-v4/driver.mjs",
+      "bytes": 14729,
+      "sha256": "04e502c8356653bbb1ec2e7c69532c29983c478764e9e1f30dd06af813f68785"
+    },
+    {
+      "path": "browser-v4/failure.json",
+      "bytes": 593,
+      "sha256": "c28e0c908aca7a64943a842dd4e1134450a29f095e9ce51d0c2ecb14e6821afc"
+    },
+    {
+      "path": "browser-v4/rows.json",
+      "bytes": 508,
+      "sha256": "112e3e2229f2ab49cc761de209758fb5cfc1b2dbb3ef382891f6932887087375"
+    },
+    {
+      "path": "browser-v5/failure.json",
+      "bytes": 593,
+      "sha256": "5dc7ba571840b61454cebd8cc36cb59c4aacd556719a0c5643177255b5d03688"
+    },
+    {
+      "path": "browser-v5/keyboard-before.json",
+      "bytes": 308,
+      "sha256": "e7cbe3943a62ffe81e2a474197c771a1d0c1d4945d5edefd512c248e2e7a8e10"
+    },
+    {
+      "path": "browser-v5/rows.json",
+      "bytes": 508,
+      "sha256": "112e3e2229f2ab49cc761de209758fb5cfc1b2dbb3ef382891f6932887087375"
+    },
+    {
+      "path": "browser-v6/driver.mjs",
+      "bytes": 15007,
+      "sha256": "9907dd49b53c4692a447a6d2a0e57ef52820c1242c0adde5abafebbeb1c468f0"
+    },
+    {
+      "path": "browser-v6/failure.json",
+      "bytes": 1089,
+      "sha256": "d31f465dc98c595d5baed87c269585039c670db48dfa74dbc86aceb60236752a"
+    },
+    {
+      "path": "browser-v6/keyboard-before.json",
+      "bytes": 308,
+      "sha256": "e7cbe3943a62ffe81e2a474197c771a1d0c1d4945d5edefd512c248e2e7a8e10"
+    },
+    {
+      "path": "browser-v6/rows.json",
+      "bytes": 508,
+      "sha256": "112e3e2229f2ab49cc761de209758fb5cfc1b2dbb3ef382891f6932887087375"
+    },
+    {
+      "path": "browser-v7/driver.mjs",
+      "bytes": 15052,
+      "sha256": "e3197eb3c48e8de951eac3cd353e6629271df0144253f2bff8bac4910dcb03f3"
+    },
+    {
+      "path": "browser-v7/failure.json",
+      "bytes": 899,
+      "sha256": "6b718010dd17bc9fbd926c3098e36ac928d1379d6bf052a4a6837297c70d195d"
+    },
+    {
+      "path": "browser-v7/keyboard-before.json",
+      "bytes": 308,
+      "sha256": "e7cbe3943a62ffe81e2a474197c771a1d0c1d4945d5edefd512c248e2e7a8e10"
+    },
+    {
+      "path": "browser-v7/rows.json",
+      "bytes": 508,
+      "sha256": "112e3e2229f2ab49cc761de209758fb5cfc1b2dbb3ef382891f6932887087375"
+    },
+    {
+      "path": "browser-v8/downloads/scopesignal-review-03.html",
+      "bytes": 7739,
+      "sha256": "69ef77b61d140c47e9133a13a9c2892a6aaaf5b70c3e3fe1109539e23dedf1cc"
+    },
+    {
+      "path": "browser-v8/keyboard-before.json",
+      "bytes": 308,
+      "sha256": "e7cbe3943a62ffe81e2a474197c771a1d0c1d4945d5edefd512c248e2e7a8e10"
+    },
+    {
+      "path": "browser-v8/library-desktop.png",
+      "bytes": 48586,
+      "sha256": "c0aabcf4e566fd81836c8bbe9f120a7d8ea6e4a99381909b63389c8253cca1cf"
+    },
+    {
+      "path": "browser-v8/library-narrow.png",
+      "bytes": 32612,
+      "sha256": "f93eae259f389365668170dfcf0b586cd62921e73f9e1f05e735edc9f25131b9"
+    },
+    {
+      "path": "browser-v8/result.json",
+      "bytes": 2512,
+      "sha256": "5a217d726aca5ccea26594ff63834093c40134d6ef6f39913c7cf3958d02d456"
+    },
+    {
+      "path": "browser-v8/rows.json",
+      "bytes": 508,
+      "sha256": "112e3e2229f2ab49cc761de209758fb5cfc1b2dbb3ef382891f6932887087375"
+    },
+    {
+      "path": "compose.mjs",
+      "bytes": 735,
+      "sha256": "497d98ef75a6eeb36d62ffa29eea05fe3e91217d1ea3e13f923d6d906091a382"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 3519,
+      "sha256": "c70994eff4f5bd9cb3b7fa7207cc682741e30541152facaf0c0cd6e266a99bde"
+    },
+    {
+      "path": "current-tree.json",
+      "bytes": 239835,
+      "sha256": "5690a3f998bbd8e95253dca566b628d412097f6bd5af1566f711903d9497c6ed"
+    },
+    {
+      "path": "evidence/baseline-feature.json",
+      "bytes": 244,
+      "sha256": "cb28ca1cc5417f62e227cbe61ebc96111e80dd876fd3b0c0ace51f5866a84b6b"
+    },
+    {
+      "path": "evidence/baseline-tests.json",
+      "bytes": 40,
+      "sha256": "8240363f2dc2fc56eb23caa995b82ffb23d710e3aa9928631aad9b81aded4e99"
+    },
+    {
+      "path": "evidence/baseline-tests.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/baseline-tests.stdout",
+      "bytes": 15629,
+      "sha256": "99ea4dd7941e970272e37bbb8c19e35023d5e93775800f1829812fc237cb90ae"
+    },
+    {
+      "path": "evidence/candidate-pins.json",
+      "bytes": 1852,
+      "sha256": "fe9ba6883e9e46f44d96fcf149244df227b4f1cee6abd4b880a1d4b80d0887cc"
+    },
+    {
+      "path": "evidence/candidate-tests.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/candidate-tests.stdout",
+      "bytes": 16595,
+      "sha256": "4141840751811a3945bc6d732fd015185572f4b278162c669f2a5c56e292defe"
+    },
+    {
+      "path": "evidence/composition-tests.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/composition-tests.stdout",
+      "bytes": 18304,
+      "sha256": "36e4ad46e944857affedd47b73b7680853b00f452f07229f639f591bfbc4dba3"
+    },
+    {
+      "path": "evidence/source-binding.json",
+      "bytes": 132745,
+      "sha256": "dab6eb0c4f4795ffeb9d26d736a5c035a5a6c461b66162b11875024b7d4d8e13"
+    },
+    {
+      "path": "final-browser-driver.mjs",
+      "bytes": 15397,
+      "sha256": "643dcf59e4243cc94ff6132f4fa8cc533913634adde716b348160b53c05f0f8f"
+    }
+  ]
+}
