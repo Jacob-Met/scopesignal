@@ -1,0 +1,21 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "draft",
+  "draft": {
+    "label": "OLDER",
+    "brief": "Older fixture",
+    "cap": "12.00",
+    "checkpoints": [
+      {
+        "title": "OLD",
+        "amount": "12.00",
+        "evidence": "Old proof"
+      }
+    ]
+  },
+  "events": [],
+  "evidenceDrafts": []
+}

@@ -44,15 +44,27 @@ function renderDraftRows() {
       draftField(index, 'amount', 'Milestone amount (USD)', cp.amount),
       draftField(index, 'evidence', 'Planned acceptance evidence', cp.evidence, { maxLength: 5000 })
     );
+    const actions = element('div', undefined, 'scope-draft-actions');
+    for (const direction of ['up', 'down']) {
+      const move = element('button', `Move ${direction}`, 'text-button');
+      move.type = 'button';
+      move.dataset.move = direction;
+      move.dataset.index = index;
+      move.setAttribute('aria-label', `Move checkpoint ${index + 1} ${direction}`);
+      move.disabled = direction === 'up' ? index === 0 : index === draft.checkpoints.length - 1;
+      actions.append(move);
+    }
     const remove = element('button', 'Remove checkpoint', 'text-button scope-remove');
     remove.type = 'button';
     remove.dataset.remove = index;
     remove.setAttribute('aria-label', `Remove checkpoint ${index + 1}`);
     remove.disabled = draft.checkpoints.length === 1;
-    row.append(fields, remove);
+    actions.append(remove);
+    row.append(fields, actions);
     list.append(row);
   });
   $('#scope-add').disabled = draft.checkpoints.length >= MAX_CHECKPOINTS;
+  $('#scope-order-status').textContent = '';
   updateBudget();
 }
 
@@ -226,6 +238,27 @@ $('#scope-add').addEventListener('click', () => {
   $(`#draft-${draft.checkpoints.length - 1}-title`).focus();
 });
 $('#scope-draft-list').addEventListener('click', event => {
+  const move = event.target.closest('button[data-move]');
+  if (move) {
+    if (move.disabled || review || form.hidden) return;
+    const index = Number(move.dataset.index);
+    const direction = move.dataset.move;
+    const offset = direction === 'up' ? -1 : direction === 'down' ? 1 : 0;
+    const current = readDraft();
+    const destination = index + offset;
+    if (!offset || !Number.isInteger(index) || index < 0 || index >= current.checkpoints.length
+      || destination < 0 || destination >= current.checkpoints.length) return;
+    workspaceChanged();
+    // Keep each row's raw inputs together. IDs still come from final draft validation.
+    [current.checkpoints[index], current.checkpoints[destination]] = [current.checkpoints[destination], current.checkpoints[index]];
+    draft = current;
+    clearErrors();
+    renderDraftRows();
+    const nextMove = $(`button[data-index="${destination}"][data-move="${direction}"]`);
+    (nextMove.disabled ? $(`#draft-${destination}-title`) : nextMove).focus();
+    $('#scope-order-status').textContent = `Checkpoint ${index + 1} moved to position ${destination + 1} of ${draft.checkpoints.length}.`;
+    return;
+  }
   const remove = event.target.closest('button[data-remove]');
   if (!remove || remove.disabled) return;
   draft = readDraft();
