@@ -1,0 +1,9 @@
+# Exact record restoration
+
+`raw-records.json` stores a gzip-compressed JSON payload as base64. The payload has an `aliases` array and a `blobs` map keyed by SHA-256. Multiple native paths can refer to one exact blob. The three published PNGs are referenced by a checked publication path instead of duplicating their image bytes inside the archive; their original aliases restore exactly. Every alias records its native source path, relative restoration path, original mode, byte count, SHA-256 and Git blob identity. Payload and compressed-stream sizes/hashes are also pinned. Literal CSV CRLF and quoted LF are stored as bytes, never passed through newline conversion.
+
+Run `node restore-records.mjs /absolute/new-empty-directory` beside the archive. This verifies every blob and restores only the declared relative paths. It refuses an existing output directory and path traversal. Restored source manifests reference their original native absolute paths; their bytes are historical evidence, not automatically rewritten for a new machine. Use the manifest's relative file entries with your exact checkout.
+
+The archive includes baseline/model/browser stdout and stderr, process receipts, negative timeout and clone attempts, passive observations, exact setup/probe scripts, original receiver, all real downloads/fixtures, complete source manifests, source patches, transfer manifests and custody proof. It excludes browser profiles, dependencies, full copied source trees and redundant transfer payloads. Screenshots also appear as directly viewable PNGs.
+
+`source-overlay-manifest.json` describes the separately published eight source paths. Its frozen 3146 tree is the qualified product identity, prior to documentation additions. The author packet's external publication manifest describes these documentation bytes; it is custody metadata rather than a self-referential published file.

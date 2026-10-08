@@ -1,0 +1,47 @@
+{
+  "schema": "scopesignal.root-node24-publication-manifest.v1",
+  "source_tree": "3146dd1d196d0d0545bcdd2d3db3244c0b0bf7d5",
+  "qualification": "Node24.19.0 full194 tests,0 fail,0 skips; 61 runtime/test files exact against official baseline+8 source overlay, before/after. This predates incoming authored history at fb6d8771.",
+  "files": [
+    {
+      "path": "root-node24-receipt.json",
+      "native_path": "/tmp/scopesignal-root-node24-cf5799f6d38b-v1/root-node24-receipt.json",
+      "mode": "100644",
+      "bytes": 31583,
+      "sha256": "50e2277171777c403e248e12e436ba4f2b46521a2af089a804d9d059a352d72b",
+      "git_blob": "ea357b7bcb94fe2df0f53be0c1ae29fa71e510b5"
+    },
+    {
+      "path": "root-node24.stdout.log",
+      "native_path": "/tmp/scopesignal-root-node24-cf5799f6d38b-v1/root-node24.stdout.log",
+      "mode": "100644",
+      "bytes": 18256,
+      "sha256": "f98aa2e79ce640814e19a6f7d1cdbbde1bc3d3b888bc3b95d893a3d54e761696",
+      "git_blob": "42def92f4f061b1dec05764ffec464c0a0766c34"
+    },
+    {
+      "path": "root-node24.stderr.log",
+      "native_path": "/tmp/scopesignal-root-node24-cf5799f6d38b-v1/root-node24.stderr.log",
+      "mode": "100644",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "root-node24-receiver.py",
+      "native_path": "/tmp/scopesignal-root-node24-cf5799f6d38b-v1/root-node24-receiver.py",
+      "mode": "100644",
+      "bytes": 2925,
+      "sha256": "02f04e577b595a5a892eb75c2b81901bf18c4457e8464d4a9225c3c0bac0c52d",
+      "git_blob": "1762867320647bc90dfb2820afb8169f90347040"
+    },
+    {
+      "path": "root-expected-git-pins.json",
+      "native_path": "/tmp/scopesignal-root-node24-cf5799f6d38b-v1/root-expected-git-pins.json",
+      "mode": "100644",
+      "bytes": 9197,
+      "sha256": "99095fff16aaa9b783096622f7fa39b59197d302200aff61d3f1de124007a8aa",
+      "git_blob": "27eb055ef0428b3584a67fc4f72c4abc94c30d62"
+    }
+  ]
+}

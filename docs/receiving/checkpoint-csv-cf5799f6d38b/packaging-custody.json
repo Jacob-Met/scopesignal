@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-08T18:53:23.703006+00:00",
+  "source_before": [
+    {
+      "source": "/home/jacob/scopesignal-csv-cf5799f6d38b-sbc7ippy/baseline",
+      "tree": "cac1d2bbdd38e2e4c2aed7249c2593ec174c0eaa",
+      "leaves": 521,
+      "all_exact": true
+    },
+    {
+      "source": "/home/jacob/scopesignal-csv-cf5799f6d38b-sbc7ippy/candidate",
+      "tree": "03f2c5e46f754dfdb5bcf2c0cf884cf677b01268",
+      "leaves": 527,
+      "all_exact": true
+    },
+    {
+      "source": "/home/jacob/scopesignal-csv-cf5799f6d38b-sbc7ippy/candidate-r3",
+      "tree": "3146dd1d196d0d0545bcdd2d3db3244c0b0bf7d5",
+      "leaves": 527,
+      "all_exact": true
+    }
+  ],
+  "source_after": [
+    {
+      "source": "/home/jacob/scopesignal-csv-cf5799f6d38b-sbc7ippy/baseline",
+      "tree": "cac1d2bbdd38e2e4c2aed7249c2593ec174c0eaa",
+      "leaves": 521,
+      "all_exact": true
+    },
+    {
+      "source": "/home/jacob/scopesignal-csv-cf5799f6d38b-sbc7ippy/candidate",
+      "tree": "03f2c5e46f754dfdb5bcf2c0cf884cf677b01268",
+      "leaves": 527,
+      "all_exact": true
+    },
+    {
+      "source": "/home/jacob/scopesignal-csv-cf5799f6d38b-sbc7ippy/candidate-r3",
+      "tree": "3146dd1d196d0d0545bcdd2d3db3244c0b0bf7d5",
+      "leaves": 527,
+      "all_exact": true
+    }
+  ],
+  "archive_aliases": 104,
+  "unique_blobs": 73,
+  "every_alias_restored_exact": true,
+  "restore_exit_code": 0,
+  "source_edits": 0
+}
