@@ -1,3 +1,4 @@
+import { createScopeReviewDocument, SCOPE_REVIEW_FILENAME } from './scope-review-export.mjs';
 import { MAX_CHECKPOINTS, draftFromFixture, draftBudget, validateScopeDraft, createScopeReview, formatUSD as money } from './scope-plan.mjs';
 import { capturePresentation } from './payment-status.mjs';
 import { encodeScopeWorkspace, decodeScopeWorkspace, WORKSPACE_FILENAME, MAX_WORKSPACE_BYTES } from './scope-workspace-record.mjs';
@@ -358,6 +359,28 @@ $('#scope-save').addEventListener('click', () => {
     fileStatus('Workspace download started. Keep the JSON file to reopen this fictional draft or simulation.');
   } catch (error) {
     fileStatus('Could not prepare the workspace download. ' + error.message, true);
+  } finally {
+    link?.remove();
+    if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+});
+
+$('#scope-review-download').addEventListener('click', () => {
+  let url;
+  let link;
+  try {
+    const contents = createScopeReviewDocument({
+      draft: review ? draft : readDraft(), review, evidenceDrafts
+    });
+    url = URL.createObjectURL(new Blob([contents], { type: 'text/html;charset=utf-8' }));
+    link = element('a');
+    link.href = url;
+    link.download = SCOPE_REVIEW_FILENAME;
+    document.body.append(link);
+    link.click();
+    fileStatus('Scope review download started. Open the HTML file to read or print this fictional snapshot. Keep the separate JSON file to resume editing.');
+  } catch (error) {
+    fileStatus('Could not prepare the scope review. ' + error.message, true);
   } finally {
     link?.remove();
     if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
