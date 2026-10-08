@@ -1,0 +1,20 @@
+{
+  "schema": "scopesignal.record-viewer.current-composition.v1",
+  "at": "2026-10-08T09:57:08.217Z",
+  "sourceBase": "5d8b9ae344c96db3a357da87472c553485daaaf3",
+  "composition": "29c65040103a2fe9d1abd730838dc94c18df2837",
+  "ledgerDependency": "d5e47b431288c4f9642ecadc1b33d4a94498e153",
+  "ledgerBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+  "entryCheck": "Current default index retained exactly, with only the new saved-record link appended after export. Current app.mjs retained exactly.",
+  "readmeResolution": "Both independently authored additive sections retained verbatim, viewer then scope-authoring.",
+  "viewerSixFilesUnchangedFrom": "d9ed1762bf1b90e848e745bd8edcfd792b543823",
+  "node": {
+    "version": "v26.3.0",
+    "exit": 0,
+    "signal": null,
+    "command": [
+      "/opt/homebrew/bin/node",
+      "--test"
+    ]
+  }
+}

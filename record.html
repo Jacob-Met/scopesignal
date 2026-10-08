@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e8">
+  <meta name="description" content="Inspect a saved ScopeSignal fixture record locally, including its accepted evidence and simulated event history.">
+  <title>Saved record — ScopeSignal</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./record-view.css">
+  <script type="module" src="./src/record-view.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">S</span> ScopeSignal</a>
+    <span class="fixture-label">FIXTURE RECORD VIEWER</span>
+  </header>
+  <main id="main">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">SAVED REVIEW</p>
+      <h1 id="page-title">Review a saved<br><em>fixture record.</em></h1>
+      <p class="lede">Open a ScopeSignal JSON download to read its approvals, exact accepted evidence and simulated capture history.</p>
+    </section>
+    <section class="file-panel" aria-labelledby="file-title">
+      <h2 id="file-title">Choose your record</h2>
+      <p id="file-help">Version 1 fixture-record JSON · Up to 1 MiB and 512 events</p>
+      <div class="file-controls">
+        <label for="record-file" class="sr-only">Choose a saved fixture record</label>
+        <input id="record-file" type="file" accept=".json,application/json" aria-describedby="file-help file-privacy">
+        <button id="clear-record" type="button" disabled>Clear view</button>
+      </div>
+      <p class="privacy" id="file-privacy">Read locally on this device. Your file is not uploaded or added to the active fixture.</p>
+      <p class="load-status" id="record-status" role="status" aria-live="polite" aria-atomic="true">No file open. Choose a saved fixture record to inspect.</p>
+      <p class="load-error" id="record-error" role="alert" hidden></p>
+      <a class="jump-link" id="jump-to-record" href="#record-title" hidden>Jump to the opened record ↓</a>
+      <noscript><p>Enable JavaScript to inspect a record. Your file stays on your device.</p></noscript>
+    </section>
+    <div id="record-display" hidden></div>
+  </main>
+  <footer><span>Synthetic fixture · No live payments</span><a href="./index.html">Open the fixture demo</a></footer>
+</body>
+</html>
