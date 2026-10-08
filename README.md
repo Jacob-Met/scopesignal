@@ -223,6 +223,30 @@ the ordinary workspace download already preserve editable work. The file is
 an unsigned fictional draft, with no assertion that the old approval or
 simulated payment applies to its revised terms.
 
+## Inspect an authored scope's history
+
+After **Review this scope**, open **Inspect this scope, event by event** below
+the event ledger. Use the recorded-point selector, **Previous event**, **Next
+event**, or **Latest recorded point** to inspect the state before any event and
+after each recorded decision in your own plan.
+
+Each point shows every checkpoint's capture state, the amount counted then,
+planned evidence, and accepted evidence from approvals already recorded at that
+point. **Recorded event fields** reveals the exact selected fixture event.
+Pending editor notes are excluded. An unknown capture remains uncounted through
+webhook receipts until reconciliation; an ordinary pending capture can resolve
+through its receipt.
+
+Navigation changes only this panel. Current approvals, pending evidence,
+workspace downloads and a prepared file-open preview remain intact. Recording
+another decision refreshes the panel to the latest event. Editing or replacing
+the scope retires the earlier history; reopening an admitted workspace builds
+its history from that file's complete checked record. These remain unsigned,
+fictional events with logical times.
+
+See [the authored-history guide](docs/authored-scope-history.md) for behavior,
+scope boundaries and optional native browser receiving commands.
+
 ## Download an authored scope review
 
 In the authored workspace, **Download scope review** saves

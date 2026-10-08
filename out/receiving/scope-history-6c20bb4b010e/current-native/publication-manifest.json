@@ -1,0 +1,462 @@
+{
+  "schema": "scopesignal.history.current-native-publication-manifest-v1",
+  "repository": "Jacob-Met/scopesignal",
+  "parent_commit": "75229a22b6a0190b1cd8f56a70312d357d49981e",
+  "parent_tree": "3f10a79e87edfec89f19340e55e891bb84bfcf47",
+  "change_scope": "Exactly three additive evidence files below current-native; all source and pre-existing evidence leaves remain unchanged. This manifest excludes itself to avoid a recursive content hash.",
+  "self_excluded_path": "out/receiving/scope-history-6c20bb4b010e/current-native/publication-manifest.json",
+  "owned_files_including_self": 46,
+  "mapped_files_excluding_self": 45,
+  "mapped_bytes_excluding_self": 636522,
+  "original_owned_files": 43,
+  "original_owned_bytes": 555010,
+  "new_paths": [
+    "out/receiving/scope-history-6c20bb4b010e/current-native/README.md",
+    "out/receiving/scope-history-6c20bb4b010e/current-native/packet.json",
+    "out/receiving/scope-history-6c20bb4b010e/current-native/publication-manifest.json"
+  ],
+  "tree_preservation": {
+    "parent_leaf_count": 561,
+    "expected_result_leaf_count": 564,
+    "expected_preserved_existing_leaf_count": 561,
+    "comparison_fields": [
+      "path",
+      "Git blob SHA",
+      "mode",
+      "type",
+      "byte length"
+    ],
+    "no_source_or_existing_evidence_changes": true
+  },
+  "original_publication_manifest": {
+    "path": "out/receiving/scope-history-6c20bb4b010e/current-publication-manifest.json",
+    "bytes": 16898,
+    "sha256": "1f90e5be46c16de331be1f12c58ba92938c2561357c6f35c3b7c97f000449dd1",
+    "gitBlob": "07314541fc9801b5975a6e0455b4e4118f1d4d8e",
+    "semantics": "Original 43 entries copied without metadata edits, including the original manifest self entry. Their origin and parentGitBlob values retain their historical original-publication meanings."
+  },
+  "current_receiving": {
+    "source_commit": "75229a22b6a0190b1cd8f56a70312d357d49981e",
+    "source_tree": "3f10a79e87edfec89f19340e55e891bb84bfcf47",
+    "source_files": 13,
+    "source_bytes": 100766,
+    "actual_browser_flows": 1,
+    "passed_phases": 4,
+    "total_phases": 4,
+    "exit_code": 0,
+    "downloads": 4,
+    "source_before_after_equal": true,
+    "served_inputs_equal_declared_closure": true,
+    "original_export_files": 13,
+    "original_export_decoded_file_bytes": 51487,
+    "historical_receipts_relabelled": false,
+    "extra_test_or_browser_runs": 0
+  },
+  "files": [
+    {
+      "path": "docs/authored-scope-history.md",
+      "bytes": 5883,
+      "sha256": "62db007ab7761e03b2b1802a9d1c4d88b134df899751ce5d1ecefd984be76982",
+      "gitBlob": "4d3c4c306443c38cd8cf9e9f8e663d3bda55a094",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/additive-edits.json",
+      "bytes": 5956,
+      "sha256": "92aebc8c161bf4ddaf8d9327ac4b34da5301229c5d623db324c40b9062801ad3",
+      "gitBlob": "59ed46c81324b0f6d057400940916053e3950101",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/archive-identities.json",
+      "bytes": 1031,
+      "sha256": "af199394bdacf82483a81579d86aef861e85f84d4f385337176ff732479e4245",
+      "gitBlob": "858631ef274293775e836c6dd56aa6470b6526a9",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/author-core/current-after-history.json",
+      "bytes": 3149,
+      "sha256": "d6d0db6f7e11b0d83f774951ab3d8ec015bcbfc52179e6639eafd3a79dcece5c",
+      "gitBlob": "0dda8b7b42855cdb2ebd509743d4590fb723603e",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/author-core/current-before-history.json",
+      "bytes": 3149,
+      "sha256": "d6d0db6f7e11b0d83f774951ab3d8ec015bcbfc52179e6639eafd3a79dcece5c",
+      "gitBlob": "0dda8b7b42855cdb2ebd509743d4590fb723603e",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/author-core/packet.json",
+      "bytes": 18754,
+      "sha256": "621ce18725bbee65e4040910657a88797c2206e371856e2eb12c57cfb019c13c",
+      "gitBlob": "f752ef894c1bf592ec6f6457d305fc4eab0a9075",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/author-core/result.json",
+      "bytes": 7310,
+      "sha256": "ea6af9e639f9b1415f285e0d4c3edc0d57dfbf2204126a2fa2506f89d144b2d2",
+      "gitBlob": "a3b4b4fcc375bd0092fb3084c05c231b59073f1f",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/authored-replacement-draft.json",
+      "bytes": 493,
+      "sha256": "ac09a3820a8477f3c5c0290e6c53952bb3b8724b8f8045c8204fea9e2887e549",
+      "gitBlob": "55d4c7e74f2927b7b4fcf59e858a712dfc0ef5de",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/desktop-history.png",
+      "bytes": 124711,
+      "sha256": "16e6d7d24ee5f6562111793792a6924bb0e0bd67e49ee24cc75d04c57b203d65",
+      "gitBlob": "0fe86635aba18fc12569064849b227810b45ebe8",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/packet.json",
+      "bytes": 15977,
+      "sha256": "22bd2662abb7a42a84cd7dd0d61f0ccbe5a1522c4bd8f74e655fa0c822238dca",
+      "gitBlob": "aa7cf274b329ebad1e9fd66df9e54c7a40b51a1d",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/pending-after-navigation.json",
+      "bytes": 1422,
+      "sha256": "18e5a42b6783f95970166bb47db32cc69c7d6b424a71b94380aa39d7cff9fe36",
+      "gitBlob": "9e19c526d542ca0eb4512bf1592080a982a43fd4",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/pending-before-navigation.json",
+      "bytes": 1422,
+      "sha256": "18e5a42b6783f95970166bb47db32cc69c7d6b424a71b94380aa39d7cff9fe36",
+      "gitBlob": "9e19c526d542ca0eb4512bf1592080a982a43fd4",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/phone-history.png",
+      "bytes": 97088,
+      "sha256": "6fed022954460a90514c42ac14e78b4fa7aab6ecdaadbfe8f157055047a2e356",
+      "gitBlob": "be8a720ec6f580d5480a3be173f4d07f155c5a4d",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/replacement-review-zero.json",
+      "bytes": 494,
+      "sha256": "59be6d9d6fd0d305ad5a8e6f6782d94b9b419d9e3b594fd9ef97ef00d9f9e7f6",
+      "gitBlob": "a72ba8b8739a15acafb41895beb6f94d2322074d",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/author-lifecycle/result.json",
+      "bytes": 6638,
+      "sha256": "e9726255c5d9c07e94d9d5fe4e456a6d31729449917d7abc5ae852c9b655d5a1",
+      "gitBlob": "95277bf813fde472cb8058a8e8e35718ce78967f",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/baseline-missing/current-before-history.json",
+      "bytes": 3149,
+      "sha256": "d6d0db6f7e11b0d83f774951ab3d8ec015bcbfc52179e6639eafd3a79dcece5c",
+      "gitBlob": "0dda8b7b42855cdb2ebd509743d4590fb723603e",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/baseline-missing/packet.json",
+      "bytes": 23187,
+      "sha256": "c29053b8b3683e60f6c09f56759b8dd157eb207524450fea06287eb2df7c80ea",
+      "gitBlob": "082982698ec701f945c1db22b591e87010eaf218",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/baseline-missing/result.json",
+      "bytes": 5416,
+      "sha256": "cf1bb62d876d483310129999b81560a143fea1b62c805cb982a2a1ab4b00a7f9",
+      "gitBlob": "87ddf6a3d88fa733cae4b7127d84f4e5ad854747",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/composition-549.json",
+      "bytes": 2421,
+      "sha256": "8a4beff21ae3448421b05883dd0dd239599b771b7fe65e4cb5904c40034a02bf",
+      "gitBlob": "b64a6b7b627c527f975225d9d3eb51241d1d6b18",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/current-composition.json",
+      "bytes": 13916,
+      "sha256": "d82e4618e9e582c2eea97d3b176adcde87b53c0ac1f7461c8a0c01ec2d93d672",
+      "gitBlob": "a026d948dbadcd9fa521290dc856f7e79530e923",
+      "mode": "100644",
+      "origin": "Independent source review and current composition; zero new product/test/browser execution",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/current-composition.patch",
+      "bytes": 6435,
+      "sha256": "651f470f5715a33aefdb7d7e44fa3da3bbd3e51f3489df92ff32b8051dac420f",
+      "gitBlob": "06a1d19b5b50e3c4fab3b0bdc78015322e3f2d48",
+      "mode": "100644",
+      "origin": "Independent source review and current composition; zero new product/test/browser execution",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/current-native/packet.json",
+      "bytes": 71407,
+      "sha256": "a5d885f41090d08e7c3ee2a77f738f8347528e693ba7d5b2e177496e8068a9c9",
+      "gitBlob": "109a8ff8851eae24b9d46e858cda381395bcbff1",
+      "mode": "100644",
+      "origin": "Exact original canonical current-browser export from tool memory, all 13 native originals preserved",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/current-native/README.md",
+      "bytes": 10105,
+      "sha256": "29739b11a3abea8ea542b0a2f7e556c3a214d332ecdf6b802cb0da920ab8c2d5",
+      "gitBlob": "be748ab5c327dd248741d3cc5d3719f7b41a6978",
+      "mode": "100644",
+      "origin": "Bounded current-source receiving note, blocked font observation and lossless verification recipe",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/current-publication-manifest.json",
+      "bytes": 16898,
+      "sha256": "1f90e5be46c16de331be1f12c58ba92938c2561357c6f35c3b7c97f000449dd1",
+      "gitBlob": "07314541fc9801b5975a6e0455b4e4118f1d4d8e",
+      "mode": "100644",
+      "origin": "Complete current publication metadata, excluding its own recursive hash",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/independent/source-review-archive.json",
+      "bytes": 4053,
+      "sha256": "a368ce159bd01ab118da6e2942f2c82082965caa8e96ca4b16fc7fcdddc8e980",
+      "gitBlob": "602d3d6b5bc74e2063d74b7c786279ef3657d6b3",
+      "mode": "100644",
+      "origin": "Independent source review and current composition; zero new product/test/browser execution",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/native-suite-receipt.json",
+      "bytes": 451,
+      "sha256": "9b1e2f20c10032c51ea2d77c7ec372417a5ba3dbd9678e03ab2e4c8c9d3a5be0",
+      "gitBlob": "b6dc9a9fe1a228c2f7c98964c0c401bd040e9bc3",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/native-suite.stderr.txt",
+      "bytes": 99,
+      "sha256": "7125f194612fcff2f454c05d848e7cb71facc1967b4d5017e25b34fdee3ba74f",
+      "gitBlob": "83b5f9d4df0d01aa0059b4e2ce67617225986b34",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/native-suite.stdout.tap",
+      "bytes": 12901,
+      "sha256": "cc2703458816f268d27bf04abb2efe97224080f5974943620b654d2477f7f5b8",
+      "gitBlob": "90801ad9a20f12bbf5d3fd743810bdb3b26a536d",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/original-selector-run/current-before-history.json",
+      "bytes": 3149,
+      "sha256": "d6d0db6f7e11b0d83f774951ab3d8ec015bcbfc52179e6639eafd3a79dcece5c",
+      "gitBlob": "0dda8b7b42855cdb2ebd509743d4590fb723603e",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/original-selector-run/packet.json",
+      "bytes": 15648,
+      "sha256": "bd450ca264707639ee07e0a13a5152e4409d6dbdb5c64835f3635fa5dcb64198",
+      "gitBlob": "a0f4bbf92dd7ee99107ef26dd89d805fc1d3d60b",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/original-selector-run/result.json",
+      "bytes": 7094,
+      "sha256": "56ca65dd54b3abf6c3c12016c2fbc123c6ebb05a3ea8615e5db44514ad0eb6c6",
+      "gitBlob": "08491a5011f5d869e3d22ab96add0799f35c7b70",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/preparation-errors.json",
+      "bytes": 2338,
+      "sha256": "96498e94970317cd6334966bca7c1aa7ff00ddb430a14beed05440ab73470f85",
+      "gitBlob": "5a28a3b2a562f20c972450039c3068506c819198",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/probes/original-authored-history.cjs",
+      "bytes": 10968,
+      "sha256": "4553503ec74e12736932ace989880dadc470549eab7069397d6dfe532f631fd3",
+      "gitBlob": "5590c0fd25147f293ffed665674fc3e270e3d08e",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/qualified-r1-to-current-inputs.patch",
+      "bytes": 8912,
+      "sha256": "5db1f2529a0f5da1216d44851490d2d5b86d7865583f8de75748d938b5d4ec0d",
+      "gitBlob": "383777b4c388be38845ac32f435defecd18de65d",
+      "mode": "100644",
+      "origin": "Independent source review and current composition; zero new product/test/browser execution",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/README.md",
+      "bytes": 9456,
+      "sha256": "39382a623b528a467504c211a163fde4de13504c13f250323d10a97b4710805b",
+      "gitBlob": "bd0f51602e4440563521d42fd2d0f8f0bb2f2995",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "out/receiving/scope-history-6c20bb4b010e/source-freeze-r1.json",
+      "bytes": 11230,
+      "sha256": "3543e463d7a51da98b0b474fa85f05be773487f11dacce8528ae4aa44e5449da",
+      "gitBlob": "84b1e28e42445c3d96566a42972b67116cd166c1",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "README.md",
+      "bytes": 22692,
+      "sha256": "50a05556af219d0dfe766a7be05277df02b6f80d7a573c15dd3e8892b6042e02",
+      "gitBlob": "9e6878a7b8848ba7d0b875a8b374ffba4673cda1",
+      "mode": "100644",
+      "origin": "Unique additive composition onto immutable current parent 847505d2",
+      "parentGitBlob": "0b87681e7e4966d455c0ec4f2d965ddbefd7874f"
+    },
+    {
+      "path": "scope-history.css",
+      "bytes": 2801,
+      "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69",
+      "gitBlob": "993ab82f32c1546d688d949b72f8312f82c432ec",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "scope.html",
+      "bytes": 11304,
+      "sha256": "c61b3a2a4412fde0f6851ad741834365d580efe149b9dab1ed782b97235d128b",
+      "gitBlob": "8df60d976720a8c6215a8996e4b740870e967a7c",
+      "mode": "100644",
+      "origin": "Unique additive composition onto immutable current parent 847505d2",
+      "parentGitBlob": "d1567193c7eb1c78b8e55afbf245151994e913b0"
+    },
+    {
+      "path": "scripts/check-scope-history-lifecycle.cjs",
+      "bytes": 13319,
+      "sha256": "55f8edc9421b90e1999f89d889742b47bda3e1fe50adf9f935e92c804dfd9c70",
+      "gitBlob": "2ceaabeaf4109f49c3f7ee9ea9ebd47d1fa42c1b",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "scripts/check-scope-history.cjs",
+      "bytes": 11058,
+      "sha256": "d5cb0424a48e94ea7222ca31104f4fda4f7c3e7f8bf35e205065d921d95c3236",
+      "gitBlob": "9c3c6ec1c26f69003350df478f263c53ab985540",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "src/scope-history-view.mjs",
+      "bytes": 5728,
+      "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+      "gitBlob": "93abdcd8abbbbfbee99cdb5207c10ea346d3177e",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "src/scope-history.mjs",
+      "bytes": 4297,
+      "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+      "gitBlob": "f34a8ca89a897e03a1a1ca1abf7d243f1a42e4b6",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "bytes": 24137,
+      "sha256": "d68ede63929fba3a5d77e2db20229261ac553e8edfa16f7e7d05428265a70fac",
+      "gitBlob": "2552977c7e01c32bc5621ddf192a9b14a3387eb3",
+      "mode": "100644",
+      "origin": "Unique additive composition onto immutable current parent 847505d2",
+      "parentGitBlob": "783def69bbe2130c08889572ed27363d89a33b9d"
+    },
+    {
+      "path": "tests/scope-history.test.mjs",
+      "bytes": 8476,
+      "sha256": "cfd328dae4d89221273968c1bf0daca4b153f85f8084924e6896356f1dba87b7",
+      "gitBlob": "dfa2d9aa6938dbb1dd26307b2798c9310506fb8e",
+      "mode": "100644",
+      "origin": "Frozen owner handoff f7bbcaa3",
+      "parentGitBlob": null
+    }
+  ]
+}

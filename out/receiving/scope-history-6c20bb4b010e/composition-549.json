@@ -1,0 +1,59 @@
+{
+  "schema": "scopesignal.history.current-composition.v1",
+  "qualifiedParent": "bab391c7c6fec1193e221997e4d66d89bd914cfd",
+  "sourceFreezeSha256": "3543e463d7a51da98b0b474fa85f05be773487f11dacce8528ae4aa44e5449da",
+  "currentParent": "549f6d551d1ad92ee97198b1799c7bcb40aa5e01",
+  "currentLeaves": 403,
+  "currentTreeTruncated": false,
+  "priorQualifiedPathsChanged": [
+    "scope.html"
+  ],
+  "change": "Current parent adds the separate-tab scope comparison link. The four controller insertions and history section/CSS reproduce qualified R1 exactly on the original parent, and apply uniquely to this current source without replacing its comparison link.",
+  "nativeOrBrowserTestsRepeatedForThisComposition": false,
+  "nativeResultsApplyTo": "bab391c7 plus frozen R1, source manifest3543e463",
+  "compositionRequiresFreshParentVerification": true,
+  "activeOwnerStaticChecks": [
+    {
+      "label": "PR30",
+      "head": "9863a0e971da312d2328ffdbb14c5d0cf01da74f",
+      "pageInsertionsUnique": true,
+      "qualifiedBytesUnchanged": null,
+      "executed": false,
+      "sourceModified": false,
+      "controllerInsertionsUnique": true
+    },
+    {
+      "label": "PR31",
+      "head": "b8d9895037c35295203e6c09bb1a70078e64904a",
+      "pageInsertionsUnique": true,
+      "qualifiedBytesUnchanged": null,
+      "executed": false,
+      "sourceModified": false,
+      "controllerInsertionsUnique": true
+    }
+  ],
+  "anchor": "The history section is inserted immediately after the unchanged native event table; active revision-draft footer wording is preserved.",
+  "outputs": [
+    {
+      "path": "scope.html",
+      "parentGitBlob": "08b5d9d6b7d7a60846f1c27dc4317c740da0d516",
+      "bytes": 10664,
+      "sha256": "61b390f11b37b108cbc5bce92737a23fd6491fc4d00edb09c46c5f3f93259239",
+      "gitBlob": "8a84675da8e85a0051f691b79f577097d4eca49c"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "parentGitBlob": "f57d31cf8a4e6a9a7ddc140c5c06935fe3ef5004",
+      "bytes": 21992,
+      "sha256": "2d03e57a73e4d47b4177d9249399bb7b926e65b74741c4f1ae2a10af3f128c54",
+      "gitBlob": "63fe74e9bbafaff2132c9fd89d639cf3a54578c2"
+    },
+    {
+      "path": "README.md",
+      "parentGitBlob": "cea5225c1361baf7100694fdddda2f5d3979efa9",
+      "bytes": 21277,
+      "sha256": "affedff3a96ffe97465accdd588fdc71fabed5b8244fbefb3dfbfa2c1047a3fc",
+      "gitBlob": "362292618b118550a59dc9237ea7b3d558e279c3"
+    }
+  ]
+}

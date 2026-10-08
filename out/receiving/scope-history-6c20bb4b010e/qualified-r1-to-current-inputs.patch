@@ -1,0 +1,130 @@
+--- qualified-r1/scope.html
++++ prepared-847505d2/scope.html
+@@ -19,18 +19,21 @@
+     <div class="section-head"><div><p class="eyebrow">BRIEF → CHECKPOINTS → HUMAN REVIEW</p><h1>Shape the work.<br><em>Agree on the proof.</em></h1></div><span class="fixture-badge">FICTIONAL PROJECT ONLY</span></div>
+     <p class="lede">Build a scope, agree on what each milestone proves, and explore its payment lifecycle one decision at a time.</p>
+     <p class="scope-session-note">This is a fictional workspace. Download a workspace file to keep your draft or simulation; refreshing otherwise clears it. Files stay on your device. No payment or AI service is called.</p>
++    <p class="scope-help"><a href="./scope-compare.html" target="_blank" rel="noopener">Compare two saved workspaces</a> in a separate tab while keeping this workspace in place.</p>
+     <section class="scope-files" aria-labelledby="scope-files-title">
+       <h2 id="scope-files-title">Keep this workspace</h2>
+       <p>Save your brief, evidence drafts and simulated history in one file. Opening a file shows a preview before replacing your current work.</p>
+       <div class="scope-file-controls">
+         <button id="scope-save" class="button button-outline" type="button">Download workspace</button>
+         <button id="scope-review-download" class="button button-outline" type="button">Download scope review</button>
++        <button id="scope-revision-download" class="button button-outline" type="button" aria-describedby="scope-revision-help" disabled>Download revision draft</button>
+         <label class="scope-file-open" for="scope-open">Open saved workspace
+           <input id="scope-open" type="file" accept=".json,application/json" aria-describedby="scope-file-help">
+         </label>
+       </div>
+       <p id="scope-file-help" class="microcopy">Version 1 workspace JSON, up to 1 MiB. These unsigned files contain fictional records, not verified approvals or payment evidence.</p>
+       <p class="microcopy">Scope review is a read-only HTML snapshot you can open offline and print, including unfinished fields or recorded review evidence. Keep the workspace JSON to resume editing.</p>
++      <p id="scope-revision-help" class="microcopy">After approval, download a revision draft to reuse the original scope terms. The copy has no approvals, payment events or review notes. Your current workspace stays open; reopen the copied JSON to edit and review it anew.</p>
+       <p id="scope-file-status" role="status" aria-live="polite"></p>
+       <div id="scope-open-preview" class="scope-open-preview" hidden>
+         <h3>Ready to open</h3>
+@@ -55,7 +58,7 @@
+       </section>
+       <section class="panel" aria-labelledby="draft-checkpoints-title">
+         <div class="panel-heading"><h2 id="draft-checkpoints-title">Define the checkpoints</h2><span>1–12 milestones</span></div>
+-        <p class="scope-help">Give each milestone a clear deliverable, an amount, and evidence a person can review. Add, remove, revise, and move checkpoints up or down before approval. Each checkpoint's fields move together.</p>
++        <p class="scope-help">Give each milestone a clear deliverable, an amount, and evidence a person can review. Add, remove, revise, duplicate, and move checkpoints up or down before approval. Each checkpoint's fields move together. Duplicate checkpoint inserts an editable copy immediately after the original, preserving all three field values.</p>
+         <p id="scope-order-status" class="scope-help" role="status" aria-live="polite" aria-atomic="true"></p>
+         <div id="scope-draft-list"></div>
+         <button id="scope-add" class="button button-outline" type="button">+ Add checkpoint</button>
+@@ -115,7 +118,7 @@
+           </details>
+         </div>
+       </details>
+-      <p class="scope-help">To try a different scope after approval, <a href="./scope.html">start a fresh fixture</a>. The current in-memory plan and events will be cleared.</p>
++      <p class="scope-help">Use Download revision draft above to keep the original terms for a new review. To return to the example instead, <a href="./scope.html">start a fresh fixture</a>; this clears the current in-memory plan and events.</p>
+     </section>
+     <noscript><p class="scope-errors">This interactive fixture needs JavaScript. The <a href="./index.html">example page</a> describes the payment model.</p></noscript>
+   </main>
+--- qualified-r1/src/scope-workspace.mjs
++++ prepared-847505d2/src/scope-workspace.mjs
+@@ -1,5 +1,6 @@
+ import { mountScopeHistory } from './scope-history-view.mjs';
+ import { createScopeReviewDocument, SCOPE_REVIEW_FILENAME } from './scope-review-export.mjs';
++import { createScopeRevisionDraft, SCOPE_REVISION_FILENAME } from './scope-revision-draft.mjs';
+ import { MAX_CHECKPOINTS, draftFromFixture, draftBudget, validateScopeDraft, createScopeReview, formatUSD as money } from './scope-plan.mjs';
+ import { capturePresentation } from './payment-status.mjs';
+ import { encodeScopeWorkspace, decodeScopeWorkspace, WORKSPACE_FILENAME, MAX_WORKSPACE_BYTES } from './scope-workspace-record.mjs';
+@@ -57,6 +58,12 @@
+       move.disabled = direction === 'up' ? index === 0 : index === draft.checkpoints.length - 1;
+       actions.append(move);
+     }
++    const duplicate = element('button', 'Duplicate checkpoint', 'text-button');
++    duplicate.type = 'button';
++    duplicate.dataset.duplicate = index;
++    duplicate.setAttribute('aria-label', `Duplicate checkpoint ${index + 1}`);
++    duplicate.disabled = draft.checkpoints.length >= MAX_CHECKPOINTS;
++    actions.append(duplicate);
+     const remove = element('button', 'Remove checkpoint', 'text-button scope-remove');
+     remove.type = 'button';
+     remove.dataset.remove = index;
+@@ -67,6 +74,7 @@
+     list.append(row);
+   });
+   $('#scope-add').disabled = draft.checkpoints.length >= MAX_CHECKPOINTS;
++  $('#scope-revision-download').disabled = !review || review.snapshot().approved === 0;
+   $('#scope-order-status').textContent = '';
+   updateBudget();
+ }
+@@ -164,6 +172,7 @@
+   $('#scope-remaining').textContent = money(state.remaining);
+   $('#scope-unallocated').textContent = `${money(state.total)} allocated to checkpoints. ${money(state.unallocated)} of the project cap remains unallocated.`;
+   $('#scope-edit').disabled = state.events.length > 0;
++  $('#scope-revision-download').disabled = state.approved === 0;
+   $('#scope-lock-note').textContent = state.events.length > 0
+     ? 'This scope is locked because approval has begun. Accepted evidence remains attached to its recorded decision.'
+     : 'You can edit this plan until the first checkpoint is approved.';
+@@ -242,6 +251,22 @@
+   $(`#draft-${draft.checkpoints.length - 1}-title`).focus();
+ });
+ $('#scope-draft-list').addEventListener('click', event => {
++  const duplicate = event.target.closest('button[data-duplicate]');
++  if (duplicate) {
++    if (duplicate.disabled || review || form.hidden) return;
++    const index = Number(duplicate.dataset.duplicate);
++    const current = readDraft();
++    if (!Number.isInteger(index) || index < 0 || index >= current.checkpoints.length
++      || current.checkpoints.length >= MAX_CHECKPOINTS) return;
++    workspaceChanged();
++    current.checkpoints.splice(index + 1, 0, { ...current.checkpoints[index] });
++    draft = current;
++    clearErrors();
++    renderDraftRows();
++    $(`#draft-${index + 1}-title`).focus();
++    $('#scope-order-status').textContent = `Checkpoint ${index + 1} duplicated at position ${index + 2} of ${draft.checkpoints.length}.`;
++    return;
++  }
+   const move = event.target.closest('button[data-move]');
+   if (move) {
+     if (move.disabled || review || form.hidden) return;
+@@ -418,6 +443,26 @@
+     fileStatus('Scope review download started. Open the HTML file to read or print this fictional snapshot. Keep the separate JSON file to resume editing.');
+   } catch (error) {
+     fileStatus('Could not prepare the scope review. ' + error.message, true);
++  } finally {
++    link?.remove();
++    if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
++  }
++});
++
++$('#scope-revision-download').addEventListener('click', () => {
++  let url;
++  let link;
++  try {
++    const contents = createScopeRevisionDraft({ draft, review, evidenceDrafts });
++    url = URL.createObjectURL(new Blob([contents], { type: 'application/json;charset=utf-8' }));
++    link = element('a');
++    link.href = url;
++    link.download = SCOPE_REVISION_FILENAME;
++    document.body.append(link);
++    link.click();
++    fileStatus('Revision draft download started. Reopen the JSON to edit the original terms and review them anew. This workspace keeps its approvals, review evidence and simulated history.');
++  } catch (error) {
++    fileStatus('Could not prepare the revision draft. ' + error.message, true);
+   } finally {
+     link?.remove();
+     if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
