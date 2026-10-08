@@ -1,0 +1,201 @@
+{
+  "schema": "scopesignal.independent-command-review",
+  "version": 1,
+  "reviewer": "integration_lane",
+  "verdict": "APPROVE",
+  "blockingFindings": [],
+  "repository": "Jacob-Met/scopesignal",
+  "head": "e2fd217148c60165d261262c03c473e444127269",
+  "tree": "f386e8b18347058bcd019ab244feec11c3269e4c",
+  "acceptedParent": "5bbb52087aa3c5b33d1694887ff3d1380b826e5e",
+  "maintainedFileFence": [
+    "scripts/review-workspace.mjs",
+    "tests/review-workspace-cli.test.mjs",
+    "docs/workspace-review-cli.md",
+    "package.json",
+    "README.md"
+  ],
+  "currentParentPreservation": {
+    "baseLeaves": 730,
+    "candidateLeaves": 783,
+    "unrelatedChecked": 728,
+    "changes": []
+  },
+  "native": {
+    "result": "PASS",
+    "node": "v24.19.0",
+    "actualCases": 12,
+    "actualCommandInvocations": 13,
+    "exactGitSourceAndFixturePins": 10,
+    "unchanged": true,
+    "cases": [
+      {
+        "name": "reviewed-history",
+        "status": "PASS",
+        "commandStatus": 0,
+        "inputSha256": "2639b92c1d4674cce5f7baef7458e76d7dd5946ab2fcad02a0a4da6f1ac24b1c",
+        "outputSha256": "80e8a3043a715b994b9f41a20d7b3671f2020a6bede0981264a07bfcef7a27d0",
+        "workspace": {
+          "stage": "review",
+          "checkpoints": 2,
+          "approved": 1,
+          "events": 6
+        }
+      },
+      {
+        "name": "unfinished-draft",
+        "status": "PASS",
+        "commandStatus": 0,
+        "inputSha256": "9b624ebe2556420b495becb703dba70012490a2dbc16d3753c43869b08815ad0",
+        "outputSha256": "151ba57bf3b4869edab7db88ce930c5b9f5d9701bac4fc683e30c1fe240e6d77",
+        "workspace": {
+          "stage": "draft",
+          "checkpoints": 1,
+          "approved": 0,
+          "events": 0
+        }
+      },
+      {
+        "name": "accepted-csv",
+        "status": "PASS",
+        "commandStatus": 0,
+        "inputSha256": "73d6ad832198ab5324ac81a05a9596b6b209ccfd8b2972b2515f3353bc28a1ed",
+        "outputSha256": "82bd1380baa91af8b131400dd2b21f19ee23d70bbacfbff7b31ae469ef914505",
+        "workspace": {
+          "stage": "draft",
+          "checkpoints": 2,
+          "approved": 0,
+          "events": 0
+        }
+      },
+      {
+        "name": "unknown-capture",
+        "status": "PASS",
+        "commandStatus": 0,
+        "inputSha256": "adb780fb17b30dafe2a0a8763603aac59d0877e84ef52ad0427fb823a2a1be87",
+        "outputSha256": "bd51e14e1c0dd2ce5885c9a4bc2cb35ed2601978295ea80665a6f69e3649a83b",
+        "workspace": {
+          "stage": "review",
+          "checkpoints": 2,
+          "approved": 1,
+          "events": 4
+        }
+      },
+      {
+        "name": "explicit-reconciliation",
+        "status": "PASS",
+        "commandStatus": 0,
+        "inputSha256": "c2f2542383c6441d5f5250b7871c4523007baa81ea88cc0fc056811a8e6681eb",
+        "outputSha256": "46151d44d139d7c035ff01817f86e073585162d9ffaea9d8f53184df1b815e43",
+        "workspace": {
+          "stage": "review",
+          "checkpoints": 2,
+          "approved": 1,
+          "events": 7
+        }
+      },
+      {
+        "name": "literal-bom",
+        "status": "PASS",
+        "commandStatus": 0,
+        "inputSha256": "2b8f59e385959518d964fe743a8a171cb59db219cded561981505d81a574849d",
+        "outputSha256": "151ba57bf3b4869edab7db88ce930c5b9f5d9701bac4fc683e30c1fe240e6d77",
+        "workspace": {
+          "stage": "draft",
+          "checkpoints": 1,
+          "approved": 0,
+          "events": 0
+        }
+      },
+      {
+        "name": "package-command",
+        "status": "PASS",
+        "commandStatus": 0,
+        "inputSha256": "73d6ad832198ab5324ac81a05a9596b6b209ccfd8b2972b2515f3353bc28a1ed",
+        "outputSha256": "82bd1380baa91af8b131400dd2b21f19ee23d70bbacfbff7b31ae469ef914505",
+        "workspace": {
+          "stage": "draft",
+          "checkpoints": 2,
+          "approved": 0,
+          "events": 0
+        }
+      },
+      {
+        "name": "failure-write",
+        "status": "PASS",
+        "commandStatus": 1,
+        "actualFaultObserved": true,
+        "inputSha256": "2639b92c1d4674cce5f7baef7458e76d7dd5946ab2fcad02a0a4da6f1ac24b1c",
+        "preservedPublished": false,
+        "leftovers": []
+      },
+      {
+        "name": "failure-sync",
+        "status": "PASS",
+        "commandStatus": 1,
+        "actualFaultObserved": true,
+        "inputSha256": "2639b92c1d4674cce5f7baef7458e76d7dd5946ab2fcad02a0a4da6f1ac24b1c",
+        "preservedPublished": false,
+        "leftovers": []
+      },
+      {
+        "name": "failure-link",
+        "status": "PASS",
+        "commandStatus": 1,
+        "actualFaultObserved": true,
+        "inputSha256": "2639b92c1d4674cce5f7baef7458e76d7dd5946ab2fcad02a0a4da6f1ac24b1c",
+        "preservedPublished": false,
+        "leftovers": []
+      },
+      {
+        "name": "failure-cleanup",
+        "status": "PASS",
+        "commandStatus": 1,
+        "actualFaultObserved": true,
+        "inputSha256": "2639b92c1d4674cce5f7baef7458e76d7dd5946ab2fcad02a0a4da6f1ac24b1c",
+        "preservedPublished": true,
+        "leftovers": [
+          ".scopesignal-review-6PRJMp"
+        ]
+      },
+      {
+        "name": "competing-different-inputs",
+        "status": "PASS",
+        "commandStatuses": [
+          0,
+          1
+        ],
+        "winnerInput": "inputs/reviewed.json",
+        "wholeWinnerSha256": "80e8a3043a715b994b9f41a20d7b3671f2020a6bede0981264a07bfcef7a27d0"
+      }
+    ]
+  },
+  "htmlParser": {
+    "result": "PASS",
+    "artifacts": 9,
+    "activeResourcesOrControls": 0,
+    "acceptedCSVPayload": "literal text only; no generated element or event handler"
+  },
+  "receiverCorrection": {
+    "initialProgram": {
+      "bytes": 12646,
+      "sha256": "d94f79040742835cd481e4547c222a6d7ef75213ce9b6618f1c02dd826b64ca6"
+    },
+    "observation": "Initial actual reviewed command passed complete native-byte parity, receipt, and source custody; reviewer semantic assertion then incorrectly expected $231.19 counted after a lost capture response plus webhook receipts.",
+    "sourceBasis": "Unchanged src/ledger.mjs lines 202-205 explicitly keep unknown capture uncounted until explicit reconciliation; lines 209-213 count after valid reconciliation.",
+    "correction": "Reviewed fixture must remain unknown/$0.00 after both webhook events. Added a separate exact seventh reconciliation event control to verify captured/$231.19 once and all seven history entries. No product source edits. Original failure and artifact retained.",
+    "modifiedFiles": [
+      "receive-scope47-v2.mjs"
+    ],
+    "untouchedProgram": "receive-scope47.mjs"
+  },
+  "sourceReasoning": [
+    "Descriptor admission checks regular file, identity and bounded consumed bytes, followed by fatal UTF-8 and unchanged strict workspace decoding.",
+    "Native exporter runs before destination publication. A same-filesystem private regular file is completely written, synced and closed before exclusive hard-link creation.",
+    "Existing destination paths cannot be overwritten, including aliases or dangling symlinks. Errors before publication remove only owned temporary entries.",
+    "An observed failure to clean up after successful publication reports nonzero status, emits no success receipt, and preserves the completed destination. The leftover private hard link remains complete and is documented.",
+    "CLI imports accepted native decoder/exporter/ledger unchanged; independently verified every unrelated accepted-parent tree leaf."
+  ],
+  "boundary": "Reviewer directly executed current source and private fault controls. This is native command and static HTML structure qualification, not browser rendering, deployment, account state, provider activity, installation/adoption, or real payment evidence.",
+  "artifacts": "captured-files.json preserves all 49 captured files verbatim with byte lengths and SHA256, including original failed semantic assertion, raw child logs, all generated HTML and derived inputs. Programs are separate exact text files."
+}
