@@ -1,0 +1,46 @@
+{
+  "schema": "scopesignal.checkpoint-csv-independent-controls.v1",
+  "basis": {
+    "repository": "Jacob-Met/scopesignal",
+    "branch": "paypal-ai",
+    "head": "847505d2fe9f8295110fc13a3fb9e05ec71f6644",
+    "tree": "cac1d2bbdd38e2e4c2aed7249c2593ec174c0eaa",
+    "baseline_manifest_sha256": "47f7582be1eecf9d3d6741119d6eb1c3165e485b8e64ed510498d248d9b6741f",
+    "existing_owner_issue": 29,
+    "codec_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162",
+    "amount_validation_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8",
+    "authoring_blob": "783def69bbe2130c08889572ed27363d89a33b9d"
+  },
+  "candidate_implementation_read": false,
+  "authored_matrix_read": false,
+  "controls": [
+    {
+      "id": "literal-csv-and-utf8-preservation",
+      "oracle": "The exact deliverable,amount,evidence header admits quoted commas, doubled quotes, LF inside evidence, LF/CRLF record separators and one optional leading UTF-8 BOM. Preserve row order and every title/amount/evidence code unit, including leading/trailing spaces, leading zeroes, Unicode, literal HTML-looking text and empty unfinished fields. Record-separator CRLF must not normalize field-internal CR; quoted CR or CRLF inside any field must be refused by the native editor-preservation contract."
+    },
+    {
+      "id": "native-draft-bounds-and-amount-authority",
+      "oracle": "Receive 1 and12 rows, reject0 and13 including an all-empty13th row. Receive exact native limits for label120/brief8000/cap64/title160/amount64/evidence5000 and rejectone-over values. Preserve unfinished amount spellings such as empty,0,1e3,plus sign,too many decimals and unsafe cent magnitudes as draft strings where codec permits; show review readiness consistent with validateScopeDraft/draftBudget. Do not silently coerce, trim or round. Whitespace/leading-zero valid dollar strings stay literal in draft but produce native review values after explicit review."
+    },
+    {
+      "id": "ambiguous-malformed-or-lossy-input-refusal",
+      "oracle": "Reject duplicate/missing/extra/case-or-space-altered headers and unsupported header order; reject ragged/interior empty physical records, stray/unclosed quotes, text after a closing quote, lone CR separators and input beyond the declared UTF-8 byte bound. A final record terminator must not add a checkpoint, while an explicit ',,' row counts. Browser file decoding must reject malformed UTF-8; a literal correctly encoded U+FFFD remains valid text. Exactly one leading BOM is optional, and a second leading BOM must not disappear through two decoder/parser normalization steps."
+    },
+    {
+      "id": "ordinary-native-draft-only-record",
+      "oracle": "Every successful explicit download must equal native encodeScopeWorkspace for the exact parsed draft and decode through the unchanged codec. Require fixtureOnly:true,paymentEvidence:false,stage:'draft',events:[],evidenceDrafts:[],review:null,summary approved/events0. Approval/event-looking cell text stays plain text; it cannot select a schema/stage or create ledger events. Conversion/review/download must not write browser storage, call providers or alter another open authoring workspace/pending import."
+    },
+    {
+      "id": "stale-read-and-reviewed-source-fencing",
+      "oracle": "In real Chromium defer one actual File.arrayBuffer/text read. Metadata edits, a newly chosen file or Cancel retire old preview and download eligibility. A newer reviewed file cannot be replaced by the late older completion. No native download occurs before explicit review and explicit download; forced stale-control activation after invalidation may not export the prior review. Re-review uses the latest literal file and label/brief/cap values. Record any transport adaptation separately from these assertions."
+    },
+    {
+      "id": "existing-authoring-import-review-replacement-roundtrip",
+      "oracle": "Take an actual converter download into unchanged scope.html via its native saved-workspace file control. Its import preview and Cancel preserve the original form/state. Only Replace workspace adopts the exact CSV-derived fields/order/metadata; subsequent Download workspace roundtrips exact native bytes. Explicit Review this scope uses existing validation and yields0 approvals/0 events, while an unfinished amount remains editable and is refused for review until corrected. Preserve the baseline positive and native refusal controls."
+    }
+  ],
+  "transport_policy": "Use isolated fictional inputs and actual native source. Existing ThinkPad Node22/Chromium results are supplemental because package declares Node>=24; normal required Node24 gate remains separately required. No engine bypass, installs, user profiles, product/GitHub/provider/payment mutations, source edits or cleanup. Browser and native receiver adapters are separately identified.",
+  "scope_status": "Provisional isolated CSV receiving, disjoint from issue29 authored-history and issue33 comparison-export ownership; root publishes coordination.",
+  "frozen_at_utc": "2026-10-08T17:43:39.737504+00:00",
+  "native_root": "/home/jacob/scopesignal-csv-peer-cf5799f6d38b-35w1vjyi"
+}

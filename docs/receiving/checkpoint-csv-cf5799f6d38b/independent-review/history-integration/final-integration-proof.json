@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-08T19:17:18.081550+00:00",
+  "tree": "4b9b2580dc31811bdac98109a2763fc34c91a6cd",
+  "candidate_manifest_sha256": "eaf8c3bbf183d72ad77ca0ce35f1d19e39ca5dcb96d709401c0528681c4ecf92",
+  "verified_owner_files": 576,
+  "verified_private_files": 576,
+  "copy_and_primary_preservation": {
+    "at": "2026-10-08T19:11:22.142175+00:00",
+    "tree": "4b9b2580dc31811bdac98109a2763fc34c91a6cd",
+    "files": 576,
+    "incoming_blobs": 570,
+    "unowned_preserved": 568,
+    "new_csv_files_exact": [
+      "scope-csv.html",
+      "scope-csv.css",
+      "src/scope-checkpoint-csv.mjs",
+      "src/scope-checkpoint-csv-ui.mjs",
+      "tests/scope-checkpoint-csv.test.mjs",
+      "scripts/check-scope-checkpoint-csv.mjs"
+    ],
+    "owner": "/home/jacob/scopesignal-csv-cf5799f6d38b-sbc7ippy/composition-fb6-0a11f3hg/candidate",
+    "private": "/home/jacob/scopesignal-csv-history-peer-cf5799f6d38b-m2uxc8g2/candidate-4b9b"
+  },
+  "browser_groups_passed": 1,
+  "predeclared_phases_passed": 2,
+  "actual_downloads": 6,
+  "errors": [],
+  "unexpected_external_requests": [],
+  "native_seed_matches_browser": true,
+  "seed_sha256": "b1f6a127173bf684496a270deee4749732d966df8f314a74f2728752ba20c6a6",
+  "scope_sha256": "bb375374e6f8f151063f2385559a8ba75083c975f193c43f04fbe94aa1720fc6",
+  "receiver_sha256": "54e94b4cf68a74304c9be81f8a8be196aad417f9f8b9a00b3e45e9ace76f32c4",
+  "original_publication_files_verified": 13,
+  "original_manifest_sha256": "4199f3da9d0a6728988457730959e5a73bef17153567b81044d576abed4799ef",
+  "source_edits": false,
+  "browser_executable": "/snap/bin/chromium",
+  "browser": "Chrome/153.0.8010.47",
+  "runtime": "v22.22.1",
+  "qualification": "Supplemental native Node22; supported Node24 and normal hosted/public receiving separately attributed"
+}

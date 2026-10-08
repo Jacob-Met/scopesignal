@@ -1,0 +1,70 @@
+{
+  "schema": "scopesignal.csv-history-integration-publication.v1",
+  "tree": "4b9b2580dc31811bdac98109a2763fc34c91a6cd",
+  "original_manifest_sha256": "4199f3da9d0a6728988457730959e5a73bef17153567b81044d576abed4799ef",
+  "files": [
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/README.md",
+      "bytes": 6067,
+      "mode": "100644",
+      "sha256": "ffdbe96ab6250b576874732991ec8abc31230ce788b924b7dd6ff3c1e5f663e0",
+      "git_blob": "245c82dd0a96a3bb24c586870a3ad0dc8c402a72"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/final-integration-proof.json",
+      "bytes": 1775,
+      "mode": "100644",
+      "sha256": "ff5c241ae27d41bfd963fb66b20578b9a071ac71dfdab05dda9e01b75fe15465",
+      "git_blob": "d7b49f1f5d116675e059adb26713015f06743012"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/history-browser-v1.mjs",
+      "bytes": 17282,
+      "mode": "100644",
+      "sha256": "54e94b4cf68a74304c9be81f8a8be196aad417f9f8b9a00b3e45e9ace76f32c4",
+      "git_blob": "ff707fff38eba421b67c052df47b2cf74051e0f5"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/history-native-fixture-v1.json",
+      "bytes": 1598,
+      "mode": "100644",
+      "sha256": "b1f6a127173bf684496a270deee4749732d966df8f314a74f2728752ba20c6a6",
+      "git_blob": "3a2ed80fe73c5b2e473bd011ef2c31489b1677b8"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/make-history-fixture-v1.mjs",
+      "bytes": 1680,
+      "mode": "100644",
+      "sha256": "7f9f435c47cf16a3b4e5bd9e6d70275fa9c212f8d15d4ab8270539fffc5e6191",
+      "git_blob": "c425ae172c4283d79208c6c2a7285bc4e3a8d010"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/raw-receipts-archive.json",
+      "bytes": 241062,
+      "mode": "100644",
+      "sha256": "70f2c11d0e00a3e0f115a7ea897246fba437b48c57083a98631885d86097fbe9",
+      "git_blob": "c60dbcdab43ee53585c92c64b2198c5e0d18a8ef"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/restore-history-review.py",
+      "bytes": 1606,
+      "mode": "100644",
+      "sha256": "100707653f8f35af6c97106c6f505ac53d56c12b27c5b09be6aa2e5a1d697b82",
+      "git_blob": "c87a13ff69c3349c45dade2440d7417baffc1244"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/scope-v1.json",
+      "bytes": 2435,
+      "mode": "100644",
+      "sha256": "bb375374e6f8f151063f2385559a8ba75083c975f193c43f04fbe94aa1720fc6",
+      "git_blob": "89bab89f842fb3315d5bed8a87b7189b185a3654"
+    },
+    {
+      "path": "docs/receiving/checkpoint-csv-cf5799f6d38b/independent-review/history-integration/source-contract-archive.json",
+      "bytes": 504698,
+      "mode": "100644",
+      "sha256": "0102ced1761d7afbf95992bb475f8c10f6de4045ee3fe059da79f3ff13ba0f5a",
+      "git_blob": "eb025946cdbc2a40d77b9fc12fcedcac0ff5342e"
+    }
+  ]
+}

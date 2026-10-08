@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e8">
+  <meta name="description" content="Review checkpoint CSV fields and download an editable fictional ScopeSignal draft.">
+  <title>Convert checkpoint CSV — ScopeSignal</title>
+  <link rel="stylesheet" href="./scope-csv.css">
+  <script type="module" src="./src/scope-checkpoint-csv-ui.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar"><a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">S</span> ScopeSignal</a><span class="top-status">Fixture mode · no live payments</span></header>
+  <main id="main" class="workspace">
+    <a href="./scope.html" target="_blank" rel="noopener">Open the scope workspace in a separate tab ↗</a>
+    <p class="eyebrow">CSV → EDITABLE DRAFT → HUMAN REVIEW</p>
+    <h1>Bring your checkpoints.</h1>
+    <p class="lede">Turn your deliverables, amounts and planned evidence into a scope draft, without retyping each row.</p>
+    <p>Your file stays in this tab until you choose to download the draft. Conversion creates no approvals, recorded events or payment evidence. Nothing is uploaded or saved automatically.</p>
+    <form id="csv-form" novalidate>
+      <section class="panel" aria-labelledby="csv-file-title">
+        <h2 id="csv-file-title">1. Choose the checkpoint CSV</h2>
+        <label for="csv-file">CSV file<input id="csv-file" type="file" accept=".csv,text/csv" aria-describedby="csv-file-help"></label>
+        <p id="csv-file-help">UTF-8, up to 1 MiB, with 1–12 checkpoint rows. Use these three headers in this order:</p>
+        <pre class="csv-example">deliverable,amount,evidence
+Poster concepts,150.00,Three concepts for human review
+Final artwork,250.00,Print-ready files and a handoff checklist</pre>
+        <details><summary>CSV format and exact text</summary>
+          <p>LF or CRLF can separate records. Double-quote a field containing a comma, a quote or a line break; write a quote inside it as two quotes. A leading UTF-8 BOM is accepted.</p>
+          <p>Spaces, Unicode, unfinished amounts and literal formulas stay as text. A deliverable is limited to 160 characters, an amount to 64, and evidence to 5,000. Deliverables and amounts must stay on one line. Evidence can contain LF line breaks; embedded carriage returns are refused so the workspace can preserve the original field.</p>
+          <p>Use only the three named columns. Extra columns, incomplete records and blank records are refused. A final line ending is allowed.</p>
+        </details>
+      </section>
+      <section class="panel" aria-labelledby="csv-details-title">
+        <h2 id="csv-details-title">2. Add the project details</h2>
+        <p>These details are separate from the CSV. Unfinished details can stay in the draft and be completed in the workspace.</p>
+        <div class="fields">
+          <label for="csv-label">Project name<input id="csv-label" maxlength="120" autocomplete="off"></label>
+          <label for="csv-cap">Project cap (USD)<input id="csv-cap" maxlength="64" inputmode="decimal" autocomplete="off"></label>
+          <label class="wide" for="csv-brief">Creative brief<textarea id="csv-brief" rows="4" maxlength="8000"></textarea></label>
+        </div>
+      </section>
+      <div class="actions">
+        <button id="csv-review" type="submit" class="button button-dark">Review draft file</button>
+        <button id="csv-cancel" type="button" class="button button-outline" disabled>Cancel review</button>
+      </div>
+      <p id="csv-status" role="status" aria-live="polite" aria-atomic="true">Choose a CSV and add the project details to begin.</p>
+      <p id="csv-errors" class="error" role="alert" tabindex="-1" hidden></p>
+    </form>
+    <section id="csv-preview" class="panel" aria-labelledby="csv-preview-title" hidden>
+      <h2 id="csv-preview-title" tabindex="-1">3. Review the draft file</h2>
+      <p id="csv-source-name" class="source-name"></p>
+      <dl class="metadata">
+        <dt>Project name</dt><dd id="csv-preview-label"></dd>
+        <dt>Creative brief</dt><dd id="csv-preview-brief"></dd>
+        <dt>Project cap (USD, original text)</dt><dd id="csv-preview-cap"></dd>
+      </dl>
+      <div class="table-wrap" tabindex="0" role="region" aria-label="Checkpoint fields; scroll horizontally if needed">
+        <table><caption>Checkpoint fields, kept exactly as supplied</caption>
+          <thead><tr><th scope="col">Row</th><th scope="col">Deliverable</th><th scope="col">Amount (USD, original text)</th><th scope="col">Planned evidence</th></tr></thead>
+          <tbody id="csv-preview-rows"></tbody>
+        </table>
+      </div>
+      <p id="csv-budget" class="budget"></p>
+      <h3>Scope checks</h3>
+      <ul id="csv-validation"></ul>
+      <p>This file is an editable draft. In the workspace, unfinished scope details must be resolved before review. Each approval remains a separate human decision.</p>
+      <button id="csv-download" type="button" class="button button-dark" disabled>Download draft workspace</button>
+      <p>To use the JSON download, open the <a href="./scope.html" target="_blank" rel="noopener">scope workspace in a separate tab</a>. Choose <strong>Open saved workspace</strong>, review its preview, then choose <strong>Replace workspace</strong>. Download any current workspace first if you want to keep it.</p>
+    </section>
+    <noscript><p class="error">This converter needs JavaScript. The scope workspace also supports manually entering checkpoints.</p></noscript>
+  </main>
+  <footer>ScopeSignal · fictional drafts · no live money</footer>
+</body>
+</html>

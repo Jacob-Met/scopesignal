@@ -1,0 +1,75 @@
+{
+  "schema": "scopesignal.csv-source-overlay.v2",
+  "base": "fb6d8771db190fc6499db0c63644ef8a016fe7b7",
+  "base_tree": "48f0cdfd20f79ab96893de6d0adb5d23cdcab5a6",
+  "candidate_tree": "4b9b2580dc31811bdac98109a2763fc34c91a6cd",
+  "files": [
+    {
+      "path": "README.md",
+      "source_path": "/tmp/scopesignal-final-cf5799f6d38b-znw3ibp3/publication/README.md",
+      "mode": "100644",
+      "bytes": 25265,
+      "sha256": "97e6762a688c48f459886fe493db0e375cf6b96fdd3121eea1b9c35be49342ca",
+      "git_blob": "6d27dbc38a7c529f04bfd8f0e28509c5b662d0d1"
+    },
+    {
+      "path": "scope.html",
+      "source_path": "/tmp/scopesignal-final-cf5799f6d38b-znw3ibp3/publication/scope.html",
+      "mode": "100644",
+      "bytes": 11506,
+      "sha256": "6cc9568f76e021df36bdcc0273a6e50e07aaa0270db5e00442fb380bb846e786",
+      "git_blob": "07d9d3903ccb4ef1d38ace108a2e9e55c02a51bf"
+    },
+    {
+      "path": "scope-csv.html",
+      "source_path": "/tmp/scopesignal-final-cf5799f6d38b-znw3ibp3/publication/scope-csv.html",
+      "mode": "100644",
+      "bytes": 5762,
+      "sha256": "ea72eb1b8642ce1a2db9d4f28537a1b38f87d1e5b07e52627b4fb56f5cb22758",
+      "git_blob": "3503c05f9ee702ea62a7d16cf811d3fc9c0c7c93"
+    },
+    {
+      "path": "scope-csv.css",
+      "source_path": "/tmp/scopesignal-final-cf5799f6d38b-znw3ibp3/publication/scope-csv.css",
+      "mode": "100644",
+      "bytes": 3976,
+      "sha256": "f12f3635813369079b4a154f2e0c59b8600f18d4010984e90c088b4ee078bb04",
+      "git_blob": "ead1550b73fbace9a31bf6828e32cd805effc2a0"
+    },
+    {
+      "path": "src/scope-checkpoint-csv.mjs",
+      "source_path": "/tmp/scopesignal-final-cf5799f6d38b-znw3ibp3/publication/src/scope-checkpoint-csv.mjs",
+      "mode": "100644",
+      "bytes": 4675,
+      "sha256": "acd8e78d1b2c2a999f6f1d8c4f154bf293d138471832a281293029c048e2e224",
+      "git_blob": "f75c6d49cd1d118f8418c63b6dab7132f9ead169"
+    },
+    {
+      "path": "src/scope-checkpoint-csv-ui.mjs",
+      "source_path": "/tmp/scopesignal-final-cf5799f6d38b-znw3ibp3/publication/src/scope-checkpoint-csv-ui.mjs",
+      "mode": "100644",
+      "bytes": 6509,
+      "sha256": "66884f32de17c02f077b32e6e2b26030f4f1b81499f90b404939128dc7d0dcce",
+      "git_blob": "b6bd27ee3b1c975ba9491ade683fb8be5e372267"
+    },
+    {
+      "path": "tests/scope-checkpoint-csv.test.mjs",
+      "source_path": "/tmp/scopesignal-final-cf5799f6d38b-znw3ibp3/publication/tests/scope-checkpoint-csv.test.mjs",
+      "mode": "100644",
+      "bytes": 9003,
+      "sha256": "d58edaaa962e399e8da0ad780be5de36f08c99e2d049691a33a7140bb67f5198",
+      "git_blob": "11dbc16eb431d8c8c7e3ca3c9666f4b42d5f3d88"
+    },
+    {
+      "path": "scripts/check-scope-checkpoint-csv.mjs",
+      "source_path": "/tmp/scopesignal-final-cf5799f6d38b-znw3ibp3/publication/scripts/check-scope-checkpoint-csv.mjs",
+      "mode": "100644",
+      "bytes": 18382,
+      "sha256": "6e63d3411d3037f0cd749d7ce1c6e8c1424cf8b79b1896c12d719e6a13a01d0b",
+      "git_blob": "a3fee613f599bd69db1a573ebac1cb8606039f70"
+    }
+  ],
+  "unowned_preserved": 568,
+  "incoming_leaves": 570,
+  "candidate_leaves": 576
+}

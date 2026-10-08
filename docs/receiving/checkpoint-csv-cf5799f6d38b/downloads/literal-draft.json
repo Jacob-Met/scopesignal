@@ -1,0 +1,26 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "draft",
+  "draft": {
+    "label": "  Launch & 雪  ",
+    "brief": "A fictional project\nwith exact spacing  ",
+    "cap": "100.00",
+    "checkpoints": [
+      {
+        "title": "Poster, first pass",
+        "amount": " 040.00 ",
+        "evidence": "\nProof \"A\"\n</textarea><img id=\"csv-injected\" src=\"https://invalid.test/x\" onerror=\"globalThis.csvInjected=true\">  "
+      },
+      {
+        "title": "=SUM(A1:A2)",
+        "amount": "60",
+        "evidence": "Final handoff\twith literal whitespace"
+      }
+    ]
+  },
+  "events": [],
+  "evidenceDrafts": []
+}

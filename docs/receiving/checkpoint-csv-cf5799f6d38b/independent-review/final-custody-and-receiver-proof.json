@@ -1,0 +1,131 @@
+{
+  "at": "2026-10-08T18:48:42.997401+00:00",
+  "candidate_tree": "3146dd1d196d0d0545bcdd2d3db3244c0b0bf7d5",
+  "candidate_manifest_sha256": "5b05b3931937b41f2170609f13a351d116ccb868559cddae3c6a1e784b6ee9c4",
+  "verified": {
+    "owner": 527,
+    "private": 527
+  },
+  "unowned_base_preserved": 519,
+  "application_group_chars": 7243,
+  "application_group_sha256": "96271c273f43f632c72ecac60987f8147e63aa19e3b4d64f25f3bc97dd2d5835",
+  "assert_calls_identical": 53,
+  "assert_calls_sha256": "0c3937eed03fe3ba6d1161aa952f26f4a44c574df56dd2b0bcbd9f55ff151cb7",
+  "original_misclicks": [
+    {
+      "selector": "#scope-save",
+      "before": {
+        "id": "scope-save",
+        "rect": {
+          "x": 105,
+          "y": -843.875,
+          "width": 181.15625,
+          "height": 44,
+          "top": -843.875,
+          "right": 286.15625,
+          "bottom": -799.875,
+          "left": 105
+        },
+        "hidden": false,
+        "disabled": false
+      },
+      "after": {
+        "url": "http://127.0.0.1:37281/scope.html",
+        "visibility": "visible",
+        "clicks": [
+          {
+            "id": "",
+            "tag": "A",
+            "text": ""
+          },
+          {
+            "id": "",
+            "tag": "BUTTON",
+            "text": "Review this scope →"
+          },
+          {
+            "id": "",
+            "tag": "SECTION",
+            "text": "\n      Keep this workspace\n      Save your brief, evidence drafts and simulated history in one file."
+          }
+        ],
+        "fileStatus": "Workspace download started. Keep the JSON file to reopen this fictional draft or simulation.",
+        "reviewHidden": false,
+        "scopeErrors": ""
+      }
+    },
+    {
+      "selector": "#scope-form button[type=\"submit\"]",
+      "before": {
+        "id": "",
+        "rect": {
+          "x": 1009.609375,
+          "y": 761.3125,
+          "width": 186.390625,
+          "height": 42,
+          "top": 761.3125,
+          "right": 1196,
+          "bottom": 803.3125,
+          "left": 1009.609375
+        },
+        "hidden": false,
+        "disabled": false
+      },
+      "after": {
+        "url": "http://127.0.0.1:37281/scope.html",
+        "visibility": "visible",
+        "clicks": [
+          {
+            "id": "scope-open-apply",
+            "tag": "BUTTON",
+            "text": "Replace workspace"
+          },
+          {
+            "id": "",
+            "tag": "BUTTON",
+            "text": "Review this scope →"
+          },
+          {
+            "id": "",
+            "tag": "SECTION",
+            "text": "\n        Define the checkpoints1–12 milestones\n        Give each milestone a clear deliverable, an a"
+          }
+        ],
+        "fileStatus": "Saved workspace opened. The file records a fictional fixture; it does not verify real approvals or payments.",
+        "reviewHidden": true,
+        "scopeErrors": "Review these fields before continuing:Enter a positive USD amount for checkpoint 1, with no more than two decimal places."
+      }
+    }
+  ],
+  "baseline_font": {
+    "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+    "baseline_pin": {
+      "path": "styles.css",
+      "mode": "100644",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    "candidate_pin": {
+      "path": "styles.css",
+      "mode": "100644",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    "requests": [
+      {
+        "page": "http://127.0.0.1:45711/scope.html",
+        "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+      },
+      {
+        "page": "http://127.0.0.1:45711/scope.html",
+        "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+      }
+    ]
+  },
+  "native_passed": 5,
+  "browser_passed": 3,
+  "downloads": 5,
+  "source_unchanged": true
+}
