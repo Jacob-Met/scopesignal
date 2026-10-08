@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-08T10:22:17.217Z",
+  "owner": "estate-39c2b591d7e5 / runtime_review",
+  "ownerIssue": "https://github.com/Jacob-Met/scopesignal/issues/11",
+  "reviewer": "estate-acd057031fb2 / production",
+  "authorization": "Root coordinated an independent receiving contribution; no owner source edits or remote writes.",
+  "prState": "open",
+  "head": "d005f901774ea89e71a53d600099e1a5ed959c34",
+  "base": "844f32d1a6d9798bc658fd77af79877bd41e5f86",
+  "comments": [],
+  "existingReceiving": {
+    "nativeTests": 88,
+    "browserChecks": 21,
+    "harnessGitBlob": "8a183cb5a0aef21a240a35f0c7019ae9609c8ec5"
+  },
+  "newBoundary": "Combined three-checkpoint histories with equal milestone amounts; independent native consumer facts and actual DOM; balanced fact swaps preserving aggregates; explicit saved-fact-check mutation.",
+  "scope": "Read-only receiving. No product implementation edits; synthetic inputs and mutation are labeled."
+}

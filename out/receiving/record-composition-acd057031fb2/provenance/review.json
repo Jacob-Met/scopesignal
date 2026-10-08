@@ -1,0 +1,75 @@
+{
+  "schema": "scopesignal.independent-record-review.v1",
+  "decision": "ACCEPT",
+  "reviewer": "estate-acd057031fb2 / production",
+  "owner": "estate-39c2b591d7e5 / runtime_review",
+  "pullRequest": "https://github.com/Jacob-Met/scopesignal/pull/14",
+  "head": "d005f901774ea89e71a53d600099e1a5ed959c34",
+  "tree": "2b910f841ec4d3163f6bddc3779c7c8822b4e8f0",
+  "base": "844f32d1a6d9798bc658fd77af79877bd41e5f86",
+  "baseBranch": "paypal-ai",
+  "blockingFindings": [],
+  "independentBoundary": "Checkpoint-owned facts within one interleaved equal-price history; changed reconciliation and pending states; balanced saved-fact substitutions with aggregate values preserved.",
+  "actualExecution": true,
+  "productionSourceChanged": false,
+  "ownerFilesChanged": false,
+  "remoteWritesByReviewer": false,
+  "fixtureKinds": [
+    "Actual production UI Blob download received by native Chromium file picker",
+    "Explicitly authored ordered operations using unchanged native ledger and exporter",
+    "Explicitly authored balanced false-fact files",
+    "Explicitly authored one-line fact-admission bypass source control"
+  ],
+  "existingQualification": "Owner 88 native tests /21 browser checks were read, not rerun by this receiver.",
+  "limits": [
+    "Served-source slices, not full repository clones or reconstructed ancestry",
+    "No live payment/AI backend or deployed site",
+    "Chromium153 Linux only; no Safari/Firefox/assistive-technology certification",
+    "Independent read-only reviewer ACCEPT6057793186 appeared during execution; new composition evidence is additional"
+  ],
+  "sourceUnchangedThroughAllRuns": true,
+  "harnessSha256": "9764da519127afa8397ffdd8a4cab2b54ec04a571b6de87a89ca4fa1482f5e2d",
+  "receipts": [
+    {
+      "name": "candidate-v1",
+      "exitCode": 0,
+      "receipt": "evidence/candidate-v1/receipt.json",
+      "receiptSha256": "b58ce2e80abb5d2185d6658729c24a40876deb293e38555c4f98e32a6714ffda",
+      "counts": {
+        "cases": 9,
+        "passedCases": 9,
+        "checks": 24,
+        "passedChecks": 24
+      }
+    },
+    {
+      "name": "base-v1",
+      "exitCode": 1,
+      "receipt": "evidence/base-v1/receipt.json",
+      "receiptSha256": "f517cef0360fe0aa58355320cc24911ddea2d413f14eb12b5bfb35e170e8606e",
+      "counts": {
+        "cases": 3,
+        "passedCases": 2,
+        "checks": 6,
+        "passedChecks": 5
+      }
+    },
+    {
+      "name": "fact-check-mutant-v1",
+      "exitCode": 1,
+      "receipt": "evidence/fact-check-mutant-v1/receipt.json",
+      "receiptSha256": "91bf78b1c1d6fe1a502803c816e390cc73f387c117c3900592182e78d52f1122",
+      "counts": {
+        "cases": 9,
+        "passedCases": 7,
+        "checks": 24,
+        "passedChecks": 18
+      }
+    }
+  ],
+  "visuallyInspected": [
+    "evidence/candidate-v1/mixed-record.png",
+    "evidence/candidate-v1/mixed-record-phone.png"
+  ],
+  "recordedAt": "2026-10-08T10:30:39.409Z"
+}

@@ -1,0 +1,765 @@
+{
+  "instructions": [
+    [
+      "approve",
+      "journey",
+      "Journey proof J\nSame-price checkpoint, distinct origin."
+    ],
+    [
+      "approve",
+      "accessibility",
+      "Accessibility proof A\r\nKeyboard state 02\tScreen reader trace Ω"
+    ],
+    [
+      "createOrder",
+      "accessibility"
+    ],
+    [
+      "createOrder",
+      "journey"
+    ],
+    [
+      "recordCaptureAttempt",
+      "journey"
+    ],
+    [
+      "approve",
+      "handoff",
+      "Handoff proof H: [\"literal\", \"<&>\"]"
+    ],
+    [
+      "recordCaptureAttempt",
+      "accessibility"
+    ],
+    [
+      "recordLostCaptureResponse",
+      "accessibility"
+    ],
+    [
+      "recordLostCaptureResponse",
+      "journey"
+    ],
+    [
+      "recordWebhook",
+      "accessibility",
+      "WH-ACCESS-A",
+      "CAP-ACCESS-A"
+    ],
+    [
+      "createOrder",
+      "handoff"
+    ],
+    [
+      "recordWebhook",
+      "journey",
+      "WH-JOURNEY-A",
+      "CAP-JOURNEY-A"
+    ],
+    [
+      "recordWebhook",
+      "accessibility",
+      "WH-ACCESS-A",
+      "CAP-ACCESS-A"
+    ],
+    [
+      "recordWebhook",
+      "journey",
+      "WH-JOURNEY-A",
+      "CAP-JOURNEY-A"
+    ],
+    [
+      "reconcile",
+      "journey",
+      "CAP-JOURNEY-A"
+    ],
+    [
+      "recordWebhook",
+      "journey",
+      "WH-JOURNEY-SECOND",
+      "CAP-JOURNEY-A"
+    ]
+  ],
+  "mixed": {
+    "fixture": {
+      "id": "fixture-signal-studio",
+      "label": "Northstar onboarding refresh",
+      "currency": "USD",
+      "amount": 120000
+    },
+    "summary": {
+      "total": 120000,
+      "approved": 3,
+      "captured": 40000,
+      "remaining": 80000
+    },
+    "checkpoints": [
+      {
+        "id": "journey",
+        "title": "First-run checklist",
+        "amount": 40000,
+        "approval": {
+          "source": "checkpoint.approved",
+          "eventSequence": 1,
+          "approver": "human-reviewer",
+          "acceptedEvidence": "Journey proof J\nSame-price checkpoint, distinct origin."
+        },
+        "capture": {
+          "status": "captured",
+          "orderId": "SANDBOX-JOURNEY",
+          "captureId": "CAP-JOURNEY-A",
+          "counted": 40000
+        }
+      },
+      {
+        "id": "accessibility",
+        "title": "Accessible billing setup",
+        "amount": 40000,
+        "approval": {
+          "source": "checkpoint.approved",
+          "eventSequence": 2,
+          "approver": "human-reviewer",
+          "acceptedEvidence": "Accessibility proof A\r\nKeyboard state 02\tScreen reader trace Ω"
+        },
+        "capture": {
+          "status": "unknown",
+          "orderId": "SANDBOX-ACCESSIBILITY",
+          "captureId": null,
+          "counted": 0
+        }
+      },
+      {
+        "id": "handoff",
+        "title": "Responsive handoff",
+        "amount": 40000,
+        "approval": {
+          "source": "checkpoint.approved",
+          "eventSequence": 6,
+          "approver": "human-reviewer",
+          "acceptedEvidence": "Handoff proof H: [\"literal\", \"<&>\"]"
+        },
+        "capture": {
+          "status": "ready",
+          "orderId": "SANDBOX-HANDOFF",
+          "captureId": null,
+          "counted": 0
+        }
+      }
+    ],
+    "events": [
+      {
+        "seq": 1,
+        "at": "T+001",
+        "type": "checkpoint.approved",
+        "checkpointId": "journey",
+        "approver": "human-reviewer",
+        "acceptedEvidence": "Journey proof J\nSame-price checkpoint, distinct origin."
+      },
+      {
+        "seq": 2,
+        "at": "T+002",
+        "type": "checkpoint.approved",
+        "checkpointId": "accessibility",
+        "approver": "human-reviewer",
+        "acceptedEvidence": "Accessibility proof A\r\nKeyboard state 02\tScreen reader trace Ω"
+      },
+      {
+        "seq": 3,
+        "at": "T+003",
+        "type": "paypal.order.created",
+        "checkpointId": "accessibility",
+        "orderId": "SANDBOX-ACCESSIBILITY",
+        "amount": 40000,
+        "currency": "USD",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 4,
+        "at": "T+004",
+        "type": "paypal.order.created",
+        "checkpointId": "journey",
+        "orderId": "SANDBOX-JOURNEY",
+        "amount": 40000,
+        "currency": "USD",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 5,
+        "at": "T+005",
+        "type": "paypal.capture.requested",
+        "checkpointId": "journey",
+        "orderId": "SANDBOX-JOURNEY",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 6,
+        "at": "T+006",
+        "type": "checkpoint.approved",
+        "checkpointId": "handoff",
+        "approver": "human-reviewer",
+        "acceptedEvidence": "Handoff proof H: [\"literal\", \"<&>\"]"
+      },
+      {
+        "seq": 7,
+        "at": "T+007",
+        "type": "paypal.capture.requested",
+        "checkpointId": "accessibility",
+        "orderId": "SANDBOX-ACCESSIBILITY",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 8,
+        "at": "T+008",
+        "type": "paypal.capture.response_lost",
+        "checkpointId": "accessibility",
+        "orderId": "SANDBOX-ACCESSIBILITY",
+        "outcome": "unknown"
+      },
+      {
+        "seq": 9,
+        "at": "T+009",
+        "type": "paypal.capture.response_lost",
+        "checkpointId": "journey",
+        "orderId": "SANDBOX-JOURNEY",
+        "outcome": "unknown"
+      },
+      {
+        "seq": 10,
+        "at": "T+010",
+        "type": "paypal.webhook.received",
+        "checkpointId": "accessibility",
+        "eventId": "WH-ACCESS-A",
+        "captureId": "CAP-ACCESS-A",
+        "duplicate": false,
+        "amount": 40000,
+        "currency": "USD"
+      },
+      {
+        "seq": 11,
+        "at": "T+011",
+        "type": "paypal.order.created",
+        "checkpointId": "handoff",
+        "orderId": "SANDBOX-HANDOFF",
+        "amount": 40000,
+        "currency": "USD",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 12,
+        "at": "T+012",
+        "type": "paypal.webhook.received",
+        "checkpointId": "journey",
+        "eventId": "WH-JOURNEY-A",
+        "captureId": "CAP-JOURNEY-A",
+        "duplicate": false,
+        "amount": 40000,
+        "currency": "USD"
+      },
+      {
+        "seq": 13,
+        "at": "T+013",
+        "type": "paypal.webhook.received",
+        "checkpointId": "accessibility",
+        "eventId": "WH-ACCESS-A",
+        "captureId": "CAP-ACCESS-A",
+        "duplicate": true,
+        "amount": 40000,
+        "currency": "USD"
+      },
+      {
+        "seq": 14,
+        "at": "T+014",
+        "type": "paypal.webhook.received",
+        "checkpointId": "journey",
+        "eventId": "WH-JOURNEY-A",
+        "captureId": "CAP-JOURNEY-A",
+        "duplicate": true,
+        "amount": 40000,
+        "currency": "USD"
+      },
+      {
+        "seq": 15,
+        "at": "T+015",
+        "type": "paypal.capture.reconciled",
+        "checkpointId": "journey",
+        "captureId": "CAP-JOURNEY-A",
+        "outcome": "captured",
+        "source": "sandbox-transaction-lookup"
+      },
+      {
+        "seq": 16,
+        "at": "T+016",
+        "type": "paypal.webhook.received",
+        "checkpointId": "journey",
+        "eventId": "WH-JOURNEY-SECOND",
+        "captureId": "CAP-JOURNEY-A",
+        "duplicate": false,
+        "amount": 40000,
+        "currency": "USD"
+      }
+    ]
+  },
+  "reconciled": {
+    "fixture": {
+      "id": "fixture-signal-studio",
+      "label": "Northstar onboarding refresh",
+      "currency": "USD",
+      "amount": 120000
+    },
+    "summary": {
+      "total": 120000,
+      "approved": 3,
+      "captured": 80000,
+      "remaining": 40000
+    },
+    "checkpoints": [
+      {
+        "id": "journey",
+        "title": "First-run checklist",
+        "amount": 40000,
+        "approval": {
+          "source": "checkpoint.approved",
+          "eventSequence": 1,
+          "approver": "human-reviewer",
+          "acceptedEvidence": "Journey proof J\nSame-price checkpoint, distinct origin."
+        },
+        "capture": {
+          "status": "captured",
+          "orderId": "SANDBOX-JOURNEY",
+          "captureId": "CAP-JOURNEY-A",
+          "counted": 40000
+        }
+      },
+      {
+        "id": "accessibility",
+        "title": "Accessible billing setup",
+        "amount": 40000,
+        "approval": {
+          "source": "checkpoint.approved",
+          "eventSequence": 2,
+          "approver": "human-reviewer",
+          "acceptedEvidence": "Accessibility proof A\r\nKeyboard state 02\tScreen reader trace Ω"
+        },
+        "capture": {
+          "status": "captured",
+          "orderId": "SANDBOX-ACCESSIBILITY",
+          "captureId": "CAP-ACCESS-A",
+          "counted": 40000
+        }
+      },
+      {
+        "id": "handoff",
+        "title": "Responsive handoff",
+        "amount": 40000,
+        "approval": {
+          "source": "checkpoint.approved",
+          "eventSequence": 6,
+          "approver": "human-reviewer",
+          "acceptedEvidence": "Handoff proof H: [\"literal\", \"<&>\"]"
+        },
+        "capture": {
+          "status": "ready",
+          "orderId": "SANDBOX-HANDOFF",
+          "captureId": null,
+          "counted": 0
+        }
+      }
+    ],
+    "events": [
+      {
+        "seq": 1,
+        "at": "T+001",
+        "type": "checkpoint.approved",
+        "checkpointId": "journey",
+        "approver": "human-reviewer",
+        "acceptedEvidence": "Journey proof J\nSame-price checkpoint, distinct origin."
+      },
+      {
+        "seq": 2,
+        "at": "T+002",
+        "type": "checkpoint.approved",
+        "checkpointId": "accessibility",
+        "approver": "human-reviewer",
+        "acceptedEvidence": "Accessibility proof A\r\nKeyboard state 02\tScreen reader trace Ω"
+      },
+      {
+        "seq": 3,
+        "at": "T+003",
+        "type": "paypal.order.created",
+        "checkpointId": "accessibility",
+        "orderId": "SANDBOX-ACCESSIBILITY",
+        "amount": 40000,
+        "currency": "USD",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 4,
+        "at": "T+004",
+        "type": "paypal.order.created",
+        "checkpointId": "journey",
+        "orderId": "SANDBOX-JOURNEY",
+        "amount": 40000,
+        "currency": "USD",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 5,
+        "at": "T+005",
+        "type": "paypal.capture.requested",
+        "checkpointId": "journey",
+        "orderId": "SANDBOX-JOURNEY",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 6,
+        "at": "T+006",
+        "type": "checkpoint.approved",
+        "checkpointId": "handoff",
+        "approver": "human-reviewer",
+        "acceptedEvidence": "Handoff proof H: [\"literal\", \"<&>\"]"
+      },
+      {
+        "seq": 7,
+        "at": "T+007",
+        "type": "paypal.capture.requested",
+        "checkpointId": "accessibility",
+        "orderId": "SANDBOX-ACCESSIBILITY",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 8,
+        "at": "T+008",
+        "type": "paypal.capture.response_lost",
+        "checkpointId": "accessibility",
+        "orderId": "SANDBOX-ACCESSIBILITY",
+        "outcome": "unknown"
+      },
+      {
+        "seq": 9,
+        "at": "T+009",
+        "type": "paypal.capture.response_lost",
+        "checkpointId": "journey",
+        "orderId": "SANDBOX-JOURNEY",
+        "outcome": "unknown"
+      },
+      {
+        "seq": 10,
+        "at": "T+010",
+        "type": "paypal.webhook.received",
+        "checkpointId": "accessibility",
+        "eventId": "WH-ACCESS-A",
+        "captureId": "CAP-ACCESS-A",
+        "duplicate": false,
+        "amount": 40000,
+        "currency": "USD"
+      },
+      {
+        "seq": 11,
+        "at": "T+011",
+        "type": "paypal.order.created",
+        "checkpointId": "handoff",
+        "orderId": "SANDBOX-HANDOFF",
+        "amount": 40000,
+        "currency": "USD",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 12,
+        "at": "T+012",
+        "type": "paypal.webhook.received",
+        "checkpointId": "journey",
+        "eventId": "WH-JOURNEY-A",
+        "captureId": "CAP-JOURNEY-A",
+        "duplicate": false,
+        "amount": 40000,
+        "currency": "USD"
+      },
+      {
+        "seq": 13,
+        "at": "T+013",
+        "type": "paypal.webhook.received",
+        "checkpointId": "accessibility",
+        "eventId": "WH-ACCESS-A",
+        "captureId": "CAP-ACCESS-A",
+        "duplicate": true,
+        "amount": 40000,
+        "currency": "USD"
+      },
+      {
+        "seq": 14,
+        "at": "T+014",
+        "type": "paypal.webhook.received",
+        "checkpointId": "journey",
+        "eventId": "WH-JOURNEY-A",
+        "captureId": "CAP-JOURNEY-A",
+        "duplicate": true,
+        "amount": 40000,
+        "currency": "USD"
+      },
+      {
+        "seq": 15,
+        "at": "T+015",
+        "type": "paypal.capture.reconciled",
+        "checkpointId": "journey",
+        "captureId": "CAP-JOURNEY-A",
+        "outcome": "captured",
+        "source": "sandbox-transaction-lookup"
+      },
+      {
+        "seq": 16,
+        "at": "T+016",
+        "type": "paypal.webhook.received",
+        "checkpointId": "journey",
+        "eventId": "WH-JOURNEY-SECOND",
+        "captureId": "CAP-JOURNEY-A",
+        "duplicate": false,
+        "amount": 40000,
+        "currency": "USD"
+      },
+      {
+        "seq": 17,
+        "at": "T+017",
+        "type": "paypal.capture.reconciled",
+        "checkpointId": "accessibility",
+        "captureId": "CAP-ACCESS-A",
+        "outcome": "captured",
+        "source": "sandbox-transaction-lookup"
+      }
+    ]
+  },
+  "pending": {
+    "fixture": {
+      "id": "fixture-signal-studio",
+      "label": "Northstar onboarding refresh",
+      "currency": "USD",
+      "amount": 120000
+    },
+    "summary": {
+      "total": 120000,
+      "approved": 3,
+      "captured": 80000,
+      "remaining": 40000
+    },
+    "checkpoints": [
+      {
+        "id": "journey",
+        "title": "First-run checklist",
+        "amount": 40000,
+        "approval": {
+          "source": "checkpoint.approved",
+          "eventSequence": 1,
+          "approver": "human-reviewer",
+          "acceptedEvidence": "Journey proof J\nSame-price checkpoint, distinct origin."
+        },
+        "capture": {
+          "status": "captured",
+          "orderId": "SANDBOX-JOURNEY",
+          "captureId": "CAP-JOURNEY-A",
+          "counted": 40000
+        }
+      },
+      {
+        "id": "accessibility",
+        "title": "Accessible billing setup",
+        "amount": 40000,
+        "approval": {
+          "source": "checkpoint.approved",
+          "eventSequence": 2,
+          "approver": "human-reviewer",
+          "acceptedEvidence": "Accessibility proof A\r\nKeyboard state 02\tScreen reader trace Ω"
+        },
+        "capture": {
+          "status": "captured",
+          "orderId": "SANDBOX-ACCESSIBILITY",
+          "captureId": "CAP-ACCESS-A",
+          "counted": 40000
+        }
+      },
+      {
+        "id": "handoff",
+        "title": "Responsive handoff",
+        "amount": 40000,
+        "approval": {
+          "source": "checkpoint.approved",
+          "eventSequence": 6,
+          "approver": "human-reviewer",
+          "acceptedEvidence": "Handoff proof H: [\"literal\", \"<&>\"]"
+        },
+        "capture": {
+          "status": "pending",
+          "orderId": "SANDBOX-HANDOFF",
+          "captureId": null,
+          "counted": 0
+        }
+      }
+    ],
+    "events": [
+      {
+        "seq": 1,
+        "at": "T+001",
+        "type": "checkpoint.approved",
+        "checkpointId": "journey",
+        "approver": "human-reviewer",
+        "acceptedEvidence": "Journey proof J\nSame-price checkpoint, distinct origin."
+      },
+      {
+        "seq": 2,
+        "at": "T+002",
+        "type": "checkpoint.approved",
+        "checkpointId": "accessibility",
+        "approver": "human-reviewer",
+        "acceptedEvidence": "Accessibility proof A\r\nKeyboard state 02\tScreen reader trace Ω"
+      },
+      {
+        "seq": 3,
+        "at": "T+003",
+        "type": "paypal.order.created",
+        "checkpointId": "accessibility",
+        "orderId": "SANDBOX-ACCESSIBILITY",
+        "amount": 40000,
+        "currency": "USD",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 4,
+        "at": "T+004",
+        "type": "paypal.order.created",
+        "checkpointId": "journey",
+        "orderId": "SANDBOX-JOURNEY",
+        "amount": 40000,
+        "currency": "USD",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 5,
+        "at": "T+005",
+        "type": "paypal.capture.requested",
+        "checkpointId": "journey",
+        "orderId": "SANDBOX-JOURNEY",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 6,
+        "at": "T+006",
+        "type": "checkpoint.approved",
+        "checkpointId": "handoff",
+        "approver": "human-reviewer",
+        "acceptedEvidence": "Handoff proof H: [\"literal\", \"<&>\"]"
+      },
+      {
+        "seq": 7,
+        "at": "T+007",
+        "type": "paypal.capture.requested",
+        "checkpointId": "accessibility",
+        "orderId": "SANDBOX-ACCESSIBILITY",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 8,
+        "at": "T+008",
+        "type": "paypal.capture.response_lost",
+        "checkpointId": "accessibility",
+        "orderId": "SANDBOX-ACCESSIBILITY",
+        "outcome": "unknown"
+      },
+      {
+        "seq": 9,
+        "at": "T+009",
+        "type": "paypal.capture.response_lost",
+        "checkpointId": "journey",
+        "orderId": "SANDBOX-JOURNEY",
+        "outcome": "unknown"
+      },
+      {
+        "seq": 10,
+        "at": "T+010",
+        "type": "paypal.webhook.received",
+        "checkpointId": "accessibility",
+        "eventId": "WH-ACCESS-A",
+        "captureId": "CAP-ACCESS-A",
+        "duplicate": false,
+        "amount": 40000,
+        "currency": "USD"
+      },
+      {
+        "seq": 11,
+        "at": "T+011",
+        "type": "paypal.order.created",
+        "checkpointId": "handoff",
+        "orderId": "SANDBOX-HANDOFF",
+        "amount": 40000,
+        "currency": "USD",
+        "environment": "sandbox"
+      },
+      {
+        "seq": 12,
+        "at": "T+012",
+        "type": "paypal.webhook.received",
+        "checkpointId": "journey",
+        "eventId": "WH-JOURNEY-A",
+        "captureId": "CAP-JOURNEY-A",
+        "duplicate": false,
+        "amount": 40000,
+        "currency": "USD"
+      },
+      {
+        "seq": 13,
+        "at": "T+013",
+        "type": "paypal.webhook.received",
+        "checkpointId": "accessibility",
+        "eventId": "WH-ACCESS-A",
+        "captureId": "CAP-ACCESS-A",
+        "duplicate": true,
+        "amount": 40000,
+        "currency": "USD"
+      },
+      {
+        "seq": 14,
+        "at": "T+014",
+        "type": "paypal.webhook.received",
+        "checkpointId": "journey",
+        "eventId": "WH-JOURNEY-A",
+        "captureId": "CAP-JOURNEY-A",
+        "duplicate": true,
+        "amount": 40000,
+        "currency": "USD"
+      },
+      {
+        "seq": 15,
+        "at": "T+015",
+        "type": "paypal.capture.reconciled",
+        "checkpointId": "journey",
+        "captureId": "CAP-JOURNEY-A",
+        "outcome": "captured",
+        "source": "sandbox-transaction-lookup"
+      },
+      {
+        "seq": 16,
+        "at": "T+016",
+        "type": "paypal.webhook.received",
+        "checkpointId": "journey",
+        "eventId": "WH-JOURNEY-SECOND",
+        "captureId": "CAP-JOURNEY-A",
+        "duplicate": false,
+        "amount": 40000,
+        "currency": "USD"
+      },
+      {
+        "seq": 17,
+        "at": "T+017",
+        "type": "paypal.capture.reconciled",
+        "checkpointId": "accessibility",
+        "captureId": "CAP-ACCESS-A",
+        "outcome": "captured",
+        "source": "sandbox-transaction-lookup"
+      },
+      {
+        "seq": 18,
+        "at": "T+018",
+        "type": "paypal.capture.requested",
+        "checkpointId": "handoff",
+        "orderId": "SANDBOX-HANDOFF",
+        "environment": "sandbox"
+      }
+    ]
+  }
+}

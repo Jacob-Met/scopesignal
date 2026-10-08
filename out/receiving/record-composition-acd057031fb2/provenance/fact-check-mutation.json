@@ -1,0 +1,11 @@
+{
+  "schema": "scopesignal.independent-fact-admission-mutation.v1",
+  "kind": "Explicitly authored negative source control; not a historical product revision.",
+  "parent": "d005f901774ea89e71a53d600099e1a5ed959c34",
+  "changedPath": "src/record-reader.mjs",
+  "beforeSha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8",
+  "afterSha256": "a436af0d39eb7b5296e32ba7514086b9e3a753c4c598cdd78346413b972d67d7",
+  "removed": "  requireMatchingFacts(saved, record);",
+  "inserted": "  // Independent receiving mutation: skip saved-versus-replayed fact admission.",
+  "otherServedPathsUnchanged": true
+}

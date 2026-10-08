@@ -1,0 +1,188 @@
+{
+  "schema": "scopesignal.saved-record-independent-source.v1",
+  "repository": "Jacob-Met/scopesignal",
+  "pullRequest": 14,
+  "sourceKind": "Exact served-source slices from pinned GitHub blobs; not complete repository clones and no reconstructed commit ancestry.",
+  "candidate": {
+    "commit": "d005f901774ea89e71a53d600099e1a5ed959c34",
+    "tree": "2b910f841ec4d3163f6bddc3779c7c8822b4e8f0",
+    "files": [
+      {
+        "path": "index.html",
+        "gitBlob": "043b57fce51f0e9571c666139a654bfc36362be0",
+        "bytes": 9090,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/d005f901774ea89e71a53d600099e1a5ed959c34/index.html",
+        "sha256": "73171545f26fd82cfaf425ada9ba59b91bd16c5e68118a92152edd9a5c62155c"
+      },
+      {
+        "path": "app.mjs",
+        "gitBlob": "d32f61daee4e65403dc3e9420d833d9dd963cff4",
+        "bytes": 4641,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/d005f901774ea89e71a53d600099e1a5ed959c34/app.mjs",
+        "sha256": "dc8f1e777454eae392e9c693d8cedac11a8839c23b8c423eb7bb2d34852538bf"
+      },
+      {
+        "path": "styles.css",
+        "gitBlob": "31353c93740241c42551710bd12599338c017e45",
+        "bytes": 9444,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/d005f901774ea89e71a53d600099e1a5ed959c34/styles.css",
+        "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+      },
+      {
+        "path": "fixture-timeline.css",
+        "gitBlob": "6fa3b725f49ef21346821cd8db599d0cd6728223",
+        "bytes": 2714,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/d005f901774ea89e71a53d600099e1a5ed959c34/fixture-timeline.css",
+        "sha256": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b"
+      },
+      {
+        "path": "src/agents.mjs",
+        "gitBlob": "ae1141b4f45ac8a064aa684fdcf47e938daf085d",
+        "bytes": 1599,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/d005f901774ea89e71a53d600099e1a5ed959c34/src/agents.mjs",
+        "sha256": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2"
+      },
+      {
+        "path": "src/fixture-record.mjs",
+        "gitBlob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+        "bytes": 1615,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/d005f901774ea89e71a53d600099e1a5ed959c34/src/fixture-record.mjs",
+        "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+      },
+      {
+        "path": "src/fixture-timeline-view.mjs",
+        "gitBlob": "780e12706ee16ebcbf87692b7a21681c4722092d",
+        "bytes": 3336,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/d005f901774ea89e71a53d600099e1a5ed959c34/src/fixture-timeline-view.mjs",
+        "sha256": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd"
+      },
+      {
+        "path": "src/fixture-timeline.mjs",
+        "gitBlob": "b686daaf49b53c44a06f4be8d9ef878886acf57e",
+        "bytes": 3054,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/d005f901774ea89e71a53d600099e1a5ed959c34/src/fixture-timeline.mjs",
+        "sha256": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55"
+      },
+      {
+        "path": "src/ledger.mjs",
+        "gitBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+        "bytes": 12684,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/d005f901774ea89e71a53d600099e1a5ed959c34/src/ledger.mjs",
+        "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+      },
+      {
+        "path": "src/payment-status.mjs",
+        "gitBlob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+        "bytes": 1959,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/d005f901774ea89e71a53d600099e1a5ed959c34/src/payment-status.mjs",
+        "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
+      },
+      {
+        "path": "record.html",
+        "gitBlob": "5718956e264ba46e699d21e2c04d54d4ddd14b5d",
+        "bytes": 2461,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/d005f901774ea89e71a53d600099e1a5ed959c34/record.html",
+        "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4"
+      },
+      {
+        "path": "record-view.css",
+        "gitBlob": "ad73b8678228eacdbd7ddf36d56c573b2fc34e4a",
+        "bytes": 6493,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/d005f901774ea89e71a53d600099e1a5ed959c34/record-view.css",
+        "sha256": "71345c822fdf74c7160eb5aa09675fac19abe24603137a75d7431397eb59768d"
+      },
+      {
+        "path": "src/record-reader.mjs",
+        "gitBlob": "e6f69a87605b9808058a4e46df6b923ebb22c9dd",
+        "bytes": 5111,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/d005f901774ea89e71a53d600099e1a5ed959c34/src/record-reader.mjs",
+        "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+      },
+      {
+        "path": "src/record-view.mjs",
+        "gitBlob": "08dbca153a600bf7ff6b41fb378b86b62422925f",
+        "bytes": 8786,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/d005f901774ea89e71a53d600099e1a5ed959c34/src/record-view.mjs",
+        "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f"
+      }
+    ]
+  },
+  "base": {
+    "commit": "844f32d1a6d9798bc658fd77af79877bd41e5f86",
+    "tree": "8fc49a544825f7d0dfa69fa3fb3b1c19b7817ac0",
+    "branch": "paypal-ai",
+    "files": [
+      {
+        "path": "index.html",
+        "gitBlob": "38931b3768a3ad619a059b189d96ad091b4f0fde",
+        "bytes": 8898,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/844f32d1a6d9798bc658fd77af79877bd41e5f86/index.html",
+        "sha256": "e1111ad42f478605fdc3d7f483afb905d5d0c6d3d9d58a6dc937fccd475d253a"
+      },
+      {
+        "path": "app.mjs",
+        "gitBlob": "d32f61daee4e65403dc3e9420d833d9dd963cff4",
+        "bytes": 4641,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/844f32d1a6d9798bc658fd77af79877bd41e5f86/app.mjs",
+        "sha256": "dc8f1e777454eae392e9c693d8cedac11a8839c23b8c423eb7bb2d34852538bf"
+      },
+      {
+        "path": "styles.css",
+        "gitBlob": "31353c93740241c42551710bd12599338c017e45",
+        "bytes": 9444,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/844f32d1a6d9798bc658fd77af79877bd41e5f86/styles.css",
+        "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+      },
+      {
+        "path": "fixture-timeline.css",
+        "gitBlob": "6fa3b725f49ef21346821cd8db599d0cd6728223",
+        "bytes": 2714,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/844f32d1a6d9798bc658fd77af79877bd41e5f86/fixture-timeline.css",
+        "sha256": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b"
+      },
+      {
+        "path": "src/agents.mjs",
+        "gitBlob": "ae1141b4f45ac8a064aa684fdcf47e938daf085d",
+        "bytes": 1599,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/844f32d1a6d9798bc658fd77af79877bd41e5f86/src/agents.mjs",
+        "sha256": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2"
+      },
+      {
+        "path": "src/fixture-record.mjs",
+        "gitBlob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+        "bytes": 1615,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/844f32d1a6d9798bc658fd77af79877bd41e5f86/src/fixture-record.mjs",
+        "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+      },
+      {
+        "path": "src/fixture-timeline-view.mjs",
+        "gitBlob": "780e12706ee16ebcbf87692b7a21681c4722092d",
+        "bytes": 3336,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/844f32d1a6d9798bc658fd77af79877bd41e5f86/src/fixture-timeline-view.mjs",
+        "sha256": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd"
+      },
+      {
+        "path": "src/fixture-timeline.mjs",
+        "gitBlob": "b686daaf49b53c44a06f4be8d9ef878886acf57e",
+        "bytes": 3054,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/844f32d1a6d9798bc658fd77af79877bd41e5f86/src/fixture-timeline.mjs",
+        "sha256": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55"
+      },
+      {
+        "path": "src/ledger.mjs",
+        "gitBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+        "bytes": 12684,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/844f32d1a6d9798bc658fd77af79877bd41e5f86/src/ledger.mjs",
+        "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+      },
+      {
+        "path": "src/payment-status.mjs",
+        "gitBlob": "2c5ba31e85e41b1f62dbf1612582574ce677237e",
+        "bytes": 1959,
+        "primary": "https://github.com/Jacob-Met/scopesignal/blob/844f32d1a6d9798bc658fd77af79877bd41e5f86/src/payment-status.mjs",
+        "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
+      }
+    ]
+  },
+  "retrievedAt": "2026-10-08T10:22:17.217Z"
+}

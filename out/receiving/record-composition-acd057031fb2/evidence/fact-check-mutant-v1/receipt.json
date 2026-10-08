@@ -1,0 +1,283 @@
+{
+  "schema": "scopesignal.independent-record-composition.v1",
+  "startedAt": "2026-10-08T10:26:44.366Z",
+  "boundary": "Real Chromium receives one actual fixture UI download plus labeled authored multi-checkpoint records through the native file picker. Native reader and rendered DOM are checked against independent operation-derived facts. No payment, AI, or authoring service is invoked.",
+  "source": {
+    "directory": "/workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/source/fact-check-mutant",
+    "declaredCommit": "authored-fact-check-mutation-on-d005f901774ea89e71a53d600099e1a5ed959c34",
+    "before": {
+      "index.html": "73171545f26fd82cfaf425ada9ba59b91bd16c5e68118a92152edd9a5c62155c",
+      "app.mjs": "dc8f1e777454eae392e9c693d8cedac11a8839c23b8c423eb7bb2d34852538bf",
+      "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "fixture-timeline.css": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+      "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+      "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "src/fixture-timeline-view.mjs": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+      "src/fixture-timeline.mjs": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+      "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "record.html": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4",
+      "record-view.css": "71345c822fdf74c7160eb5aa09675fac19abe24603137a75d7431397eb59768d",
+      "src/record-reader.mjs": "a436af0d39eb7b5296e32ba7514086b9e3a753c4c598cdd78346413b972d67d7",
+      "src/record-view.mjs": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f"
+    },
+    "after": {
+      "index.html": "73171545f26fd82cfaf425ada9ba59b91bd16c5e68118a92152edd9a5c62155c",
+      "app.mjs": "dc8f1e777454eae392e9c693d8cedac11a8839c23b8c423eb7bb2d34852538bf",
+      "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "fixture-timeline.css": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+      "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+      "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "src/fixture-timeline-view.mjs": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+      "src/fixture-timeline.mjs": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+      "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "record.html": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4",
+      "record-view.css": "71345c822fdf74c7160eb5aa09675fac19abe24603137a75d7431397eb59768d",
+      "src/record-reader.mjs": "a436af0d39eb7b5296e32ba7514086b9e3a753c4c598cdd78346413b972d67d7",
+      "src/record-view.mjs": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f"
+    }
+  },
+  "harnessSha256": "9764da519127afa8397ffdd8a4cab2b54ec04a571b6de87a89ca4fa1482f5e2d",
+  "node": "v24.19.0",
+  "playwright": {
+    "entry": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright-core/index.js",
+    "entrySha256": "a58fb2cec4293e7dcf73c58a179898a4f3986666451a19da4e731fa3af63265b"
+  },
+  "browser": {
+    "executable": "/workspace/scratch/acd057031fb2/agents/artifact/browser/chromium",
+    "sha256": "53a15d6c3a3d27dfb54c4ba60278b1683136f70cf1e67e989da7dfbd3d451ef0",
+    "version": "153.0.8010.0"
+  },
+  "inputs": [
+    {
+      "name": "authored-mixed-states.json",
+      "kind": "Authored ordered operations through production ledger/exporter; not a UI-created payment or download.",
+      "bytes": 5767,
+      "sha256": "e342c151cb1537574fccd1ed3c75c4789c3d9d3d30ed0968a106034b58972c80"
+    },
+    {
+      "name": "authored-access-reconciled.json",
+      "kind": "Authored single additional reconciliation through production ledger/exporter.",
+      "bytes": 6024,
+      "sha256": "f1f5890f543a2a681fe39b5900156d240092496878f1a2aa1463a96b8ef9cd91"
+    },
+    {
+      "name": "authored-handoff-pending.json",
+      "kind": "Authored single additional capture request through production ledger/exporter.",
+      "bytes": 6219,
+      "sha256": "23337fe50555f6308e0f13ad6755df91952290669558175bfef5410e2988b7d4"
+    },
+    {
+      "name": "authored-balanced-capture-swap.json",
+      "kind": "Authored inconsistent checkpoint capture tuples; aggregate totals, equal milestone amounts, and every event remain unchanged.",
+      "bytes": 5767,
+      "sha256": "508a4d81d2734f61dcc7db9978c218cb919a6d5e4dff3381bf546533afe6f27e"
+    },
+    {
+      "name": "authored-balanced-approval-swap.json",
+      "kind": "Authored inconsistent approval origin/evidence tuples; aggregate approval counts and every event remain unchanged.",
+      "bytes": 5767,
+      "sha256": "d99b0bccb64d14f8f50fadd89c16870df5ee78991f2e42cc39852dfc238f22d8"
+    }
+  ],
+  "cases": [
+    {
+      "id": "authored_input_controls",
+      "checks": [
+        {
+          "name": "Production exports match the independently enumerated operations, event metadata and checkpoint facts",
+          "passed": true
+        },
+        {
+          "name": "Both forged records preserve totals, approvals, event history and sums while changing a checkpoint-owned fact",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "actual_download_navigation_control",
+      "checks": [
+        {
+          "name": "Actual production download contains the clicked approval and excludes the unapproved draft",
+          "passed": true
+        },
+        {
+          "name": "Saved-record navigation exists at this source",
+          "passed": true
+        },
+        {
+          "name": "Native file picker opens the actual downloaded approval in a separate viewer and preserves the original draft",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "mixed_equal_amount_checkpoints",
+      "checks": [
+        {
+          "name": "Native reader preserves the independent event and checkpoint facts",
+          "passed": true
+        },
+        {
+          "name": "Actual rendered record keeps each equal-price checkpoint tied to its own evidence, status, identity and amount",
+          "passed": true
+        },
+        {
+          "name": "The unresolved/ready/pending outcomes do not claim an additional counted capture",
+          "passed": true
+        }
+      ],
+      "filename": "authored-mixed-states.json",
+      "passed": true
+    },
+    {
+      "id": "one_new_reconciliation_changes_only_its_checkpoint",
+      "checks": [
+        {
+          "name": "Native reader preserves the independent event and checkpoint facts",
+          "passed": true
+        },
+        {
+          "name": "Actual rendered record keeps each equal-price checkpoint tied to its own evidence, status, identity and amount",
+          "passed": true
+        },
+        {
+          "name": "The unresolved/ready/pending outcomes do not claim an additional counted capture",
+          "passed": true
+        }
+      ],
+      "filename": "authored-access-reconciled.json",
+      "passed": true
+    },
+    {
+      "id": "new_request_remains_pending_and_uncounted",
+      "checks": [
+        {
+          "name": "Native reader preserves the independent event and checkpoint facts",
+          "passed": true
+        },
+        {
+          "name": "Actual rendered record keeps each equal-price checkpoint tied to its own evidence, status, identity and amount",
+          "passed": true
+        },
+        {
+          "name": "The unresolved/ready/pending outcomes do not claim an additional counted capture",
+          "passed": true
+        }
+      ],
+      "filename": "authored-handoff-pending.json",
+      "passed": true
+    },
+    {
+      "id": "authored-balanced-capture-swap",
+      "checks": [
+        {
+          "name": "Native admission refuses the balanced forgery as inconsistent",
+          "passed": false,
+          "error": "AssertionError [ERR_ASSERTION]: Missing expected exception.\n    at file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:331:99\n    at check (file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:127:17)\n    at file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:331:15\n    at caseRun (file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:130:15)\n    at file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:330:13"
+        },
+        {
+          "name": "The browser refuses instead of announcing that the inconsistent saved fields match",
+          "passed": false,
+          "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:339:18\n    at async check (file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:127:11)\n    at async file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:338:9\n    at async caseRun (file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:130:9)\n    at async file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:330:7"
+        },
+        {
+          "name": "Refusal preserves the exact prior record DOM, filename, evidence and every displayed event",
+          "passed": false,
+          "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  {\n    checkpointLabels: [\n      'First-run checklist',\n      'Accessible billing setup',\n      'Accessible billing setup',\n...\n    ],\n+   filename: 'authored-balanced-capture-swap.json',\n-   filename: 'authored-mixed-states.json',\n    footnote: 'The file is unsigned. Consistent fields do not establish who wrote it or prove a real approval or transaction.',\n    labels: [\n      'Human approval recorded',\n      'Human approval recorded',\n      'Fixture order created',\n\n    at file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:344:18\n    at check (file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:127:17)\n    at file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:343:15\n    at async caseRun (file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:130:9)\n    at async file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:330:7"
+        }
+      ],
+      "passed": false
+    },
+    {
+      "id": "authored-balanced-approval-swap",
+      "checks": [
+        {
+          "name": "Native admission refuses the balanced forgery as inconsistent",
+          "passed": false,
+          "error": "AssertionError [ERR_ASSERTION]: Missing expected exception.\n    at file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:331:99\n    at check (file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:127:17)\n    at file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:331:15\n    at caseRun (file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:130:15)\n    at file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:330:13"
+        },
+        {
+          "name": "The browser refuses instead of announcing that the inconsistent saved fields match",
+          "passed": false,
+          "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nfalse !== true\n\n    at file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:339:18\n    at async check (file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:127:11)\n    at async file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:338:9\n    at async caseRun (file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:130:9)\n    at async file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:330:7"
+        },
+        {
+          "name": "Refusal preserves the exact prior record DOM, filename, evidence and every displayed event",
+          "passed": false,
+          "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  {\n    checkpointLabels: [\n      'First-run checklist',\n      'Accessible billing setup',\n      'Accessible billing setup',\n...\n    ],\n+   filename: 'authored-balanced-approval-swap.json',\n-   filename: 'authored-mixed-states.json',\n    footnote: 'The file is unsigned. Consistent fields do not establish who wrote it or prove a real approval or transaction.',\n    labels: [\n      'Human approval recorded',\n      'Human approval recorded',\n      'Fixture order created',\n\n    at file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:344:18\n    at check (file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:127:17)\n    at file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:343:15\n    at async caseRun (file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:130:9)\n    at async file:///workspace/scratch/acd057031fb2/agents/production/scopesignal-record-review/scripts/verify-record-composition.mjs:330:7"
+        }
+      ],
+      "passed": false
+    },
+    {
+      "id": "combined_record_small_viewport",
+      "checks": [
+        {
+          "name": "The mixed record retains the same independent facts at 390 pixels",
+          "passed": true
+        },
+        {
+          "name": "Record text remains inside the document viewport",
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "source_and_browser_integrity",
+      "checks": [
+        {
+          "name": "No script errors or viewer requests outside the served local source",
+          "passed": true
+        },
+        {
+          "name": "Every served source byte matches the frozen starting source and remains unchanged",
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "served": {
+    "index.html": "73171545f26fd82cfaf425ada9ba59b91bd16c5e68118a92152edd9a5c62155c",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "fixture-timeline.css": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+    "app.mjs": "dc8f1e777454eae392e9c693d8cedac11a8839c23b8c423eb7bb2d34852538bf",
+    "src/fixture-timeline-view.mjs": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+    "src/fixture-timeline.mjs": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+    "record.html": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4",
+    "record-view.css": "71345c822fdf74c7160eb5aa09675fac19abe24603137a75d7431397eb59768d",
+    "src/record-view.mjs": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f",
+    "src/record-reader.mjs": "a436af0d39eb7b5296e32ba7514086b9e3a753c4c598cdd78346413b972d67d7"
+  },
+  "externalRequests": [
+    {
+      "page": "http://127.0.0.1:40629/",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    }
+  ],
+  "pageErrors": [],
+  "origin": "http://127.0.0.1:40629",
+  "download": {
+    "name": "scopesignal-fixture-record-v1.json",
+    "bytes": 3658,
+    "sha256": "a70fdc91b3c540f20bdd1019be7dae0ab7a760043af107cee5b92715dfebda06",
+    "kind": "Actual Blob download clicked in the unchanged production fixture UI."
+  },
+  "finishedAt": "2026-10-08T10:26:50.276Z",
+  "counts": {
+    "cases": 9,
+    "passedCases": 7,
+    "checks": 24,
+    "passedChecks": 18
+  },
+  "passed": false
+}
