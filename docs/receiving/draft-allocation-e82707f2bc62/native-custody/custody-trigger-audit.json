@@ -1,0 +1,35 @@
+{
+  "repository": "Jacob-Met/scopesignal",
+  "observed_default": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+  "observed_tree": "245c0dd66c05c17f22e53bf57d9ae5847b36dc9a",
+  "complete_tree_leaves": 763,
+  "workflows": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "git_blob": "2fac275ab0183987bccac3ba787a133795a70016",
+      "content": "name: Fixture-mode Pages deployment\non:\n  push:\n    branches: [paypal-ai]\n  workflow_dispatch:\npermissions:\n  contents: read\n  pages: write\n  id-token: write\nconcurrency:\n  group: pages\n  cancel-in-progress: true\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-node@v4\n        with:\n          node-version: 24\n      - run: npm test\n  deploy:\n    needs: test\n    environment:\n      name: github-pages\n      url: ${{ steps.deployment.outputs.page_url }}\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/configure-pages@v5\n      - uses: actions/upload-pages-artifact@v3\n        with:\n          name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}\n          path: .\n      - id: deployment\n        uses: actions/deploy-pages@v4\n        with:\n          artifact_name: github-pages-${{ github.run_id }}-${{ github.run_attempt }}\n"
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "git_blob": "b97f2716367bb4c5ed930693e3c3e7fdc02c792e",
+      "content": "name: Fixture tests\n\non:\n  pull_request:\n\npermissions:\n  contents: read\n\nconcurrency:\n  group: fixture-tests-${{ github.event.pull_request.number }}\n  cancel-in-progress: true\n\njobs:\n  test:\n    runs-on: ubuntu-latest\n    timeout-minutes: 5\n    steps:\n      - uses: actions/checkout@v4\n        with:\n          persist-credentials: false\n      - uses: actions/setup-node@v4\n        with:\n          node-version: 24\n      - run: npm test\n"
+    }
+  ],
+  "proposed_custody": {
+    "branch": "estate-e827/allocation-native-handoff",
+    "scope": "Evidence-only: ZIP, manifest, read-only trigger audit and native handoff; no product/workflow path modifications, no PR, no default-branch update.",
+    "trigger_analysis": "Existing push event is limited to paypal-ai, which this branch does not match. Existing pull_request event is not raised because no PR is created. No create/issues/issue_comment/schedule event is configured. No workflow_dispatch/rerun is called. The new proposed browser workflow exists only inside the ZIP and is not an active workflow file on the custody branch.",
+    "prewrite_requirement": "Re-read default ref/tree and all active workflow blobs immediately before mutation; stop if filters or scope differ."
+  },
+  "issue_comment": {
+    "actions_events": "No issues/issue_comment workflow in complete current tree",
+    "note": "No statement is made about unconfigured external applications."
+  },
+  "boundaries": {
+    "code_publication": "held",
+    "PR": "none",
+    "browser": "unrun",
+    "required_gates": "pending; no bypass",
+    "actions_execution": "none requested by custody analysis"
+  }
+}
