@@ -1,0 +1,663 @@
+{
+  "captured_at": "2026-10-08T12:27:08.080Z",
+  "source_commit": "8a241c9ce409fa9b22ab0bbdc339e46fd4b38525",
+  "source_tree": "7686f7568c398f522df4d32f75a98814b1c4cd1d",
+  "browser": "Chrome/154.0.8037.98",
+  "node": "v26.3.0",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "passed": false,
+  "counts": {
+    "passed": 1,
+    "failed": 2
+  },
+  "cases": [
+    {
+      "name": "lf-unicode-download-roundtrip",
+      "started_at": "2026-10-08T12:27:02.980Z",
+      "authored": {
+        "label": "  Fictional workspace 日本語 😀  ",
+        "brief": "\nLF first line α\nLF second line 😀\n",
+        "cap": "unfinished",
+        "checkpoints": [
+          {
+            "title": "",
+            "amount": "400.00",
+            "evidence": "\nLiteral <evidence> & “quotes”\n"
+          },
+          {
+            "title": "Accessible billing setup",
+            "amount": "400.00",
+            "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+          },
+          {
+            "title": "Responsive handoff",
+            "amount": "400.00",
+            "evidence": "Desktop and mobile handoff files plus implementation notes."
+          }
+        ]
+      },
+      "download": {
+        "path": "/Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/baseline-evidence/positive-download/scopesignal-workspace-v1.json",
+        "file": {
+          "schema": "scopesignal.scope-workspace",
+          "version": 1,
+          "fixtureOnly": true,
+          "paymentEvidence": false,
+          "stage": "draft",
+          "draft": {
+            "label": "  Fictional workspace 日本語 😀  ",
+            "brief": "\nLF first line α\nLF second line 😀\n",
+            "cap": "unfinished",
+            "checkpoints": [
+              {
+                "title": "",
+                "amount": "400.00",
+                "evidence": "\nLiteral <evidence> & “quotes”\n"
+              },
+              {
+                "title": "Accessible billing setup",
+                "amount": "400.00",
+                "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+              },
+              {
+                "title": "Responsive handoff",
+                "amount": "400.00",
+                "evidence": "Desktop and mobile handoff files plus implementation notes."
+              }
+            ]
+          },
+          "events": [],
+          "evidenceDrafts": []
+        },
+        "bytes": 843,
+        "sha256": "f3236be3269dedf66446c504052d4c53d5381a070838fba44eada3b4491f2c0b"
+      },
+      "preview": {
+        "draft": {
+          "label": "Northstar onboarding refresh",
+          "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+          "cap": "1200.00",
+          "checkpoints": [
+            {
+              "title": "First-run checklist",
+              "amount": "400.00",
+              "evidence": "A screen recording shows the checklist completion path and reset behavior."
+            },
+            {
+              "title": "Accessible billing setup",
+              "amount": "400.00",
+              "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+            },
+            {
+              "title": "Responsive handoff",
+              "amount": "400.00",
+              "evidence": "Desktop and mobile handoff files plus implementation notes."
+            }
+          ]
+        },
+        "preview": true,
+        "status": "File checked. Replace the current workspace to open it, or cancel to keep your work.",
+        "summary": "Fictional workspace 日本語 😀 · Editable draft · 3 checkpoints · 0 recorded approvals · 0 events.",
+        "review_visible": false,
+        "event_count": "0 events"
+      },
+      "applied": {
+        "draft": {
+          "label": "  Fictional workspace 日本語 😀  ",
+          "brief": "\nLF first line α\nLF second line 😀\n",
+          "cap": "unfinished",
+          "checkpoints": [
+            {
+              "title": "",
+              "amount": "400.00",
+              "evidence": "\nLiteral <evidence> & “quotes”\n"
+            },
+            {
+              "title": "Accessible billing setup",
+              "amount": "400.00",
+              "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+            },
+            {
+              "title": "Responsive handoff",
+              "amount": "400.00",
+              "evidence": "Desktop and mobile handoff files plus implementation notes."
+            }
+          ]
+        },
+        "preview": false,
+        "status": "Saved workspace opened. The file records a fictional fixture; it does not verify real approvals or payments.",
+        "summary": "",
+        "review_visible": false,
+        "event_count": "0 events"
+      },
+      "passed": true
+    },
+    {
+      "name": "external-lineendings-reject-or-preserve",
+      "started_at": "2026-10-08T12:27:04.930Z",
+      "before": {
+        "draft": {
+          "label": "Current fictional work must survive refused input",
+          "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+          "cap": "1200.00",
+          "checkpoints": [
+            {
+              "title": "First-run checklist",
+              "amount": "400.00",
+              "evidence": "A screen recording shows the checklist completion path and reset behavior."
+            },
+            {
+              "title": "Accessible billing setup",
+              "amount": "400.00",
+              "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+            },
+            {
+              "title": "Responsive handoff",
+              "amount": "400.00",
+              "evidence": "Desktop and mobile handoff files plus implementation notes."
+            }
+          ]
+        },
+        "preview": false,
+        "status": "",
+        "summary": "",
+        "review_visible": false,
+        "event_count": "0 events"
+      },
+      "input": {
+        "schema": "scopesignal.scope-workspace",
+        "version": 1,
+        "fixtureOnly": true,
+        "paymentEvidence": false,
+        "stage": "draft",
+        "draft": {
+          "label": "Project\nsecond\rpiece",
+          "brief": "one\r\ntwo\rthree\n",
+          "cap": "10\n0.00",
+          "checkpoints": [
+            {
+              "title": "First\r\ncheckpoint",
+              "amount": "4\r2.05",
+              "evidence": "one\r\ntwo\rthree"
+            }
+          ]
+        },
+        "events": [],
+        "evidenceDrafts": []
+      },
+      "checked": {
+        "draft": {
+          "label": "Current fictional work must survive refused input",
+          "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+          "cap": "1200.00",
+          "checkpoints": [
+            {
+              "title": "First-run checklist",
+              "amount": "400.00",
+              "evidence": "A screen recording shows the checklist completion path and reset behavior."
+            },
+            {
+              "title": "Accessible billing setup",
+              "amount": "400.00",
+              "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+            },
+            {
+              "title": "Responsive handoff",
+              "amount": "400.00",
+              "evidence": "Desktop and mobile handoff files plus implementation notes."
+            }
+          ]
+        },
+        "preview": true,
+        "status": "File checked. Replace the current workspace to open it, or cancel to keep your work.",
+        "summary": "Project\nsecond\rpiece · Editable draft · 1 checkpoints · 0 recorded approvals · 0 events.",
+        "review_visible": false,
+        "event_count": "0 events"
+      },
+      "applied": {
+        "draft": {
+          "label": "Projectsecondpiece",
+          "brief": "one\ntwo\nthree\n",
+          "cap": "100.00",
+          "checkpoints": [
+            {
+              "title": "Firstcheckpoint",
+              "amount": "42.05",
+              "evidence": "one\ntwo\nthree"
+            }
+          ]
+        },
+        "preview": false,
+        "status": "Saved workspace opened. The file records a fictional fixture; it does not verify real approvals or payments.",
+        "summary": "",
+        "review_visible": false,
+        "event_count": "0 events"
+      },
+      "redownload": {
+        "path": "/Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/baseline-evidence/external-redownload/scopesignal-workspace-v1.json",
+        "file": {
+          "schema": "scopesignal.scope-workspace",
+          "version": 1,
+          "fixtureOnly": true,
+          "paymentEvidence": false,
+          "stage": "draft",
+          "draft": {
+            "label": "Projectsecondpiece",
+            "brief": "one\ntwo\nthree\n",
+            "cap": "100.00",
+            "checkpoints": [
+              {
+                "title": "Firstcheckpoint",
+                "amount": "42.05",
+                "evidence": "one\ntwo\nthree"
+              }
+            ]
+          },
+          "events": [],
+          "evidenceDrafts": []
+        },
+        "bytes": 425,
+        "sha256": "4910893fa81e86a700701c2152eba6fe5cf848eb9353784a7c48d6f21e17ed39"
+      },
+      "passed": false,
+      "error": "An admitted external draft must retain literal field values when applied\n+ actual - expected\n\n  {\n+   brief: 'one\\ntwo\\nthree\\n',\n+   cap: '100.00',\n-   brief: 'one\\r\\ntwo\\rthree\\n',\n-   cap: '10\\n0.00',\n    checkpoints: [\n      {\n+       amount: '42.05',\n+       evidence: 'one\\ntwo\\nthree',\n+       title: 'Firstcheckpoint'\n-       amount: '4\\r2.05',\n-       evidence: 'one\\r\\ntwo\\rthree',\n-       title: 'First\\r\\ncheckpoint'\n      }\n    ],\n+   label: 'Projectsecondpiece'\n-   label: 'Project\\nsecond\\rpiece'\n  }\n",
+      "stack": "AssertionError [ERR_ASSERTION]: An admitted external draft must retain literal field values when applied\n+ actual - expected\n\n  {\n+   brief: 'one\\ntwo\\nthree\\n',\n+   cap: '100.00',\n-   brief: 'one\\r\\ntwo\\rthree\\n',\n-   cap: '10\\n0.00',\n    checkpoints: [\n      {\n+       amount: '42.05',\n+       evidence: 'one\\ntwo\\nthree',\n+       title: 'Firstcheckpoint'\n-       amount: '4\\r2.05',\n-       evidence: 'one\\r\\ntwo\\rthree',\n-       title: 'First\\r\\ncheckpoint'\n      }\n    ],\n+   label: 'Projectsecondpiece'\n-   label: 'Project\\nsecond\\rpiece'\n  }\n\n    at file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/check-workspace-boundaries.mjs:178:14\n    at async run (file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/check-workspace-boundaries.mjs:84:9)\n    at async file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/check-workspace-boundaries.mjs:164:3"
+    },
+    {
+      "name": "edit-before-file-choice-preserved",
+      "started_at": "2026-10-08T12:27:06.149Z",
+      "before": {
+        "draft": {
+          "label": "Current fictional draft before opening chooser",
+          "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+          "cap": "1200.00",
+          "checkpoints": [
+            {
+              "title": "First-run checklist",
+              "amount": "400.00",
+              "evidence": "A screen recording shows the checklist completion path and reset behavior."
+            },
+            {
+              "title": "Accessible billing setup",
+              "amount": "400.00",
+              "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+            },
+            {
+              "title": "Responsive handoff",
+              "amount": "400.00",
+              "evidence": "Desktop and mobile handoff files plus implementation notes."
+            }
+          ]
+        },
+        "preview": false,
+        "status": "",
+        "summary": "",
+        "review_visible": false,
+        "event_count": "0 events"
+      },
+      "changed_before_selection": {
+        "draft": {
+          "label": "NEWER fictional draft written while chooser outstanding 日本語 😀",
+          "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+          "cap": "1200.00",
+          "checkpoints": [
+            {
+              "title": "First-run checklist",
+              "amount": "400.00",
+              "evidence": "New current evidence\nMust remain after an older open intent"
+            },
+            {
+              "title": "Accessible billing setup",
+              "amount": "400.00",
+              "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+            },
+            {
+              "title": "Responsive handoff",
+              "amount": "400.00",
+              "evidence": "Desktop and mobile handoff files plus implementation notes."
+            }
+          ]
+        },
+        "preview": false,
+        "status": "",
+        "summary": "",
+        "review_visible": false,
+        "event_count": "0 events"
+      },
+      "after_selection": {
+        "draft": {
+          "label": "NEWER fictional draft written while chooser outstanding 日本語 😀",
+          "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+          "cap": "1200.00",
+          "checkpoints": [
+            {
+              "title": "First-run checklist",
+              "amount": "400.00",
+              "evidence": "New current evidence\nMust remain after an older open intent"
+            },
+            {
+              "title": "Accessible billing setup",
+              "amount": "400.00",
+              "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+            },
+            {
+              "title": "Responsive handoff",
+              "amount": "400.00",
+              "evidence": "Desktop and mobile handoff files plus implementation notes."
+            }
+          ]
+        },
+        "preview": true,
+        "status": "File checked. Replace the current workspace to open it, or cancel to keep your work.",
+        "summary": "SAVED fictional workspace before newer edits · Editable draft · 1 checkpoints · 0 recorded approvals · 0 events.",
+        "review_visible": false,
+        "event_count": "0 events"
+      },
+      "after_apply_attempt": {
+        "draft": {
+          "label": "SAVED fictional workspace before newer edits",
+          "brief": "A normal LF saved workspace\n日本語 😀\n",
+          "cap": "250.00",
+          "checkpoints": [
+            {
+              "title": "Saved first checkpoint",
+              "amount": "100.00",
+              "evidence": "Saved evidence\nSecond line"
+            }
+          ]
+        },
+        "preview": false,
+        "status": "Saved workspace opened. The file records a fictional fixture; it does not verify real approvals or payments.",
+        "summary": "",
+        "review_visible": false,
+        "event_count": "0 events"
+      },
+      "passed": false,
+      "error": "A chooser opened before current edits must not replace those newer edits\n+ actual - expected\n\n  {\n+   brief: 'A normal LF saved workspace\\n日本語 😀\\n',\n+   cap: '250.00',\n-   brief: 'Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.',\n-   cap: '1200.00',\n    checkpoints: [\n      {\n+       amount: '100.00',\n+       evidence: 'Saved evidence\\nSecond line',\n+       title: 'Saved first checkpoint'\n-       amount: '400.00',\n-       evidence: 'New current evidence\\nMust remain after an older open intent',\n-       title: 'First-run checklist'\n      },\n-     {\n-       amount: '400.00',\n-       evidence: 'Keyboard-only walkthrough and automated accessibility report for the billing setup.',\n-       title: 'Accessible billing setup'\n-     },\n-     {\n-       amount: '400.00',\n-       evidence: 'Desktop and mobile handoff files plus implementation notes.',\n-       title: 'Responsive handoff'\n-     }\n    ],\n+   label: 'SAVED fictional workspace before newer edits'\n-   label: 'NEWER fictional draft written while chooser outstanding 日本語 😀'\n  }\n",
+      "stack": "AssertionError [ERR_ASSERTION]: A chooser opened before current edits must not replace those newer edits\n+ actual - expected\n\n  {\n+   brief: 'A normal LF saved workspace\\n日本語 😀\\n',\n+   cap: '250.00',\n-   brief: 'Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.',\n-   cap: '1200.00',\n    checkpoints: [\n      {\n+       amount: '100.00',\n+       evidence: 'Saved evidence\\nSecond line',\n+       title: 'Saved first checkpoint'\n-       amount: '400.00',\n-       evidence: 'New current evidence\\nMust remain after an older open intent',\n-       title: 'First-run checklist'\n      },\n-     {\n-       amount: '400.00',\n-       evidence: 'Keyboard-only walkthrough and automated accessibility report for the billing setup.',\n-       title: 'Accessible billing setup'\n-     },\n-     {\n-       amount: '400.00',\n-       evidence: 'Desktop and mobile handoff files plus implementation notes.',\n-       title: 'Responsive handoff'\n-     }\n    ],\n+   label: 'SAVED fictional workspace before newer edits'\n-   label: 'NEWER fictional draft written while chooser outstanding 日本語 😀'\n  }\n\n    at file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/check-workspace-boundaries.mjs:206:12\n    at async run (file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/check-workspace-boundaries.mjs:84:9)\n    at async file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/check-workspace-boundaries.mjs:189:3"
+    }
+  ],
+  "fatal": null,
+  "responses": [
+    {
+      "path": "scope.html",
+      "status": 200,
+      "bytes": 7554,
+      "sha256": "eb342ac10d6f09444b912171e5f03fed95ea90b7a42295c71d5390a533a3c546",
+      "git_blob": "aaa7a07eccb16bf5897181f58e29876130d2d2a8"
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    {
+      "path": "scope-workspace.css",
+      "status": 200,
+      "bytes": 5040,
+      "sha256": "01f9a70a6f0e4f6be16d693e6a63459fd13c2944aa9d6882b93c23e74418416b",
+      "git_blob": "2b962b49f408075877bbb8ff48c494b0fce111c7"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "status": 200,
+      "bytes": 17960,
+      "sha256": "a0690095f0806a69564dc4349508fd2332c03076d827c9e5a7a0c9f9405df7b1",
+      "git_blob": "b10d8ef5f664c21717b73c3adf29586eaba9b5e6"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "status": 200,
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "status": 200,
+      "bytes": 7018,
+      "sha256": "db5f4a99f5279127d4940904ff184f3e1d15b6df940807169a7253239f9212dd",
+      "git_blob": "49905d00ede9a2b22a3fbdef12d09a2374f47716"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "status": 200,
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "status": 200,
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    },
+    {
+      "path": "scope.html",
+      "status": 200,
+      "bytes": 7554,
+      "sha256": "eb342ac10d6f09444b912171e5f03fed95ea90b7a42295c71d5390a533a3c546",
+      "git_blob": "aaa7a07eccb16bf5897181f58e29876130d2d2a8"
+    },
+    {
+      "path": "scope-workspace.css",
+      "status": 200,
+      "bytes": 5040,
+      "sha256": "01f9a70a6f0e4f6be16d693e6a63459fd13c2944aa9d6882b93c23e74418416b",
+      "git_blob": "2b962b49f408075877bbb8ff48c494b0fce111c7"
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "status": 200,
+      "bytes": 17960,
+      "sha256": "a0690095f0806a69564dc4349508fd2332c03076d827c9e5a7a0c9f9405df7b1",
+      "git_blob": "b10d8ef5f664c21717b73c3adf29586eaba9b5e6"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "status": 200,
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "status": 200,
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "status": 200,
+      "bytes": 7018,
+      "sha256": "db5f4a99f5279127d4940904ff184f3e1d15b6df940807169a7253239f9212dd",
+      "git_blob": "49905d00ede9a2b22a3fbdef12d09a2374f47716"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "status": 200,
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    },
+    {
+      "path": "scope.html",
+      "status": 200,
+      "bytes": 7554,
+      "sha256": "eb342ac10d6f09444b912171e5f03fed95ea90b7a42295c71d5390a533a3c546",
+      "git_blob": "aaa7a07eccb16bf5897181f58e29876130d2d2a8"
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    {
+      "path": "scope-workspace.css",
+      "status": 200,
+      "bytes": 5040,
+      "sha256": "01f9a70a6f0e4f6be16d693e6a63459fd13c2944aa9d6882b93c23e74418416b",
+      "git_blob": "2b962b49f408075877bbb8ff48c494b0fce111c7"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "status": 200,
+      "bytes": 17960,
+      "sha256": "a0690095f0806a69564dc4349508fd2332c03076d827c9e5a7a0c9f9405df7b1",
+      "git_blob": "b10d8ef5f664c21717b73c3adf29586eaba9b5e6"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "status": 200,
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "status": 200,
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "status": 200,
+      "bytes": 7018,
+      "sha256": "db5f4a99f5279127d4940904ff184f3e1d15b6df940807169a7253239f9212dd",
+      "git_blob": "49905d00ede9a2b22a3fbdef12d09a2374f47716"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "status": 200,
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    },
+    {
+      "path": "scope.html",
+      "status": 200,
+      "bytes": 7554,
+      "sha256": "eb342ac10d6f09444b912171e5f03fed95ea90b7a42295c71d5390a533a3c546",
+      "git_blob": "aaa7a07eccb16bf5897181f58e29876130d2d2a8"
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "git_blob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    {
+      "path": "scope-workspace.css",
+      "status": 200,
+      "bytes": 5040,
+      "sha256": "01f9a70a6f0e4f6be16d693e6a63459fd13c2944aa9d6882b93c23e74418416b",
+      "git_blob": "2b962b49f408075877bbb8ff48c494b0fce111c7"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "status": 200,
+      "bytes": 17960,
+      "sha256": "a0690095f0806a69564dc4349508fd2332c03076d827c9e5a7a0c9f9405df7b1",
+      "git_blob": "b10d8ef5f664c21717b73c3adf29586eaba9b5e6"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "status": 200,
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "git_blob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "status": 200,
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "status": 200,
+      "bytes": 7018,
+      "sha256": "db5f4a99f5279127d4940904ff184f3e1d15b6df940807169a7253239f9212dd",
+      "git_blob": "49905d00ede9a2b22a3fbdef12d09a2374f47716"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "status": 200,
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    }
+  ],
+  "response_errors": [],
+  "page_errors": [],
+  "blocked": [
+    {
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+      "method": "GET",
+      "body": null,
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:64193/favicon.ico",
+      "method": "GET",
+      "body": null,
+      "resource_type": "other"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+      "method": "GET",
+      "body": null,
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:64193/favicon.ico",
+      "method": "GET",
+      "body": null,
+      "resource_type": "other"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+      "method": "GET",
+      "body": null,
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:64193/favicon.ico",
+      "method": "GET",
+      "body": null,
+      "resource_type": "other"
+    },
+    {
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap",
+      "method": "GET",
+      "body": null,
+      "resource_type": "stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:64193/favicon.ico",
+      "method": "GET",
+      "body": null,
+      "resource_type": "other"
+    }
+  ],
+  "limits": "Three bounded independent native Chromium probes against a 44-file immutable receiving copy. Two boundary criteria were frozen before fix inspection. The chooser interval uses an actual Chromium file chooser intercepted by Puppeteer with DOM value/input edits before selection; no claim of physical human typing in an OS modal. No source, installed-state, public-route, payment/provider, or GitHub mutation."
+}

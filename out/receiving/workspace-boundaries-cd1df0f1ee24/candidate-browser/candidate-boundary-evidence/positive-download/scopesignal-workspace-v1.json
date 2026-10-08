@@ -1,0 +1,31 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "draft",
+  "draft": {
+    "label": "  Fictional workspace 日本語 😀  ",
+    "brief": "\nLF first line α\nLF second line 😀\n",
+    "cap": "unfinished",
+    "checkpoints": [
+      {
+        "title": "",
+        "amount": "400.00",
+        "evidence": "\nLiteral <evidence> & “quotes”\n"
+      },
+      {
+        "title": "Accessible billing setup",
+        "amount": "400.00",
+        "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+      },
+      {
+        "title": "Responsive handoff",
+        "amount": "400.00",
+        "evidence": "Desktop and mobile handoff files plus implementation notes."
+      }
+    ]
+  },
+  "events": [],
+  "evidenceDrafts": []
+}

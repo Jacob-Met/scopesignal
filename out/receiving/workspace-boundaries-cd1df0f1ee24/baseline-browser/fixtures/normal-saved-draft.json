@@ -1,0 +1,21 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "draft",
+  "draft": {
+    "label": "SAVED fictional workspace before newer edits",
+    "brief": "A normal LF saved workspace\n日本語 😀\n",
+    "cap": "250.00",
+    "checkpoints": [
+      {
+        "title": "Saved first checkpoint",
+        "amount": "100.00",
+        "evidence": "Saved evidence\nSecond line"
+      }
+    ]
+  },
+  "events": [],
+  "evidenceDrafts": []
+}

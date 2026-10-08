@@ -1,0 +1,15 @@
+{
+  "frozen_at": "2026-10-08T12:37:15.885006+00:00",
+  "files": [
+    {
+      "path": "check-workspace-review-history.mjs",
+      "bytes": 13439,
+      "sha256": "2d3adac6895ed2c085edd7af5f12d7f08e69951ab5c04b072619d0de0853785d"
+    },
+    {
+      "path": "review-history-criteria-frozen.json",
+      "bytes": 749,
+      "sha256": "26833cf10fcca6aea593f18718e2514c63fd1f7639bf3d58281f4a9e0d84c571"
+    }
+  ]
+}

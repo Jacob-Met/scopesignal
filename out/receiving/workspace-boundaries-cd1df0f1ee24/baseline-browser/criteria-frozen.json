@@ -1,0 +1,22 @@
+{
+  "frozen_at": "2026-10-08T12:23:43.210396+00:00",
+  "source_commit": "8a241c9ce409fa9b22ab0bbdc339e46fd4b38525",
+  "source_tree": "7686f7568c398f522df4d32f75a98814b1c4cd1d",
+  "source_owner": "estate-7a9310dad255 / ScopeSignal PR18 issue16",
+  "receiver": "estate-cd1df0f1ee24 / estate_coordination",
+  "cases": [
+    {
+      "name": "lf-unicode-download-roundtrip",
+      "expected": "Native UI-authored unfinished LF and Unicode strings survive actual download, fresh load, preview and explicit apply; draft stage has zero events."
+    },
+    {
+      "name": "external-lineendings-reject-or-preserve",
+      "expected": "External draft with CR/LF in single-line fields or CR in textarea fields is either refused before changing current work or retains every literal admitted value on apply and re-download."
+    },
+    {
+      "name": "edit-before-file-choice-preserved",
+      "expected": "Edits made after opening the native chooser but before file selection/change must survive an attempt to apply that older open intent."
+    }
+  ],
+  "scope": "Literal fixtures and DOM observations; no production module imports. Actual Chromium chooser intercepted by Puppeteer; DOM edits while outstanding are an instrumented interval probe, not physical OS-modal user interaction. No fix source inspected."
+}

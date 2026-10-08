@@ -1,0 +1,113 @@
+{
+  "name": "edit-before-file-choice-preserved",
+  "started_at": "2026-10-08T12:27:06.149Z",
+  "before": {
+    "draft": {
+      "label": "Current fictional draft before opening chooser",
+      "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+      "cap": "1200.00",
+      "checkpoints": [
+        {
+          "title": "First-run checklist",
+          "amount": "400.00",
+          "evidence": "A screen recording shows the checklist completion path and reset behavior."
+        },
+        {
+          "title": "Accessible billing setup",
+          "amount": "400.00",
+          "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+        },
+        {
+          "title": "Responsive handoff",
+          "amount": "400.00",
+          "evidence": "Desktop and mobile handoff files plus implementation notes."
+        }
+      ]
+    },
+    "preview": false,
+    "status": "",
+    "summary": "",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "changed_before_selection": {
+    "draft": {
+      "label": "NEWER fictional draft written while chooser outstanding 日本語 😀",
+      "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+      "cap": "1200.00",
+      "checkpoints": [
+        {
+          "title": "First-run checklist",
+          "amount": "400.00",
+          "evidence": "New current evidence\nMust remain after an older open intent"
+        },
+        {
+          "title": "Accessible billing setup",
+          "amount": "400.00",
+          "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+        },
+        {
+          "title": "Responsive handoff",
+          "amount": "400.00",
+          "evidence": "Desktop and mobile handoff files plus implementation notes."
+        }
+      ]
+    },
+    "preview": false,
+    "status": "",
+    "summary": "",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "after_selection": {
+    "draft": {
+      "label": "NEWER fictional draft written while chooser outstanding 日本語 😀",
+      "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+      "cap": "1200.00",
+      "checkpoints": [
+        {
+          "title": "First-run checklist",
+          "amount": "400.00",
+          "evidence": "New current evidence\nMust remain after an older open intent"
+        },
+        {
+          "title": "Accessible billing setup",
+          "amount": "400.00",
+          "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+        },
+        {
+          "title": "Responsive handoff",
+          "amount": "400.00",
+          "evidence": "Desktop and mobile handoff files plus implementation notes."
+        }
+      ]
+    },
+    "preview": true,
+    "status": "File checked. Replace the current workspace to open it, or cancel to keep your work.",
+    "summary": "SAVED fictional workspace before newer edits · Editable draft · 1 checkpoints · 0 recorded approvals · 0 events.",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "after_apply_attempt": {
+    "draft": {
+      "label": "SAVED fictional workspace before newer edits",
+      "brief": "A normal LF saved workspace\n日本語 😀\n",
+      "cap": "250.00",
+      "checkpoints": [
+        {
+          "title": "Saved first checkpoint",
+          "amount": "100.00",
+          "evidence": "Saved evidence\nSecond line"
+        }
+      ]
+    },
+    "preview": false,
+    "status": "Saved workspace opened. The file records a fictional fixture; it does not verify real approvals or payments.",
+    "summary": "",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "passed": false,
+  "error": "A chooser opened before current edits must not replace those newer edits\n+ actual - expected\n\n  {\n+   brief: 'A normal LF saved workspace\\n日本語 😀\\n',\n+   cap: '250.00',\n-   brief: 'Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.',\n-   cap: '1200.00',\n    checkpoints: [\n      {\n+       amount: '100.00',\n+       evidence: 'Saved evidence\\nSecond line',\n+       title: 'Saved first checkpoint'\n-       amount: '400.00',\n-       evidence: 'New current evidence\\nMust remain after an older open intent',\n-       title: 'First-run checklist'\n      },\n-     {\n-       amount: '400.00',\n-       evidence: 'Keyboard-only walkthrough and automated accessibility report for the billing setup.',\n-       title: 'Accessible billing setup'\n-     },\n-     {\n-       amount: '400.00',\n-       evidence: 'Desktop and mobile handoff files plus implementation notes.',\n-       title: 'Responsive handoff'\n-     }\n    ],\n+   label: 'SAVED fictional workspace before newer edits'\n-   label: 'NEWER fictional draft written while chooser outstanding 日本語 😀'\n  }\n",
+  "stack": "AssertionError [ERR_ASSERTION]: A chooser opened before current edits must not replace those newer edits\n+ actual - expected\n\n  {\n+   brief: 'A normal LF saved workspace\\n日本語 😀\\n',\n+   cap: '250.00',\n-   brief: 'Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.',\n-   cap: '1200.00',\n    checkpoints: [\n      {\n+       amount: '100.00',\n+       evidence: 'Saved evidence\\nSecond line',\n+       title: 'Saved first checkpoint'\n-       amount: '400.00',\n-       evidence: 'New current evidence\\nMust remain after an older open intent',\n-       title: 'First-run checklist'\n      },\n-     {\n-       amount: '400.00',\n-       evidence: 'Keyboard-only walkthrough and automated accessibility report for the billing setup.',\n-       title: 'Accessible billing setup'\n-     },\n-     {\n-       amount: '400.00',\n-       evidence: 'Desktop and mobile handoff files plus implementation notes.',\n-       title: 'Responsive handoff'\n-     }\n    ],\n+   label: 'SAVED fictional workspace before newer edits'\n-   label: 'NEWER fictional draft written while chooser outstanding 日本語 😀'\n  }\n\n    at file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/check-workspace-boundaries.mjs:206:12\n    at async run (file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/check-workspace-boundaries.mjs:84:9)\n    at async file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/check-workspace-boundaries.mjs:189:3"
+}

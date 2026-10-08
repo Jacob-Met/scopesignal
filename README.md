@@ -100,6 +100,14 @@ invalidates an older pending read or preview. A refused file leaves the current
 brief, evidence, events and totals unchanged. Re-select the file when ready to
 replace the workspace; download the current work first if you want to keep it.
 
+The file choice is bound to the workspace before the native chooser opens,
+and current field values are checked again before replacement. Newer edits
+made during a chooser, read or preview are kept. Editable textareas use LF
+line breaks; project/checkpoint names and amount fields stay on one line.
+Editable field values containing CR, or LF in single-line fields, are refused
+before preview so native form assignment cannot silently change their values.
+CRLF formatting between JSON fields is still accepted.
+
 Saving and opening use no automatic browser storage or network service.
 Reloading still clears memory until a saved file is opened again. These
 unsigned files contain fictional data and do not verify identity, human

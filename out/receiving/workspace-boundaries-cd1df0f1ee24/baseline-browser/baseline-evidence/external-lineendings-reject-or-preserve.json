@@ -1,0 +1,131 @@
+{
+  "name": "external-lineendings-reject-or-preserve",
+  "started_at": "2026-10-08T12:27:04.930Z",
+  "before": {
+    "draft": {
+      "label": "Current fictional work must survive refused input",
+      "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+      "cap": "1200.00",
+      "checkpoints": [
+        {
+          "title": "First-run checklist",
+          "amount": "400.00",
+          "evidence": "A screen recording shows the checklist completion path and reset behavior."
+        },
+        {
+          "title": "Accessible billing setup",
+          "amount": "400.00",
+          "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+        },
+        {
+          "title": "Responsive handoff",
+          "amount": "400.00",
+          "evidence": "Desktop and mobile handoff files plus implementation notes."
+        }
+      ]
+    },
+    "preview": false,
+    "status": "",
+    "summary": "",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "input": {
+    "schema": "scopesignal.scope-workspace",
+    "version": 1,
+    "fixtureOnly": true,
+    "paymentEvidence": false,
+    "stage": "draft",
+    "draft": {
+      "label": "Project\nsecond\rpiece",
+      "brief": "one\r\ntwo\rthree\n",
+      "cap": "10\n0.00",
+      "checkpoints": [
+        {
+          "title": "First\r\ncheckpoint",
+          "amount": "4\r2.05",
+          "evidence": "one\r\ntwo\rthree"
+        }
+      ]
+    },
+    "events": [],
+    "evidenceDrafts": []
+  },
+  "checked": {
+    "draft": {
+      "label": "Current fictional work must survive refused input",
+      "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+      "cap": "1200.00",
+      "checkpoints": [
+        {
+          "title": "First-run checklist",
+          "amount": "400.00",
+          "evidence": "A screen recording shows the checklist completion path and reset behavior."
+        },
+        {
+          "title": "Accessible billing setup",
+          "amount": "400.00",
+          "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+        },
+        {
+          "title": "Responsive handoff",
+          "amount": "400.00",
+          "evidence": "Desktop and mobile handoff files plus implementation notes."
+        }
+      ]
+    },
+    "preview": true,
+    "status": "File checked. Replace the current workspace to open it, or cancel to keep your work.",
+    "summary": "Project\nsecond\rpiece · Editable draft · 1 checkpoints · 0 recorded approvals · 0 events.",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "applied": {
+    "draft": {
+      "label": "Projectsecondpiece",
+      "brief": "one\ntwo\nthree\n",
+      "cap": "100.00",
+      "checkpoints": [
+        {
+          "title": "Firstcheckpoint",
+          "amount": "42.05",
+          "evidence": "one\ntwo\nthree"
+        }
+      ]
+    },
+    "preview": false,
+    "status": "Saved workspace opened. The file records a fictional fixture; it does not verify real approvals or payments.",
+    "summary": "",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "redownload": {
+    "path": "/Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/baseline-evidence/external-redownload/scopesignal-workspace-v1.json",
+    "file": {
+      "schema": "scopesignal.scope-workspace",
+      "version": 1,
+      "fixtureOnly": true,
+      "paymentEvidence": false,
+      "stage": "draft",
+      "draft": {
+        "label": "Projectsecondpiece",
+        "brief": "one\ntwo\nthree\n",
+        "cap": "100.00",
+        "checkpoints": [
+          {
+            "title": "Firstcheckpoint",
+            "amount": "42.05",
+            "evidence": "one\ntwo\nthree"
+          }
+        ]
+      },
+      "events": [],
+      "evidenceDrafts": []
+    },
+    "bytes": 425,
+    "sha256": "4910893fa81e86a700701c2152eba6fe5cf848eb9353784a7c48d6f21e17ed39"
+  },
+  "passed": false,
+  "error": "An admitted external draft must retain literal field values when applied\n+ actual - expected\n\n  {\n+   brief: 'one\\ntwo\\nthree\\n',\n+   cap: '100.00',\n-   brief: 'one\\r\\ntwo\\rthree\\n',\n-   cap: '10\\n0.00',\n    checkpoints: [\n      {\n+       amount: '42.05',\n+       evidence: 'one\\ntwo\\nthree',\n+       title: 'Firstcheckpoint'\n-       amount: '4\\r2.05',\n-       evidence: 'one\\r\\ntwo\\rthree',\n-       title: 'First\\r\\ncheckpoint'\n      }\n    ],\n+   label: 'Projectsecondpiece'\n-   label: 'Project\\nsecond\\rpiece'\n  }\n",
+  "stack": "AssertionError [ERR_ASSERTION]: An admitted external draft must retain literal field values when applied\n+ actual - expected\n\n  {\n+   brief: 'one\\ntwo\\nthree\\n',\n+   cap: '100.00',\n-   brief: 'one\\r\\ntwo\\rthree\\n',\n-   cap: '10\\n0.00',\n    checkpoints: [\n      {\n+       amount: '42.05',\n+       evidence: 'one\\ntwo\\nthree',\n+       title: 'Firstcheckpoint'\n-       amount: '4\\r2.05',\n-       evidence: 'one\\r\\ntwo\\rthree',\n-       title: 'First\\r\\ncheckpoint'\n      }\n    ],\n+   label: 'Projectsecondpiece'\n-   label: 'Project\\nsecond\\rpiece'\n  }\n\n    at file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/check-workspace-boundaries.mjs:178:14\n    at async run (file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/check-workspace-boundaries.mjs:84:9)\n    at async file:///Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a/check-workspace-boundaries.mjs:164:3"
+}

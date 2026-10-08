@@ -1,0 +1,104 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6138,
+      "sha256": "bacafcc664bfcb445e9ea8a239d426815ed31d32132453c705233c705dfd9c0a"
+    },
+    {
+      "path": "baseline-evidence/chooser-after-apply-attempt.png",
+      "bytes": 200501,
+      "sha256": "ccf8f027ab25e66f9c1d6683bf1f5a01e6ee9226a67dc2a1bc0a84e1aa74d7cc"
+    },
+    {
+      "path": "baseline-evidence/edit-before-file-choice-preserved.json",
+      "bytes": 6933,
+      "sha256": "539e6e08dd7e3897bbd6ec68939b4c8f53add202e9c4df861b6b6d1ec953301a"
+    },
+    {
+      "path": "baseline-evidence/external-applied.png",
+      "bytes": 190563,
+      "sha256": "f6fdc3ce6cfb2d59f258287f4e6f6f9fae35402bb3e420e0eef5cfb38078f531"
+    },
+    {
+      "path": "baseline-evidence/external-lineendings-reject-or-preserve.json",
+      "bytes": 5761,
+      "sha256": "569ed52cf809ca1279d8932ecbb14e113ef975f51488c31ef6762510069520b6"
+    },
+    {
+      "path": "baseline-evidence/external-redownload/scopesignal-workspace-v1.json",
+      "bytes": 425,
+      "sha256": "4910893fa81e86a700701c2152eba6fe5cf848eb9353784a7c48d6f21e17ed39"
+    },
+    {
+      "path": "baseline-evidence/lf-unicode-download-roundtrip.json",
+      "bytes": 4198,
+      "sha256": "680b1d5d72a055836e4dd1fd48e8e75c6e5343fcbaedad2c49125eb4611c5ac5"
+    },
+    {
+      "path": "baseline-evidence/positive-download/scopesignal-workspace-v1.json",
+      "bytes": 843,
+      "sha256": "f3236be3269dedf66446c504052d4c53d5381a070838fba44eada3b4491f2c0b"
+    },
+    {
+      "path": "baseline-evidence/receipt.json",
+      "bytes": 28486,
+      "sha256": "92fe680154af565a01eae30a5080310082beb383c2026f652c581dedd085163b"
+    },
+    {
+      "path": "check-workspace-boundaries.mjs",
+      "bytes": 12791,
+      "sha256": "539181ff64059ee00232c107b4c6f90cb18a2757830a96bb7088c484ce874163"
+    },
+    {
+      "path": "criteria-frozen.json",
+      "bytes": 1305,
+      "sha256": "b2846b34f3a340f5ab44e473b282fb733b48f01edaab187d261520fb6e918e72"
+    },
+    {
+      "path": "fixtures/external-lineendings.json",
+      "bytes": 441,
+      "sha256": "4c63aef94d1f8bf767c79713933c92d9d002ba4f7ee304590f3eadeaaf581b14"
+    },
+    {
+      "path": "fixtures/normal-saved-draft.json",
+      "bytes": 499,
+      "sha256": "10949aa9774ca1b4f192fdcde0bd30de670a38c2526b121fa9eb54080381a65f"
+    },
+    {
+      "path": "native-driver.json",
+      "bytes": 30293,
+      "sha256": "c6801c3d5bf547b933a2ceceb3968b4836deb1899fa8b7fa5096ba48ffb7dcb2"
+    },
+    {
+      "path": "native-driver.py",
+      "bytes": 3356,
+      "sha256": "4d86809d60d5d50902b5dee024b59e8ddb9e0f48a8d7749058bf9a909a5deb7b"
+    },
+    {
+      "path": "native-driver.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "native-driver.stdout",
+      "bytes": 2024,
+      "sha256": "c5bbd4d746dd5a046959ceeed2f2cc62944a4b105971a39a62414275df84d831"
+    },
+    {
+      "path": "probe-freeze-manifest.json",
+      "bytes": 726,
+      "sha256": "3d6ef822d0b411406b46c158b42ab9f0841eac8ed44906ffd990c9aeec2c4b67"
+    },
+    {
+      "path": "source-manifest-8a.json",
+      "bytes": 17658,
+      "sha256": "866190730c9e7c1cd8429cd5b5129ecc0c89b103413a2fd9b73f2cba29aec09d"
+    },
+    {
+      "path": "transport.json",
+      "bytes": 513,
+      "sha256": "01e403abd2a38862e1a204e3c5e1ece033b05993646bbc0052090a5087f62f86"
+    }
+  ]
+}

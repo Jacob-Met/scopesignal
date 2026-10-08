@@ -1,0 +1,25 @@
+{
+  "frozen_at": "2026-10-08T12:23:43.210396+00:00",
+  "files": [
+    {
+      "path": "check-workspace-boundaries.mjs",
+      "bytes": 12791,
+      "sha256": "539181ff64059ee00232c107b4c6f90cb18a2757830a96bb7088c484ce874163"
+    },
+    {
+      "path": "criteria-frozen.json",
+      "bytes": 1305,
+      "sha256": "b2846b34f3a340f5ab44e473b282fb733b48f01edaab187d261520fb6e918e72"
+    },
+    {
+      "path": "fixtures/external-lineendings.json",
+      "bytes": 441,
+      "sha256": "4c63aef94d1f8bf767c79713933c92d9d002ba4f7ee304590f3eadeaaf581b14"
+    },
+    {
+      "path": "fixtures/normal-saved-draft.json",
+      "bytes": 499,
+      "sha256": "10949aa9774ca1b4f192fdcde0bd30de670a38c2526b121fa9eb54080381a65f"
+    }
+  ]
+}

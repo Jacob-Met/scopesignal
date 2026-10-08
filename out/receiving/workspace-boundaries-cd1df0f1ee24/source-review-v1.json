@@ -1,0 +1,89 @@
+{
+  "schema": "scopesignal.workspace-boundary.source-review.v1",
+  "reviewer": "estate_source/cd1df0f1ee24",
+  "source_base": "8a241c9ce409fa9b22ab0bbdc339e46fd4b38525",
+  "verdict": "accept scoped source changes; runtime browser receiving remains separate",
+  "reviewed_files": [
+    {
+      "path": "README.md",
+      "bytes": 14442,
+      "sha256": "f115f96ba670f434fb7567f8fc214cfc1ff7281323347198729cba0246fc8ab0",
+      "git_blob": "301b583f9d61d974f46a8ff6647983e5005fe2e3"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "bytes": 19111,
+      "sha256": "8b6f39b97a139ac63679b3b34b15342d695dbda613ae676873c1bbcc888e9f28",
+      "git_blob": "adc9bb3e53ffa72671a8f46e9b067b879ac3adff"
+    },
+    {
+      "path": "tests/workspace-form-values.test.mjs",
+      "bytes": 3257,
+      "sha256": "316f000073c2d659e629192ac3edc419771e19215487845b051c5df25d797685",
+      "git_blob": "961c7ff3c9a58ec1418aede8b0f50194cfcadbbc"
+    }
+  ],
+  "complete_frozen_source_verified": 45,
+  "mismatches": [],
+  "read_scope": [
+    "candidate/src/scope-workspace-record.mjs (complete and baseline diff)",
+    "candidate/src/scope-workspace.mjs (complete and baseline diff)",
+    "candidate/tests/workspace-form-values.test.mjs",
+    "candidate/README.md (baseline diff)",
+    "unchanged scope.html native form types",
+    "unchanged scope-plan.mjs review creation/snapshot/actions",
+    "existing scope-workspace-record.test.mjs history/unfinished/evidence tests"
+  ],
+  "findings": [
+    {
+      "area": "Native editable strings",
+      "result": "accepted",
+      "detail": "Single-line label/cap/checkpoint title/amount fields reject CR and LF. Creative brief, planned evidence and pending review evidence retain LF and reject CR before native textarea assignment can normalize it. Existing length/type bounds, unfinished strings, spaces, Unicode and canonical schema are retained; input caller values are not rewritten."
+    },
+    {
+      "area": "Chooser and file read",
+      "result": "accepted",
+      "detail": "The native chooser click records the request id and complete workspace value before selection. Selection retains a stale chooser sentinel long enough to reject changes during that chooser, then binds the asynchronous read to a fresh request. Direct change/drop without a click binds at selection. A newer selection increments the request identity and stale callbacks return without altering the newer preview or status."
+    },
+    {
+      "area": "Live value binding and Apply",
+      "result": "accepted",
+      "detail": "The captured value includes current draft DOM values, the review snapshot, pending evidence map entries and raw evidence textarea values. Successful reads, decode completion, errors and explicit Apply check identity and value. This catches raw DOM edits even when no input event updated the in-memory map. The final check and replacement are synchronous, with no intervening await."
+    },
+    {
+      "area": "Canceled work and errors",
+      "result": "accepted",
+      "detail": "Cancellation invalidates read/preview state and affects file UI only. The same request check suppresses stale rejection handlers. Native chooser cancel and explicit cancel clear chooser state; normal workspace edits invalidate a chooser request without treating its eventual completion as a new independent request."
+    },
+    {
+      "area": "Reviewed history and schema",
+      "result": "accepted",
+      "detail": "Private fixture replay, exact event comparison, accepted-versus-pending evidence rules, stage/size bounds and explicit replacement are unchanged. New editable-text checks do not replace or bypass the broader version-1 history admission. Public review actions, totals, capture semantics and fixture notices are not modified."
+    }
+  ],
+  "blocking_findings": [],
+  "optional_documentation_note": "README's phrase 'Files with CR' is best read as editable field values containing CR. CRLF used solely as JSON formatting outside string values remains harmless and admitted. This wording ambiguity is nonblocking.",
+  "verification": {
+    "source_edits_by_reviewer": 0,
+    "tests_run_by_reviewer": 0,
+    "reviewed_existing_candidate_log": {
+      "tests": 116,
+      "pass": 116,
+      "fail": 0,
+      "skipped": 0
+    },
+    "baseline_counterexample_scope": "Root reports and retains nine added model cases: one positive pass and eight rejected-value cases that fail on original source. No fixture or production change was made by this reviewer.",
+    "browser": "Separate estate_coordination frozen browser receiver and root reviewed-history positive are outside this read-only source gate."
+  },
+  "limits": [
+    "This verdict binds the exact four file pins above and the 45-file frozen source inventory.",
+    "It is a source review, not an independent browser execution or a claim about a future publication head.",
+    "No hosted write, browser task or production source mutation was performed in this review."
+  ]
+}

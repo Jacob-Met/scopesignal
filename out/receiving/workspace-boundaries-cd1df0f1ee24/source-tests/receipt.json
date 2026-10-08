@@ -1,0 +1,31 @@
+{
+  "schema": "scopesignal-workspace-model-receiving-v1",
+  "source_base": "8a241c9ce409fa9b22ab0bbdc339e46fd4b38525",
+  "runtime": "v24.19.0",
+  "baseline_command": "node --test tests/workspace-form-values.test.mjs",
+  "candidate_command": "node --test",
+  "baseline_new_tests": {
+    "pass": 1,
+    "fail": 8
+  },
+  "candidate_tests": {
+    "inherited": 107,
+    "new": 9,
+    "pass": 116,
+    "fail": 0,
+    "skip": 0
+  },
+  "logs": [
+    {
+      "file": "baseline-form-values.log",
+      "bytes": 8163,
+      "sha256": "2b850cc8a08739cc15ee970ce1713054e1925a5c3578a57bd844fbfb466e0fc2"
+    },
+    {
+      "file": "candidate-node-tests.log",
+      "bytes": 11116,
+      "sha256": "8d5907d93725b0585b7ebb427f6292fb974e352460723f62d34be28cf714c39f"
+    }
+  ],
+  "source_note": "Both runs use the same nine-test bytes. Baseline tests intentionally demand refusal absent from original source. Candidate v2 changes only README wording after source/browser v1 gates; both production files and tests stay exact."
+}

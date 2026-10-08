@@ -14,9 +14,16 @@ function exactObject(value, fields, label) {
   }
 }
 
-function text(value, maximum, label) {
+function text(value, maximum, label, multiline = false) {
   if (typeof value !== 'string' || value.length > maximum) {
     throw new Error(label + ' must be text of at most ' + maximum + ' characters.');
+  }
+  // Native textareas use LF; text inputs strip line breaks on assignment.
+  // Admit only values the editor can preserve rather than rewriting a file.
+  if (value.includes('\r') || (!multiline && value.includes('\n'))) {
+    throw new Error(label + (multiline
+      ? ' must use LF line breaks, as saved by this workspace.'
+      : ' must stay on one line.'));
   }
   return value;
 }
@@ -31,7 +38,7 @@ function copyDraft(value) {
   }
   return {
     label: text(value.label, 120, 'Project name'),
-    brief: text(value.brief, 8000, 'Creative brief'),
+    brief: text(value.brief, 8000, 'Creative brief', true),
     cap: text(value.cap, 64, 'Project cap'),
     checkpoints: Array.from(value.checkpoints, (row, index) => {
       const label = 'Checkpoint ' + (index + 1);
@@ -39,7 +46,7 @@ function copyDraft(value) {
       return {
         title: text(row.title, 160, label + ' deliverable'),
         amount: text(row.amount, 64, label + ' amount'),
-        evidence: text(row.evidence, 5000, label + ' planned evidence')
+        evidence: text(row.evidence, 5000, label + ' planned evidence', true)
       };
     })
   };
@@ -116,7 +123,7 @@ export function decodeScopeWorkspace(contents) {
     if (!checkpoint || checkpoint.approved || evidenceDrafts.has(entry.checkpointId)) {
       throw new Error('Saved evidence must belong to a distinct unapproved checkpoint.');
     }
-    evidenceDrafts.set(entry.checkpointId, text(entry.text, 5000, 'Pending evidence'));
+    evidenceDrafts.set(entry.checkpointId, text(entry.text, 5000, 'Pending evidence', true));
   }
   return {
     draft, review, evidenceDrafts,
