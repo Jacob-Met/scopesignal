@@ -1,0 +1,27 @@
+{
+  "result": "PASS",
+  "qualifiedHead": "4e703d8e307aa1f35d7819b8ec060593cc5c08ab",
+  "qualifiedTree": "309b66ba3020a8fab4879eaa9ddb5f3cd438c25e",
+  "incoming": "226d6d90cb949ce3d6edf97b99153831bd95e8fb",
+  "runId": 37841655556,
+  "jobId": 113532240593,
+  "url": "https://github.com/Jacob-Met/scopesignal/actions/runs/37841655556",
+  "conclusion": "success",
+  "actualCheckout": "e8a770800b640238a6496f829a8557538897d4b8",
+  "actualCheckoutTree": "309b66ba3020a8fab4879eaa9ddb5f3cd438c25e",
+  "actualCheckoutParents": [
+    "226d6d90cb949ce3d6edf97b99153831bd95e8fb",
+    "4e703d8e307aa1f35d7819b8ec060593cc5c08ab"
+  ],
+  "treeIdentityVerified": true,
+  "leafCount": 795,
+  "command": "npm test",
+  "node": "24.21.0",
+  "npm": "11.19.0",
+  "tests": 246,
+  "pass": 246,
+  "fail": 0,
+  "skipped": 0,
+  "rawLogBlob": "666d2c015ab1c8d69ff03db97a8b9a40230215fa",
+  "boundary": "Actual GitHub-hosted workflow log and immutable synthetic merge commit readback. Tree is exactly the locally qualified frozen candidate. No deployment or browser/provider evidence."
+}
