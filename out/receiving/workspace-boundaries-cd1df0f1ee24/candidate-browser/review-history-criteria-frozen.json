@@ -1,0 +1,7 @@
+{
+  "frozen_at": "2026-10-08T12:37:15.885006+00:00",
+  "receiver": "estate-cd1df0f1ee24 / estate_coordination",
+  "basis": "Existing PR18 workspace UI and format at merge8a; no candidate fix source inspected. Separate additive receiving control; original three-case runner remains unchanged.",
+  "expected": "Actual reviewed-workspace download and fresh-load explicit reopen retain four canonical events (approve, order, request, response lost), accepted LF/Unicode evidence, separate LF/Unicode and empty pending evidence, locked editing, one approval and zero captured dollars with reconciliation still explicit. Re-download has identical parsed contents.",
+  "source_oracle": "Native DOM plus actual browser file bytes, no production imports."
+}

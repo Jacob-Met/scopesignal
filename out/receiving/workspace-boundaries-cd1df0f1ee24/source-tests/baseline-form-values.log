@@ -1,0 +1,155 @@
+✔ native field strings and LF pending evidence survive file roundtrips without normalization (4.688181ms)
+✖ project label refuses external line breaks that native form assignment would change (1.136529ms)
+✖ creative brief refuses external line breaks that native form assignment would change (0.27871ms)
+✖ project cap refuses external line breaks that native form assignment would change (0.242415ms)
+✖ checkpoint title refuses external line breaks that native form assignment would change (0.242184ms)
+✖ checkpoint amount refuses external line breaks that native form assignment would change (0.227352ms)
+✖ planned evidence refuses external line breaks that native form assignment would change (0.221763ms)
+✖ pending review evidence refuses CR and CRLF before a native textarea can rewrite it (0.456907ms)
+✖ saving incompatible in-memory fields refuses without altering the caller draft (0.384197ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 1
+ℹ fail 8
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 164.048239
+
+✖ failing tests:
+
+test at tests/workspace-form-values.test.mjs:47:3
+✖ project label refuses external line breaks that native form assignment would change (1.136529ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception (Error).
+      at TestContext.<anonymous> (file:///dev/shm/hamon-workspace-receiving-cd1df0f1ee24/baseline/tests/workspace-form-values.test.mjs:52:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/workspace-form-values.test.mjs:47:3
+✖ creative brief refuses external line breaks that native form assignment would change (0.27871ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception (Error).
+      at TestContext.<anonymous> (file:///dev/shm/hamon-workspace-receiving-cd1df0f1ee24/baseline/tests/workspace-form-values.test.mjs:52:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/workspace-form-values.test.mjs:47:3
+✖ project cap refuses external line breaks that native form assignment would change (0.242415ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception (Error).
+      at TestContext.<anonymous> (file:///dev/shm/hamon-workspace-receiving-cd1df0f1ee24/baseline/tests/workspace-form-values.test.mjs:52:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/workspace-form-values.test.mjs:47:3
+✖ checkpoint title refuses external line breaks that native form assignment would change (0.242184ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception (Error).
+      at TestContext.<anonymous> (file:///dev/shm/hamon-workspace-receiving-cd1df0f1ee24/baseline/tests/workspace-form-values.test.mjs:52:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/workspace-form-values.test.mjs:47:3
+✖ checkpoint amount refuses external line breaks that native form assignment would change (0.227352ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception (Error).
+      at TestContext.<anonymous> (file:///dev/shm/hamon-workspace-receiving-cd1df0f1ee24/baseline/tests/workspace-form-values.test.mjs:52:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/workspace-form-values.test.mjs:47:3
+✖ planned evidence refuses external line breaks that native form assignment would change (0.221763ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception (Error).
+      at TestContext.<anonymous> (file:///dev/shm/hamon-workspace-receiving-cd1df0f1ee24/baseline/tests/workspace-form-values.test.mjs:52:14)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/workspace-form-values.test.mjs:58:1
+✖ pending review evidence refuses CR and CRLF before a native textarea can rewrite it (0.456907ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception (Error).
+      at TestContext.<anonymous> (file:///dev/shm/hamon-workspace-receiving-cd1df0f1ee24/baseline/tests/workspace-form-values.test.mjs:63:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at tests/workspace-form-values.test.mjs:68:1
+✖ saving incompatible in-memory fields refuses without altering the caller draft (0.384197ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception (Error).
+      at TestContext.<anonymous> (file:///dev/shm/hamon-workspace-receiving-cd1df0f1ee24/baseline/tests/workspace-form-values.test.mjs:72:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }

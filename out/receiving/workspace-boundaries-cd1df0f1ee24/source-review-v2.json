@@ -1,0 +1,65 @@
+{
+  "schema": "scopesignal.workspace-boundary.source-review.v2",
+  "reviewer": "estate_source/cd1df0f1ee24",
+  "verdict": "accepted; no blocking source findings",
+  "source_base": "8a241c9ce409fa9b22ab0bbdc339e46fd4b38525",
+  "reviewed_files": [
+    {
+      "path": "README.md",
+      "bytes": 14508,
+      "sha256": "7f56f0a140ce0f1994ffd8abc68631198e74c81f6ff1a76fa9136d7cdadadd18",
+      "git_blob": "5b545fd2e5dfe89b1d5b42a5534bfe5286d3bb14"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "git_blob": "d9141b3e1ac74b33f996ec6d68756ece5c190162"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "bytes": 19111,
+      "sha256": "8b6f39b97a139ac63679b3b34b15342d695dbda613ae676873c1bbcc888e9f28",
+      "git_blob": "adc9bb3e53ffa72671a8f46e9b067b879ac3adff"
+    },
+    {
+      "path": "tests/workspace-form-values.test.mjs",
+      "bytes": 3257,
+      "sha256": "316f000073c2d659e629192ac3edc419771e19215487845b051c5df25d797685",
+      "git_blob": "961c7ff3c9a58ec1418aede8b0f50194cfcadbbc"
+    }
+  ],
+  "complete_frozen_v2_source_verified": 45,
+  "mismatches": [],
+  "prior_review": {
+    "file": "scope-workspace-source-review-v1.json",
+    "sha256": "f95b465dc2559f39838424ff9e933292803a664d6f542fdaffc793b14bf7a5f8",
+    "unchanged_qualified_production": [
+      "src/scope-workspace-record.mjs",
+      "src/scope-workspace.mjs"
+    ],
+    "unchanged_qualified_test": "tests/workspace-form-values.test.mjs",
+    "v1_browser_qualification_source_preserved": true
+  },
+  "only_v1_to_v2_change": {
+    "path": "README.md",
+    "prior_sha256": "f115f96ba670f434fb7567f8fc214cfc1ff7281323347198729cba0246fc8ab0",
+    "final_sha256": "7f56f0a140ce0f1994ffd8abc68631198e74c81f6ff1a76fa9136d7cdadadd18",
+    "review": "Documentation now explicitly limits refusal to editable field values containing CR or LF in single-line fields, and states that CRLF JSON formatting is accepted. This resolves the sole nonblocking wording note; runtime code and tests are byte-identical to v1."
+  },
+  "accepted_contracts": [
+    "Native editable strings survive assignment or are refused before preview; multiline LF, Unicode, unfinished values and existing bounds remain intact.",
+    "Chooser click establishes the request before selection; direct drops establish it at selection. Request identity and full current workspace values guard asynchronous success, delayed failure and explicit Apply.",
+    "Newer edits and selections invalidate prior requests without mutating current authored content. Raw evidence DOM values are included even without input notifications.",
+    "The broader version-1 schema, private reviewed-history replay, pending/accepted evidence distinction, lifecycle controls and explicit replacement remain unchanged."
+  ],
+  "verification_scope": {
+    "source_reads_and_hash_checks_only": true,
+    "new_tests_run": 0,
+    "source_mutations": 0,
+    "github_writes": 0,
+    "local_log_observed": "v1 candidate Node 116 passed, 0 failed, 0 skipped",
+    "separate_runtime_gate": "Root reports the same frozen three-case browser receiver and separate reviewed-history positive passing on v1; this reviewer did not execute them. All runtime files and tests remain identical in v2."
+  },
+  "publication_limit": "Published-head readback and actual parent composition remain the integrating lead's gate."
+}

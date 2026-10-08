@@ -1,0 +1,121 @@
+{
+  "name": "edit-before-file-choice-preserved",
+  "started_at": "2026-10-08T12:41:50.928Z",
+  "before": {
+    "draft": {
+      "label": "Current fictional draft before opening chooser",
+      "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+      "cap": "1200.00",
+      "checkpoints": [
+        {
+          "title": "First-run checklist",
+          "amount": "400.00",
+          "evidence": "A screen recording shows the checklist completion path and reset behavior."
+        },
+        {
+          "title": "Accessible billing setup",
+          "amount": "400.00",
+          "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+        },
+        {
+          "title": "Responsive handoff",
+          "amount": "400.00",
+          "evidence": "Desktop and mobile handoff files plus implementation notes."
+        }
+      ]
+    },
+    "preview": false,
+    "status": "",
+    "summary": "",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "changed_before_selection": {
+    "draft": {
+      "label": "NEWER fictional draft written while chooser outstanding 日本語 😀",
+      "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+      "cap": "1200.00",
+      "checkpoints": [
+        {
+          "title": "First-run checklist",
+          "amount": "400.00",
+          "evidence": "New current evidence\nMust remain after an older open intent"
+        },
+        {
+          "title": "Accessible billing setup",
+          "amount": "400.00",
+          "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+        },
+        {
+          "title": "Responsive handoff",
+          "amount": "400.00",
+          "evidence": "Desktop and mobile handoff files plus implementation notes."
+        }
+      ]
+    },
+    "preview": false,
+    "status": "Your workspace changed. Choose the saved file again when you are ready to replace it.",
+    "summary": "",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "after_selection": {
+    "draft": {
+      "label": "NEWER fictional draft written while chooser outstanding 日本語 😀",
+      "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+      "cap": "1200.00",
+      "checkpoints": [
+        {
+          "title": "First-run checklist",
+          "amount": "400.00",
+          "evidence": "New current evidence\nMust remain after an older open intent"
+        },
+        {
+          "title": "Accessible billing setup",
+          "amount": "400.00",
+          "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+        },
+        {
+          "title": "Responsive handoff",
+          "amount": "400.00",
+          "evidence": "Desktop and mobile handoff files plus implementation notes."
+        }
+      ]
+    },
+    "preview": false,
+    "status": "Your workspace changed. Choose the saved file again when you are ready to replace it.",
+    "summary": "",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "after_apply_attempt": {
+    "draft": {
+      "label": "NEWER fictional draft written while chooser outstanding 日本語 😀",
+      "brief": "Refresh the onboarding flow for a small-business invoicing app. Deliver an accessible first-run checklist, responsive billing setup, and a documented handoff.",
+      "cap": "1200.00",
+      "checkpoints": [
+        {
+          "title": "First-run checklist",
+          "amount": "400.00",
+          "evidence": "New current evidence\nMust remain after an older open intent"
+        },
+        {
+          "title": "Accessible billing setup",
+          "amount": "400.00",
+          "evidence": "Keyboard-only walkthrough and automated accessibility report for the billing setup."
+        },
+        {
+          "title": "Responsive handoff",
+          "amount": "400.00",
+          "evidence": "Desktop and mobile handoff files plus implementation notes."
+        }
+      ]
+    },
+    "preview": false,
+    "status": "Your workspace changed. Choose the saved file again when you are ready to replace it.",
+    "summary": "",
+    "review_visible": false,
+    "event_count": "0 events"
+  },
+  "passed": true
+}

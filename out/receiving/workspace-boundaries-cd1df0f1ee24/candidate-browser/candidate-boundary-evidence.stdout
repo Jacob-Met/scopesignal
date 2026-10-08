@@ -1,0 +1,4 @@
+{"name":"lf-unicode-download-roundtrip","passed":true}
+{"name":"external-lineendings-reject-or-preserve","passed":true}
+{"name":"edit-before-file-choice-preserved","passed":true}
+{"passed":true,"counts":{"passed":3,"failed":0},"fatal":null}

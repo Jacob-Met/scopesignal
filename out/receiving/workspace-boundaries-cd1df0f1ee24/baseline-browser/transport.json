@@ -1,0 +1,14 @@
+{
+  "source_archive": {
+    "bytes": 84030,
+    "sha256": "4b88b1cadf9cd9ce430d2233ec8ab1113cabfac9439f1f75bbd4edf6a07721fc"
+  },
+  "native_evidence_archive": {
+    "bytes": 372884,
+    "sha256": "2ecd378877d7324df015295547d4ffefd14057fde4637b15f3860d10f65be884"
+  },
+  "source_files": 44,
+  "source_and_probe_mismatches_before_and_after": [],
+  "native_device": "Mac.lan / 0e3d582f-e25b-44b2-8418-9639fc4e4e33",
+  "native_root": "/Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-8a"
+}

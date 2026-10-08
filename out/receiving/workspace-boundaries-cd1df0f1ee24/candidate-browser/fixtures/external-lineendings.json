@@ -1,0 +1,21 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "draft",
+  "draft": {
+    "label": "Project\nsecond\rpiece",
+    "brief": "one\r\ntwo\rthree\n",
+    "cap": "10\n0.00",
+    "checkpoints": [
+      {
+        "title": "First\r\ncheckpoint",
+        "amount": "4\r2.05",
+        "evidence": "one\r\ntwo\rthree"
+      }
+    ]
+  },
+  "events": [],
+  "evidenceDrafts": []
+}

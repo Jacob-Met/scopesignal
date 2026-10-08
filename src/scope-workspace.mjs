@@ -297,6 +297,26 @@ $('#scope-review-list').addEventListener('click', event => {
 let openRequest = 0;
 let readingWorkspace = false;
 let pendingWorkspace = null;
+let chooserWorkspace = null;
+
+function workspaceValue() {
+  return JSON.stringify({
+    draft: readDraft(),
+    review: review?.snapshot() ?? null,
+    evidenceDrafts: [...evidenceDrafts],
+    evidenceFields: [...document.querySelectorAll('[data-evidence]')]
+      .map(field => [field.dataset.evidence, field.value])
+  });
+}
+
+function currentOpen(request) {
+  if (request.id !== openRequest) return false;
+  if (request.value !== workspaceValue()) {
+    cancelOpen('Your workspace changed. Choose the saved file again before replacing it.');
+    return false;
+  }
+  return true;
+}
 
 function fileStatus(message, error = false) {
   const status = $('#scope-file-status');
@@ -316,7 +336,7 @@ function cancelOpen(message = '') {
 }
 
 function workspaceChanged() {
-  if (readingWorkspace || pendingWorkspace) {
+  if (readingWorkspace || pendingWorkspace || chooserWorkspace) {
     cancelOpen('Your workspace changed. Choose the saved file again when you are ready to replace it.');
   }
 }
@@ -344,25 +364,35 @@ $('#scope-save').addEventListener('click', () => {
   }
 });
 
+$('#scope-open').addEventListener('click', () => {
+  cancelOpen();
+  chooserWorkspace = { id: openRequest, value: workspaceValue() };
+});
+
 $('#scope-open').addEventListener('change', async event => {
   const file = event.currentTarget.files?.[0];
+  const chosen = chooserWorkspace;
+  chooserWorkspace = null;
+  if (file && chosen && !currentOpen(chosen)) return;
   cancelOpen();
   if (!file) { fileStatus('Opening canceled. Your current workspace is unchanged.'); return; }
-  const request = openRequest;
+  // Direct file drops have no chooser click. They still bind the read and
+  // preview to the complete current workspace at the selection boundary.
+  const request = { id: openRequest, value: workspaceValue() };
   readingWorkspace = true;
   $('#scope-open-cancel').hidden = false;
   fileStatus('Reading the saved workspace. Your current work remains in place.');
   try {
     if (file.size > MAX_WORKSPACE_BYTES) throw new Error('Choose a file no larger than 1 MiB.');
     const bytes = await file.arrayBuffer();
-    if (request !== openRequest) return;
+    if (!currentOpen(request)) return;
     if (bytes.byteLength > MAX_WORKSPACE_BYTES) throw new Error('Choose a file no larger than 1 MiB.');
     let contents;
     try { contents = new TextDecoder('utf-8', { fatal: true }).decode(bytes); }
     catch { throw new Error('The workspace file must contain valid UTF-8 text.'); }
     const admitted = decodeScopeWorkspace(contents);
-    if (request !== openRequest) return;
-    pendingWorkspace = admitted;
+    if (!currentOpen(request)) return;
+    pendingWorkspace = { admitted, request };
     readingWorkspace = false;
     const summary = admitted.summary;
     const name = summary.label.trim() || 'Untitled draft';
@@ -373,23 +403,25 @@ $('#scope-open').addEventListener('change', async event => {
     $('#scope-open-preview').hidden = false;
     fileStatus('File checked. Replace the current workspace to open it, or cancel to keep your work.');
   } catch (error) {
-    if (request !== openRequest) return;
+    if (!currentOpen(request)) return;
     cancelOpen();
     fileStatus('Could not open the workspace. ' + error.message + ' Your current work is unchanged.', true);
   }
 });
 
 $('#scope-open').addEventListener('cancel', () => {
+  chooserWorkspace = null;
   cancelOpen('Opening canceled. Your current workspace is unchanged.');
 });
 $('#scope-open-cancel').addEventListener('click', () => {
+  chooserWorkspace = null;
   cancelOpen('Opening canceled. Your current workspace is unchanged.');
   $('#scope-open').focus();
 });
 
 $('#scope-open-apply').addEventListener('click', () => {
-  if (!pendingWorkspace) return;
-  const next = pendingWorkspace;
+  if (!pendingWorkspace || !currentOpen(pendingWorkspace.request)) return;
+  const next = pendingWorkspace.admitted;
   cancelOpen();
   draft = structuredClone(next.draft);
   review = next.review;

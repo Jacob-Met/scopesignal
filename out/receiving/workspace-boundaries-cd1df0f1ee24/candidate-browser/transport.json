@@ -1,0 +1,15 @@
+{
+  "source_archive": {
+    "bytes": 86931,
+    "sha256": "d9e5fa758c5da490e4d4adfb5d123c76d1d9d9d5a9bfe20adfae69ac0af613f0"
+  },
+  "native_evidence_archive": {
+    "bytes": 528821,
+    "sha256": "27e474482579ed7272147f7b11ed6a0b5a44b3b36bbb3fa0f89df0767e646c92"
+  },
+  "source_files": 45,
+  "unchanged_inherited_source_files": 41,
+  "source_and_probe_mismatches_before_and_after": [],
+  "native_device": "Mac.lan / 0e3d582f-e25b-44b2-8418-9639fc4e4e33",
+  "native_root": "/Users/me/hamon-scopesignal-draft-receiving-cd1df0f1ee24/workspace-boundary-candidate-v1"
+}
