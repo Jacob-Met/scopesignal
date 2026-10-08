@@ -38,7 +38,7 @@ All four actual candidate screenshots were independently inspected, with no hori
 
 The separate [current-parent packet](current-parent-browser/README.md) receives the clean 45-file composition at `8e50105fdc1645720e64ca83738727473c9f6acf`. A bounded native phone-viewport check passes an actual unfinished draft download, reload, nonmutating preview and explicit replacement, followed by a fresh valid review with zero events, zero approvals and zero captured amount. The observed runtime source bodies match the pinned files, including PR15's current `app.mjs`; all 45 files remain unchanged.
 
-Its first bounded attempt passed the product actions but rejected a browser-generated same-origin `/favicon.ico` request under the receiver's broad request classification. That raw failure is retained. The corrected executed driver permits only the exact body-free same-origin favicon request and passes on unchanged product source. This receipt is distinct from the earlier 17-case suite and from later public deployment receiving.
+Its first bounded attempt passed the product actions but rejected a browser-generated same-origin `/favicon.ico` request under the receiver's broad request classification. That raw failure is retained. The corrected executed driver recognizes the exact body-free same-origin favicon as browser-generated while keeping it blocked, and passes on unchanged product source. This receipt is distinct from the earlier 17-case suite and from later public deployment receiving.
 
 ## Source tests and retained staging correction
 
