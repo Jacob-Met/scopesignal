@@ -1,0 +1,82 @@
+[
+  {
+    "path": "candidate/chrome.log",
+    "bytes": 4222,
+    "sha256": "d74555a6f52f01f32bf40753350a20ddbb16842c16287d457aeb20823e04bead"
+  },
+  {
+    "path": "candidate/downloads/removed-review/de31d59b-3730-4d11-83f8-5c02a93b427e",
+    "bytes": 4945,
+    "sha256": "1ce9be8e56b236e9d913a3e69f218ace8659910acbced9ebb1c5cc2e236f7292"
+  },
+  {
+    "path": "candidate/downloads/removed-workspace/d1d5cb8d-9184-49fa-9206-3399b1ffcc86",
+    "bytes": 585,
+    "sha256": "5cd617116cc2f1b15ac1ae97601cd8e7aa1a097a25bab28c9d51895ebe63e2db"
+  },
+  {
+    "path": "candidate/downloads/replacement-workspace/59363ab6-556a-4e86-bd3b-dbee8984c610",
+    "bytes": 726,
+    "sha256": "2e80a8ffa884141abe6c747bd208dfe0eb07b1c2b780ffc5e62d93f98fba4817"
+  },
+  {
+    "path": "candidate/manifest.json",
+    "bytes": 420,
+    "sha256": "ad280c9762392a84183952f7e5b31ab95fd66cd870cd1d718cf22e76d5b593ee"
+  },
+  {
+    "path": "candidate/receipt.json",
+    "bytes": 12333,
+    "sha256": "70106622b847da9f5d36fb0becca3f6d6c2af7dd68bcecc8b92853e9d1c264ab"
+  },
+  {
+    "path": "candidate/restored-phone.png",
+    "bytes": 23864,
+    "sha256": "59e6d2b0423dee67c257fc585dc990192d51387a242ac1e00d2869e660cbf430"
+  },
+  {
+    "path": "linux-preflight/failure.txt",
+    "bytes": 6384,
+    "sha256": "02b700bd8ae6311eb2d1bbb17e75153f64a8100923c9640d6a7e3fabc949f09c"
+  },
+  {
+    "path": "linux-preflight/receipt.json",
+    "bytes": 6759,
+    "sha256": "a04038ab57028342be29930475111daa75ce5747c1c057e66c0c072e69bbe914"
+  },
+  {
+    "path": "negative/chrome.log",
+    "bytes": 354,
+    "sha256": "98aa981a3eaf5f70dc4033ea497bb5455bff27284d87fa92b8b71702648c5225"
+  },
+  {
+    "path": "negative/manifest.json",
+    "bytes": 430,
+    "sha256": "d140284ba384b504ea3af386ed4b41a5f8b0be0ee21d88e6da79254320963f20"
+  },
+  {
+    "path": "negative/mutated-scope-draft-removal.mjs",
+    "bytes": 1387,
+    "sha256": "57fc2265791963577fa1c04894717f74bcd69da4052b810aba6913911a75ac90"
+  },
+  {
+    "path": "negative/receipt.json",
+    "bytes": 3956,
+    "sha256": "febb893f04ed9ec000ee30331b12594d9b8277a4c2dded48022afd0503baea1d"
+  },
+  {
+    "path": "packet-verification.json",
+    "bytes": 904,
+    "sha256": "52289efd8b1bc525e450c260792e4accef55138c1525d88acdb35aed66dbd9e9"
+  },
+  {
+    "path": "README.md",
+    "bytes": 6787,
+    "sha256": "d771a85ef29764622446096e4487543ae568d928c97d6ec9b8df24ba3a33f911"
+  },
+  {
+    "path": "source-pin.json",
+    "bytes": 2617,
+    "sha256": "c81db17f6415dc347aacbb07cbedb4844e04cc2ecfebb6f26ffe973986d0ff62"
+  }
+]

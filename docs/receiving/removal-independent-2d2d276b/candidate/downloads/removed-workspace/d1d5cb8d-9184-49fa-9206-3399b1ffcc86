@@ -1,0 +1,26 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "draft",
+  "draft": {
+    "label": "  Independent <scope> λ  ",
+    "brief": "Fictional receiver\nNo real payment or provider.",
+    "cap": "1000.00",
+    "checkpoints": [
+      {
+        "title": "Twin <literal>",
+        "amount": " 010.00 ",
+        "evidence": "FIRST proof\nretain it"
+      },
+      {
+        "title": "Final handoff",
+        "amount": "30.00",
+        "evidence": "LAST proof"
+      }
+    ]
+  },
+  "events": [],
+  "evidenceDrafts": []
+}

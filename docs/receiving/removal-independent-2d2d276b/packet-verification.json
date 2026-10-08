@@ -1,0 +1,21 @@
+{
+  "schema": "scopesignal.independent-packet-verification.v1",
+  "at": "2026-10-08T17:24:29.585Z",
+  "product_commit": "b2dccc7e6c47b3f6b5d6f49e1858725eb3a099ea",
+  "product_tree": "ec3853dcbe4ebe681d28068de36b0d9ea74d22d5",
+  "unchanged_product_leaves": 524,
+  "driver_sha256": "dabf88028ca9ba50b1dc9ea171607e766603d1719f47e68df2ee567712e6985a",
+  "candidate_groups": 9,
+  "candidate_served_files": 11,
+  "negative_failed_groups": 1,
+  "negative_changes_only_restoration_position": true,
+  "candidate_page_errors": 0,
+  "negative_page_errors": 0,
+  "native_downloads": 3,
+  "transferred_files": 13,
+  "transferred_bytes": 75604,
+  "all_transferred_hashes_verified": true,
+  "product_files_modified": false,
+  "visual_review": "Inspected 390 by 844 retained screenshot: restored second row literal fields and title focus; no obvious overlap within the captured region.",
+  "live_site_deployed": false
+}

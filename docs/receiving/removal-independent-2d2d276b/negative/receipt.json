@@ -1,0 +1,60 @@
+{
+  "schema": "scopesignal.independent-removal-receiving.v1",
+  "at": "2026-10-08T17:20:57.341Z",
+  "mode": "append-negative",
+  "sourceCommit": "b2dccc7e6c47b3f6b5d6f49e1858725eb3a099ea",
+  "sourceTree": "ec3853dcbe4ebe681d28068de36b0d9ea74d22d5",
+  "source": "C:\\Users\\minec\\hamon-ultra-2d2d276b-scope-independent\\source",
+  "node": "v24.21.0",
+  "browserVersion": {
+    "protocolVersion": "1.3",
+    "product": "Chrome/154.0.8037.98",
+    "revision": "@b859317bf11f6be47f9b7799ec690a0a42a1fb33",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+    "jsVersion": "15.4.80.20"
+  },
+  "driverHash": "dabf88028ca9ba50b1dc9ea171607e766603d1719f47e68df2ee567712e6985a",
+  "inputHashes": {
+    "scope.html": "e979410762e516cc22456a7288b24d92a59807578360eb8a899447eaa1f50225",
+    "src/scope-workspace.mjs": "ff4f51dddb15e132a0245de8c76ec76358807a7cef5783216e3f4a298b32c7bf",
+    "src/scope-draft-removal.mjs": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224"
+  },
+  "served": {
+    "scope.html": "e979410762e516cc22456a7288b24d92a59807578360eb8a899447eaa1f50225",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "src/scope-workspace.mjs": "ff4f51dddb15e132a0245de8c76ec76358807a7cef5783216e3f4a298b32c7bf",
+    "src/scope-draft-removal.mjs": "57fc2265791963577fa1c04894717f74bcd69da4052b810aba6913911a75ac90",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/scope-revision-draft.mjs": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+    "src/scope-plan.mjs": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+  },
+  "mutationHash": "57fc2265791963577fa1c04894717f74bcd69da4052b810aba6913911a75ac90",
+  "records": [
+    {
+      "name": "restore original middle row while preserving current edits",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n... Skipped lines\n\n  {\n    brief: 'Fictional receiver\\nNo real payment or provider.',\n    cap: '2000.00',\n    checkpoints: [\n      {\n...\n      {\n+       amount: '30.00',\n+       evidence: '\\nEdited surviving last evidence\\n',\n+       title: 'Final handoff'\n+     },\n+     {\n        amount: '020.50',\n        evidence: '\\nMIDDLE_REMOVED_PROOF\\n λ 😀 &  \\n',\n        title: 'Twin <literal>'\n      },\n-     {\n-       amount: '30.00',\n-       evidence: '\\nEdited surviving last evidence\\n',\n-       title: 'Final handoff'\n-     }\n    ],\n    label: 'Changed scope label'\n  }\n\n    at file:///C:/Users/minec/hamon-ultra-2d2d276b-scope-independent/receiver.mjs:242:12\n    at async scenario (file:///C:/Users/minec/hamon-ultra-2d2d276b-scope-independent/receiver.mjs:208:25)\n    at async file:///C:/Users/minec/hamon-ultra-2d2d276b-scope-independent/receiver.mjs:229:3"
+    }
+  ],
+  "downloads": [],
+  "blocked": [
+    {
+      "name": "restore original middle row while preserving current edits",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    }
+  ],
+  "pageErrors": [],
+  "harnessError": null,
+  "allPassed": false,
+  "bounds": [
+    "fresh native profile",
+    "no sandbox-disabling flags",
+    "external page requests blocked",
+    "authored fictional fields only",
+    "no product source file edits"
+  ]
+}
