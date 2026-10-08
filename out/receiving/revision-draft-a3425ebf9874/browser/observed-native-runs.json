@@ -1,0 +1,61 @@
+{
+  "kind": "Record of previously observed native process outputs; not reconstructed native receipt files",
+  "fictional_inputs_only": true,
+  "provider_calls": false,
+  "source_capture": "31fd385d584f9ab611284768fa0f29a62966bf4e",
+  "baseline": {
+    "pid": 3257067,
+    "program_exit": 0,
+    "groups_passed": 2,
+    "groups_failed": 0,
+    "downloads": 1,
+    "native_receipt": "browser-baseline/receipt.json"
+  },
+  "initial_candidate": {
+    "pid": 3267818,
+    "program_exit": 1,
+    "groups_passed": 2,
+    "groups_failed": 1,
+    "downloads": 3,
+    "failure": "Existing file chooser preview timed out after selecting the /srv evidence copy. Product source was unchanged.",
+    "native_receipt": "browser-candidate/receipt.json"
+  },
+  "file_boundary_probe": {
+    "pid": 3309458,
+    "program_exit": 0,
+    "input_bytes": 635,
+    "input_sha256": "277118bbfa781cecb7ebcde4ec3ae430a6c9eb4881d783548b3edf253a09216a",
+    "srv_path_result": "Could not open the workspace. A requested file or directory could not be found at the time an operation was processed. Your current work is unchanged.",
+    "browser_owned_path_result": "File checked. Replace the current workspace to open it, or cancel to keep your work.",
+    "preview": "Atelier Δ <original> · Editable draft · 2 checkpoints · 0 recorded approvals · 0 events.",
+    "native_receipt": "browser-file-boundary/receipt.json"
+  },
+  "corrected_candidate": {
+    "pid": 3329439,
+    "program_exit": 0,
+    "groups_passed": 7,
+    "groups_failed": 0,
+    "downloads": 9,
+    "harness_commit": "433739686010e003d56473e07c7b237379c9e58c",
+    "harness_sha256": "a8da170e65e87904eb58dde9567ba7b15fce8c0e6202e4b0772c8a7325a9a43a",
+    "native_receipt": "browser-candidate-corrected/receipt.json"
+  },
+  "runtime": {
+    "node_browser_runner": "22.22.1",
+    "browser": "Chromium 153.0.8010.47",
+    "playwright": "1.55"
+  },
+  "native_root": "/srv/hamon-estate/receivers/estate-a3425ebf9874-scopesignal-revision-draft",
+  "independent_native_packet": {
+    "path": "independent-root-review",
+    "review_sha256": "73326eef3413f9428d41575e94579ddb1dead171ce9d8b9f4c2e79078002e298",
+    "manifest_sha256": "5e2c9a1e0083f7248e8a75793d0237a9caf794d210314a57ed0d369f248c0aee",
+    "reported_by": "/root; previously verified successful native seal",
+    "local_files": "independent-local contains the actual local Node24 run and driver, separately attributed from native output bytes"
+  },
+  "retrieval_pending": [
+    "Exact original native browser receipt files, logs, downloaded JSON and screenshots",
+    "Exact independent native six-file packet"
+  ],
+  "qualification_disposition": "Product and source receiving completed before the outage. Reviewer /root confirmed the prior native seal and acceptance. Offline artifact reattachment is pending custody work, not a requirement to repeat the successful execution gates. Current-public-head source parity, independent COMMENT and ordinary CI gate integration."
+}

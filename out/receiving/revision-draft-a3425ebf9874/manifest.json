@@ -1,0 +1,87 @@
+{
+  "schema": "hamon.available-scopesignal-revision-evidence.v1",
+  "public_source": "9863a0e971da312d2328ffdbb14c5d0cf01da74f",
+  "native_original_artifact_attachment": "pending; previously completed qualification retained",
+  "files": [
+    {
+      "path": "source/author-freeze.json",
+      "bytes": 1787,
+      "sha256": "030394e665f18301243490e10b36087cfdb07f9ef3ea073eb6958f2306ff2fd9"
+    },
+    {
+      "path": "source/base-source-manifest.json",
+      "bytes": 11230,
+      "sha256": "e27fa69aa4b175158de4aa827a1007c0f16d07199b3bb7667e7970b8cea4685f"
+    },
+    {
+      "path": "source/public-source-prepared.json",
+      "bytes": 1938,
+      "sha256": "8301cba47f1a06a3291e31d6fcd57341b9d49f0da90f2ef297bd277b3b0b3bdd"
+    },
+    {
+      "path": "node/baseline-node24.log",
+      "bytes": 12127,
+      "sha256": "41e8b10fb0073899e2336ff2024b5e8ac79571beed741fc9ebd3f33111125f95"
+    },
+    {
+      "path": "node/candidate-node24.log",
+      "bytes": 13816,
+      "sha256": "6ac92ac3043d0c66c5d1b84d42d48cae022cd5d8458606e0a6b7d63cc0c990c4"
+    },
+    {
+      "path": "browser/harness-correction.json",
+      "bytes": 487,
+      "sha256": "0d6dc6071f6994ae05e8d9618380cc1b99901e3d24e913ebb1d725bf39eefee5"
+    },
+    {
+      "path": "browser/initial-source-freeze.json",
+      "bytes": 602,
+      "sha256": "16490f0312c6349d05cde6dc3ca7907478fb883b47d7c7efd4019069297886ad"
+    },
+    {
+      "path": "browser/initial-receipt-tool-readback.json",
+      "bytes": 2856,
+      "sha256": "b656faa1cba121f80f94ca8d3aae80ad518a7019874e1cfc0b000263e4893f02"
+    },
+    {
+      "path": "source/native-custody-tool-readback.json",
+      "bytes": 1066,
+      "sha256": "6f3717dac5e3093fc75bc022139417d6272585d820ce9636127325f9681724ad"
+    },
+    {
+      "path": "native-readback-errors.json",
+      "bytes": 608,
+      "sha256": "1ef0c9df3b56bd9059415ed42bb3b0aacea3e2176cdd11548b23f2875f4c4a9a"
+    },
+    {
+      "path": "independent-local/independent-lifecycle.mjs",
+      "bytes": 7439,
+      "sha256": "52eb779b0a2c3cc31f79a755383da455fe185d12119a43909a6776d11c68053b"
+    },
+    {
+      "path": "independent-local/local-report.json",
+      "bytes": 1930,
+      "sha256": "a0bb984bbed84634086cc6182c0fb2e11e1c76f4134c222b749f22c764f1c0b6"
+    },
+    {
+      "path": "browser/initial-harness.mjs",
+      "bytes": 17719,
+      "sha256": "3a9f2141ac53788bbfbaf9f549b74e8a36d903b058629d2fab01837e75288120"
+    },
+    {
+      "path": "browser/observed-native-runs.json",
+      "bytes": 2972,
+      "sha256": "d86296fe7d7f2ff8eaf8bfec18642dfb216dc398f44cd9f2eb4e0cec371a8f43"
+    },
+    {
+      "path": "ci/source-head-job-excerpt.txt",
+      "bytes": 1114,
+      "sha256": "dece60030ed583a1ed1058e1a9b096d4fc1385f3dbfce05fff7612737d046039"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4388,
+      "sha256": "a16179a03f98979923fc03638a1e7caea01f5bac21b0be9a981684d054f402f8"
+    }
+  ]
+}

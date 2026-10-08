@@ -1,0 +1,8 @@
+{
+  "head": "433739686010e003d56473e07c7b237379c9e58c",
+  "bytes": 895,
+  "sha256": "250788b3351742e4284dcc79cc57a89aab2449a98fa54398e8a52661ba75782d",
+  "harness_sha256": "a8da170e65e87904eb58dde9567ba7b15fce8c0e6202e4b0772c8a7325a9a43a",
+  "production_unchanged": true,
+  "correction": "Only receiver path: use actual browser download.path() byte-verified against preserved native evidence copy; Snap cannot open /srv evidence path. First run and two-path boundary probe preserved."
+}

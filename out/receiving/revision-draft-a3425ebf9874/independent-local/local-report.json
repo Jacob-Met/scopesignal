@@ -1,0 +1,63 @@
+{
+  "schema": "hamon.scopesignal.independent-revision-lifecycle.v1",
+  "node": "v24.19.0",
+  "source_root": "/dev/shm/hamon-a3425ebf9874-github-estate/scopesignal-revision-draft/source",
+  "groups": [
+    {
+      "name": "mixed review states derive an admitted original-terms draft",
+      "assertions": 19,
+      "result": "pass"
+    },
+    {
+      "name": "reopened revision requires new decisions and can change independently",
+      "assertions": 13,
+      "result": "pass"
+    },
+    {
+      "name": "unapproved and inconsistent inputs cannot launder a review into a revision",
+      "assertions": 7,
+      "result": "pass"
+    }
+  ],
+  "assertions": 39,
+  "source_pins": [
+    {
+      "path": "src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "bytes": 22821,
+      "sha256": "cf07a157d84b206eb5664455fc654f280deb51a2d991acde5b0d198157736fa1"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    }
+  ],
+  "original_states": [
+    "unknown",
+    "captured",
+    "not_started",
+    "not_started"
+  ],
+  "original_events": 10,
+  "original_workspace_sha256": "1c117bc07cbd0236d833a8e0600b2b2b227b7dbdee78ca357f27c522405d37a0",
+  "verdict": "ACCEPT_DIRECT_LIFECYCLE",
+  "limits": [
+    "Direct source consumer only; browser download/reopen receiving is separately attributed.",
+    "All payment events are existing fictional local fixtures; no provider call."
+  ]
+}

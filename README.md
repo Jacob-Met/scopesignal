@@ -173,6 +173,27 @@ receiver makes actual authoring downloads, opens both files through native file
 inputs, checks divergent and invalid files, exercises competing reads and
 keyboard pairing, and records desktop/phone screenshots plus source hashes.
 
+## Revise a scope after approval
+
+Once a checkpoint is approved, **Download revision draft** saves
+`scopesignal-revision-draft-v1.json`. It is an ordinary version-1 editable
+workspace containing the original project name, brief, cap and ordered
+checkpoint fields exactly as entered. Accepted evidence, pending review notes,
+approvals and simulated payment history stay with the original workspace;
+the revision starts with no events or recorded approvals.
+
+Open the copied JSON through **Open saved workspace**, inspect its draft
+preview and explicitly replace the current workspace when ready. Open it in a
+separate authoring tab to keep both versions visible. The copy must pass the
+normal scope review and receive new explicit approvals before simulation.
+Downloading the revision leaves the active workspace and any already prepared
+open preview intact. A refused preparation can be retried.
+
+The command is unavailable before the first approval, when **Edit draft** and
+the ordinary workspace download already preserve editable work. The file is
+an unsigned fictional draft, with no assertion that the old approval or
+simulated payment applies to its revised terms.
+
 ## Download an authored scope review
 
 In the authored workspace, **Download scope review** saves

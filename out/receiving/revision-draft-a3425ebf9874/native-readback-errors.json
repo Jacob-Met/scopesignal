@@ -1,0 +1,23 @@
+{
+  "previous": {
+    "status": "fulfilled",
+    "value": {
+      "content": [
+        {
+          "type": "text",
+          "text": "tool call error: tool call failed for `codex_apps/remote_desktop_commander.start_process`\n\nCaused by:\n    Mcp error: -32603: MCP request timed out"
+        }
+      ],
+      "isError": true
+    }
+  },
+  "newer": {
+    "content": [
+      {
+        "type": "text",
+        "text": "tool call error: tool call failed for `codex_apps/remote_desktop_commander.start_process`\n\nCaused by:\n    Mcp error: -32603: MCP request timed out"
+      }
+    ],
+    "isError": true
+  }
+}

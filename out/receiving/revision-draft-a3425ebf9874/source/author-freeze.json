@@ -1,0 +1,51 @@
+{
+  "actual_public_parent": "bab391c7c6fec1193e221997e4d66d89bd914cfd",
+  "browser_receiving": "pending",
+  "capture_commit": "31fd385d584f9ab611284768fa0f29a62966bf4e",
+  "capture_tree": "c00c3d739867c03d3e888670be6cafd9e2ed6c11",
+  "files": [
+    {
+      "bytes": 18750,
+      "git_blob": "2952d29179fbf20ea6bbefe03dad2f734b57ed52",
+      "path": "README.md",
+      "sha256": "53b9311a7c224d3fa09299ae6340f1be8c2262e8788d7e958a331e07633d2d29"
+    },
+    {
+      "bytes": 8561,
+      "git_blob": "90d4dd2cbc11bba632e38b97dfa3ee6eabf77426",
+      "path": "scope.html",
+      "sha256": "07c109530240623979889d9c554858b82661d77f84856161dcd203575069f160"
+    },
+    {
+      "bytes": 22821,
+      "git_blob": "ad0753de8b0aecb37a5b15915f262298635d85e5",
+      "path": "src/scope-workspace.mjs",
+      "sha256": "cf07a157d84b206eb5664455fc654f280deb51a2d991acde5b0d198157736fa1"
+    },
+    {
+      "bytes": 667,
+      "git_blob": "e94e190710a7902b816184333bb40ad2ed90bcc0",
+      "path": "src/scope-revision-draft.mjs",
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e"
+    },
+    {
+      "bytes": 8867,
+      "git_blob": "03219dd86a781a7bd8085252533e04b1b9281919",
+      "path": "tests/scope-revision-draft.test.mjs",
+      "sha256": "4cf167dcb036a2d1112c7e989eb563c36cc495bd9d41dc2bd453174443711614"
+    }
+  ],
+  "full_suite_exit": 0,
+  "full_suite_log_sha256": "6ac92ac3043d0c66c5d1b84d42d48cae022cd5d8458606e0a6b7d63cc0c990c4",
+  "full_suite_summary": [
+    "\u2139 tests 139",
+    "\u2139 pass 139",
+    "\u2139 fail 0",
+    "\u2139 cancelled 0",
+    "\u2139 skipped 0",
+    "\u2139 duration_ms 696.791013"
+  ],
+  "node_version": "v24.19.0",
+  "scope_issue": 26,
+  "source": "/dev/shm/hamon-a3425ebf9874-github-estate/scopesignal-revision-draft/source"
+}
