@@ -1,0 +1,34 @@
+diff --git a/app.mjs b/app.mjs
+index 919c4da..18a9711 100644
+--- a/app.mjs
++++ b/app.mjs
+@@ -3,2 +3,3 @@ import { roles } from './src/agents.mjs';
+ import { capturePresentation } from './src/payment-status.mjs';
++import { FIXTURE_RECORD_FILENAME, serializeFixtureRecord } from './src/fixture-record.mjs';
+ 
+@@ -25,2 +26,3 @@ function render() {
+   $('#ledger-count').textContent = `${ledger.events.length} events`;
++  $('#export-status').textContent = '';
+ }
+@@ -42,2 +44,21 @@ $('#add-checkpoint').addEventListener('click', () => alert('This fixture keeps t
+ $('#replay').addEventListener('click', () => { window.location.reload(); });
++$('#export-record').addEventListener('click', () => {
++  let url, link;
++  try {
++    const json = serializeFixtureRecord(ledger.events);
++    url = URL.createObjectURL(new Blob([json], { type: 'application/json;charset=utf-8' }));
++    link = document.createElement('a');
++    link.href = url;
++    link.download = FIXTURE_RECORD_FILENAME;
++    link.hidden = true;
++    document.body.append(link);
++    link.click();
++    $('#export-status').textContent = 'Fixture record prepared for download.';
++  } catch {
++    $('#export-status').textContent = 'Could not prepare the fixture record. Your current review is unchanged; try again.';
++  } finally {
++    link?.remove();
++    if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
++  }
++});
+ render();

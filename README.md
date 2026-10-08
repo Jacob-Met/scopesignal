@@ -19,6 +19,14 @@ The capture callout and recovery reviewer describe the current reduced ledger. A
 
 Optional browser receiving checks run with `node scripts/check-browser.mjs`. They require an existing Playwright and Chromium installation; `SCOPESIGNAL_PLAYWRIGHT` may point to its entry module and `SCOPESIGNAL_CHROME` to its browser executable. The command serves this source on an ephemeral loopback port, launches fresh desktop and phone contexts, blocks external requests and writes a receipt under `out/browser-receiving/`. The existing Google Fonts stylesheet attempts are recorded and blocked, so captures use fallback fonts. `SCOPESIGNAL_CHECK_SCOPE=combined-drafts` additionally checks the separate draft-preservation and webhook-label PRs when those changes have been incorporated into the tested source.
 
+## Save a reviewed fixture record
+
+Choose **Download fixture record** above the event ledger to save a versioned JSON snapshot. The file includes this fictional fixture's checkpoint definitions, recorded approvals, exact accepted evidence, current reduced capture outcomes and event history. It is explicitly labeled synthetic fixture data and is not a payment receipt or evidence of a real transaction.
+
+Accepted evidence comes from its `checkpoint.approved` event. Text still in an unapproved textarea, or an unrecorded edit to an already-approved field, is not an approval and is not included. Downloading does not change the ledger or save anything in browser storage. Keep the file if you want the recorded review after a page reload; this slice does not import it or restore a review from it.
+
+The file uses schema `scopesignal.fixture-record`, version `1`, and the fixed name `scopesignal-fixture-record-v1.json`. The optional native browser harness can exercise actual downloads with `SCOPESIGNAL_CHECK_SCOPE=fixture-record node scripts/check-browser.mjs`, using the installed browser options described above.
+
 ## Payment safety model
 
 - A milestone cannot create an order until a human explicitly approves it.

@@ -1,0 +1,34 @@
+
+> scopesignal@0.1.0 test
+> node --test
+
+✔ download has a fixed safe filename and explicit fixture schema and provenance (1.242625ms)
+✔ export records the actual replay events and reduced counted outcome (0.888375ms)
+✔ accepted multiline and literal evidence comes from the exact approval event (0.204ms)
+✔ unapproved checkpoints have no approval evidence and no authored draft field (0.975417ms)
+✔ every capture prefix exports the current outcome without advancing or inventing events (0.3265ms)
+✔ repeated exports are deterministic and detached from the live in-memory ledger (0.188167ms)
+✔ an empty fixture exports no approval and never represents a successful payment (0.076833ms)
+✔ fixture deterministically replays lost response, duplicate webhook, and one reconcile (1.833875ms)
+✔ order and capture require prior explicit human approval and order (0.23925ms)
+✔ lost response cannot be blindly captured again; reconcile is one-time (0.1025ms)
+✔ same webhook event ID is idempotent and cannot double count (1.270667ms)
+✔ reducer never counts duplicate webhook in fixture stream (0.313209ms)
+✔ role previews are explicit local rules and never claim AI output (223.970833ms)
+✔ Workers AI adapter fails closed without binding and has no paid fallback (1.8635ms)
+✔ schema validation rejects malformed model output (0.469667ms)
+✔ every shipped replay prefix presents its current reduced capture state (1.185084ms)
+✔ ordinary webhook capture does not invent a reconciliation (0.125083ms)
+✔ missing and unrecognized states do not become captured or safe-to-retry labels (0.067416ms)
+✔ a reconciled fixture no longer asks the reviewer to keep its capture unknown (3.071042ms)
+✔ a lost response and both webhook receipts retain current unknown guidance until reconciliation (0.160584ms)
+✔ another unresolved checkpoint still takes priority over an earlier reconciled capture (0.656291ms)
+✔ pending and never-requested captures remain distinct from resolved captures (0.291292ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 364.578708

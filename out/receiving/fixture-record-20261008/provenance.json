@@ -1,0 +1,102 @@
+{
+  "repository": "Jacob-Met/scopesignal",
+  "cohort": "81ba1ed0179c/estate_integration",
+  "baseCommit": "33f021aaacd6d7ed68c508d92901e7442d99586c",
+  "baseTree": "4b7b68a48acb7bd83665f7e97239d68c018f61ed",
+  "source": [
+    {
+      "path": "README.md",
+      "bytes": 5663,
+      "sha256": "3b431832f59ca6893b70633d4bb242994bb1e0cce5896e38c818b3f52cd6b014",
+      "gitBlob": "f3b35159283238f4bd7699379402fffc7b698ad6"
+    },
+    {
+      "path": "app.mjs",
+      "bytes": 4721,
+      "sha256": "3d5e42368d08296c94a87bb3c0bafd9d67c931a48c5971bad59e63349db2d0b1",
+      "gitBlob": "18a9711a629b33d21c5853fdc8b4c5051d6faa65"
+    },
+    {
+      "path": "index.html",
+      "bytes": 6650,
+      "sha256": "9e9f56fae00f663e0ba498eedbd7586985fd6740291612ea65a1a62b46a30ed5",
+      "gitBlob": "956dde7b384eb23db4bbc8978d19852434599d73"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "gitBlob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    {
+      "path": "src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "gitBlob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8"
+    },
+    {
+      "path": "tests/fixture-record.test.mjs",
+      "bytes": 4603,
+      "sha256": "c11e29923f85e05122d8d6e17783438d94547a716c6b3004d389b493de2ff238",
+      "gitBlob": "9bfd274a3d8eea072a194dad9ed58fb7ecee056c"
+    },
+    {
+      "path": "scripts/check-browser.mjs",
+      "bytes": 14977,
+      "sha256": "1dd3cd5752d910287ca6fad092baa79731e965ff1a1d9dd4ad7854723c607f7d",
+      "gitBlob": "b91751539e244718ff22d688ff2fec4d1622e18f"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "out/receiving/fixture-record-20261008/README.md",
+      "bytes": 4659,
+      "sha256": "dcb7d3ff30a31d6a7f277fb530d0473f050c0fe3ad72c2dd0c3e8fc1201e5d93",
+      "gitBlob": "ce8090920e43e6e63a2dbe30ce80f72d1bea57ad"
+    },
+    {
+      "path": "out/receiving/fixture-record-20261008/browser-final.json",
+      "bytes": 4990,
+      "sha256": "936fa7a54cb7cbef68c12a911c35a58aefa85d95c3e761202a8de626b07c3baa",
+      "gitBlob": "5afab6fd62932a4c68931dddb7ea6cc41064a741"
+    },
+    {
+      "path": "out/receiving/fixture-record-20261008/browser-initial.json",
+      "bytes": 4378,
+      "sha256": "6e3358f1445720da99c6f2427d14b44993235ee815cad2bbabf46a5863d19095",
+      "gitBlob": "da7302fe6267ad17e606b61e33e0709d7a4e9abd"
+    },
+    {
+      "path": "out/receiving/fixture-record-20261008/downloaded-fixture-record.json",
+      "bytes": 3674,
+      "sha256": "ab1ec74d1bfcb3308bfc2835df3e8dae21df1d12ac269b32d9fda1f269f68ba1",
+      "gitBlob": "e32343170cd07d5e18505d2a5f29e2f6e8639a95"
+    },
+    {
+      "path": "out/receiving/fixture-record-20261008/export-app.patch",
+      "bytes": 1395,
+      "sha256": "dd968750a52610991a1df6138469227608b2cd0a4d64da9888c0191fc64db4d8",
+      "gitBlob": "741094775f42fdb6399e46bff891e82097aef938"
+    },
+    {
+      "path": "out/receiving/fixture-record-20261008/node-combined.log",
+      "bytes": 2820,
+      "sha256": "f5b79ae3447192183979e4059ade9b0ed958abfb3bc8feecb18904fb59ca29fd",
+      "gitBlob": "f6ab5fd2ea6e8c48d962c8528ddde778834f123b"
+    },
+    {
+      "path": "out/receiving/fixture-record-20261008/node-linux.log",
+      "bytes": 2243,
+      "sha256": "3597c05c1ee2e1247e52527ae238fd09c19d435aeaf4023a39e591d794348a4c",
+      "gitBlob": "3a0379264b3cd423f82f5888d0d47650a6e59fa6"
+    },
+    {
+      "path": "out/receiving/fixture-record-20261008/node-macos.log",
+      "bytes": 2136,
+      "sha256": "6ca202a41fc3126f27b9f3744d8b21ba06081a4823c39c29fe2871d333c632f0",
+      "gitBlob": "cfcd92874815e95a86b7a49a889ce027ee7a7d50"
+    }
+  ],
+  "excludesSelf": true,
+  "publication": "pending shared GitHub secondary content-creation rate-limit cooldown"
+}
