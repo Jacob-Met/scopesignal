@@ -1,0 +1,22 @@
+{
+  "schema": "scopesignal.duplicate-checkpoint.independent-expectations/1",
+  "authoredBy": "ae0a1ea0b247/root",
+  "baselineCommit": "bab391c7c6fec1193e221997e4d66d89bd914cfd",
+  "baselineController": "f57d31cf8a4e6a9a7ddc140c5c06935fe3ef5004",
+  "frozenBeforeCandidateDisclosure": true,
+  "consumer": "Actual Chromium loads the native modular scope.html and unchanged workspace codec/review model.",
+  "cases": [
+    "Baseline: native draft inputs and real workspace download retain raw values; row action is absent, without claiming an existing action regressed.",
+    "Copy at first, middle and last positions inserts exactly one row immediately after the selected row, with exact current raw title/amount/evidence and all other draft fields preserved. Editing/moving/removing later leaves the independent copy values and order correct.",
+    "Invalid, empty and differently formatted raw amounts remain unnormalized through copy and real workspace download. Existing budget/review validation remains authoritative; an over-cap copy cannot silently reach review.",
+    "Capacity boundary at twelve rows prevents further copies and addition, then allows copying after removing a row; new rows have unique label/control associations and focus moves to copied deliverable.",
+    "A genuine saved workspace preview and a delayed already-completed native arrayBuffer read are invalidated by duplication. Explicitly undoing the visible duplicate through removal still cannot revive the old pending read.",
+    "Current edited review evidence returns through Edit draft, is copied exactly, receives fresh positional native review IDs, and produces no approval or simulation event until an explicit native approval action. After approval, editing/duplication is unavailable.",
+    "Phone viewport: duplication and keyboard activation keep inserted title focused, controls remain readable and inside viewport with no horizontal overflow."
+  ],
+  "limits": [
+    "No app state injection; controls are exercised through DOM inputs and clicks/key presses.",
+    "Only delivery of completed native File.arrayBuffer is held for the declared stale-read case.",
+    "No new account, provider, real payment, hosted-browser or general accessibility claim."
+  ]
+}

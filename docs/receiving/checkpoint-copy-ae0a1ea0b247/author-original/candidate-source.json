@@ -1,0 +1,33 @@
+{
+  "localHead": "d48ae6bc1a607873966839b3ba9ce8b1c49ccea1",
+  "localTree": "60576973e928a88ac4f11c207ba4c668eb500d41",
+  "localParent": "bd2799fce246186dde64f5ccb66387771282563a",
+  "changes": [
+    {
+      "path": "src/scope-workspace.mjs",
+      "bytes": 22842,
+      "git_blob": "ab6d87dae1ba7cbef2d3f8e6c7ef5845307fb7a2",
+      "sha256": "b7a147567198fb8b397d2abc65918c8a2fe3ff87bff5d4533917176f84551244"
+    },
+    {
+      "path": "scope.html",
+      "bytes": 8169,
+      "git_blob": "f94a38991065dd7322e91f7c848d51a023947408",
+      "sha256": "0dc84e61c6711a6747352831fc4188921ef2c5060df4b96da74e0d2bee827428"
+    },
+    {
+      "path": "README.md",
+      "bytes": 17821,
+      "git_blob": "1984618e51853d447f5fd3811953dc447fc028f3",
+      "sha256": "9665e277591d1ee8379a58890c07b6384603b1f5be11ed5a1c558b9dd24a1dda"
+    },
+    {
+      "path": "scripts/check-scope-checkpoint-copy.mjs",
+      "bytes": 14777,
+      "git_blob": "91f89fd8626c9d97db32e8b1842439a6592f634c",
+      "sha256": "62805c72491d26400b9a65b37ec3126bbb5ce20a2d0fa2cb582a803fd928e013"
+    }
+  ],
+  "unchangedInputs": 40,
+  "whitespaceReturncode": 0
+}

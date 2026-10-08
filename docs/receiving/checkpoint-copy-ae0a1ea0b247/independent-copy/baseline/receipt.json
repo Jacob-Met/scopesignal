@@ -1,0 +1,156 @@
+{
+  "schema": "scopesignal.duplicate-checkpoint.independent-browser/1",
+  "mode": "baseline",
+  "startedAt": "2026-10-08T15:23:14.300Z",
+  "result": "FAIL",
+  "source": "/dev/ae0a1ea0b247-scope-copy-independent/evidence/baseline-source",
+  "pinsBefore": {
+    "src/scope-workspace.mjs": {
+      "bytes": 21759,
+      "sha256": "1d3145f2b6c5052927f1050189432cfa55035a863fda20ae64e7347dc965afd3",
+      "gitBlob": "f57d31cf8a4e6a9a7ddc140c5c06935fe3ef5004"
+    },
+    "scope.html": {
+      "bytes": 8045,
+      "sha256": "f7333f942369ff2f2f77a96796489291146cf62fe08d886fda1d35d0f4f99da6",
+      "gitBlob": "ad9e52d2061d4e5ea8e5535fd8b949e2b48ae1f7"
+    },
+    "src/scope-plan.mjs": {
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "gitBlob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    "src/payment-status.mjs": {
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "gitBlob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    "src/scope-review-export.mjs": {
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "gitBlob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad"
+    },
+    "src/scope-workspace-record.mjs": {
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "gitBlob": "d9141b3e1ac74b33f996ec6d68756ece5c190162"
+    },
+    "src/ledger.mjs": {
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "gitBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    },
+    "src/fixture-record.mjs": {
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "gitBlob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8"
+    },
+    "styles.css": {
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "gitBlob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    "scope-workspace.css": {
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "gitBlob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded"
+    }
+  },
+  "driver": {
+    "bytes": 17963,
+    "sha256": "072acd06f9d6ece7f0e8dad1ff74f1b9713c69531508a1f743244253b558de77",
+    "gitBlob": "80573f0a898a996c0d865c39284cffe33c4010db"
+  },
+  "cases": [
+    {
+      "name": "Native raw draft and genuine download control, with missing duplication affordance",
+      "result": "PASS",
+      "durationMs": 2518,
+      "evidence": {
+        "baselineMissingCapability": true,
+        "existingInputsAndDownloadPass": true,
+        "rows": 3,
+        "nativeWorkspace": {
+          "bytes": 782,
+          "sha256": "705efe47c97e0251aa672e4c5d0a0881e8522b2746e0eb2fbe8b7ec772d46dc4",
+          "gitBlob": "5c37d2cd105873423f3e19f13482f8dbf84839c3"
+        }
+      }
+    }
+  ],
+  "downloads": [
+    {
+      "path": "downloads/01-baseline-raw.json",
+      "nativeFilename": "scopesignal-workspace-v1.json",
+      "bytes": 782,
+      "sha256": "705efe47c97e0251aa672e4c5d0a0881e8522b2746e0eb2fbe8b7ec772d46dc4",
+      "gitBlob": "5c37d2cd105873423f3e19f13482f8dbf84839c3"
+    }
+  ],
+  "pageErrors": [],
+  "externalRequests": [
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+  ],
+  "limits": [
+    "Actual local Chromium and native modular app; no hosted deployment or real payment action.",
+    "Only delivery of a completed native File.arrayBuffer result is held for one declared case.",
+    "All form state is entered through browser inputs; no application or model state is injected.",
+    "Receiving is bounded to checkpoint duplication and the exercised editor, file and review transitions."
+  ],
+  "chromium": "153.0.8010.0",
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap'\n+ ]\n- []\n\n    at /dev/ae0a1ea0b247-scope-copy-independent/evidence/independent-copy-receiver.cjs:160:49",
+  "pinsAfter": {
+    "src/scope-workspace.mjs": {
+      "bytes": 21759,
+      "sha256": "1d3145f2b6c5052927f1050189432cfa55035a863fda20ae64e7347dc965afd3",
+      "gitBlob": "f57d31cf8a4e6a9a7ddc140c5c06935fe3ef5004"
+    },
+    "scope.html": {
+      "bytes": 8045,
+      "sha256": "f7333f942369ff2f2f77a96796489291146cf62fe08d886fda1d35d0f4f99da6",
+      "gitBlob": "ad9e52d2061d4e5ea8e5535fd8b949e2b48ae1f7"
+    },
+    "src/scope-plan.mjs": {
+      "bytes": 6794,
+      "sha256": "b80c91674914a81b85715a62cd2b022534604a8ac61d43d60970d726b39744ad",
+      "gitBlob": "b36d91a6bbdd3d8cd7e15dcc0550a549ac7135c8"
+    },
+    "src/payment-status.mjs": {
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "gitBlob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    "src/scope-review-export.mjs": {
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+      "gitBlob": "d5e56a7a3f1608a1927bce2c08c1f787bf50e2ad"
+    },
+    "src/scope-workspace-record.mjs": {
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+      "gitBlob": "d9141b3e1ac74b33f996ec6d68756ece5c190162"
+    },
+    "src/ledger.mjs": {
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "gitBlob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    },
+    "src/fixture-record.mjs": {
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "gitBlob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8"
+    },
+    "styles.css": {
+      "bytes": 9444,
+      "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69",
+      "gitBlob": "31353c93740241c42551710bd12599338c017e45"
+    },
+    "scope-workspace.css": {
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+      "gitBlob": "be05fd582636ad9a4fbd5227fc00d8f37d3b5ded"
+    }
+  },
+  "sourceUnchanged": true,
+  "finishedAt": "2026-10-08T15:23:17.070Z"
+}

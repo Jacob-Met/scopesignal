@@ -1,5 +1,4 @@
 import { createScopeReviewDocument, SCOPE_REVIEW_FILENAME } from './scope-review-export.mjs';
-import { createScopeRevisionDraft, SCOPE_REVISION_FILENAME } from './scope-revision-draft.mjs';
 import { MAX_CHECKPOINTS, draftFromFixture, draftBudget, validateScopeDraft, createScopeReview, formatUSD as money } from './scope-plan.mjs';
 import { capturePresentation } from './payment-status.mjs';
 import { encodeScopeWorkspace, decodeScopeWorkspace, WORKSPACE_FILENAME, MAX_WORKSPACE_BYTES } from './scope-workspace-record.mjs';
@@ -55,12 +54,6 @@ function renderDraftRows() {
       move.disabled = direction === 'up' ? index === 0 : index === draft.checkpoints.length - 1;
       actions.append(move);
     }
-    const duplicate = element('button', 'Duplicate checkpoint', 'text-button');
-    duplicate.type = 'button';
-    duplicate.dataset.duplicate = index;
-    duplicate.setAttribute('aria-label', `Duplicate checkpoint ${index + 1}`);
-    duplicate.disabled = draft.checkpoints.length >= MAX_CHECKPOINTS;
-    actions.append(duplicate);
     const remove = element('button', 'Remove checkpoint', 'text-button scope-remove');
     remove.type = 'button';
     remove.dataset.remove = index;
@@ -71,7 +64,6 @@ function renderDraftRows() {
     list.append(row);
   });
   $('#scope-add').disabled = draft.checkpoints.length >= MAX_CHECKPOINTS;
-  $('#scope-revision-download').disabled = !review || review.snapshot().approved === 0;
   $('#scope-order-status').textContent = '';
   updateBudget();
 }
@@ -169,7 +161,6 @@ function renderReview() {
   $('#scope-remaining').textContent = money(state.remaining);
   $('#scope-unallocated').textContent = `${money(state.total)} allocated to checkpoints. ${money(state.unallocated)} of the project cap remains unallocated.`;
   $('#scope-edit').disabled = state.events.length > 0;
-  $('#scope-revision-download').disabled = state.approved === 0;
   $('#scope-lock-note').textContent = state.events.length > 0
     ? 'This scope is locked because approval has begun. Accepted evidence remains attached to its recorded decision.'
     : 'You can edit this plan until the first checkpoint is approved.';
@@ -247,22 +238,6 @@ $('#scope-add').addEventListener('click', () => {
   $(`#draft-${draft.checkpoints.length - 1}-title`).focus();
 });
 $('#scope-draft-list').addEventListener('click', event => {
-  const duplicate = event.target.closest('button[data-duplicate]');
-  if (duplicate) {
-    if (duplicate.disabled || review || form.hidden) return;
-    const index = Number(duplicate.dataset.duplicate);
-    const current = readDraft();
-    if (!Number.isInteger(index) || index < 0 || index >= current.checkpoints.length
-      || current.checkpoints.length >= MAX_CHECKPOINTS) return;
-    workspaceChanged();
-    current.checkpoints.splice(index + 1, 0, { ...current.checkpoints[index] });
-    draft = current;
-    clearErrors();
-    renderDraftRows();
-    $(`#draft-${index + 1}-title`).focus();
-    $('#scope-order-status').textContent = `Checkpoint ${index + 1} duplicated at position ${index + 2} of ${draft.checkpoints.length}.`;
-    return;
-  }
   const move = event.target.closest('button[data-move]');
   if (move) {
     if (move.disabled || review || form.hidden) return;
@@ -439,26 +414,6 @@ $('#scope-review-download').addEventListener('click', () => {
     fileStatus('Scope review download started. Open the HTML file to read or print this fictional snapshot. Keep the separate JSON file to resume editing.');
   } catch (error) {
     fileStatus('Could not prepare the scope review. ' + error.message, true);
-  } finally {
-    link?.remove();
-    if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);
-  }
-});
-
-$('#scope-revision-download').addEventListener('click', () => {
-  let url;
-  let link;
-  try {
-    const contents = createScopeRevisionDraft({ draft, review, evidenceDrafts });
-    url = URL.createObjectURL(new Blob([contents], { type: 'application/json;charset=utf-8' }));
-    link = element('a');
-    link.href = url;
-    link.download = SCOPE_REVISION_FILENAME;
-    document.body.append(link);
-    link.click();
-    fileStatus('Revision draft download started. Reopen the JSON to edit the original terms and review them anew. This workspace keeps its approvals, review evidence and simulated history.');
-  } catch (error) {
-    fileStatus('Could not prepare the revision draft. ' + error.message, true);
   } finally {
     link?.remove();
     if (url) setTimeout(() => URL.revokeObjectURL(url), 1000);

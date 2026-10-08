@@ -1,0 +1,23 @@
+{
+  "startedAt": "2026-10-08T15:23:13.820412+00:00",
+  "driver": {
+    "bytes": 17963,
+    "sha256": "072acd06f9d6ece7f0e8dad1ff74f1b9713c69531508a1f743244253b558de77",
+    "blob": "80573f0a898a996c0d865c39284cffe33c4010db"
+  },
+  "preexecutionDriver": {
+    "bytes": 17847,
+    "sha256": "861b0988feae26ac6210047975360389c009c0a2475a6ef370ef3c34bf9549fa",
+    "blob": "c651c17470c30eca6f347d86b057a5a98c5d2bab"
+  },
+  "baselineCommit": "bab391c7c6fec1193e221997e4d66d89bd914cfd",
+  "runs": [
+    {
+      "mode": "baseline",
+      "returncode": 1,
+      "elapsedSeconds": 3.280673419001687
+    }
+  ],
+  "sourceScope": "Ten-file exact modular receiving closure, not a full native repository checkout.",
+  "finishedAt": "2026-10-08T15:23:17.101156+00:00"
+}

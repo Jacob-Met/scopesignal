@@ -1,0 +1,80 @@
+{
+  "schema": "hamon.scopesignal.current-copy-owner-composition.v1",
+  "previous_revision_head": "6c813d8f40f6be484c88ec1f6bc8f2421bb2c09b",
+  "current_upstream": "c99a291600fff8f56fb2acc3194feeb9a4822d07",
+  "current_upstream_tree": "fefe8f31f32e624f767f832c63337b2afdc7b4fe",
+  "accepted_change": "Checkpoint duplication PR31; preserve original guarded draft-only row action and its current user documentation.",
+  "combined_files": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b87681e7e4966d455c0ec4f2d965ddbefd7874f",
+      "bytes": 21387,
+      "sha256": "1a5d3a0c1b075340d99e9dfc1470dee4f1ae76c6638378fa73f940117293165a"
+    },
+    {
+      "path": "scope.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1567193c7eb1c78b8e55afbf245151994e913b0",
+      "bytes": 8867,
+      "sha256": "74d5d0b7dc212dcd6881e1ca14b2a9fcfdbc632b00e55d1dc9a1bb2521dafb4a"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "783def69bbe2130c08889572ed27363d89a33b9d",
+      "bytes": 23904,
+      "sha256": "a71f7ecfca0c3ddb40177c8114846de1cdfcdf3bebd6f4be8c2faa74ea5584b9"
+    }
+  ],
+  "incoming_hunks": [
+    {
+      "path": "README.md",
+      "incoming_sha": "9cc8ee5da60121a41f3119c375087d4164030f16",
+      "parts": [
+        {
+          "old": "1. Edit the project name, brief, USD cap, and each checkpoint's deliverable,\n   amount, and planned acceptance evidence. Add or remove checkpoints before\n   review, and use **Move up** or **Move down** to arrange their order. Each\n   checkpoint's three fields move together, preserving unfinished input. The\n   controls also work with Tab and Enter or Space; movement announces the new\n   position and keeps focus with the moved checkpoint. The plan supports 1–12\n   checkpoints. All amounts must be positive,\n",
+          "fresh": "1. Edit the project name, brief, USD cap, and each checkpoint's deliverable,\n   amount, and planned acceptance evidence. Add or remove checkpoints before\n   review, and use **Move up** or **Move down** to arrange their order. Each\n   checkpoint's three fields move together, preserving unfinished input. Choose\n   **Duplicate checkpoint** to insert an independent copy immediately after that\n   row and focus its deliverable for editing. Copying preserves unfinished field\n   values and is available while the draft has fewer than 12 checkpoints. The\n   controls also work with Tab and Enter or Space; movement announces the new\n   position and keeps focus with the moved checkpoint. The plan supports 1–12\n   checkpoints. All amounts must be positive,\n"
+        }
+      ],
+      "proof": "Exact incoming hunks reproduce the current owner's whole file from549. Applying the same hunks to qualified revision and reversing them recovers the previous whole file exactly."
+    },
+    {
+      "path": "scope.html",
+      "incoming_sha": "591c680126f96aa9c904a0da6d1994f4080ca548",
+      "parts": [
+        {
+          "old": "      </section>\n      <section class=\"panel\" aria-labelledby=\"draft-checkpoints-title\">\n        <div class=\"panel-heading\"><h2 id=\"draft-checkpoints-title\">Define the checkpoints</h2><span>1–12 milestones</span></div>\n        <p class=\"scope-help\">Give each milestone a clear deliverable, an amount, and evidence a person can review. Add, remove, revise, and move checkpoints up or down before approval. Each checkpoint's fields move together.</p>\n        <p id=\"scope-order-status\" class=\"scope-help\" role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"></p>\n        <div id=\"scope-draft-list\"></div>\n        <button id=\"scope-add\" class=\"button button-outline\" type=\"button\">+ Add checkpoint</button>\n",
+          "fresh": "      </section>\n      <section class=\"panel\" aria-labelledby=\"draft-checkpoints-title\">\n        <div class=\"panel-heading\"><h2 id=\"draft-checkpoints-title\">Define the checkpoints</h2><span>1–12 milestones</span></div>\n        <p class=\"scope-help\">Give each milestone a clear deliverable, an amount, and evidence a person can review. Add, remove, revise, duplicate, and move checkpoints up or down before approval. Each checkpoint's fields move together. Duplicate checkpoint inserts an editable copy immediately after the original, preserving all three field values.</p>\n        <p id=\"scope-order-status\" class=\"scope-help\" role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"></p>\n        <div id=\"scope-draft-list\"></div>\n        <button id=\"scope-add\" class=\"button button-outline\" type=\"button\">+ Add checkpoint</button>\n"
+        }
+      ],
+      "proof": "Exact incoming hunks reproduce the current owner's whole file from549. Applying the same hunks to qualified revision and reversing them recovers the previous whole file exactly."
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "incoming_sha": "ab6d87dae1ba7cbef2d3f8e6c7ef5845307fb7a2",
+      "parts": [
+        {
+          "old": "      move.disabled = direction === 'up' ? index === 0 : index === draft.checkpoints.length - 1;\n      actions.append(move);\n    }\n    const remove = element('button', 'Remove checkpoint', 'text-button scope-remove');\n    remove.type = 'button';\n    remove.dataset.remove = index;\n",
+          "fresh": "      move.disabled = direction === 'up' ? index === 0 : index === draft.checkpoints.length - 1;\n      actions.append(move);\n    }\n    const duplicate = element('button', 'Duplicate checkpoint', 'text-button');\n    duplicate.type = 'button';\n    duplicate.dataset.duplicate = index;\n    duplicate.setAttribute('aria-label', `Duplicate checkpoint ${index + 1}`);\n    duplicate.disabled = draft.checkpoints.length >= MAX_CHECKPOINTS;\n    actions.append(duplicate);\n    const remove = element('button', 'Remove checkpoint', 'text-button scope-remove');\n    remove.type = 'button';\n    remove.dataset.remove = index;\n"
+        },
+        {
+          "old": "  $(`#draft-${draft.checkpoints.length - 1}-title`).focus();\n});\n$('#scope-draft-list').addEventListener('click', event => {\n  const move = event.target.closest('button[data-move]');\n  if (move) {\n    if (move.disabled || review || form.hidden) return;\n",
+          "fresh": "  $(`#draft-${draft.checkpoints.length - 1}-title`).focus();\n});\n$('#scope-draft-list').addEventListener('click', event => {\n  const duplicate = event.target.closest('button[data-duplicate]');\n  if (duplicate) {\n    if (duplicate.disabled || review || form.hidden) return;\n    const index = Number(duplicate.dataset.duplicate);\n    const current = readDraft();\n    if (!Number.isInteger(index) || index < 0 || index >= current.checkpoints.length\n      || current.checkpoints.length >= MAX_CHECKPOINTS) return;\n    workspaceChanged();\n    current.checkpoints.splice(index + 1, 0, { ...current.checkpoints[index] });\n    draft = current;\n    clearErrors();\n    renderDraftRows();\n    $(`#draft-${index + 1}-title`).focus();\n    $('#scope-order-status').textContent = `Checkpoint ${index + 1} duplicated at position ${index + 2} of ${draft.checkpoints.length}.`;\n    return;\n  }\n  const move = event.target.closest('button[data-move]');\n  if (move) {\n    if (move.disabled || review || form.hidden) return;\n"
+        }
+      ],
+      "proof": "Exact incoming hunks reproduce the current owner's whole file from549. Applying the same hunks to qualified revision and reversing them recovers the previous whole file exactly."
+    }
+  ],
+  "qualification": {
+    "revision_export": "Original serializer and complete revision click handler, import, enabled-state hooks, codec, plan and ledger semantics are unchanged.",
+    "caller": "Whole caller equals the original qualified revision caller plus exactly the accepted owner's two hunks: row button construction and a guarded draft-only click branch. Removing those two hunks recovers the original qualified caller byte-for-byte.",
+    "tests_and_harness": "Exact original revision tests and final browser harness retained. Every current owner's source/test/style/evidence file is retained.",
+    "original_evidence": "All 19 earlier revision evidence files remain unchanged with original attributions.",
+    "actual_combined_gate": "Ordinary hosted CI on the current combined public head and an independent source COMMENT. No repeated native browser or local suite is claimed for this additive composition.",
+    "native_artifacts": "Original previously received native browser outputs and independent six-file seal remain retained; later retrieval is pending while ThinkPad is offline."
+  }
+}

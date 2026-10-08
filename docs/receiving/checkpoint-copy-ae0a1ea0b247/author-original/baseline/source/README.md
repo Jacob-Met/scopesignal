@@ -57,10 +57,7 @@ seven-event Northstar example remains available from the return link.
 1. Edit the project name, brief, USD cap, and each checkpoint's deliverable,
    amount, and planned acceptance evidence. Add or remove checkpoints before
    review, and use **Move up** or **Move down** to arrange their order. Each
-   checkpoint's three fields move together, preserving unfinished input. Choose
-   **Duplicate checkpoint** to insert an independent copy immediately after that
-   row and focus its deliverable for editing. Copying preserves unfinished field
-   values and is available while the draft has fewer than 12 checkpoints. The
+   checkpoint's three fields move together, preserving unfinished input. The
    controls also work with Tab and Enter or Space; movement announces the new
    position and keeps focus with the moved checkpoint. The plan supports 1–12
    checkpoints. All amounts must be positive,
@@ -134,65 +131,6 @@ example's read-only fixture-record download and viewer.
 browser receiving checks with the same installed Playwright/Chromium variables
 as `scripts/check-browser.mjs`. It blocks external requests and records served
 source hashes, observed behavior, and screenshots. No packages are installed.
-
-### Compare two saved workspaces
-
-Choose **Compare two saved workspaces** on the authoring page. The comparison
-opens in a separate tab, leaving the active draft, evidence and simulation in
-place. Open one saved workspace as **A** and another as **B** to see the exact
-brief and checkpoint terms, accepted and pending evidence, recorded outcomes,
-and available totals. Incomplete draft amounts remain unavailable rather than
-appearing as zero.
-
-Unique rows with identical deliverable, amount text and planned evidence start
-paired as **Same definition**. Repeated or changed definitions stay unpaired;
-use the checkpoint selectors to choose explicit one-to-one pairs. The label
-describes equality of those saved fields. Row numbers and fixture IDs do not
-establish historical identity. Unpaired rows are shown in full without
-inferring an addition or removal. **Swap A and B** preserves chosen pairs;
-**Show changed fields only** narrows the displayed comparison.
-
-The event lists are compared only when both reviewed plan definitions agree.
-The page distinguishes equal sequences, an exact prefix, divergent events,
-different plans and unfinished drafts. These relationships do not establish
-chronology or authorship. The same strict workspace decoder admits each file
-before it replaces a displayed side; an invalid file leaves both the comparison
-and the chosen pairs intact. Clear, swap, and a newer file selection cancel
-older pending reads. Files stay local, with no automatic storage, authoring
-actions, payment controls or external assets on the comparison page.
-
-`node scripts/check-scope-compare.mjs` runs the optional real-file browser
-receiver using an existing Playwright/Chromium installation. Set
-`SCOPESIGNAL_PLAYWRIGHT` to its entry module and `SCOPESIGNAL_CHROME` to the
-browser executable. `SCOPESIGNAL_SOURCE`, `SCOPESIGNAL_EVIDENCE` and
-`SCOPESIGNAL_PROFILE` select this run's source, evidence and disposable browser
-profile directories. The profile must be dedicated to the receiver: it is
-removed after the browser closes. `SCOPESIGNAL_BASELINE` optionally identifies
-the unchanged parent source for the missing-entry negative control. The
-receiver makes actual authoring downloads, opens both files through native file
-inputs, checks divergent and invalid files, exercises competing reads and
-keyboard pairing, and records desktop/phone screenshots plus source hashes.
-
-## Revise a scope after approval
-
-Once a checkpoint is approved, **Download revision draft** saves
-`scopesignal-revision-draft-v1.json`. It is an ordinary version-1 editable
-workspace containing the original project name, brief, cap and ordered
-checkpoint fields exactly as entered. Accepted evidence, pending review notes,
-approvals and simulated payment history stay with the original workspace;
-the revision starts with no events or recorded approvals.
-
-Open the copied JSON through **Open saved workspace**, inspect its draft
-preview and explicitly replace the current workspace when ready. Open it in a
-separate authoring tab to keep both versions visible. The copy must pass the
-normal scope review and receive new explicit approvals before simulation.
-Downloading the revision leaves the active workspace and any already prepared
-open preview intact. A refused preparation can be retried.
-
-The command is unavailable before the first approval, when **Edit draft** and
-the ordinary workspace download already preserve editable work. The file is
-an unsigned fictional draft, with no assertion that the old approval or
-simulated payment applies to its revised terms.
 
 ## Download an authored scope review
 

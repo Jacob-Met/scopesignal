@@ -1,0 +1,16 @@
+{
+  "sourceEditsBeforeRuns": false,
+  "failures": [
+    {
+      "stage": "own /dev/shm evidence reservation and first native input write",
+      "error": "ENOSPC",
+      "browserStarted": false
+    },
+    {
+      "stage": "separate /dev materialization calls",
+      "error": "per-command /dev lifetime; subsequent command did not retain prior files",
+      "browserStarted": false
+    }
+  ],
+  "recovery": "All immutable native source bytes retained in memory; final source/tests/packet created within one owned /dev command and read back in allocated shared reserve."
+}

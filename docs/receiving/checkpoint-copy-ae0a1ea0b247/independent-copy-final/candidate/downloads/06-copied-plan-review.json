@@ -1,0 +1,36 @@
+{
+  "schema": "scopesignal.scope-workspace",
+  "version": 1,
+  "fixtureOnly": true,
+  "paymentEvidence": false,
+  "stage": "review",
+  "draft": {
+    "label": "  Repeated deliverables <literal> & Ω  ",
+    "brief": "First brief line\n<script>literal</script>\nKeep  two spaces.",
+    "cap": " 0100.00 ",
+    "checkpoints": [
+      {
+        "title": "  Phase α <copy>  ",
+        "amount": " 01.20 ",
+        "evidence": "  LATEST review evidence <literal>\nTwo distinct lines & exact current writing.  "
+      },
+      {
+        "title": "  Phase α <copy>  ",
+        "amount": " 01.20 ",
+        "evidence": "  LATEST review evidence <literal>\nTwo distinct lines & exact current writing.  "
+      },
+      {
+        "title": "Second & different",
+        "amount": "2.30",
+        "evidence": "Evidence B\nB only."
+      },
+      {
+        "title": "Last kept intact",
+        "amount": "3.45",
+        "evidence": "Evidence C"
+      }
+    ]
+  },
+  "events": [],
+  "evidenceDrafts": []
+}

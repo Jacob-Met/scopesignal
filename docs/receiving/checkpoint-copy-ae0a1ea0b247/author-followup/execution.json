@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "/dev/ae0a1-scope-copy-followup-hxbuh74o/followup/author-receiver-corrected.mjs"
+  ],
+  "caseSelection": 5,
+  "returncode": 0,
+  "seconds": 2.4929747581481934,
+  "unchangedProductBlobs": {
+    "src/scope-workspace.mjs": "ab6d87dae1ba7cbef2d3f8e6c7ef5845307fb7a2",
+    "scope.html": "f94a38991065dd7322e91f7c848d51a023947408",
+    "README.md": "1984618e51853d447f5fd3811953dc447fc028f3"
+  },
+  "reason": "Correct only the receiver native fixture-path return order; rerun only the previously blocked fifth case. Original receiver/error and four prior passes retained separately. Product unchanged."
+}

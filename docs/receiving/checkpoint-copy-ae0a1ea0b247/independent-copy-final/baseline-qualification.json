@@ -1,0 +1,24 @@
+{
+  "originalResult": "FAIL after a passing native baseline control",
+  "originalArchive": "c84f7365ebc5aa06e6f6215ad9f628a611f6e2647362cd0b1ad4341039f5991f",
+  "acceptedControl": {
+    "name": "Native raw draft and genuine download control, with missing duplication affordance",
+    "result": "PASS",
+    "durationMs": 2518,
+    "evidence": {
+      "baselineMissingCapability": true,
+      "existingInputsAndDownloadPass": true,
+      "rows": 3,
+      "nativeWorkspace": {
+        "bytes": 782,
+        "sha256": "705efe47c97e0251aa672e4c5d0a0881e8522b2746e0eb2fbe8b7ec772d46dc4",
+        "gitBlob": "5c37d2cd105873423f3e19f13482f8dbf84839c3"
+      }
+    }
+  },
+  "observedBlockedRequests": [
+    "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+  ],
+  "correction": "The zero-external-request receiver assertion was too broad for the unchanged page's Google Fonts CSS request. The corrected receiver allows only that exact blocked URL and records fallback fonts. No baseline behavior, candidate assertion or product source changed.",
+  "baselineRerun": false
+}
