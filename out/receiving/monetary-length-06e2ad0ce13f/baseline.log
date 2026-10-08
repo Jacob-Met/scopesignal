@@ -1,0 +1,54 @@
+✖ an overlong cap stays editable before any approval can lock it (1.764074ms)
+✖ an overlong amount stays editable before any approval can lock it (0.267522ms)
+✔ normal and 64-character monetary fields survive approval and all three exports (12.370966ms)
+✔ unfinished monetary text within the saved limit remains an exact editable draft (0.269585ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 2
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 150.402275
+
+✖ failing tests:
+
+test at tests/scope-monetary-length.test.mjs:9:3
+✖ an overlong cap stays editable before any approval can lock it (1.764074ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (file:///dev/shm/scopesignal-monetary-boundary-06e2ad0ce13f/tests/scope-monetary-length.test.mjs:15:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/scope-monetary-length.test.mjs:9:3
+✖ an overlong amount stays editable before any approval can lock it (0.267522ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  true !== false
+  
+      at TestContext.<anonymous> (file:///dev/shm/scopesignal-monetary-boundary-06e2ad0ce13f/tests/scope-monetary-length.test.mjs:15:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: true,
+    expected: false,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
