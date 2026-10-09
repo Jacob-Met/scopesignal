@@ -1,0 +1,62 @@
+{
+  "schema": "hamon.archive-custody.v1",
+  "repository": "Jacob-Met/scopesignal",
+  "issue": 58,
+  "sourceCommit": "746635a3437d2ba57523bc5659238dba968a2d60",
+  "sourceTree": "c63874b023b2e7171da39b2c603500731d6ce283",
+  "canonicalParent": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+  "archiveName": "checkpoint-combine-receiving-r1.zip",
+  "archiveBytes": 865632,
+  "archiveSha256": "4df18906e93708c6815c4ccb46efd0541bc385d728659a3e50159cc830e6e993",
+  "archiveMembers": 200,
+  "packetManifestSha256": "5372a810be7ee7cd065c63df96950d5e6805b891cfe94de627a76687e5392844",
+  "parts": [
+    {
+      "path": "archive.part-000.json",
+      "index": 0,
+      "offsetBytes": 0,
+      "decodedBytes": 240000,
+      "decodedSha256": "5984948887f4df80606aebc2fda4484fe245b20f167680ed7baff777a6b3528e",
+      "fileBytes": 320279,
+      "fileSha256": "ab85bed62aac69f54efcf3d4d3fe1e5eec06874111a819b966c1fd7baefe5338",
+      "gitBlobSha": "5bc59ad7c1d0eeab69d4d6ec09ad1ced1874f1c2"
+    },
+    {
+      "path": "archive.part-001.json",
+      "index": 1,
+      "offsetBytes": 240000,
+      "decodedBytes": 240000,
+      "decodedSha256": "484231aa7f3aaa694d5ade8c5d244ddf152a6b8a28b26e9febd9fb286aa6b59f",
+      "fileBytes": 320284,
+      "fileSha256": "e5cd994ed2df95b079b720bcf2d7ba15b350a5c91e6f83e39d1d9887e869152d",
+      "gitBlobSha": "b10b900c1043d244cb514d2642530dfdf748f162"
+    },
+    {
+      "path": "archive.part-002.json",
+      "index": 2,
+      "offsetBytes": 480000,
+      "decodedBytes": 240000,
+      "decodedSha256": "04e194071b2cee9bc5bf2ab2561851d4205abe9857dd952e9b6a0c69307e433f",
+      "fileBytes": 320284,
+      "fileSha256": "4da639b3a684a0a834f85abc8e9182a1b74668d941df3e8e455aae4a342e4bf5",
+      "gitBlobSha": "738b05d70724dc009c6c1a4e588971fc68af3db2"
+    },
+    {
+      "path": "archive.part-003.json",
+      "index": 3,
+      "offsetBytes": 720000,
+      "decodedBytes": 145632,
+      "decodedSha256": "f2e280ae2a982070eefeac91d9d757f10e2e931b01876cb195e698ef926af83e",
+      "fileBytes": 194460,
+      "fileSha256": "f0eea3d94bc7ee3fe83ddf79e503bd719d1d07d1861b320fd5cbef2a0d208ccd",
+      "gitBlobSha": "bd891c0fcb0181b6965f908ee1678e910a5b9f6c"
+    }
+  ],
+  "assembly": "Verify each UTF-8 part file identity, decode each data field with strict base64 in listed order, verify decoded part identities, concatenate, then verify complete archive length andSHA256.",
+  "qualifiedRuntime": "native Node22.22.1 and Chrome153",
+  "requiredNode24Gate": "unrun",
+  "fullProjectGate": "unrun",
+  "originalReceiverNegativesPreserved": true,
+  "sourceChangedDuringReceiving": false,
+  "rootIndependentPacketSha256": "5757f3a3b6a48e33eacf7f8d73c905bbd5f7301e8ff273efd42e67187edef803"
+}
