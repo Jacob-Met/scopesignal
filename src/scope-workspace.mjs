@@ -12,6 +12,8 @@ const form = $('#scope-form');
 let draft = draftFromFixture();
 let review = null;
 const evidenceDrafts = new Map();
+// Unrecorded reasons are transient editor text, never a saved decision.
+const revisionReasonDrafts = new Map();
 const draftRemoval = createDraftRemovalRecovery();
 const scopeHistory = mountScopeHistory($('#scope-history'));
 
@@ -144,6 +146,7 @@ function showErrors(errors) {
 }
 
 const actionLabels = {
+  request_revision: 'Request revision',
   approve: 'Approve this evidence', order: 'Simulate order creation',
   request: 'Simulate capture request', receipt: 'Simulate webhook receipt',
   lose: 'Simulate lost response', duplicate: 'Simulate duplicate webhook',
@@ -151,6 +154,7 @@ const actionLabels = {
 };
 
 const actionMessages = {
+  request_revision: 'Revision request recorded. This checkpoint is not approved; no order or capture was created.',
   approve: 'Evidence approved by the fixture reviewer.', order: 'Sandbox-shaped fixture order recorded.',
   request: 'Fixture capture request recorded; its outcome is pending.',
   receipt: 'Fixture webhook recorded. Check the current outcome below.',
@@ -161,6 +165,7 @@ const actionMessages = {
 
 function resultText(event) {
   switch (event.type) {
+    case 'checkpoint.revision_requested': return `Revision requested: ${event.reason}`;
     case 'checkpoint.approved': return `Human-approved evidence: ${event.acceptedEvidence}`;
     case 'paypal.order.created': return event.orderId;
     case 'paypal.capture.requested': return 'Pending · await an outcome';
@@ -183,8 +188,8 @@ function renderReview() {
   $('#scope-edit').disabled = state.events.length > 0;
   $('#scope-revision-download').disabled = state.approved === 0;
   $('#scope-lock-note').textContent = state.events.length > 0
-    ? 'This scope is locked because approval has begun. Accepted evidence remains attached to its recorded decision.'
-    : 'You can edit this plan until the first checkpoint is approved.';
+    ? 'This scope is locked because a review decision has been recorded. Its evidence and any revision reason remain attached to that decision.'
+    : 'You can edit this plan until the first approval or revision request is recorded.';
   $('#draft-step').removeAttribute('aria-current');
   $('#review-step').toggleAttribute('aria-current', state.approved === 0);
   $('#simulate-step').toggleAttribute('aria-current', state.approved > 0);
@@ -193,9 +198,11 @@ function renderReview() {
   const list = $('#scope-review-list');
   list.replaceChildren();
   state.checkpoints.forEach((cp, index) => {
+    const revisionRequest = state.events.find(event => event.checkpointId === cp.id
+      && event.type === 'checkpoint.revision_requested');
     const card = element('article', undefined, 'scope-review-card');
     card.dataset.checkpoint = cp.id;
-    card.append(element('span', `CHECKPOINT ${index + 1} · ${cp.approved ? 'HUMAN APPROVED' : 'NEEDS REVIEW'}`, 'cp-state'));
+    card.append(element('span', `CHECKPOINT ${index + 1} · ${cp.approved ? 'HUMAN APPROVED' : revisionRequest ? 'REVISION REQUESTED · NOT APPROVED' : 'NEEDS REVIEW'}`, 'cp-state'));
     const heading = element('div', undefined, 'scope-review-heading');
     const title = element('h3', cp.title);
     title.id = `review-heading-${cp.id}`;
@@ -203,7 +210,7 @@ function renderReview() {
     heading.append(title, element('strong', money(cp.amount)));
     card.setAttribute('aria-labelledby', title.id);
     card.append(heading);
-    const label = element('label', cp.approved ? 'Accepted evidence' : 'Evidence for human review');
+    const label = element('label', cp.approved ? 'Accepted evidence' : revisionRequest ? 'Current evidence for human review' : 'Evidence for human review');
     const textarea = element('textarea', undefined, 'scope-evidence');
     textarea.id = `review-evidence-${cp.id}`;
     textarea.dataset.evidence = cp.id;
@@ -223,7 +230,34 @@ function renderReview() {
     const capture = capturePresentation(cp);
     const status = element('div', undefined, `scope-review-state${cp.captureStatus === 'unknown' ? ' uncertain' : ''}`);
     status.append(element('strong', capture.title), element('p', capture.guidance));
-    card.append(label, textarea, actions, status);
+    card.append(label, textarea);
+    if (revisionRequest) {
+      for (const [key, caption] of [
+        ['reason', 'Recorded revision reason'],
+        ['reviewedEvidence', 'Evidence at the recorded request — not accepted evidence']
+      ]) {
+        const recordedLabel = element('label', caption);
+        const recordedText = element('textarea', undefined, 'scope-evidence');
+        recordedText.id = `review-revision-${key}-${cp.id}`;
+        recordedLabel.htmlFor = recordedText.id;
+        recordedText.rows = 3;
+        recordedText.readOnly = true;
+        recordedText.value = revisionRequest[key];
+        card.append(recordedLabel, recordedText);
+      }
+      if (!cp.approved) card.append(element('p', 'The request remains in history. Review the current evidence and approve explicitly only when satisfied.'));
+    } else if (!cp.approved) {
+      const reasonLabel = element('label', 'Revision reason (not saved until recorded)');
+      const reason = element('textarea', undefined, 'scope-evidence');
+      reason.id = `review-revision-reason-${cp.id}`;
+      reason.dataset.revisionReason = cp.id;
+      reasonLabel.htmlFor = reason.id;
+      reason.rows = 3;
+      reason.maxLength = 5000;
+      reason.value = revisionReasonDrafts.get(cp.id) ?? '';
+      card.append(reasonLabel, reason, element('p', 'Record one revision request for this checkpoint without approving it or starting a payment. The request retains this reason and the current evidence. Older workspace readers cannot open files containing this decision.'));
+    }
+    card.append(actions, status);
     if (cp.orderId) {
       const receipt = state.events.find(e => e.checkpointId === cp.id && e.captureId);
       card.append(element('p', `Fixture order: ${cp.orderId}${receipt ? ` · Fixture capture: ${receipt.captureId}` : ''}`, 'scope-receipt-ids'));
@@ -333,6 +367,7 @@ form.addEventListener('submit', event => {
   workspaceChanged();
   review = createScopeReview(draft);
   evidenceDrafts.clear();
+  revisionReasonDrafts.clear();
   clearErrors();
   form.hidden = true;
   $('#scope-review').hidden = false;
@@ -349,6 +384,7 @@ $('#scope-edit').addEventListener('click', () => {
     draft.checkpoints[index].evidence = evidenceDrafts.get(cp.id) ?? cp.evidence;
   });
   review = null;
+  revisionReasonDrafts.clear();
   renderDraftRows();
   form.hidden = false;
   $('#scope-review').hidden = true;
@@ -362,6 +398,10 @@ $('#scope-review-list').addEventListener('input', event => {
     workspaceChanged();
     evidenceDrafts.set(event.target.dataset.evidence, event.target.value);
   }
+  if (event.target.dataset.revisionReason && !event.target.readOnly) {
+    workspaceChanged();
+    revisionReasonDrafts.set(event.target.dataset.revisionReason, event.target.value);
+  }
 });
 $('#scope-review-list').addEventListener('click', event => {
   const button = event.target.closest('button[data-action]');
@@ -371,7 +411,11 @@ $('#scope-review-list').addEventListener('click', event => {
   const status = $('#scope-action-status');
   try {
     const evidence = $(`#review-evidence-${id}`).value;
-    review.act(id, action, evidence);
+    const payload = action === 'request_revision'
+      ? { reason: $(`#review-revision-reason-${id}`).value, reviewedEvidence: evidence }
+      : evidence;
+    review.act(id, action, payload);
+    if (action === 'request_revision' || action === 'approve') revisionReasonDrafts.delete(id);
     workspaceChanged();
     status.textContent = actionMessages[action];
     status.classList.remove('error');
@@ -380,7 +424,7 @@ $('#scope-review-list').addEventListener('click', event => {
   } catch (error) {
     status.textContent = error.message;
     status.classList.add('error');
-    $(`#review-evidence-${id}`).focus();
+    (action === 'request_revision' ? $(`#review-revision-reason-${id}`) : $(`#review-evidence-${id}`))?.focus();
   }
 });
 
@@ -394,6 +438,9 @@ function workspaceValue() {
     draft: readDraft(),
     review: review?.snapshot() ?? null,
     evidenceDrafts: [...evidenceDrafts],
+    revisionReasonDrafts: [...revisionReasonDrafts],
+    revisionReasonFields: [...document.querySelectorAll('[data-revision-reason]')]
+      .map(field => [field.dataset.revisionReason, field.value]),
     evidenceFields: [...document.querySelectorAll('[data-evidence]')]
       .map(field => [field.dataset.evidence, field.value])
   });
@@ -561,6 +608,7 @@ $('#scope-open-apply').addEventListener('click', () => {
   draft = structuredClone(next.draft);
   review = next.review;
   evidenceDrafts.clear();
+  revisionReasonDrafts.clear();
   for (const [id, value] of next.evidenceDrafts) evidenceDrafts.set(id, value);
   $('#scope-label').value = draft.label;
   $('#scope-brief').value = draft.brief;

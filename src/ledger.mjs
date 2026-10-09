@@ -16,6 +16,7 @@ export const FIXTURE = Object.freeze({
 });
 
 const EVENT_FIELDS = Object.freeze({
+  'checkpoint.revision_requested': ['checkpointId', 'reviewer', 'reason', 'reviewedEvidence'],
   'checkpoint.approved': ['checkpointId', 'approver', 'acceptedEvidence'],
   'paypal.order.created': ['checkpointId', 'orderId', 'amount', 'currency', 'environment'],
   'paypal.capture.requested': ['checkpointId', 'orderId', 'environment'],
@@ -32,6 +33,15 @@ function requireId(value, label) {
 
 function requireCents(value, label) {
   if (!Number.isSafeInteger(value) || value < 0) throw new Error(`${label} must be nonnegative safe integer cents`);
+}
+
+function requireRevisionText(value, label, nonblank = false) {
+  if (typeof value !== 'string' || value.length > 5000 || (nonblank && !value.trim())) {
+    throw new Error(label + (nonblank
+      ? ' must be nonblank text of at most 5000 characters'
+      : ' must be text of at most 5000 characters'));
+  }
+  if (value.includes('\r')) throw new Error(label + ' must use LF line breaks');
 }
 
 const fixtureOrderId = checkpointId => `SANDBOX-${checkpointId.toUpperCase()}`;
@@ -105,6 +115,10 @@ export function createLedger(seed = FIXTURE) {
     get events() { return Object.freeze([...events]); },
     append,
     snapshot,
+    requestRevision: (checkpointId, reason, reviewedEvidence) => {
+      current(checkpointId);
+      append('checkpoint.revision_requested', { checkpointId, reviewer: 'human-reviewer', reason, reviewedEvidence });
+    },
     approve: (checkpointId, evidence = initialSeed.checkpoints.find(cp => cp.id === checkpointId)?.evidence) => {
       current(checkpointId);
       if (typeof evidence !== 'string' || !evidence.trim()) throw new Error('Acceptance evidence is required for human approval');
@@ -138,6 +152,7 @@ export function reduce(events, seed = FIXTURE) {
   if (!Array.isArray(events)) throw new Error('Ledger events must be an array');
   const initialSeed = copySeed(seed);
   const checkpoints = Object.fromEntries(initialSeed.checkpoints.map(cp => [cp.id, { ...cp, approved: false, orderId: null, captureStatus: 'not_started', captureId: null, counted: 0 }]));
+  const revisionRequests = new Set();
   const orders = new Map();
   const webhooks = new Map();
   const captures = new Map();
@@ -155,6 +170,14 @@ export function reduce(events, seed = FIXTURE) {
     validateEnvelope(event);
     const cp = checkpoint(checkpoints, event.checkpointId);
     switch (event.type) {
+      case 'checkpoint.revision_requested':
+        if (cp.approved) throw new Error('Revision requests are only available before approval');
+        if (revisionRequests.has(cp.id)) throw new Error('A revision request is already recorded for this checkpoint');
+        if (event.reviewer !== 'human-reviewer') throw new Error('Explicit fixture human review required');
+        requireRevisionText(event.reason, 'Revision reason', true);
+        requireRevisionText(event.reviewedEvidence, 'Reviewed evidence');
+        revisionRequests.add(cp.id);
+        break;
       case 'checkpoint.approved':
         if (cp.approved) throw new Error('Checkpoint already approved');
         if (event.approver !== 'human-reviewer') throw new Error('Explicit fixture human approval required');

@@ -3,6 +3,7 @@ import { reduce } from './ledger.mjs';
 import { capturePresentation } from './payment-status.mjs';
 
 const labels = Object.freeze({
+  'checkpoint.revision_requested': 'Revision requested',
   'checkpoint.approved': 'Evidence approved',
   'paypal.order.created': 'Fixture order created',
   'paypal.capture.requested': 'Capture requested',
@@ -20,6 +21,8 @@ function label(event) {
 function description(event, checkpoint) {
   if (!event) return 'The plan is ready for review. No approval, order or capture has been recorded at this point.';
   switch (event.type) {
+    case 'checkpoint.revision_requested':
+      return 'This recorded request retains the reason and the evidence reviewed at this point. It does not approve the checkpoint or create an order or capture.';
     case 'checkpoint.approved':
       return 'This recorded decision accepts the evidence shown below. Approval itself does not create an order or request capture.';
     case 'paypal.order.created':

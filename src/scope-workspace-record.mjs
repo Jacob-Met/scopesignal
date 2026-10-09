@@ -53,6 +53,7 @@ function copyDraft(value) {
 }
 
 const actions = Object.freeze({
+  'checkpoint.revision_requested': 'request_revision',
   'checkpoint.approved': 'approve',
   'paypal.order.created': 'order',
   'paypal.capture.requested': 'request',
@@ -81,7 +82,10 @@ function restoreReview(draft, events) {
     if (!action) throw new Error('Saved event ' + (index + 1) + ' is unsupported.');
     // Replay only the existing explicit authoring controls into a private
     // fixture. The current workspace is never involved in file admission.
-    const state = review.act(event.checkpointId, action, event.acceptedEvidence);
+    const payload = action === 'request_revision'
+      ? { reason: event.reason, reviewedEvidence: event.reviewedEvidence }
+      : event.acceptedEvidence;
+    const state = review.act(event.checkpointId, action, payload);
     if (!sameEvent(event, state.events.at(-1))) {
       throw new Error('Saved event ' + (index + 1) + ' does not match its fixture history.');
     }

@@ -82,7 +82,10 @@ export function validateScopeDraft(draft) {
 }
 
 function availableActions(cp, events) {
-  if (!cp.approved) return ['approve'];
+  if (!cp.approved) {
+    const requested = events.some(e => e.checkpointId === cp.id && e.type === 'checkpoint.revision_requested');
+    return requested ? ['approve'] : ['approve', 'request_revision'];
+  }
   const receipts = events.filter(e => e.checkpointId === cp.id && e.type === 'paypal.webhook.received');
   switch (cp.captureStatus) {
     case 'not_started': return ['order'];
@@ -121,6 +124,19 @@ export function createScopeReview(draft) {
     const captureId = `CAP-${checkpointId.toUpperCase()}`;
     const eventId = `WH-${checkpointId.toUpperCase()}`;
     switch (action) {
+      case 'request_revision': {
+        if (!evidence || typeof evidence !== 'object' || Array.isArray(evidence)) {
+          throw new Error('A revision request requires exactly reason and reviewedEvidence.');
+        }
+        const fields = Object.getOwnPropertyDescriptors(evidence);
+        if (Reflect.ownKeys(fields).length !== 2
+          || !['reason', 'reviewedEvidence'].every(key => Object.hasOwn(fields, key)
+            && Object.hasOwn(fields[key], 'value'))) {
+          throw new Error('A revision request requires exactly reason and reviewedEvidence.');
+        }
+        ledger.requestRevision(checkpointId, fields.reason.value, fields.reviewedEvidence.value);
+        break;
+      }
       case 'approve':
         if (typeof evidence !== 'string' || evidence.length > 5000) throw new Error('Acceptance evidence must be 5000 characters or fewer.');
         ledger.approve(checkpointId, evidence);

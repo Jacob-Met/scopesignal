@@ -92,7 +92,7 @@ for (const [name, actions] of [
     assert.equal(state.events.length, 0);
     assert.ok(state.checkpoints.every(cp => cp.acceptedEvidence === null
       && cp.captureStatus === 'not_started'
-      && JSON.stringify(cp.actions) === '["approve"]'));
+      && JSON.stringify(cp.actions) === '["approve","request_revision"]'));
     assert.throws(() => fresh.act('scope-1', 'order'), /not available/);
     fresh.act('scope-1', 'approve', 'Fresh explicit approval');
     assert.equal(fresh.snapshot().events.length, 1);
