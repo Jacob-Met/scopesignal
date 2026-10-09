@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e8">
+  <meta name="description" content="Explicitly combine two planned checkpoints into a new fictional draft, review the exact result, and download a workspace file.">
+  <title>Combine planned checkpoints — ScopeSignal</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./scope-combine.css">
+  <script type="module" src="./src/scope-checkpoint-combine-ui.mjs"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar"><a class="brand" href="./scope.html"><span class="brand-mark" aria-hidden="true">S</span> ScopeSignal</a><span class="top-status">Fixture mode · no live payments</span></header>
+  <main id="main" class="combine-workspace">
+    <a href="./scope.html">← Open the scope workspace</a>
+    <p class="eyebrow">PLANNED WORK · EXPLICIT REPLACEMENT</p>
+    <h1>Combine planned<br><em>checkpoints.</em></h1>
+    <p class="lede">Bring two acceptance stages together. Choose their positions, write what the combined stage will deliver, and inspect the new draft before saving it.</p>
+    <p>Work with a saved editable draft from <a href="./scope.html" target="_blank" rel="noopener">the scope workspace</a>. Review files need an explicitly created revision draft first. Files stay on your device; this page creates no approvals or payment events.</p>
+
+    <section class="combine-panel" aria-labelledby="combine-open-title">
+      <h2 id="combine-open-title">1. Open one saved draft</h2>
+      <form id="combine-file-form">
+        <label for="combine-file">Workspace JSON file <span class="combine-hint">UTF-8, at most 1 MiB</span></label>
+        <input id="combine-file" type="file" accept=".json,application/json">
+        <div class="combine-actions">
+          <button id="combine-open" type="submit">Open selected draft</button>
+          <button id="combine-cancel-read" type="button" class="secondary" disabled>Cancel file read</button>
+          <button id="combine-clear" type="button" class="secondary" disabled>Clear loaded draft</button>
+        </div>
+      </form>
+      <p id="combine-source-name">No draft loaded.</p>
+    </section>
+
+    <p id="combine-status" class="combine-status" role="status" aria-live="polite">Open a draft to choose checkpoints.</p>
+    <p id="combine-error" class="combine-error" role="alert" hidden></p>
+
+    <form id="combine-form" hidden novalidate>
+      <fieldset id="combine-editor">
+        <legend>2. Choose two checkpoints and write their replacement</legend>
+        <section aria-labelledby="combine-project-title">
+          <h2 id="combine-project-title">Loaded project</h2>
+          <dl id="combine-project" class="combine-details"></dl>
+          <div id="combine-source-budget"></div>
+        </section>
+        <p>Select exactly two positions. The replacement takes the earlier position; the other selected row is removed. All other rows keep their order and exact content.</p>
+        <p id="combine-selection-count" aria-live="polite">0 of 2 checkpoints selected.</p>
+        <div id="combine-rows" class="combine-rows"></div>
+        <div class="combine-replacement">
+          <label for="combine-title">Replacement deliverable</label>
+          <input id="combine-title" type="text" autocomplete="off" aria-describedby="combine-title-help">
+          <p id="combine-title-help" class="combine-hint">Write the full combined deliverable, up to 160 characters on one line. Selected descriptions are not filled in automatically.</p>
+          <label for="combine-evidence">Replacement planned evidence</label>
+          <textarea id="combine-evidence" rows="5" aria-describedby="combine-evidence-help"></textarea>
+          <p id="combine-evidence-help" class="combine-hint">Write the proof this stage will need, up to 5,000 characters. Line breaks are allowed. Entered text is preserved exactly.</p>
+        </div>
+        <button id="combine-preview-button" type="submit">Preview combined draft</button>
+      </fieldset>
+    </form>
+
+    <section id="combine-preview" class="combine-panel" aria-labelledby="combine-preview-title" hidden>
+      <h2 id="combine-preview-title" tabindex="-1">3. Review the new draft</h2>
+      <p id="combine-change"></p>
+      <div id="combine-selected" class="combine-rows"></div>
+      <h3>Complete resulting project</h3>
+      <dl id="combine-result-project" class="combine-details"></dl>
+      <div id="combine-result-budget"></div>
+      <ol id="combine-result-rows" class="combine-rows"></ol>
+      <h3>Ordinary draft review status</h3>
+      <p id="combine-validation-note"></p>
+      <ul id="combine-validation-errors"></ul>
+      <p>This describes the draft's current fields. It is not approval of the work. The file contains zero events and zero review evidence drafts.</p>
+      <details><summary>Inspect the exact workspace JSON</summary><pre id="combine-json" class="combine-literal"></pre></details>
+      <div class="combine-actions">
+        <button id="combine-download" type="button" disabled>Download combined draft</button>
+        <button id="combine-cancel-preview" type="button" class="secondary">Cancel preview</button>
+      </div>
+      <p>In the scope workspace, use <strong>Open saved workspace</strong>, inspect its preview, and explicitly choose <strong>Replace workspace</strong>. Ordinary review is still required before any fixture simulation.</p>
+    </section>
+    <noscript><p>This local draft tool needs JavaScript to read, preview and download a workspace.</p></noscript>
+  </main>
+</body>
+</html>

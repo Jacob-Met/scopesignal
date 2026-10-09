@@ -1,0 +1,42 @@
+.combine-workspace { max-width: 1050px; margin: 0 auto; padding: 36px 28px 72px; }
+.combine-workspace > .eyebrow { margin-top: 30px; }
+.combine-workspace h1 { font-size: clamp(2.8rem, 7vw, 5rem); line-height: 1.04; }
+.combine-workspace h2 { font-size: 1.45rem; }
+.combine-workspace h3 { margin-top: 24px; font-size: 1.1rem; }
+.combine-workspace p { line-height: 1.6; }
+.combine-panel, #combine-editor { border: 1px solid #c9c7bd; border-radius: 12px; background: #fffdf7; padding: 24px; margin: 24px 0; min-width: 0; }
+#combine-editor > legend { font-size: 1.35rem; font-weight: 700; padding: 0 8px; }
+.combine-workspace label { display: block; font-weight: 650; margin: 12px 0 6px; }
+.combine-workspace input:not([type="checkbox"]), .combine-workspace textarea { display: block; width: 100%; min-width: 0; max-width: 100%; padding: 11px 12px; border: 1px solid #999b92; border-radius: 6px; background: #fff; color: #172a24; font: inherit; }
+.combine-workspace input[type="file"] { padding: 10px; font-size: .95rem; }
+.combine-workspace input[type="checkbox"] { width: 20px; height: 20px; flex: 0 0 auto; accent-color: #175342; }
+.combine-workspace textarea { resize: vertical; }
+.combine-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.combine-workspace button { min-height: 44px; padding: 11px 16px; border: 1px solid #175342; border-radius: 6px; background: #175342; color: white; cursor: pointer; font: inherit; font-weight: 650; overflow-wrap: anywhere; }
+.combine-workspace button.secondary { background: transparent; color: #175342; }
+.combine-workspace button:disabled { opacity: .55; cursor: default; }
+.combine-workspace :focus-visible { outline: 3px solid #aa561e; outline-offset: 3px; }
+.combine-hint { font-size: .9rem; font-weight: 400; color: #56635a; }
+.combine-status { border-left: 3px solid #175342; padding: 10px 16px; }
+.combine-error { padding: 14px 16px; border: 1px solid #9b352d; background: #fff0ea; color: #75251f; overflow-wrap: anywhere; }
+.combine-details { display: grid; grid-template-columns: minmax(90px, 130px) minmax(0, 1fr); gap: 8px 14px; margin: 16px 0; }
+.combine-details dt { font-weight: 650; }
+.combine-details dd { margin: 0; min-width: 0; }
+.combine-literal { white-space: pre-wrap; overflow-wrap: anywhere; word-break: normal; font: inherit; min-width: 0; }
+.combine-literal:empty::after { content: "(empty)"; color: #687068; font-style: italic; }
+.combine-rows { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; padding: 0; list-style: none; min-width: 0; }
+.combine-row { border: 1px solid #d9d8ce; border-radius: 8px; padding: 16px; min-width: 0; background: #fbfaf4; }
+.combine-row > h3 { margin-top: 0; }
+.combine-row .combine-select { display: flex; align-items: center; gap: 10px; min-height: 44px; margin: 0; }
+.combine-replacement { border-top: 1px solid #d9d8ce; margin-top: 24px; padding-top: 8px; margin-bottom: 24px; }
+#combine-json { max-height: 28rem; overflow: auto; padding: 14px; background: #f1f0e7; font: .88rem/1.5 ui-monospace, monospace; }
+#combine-source-name, #combine-change, .combine-workspace li { overflow-wrap: anywhere; }
+.combine-workspace [hidden] { display: none !important; }
+@media (max-width: 520px) {
+  .combine-workspace { padding: 24px 14px 48px; }
+  .combine-panel, #combine-editor { padding: 16px; }
+  .combine-details { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .combine-details dd { margin-bottom: 8px; }
+  .combine-actions { flex-direction: column; align-items: stretch; }
+  .combine-row { padding: 12px; }
+}
