@@ -13,6 +13,14 @@ npm test
 npm run serve
 ```
 
+The server always serves this checkout, even when its script is launched from another directory:
+
+```sh
+node /absolute/path/to/scopesignal/scripts/serve.mjs
+```
+
+Set the `PORT` environment variable to choose a port, or to `0` for an available port assigned by the operating system. Open the exact loopback URL printed after startup. An unset or empty `PORT` uses `4173`; invalid or occupied ports stop with an error instead of a success URL. Press Ctrl+C in that terminal to stop the server.
+
 Open `http://127.0.0.1:4173`. The fixture has three $400.00 milestones, a $1,200.00 project cap, and a deterministic seven-event path. The first checkpoint is human-approved, creates a Sandbox-labeled fixture order, loses the capture response, receives the same webhook twice, and reconciles once. Captured value remains $400.00, never $800.00.
 
 The capture callout and recovery reviewer describe the current reduced ledger. After the complete replay, they show the captured outcome; the lost response remains visible in the event history. Before reconciliation, the outcome stays unknown even after the duplicate webhook. A pending request is also kept distinct from a captured outcome.
