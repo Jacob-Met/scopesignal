@@ -18,7 +18,6 @@ const recorded = replayFixture().snapshot();
 const served = new Map();
 const failures = [], checks = [], errors = [], externalRequests = [];
 const downloads = [];
-const fixtureFontStylesheet = 'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap';
 const types = { '.html': 'text/html; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8' };
 const server = createServer(async (req, res) => {
   try {
@@ -201,11 +200,9 @@ try {
     await page.locator('#workspace').screenshot({ path: resolve(output, `${label}.png`) });
     await context.close();
   }
-  await check('no browser script errors or unexpected external request attempts', async () => {
+  await check('no browser script errors or external request attempts', async () => {
     assert.deepEqual(errors, []);
-    // The fixture CSS already imports this font stylesheet. It is recorded and
-    // blocked along with every external request; screenshots use fallback fonts.
-    assert.deepEqual(externalRequests.filter(url => url !== fixtureFontStylesheet), []);
+    assert.deepEqual(externalRequests, []);
   });
 } catch (error) {
   failures.push({ name: 'browser setup or execution', result: 'fail', error: error.stack });
