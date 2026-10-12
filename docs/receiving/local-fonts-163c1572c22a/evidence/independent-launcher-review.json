@@ -1,0 +1,70 @@
+{
+  "scope": "launcher pair and guide only; no source product changes",
+  "source_pins": {
+    "EVIDENCE.txt": {
+      "bytes": 3539,
+      "sha256": "ed694cede1d1aff568e3b3df971e22d40b8689ed9a7628bbb0ea3347bb4a9b26"
+    },
+    "START-HERE.txt": {
+      "bytes": 4517,
+      "sha256": "63ae3d463cc6475ce554fcc35de0ed6c21b5abd7cfb94cfeb926b4898882f013"
+    },
+    "start-scopesignal.cmd": {
+      "bytes": 179,
+      "sha256": "76d18b899d8c93b2c264a88c16d6c4025a29fba8235c0197cc669f0b0d60c174"
+    },
+    "start-scopesignal.sh": {
+      "bytes": 99,
+      "sha256": "9d0b8c9d03d35c8585f0d4b93571c9c08869012c95873932807072180743dd0e"
+    }
+  },
+  "checks": [
+    {
+      "name": "foreign spaced cwd and hostile CDPATH",
+      "argv": [
+        "/bin/sh",
+        "/workspace/scratch/163c1572c22a/artifact_delivery/independent-product-portable/ScopeSignal review c4xoa0ry/portable app folder/start-scopesignal.sh"
+      ],
+      "exit": 0,
+      "stdout": "cwd=/workspace/scratch/163c1572c22a/artifact_delivery/independent-product-portable/ScopeSignal review c4xoa0ry/portable app folder/app\narg=scripts/serve.mjs\nport=4174\n",
+      "stderr": ""
+    },
+    {
+      "name": "node failure retains exit status",
+      "argv": [
+        "/bin/sh",
+        "/workspace/scratch/163c1572c22a/artifact_delivery/independent-product-portable/ScopeSignal review c4xoa0ry/portable app folder/start-scopesignal.sh"
+      ],
+      "exit": 29,
+      "stdout": "cwd=/workspace/scratch/163c1572c22a/artifact_delivery/independent-product-portable/ScopeSignal review c4xoa0ry/portable app folder/app\narg=scripts/serve.mjs\nport=4174\n",
+      "stderr": ""
+    },
+    {
+      "name": "missing app refuses",
+      "argv": [
+        "/bin/sh",
+        "/workspace/scratch/163c1572c22a/artifact_delivery/independent-product-portable/ScopeSignal review c4xoa0ry/missing app folder/start-scopesignal.sh"
+      ],
+      "exit": 2,
+      "stdout": "",
+      "stderr": "/workspace/scratch/163c1572c22a/artifact_delivery/independent-product-portable/ScopeSignal review c4xoa0ry/missing app folder/start-scopesignal.sh: 5: cd: can't cd to /workspace/scratch/163c1572c22a/artifact_delivery/independent-product-portable/ScopeSignal review c4xoa0ry/missing app folder/app\n"
+    },
+    {
+      "name": "missing node refuses",
+      "argv": [
+        "/bin/sh",
+        "/workspace/scratch/163c1572c22a/artifact_delivery/independent-product-portable/ScopeSignal review c4xoa0ry/portable app folder/start-scopesignal.sh"
+      ],
+      "exit": 127,
+      "stdout": "",
+      "stderr": "/workspace/scratch/163c1572c22a/artifact_delivery/independent-product-portable/ScopeSignal review c4xoa0ry/portable app folder/start-scopesignal.sh: 6: exec: node: not found\n"
+    },
+    {
+      "name": "shell syntax",
+      "exit": 0
+    }
+  ],
+  "windows_cmd": "static review only; no native Windows execution by this receiver",
+  "guide_review": "Existing node requirement, spaced-path commands, positive port range and PORT=0 caveat, two-page native qualification boundary, receiver-cleanup difference, separate held MSI install, and exact source provenance are coherent. Broad historical runtime statements rely on producer/root receipts.",
+  "decision": "APPROVED within this scope"
+}

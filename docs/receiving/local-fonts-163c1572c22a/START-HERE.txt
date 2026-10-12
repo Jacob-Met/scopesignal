@@ -1,0 +1,92 @@
+SCOPESIGNAL — LOCAL FONT EDITION
+Runtime source: 7c2e70d756734ff49f693a84b43b9660be542962
+Prepared 12 October 2026
+
+START THE APPLICATION
+
+1. Extract the whole ZIP into a new folder. Keep app, evidence and the two
+   start-scopesignal launchers together. The application needs an existing
+   Node.js 24 or newer installation available as the command `node`.
+   No npm install or downloaded font is needed to run this package.
+
+2. Windows: double-click start-scopesignal.cmd.
+   macOS/Linux: open a terminal and run:
+       sh "/full/path/to/extracted-folder/start-scopesignal.sh"
+   Replace the path with your extracted folder. Paths containing spaces work.
+
+3. Open the loopback URL printed in that terminal, normally:
+       http://127.0.0.1:4173
+   Keep the terminal open while using the application. Press Ctrl+C there to
+   stop the server. The page uses fonts already installed on your computer.
+
+If `node` is not found, use a terminal where your existing Node.js installation
+is available. If the terminal reports EADDRINUSE, the selected port is busy.
+Leave that other program running and choose an unused positive port, for example:
+
+   Windows PowerShell:
+       $env:PORT = '4174'
+       & 'C:\path\to\extracted-folder\start-scopesignal.cmd'
+
+   macOS/Linux:
+       PORT=4174 sh "/path/to/extracted-folder/start-scopesignal.sh"
+
+Open the newly printed URL. This package preserves the selected source server:
+use a positive integer port from 1 through 65535. Do not use PORT=0 with this
+edition; its server would print zero instead of the actual allocated port.
+
+USE THE EXISTING LOCAL TOOLS
+
+The home page offers a fixture milestone with editable checkpoints and a local
+rule preview. Approve an edited checkpoint, save its fixture record, and open
+the saved-record viewer to choose that JSON file again. The recorded amounts
+and history are simulated fixture data. This package makes no real payment.
+
+Six existing pages are included. After the printed server address, use:
+
+   /                    Fixture milestone and saved-record download
+   /record.html         Open a saved fixture record
+   /scope.html          Build a fixture scope
+   /scope-compare.html  Compare saved scopes
+   /scope-csv.html      Convert checkpoint CSV
+   /scope-library.html  Saved workspace library
+
+Use the application's save/export controls to keep records outside the browser.
+Local saved files can be reopened with the corresponding page's file picker.
+Retain exported files when moving the package to another folder or computer.
+
+WHAT WAS VERIFIED FOR THIS EDITION
+
+The stylesheet no longer imports Google Fonts. Its existing font stacks and
+layout declarations are preserved. The repository's browser gate now requires
+zero external request attempts rather than permitting the old font request.
+
+All 242 Node tests passed. A separate native Chrome receiver exercised the
+actual home-page approval, JSON download, native file selection, saved record,
+refusal/recovery, keyboard and reload at desktop and phone widths. The repaired
+runtime passed 21 of 21 checks with zero external request attempts and exit 0.
+All 44 runtime source files remained unchanged during receiving. This increment's
+native browser course covered the home page and saved-record viewer; it does not
+claim a fresh browser qualification of every other included page.
+
+The original comparison produced two blocked Google Fonts requests and failed
+the final zero-external-attempts check. It then timed out during receiver cleanup.
+Both results are retained in evidence. The repaired course used the same check
+predicates with a receiver-only connection-close correction; see EVIDENCE.txt.
+
+SOURCE, PACKAGE AND PROJECT CONTEXT
+
+Exact runtime source:
+https://github.com/Jacob-Met/scopesignal/commit/7c2e70d756734ff49f693a84b43b9660be542962
+
+Existing APP-SCOPE-001 record:
+https://app.notion.com/p/3f4aedcdf4a581a5ab5de3d6477356e2
+
+This is the 44-file runnable subset of that source, with launchers, instructions
+and compact evidence. It is not the complete repository or its historical media.
+SOURCE-MANIFEST.json pins every app file to its source blob and SHA-256.
+PACKAGE-MANIFEST.json pins every other file in this package. app/LICENSE retains
+the source license. EVIDENCE.txt explains the preserved receiving results.
+
+The previously installed MSI release 1cf9ab8f remains a separate owner-held
+application. This ZIP starts its own extracted copy; it does not replace that
+installation or include its separately improved ephemeral-port server.

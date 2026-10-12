@@ -1,0 +1,250 @@
+{
+  "schema": "scopesignal.portable-launch.v1",
+  "at": "2026-10-12T22:09:46.777407+00:00",
+  "sourceCommit": "7c2e70d756734ff49f693a84b43b9660be542962",
+  "node": "v24.19.0",
+  "freshZipExtraction": true,
+  "argv": [
+    "/bin/sh",
+    "/workspace/scratch/163c1572c22a/artifact_delivery/portable ZIP receiving \u03a9 96qwzp1f/ScopeSignal extracted \u03a9/start-scopesignal.sh"
+  ],
+  "cwd": "/workspace/scratch/163c1572c22a/artifact_delivery/portable ZIP receiving \u03a9 96qwzp1f/foreign launch \u03a9",
+  "foreignDecoys": [
+    "index.html",
+    "styles.css"
+  ],
+  "hostileCDPATH": "/workspace/scratch/163c1572c22a/artifact_delivery/portable ZIP receiving \u03a9 96qwzp1f/foreign launch \u03a9",
+  "configuredPort": 37869,
+  "startup": "ScopeSignal at http://127.0.0.1:37869",
+  "http200ExactSourceFiles": [
+    {
+      "path": "LICENSE",
+      "bytes": 807,
+      "sha256": "3f25841c9348bbf34a89b246075022b77ab309bf6d5102b165a1bf900c5c246f"
+    },
+    {
+      "path": "app.mjs",
+      "bytes": 5366,
+      "sha256": "a33c3519e59445e4ed6c19a2beec81005482e34b5e6bd396f10916cfbfd96a24"
+    },
+    {
+      "path": "fixture-timeline.css",
+      "bytes": 2714,
+      "sha256": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b"
+    },
+    {
+      "path": "index.html",
+      "bytes": 9090,
+      "sha256": "73171545f26fd82cfaf425ada9ba59b91bd16c5e68118a92152edd9a5c62155c"
+    },
+    {
+      "path": "record-view.css",
+      "bytes": 6493,
+      "sha256": "71345c822fdf74c7160eb5aa09675fac19abe24603137a75d7431397eb59768d"
+    },
+    {
+      "path": "record.html",
+      "bytes": 2461,
+      "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4"
+    },
+    {
+      "path": "scope-checkpoint-import.css",
+      "bytes": 1317,
+      "sha256": "45587c17cf2db359652b88553b66c88898abb9fa4108380dd6dcb5a8f8e67f2f"
+    },
+    {
+      "path": "scope-compare.css",
+      "bytes": 6818,
+      "sha256": "22589796d131cbaa0adb049a0f4bf4c5f1f96f0791f6561221d120d6b418a02b"
+    },
+    {
+      "path": "scope-compare.html",
+      "bytes": 5874,
+      "sha256": "fc10e883961d9c9c8f61f72b00cb4376b986465dad569bb9081d1ba8d4a0421a"
+    },
+    {
+      "path": "scope-csv.css",
+      "bytes": 3976,
+      "sha256": "f12f3635813369079b4a154f2e0c59b8600f18d4010984e90c088b4ee078bb04"
+    },
+    {
+      "path": "scope-csv.html",
+      "bytes": 5762,
+      "sha256": "ea72eb1b8642ce1a2db9d4f28537a1b38f87d1e5b07e52627b4fb56f5cb22758"
+    },
+    {
+      "path": "scope-history.css",
+      "bytes": 2801,
+      "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69"
+    },
+    {
+      "path": "scope-library.css",
+      "bytes": 3305,
+      "sha256": "2d8686f72c6aaf6a2308026307b4f713df5cdf5faa73c87e16108074ff08a7c0"
+    },
+    {
+      "path": "scope-library.html",
+      "bytes": 3047,
+      "sha256": "c60dde7118e4cb51d3eac9391b40d410e2b5e3916142ac280ee37ba415af4e35"
+    },
+    {
+      "path": "scope-workspace.css",
+      "bytes": 5277,
+      "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20"
+    },
+    {
+      "path": "scope.html",
+      "bytes": 13971,
+      "sha256": "3179243d12803701b4255146853d2ba26d9746bfbcff2de891c9335d0f482cd2"
+    },
+    {
+      "path": "scripts/serve.mjs",
+      "bytes": 950,
+      "sha256": "f5c195cc4aa83a4eb7d1ead87dd64896d87da2fdce9c31de5c6a84d12f398f87"
+    },
+    {
+      "path": "src/agents.mjs",
+      "bytes": 1599,
+      "sha256": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2"
+    },
+    {
+      "path": "src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+    },
+    {
+      "path": "src/fixture-timeline-view.mjs",
+      "bytes": 3336,
+      "sha256": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd"
+    },
+    {
+      "path": "src/fixture-timeline.mjs",
+      "bytes": 3054,
+      "sha256": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
+    },
+    {
+      "path": "src/record-reader.mjs",
+      "bytes": 5111,
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+    },
+    {
+      "path": "src/record-view.mjs",
+      "bytes": 8786,
+      "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f"
+    },
+    {
+      "path": "src/scope-checkpoint-csv-ui.mjs",
+      "bytes": 6509,
+      "sha256": "66884f32de17c02f077b32e6e2b26030f4f1b81499f90b404939128dc7d0dcce"
+    },
+    {
+      "path": "src/scope-checkpoint-csv.mjs",
+      "bytes": 4675,
+      "sha256": "acd8e78d1b2c2a999f6f1d8c4f154bf293d138471832a281293029c048e2e224"
+    },
+    {
+      "path": "src/scope-checkpoint-import-ui.mjs",
+      "bytes": 7206,
+      "sha256": "850e8ef9afcc9c63e013d097839a823615d5e66389acf4a970897ce114843195"
+    },
+    {
+      "path": "src/scope-checkpoint-import.mjs",
+      "bytes": 1771,
+      "sha256": "89019640fbe3a9a5f3955566bb3fd6e7d838fc30c984e41cd24fb43dd6f9788e"
+    },
+    {
+      "path": "src/scope-compare-ui.mjs",
+      "bytes": 13887,
+      "sha256": "041d36d0254925de033d4596ac86310d8c762ef92b32080e5fa4403debc47c2f"
+    },
+    {
+      "path": "src/scope-compare.mjs",
+      "bytes": 7743,
+      "sha256": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c"
+    },
+    {
+      "path": "src/scope-comparison-export.mjs",
+      "bytes": 10702,
+      "sha256": "2fec30a548cdb8f304c52c3c479e06bd8aaad10ee57c53bbbc1ec5b09e272978"
+    },
+    {
+      "path": "src/scope-draft-removal.mjs",
+      "bytes": 1399,
+      "sha256": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224"
+    },
+    {
+      "path": "src/scope-history-view.mjs",
+      "bytes": 5728,
+      "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b"
+    },
+    {
+      "path": "src/scope-history.mjs",
+      "bytes": 4297,
+      "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88"
+    },
+    {
+      "path": "src/scope-library-ui.mjs",
+      "bytes": 6248,
+      "sha256": "7631162c5b7c75ce98434014161adb235c4bf07f8a7d42c96445681cd7a11349"
+    },
+    {
+      "path": "src/scope-library.mjs",
+      "bytes": 3550,
+      "sha256": "8950f2ca8e2ddef094b630260b93ad8580989eb44fe0a3d96bb0baf2f9364ad4"
+    },
+    {
+      "path": "src/scope-plan.mjs",
+      "bytes": 7200,
+      "sha256": "88a22b221c09eaba16cf78027958ee504b72624638193b1e029d3c15ff177046"
+    },
+    {
+      "path": "src/scope-review-export.mjs",
+      "bytes": 8253,
+      "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397"
+    },
+    {
+      "path": "src/scope-revision-draft.mjs",
+      "bytes": 667,
+      "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e"
+    },
+    {
+      "path": "src/scope-workspace-record.mjs",
+      "bytes": 7421,
+      "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+    },
+    {
+      "path": "src/scope-workspace.mjs",
+      "bytes": 26338,
+      "sha256": "39f2abe72f1ebaf09cf687177a858632bacb2a7d4708f0eb960cd23cc07a6e38"
+    },
+    {
+      "path": "src/workers-ai.mjs",
+      "bytes": 3525,
+      "sha256": "d69676fceb4a3782e6eaa7edcff4d5a4d1b7d89fc0d4e642d3bdca6e079a938e"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 9259,
+      "sha256": "08ce330f12fcf6cef2c15a52cf2e06855e7ea6b40bc28fa3e1130aba3583f794"
+    }
+  ],
+  "http404MissingPath": true,
+  "sourceUnchanged": true,
+  "servedFileCount": 44,
+  "ownedProcessPid": 6,
+  "ownedProcessStopped": true,
+  "stopReturnCode": -15,
+  "stderr": "",
+  "windowsLauncher": "independent static review; not executed in native Windows for this package",
+  "browserEvidence": "separate actual native before/after course retained in evidence"
+}

@@ -1,0 +1,77 @@
+{
+  "variant": "original",
+  "started": "2026-10-12T20:59:53.220Z",
+  "finished": "2026-10-12T21:01:24.851Z",
+  "childExit": null,
+  "childSignal": "SIGTERM",
+  "childError": "Error: spawnSync C:\\Program Files\\nodejs\\node.exe ETIMEDOUT",
+  "sourceUnchanged": true,
+  "sourceSha256": {
+    "LICENSE": "3f25841c9348bbf34a89b246075022b77ab309bf6d5102b165a1bf900c5c246f",
+    "app.mjs": "a33c3519e59445e4ed6c19a2beec81005482e34b5e6bd396f10916cfbfd96a24",
+    "fixture-timeline.css": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b",
+    "index.html": "73171545f26fd82cfaf425ada9ba59b91bd16c5e68118a92152edd9a5c62155c",
+    "record-view.css": "71345c822fdf74c7160eb5aa09675fac19abe24603137a75d7431397eb59768d",
+    "record.html": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4",
+    "scope-checkpoint-import.css": "45587c17cf2db359652b88553b66c88898abb9fa4108380dd6dcb5a8f8e67f2f",
+    "scope-compare.css": "22589796d131cbaa0adb049a0f4bf4c5f1f96f0791f6561221d120d6b418a02b",
+    "scope-compare.html": "fc10e883961d9c9c8f61f72b00cb4376b986465dad569bb9081d1ba8d4a0421a",
+    "scope-csv.css": "f12f3635813369079b4a154f2e0c59b8600f18d4010984e90c088b4ee078bb04",
+    "scope-csv.html": "ea72eb1b8642ce1a2db9d4f28537a1b38f87d1e5b07e52627b4fb56f5cb22758",
+    "scope-history.css": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69",
+    "scope-library.css": "2d8686f72c6aaf6a2308026307b4f713df5cdf5faa73c87e16108074ff08a7c0",
+    "scope-library.html": "c60dde7118e4cb51d3eac9391b40d410e2b5e3916142ac280ee37ba415af4e35",
+    "scope-workspace.css": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20",
+    "scope.html": "3179243d12803701b4255146853d2ba26d9746bfbcff2de891c9335d0f482cd2",
+    "scripts/serve.mjs": "f5c195cc4aa83a4eb7d1ead87dd64896d87da2fdce9c31de5c6a84d12f398f87",
+    "src/agents.mjs": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+    "src/fixture-record.mjs": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+    "src/fixture-timeline-view.mjs": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd",
+    "src/fixture-timeline.mjs": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55",
+    "src/ledger.mjs": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+    "src/payment-status.mjs": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+    "src/record-reader.mjs": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8",
+    "src/record-view.mjs": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f",
+    "src/scope-checkpoint-csv-ui.mjs": "66884f32de17c02f077b32e6e2b26030f4f1b81499f90b404939128dc7d0dcce",
+    "src/scope-checkpoint-csv.mjs": "acd8e78d1b2c2a999f6f1d8c4f154bf293d138471832a281293029c048e2e224",
+    "src/scope-checkpoint-import-ui.mjs": "850e8ef9afcc9c63e013d097839a823615d5e66389acf4a970897ce114843195",
+    "src/scope-checkpoint-import.mjs": "89019640fbe3a9a5f3955566bb3fd6e7d838fc30c984e41cd24fb43dd6f9788e",
+    "src/scope-compare-ui.mjs": "041d36d0254925de033d4596ac86310d8c762ef92b32080e5fa4403debc47c2f",
+    "src/scope-compare.mjs": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c",
+    "src/scope-comparison-export.mjs": "2fec30a548cdb8f304c52c3c479e06bd8aaad10ee57c53bbbc1ec5b09e272978",
+    "src/scope-draft-removal.mjs": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224",
+    "src/scope-history-view.mjs": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b",
+    "src/scope-history.mjs": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88",
+    "src/scope-library-ui.mjs": "7631162c5b7c75ce98434014161adb235c4bf07f8a7d42c96445681cd7a11349",
+    "src/scope-library.mjs": "8950f2ca8e2ddef094b630260b93ad8580989eb44fe0a3d96bb0baf2f9364ad4",
+    "src/scope-plan.mjs": "88a22b221c09eaba16cf78027958ee504b72624638193b1e029d3c15ff177046",
+    "src/scope-review-export.mjs": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397",
+    "src/scope-revision-draft.mjs": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e",
+    "src/scope-workspace-record.mjs": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85",
+    "src/scope-workspace.mjs": "39f2abe72f1ebaf09cf687177a858632bacb2a7d4708f0eb960cd23cc07a6e38",
+    "src/workers-ai.mjs": "d69676fceb4a3782e6eaa7edcff4d5a4d1b7d89fc0d4e642d3bdca6e079a938e",
+    "styles.css": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+  },
+  "receiverSha256": "96a8178a9019771b8efe0b28c12113c23dd419c2cb083ced11c2c67387c15fce",
+  "receiptSha256": "7828c63cb8b3ac3bbaf1d4f40af892621008c22867400b131ef0fa84c4e990cf",
+  "checks": 21,
+  "failures": [
+    {
+      "name": "viewer makes no external requests and all pages finish without script errors",
+      "result": "fail",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ [\n+   {\n+     role: 'desktop:fixture',\n+     url: 'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap'\n+   },\n+   {\n+     role: 'phone:fixture',\n+     url: 'https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap'\n+   }\n+ ]\n- []\n\n    at file:///D:/scopesignal-fonts-163c1572c22a/strict-record-receiver.mjs:309:12\n    at check (file:///D:/scopesignal-fonts-163c1572c22a/strict-record-receiver.mjs:40:15)\n    at file:///D:/scopesignal-fonts-163c1572c22a/strict-record-receiver.mjs:307:9"
+    }
+  ],
+  "externalRequests": [
+    {
+      "role": "desktop:fixture",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    },
+    {
+      "role": "phone:fixture",
+      "url": "https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+    }
+  ],
+  "browser": "Chrome/154.0.8037.97",
+  "receiptPass": false
+}

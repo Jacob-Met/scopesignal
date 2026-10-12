@@ -1,0 +1,170 @@
+{
+  "schema": "scopesignal.product-publication.v1",
+  "repository": "Jacob-Met/scopesignal",
+  "commit": "7c2e70d756734ff49f693a84b43b9660be542962",
+  "tree": "8a33d9d1b19fa6c6e1e8d21ace917739cba9713c",
+  "parent": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+  "branch": "fix/local-fonts-163c1572c22a",
+  "files": [
+    {
+      "path": "README.md",
+      "gitBlob": "4209e289cf17118d7680521d170240d2f2dab0c5",
+      "remoteBodyVerified": true
+    },
+    {
+      "path": "scripts/check-browser.mjs",
+      "gitBlob": "0bd2826807394ee05abf056eb86d866da3d6b900",
+      "remoteBodyVerified": true
+    },
+    {
+      "path": "styles.css",
+      "gitBlob": "b0d25ab47af9499128da7b5e9ca63684e11a8999",
+      "remoteBodyVerified": true
+    }
+  ],
+  "remoteRef": {
+    "ref": "refs/heads/fix/local-fonts-163c1572c22a",
+    "node_id": "REF_kwDOU-z-vtoAJ3JlZnMvaGVhZHMvZml4L2xvY2FsLWZvbnRzLTE2M2MxNTcyYzIyYQ",
+    "url": "https://api.github.com/repos/Jacob-Met/scopesignal/git/refs/heads/fix/local-fonts-163c1572c22a",
+    "object": {
+      "sha": "7c2e70d756734ff49f693a84b43b9660be542962",
+      "type": "commit",
+      "url": "https://api.github.com/repos/Jacob-Met/scopesignal/git/commits/7c2e70d756734ff49f693a84b43b9660be542962"
+    }
+  },
+  "actions": {
+    "total_count": 0,
+    "workflow_runs": []
+  },
+  "defaultPrepublication": {
+    "name": "paypal-ai",
+    "commit": {
+      "sha": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+      "node_id": "C_kwDOU-z-vtoAKDZmMTdlYTMwZmU4NjU5ZGM0YWU0N2NhZTZjYjNhOGUzMmMxZDI1MDg",
+      "commit": {
+        "author": {
+          "name": "Jacob Metoyer",
+          "email": "150724801+Jacob-Met@users.noreply.github.com",
+          "date": "2026-10-08T20:48:09Z"
+        },
+        "committer": {
+          "name": "GitHub",
+          "email": "noreply@github.com",
+          "date": "2026-10-08T20:48:09Z"
+        },
+        "message": "Merge checkpoint definition reuse into the current workspace flow\n\nIntegrate the qualified checkpoint definition import with current CSV conversion, monetary bounds, draft Undo and history. Receive supported PR test merge f5c9c3d4 (233 passing tests) and preserve the explicit unobserved supplemental browser limit in root-source-review.json. Original author, independent receiver and continuation attribution are retained.",
+        "tree": {
+          "sha": "245c0dd66c05c17f22e53bf57d9ae5847b36dc9a",
+          "url": "https://api.github.com/repos/Jacob-Met/scopesignal/git/trees/245c0dd66c05c17f22e53bf57d9ae5847b36dc9a"
+        },
+        "url": "https://api.github.com/repos/Jacob-Met/scopesignal/git/commits/6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+        "comment_count": 0,
+        "verification": {
+          "verified": true,
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqyAGJCRC1aQ7uu5UhlAAA3z8QABptaA8CtKz/wYVijkzskcH3\nhSWVvYzMlSLwIX78RckClRmwIdqK5BAIQVeo/XtiQTrw+9sEVcytNJVYEiikdsw2\nzNUjcqJYWppaqYI3G9Q2aaD+X16R30/RJMgGDkiLh6iWWUrmbtfayafvKwPsaOl/\nvnZpclM62HUx2NBNUj9p583cCuFZTiZVaHuh69DbCqJ3n4pIXh4DS9MigJ620S9n\nIjFlNNEudXwejCPa6PmsoQd0jezy7hr6+do7NmWlpju+qwBYSg4HwtszBpWcrA7b\na7o6Q576hBpWT9hDvzIOxL2/sBpzTXs9cj0y8A+4KWiY4DfGXreyY28GDwNPIR3+\niHREx5KM/9gm1XTdNXbtg58aUxLGXkFGezxDo4qmSNJ++TbY9PgoIXonEdBvjRhe\n8/iftuFbZceddlnoZyYCvpbX+mTr6ASrhu1UY9YMbLuIQH5C+jPZ5IG1Gibq704n\nwWUhhbbFEtC8b8DKoe6jxPNPGayCPXTXXFBqOgTBOYDviGhAF2zgQABv7YuL2GLW\n4CFPt0ZRPJIftQ9QQ8dkP5FsjPOGoqVowPHEqs3pQArPdDBlkad08e06ZMrlTQ+q\n/GhT6JC+vDzg6VnBs1I1Xw6nbCojX8akRsnYO86d+ekoDlPBRdaiKAysoEUA8nfd\nTaaFFXKyf2IXXB4itCbx\n=voBI\n-----END PGP SIGNATURE-----\n",
+          "payload": "tree 245c0dd66c05c17f22e53bf57d9ae5847b36dc9a\nparent 85864b4c4f145985f3123fd43583b049088f22b4\nparent 47ecf2c41e132bd022d14cc8d20b7d6266f4af74\nauthor Jacob Metoyer <150724801+Jacob-Met@users.noreply.github.com> 1791492489 -0700\ncommitter GitHub <noreply@github.com> 1791492489 -0700\n\nMerge checkpoint definition reuse into the current workspace flow\n\nIntegrate the qualified checkpoint definition import with current CSV conversion, monetary bounds, draft Undo and history. Receive supported PR test merge f5c9c3d4 (233 passing tests) and preserve the explicit unobserved supplemental browser limit in root-source-review.json. Original author, independent receiver and continuation attribution are retained.",
+          "verified_at": "2026-10-08T20:48:10Z"
+        }
+      },
+      "url": "https://api.github.com/repos/Jacob-Met/scopesignal/commits/6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+      "html_url": "https://github.com/Jacob-Met/scopesignal/commit/6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+      "comments_url": "https://api.github.com/repos/Jacob-Met/scopesignal/commits/6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508/comments",
+      "author": {
+        "login": "Jacob-Met",
+        "id": 150724801,
+        "node_id": "U_kgDOCPvgwQ",
+        "avatar_url": "https://avatars.githubusercontent.com/u/150724801?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Jacob-Met",
+        "html_url": "https://github.com/Jacob-Met",
+        "followers_url": "https://api.github.com/users/Jacob-Met/followers",
+        "following_url": "https://api.github.com/users/Jacob-Met/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Jacob-Met/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Jacob-Met/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Jacob-Met/subscriptions",
+        "organizations_url": "https://api.github.com/users/Jacob-Met/orgs",
+        "repos_url": "https://api.github.com/users/Jacob-Met/repos",
+        "events_url": "https://api.github.com/users/Jacob-Met/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Jacob-Met/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "85864b4c4f145985f3123fd43583b049088f22b4",
+          "url": "https://api.github.com/repos/Jacob-Met/scopesignal/commits/85864b4c4f145985f3123fd43583b049088f22b4",
+          "html_url": "https://github.com/Jacob-Met/scopesignal/commit/85864b4c4f145985f3123fd43583b049088f22b4"
+        },
+        {
+          "sha": "47ecf2c41e132bd022d14cc8d20b7d6266f4af74",
+          "url": "https://api.github.com/repos/Jacob-Met/scopesignal/commits/47ecf2c41e132bd022d14cc8d20b7d6266f4af74",
+          "html_url": "https://github.com/Jacob-Met/scopesignal/commit/47ecf2c41e132bd022d14cc8d20b7d6266f4af74"
+        }
+      ]
+    },
+    "_links": {
+      "self": "https://api.github.com/repos/Jacob-Met/scopesignal/branches/paypal-ai",
+      "html": "https://github.com/Jacob-Met/scopesignal/tree/paypal-ai"
+    },
+    "protected": false,
+    "protection": {
+      "enabled": false,
+      "required_status_checks": {
+        "enforcement_level": "off",
+        "contexts": [],
+        "checks": []
+      }
+    },
+    "protection_url": "https://api.github.com/repos/Jacob-Met/scopesignal/branches/paypal-ai/protection"
+  },
+  "workflows": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "gitBlob": "2fac275ab0183987bccac3ba787a133795a70016",
+      "triggers": [
+        "push:paypal-ai",
+        "workflow_dispatch"
+      ]
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "gitBlob": "b97f2716367bb4c5ed930693e3c3e7fdc02c792e",
+      "triggers": [
+        "pull_request"
+      ]
+    }
+  ],
+  "review": {
+    "reviewer": "/root",
+    "approved": "exact three-file source.diff",
+    "conclusions": [
+      "index.html loads styles.css",
+      "CSS deletes only remote import and preserves existing font stacks/layout",
+      "browser checker records+aborts non-loopback attempts and refuses all",
+      "README accurately describes installed-font use"
+    ]
+  }
+}

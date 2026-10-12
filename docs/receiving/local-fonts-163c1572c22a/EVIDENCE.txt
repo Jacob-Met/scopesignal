@@ -1,0 +1,63 @@
+SCOPESIGNAL LOCAL FONT RECEIVING — 12 OCTOBER 2026
+
+The product repair is commit 7c2e70d756734ff49f693a84b43b9660be542962 in
+Jacob-Met/scopesignal, parent 6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508.
+It changes exactly styles.css, scripts/check-browser.mjs and README.md.
+The full repository has 763 blob leaves; all other leaves are preserved.
+The source diff and publication receipt are retained under evidence/.
+
+INDEPENDENT SOURCE REVIEW
+
+/root reviewed the exact three-file diff and approved publication. The review
+confirmed that index.html loads styles.css, the CSS change removes only the
+remote import, the existing font stacks/layout remain intact, the browser gate
+records and aborts non-loopback requests and now refuses every such attempt,
+and the README accurately explains the installed-font behavior.
+
+NATIVE RECEIVER PROVENANCE
+
+Device: freshly qualified online MSI, Windows x64, Node v24.19.0.
+Browser: existing Chrome/154.0.8037.97.
+The installed application was only inspected. The receiver ran isolated copies
+under D:\scopesignal-fonts-163c1572c22a, using an existing Puppeteer Core module
+from the Desktop Commander package and a temporary browser profile.
+No package/browser installation or live provider call was used.
+
+The receiver starts from the existing scripts/check-record-view.mjs, Git blob
+8a183cb5a0aef21a240a35f0c7019ae9609c8ec5. The retained strict derivative removes
+its final Google Fonts allowance, requiring externalRequests to equal [].
+Its SHA-256 is 96a8178a9019771b8efe0b28c12113c23dd419c2cb083ced11c2c67387c15fce.
+
+Original runtime comparison: 20 workflow checks passed, then the final check
+refused exactly two blocked Google Fonts attempts, from desktop:fixture and
+phone:fixture. The receipt was fully written before cleanup hung. The process
+was ended by its 90-second timeout: childExit null, SIGTERM, ETIMEDOUT. It is not
+a clean negative process exit. Receipt SHA-256:
+7828c63cb8b3ac3bbaf1d4f40af892621008c22867400b131ef0fa84c4e990cf.
+
+Candidate comparison: same checks, with server.closeAllConnections() added just
+before the existing await server.close callback in receiver cleanup only. This
+derivative SHA-256 is fcfc4e45428ecbfed86da982ddfc471a516dcc7d56220c4216b1bb38df15207c.
+It passed all 21 checks, zero external attempts and page errors, child exit 0.
+Receipt SHA-256:
+79072bdc4d5016fef3ca1eb413e43c18f67196396c3344293b42f5f76ffd08c7.
+
+The candidate receiver was run before source publication, so its receipt names
+the reviewed working tree. Its 44 source digests are individually matched to
+the exact published commit in SOURCE-MANIFEST.json. Both runs' before/after
+source digests were unchanged. Original and candidate JSON receipts and process
+records were recovered from MSI and their exact native receipt hashes verified.
+Both receiver derivatives and original styles.css are included for inspection.
+
+Screenshots and browser profiles remain outside this package. The original
+native PNG transport timed out; no visual review is inferred from the JSON
+receipt. No further native course is claimed for the extra four local pages.
+
+SOURCE TESTS AND AUTOMATION
+
+The exact product candidate passed `npm test` under Node 24.19.0: 242 tests,
+zero failures/skips. The raw log is retained. The feature branch publication
+did not match the repository's push-to-paypal-ai or pull_request workflows.
+No PR was opened for this repair. An Actions query at the exact product commit
+returned total_count 0. The default branch and installed application were not
+changed by this delivery.
