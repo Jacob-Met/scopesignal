@@ -1,17 +1,20 @@
 import { createHash } from 'node:crypto';
-import { lstat, mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
-import { dirname, isAbsolute, join, relative, resolve, sep } from 'node:path';
+import { lstat, mkdir, readdir, readFile, realpath, writeFile } from 'node:fs/promises';
+import { basename, dirname, isAbsolute, join, relative, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 const usage = 'Usage: node scripts/package-offline.mjs --out NEW_DIRECTORY --source-ref COMMIT_OR_VERSION';
 
-function options(argv) {
+async function options(argv) {
   if (argv.length !== 4 || argv[0] !== '--out' || argv[2] !== '--source-ref' || !argv[1] || !argv[3]) throw Error(usage);
   if (!/^[A-Za-z0-9][A-Za-z0-9._/-]{0,119}$/.test(argv[3])) throw Error('Source ref must be a short commit or version label.');
-  const output = resolve(argv[1]);
-  const within = relative(root, output);
+  const requested = resolve(argv[1]);
+  // mkdir below requires an existing parent. Resolve it before admission so a
+  // directory symlink or junction cannot put the package inside the source.
+  const output = join(await realpath(dirname(requested)), basename(requested));
+  const within = relative(await realpath(root), output);
   if (!within || (!within.startsWith(`..${sep}`) && within !== '..' && !isAbsolute(within))) throw Error('Choose a new output directory outside the source tree.');
   return { output, sourceRef: argv[3] };
 }
@@ -61,7 +64,7 @@ await import('./scripts/serve.mjs');
 `;
 
 try {
-  const { output, sourceRef } = options(process.argv.slice(2));
+  const { output, sourceRef } = await options(process.argv.slice(2));
   const paths = ['LICENSE', 'README.md', 'docs/authored-scope-history.md', 'package.json', 'scripts/serve.mjs'];
   for (const entry of await readdir(root, { withFileTypes: true })) {
     if (/\.(html|css|mjs)$/.test(entry.name)) paths.push(entry.name);

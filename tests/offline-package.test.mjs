@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { createHash } from 'node:crypto';
 import { spawn, spawnSync } from 'node:child_process';
 import { once } from 'node:events';
-import { cp, mkdtemp, mkdir, readFile, readdir, rm, writeFile } from 'node:fs/promises';
+import { cp, mkdtemp, mkdir, readFile, readdir, rm, symlink, writeFile } from 'node:fs/promises';
 import { createServer } from 'node:net';
 import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
@@ -48,6 +48,30 @@ test('existing destination and destinations inside source are refused without re
   assert.deepEqual(await readdir(out), ['keep.txt']);
   assert.equal(await readFile(join(out, 'keep.txt'), 'utf8'), 'retained');
   assert.notEqual(run(builder, ['--out', root, '--source-ref', 'fixture-source']).status, 0);
+});
+
+test('linked source and output parents cannot bypass the outside-source boundary', async t => {
+  const temp = await directory(t);
+  const source = join(temp, 'source');
+  await cp(root, source, { recursive: true, filter: path => !path.endsWith('.git') });
+  const sourceAlias = join(temp, 'source alias');
+  const directoryLink = process.platform === 'win32' ? 'junction' : 'dir';
+  await symlink(source, sourceAlias, directoryLink);
+  const linkedBuilder = join(sourceAlias, 'scripts', 'package-offline.mjs');
+  const before = await readdir(source);
+  const refused = run(linkedBuilder, ['--out', join(sourceAlias, 'unexpected-package'), '--source-ref', 'fixture-source']);
+  assert.notEqual(refused.status, 0);
+  assert.match(refused.stderr, /outside the source tree/);
+  assert.deepEqual(await readdir(source), before);
+
+  const external = join(temp, 'external');
+  await mkdir(external);
+  const externalAlias = join(temp, 'external alias');
+  await symlink(external, externalAlias, directoryLink);
+  const accepted = run(linkedBuilder, ['--out', join(externalAlias, 'review'), '--source-ref', 'fixture-source']);
+  assert.equal(accepted.status, 0, accepted.stderr);
+  assert.equal(run(join(external, 'review', 'verify-package.mjs')).status, 0);
+  assert.deepEqual(await readdir(source), before);
 });
 
 test('unadmitted external stylesheet leaves the requested destination absent', async t => {
