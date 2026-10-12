@@ -27,7 +27,32 @@ Timeline model tests run with the existing test command. Its optional real-brows
 
 It uses the same existing Playwright/Chromium environment options described below, writes receipts and screenshots to out/timeline-receiving by default, and checks desktop, phone, keyboard navigation, workspace preservation, and isolated timeline startup failure. SCOPESIGNAL_EVIDENCE can choose another output directory.
 
-Optional browser receiving checks run with `node scripts/check-browser.mjs`. They require an existing Playwright and Chromium installation; `SCOPESIGNAL_PLAYWRIGHT` may point to its entry module and `SCOPESIGNAL_CHROME` to its browser executable. The command serves this source on an ephemeral loopback port, launches fresh desktop and phone contexts, blocks external requests and writes a receipt under `out/browser-receiving/`. The existing Google Fonts stylesheet attempts are recorded and blocked, so captures use fallback fonts. `SCOPESIGNAL_CHECK_SCOPE=combined-drafts` additionally checks the separate draft-preservation and webhook-label PRs when those changes have been incorporated into the tested source.
+Optional browser receiving checks run with `node scripts/check-browser.mjs`. They require an existing Playwright and Chromium installation; `SCOPESIGNAL_PLAYWRIGHT` may point to its entry module and `SCOPESIGNAL_CHROME` to its browser executable. The command serves this source on an ephemeral loopback port, launches fresh desktop and phone contexts, blocks external requests and writes a receipt under `out/browser-receiving/`. The main page now uses its existing local font fallback stack without requesting Google Fonts. Historical receiving records retain their original blocked font attempts. `SCOPESIGNAL_CHECK_SCOPE=combined-drafts` additionally checks the separate draft-preservation and webhook-label PRs when those changes have been incorporated into the tested source.
+
+### Make a complete offline review package
+
+From this source checkout, choose a new directory outside the checkout and label
+the exact source version you are packaging:
+
+    node scripts/package-offline.mjs --out ../scopesignal-review --source-ref COMMIT_OR_VERSION
+
+The command copies every current root HTML/CSS/JavaScript page and all source
+modules, plus the existing local server, README and license. It refuses an
+existing destination or an external CSS resource before publishing the package.
+The six current pages are the fixture, authored scope, saved-record viewer, CSV
+converter, paired comparison and saved-workspace library. No dependency install
+is required. The output is a directory; archive the whole directory when sharing.
+
+In the extracted package, run `node start-scopesignal.mjs` and open the printed
+loopback URL. The launcher verifies all files and selects its own directory even
+when called from another working directory. It accepts a fixed `PORT` from 1 to
+65535; port 0 is refused because the inherited server cannot report its actual
+ephemeral port. Keep downloaded workspace files outside the package directory.
+`node verify-package.mjs` checks the complete file inventory and SHA-256 hashes.
+The source label is supplied by the builder's caller; the manifest records actual
+packaged bytes and does not authenticate that label. The output can be partial
+after an operating-system write failure; an absent manifest or failed verifier
+means it is not ready to use. Choose a new directory for the next build.
 
 ## Save a reviewed fixture record
 
