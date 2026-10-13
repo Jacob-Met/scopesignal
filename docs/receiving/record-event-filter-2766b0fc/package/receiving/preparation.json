@@ -1,0 +1,6 @@
+{
+  "sourceBlobsVerified": 35,
+  "sourcePacketBodiesMatched": 18,
+  "fixtureBodiesVerified": 6,
+  "initialPreparation": "Refused fixture names because initial receiving assumption expected leaf names. Published envelope correctly uses fixtures/name.json. No fixture was written by the failed pass; corrected receiving accepts exactly that two-part prefix and validates every byte/SHA/Git blob. Source unchanged."
+}

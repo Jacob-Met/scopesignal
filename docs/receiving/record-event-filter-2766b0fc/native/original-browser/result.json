@@ -1,0 +1,204 @@
+{
+  "mode": "original",
+  "started": "2026-10-13T05:39:00.252Z",
+  "finished": "2026-10-13T05:39:01.720Z",
+  "pid": 89780,
+  "runtime": {
+    "host": "MSI",
+    "user": "jacob",
+    "platform": "win32",
+    "release": "10.0.26200",
+    "node": "v24.14.0",
+    "browser": "154.0.8037.97",
+    "playwright": "1.62.1"
+  },
+  "sourceUnchanged": true,
+  "sources": [
+    {
+      "path": "record.html",
+      "bytes": 2461,
+      "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4"
+    },
+    {
+      "path": "record-view.css",
+      "bytes": 6493,
+      "sha256": "71345c822fdf74c7160eb5aa09675fac19abe24603137a75d7431397eb59768d"
+    },
+    {
+      "path": "src/record-view.mjs",
+      "bytes": 8786,
+      "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f"
+    },
+    {
+      "path": "src/record-reader.mjs",
+      "bytes": 5111,
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+    },
+    {
+      "path": "src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    }
+  ],
+  "fixtures": [
+    {
+      "path": "empty.json",
+      "sha256": "0ac17b16abace9065964a75ffdc566bf843bda36b192b8cd4c81bab04754f584"
+    },
+    {
+      "path": "held-mixed.json",
+      "sha256": "9d14611593f624cf2fe9d901a44c9c8f981a0af46cb7ccffe9a3c613e7642755"
+    },
+    {
+      "path": "invalid.json",
+      "sha256": "80596983c0de2bed44750ca60310e21a1068946c26f82fad7980d24d529de086"
+    },
+    {
+      "path": "maximum.json",
+      "sha256": "f95626321d7170e9117616854639795139997e0bba2070110117ce89f33d5504"
+    },
+    {
+      "path": "mixed.json",
+      "sha256": "9d14611593f624cf2fe9d901a44c9c8f981a0af46cb7ccffe9a3c613e7642755"
+    },
+    {
+      "path": "partial.json",
+      "sha256": "b30e5fd95335f44974ac8232ccd26adef0f9959eb3b5f1034c11c07f3682a840"
+    }
+  ],
+  "requests": [
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs"
+  ],
+  "externalRequests": [],
+  "pageErrors": [],
+  "groups": [
+    {
+      "name": "ordinary file picker preserves all exact fields and full-record outcomes",
+      "pass": true,
+      "detail": {
+        "events": 13,
+        "summary": {
+          "total": 120000,
+          "approved": 3,
+          "captured": 80000,
+          "remaining": 40000
+        },
+        "literalEvidence": "Literal <img src=x> & café\nSecond line"
+      }
+    },
+    {
+      "name": "checkpoint filter keeps original non-contiguous sequence numbers and totals",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: checkpoint filter control missing\n\n0 !== 1\n\n    at controls (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:29:33)\n    at async filter (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:32:35)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:41:44\n    at async group (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:33:48)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:40:2"
+    },
+    {
+      "name": "event type intersects checkpoint and retains distinct duplicate receipt fields",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: checkpoint filter control missing\n\n0 !== 1\n\n    at controls (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:29:33)\n    at async filter (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:32:35)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:45:17\n    at async group (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:33:48)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:44:2"
+    },
+    {
+      "name": "hiding and restoring rows keeps open disclosures and exact literal JSON",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: checkpoint filter control missing\n\n0 !== 1\n\n    at controls (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:29:33)\n    at async filter (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:32:35)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:48:160\n    at async group (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:33:48)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:47:2"
+    },
+    {
+      "name": "no match is explicit and keyboard reset restores all events",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: checkpoint filter control missing\n\n0 !== 1\n\n    at controls (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:29:33)\n    at async filter (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:32:35)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:51:17\n    at async group (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:33:48)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:50:2"
+    },
+    {
+      "name": "refused replacement keeps filters, disclosure and admitted history",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: checkpoint filter control missing\n\n0 !== 1\n\n    at controls (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:29:33)\n    at async filter (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:32:35)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:54:17\n    at async group (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:33:48)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:53:2"
+    },
+    {
+      "name": "valid replacement and a retired older read start the newer file at all events",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: checkpoint filter control missing\n\n0 !== 1\n\n    at controls (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:29:33)\n    at async filter (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:32:35)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:57:17\n    at async group (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:33:48)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:56:2"
+    },
+    {
+      "name": "clear retires pending read and empty valid record has no active filtering",
+      "pass": true,
+      "detail": {
+        "emptyEvents": 0,
+        "clearRetiredRead": true
+      }
+    },
+    {
+      "name": "maximum admitted history remains complete through type filtering",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: checkpoint filter control missing\n\n0 !== 1\n\n    at controls (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:29:33)\n    at async filter (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:32:35)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:63:31\n    at async group (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:33:48)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:62:2"
+    },
+    {
+      "name": "narrow viewport and native keyboard selection keep controls readable",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: checkpoint filter control missing\n\n0 !== 1\n\n    at controls (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:29:33)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:66:68\n    at async group (C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:33:48)\n    at async C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs:65:2"
+    }
+  ],
+  "passed": 2,
+  "total": 10
+}

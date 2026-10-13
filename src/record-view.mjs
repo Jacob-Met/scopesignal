@@ -1,3 +1,4 @@
+import { createRecordEventFilter } from './record-event-filter.mjs';
 import { createRecordReviewDownload } from './record-review-download.mjs';
 import { FixtureRecordError, MAX_RECORD_BYTES, readFixtureRecord } from './record-reader.mjs';
 
@@ -121,7 +122,7 @@ function renderRecord(record, filename) {
     row.append(detail);
     list.append(row);
   }
-  history.append(list);
+  history.append(createRecordEventFilter(record, list, eventLabels), list);
   fragment.append(history);
   fragment.append(element('p', 'record-footnote', 'The file is unsigned. Consistent fields do not establish who wrote it or prove a real approval or transaction.'));
   return fragment;

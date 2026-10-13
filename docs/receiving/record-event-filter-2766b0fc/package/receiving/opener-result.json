@@ -1,0 +1,102 @@
+{
+  "schema": "scopesignal-focused-opener-receiving/v1",
+  "ok": true,
+  "source": "91a853ce67418147743adc42afea2c97ce5aef83",
+  "node": "v24.19.0",
+  "pid": 7,
+  "exit": 0,
+  "stdout": "ScopeSignal saved-record companion: http://127.0.0.1:45371/record.html\nOpen that address in a browser. Choose fixtures/mixed.json to try the authored example.\nThis packet includes only the saved reader. Press Ctrl+C here to stop.\n",
+  "stderr": "",
+  "elapsedSeconds": 0.121,
+  "observations": [
+    {
+      "path": "/record.html",
+      "method": "GET",
+      "status": 200,
+      "bytes": 2461,
+      "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4",
+      "exact": true
+    },
+    {
+      "path": "/record-view.css",
+      "method": "GET",
+      "status": 200,
+      "bytes": 7206,
+      "sha256": "0c0ef7fa04303ceebcd047ab75f1341c2150393fd5b8aa4bb968034348145b55",
+      "exact": true
+    },
+    {
+      "path": "/src/record-view.mjs",
+      "method": "GET",
+      "status": 200,
+      "bytes": 8907,
+      "sha256": "178dbf5fee127c319f31cab28dd3f486cd063310dcc42e86fb8cd6f893b9bd48",
+      "exact": true
+    },
+    {
+      "path": "/src/record-reader.mjs",
+      "method": "GET",
+      "status": 200,
+      "bytes": 5111,
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8",
+      "exact": true
+    },
+    {
+      "path": "/src/record-event-filter.mjs",
+      "method": "GET",
+      "status": 200,
+      "bytes": 2994,
+      "sha256": "7c4ea9bed60b9209946bba1fe5f022005f9060945b02e9853c7b28f8fe81b4ce",
+      "exact": true
+    },
+    {
+      "path": "/src/fixture-record.mjs",
+      "method": "GET",
+      "status": 200,
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "exact": true
+    },
+    {
+      "path": "/src/ledger.mjs",
+      "method": "GET",
+      "status": 200,
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "exact": true
+    },
+    {
+      "path": "/",
+      "method": "GET",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "path": "/record.html?local=1",
+      "method": "GET",
+      "status": 200,
+      "exact": true
+    },
+    {
+      "path": "/record.html",
+      "method": "HEAD",
+      "status": 200,
+      "emptyBody": true
+    },
+    {
+      "path": "/index.html",
+      "method": "GET",
+      "status": 404,
+      "scopeExplained": true
+    },
+    {
+      "path": "/record.html",
+      "method": "POST",
+      "status": 405
+    }
+  ],
+  "foreignSpacedUnicodeDirectory": true,
+  "sourceUnchanged": true,
+  "ownedProcessClosedAndPortRefused": true,
+  "qualification": "Actual local HTTP/source receiving on delivery executor; no new browser or installed application run."
+}
