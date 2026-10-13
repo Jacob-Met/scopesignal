@@ -1,0 +1,11 @@
+{"group":"ordinary file picker preserves all exact fields and full-record outcomes","pass":true}
+{"group":"checkpoint filter keeps original non-contiguous sequence numbers and totals","pass":false}
+{"group":"event type intersects checkpoint and retains distinct duplicate receipt fields","pass":false}
+{"group":"hiding and restoring rows keeps open disclosures and exact literal JSON","pass":false}
+{"group":"no match is explicit and keyboard reset restores all events","pass":false}
+{"group":"refused replacement keeps filters, disclosure and admitted history","pass":false}
+{"group":"valid replacement and a retired older read start the newer file at all events","pass":false}
+{"group":"clear retires pending read and empty valid record has no active filtering","pass":true}
+{"group":"maximum admitted history remains complete through type filtering","pass":false}
+{"group":"narrow viewport and native keyboard selection keep controls readable","pass":false}
+{"mode":"original","passed":2,"total":10,"externalRequests":[],"pageErrors":[]}

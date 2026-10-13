@@ -1,0 +1,14 @@
+{
+  "schema": "scopesignal-event-filter-independent-review/1",
+  "review": "PASS",
+  "reviewer": "memory_optimizer",
+  "sourceCommit": "91a853ce67418147743adc42afea2c97ce5aef83",
+  "sourceHashes": {
+    "src/record-event-filter.mjs": "7c4ea9bed60b9209946bba1fe5f022005f9060945b02e9853c7b28f8fe81b4ce",
+    "src/record-view.mjs": "178dbf5fee127c319f31cab28dd3f486cd063310dcc42e86fb8cd6f893b9bd48",
+    "record-view.css": "0c0ef7fa04303ceebcd047ab75f1341c2150393fd5b8aa4bb968034348145b55",
+    "docs/record-event-filter.md": "92a9f3772cf28cf9e9aa16fffd38c25d65a283f39c07bf88f34e7e21f029a7b1"
+  },
+  "statement": "ScopeSignal source + retained receiving review PASS, bound to prepared91a853ce and local four-file changes. Independently hashed module7c4ea9be..., viewer178dbf5f..., CSS0c0ef7fa..., guide92a9f377...; read complete filter/viewer and strict reader contract. Each admitted event corresponds to one existing ordered row; checkpoint/type predicates intersect without deleting/reconstructing rows, so seq/raw JSON/open disclosures survive hide/reset. Type labels cover all six reader-admitted types, duplicate webhooks remain distinct rows. Existing frozen record, totals/cards, import generation fence, refusal and Clear retain their original behavior. Zero-event controls disable cleanly; labels/status/focus and print CSS accurately express filtered list versus full-record totals. No blocking finding.\n\nRetained receipts independently rehashed: execution1254672d..., original779c5847...2/10, candidate1c60e073...10/10; maintained stdout18/18. I read the frozen receiver too: actual native file chooser and keyboard, 512-event compatibility, explicit File.arrayBuffer hold disclosed, no external requests/page errors. No duplicate browser/unit execution by me; print semantics source-reviewed, no separate print receiving claim. Preserve exact scope.",
+  "qualification": "Independent source/retained-evidence review only; no duplicate browser, model or print execution by reviewer."
+}

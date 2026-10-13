@@ -1,0 +1,157 @@
+{
+  "started": "2026-10-13T05:38:59.118Z",
+  "pid": 132720,
+  "sourceBase": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+  "runtime": {
+    "host": "MSI",
+    "user": "jacob",
+    "platform": "win32",
+    "release": "10.0.26200",
+    "node": "v24.14.0"
+  },
+  "source": [
+    {
+      "path": "original/record.html",
+      "bytes": 2461,
+      "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4"
+    },
+    {
+      "path": "candidate/record.html",
+      "bytes": 2461,
+      "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4"
+    },
+    {
+      "path": "original/record-view.css",
+      "bytes": 6493,
+      "sha256": "71345c822fdf74c7160eb5aa09675fac19abe24603137a75d7431397eb59768d"
+    },
+    {
+      "path": "candidate/record-view.css",
+      "bytes": 7206,
+      "sha256": "0c0ef7fa04303ceebcd047ab75f1341c2150393fd5b8aa4bb968034348145b55"
+    },
+    {
+      "path": "original/src/record-view.mjs",
+      "bytes": 8786,
+      "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f"
+    },
+    {
+      "path": "candidate/src/record-view.mjs",
+      "bytes": 8907,
+      "sha256": "178dbf5fee127c319f31cab28dd3f486cd063310dcc42e86fb8cd6f893b9bd48"
+    },
+    {
+      "path": "original/src/record-reader.mjs",
+      "bytes": 5111,
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+    },
+    {
+      "path": "candidate/src/record-reader.mjs",
+      "bytes": 5111,
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+    },
+    {
+      "path": "original/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+    },
+    {
+      "path": "candidate/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+    },
+    {
+      "path": "original/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    },
+    {
+      "path": "candidate/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    },
+    {
+      "path": "original/tests/record-reader.test.mjs",
+      "bytes": 8759,
+      "sha256": "01084a72ce7bd408212c8c5b1ff56df73b42dcfeaedaaf654fb352448c56a034"
+    },
+    {
+      "path": "candidate/tests/record-reader.test.mjs",
+      "bytes": 8759,
+      "sha256": "01084a72ce7bd408212c8c5b1ff56df73b42dcfeaedaaf654fb352448c56a034"
+    },
+    {
+      "path": "original/tests/fixture-record.test.mjs",
+      "bytes": 4603,
+      "sha256": "c11e29923f85e05122d8d6e17783438d94547a716c6b3004d389b493de2ff238"
+    },
+    {
+      "path": "candidate/tests/fixture-record.test.mjs",
+      "bytes": 4603,
+      "sha256": "c11e29923f85e05122d8d6e17783438d94547a716c6b3004d389b493de2ff238"
+    },
+    {
+      "path": "candidate/src/record-event-filter.mjs",
+      "bytes": 2994,
+      "sha256": "7c4ea9bed60b9209946bba1fe5f022005f9060945b02e9853c7b28f8fe81b4ce"
+    },
+    {
+      "path": "candidate/docs/record-event-filter.md",
+      "bytes": 2078,
+      "sha256": "92a9f3772cf28cf9e9aa16fffd38c25d65a283f39c07bf88f34e7e21f029a7b1"
+    }
+  ],
+  "children": [
+    {
+      "name": "maintained",
+      "args": [
+        "--test",
+        "tests/record-reader.test.mjs",
+        "tests/fixture-record.test.mjs"
+      ],
+      "cwd": "C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\candidate",
+      "pid": 129980,
+      "status": 0,
+      "signal": null,
+      "error": null,
+      "started": "2026-10-13T05:38:59.127Z",
+      "finished": "2026-10-13T05:38:59.444Z",
+      "stdoutSha256": "0fd03cefa8193e46c3ed5c178db392e22a0167b183646ac57342b491977b3b8d",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "original",
+      "args": [
+        "C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs",
+        "original"
+      ],
+      "cwd": "C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc",
+      "pid": 89780,
+      "status": 1,
+      "signal": null,
+      "error": null,
+      "started": "2026-10-13T05:38:59.445Z",
+      "finished": "2026-10-13T05:39:02.027Z",
+      "stdoutSha256": "f268b9465bb54e74540a3856dd5ff3ea2cdb1c9264f2a1c72ca389debd9fbf4c",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "candidate",
+      "args": [
+        "C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\receive.cjs",
+        "candidate"
+      ],
+      "cwd": "C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc",
+      "pid": 131160,
+      "status": 0,
+      "signal": null,
+      "error": null,
+      "started": "2026-10-13T05:39:02.027Z",
+      "finished": "2026-10-13T05:39:06.185Z",
+      "stdoutSha256": "20722f50bdaed88e13d40fa446f4e5f8660effad7a4b04cd0615dac58feea3d4",
+      "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "sourceUnchanged": true,
+  "finished": "2026-10-13T05:39:06.204Z"
+}

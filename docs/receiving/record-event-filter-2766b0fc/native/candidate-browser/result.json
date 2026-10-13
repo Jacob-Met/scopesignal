@@ -1,0 +1,292 @@
+{
+  "mode": "candidate",
+  "started": "2026-10-13T05:39:03.391Z",
+  "finished": "2026-10-13T05:39:05.871Z",
+  "pid": 131160,
+  "runtime": {
+    "host": "MSI",
+    "user": "jacob",
+    "platform": "win32",
+    "release": "10.0.26200",
+    "node": "v24.14.0",
+    "browser": "154.0.8037.97",
+    "playwright": "1.62.1"
+  },
+  "sourceUnchanged": true,
+  "sources": [
+    {
+      "path": "record.html",
+      "bytes": 2461,
+      "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4"
+    },
+    {
+      "path": "record-view.css",
+      "bytes": 7206,
+      "sha256": "0c0ef7fa04303ceebcd047ab75f1341c2150393fd5b8aa4bb968034348145b55"
+    },
+    {
+      "path": "src/record-view.mjs",
+      "bytes": 8907,
+      "sha256": "178dbf5fee127c319f31cab28dd3f486cd063310dcc42e86fb8cd6f893b9bd48"
+    },
+    {
+      "path": "src/record-reader.mjs",
+      "bytes": 5111,
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+    },
+    {
+      "path": "src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    },
+    {
+      "path": "src/record-event-filter.mjs",
+      "bytes": 2994,
+      "sha256": "7c4ea9bed60b9209946bba1fe5f022005f9060945b02e9853c7b28f8fe81b4ce"
+    }
+  ],
+  "fixtures": [
+    {
+      "path": "empty.json",
+      "sha256": "0ac17b16abace9065964a75ffdc566bf843bda36b192b8cd4c81bab04754f584"
+    },
+    {
+      "path": "held-mixed.json",
+      "sha256": "9d14611593f624cf2fe9d901a44c9c8f981a0af46cb7ccffe9a3c613e7642755"
+    },
+    {
+      "path": "invalid.json",
+      "sha256": "80596983c0de2bed44750ca60310e21a1068946c26f82fad7980d24d529de086"
+    },
+    {
+      "path": "maximum.json",
+      "sha256": "f95626321d7170e9117616854639795139997e0bba2070110117ce89f33d5504"
+    },
+    {
+      "path": "mixed.json",
+      "sha256": "9d14611593f624cf2fe9d901a44c9c8f981a0af46cb7ccffe9a3c613e7642755"
+    },
+    {
+      "path": "partial.json",
+      "sha256": "b30e5fd95335f44974ac8232ccd26adef0f9959eb3b5f1034c11c07f3682a840"
+    }
+  ],
+  "requests": [
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-event-filter.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-event-filter.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-event-filter.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-event-filter.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-event-filter.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-event-filter.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-event-filter.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-event-filter.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-event-filter.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-event-filter.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs",
+    "/record.html",
+    "/record-view.css",
+    "/src/record-view.mjs",
+    "/src/record-event-filter.mjs",
+    "/src/record-reader.mjs",
+    "/src/ledger.mjs",
+    "/src/fixture-record.mjs"
+  ],
+  "externalRequests": [],
+  "pageErrors": [],
+  "groups": [
+    {
+      "name": "ordinary file picker preserves all exact fields and full-record outcomes",
+      "pass": true,
+      "detail": {
+        "events": 13,
+        "summary": {
+          "total": 120000,
+          "approved": 3,
+          "captured": 80000,
+          "remaining": 40000
+        },
+        "literalEvidence": "Literal <img src=x> & café\nSecond line"
+      }
+    },
+    {
+      "name": "checkpoint filter keeps original non-contiguous sequence numbers and totals",
+      "pass": true,
+      "detail": {
+        "sequences": [
+          1,
+          3,
+          5,
+          6,
+          8,
+          9,
+          10
+        ],
+        "count": "Showing 7 of 13 recorded events. First-run checklist · All event types.",
+        "fullSummaryUnchanged": true
+      }
+    },
+    {
+      "name": "event type intersects checkpoint and retains distinct duplicate receipt fields",
+      "pass": true,
+      "detail": {
+        "sequences": [
+          8,
+          9
+        ],
+        "duplicateFlags": [
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "name": "hiding and restoring rows keeps open disclosures and exact literal JSON",
+      "pass": true,
+      "detail": {
+        "open": [
+          1,
+          9
+        ],
+        "focus": "record-event-checkpoint"
+      }
+    },
+    {
+      "name": "no match is explicit and keyboard reset restores all events",
+      "pass": true,
+      "detail": {
+        "restored": 13
+      }
+    },
+    {
+      "name": "refused replacement keeps filters, disclosure and admitted history",
+      "pass": true,
+      "detail": {
+        "retained": "Showing 2 of 13 recorded events. First-run checklist · Webhook received.",
+        "error": "This is not a ScopeSignal fixture record. Your previously opened record is unchanged."
+      }
+    },
+    {
+      "name": "valid replacement and a retired older read start the newer file at all events",
+      "pass": true,
+      "detail": {
+        "retainedNewFile": "partial.json",
+        "sequences": [
+          2,
+          4
+        ],
+        "delayedRead": "explicit File.arrayBuffer hold"
+      }
+    },
+    {
+      "name": "clear retires pending read and empty valid record has no active filtering",
+      "pass": true,
+      "detail": {
+        "emptyEvents": 0,
+        "clearRetiredRead": true
+      }
+    },
+    {
+      "name": "maximum admitted history remains complete through type filtering",
+      "pass": true,
+      "detail": {
+        "total": 512,
+        "webhooks": 507,
+        "finalSequence": 512
+      }
+    },
+    {
+      "name": "narrow viewport and native keyboard selection keep controls readable",
+      "pass": true,
+      "detail": {
+        "viewport": 390,
+        "scroll": 390,
+        "controls": [
+          {
+            "left": 39,
+            "right": 351,
+            "width": 312,
+            "height": 45
+          },
+          {
+            "left": 39,
+            "right": 351,
+            "width": 312,
+            "height": 45
+          },
+          {
+            "left": 39,
+            "right": 171.0625,
+            "width": 132.0625,
+            "height": 45
+          }
+        ]
+      }
+    }
+  ],
+  "passed": 10,
+  "total": 10
+}

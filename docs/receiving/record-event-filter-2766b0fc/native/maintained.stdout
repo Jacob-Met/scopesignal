@@ -1,0 +1,26 @@
+✔ download has a fixed safe filename and explicit fixture schema and provenance (3.2815ms)
+✔ export records the actual replay events and reduced counted outcome (1.3995ms)
+✔ accepted multiline and literal evidence comes from the exact approval event (1.3696ms)
+✔ unapproved checkpoints have no approval evidence and no authored draft field (0.7806ms)
+✔ every capture prefix exports the current outcome without advancing or inventing events (0.6389ms)
+✔ repeated exports are deterministic and detached from the live in-memory ledger (0.579ms)
+✔ an empty fixture exports no approval and never represents a successful payment (0.1601ms)
+✔ saved fixture reader accepts all real recovery prefixes without advancing the outcome (6.2901ms)
+✔ accepted evidence is exact literal Unicode text and an unapproved draft is absent (1.0538ms)
+✔ ordinary capture, lookup-only recovery and independent checkpoints use the existing ledger (1.6508ms)
+✔ JSON key order and whitespace do not change the record, and returned facts are immutable (1.4279ms)
+✔ invalid JSON, another document and unsupported record versions are refused (2.0209ms)
+✔ saved summaries, approvals, identities and fixture definitions must match recorded events (5.3759ms)
+✔ missing, extra and inherited-property fields cannot become trusted record facts (2.7716ms)
+✔ event order, required metadata and payload types are checked before ledger replay (2.2773ms)
+✔ shared ledger refuses contradictory lifecycle, money and capture identities in a file (4.4413ms)
+✔ exact byte limit is inclusive and uses UTF-8 bytes rather than JavaScript characters (9.4953ms)
+✔ event limit permits a bounded full history and rejects the next exact duplicate (105.9647ms)
+ℹ tests 18
+ℹ suites 0
+ℹ pass 18
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 254.1565
