@@ -47,6 +47,15 @@ The file stays on the device. The viewer has no external assets, network service
 
 Reader tests run with npm test. Optional native browser receiving runs with node scripts/check-record-view.mjs and requires an existing Puppeteer Core and Chromium installation. Set SCOPESIGNAL_PUPPETEER to the Puppeteer Core module and SCOPESIGNAL_CHROME to the browser executable; SCOPESIGNAL_SOURCE and SCOPESIGNAL_EVIDENCE can choose the source and output directories. The receiver uses fresh desktop and phone contexts, actual exported downloads and native file selection, blocks external requests, and retains screenshots plus a source-hashed receipt. It also checks keyboard operation, retained reviews after refusal, competing reads and explicit clearing.
 
+## Keep a saved fixture record as an offline review
+
+After opening a record in the saved-record viewer, choose **Download record
+review** to save a standalone HTML document for offline reading or browser
+printing. It retains the complete admitted record and literal accepted evidence,
+including partial outcomes and duplicate receipts. Keep the original JSON to
+reopen the interactive viewer. See [the record review guide](docs/record-review.md)
+for text fidelity, refusal behavior and optional native browser receiving.
+
 ## Author a fixture scope
 
 Choose **Build your own fixture scope** below the example checkpoints, or open

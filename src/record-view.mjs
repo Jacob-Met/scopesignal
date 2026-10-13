@@ -1,3 +1,4 @@
+import { createRecordReviewDownload } from './record-review-download.mjs';
 import { FixtureRecordError, MAX_RECORD_BYTES, readFixtureRecord } from './record-reader.mjs';
 
 const input = document.getElementById('record-file');
@@ -54,6 +55,7 @@ function renderRecord(record, filename) {
   title.tabIndex = -1;
   heading.append(title, element('p', 'record-filename', filename));
   heading.append(element('p', 'record-notice', 'Synthetic fixture · Not payment evidence'));
+  heading.append(createRecordReviewDownload(record, filename));
   fragment.append(heading);
 
   const summary = element('dl', 'record-totals');
