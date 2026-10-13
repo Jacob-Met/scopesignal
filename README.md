@@ -56,6 +56,11 @@ including partial outcomes and duplicate receipts. Keep the original JSON to
 reopen the interactive viewer. See [the record review guide](docs/record-review.md)
 for text fidelity, refusal behavior and optional native browser receiving.
 
+The same fixed-record review can be created from an explicit JSON file with
+`node scripts/review-record.mjs SAVED.json NEW.html` on Node 24+.
+See [the native record-review command](docs/record-review-cli.md) for the new-file
+output contract and completion receipt.
+
 ## Author a fixture scope
 
 Choose **Build your own fixture scope** below the example checkpoints, or open
