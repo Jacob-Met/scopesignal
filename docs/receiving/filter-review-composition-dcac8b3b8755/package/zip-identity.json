@@ -1,0 +1,16 @@
+{
+  "schema": "scopesignal.combined-viewer-package/1",
+  "file": "ScopeSignal-Combined-Record-Viewer-86d6c39d-v1.zip",
+  "bytes": 157585,
+  "sha256": "e98aa5a2cf490ae9fe8aa2e1d98af37bfa4227b12b10e67c04a2c595484a8f84",
+  "git_blob": "60a4f990d82786734672db5ffcc731b06056a3c1",
+  "members": 27,
+  "payloads": 26,
+  "source_commit": "86d6c39dc219aa34285f66c91545103ffff2daa3",
+  "source_tree": "1f6f61e604d37e85fe4377e5922bdd382c3d1dcf",
+  "receipt": "package-receiving.json",
+  "native_transport": "native-byte-transport.json",
+  "opening": "OPEN.txt",
+  "reconstruction": "The transport contains the exact sealed ZIP as base64; decode only the row with this filename and verify bytes/SHA256 before extraction. Do not execute receipt or packaged source automatically.",
+  "qualification": "One Windows Veria Python 3.11.9 / Node 24.19.0 package course, 91 checks, nine exact HTTP bodies/MIMEs, owned Node exit 0 and listener closed; distinct from the 39/76 browser courses."
+}

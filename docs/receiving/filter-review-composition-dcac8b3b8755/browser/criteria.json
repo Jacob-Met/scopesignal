@@ -1,0 +1,78 @@
+{
+  "schema": "hamon.scopesignal.filter-download-independent.v1",
+  "frozen_before_composed_candidate": true,
+  "original": [
+    "all13 literal event records/order/summary/checkpoints",
+    "no filter controls",
+    "one actual full-record HTML download",
+    "independently derive every exported scalar field from original record, including filename and null/boolean string forms",
+    "all13 saved event order and exact literal values; script-free standalone",
+    "390px document width and download usability"
+  ],
+  "fixture": {
+    "filename": "mixed.json",
+    "bytes": 4894,
+    "sha256": "9d14611593f624cf2fe9d901a44c9c8f981a0af46cb7ccffe9a3c613e7642755",
+    "git": "1b7aacf221f48616dc81201bb02e15b6e8aac840"
+  },
+  "expected": {
+    "all": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "journey": [
+      1,
+      3,
+      5,
+      6,
+      8,
+      9,
+      10
+    ],
+    "journey_webhook": [
+      8,
+      9
+    ],
+    "no_match_pair": {
+      "checkpoint": "handoff",
+      "type": "paypal.webhook.received",
+      "sequences": []
+    },
+    "summary": {
+      "total": 120000,
+      "approved": 3,
+      "captured": 80000,
+      "remaining": 40000
+    },
+    "pending_checkpoint": "handoff",
+    "retained_open": 8
+  },
+  "candidate": [
+    "same initial record and summary",
+    "journey then webhook intersection; original seq8 disclosure remains open and all literal row JSON exact",
+    "duplicate false/true values and separate row labels retained",
+    "full summary/checkpoint DOM stays exact through filters",
+    "actual filtered download byte-equals original deterministic full-record HTML",
+    "handoff+webhook shows zero with explanatory message; full download still byte-equal original",
+    "reset via keyboard restores13, checkpoint focus, seq8 remainsopen",
+    "390px controls keyboard/download no document horizontal overflow"
+  ],
+  "scope": [
+    "fresh owned loopback server and fresh browser context only",
+    "record observed requests/storage/errors and no external requests",
+    "all source/fixture packet bytes/mode/mtime/inode/pathsets conserved",
+    "managed browser disconnection and owned server closure; do not claim browser OS exit",
+    "no prior owner10-group replay, payment/provider, admission replacement, physical print or scientific claim"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "hamon.drive-saved-copy/1",
+  "time": "2026-10-13T22:51:51.426966+00:00",
+  "drive_id": "1MicNLQkeQC2Srj6mOU2qTq_gs4Yxe2YC",
+  "parent_id": "1for5kGniDXsNyYNLNC9wNXclUy7iTIcK",
+  "status": 200,
+  "bytes": 157585,
+  "sha256": "e98aa5a2cf490ae9fe8aa2e1d98af37bfa4227b12b10e67c04a2c595484a8f84",
+  "git_blob": "60a4f990d82786734672db5ffcc731b06056a3c1",
+  "byte_equal": true,
+  "local_source_unchanged": true,
+  "scope": "Saved sealed package transfer only; native39/76browser and91package checks not repeated"
+}

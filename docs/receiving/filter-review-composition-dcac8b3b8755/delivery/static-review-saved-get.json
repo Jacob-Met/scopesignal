@@ -1,0 +1,12 @@
+{
+  "schema": "hamon.drive-saved-copy/1",
+  "time": "2026-10-13T22:27:03.782958+00:00",
+  "drive_id": "1d9juxv64Ss5GUPUv5UrivC8TtdPkvT5o",
+  "parent_id": "1for5kGniDXsNyYNLNC9wNXclUy7iTIcK",
+  "status": 200,
+  "bytes": 17716,
+  "sha256": "0d7e5a24436d350f4f9b41b337a60dea4b55a1984ae7829514c1891646e85cb8",
+  "git_blob": "80e356eefc82bd9c9dc1cacfef8313749f9cec8c",
+  "byte_equal": true,
+  "source_unchanged": true
+}
