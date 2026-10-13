@@ -1,0 +1,71 @@
+SCOPESIGNAL — FILTER EVENTS AND KEEP THE COMPLETE REVIEW
+
+OPEN THE INTERACTIVE VIEWER
+1. Extract this entire ZIP into a new directory.
+2. With an existing Node.js 24 or later runtime, open a terminal and run:
+       node open-record.mjs
+   From another working directory, pass the full quoted path to open-record.mjs.
+   No npm install, browser extension or payment account is needed.
+3. Open the printed http://127.0.0.1:PORT/record.html address in your browser.
+4. Choose fixtures/mixed.json in the file picker.
+5. Under Recorded event history, choose First-run checklist, then Webhook received.
+   Original events 8 and 9 remain, including the distinct duplicate receipt.
+6. Choose Download record review. The saved scopesignal-record-review.html still
+   contains ALL 13 events, every checkpoint and the complete recorded outcomes.
+7. Press Ctrl+C in this opener's terminal to stop the local server when finished.
+
+READ THE OUTCOME
+The authored fictional record has three approvals, USD 800.00 captured and
+USD 400.00 remaining. Handoff is pending. Filtering changes only the visible
+event list, never these full-record totals. Choose another checkpoint/type
+combination with no matching events: the complete download remains available.
+Show all events restores all 13 rows and focuses the checkpoint selector;
+an open event disclosure stays open. Original literal evidence and JSON are
+preserved. Keep fixtures/mixed.json or your original version 1 fixture JSON
+to reopen the interactive viewer.
+
+reviews/complete-record.html is the actual full HTML downloaded by the qualified
+browser course. Open it directly for offline reading; it does not provide the
+interactive filters. Its bytes equal the original, filtered and no-match downloads.
+The interactive viewer's print selection and the full standalone review are
+different documented views; this combined course did not repeat print/PDF checks.
+
+FOCUSED PACKAGE
+The opener verifies all nine runtime files against RUNTIME-PINS.json before
+listening on a fresh loopback port. Its files are resolved beside the opener,
+independent of the terminal's working directory. It serves GET/HEAD only.
+The ScopeSignal brand and full-demo links lead to index.html, which is outside
+this focused package and returns an explicit 404 note. This is the saved-record
+viewer only, not the six-page app, an installed release or a hosted deployment.
+
+SOURCE AND RECEIVING
+Exact composed source:
+  86d6c39dc219aa34285f66c91545103ffff2daa3
+Tree:
+  1f6f61e604d37e85fe4377e5922bdd382c3d1dcf
+Parents:
+  current 115128bf8d8f20395accc04eaf7ad4f8e428c193
+  accepted filter owner e8de5960ba74f823feb72df73af1de6857981752
+
+source/candidate contains the exact nine browser-received runtime bodies.
+SOURCE-PINS.json records all selected published source/evidence identities.
+evidence preserves the unchanged observer, frozen criteria, original/candidate
+source packets and raw 39-check original / 76-check combined browser results.
+Both actual candidate downloads contain the same complete 17,716 bytes as the
+original. The real 390px/desktop screenshots and visual note are included.
+The original owner2766b0fc filter course and earlier full-review delivery retain
+their separate historical identities; neither was replayed or relabeled here.
+
+This ZIP is made by maintained estate-push-tools make_delivery_zip.py at
+34e192096abed7216025e8141a9cf3106bb82dfd. MANIFEST.json identifies its selected
+payloads by exact bytes and SHA-256. The opener checks the nine runtime bodies;
+it does not claim to authenticate the package author. The separate package
+receiving record binds this sealed ZIP to actual extraction, exact local HTTP
+responses, owned-process stop and source/ZIP conservation.
+
+These are unsigned synthetic fixture records. Consistency does not prove a
+real approval, identity or transaction. No payment provider, inference model,
+browser storage persistence, live payment, physical-mobile or assistive-
+technology acceptance is claimed.
+
+https://github.com/Jacob-Met/scopesignal/issues/73

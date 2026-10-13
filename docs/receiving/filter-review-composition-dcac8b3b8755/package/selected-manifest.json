@@ -1,0 +1,135 @@
+{
+  "schema": "hamon.delivery-zip/1",
+  "files": [
+    {
+      "path": "evidence/candidate-receiving.json",
+      "bytes": 109693,
+      "sha256": "45c115403ea531ea5d631c7907ac781d5e64c3eb60a3a989a441b50cde3a36a1"
+    },
+    {
+      "path": "evidence/candidate-source-packet.json",
+      "bytes": 51600,
+      "sha256": "692b2293627322959a638abbcd98ba0532329c7561809f22a3076788bbcd25a7"
+    },
+    {
+      "path": "evidence/composition.json",
+      "bytes": 11325,
+      "sha256": "5bfbdd6677090e2eb30798e79d3033aba060fd41f2f8949b9cb355a80e77e70f"
+    },
+    {
+      "path": "evidence/criteria.json",
+      "bytes": 2391,
+      "sha256": "94476feb7170d93005ac892309b83905f24842f847f61753fcd333c83ace92f7"
+    },
+    {
+      "path": "evidence/filtered-390.png",
+      "bytes": 30038,
+      "sha256": "a4083219626a3e6015df3d4233937cefb395e0d1b643b314af0d0d30942fc275"
+    },
+    {
+      "path": "evidence/observer.py",
+      "bytes": 16637,
+      "sha256": "487a999acae12b31f5c37f37281974f6425de5137b9a9e4933c3ba9dd90b2a22"
+    },
+    {
+      "path": "evidence/original-receiving.json",
+      "bytes": 50917,
+      "sha256": "4d2b689cd77a13d67ec30849b210d336d52d62c5119bda039f2631fbcad5964b"
+    },
+    {
+      "path": "evidence/original-source-packet.json",
+      "bytes": 54173,
+      "sha256": "7c3678e29179b7370d1e3b002043baa5ea74049a6b12f3825816053998d2d95f"
+    },
+    {
+      "path": "evidence/reset-desktop.png",
+      "bytes": 46769,
+      "sha256": "5043555c2c7463215b5b9389952e5fc47581867e4ae4a3890d3f6e2bc6c2eb7f"
+    },
+    {
+      "path": "evidence/visual-review.json",
+      "bytes": 1673,
+      "sha256": "d6f3a48b86b0e7fe9fb5407385f9fae57082b1ba9b2af05d55c4b9ed74f51ee4"
+    },
+    {
+      "path": "fixtures/mixed.json",
+      "bytes": 4894,
+      "sha256": "9d14611593f624cf2fe9d901a44c9c8f981a0af46cb7ccffe9a3c613e7642755"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 807,
+      "sha256": "3f25841c9348bbf34a89b246075022b77ab309bf6d5102b165a1bf900c5c246f"
+    },
+    {
+      "path": "open-record.mjs",
+      "bytes": 3250,
+      "sha256": "fe1fc223968b77e9aa9e5707f15c237b78ca31932c2e95d7e7e7733c4f63fef6"
+    },
+    {
+      "path": "OPEN.txt",
+      "bytes": 4030,
+      "sha256": "41fc69ff673d0a717e62bc94150e9a5fde45471b24ece0d96760cbe50e5d3060"
+    },
+    {
+      "path": "reviews/complete-record.html",
+      "bytes": 17716,
+      "sha256": "0d7e5a24436d350f4f9b41b337a60dea4b55a1984ae7829514c1891646e85cb8"
+    },
+    {
+      "path": "RUNTIME-PINS.json",
+      "bytes": 1353,
+      "sha256": "84f199dc3bf89fb9531b89851386bca004973f75db3f639b31da8ab69e1e3b86"
+    },
+    {
+      "path": "source/candidate/record-view.css",
+      "bytes": 7390,
+      "sha256": "da01c0199cfd4754cecd79bccd58004bc3b4f94e37aae23e433ce7be95c7c470"
+    },
+    {
+      "path": "source/candidate/record.html",
+      "bytes": 2461,
+      "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4"
+    },
+    {
+      "path": "source/candidate/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+    },
+    {
+      "path": "source/candidate/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    },
+    {
+      "path": "source/candidate/src/record-event-filter.mjs",
+      "bytes": 2994,
+      "sha256": "7c4ea9bed60b9209946bba1fe5f022005f9060945b02e9853c7b28f8fe81b4ce"
+    },
+    {
+      "path": "source/candidate/src/record-reader.mjs",
+      "bytes": 5111,
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+    },
+    {
+      "path": "source/candidate/src/record-review-download.mjs",
+      "bytes": 1726,
+      "sha256": "bdcc20b72776eb272cf122e9c81a7d7d200a883038bc67f6e8b76ec813319b32"
+    },
+    {
+      "path": "source/candidate/src/record-review-export.mjs",
+      "bytes": 5697,
+      "sha256": "596fee6a19a14ce360b6a9be07107324cef41cffadd38a89de3debd19b3ba08a"
+    },
+    {
+      "path": "source/candidate/src/record-view.mjs",
+      "bytes": 9046,
+      "sha256": "66410f875c2068691b3358d4d162d1b188a56a9b8f5a648d96c7d952882ffea6"
+    },
+    {
+      "path": "SOURCE-PINS.json",
+      "bytes": 6190,
+      "sha256": "c0dcfa7e6a3a2dd6e507f64caac6c7be05e000e001598d94edd46a02936d7252"
+    }
+  ]
+}

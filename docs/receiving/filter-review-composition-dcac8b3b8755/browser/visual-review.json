@@ -1,0 +1,33 @@
+{
+  "schema": "hamon.scopesignal.filter-download-visual-review.v1",
+  "candidate": "86d6c39dc219aa34285f66c91545103ffff2daa3",
+  "receipt": "c0e45e6064826d1e3199b941649424413f0814a2",
+  "screenshots": {
+    "filtered-390.png": {
+      "bytes": 30038,
+      "sha256": "a4083219626a3e6015df3d4233937cefb395e0d1b643b314af0d0d30942fc275",
+      "git": "6bd63182e771f320d6226698dcdb60f0e7fa5b65",
+      "mode": "33206",
+      "mtime_ns": "1791929415501523700",
+      "inode": "1688849861831046"
+    },
+    "reset-desktop.png": {
+      "bytes": 46769,
+      "sha256": "5043555c2c7463215b5b9389952e5fc47581867e4ae4a3890d3f6e2bc6c2eb7f",
+      "git": "137e1ba2009a034288d0a8dd0c2f9cb2eb3abf46",
+      "mode": "33206",
+      "mtime_ns": "1791929420704156500",
+      "inode": "1407374885120403"
+    }
+  },
+  "observations": [
+    "The actual 390px screenshot has readable stacked checkpoint and event-type controls, Show all events, the 2-of-13 count, and the full-record scope explanation; seq8 remains visibly open at the lower edge.",
+    "The actual desktop reset screenshot shows all-checkpoint/all-type values, 13-of-13 count, disabled reset, clear checkpoint-selector focus ring, and ordered original event rows.",
+    "The preceding original390px screenshot shows readable ordered events and distinct duplicate-webhook label."
+  ],
+  "limits": [
+    "Only the saved viewport pixels were inspected, not every event field in one screenshot.",
+    "Full field/order and preservation claims are the separate literal DOM and byte comparisons in the native receipts.",
+    "No physical mobile, assistive-technology certification, browser OS-exit or new print qualification."
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "schema": "scopesignal-record-event-filter-native/1",
+  "sourceBase": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+  "sourceCommit": "91a853ce67418147743adc42afea2c97ce5aef83",
+  "deviceId": "edc358ed-5ad6-4036-b7aa-8667bf0e14e0",
+  "stage": "C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc",
+  "identity": {
+    "hostname": "MSI",
+    "user": "jacob",
+    "platform": "win32",
+    "release": "10.0.26200",
+    "arch": "x64",
+    "node": "v24.14.0",
+    "playwright": "1.62.1",
+    "chrome": "154.0.8037.97"
+  },
+  "processes": {
+    "identity": {
+      "wrapperPID": 43936,
+      "childPID": 130396,
+      "exit": 0,
+      "runtimeSeconds": 0.43
+    },
+    "receiving": {
+      "wrapperPID": 133532,
+      "exit": 0,
+      "runtimeSeconds": 7.6,
+      "command": "node \"C:\\HAMON\\acceptance\\scopesignal-event-filter-2766b0fc\\prepare.cjs\""
+    },
+    "receiptTransfer": {
+      "wrapperPID": 111084,
+      "exit": 0,
+      "runtimeSeconds": 0.37
+    },
+    "fixtureTransfer": {
+      "wrapperPID": 128192,
+      "exit": 0,
+      "runtimeSeconds": 0.38
+    }
+  },
+  "receipts": [
+    {
+      "name": "execution.json",
+      "bytes": 5123,
+      "sha256": "1254672de4427689c71e39f0a27b7c64e4d34b19a0757839962c6262954248dd",
+      "gitBlob": "fb96cf9cc401a3c8d18679fec71b46274286de2d"
+    },
+    {
+      "name": "original-browser/result.json",
+      "bytes": 9733,
+      "sha256": "779c5847b74a21645074a0feb9c316a1ed488accdb3512755915c3b1c5a7c46d",
+      "gitBlob": "c0b04d2ad49896fe2743ddf4a5cbe583505a2aec"
+    },
+    {
+      "name": "candidate-browser/result.json",
+      "bytes": 7619,
+      "sha256": "1c60e073ec17f696777b956e54cdd4bc758591a852dd51651c36d47af275a1d1",
+      "gitBlob": "b0be9d055c4547944ad7004e5d6e268f24dd2bdd"
+    },
+    {
+      "name": "maintained.stdout",
+      "bytes": 1856,
+      "sha256": "0fd03cefa8193e46c3ed5c178db392e22a0167b183646ac57342b491977b3b8d",
+      "gitBlob": "5adc0d0b8aaca33553659ce48e07768dedd02126"
+    },
+    {
+      "name": "maintained.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gitBlob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "name": "original.stdout",
+      "bytes": 1041,
+      "sha256": "f268b9465bb54e74540a3856dd5ff3ea2cdb1c9264f2a1c72ca389debd9fbf4c",
+      "gitBlob": "d23962c641017119a9ae8fd03f3dde752c8bc970"
+    },
+    {
+      "name": "original.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gitBlob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "name": "candidate.stdout",
+      "bytes": 1035,
+      "sha256": "20722f50bdaed88e13d40fa446f4e5f8660effad7a4b04cd0615dac58feea3d4",
+      "gitBlob": "0a673c663cd6c7e651976d81ef3fcc80c93b1cc7"
+    },
+    {
+      "name": "candidate.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gitBlob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    }
+  ],
+  "receiversAndScreenshots": [
+    {
+      "name": "receive.cjs",
+      "bytes": 12147,
+      "sha256": "8579867be8019a2f14b0f7b96feeaa36cdf9047cbbe95b6217ccd5270fe3b703"
+    },
+    {
+      "name": "prepare.cjs",
+      "bytes": 3854,
+      "sha256": "a3df0c880697d3d710b1dc32652c8840cf4f4ccf68c9a2eba9a6fff5fbe31bf3"
+    },
+    {
+      "name": "source-packet.json",
+      "bytes": 110392,
+      "sha256": "5e27e85a7736671448fb83fbb0618cccaa1fac39e9e63fa887e86d256028a249"
+    },
+    {
+      "name": "candidate-browser/phone-filter.png",
+      "bytes": 148140,
+      "sha256": "77e1a28dde883a49ff4df6501d137399aeb622216b29e952180a5a12f20b5a14"
+    },
+    {
+      "name": "candidate-browser/desktop-filter.png",
+      "bytes": 176013,
+      "sha256": "c3bd63f1fcd180a78d3fce695226c5da9632b1a3f150860447353c926718b844"
+    }
+  ],
+  "fixturesEnvelope": {
+    "bytes": 180409,
+    "sha256": "1e040dc8c8d0983fa60a5ff749f775efb2fa6ed48080e564b16e7182df2e8483"
+  },
+  "visualReview": {
+    "desktop": "PASS",
+    "narrow390px": "PASS",
+    "images": "Actual native screenshots opened and visually inspected; retained on native stage and intended for companion custody."
+  },
+  "limits": [
+    "Authored fictional fixture files only",
+    "Headless installed desktop Chrome with 390px viewport; no physical-mobile or assistive-technology claim",
+    "Delayed reads explicitly use File.arrayBuffer holds; ordinary chooser and keyboard events are actual browser interactions",
+    "No printing, provider, live payment, installed-version or deployment claim",
+    "Unchanged exporter, strict reader and ledger source; no CI inference from this native course"
+  ]
+}

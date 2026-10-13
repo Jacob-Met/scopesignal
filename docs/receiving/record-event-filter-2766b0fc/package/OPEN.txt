@@ -1,0 +1,108 @@
+SCOPESIGNAL — SAVED-RECORD EVENT FILTER COMPANION
+Qualified source 91a853ce67418147743adc42afea2c97ce5aef83
+Nondefault branch estate/record-event-filter-2766b0fc
+Evidence 9afdde7ddabce8ac7fa1a60eb5cf4d27424530b7
+
+OPEN THE FOCUSED VIEWER
+1. Extract this entire ZIP into a new directory.
+2. With an existing Node 24 or later, open a terminal and run:
+       node open-record.mjs
+   From another working directory, pass the full quoted path to that file.
+3. Open the printed http://127.0.0.1:PORT/record.html address in a browser.
+4. Choose fixtures/mixed.json in the file picker to try the authored example,
+   or choose an existing version 1 ScopeSignal fixed-fixture record.
+5. Scroll to Raw recorded events. Choose a Checkpoint and an Event type.
+   Both conditions must match. Show all events clears the filters.
+6. Press Ctrl+C in the terminal to stop this companion when finished.
+
+The opener resolves files relative to itself and verifies the seven exact
+runtime bodies before listening. It chooses a fresh available loopback port.
+It serves the saved-record HTML, CSS and five modules only. The original
+page's ScopeSignal brand and "Open the fixture demo" links point to index.html,
+which is outside this focused packet; those links return a clear 404 note.
+The full demo, other pages and an installed ScopeSignal release are not
+included. The normal full-product path is a complete checkout of the offered
+branch with its existing npm run serve command, then record.html.
+
+RECOGNIZE THE RESULT
+The authored mixed record contains 13 interleaved recorded events across
+three checkpoints. The full summary shows three approvals, $800.00 captured
+and one pending checkpoint. Select First-run checklist: original sequences
+1, 3, 5, 6, 8, 9 and 10 remain. Combine it with Webhook received: sequences 8
+and 9 remain distinct, with false/true duplicate flags in their exact JSON.
+Filtering retains each original row, sequence, ordering and open disclosure.
+The summary and checkpoint outcomes always describe the complete admitted
+record. A no-match selection does not mean the file has no captures.
+
+A refused file selection retains the admitted record, current filters and
+open disclosures. A valid replacement starts with all its own events.
+Clear removes the display and retires any pending older read. Loading a
+record does not restore an active payment workspace or save browser state.
+
+INCLUDED AUTHORED FILES
+fixtures/mixed.json: the 13-event example above.
+fixtures/partial.json: a smaller replacement used by the receiving course.
+fixtures/empty.json: a valid fixture record with no recorded events.
+fixtures/maximum.json: 512 events, including 507 webhook rows; 142,001 bytes.
+fixtures/held-mixed.json: the exact mixed body used for delayed-read receiving.
+fixtures/invalid.json: deliberate refusal input for the existing schema reader.
+These six files are fictional qualification inputs and match the exact
+published compressed envelope, native hashes and original file-picker course.
+
+VERIFY
+Python 3.9 or later, standard library only:
+    python -B verify.py
+This reads the manifest and pins, all original/candidate source bodies,
+expanded fixtures, native original/candidate outcomes, review and local
+HTTP receiving. It does not start a server or browser.
+
+SOURCE AND QUALIFICATION
+Product source modifies only the new event-filter module, its import/mount,
+namespaced CSS additions and a guide. The strict reader, ledger, exporter,
+generation-fenced input handling and other product files remain unchanged.
+source/original and source/candidate retain the exact bounded source/test
+closure supplied to native receiving. SOURCE-PINS.json links every included
+published Git blob; LICENSE retains the repository's license.
+
+The actual MSI / Chrome 154.0.8037.97 course passed original 2/10 groups
+and candidate 10/10. The maintained reader/export tests passed 18/18.
+The candidate covered checkpoint/type intersection, duplicate webhook rows,
+disclosure/reset and no-match behavior, refused/valid replacement, Clear,
+512-event history, actual file chooser and keyboard, and a 390px viewport.
+Explicit File.arrayBuffer holds tested retirement of older reads; this
+timing manipulation is distinct from the actual chooser/keyboard events.
+Both browser courses had no page errors or external requests. Exact raw
+receipts and earlier missing-filter failures remain in evidence/.
+The peer's independent source and retained-receipt review passed; it did not
+rerun the browser or unit tests. Printing was source-reviewed only.
+
+The additional opener was received on the delivery executor with Node 24.19:
+a fresh spaced/Unicode source directory launched from a foreign folder;
+all seven HTTP bodies, root/query aliases, HEAD, outside-page 404 and GET/HEAD
+method scope matched; its owned process exited 0 with empty stderr, source
+unchanged and the port closed. This is actual HTTP receiving of the opener,
+not another browser run or an installed Windows application claim.
+receiving/receive-opener.py preserves that optional Python/POSIX pipe-based
+course; it stages only its own temporary source and starts/stops one process.
+
+OPTIONAL NATIVE SOURCE REPLAY
+Read evidence/README.md. On the recorded MSI runtime, copy source-packet.json
+and both receivers/ files from evidence into a new empty directory, keeping
+their base filenames, then run node prepare.cjs. The wrapper rebuilds the
+authored records, runs the maintained tests and both browser courses. It uses
+the explicitly recorded Chrome and Playwright paths; changed bindings are a
+different receiver. The original browser's exit 1 is an expected baseline.
+No dependency installation is supplied by this companion.
+
+OWNERSHIP AND LIMITS
+This is a versioned nondefault source offering and a focused local companion.
+Default paypal-ai remains based at 6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508.
+The installed release, full offline package owner #68, history proposal #56
+and JSON-admission proposal #70 retain their scopes. There is no PR/default
+ref move, hosting change or deployment. Zero source Actions runs were observed;
+that is not a CI pass. No physical-mobile, assistive-technology, printing,
+provider or live-payment acceptance is claimed.
+
+https://github.com/Jacob-Met/scopesignal/issues/73
+https://github.com/Jacob-Met/scopesignal/tree/estate/record-event-filter-2766b0fc
+https://github.com/Jacob-Met/scopesignal/tree/9afdde7ddabce8ac7fa1a60eb5cf4d27424530b7/docs/receiving/record-event-filter-2766b0fc

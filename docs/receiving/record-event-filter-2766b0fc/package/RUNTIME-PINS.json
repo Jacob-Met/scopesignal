@@ -1,0 +1,33 @@
+{
+  "source": "91a853ce67418147743adc42afea2c97ce5aef83",
+  "files": {
+    "record.html": {
+      "bytes": 2461,
+      "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4"
+    },
+    "record-view.css": {
+      "bytes": 7206,
+      "sha256": "0c0ef7fa04303ceebcd047ab75f1341c2150393fd5b8aa4bb968034348145b55"
+    },
+    "src/record-view.mjs": {
+      "bytes": 8907,
+      "sha256": "178dbf5fee127c319f31cab28dd3f486cd063310dcc42e86fb8cd6f893b9bd48"
+    },
+    "src/record-reader.mjs": {
+      "bytes": 5111,
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+    },
+    "src/record-event-filter.mjs": {
+      "bytes": 2994,
+      "sha256": "7c4ea9bed60b9209946bba1fe5f022005f9060945b02e9853c7b28f8fe81b4ce"
+    },
+    "src/fixture-record.mjs": {
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+    },
+    "src/ledger.mjs": {
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    }
+  }
+}
