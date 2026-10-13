@@ -1,0 +1,30 @@
+✖ repeated decoded fields are refused before accepting otherwise valid facts (7.373831ms)
+✔ repeated names in separate objects and all actual recovery prefixes remain valid (7.318263ms)
+✔ quoted braces, escaped quotes, Unicode and field-like evidence remain literal (4.517571ms)
+✔ deep valid JSON with the wrong format still receives a typed refusal (8.475617ms)
+✔ native syntax refusal keeps priority over repeated-field admission (0.58502ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 4
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 162.918193
+
+✖ failing tests:
+
+test at ../../../dev/shm/estate-6e0637-portfolio-scope/repo/tests/fixture-record-duplicate-fields.test.mjs:26:1
+✖ repeated decoded fields are refused before accepting otherwise valid facts (7.373831ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///dev/shm/estate-6e0637-portfolio-scope/repo/tests/fixture-record-duplicate-fields.test.mjs:39:16)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }

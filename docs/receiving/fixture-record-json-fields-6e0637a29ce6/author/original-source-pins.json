@@ -1,0 +1,44 @@
+{
+  "repository": "Jacob-Met/scopesignal",
+  "original_commit": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+  "original_tree": "245c0dd66c05c17f22e53bf57d9ae5847b36dc9a",
+  "complete_tree_entries": 947,
+  "selected_original_files": {
+    "src/ledger.mjs": {
+      "bytes": 12684,
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    },
+    "src/fixture-record.mjs": {
+      "bytes": 1615,
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+    },
+    "src/record-reader.mjs": {
+      "bytes": 5111,
+      "git_blob": "e6f69a87605b9808058a4e46df6b923ebb22c9dd",
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+    },
+    "src/record-view.mjs": {
+      "bytes": 8786,
+      "git_blob": "08dbca153a600bf7ff6b41fb378b86b62422925f",
+      "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f"
+    },
+    "tests/record-reader.test.mjs": {
+      "bytes": 8759,
+      "git_blob": "562f7db7b2052c26f66e29601b4fca931b0a8a48",
+      "sha256": "01084a72ce7bd408212c8c5b1ff56df73b42dcfeaedaaf654fb352448c56a034"
+    },
+    ".github/workflows/pages.yml": {
+      "bytes": 946,
+      "git_blob": "2fac275ab0183987bccac3ba787a133795a70016",
+      "sha256": "29079efa600bff732c7612251ff52458dc44fd87388d80264dd27a972e910735"
+    },
+    ".github/workflows/test.yml": {
+      "bytes": 436,
+      "git_blob": "b97f2716367bb4c5ed930693e3c3e7fdc02c792e",
+      "sha256": "65600373a689661f1e448e2b22e7973235ef002317f93a1d87394a692bc995ff"
+    }
+  },
+  "scope": "Original read-only receiving projection; candidate not authored; active issue69 workspace codec is excluded"
+}

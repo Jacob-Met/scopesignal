@@ -1,0 +1,53 @@
+✖ repeated decoded fields are refused before accepting otherwise valid facts (6.749417ms)
+✔ repeated names in separate objects and all actual recovery prefixes remain valid (5.526118ms)
+✖ quoted braces, escaped quotes, Unicode and field-like evidence remain literal (3.037286ms)
+✔ deep valid JSON with the wrong format still receives a typed refusal (9.049605ms)
+✔ native syntax refusal keeps priority over repeated-field admission (0.317067ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 3
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 139.610076
+
+✖ failing tests:
+
+test at ../../../dev/shm/estate-6e0637-portfolio-scope/repo/tests/fixture-record-duplicate-fields.test.mjs:26:1
+✖ repeated decoded fields are refused before accepting otherwise valid facts (6.749417ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///dev/shm/estate-6e0637-portfolio-scope/repo/tests/fixture-record-duplicate-fields.test.mjs:39:16)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    operator: 'throws',
+    diff: 'simple'
+  }
+
+test at ../../../dev/shm/estate-6e0637-portfolio-scope/repo/tests/fixture-record-duplicate-fields.test.mjs:58:1
+✖ quoted braces, escaped quotes, Unicode and field-like evidence remain literal (3.037286ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  + actual - expected
+  
+  + 'café 雪 😀 { "version": 1, "version": 2 } [ ] \\ "acceptedEvidence": null'
+  - 'café 雪 😀 { "version": 1, "version": 2 } [ ] \\ "acceptedEvidence": null\n\t'
+  
+      at TestContext.<anonymous> (file:///dev/shm/estate-6e0637-portfolio-scope/repo/tests/fixture-record-duplicate-fields.test.mjs:65:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 'café 雪 😀 { "version": 1, "version": 2 } [ ] \\ "acceptedEvidence": null',
+    expected: 'café 雪 😀 { "version": 1, "version": 2 } [ ] \\ "acceptedEvidence": null\n\t',
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

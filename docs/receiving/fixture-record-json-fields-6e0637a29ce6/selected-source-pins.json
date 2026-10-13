@@ -1,0 +1,89 @@
+{
+  "source_base": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+  "files": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "bytes": 946,
+      "sha256": "29079efa600bff732c7612251ff52458dc44fd87388d80264dd27a972e910735",
+      "git_blob": "2fac275ab0183987bccac3ba787a133795a70016"
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "bytes": 436,
+      "sha256": "65600373a689661f1e448e2b22e7973235ef002317f93a1d87394a692bc995ff",
+      "git_blob": "b97f2716367bb4c5ed930693e3c3e7fdc02c792e"
+    },
+    {
+      "path": "docs/fixture-record-json-fields.md",
+      "bytes": 3139,
+      "sha256": "b766fef8bed4e7b3b8b672cf75b5ba8359d0f700621a005d44850972917c9f98",
+      "git_blob": "7b4bb71815e504c2a310f5b7f645a5e9d359b62a"
+    },
+    {
+      "path": "src/agents.mjs",
+      "bytes": 1599,
+      "sha256": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2",
+      "git_blob": "ae1141b4f45ac8a064aa684fdcf47e938daf085d"
+    },
+    {
+      "path": "src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8"
+    },
+    {
+      "path": "src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    },
+    {
+      "path": "src/payment-status.mjs",
+      "bytes": 1959,
+      "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef",
+      "git_blob": "2c5ba31e85e41b1f62dbf1612582574ce677237e"
+    },
+    {
+      "path": "src/record-reader.mjs",
+      "bytes": 6082,
+      "sha256": "358d2ab071a29844f3e8571023101756e613a46f86b9d684c47e6abe8e282cc3",
+      "git_blob": "a1150bff94fb513ad19b6a9229d2efedf352b130"
+    },
+    {
+      "path": "src/record-view.mjs",
+      "bytes": 8786,
+      "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f",
+      "git_blob": "08dbca153a600bf7ff6b41fb378b86b62422925f"
+    },
+    {
+      "path": "src/workers-ai.mjs",
+      "bytes": 3525,
+      "sha256": "d69676fceb4a3782e6eaa7edcff4d5a4d1b7d89fc0d4e642d3bdca6e079a938e",
+      "git_blob": "7951c2f09b7063bd481d3391ae914d6066d2b241"
+    },
+    {
+      "path": "tests/fixture-record-duplicate-fields.test.mjs",
+      "bytes": 4117,
+      "sha256": "cfac6422cd0bafe20019322a647288af722b735718d0bcb454b7321891f954a0",
+      "git_blob": "292bfdd63aa8029d351f425e983dd86cc29abec5"
+    },
+    {
+      "path": "tests/fixture-record.test.mjs",
+      "bytes": 4603,
+      "sha256": "c11e29923f85e05122d8d6e17783438d94547a716c6b3004d389b493de2ff238",
+      "git_blob": "9bfd274a3d8eea072a194dad9ed58fb7ecee056c"
+    },
+    {
+      "path": "tests/ledger.test.mjs",
+      "bytes": 3662,
+      "sha256": "0d6789f09f2c814ec601a2b7ad00cfa37396be579775ae31af8ab685f76763b0",
+      "git_blob": "7099cf44e492946a77ffc7d9432e568eb0b39d50"
+    },
+    {
+      "path": "tests/record-reader.test.mjs",
+      "bytes": 8759,
+      "sha256": "01084a72ce7bd408212c8c5b1ff56df73b42dcfeaedaaf654fb352448c56a034",
+      "git_blob": "562f7db7b2052c26f66e29601b4fca931b0a8a48"
+    }
+  ]
+}

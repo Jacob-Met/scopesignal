@@ -1,0 +1,720 @@
+{
+  "schema": "scopesignal-fixture-reader-independent-receiving/v1",
+  "reviewer": "runtime_integrator/6e0637a29ce6",
+  "completed_utc": "2026-10-13T02:52:15.693Z",
+  "source": "/dev/shm/estate-6e0637-portfolio-scope/original",
+  "node": "v24.19.0",
+  "contract": {
+    "bytes": 5568,
+    "sha256": "9721a85abcfc69a4f214b9293729bf3c3047f525e68148650005244dd8cba192"
+  },
+  "receiver": {
+    "bytes": 14951,
+    "sha256": "18f57bb461b9b3222a5a3abd4e369726b58704adb13f96e73ec735851efc119c"
+  },
+  "source_pins": {
+    "src/ledger.mjs": {
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    },
+    "src/fixture-record.mjs": {
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+    },
+    "src/record-reader.mjs": {
+      "bytes": 5111,
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+    },
+    "src/record-view.mjs": {
+      "bytes": 8786,
+      "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f"
+    },
+    "tests/record-reader.test.mjs": {
+      "bytes": 8759,
+      "sha256": "01084a72ce7bd408212c8c5b1ff56df73b42dcfeaedaaf654fb352448c56a034"
+    },
+    ".github/workflows/pages.yml": {
+      "bytes": 946,
+      "sha256": "29079efa600bff732c7612251ff52458dc44fd87388d80264dd27a972e910735"
+    },
+    ".github/workflows/test.yml": {
+      "bytes": 436,
+      "sha256": "65600373a689661f1e448e2b22e7973235ef002317f93a1d87394a692bc995ff"
+    }
+  },
+  "cases": [
+    {
+      "name": "root-identical-schema",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "root-shadowed-schema",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "root-shadowed-version",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "root-shadowed-fixture-only",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "root-shadowed-payment-evidence",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "fixture-shadowed-id",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "fixture-shadowed-amount",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "summary-shadowed-approved",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "summary-shadowed-captured",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "summary-shadowed-remaining",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "approval-shadowed-approver",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "approval-shadowed-evidence",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "capture-shadowed-status",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "capture-shadowed-order",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "event-shadowed-type",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "event-shadowed-sequence",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "event-shadowed-evidence",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "root-unicode-escaped-first",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "root-unicode-escaped-last",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "event-unicode-escaped-first",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "event-unicode-escaped-last",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "multiple-object-depths",
+      "passed": false,
+      "error": "AssertionError: Expected FixtureRecordError refusal"
+    },
+    {
+      "name": "valid-recovery-prefix-0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid-recovery-prefix-1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid-recovery-prefix-2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid-recovery-prefix-3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid-recovery-prefix-4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid-recovery-prefix-5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid-recovery-prefix-6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid-recovery-prefix-7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid-reordered-members-whitespace",
+      "passed": true,
+      "detail": {
+        "schema": "scopesignal.fixture-record",
+        "version": 1,
+        "ledgerSpecVersion": 1,
+        "fixtureOnly": true,
+        "paymentEvidence": false,
+        "notice": "Synthetic ScopeSignal fixture. This is not a payment receipt or evidence of a real transaction.",
+        "fixture": {
+          "id": "fixture-signal-studio",
+          "label": "Northstar onboarding refresh",
+          "currency": "USD",
+          "amount": 120000
+        },
+        "summary": {
+          "total": 120000,
+          "approved": 1,
+          "captured": 40000,
+          "remaining": 80000
+        },
+        "checkpoints": [
+          {
+            "id": "journey",
+            "title": "First-run checklist",
+            "amount": 40000,
+            "approval": {
+              "source": "checkpoint.approved",
+              "eventSequence": 1,
+              "approver": "human-reviewer",
+              "acceptedEvidence": "A screen recording shows the checklist completion path and reset behavior."
+            },
+            "capture": {
+              "status": "captured",
+              "orderId": "SANDBOX-JOURNEY",
+              "captureId": "CAP-FIXTURE-001",
+              "counted": 40000
+            }
+          },
+          {
+            "id": "accessibility",
+            "title": "Accessible billing setup",
+            "amount": 40000,
+            "approval": null,
+            "capture": {
+              "status": "not_started",
+              "orderId": null,
+              "captureId": null,
+              "counted": 0
+            }
+          },
+          {
+            "id": "handoff",
+            "title": "Responsive handoff",
+            "amount": 40000,
+            "approval": null,
+            "capture": {
+              "status": "not_started",
+              "orderId": null,
+              "captureId": null,
+              "counted": 0
+            }
+          }
+        ],
+        "events": [
+          {
+            "acceptedEvidence": "A screen recording shows the checklist completion path and reset behavior.",
+            "approver": "human-reviewer",
+            "checkpointId": "journey",
+            "at": "T+001",
+            "type": "checkpoint.approved",
+            "seq": 1
+          },
+          {
+            "environment": "sandbox",
+            "currency": "USD",
+            "amount": 40000,
+            "orderId": "SANDBOX-JOURNEY",
+            "checkpointId": "journey",
+            "at": "T+002",
+            "type": "paypal.order.created",
+            "seq": 2
+          },
+          {
+            "environment": "sandbox",
+            "orderId": "SANDBOX-JOURNEY",
+            "checkpointId": "journey",
+            "at": "T+003",
+            "type": "paypal.capture.requested",
+            "seq": 3
+          },
+          {
+            "outcome": "unknown",
+            "orderId": "SANDBOX-JOURNEY",
+            "checkpointId": "journey",
+            "at": "T+004",
+            "type": "paypal.capture.response_lost",
+            "seq": 4
+          },
+          {
+            "currency": "USD",
+            "amount": 40000,
+            "duplicate": false,
+            "captureId": "CAP-FIXTURE-001",
+            "eventId": "WH-EVT-FIXTURE-001",
+            "checkpointId": "journey",
+            "at": "T+005",
+            "type": "paypal.webhook.received",
+            "seq": 5
+          },
+          {
+            "currency": "USD",
+            "amount": 40000,
+            "duplicate": true,
+            "captureId": "CAP-FIXTURE-001",
+            "eventId": "WH-EVT-FIXTURE-001",
+            "checkpointId": "journey",
+            "at": "T+006",
+            "type": "paypal.webhook.received",
+            "seq": 6
+          },
+          {
+            "source": "sandbox-transaction-lookup",
+            "outcome": "captured",
+            "captureId": "CAP-FIXTURE-001",
+            "checkpointId": "journey",
+            "at": "T+007",
+            "type": "paypal.capture.reconciled",
+            "seq": 7
+          }
+        ]
+      }
+    },
+    {
+      "name": "valid-escaped-ascii-member-names",
+      "passed": true,
+      "detail": {
+        "schema": "scopesignal.fixture-record",
+        "version": 1,
+        "ledgerSpecVersion": 1,
+        "fixtureOnly": true,
+        "paymentEvidence": false,
+        "notice": "Synthetic ScopeSignal fixture. This is not a payment receipt or evidence of a real transaction.",
+        "fixture": {
+          "id": "fixture-signal-studio",
+          "label": "Northstar onboarding refresh",
+          "currency": "USD",
+          "amount": 120000
+        },
+        "summary": {
+          "total": 120000,
+          "approved": 1,
+          "captured": 40000,
+          "remaining": 80000
+        },
+        "checkpoints": [
+          {
+            "id": "journey",
+            "title": "First-run checklist",
+            "amount": 40000,
+            "approval": {
+              "source": "checkpoint.approved",
+              "eventSequence": 1,
+              "approver": "human-reviewer",
+              "acceptedEvidence": "A screen recording shows the checklist completion path and reset behavior."
+            },
+            "capture": {
+              "status": "captured",
+              "orderId": "SANDBOX-JOURNEY",
+              "captureId": "CAP-FIXTURE-001",
+              "counted": 40000
+            }
+          },
+          {
+            "id": "accessibility",
+            "title": "Accessible billing setup",
+            "amount": 40000,
+            "approval": null,
+            "capture": {
+              "status": "not_started",
+              "orderId": null,
+              "captureId": null,
+              "counted": 0
+            }
+          },
+          {
+            "id": "handoff",
+            "title": "Responsive handoff",
+            "amount": 40000,
+            "approval": null,
+            "capture": {
+              "status": "not_started",
+              "orderId": null,
+              "captureId": null,
+              "counted": 0
+            }
+          }
+        ],
+        "events": [
+          {
+            "seq": 1,
+            "type": "checkpoint.approved",
+            "at": "T+001",
+            "checkpointId": "journey",
+            "approver": "human-reviewer",
+            "acceptedEvidence": "A screen recording shows the checklist completion path and reset behavior."
+          },
+          {
+            "seq": 2,
+            "type": "paypal.order.created",
+            "at": "T+002",
+            "checkpointId": "journey",
+            "orderId": "SANDBOX-JOURNEY",
+            "amount": 40000,
+            "currency": "USD",
+            "environment": "sandbox"
+          },
+          {
+            "seq": 3,
+            "type": "paypal.capture.requested",
+            "at": "T+003",
+            "checkpointId": "journey",
+            "orderId": "SANDBOX-JOURNEY",
+            "environment": "sandbox"
+          },
+          {
+            "seq": 4,
+            "type": "paypal.capture.response_lost",
+            "at": "T+004",
+            "checkpointId": "journey",
+            "orderId": "SANDBOX-JOURNEY",
+            "outcome": "unknown"
+          },
+          {
+            "seq": 5,
+            "type": "paypal.webhook.received",
+            "at": "T+005",
+            "checkpointId": "journey",
+            "eventId": "WH-EVT-FIXTURE-001",
+            "captureId": "CAP-FIXTURE-001",
+            "duplicate": false,
+            "amount": 40000,
+            "currency": "USD"
+          },
+          {
+            "seq": 6,
+            "type": "paypal.webhook.received",
+            "at": "T+006",
+            "checkpointId": "journey",
+            "eventId": "WH-EVT-FIXTURE-001",
+            "captureId": "CAP-FIXTURE-001",
+            "duplicate": true,
+            "amount": 40000,
+            "currency": "USD"
+          },
+          {
+            "seq": 7,
+            "type": "paypal.capture.reconciled",
+            "at": "T+007",
+            "checkpointId": "journey",
+            "captureId": "CAP-FIXTURE-001",
+            "outcome": "captured",
+            "source": "sandbox-transaction-lookup"
+          }
+        ]
+      }
+    },
+    {
+      "name": "valid-literal-evidence-0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid-literal-evidence-1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid-literal-evidence-2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid-literal-evidence-3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid-empty-ledger-control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid-exact-byte-boundary",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "one-byte-over-boundary",
+      "passed": true,
+      "detail": {
+        "name": "FixtureRecordError",
+        "code": "size",
+        "message": "This file exceeds the 1 MiB limit. Choose a smaller fixture-record export."
+      }
+    },
+    {
+      "name": "multibyte-over-boundary",
+      "passed": true,
+      "detail": {
+        "name": "FixtureRecordError",
+        "code": "size",
+        "message": "This file exceeds the 1 MiB limit. Choose a smaller fixture-record export."
+      }
+    },
+    {
+      "name": "malformed-json-0",
+      "passed": true,
+      "detail": {
+        "name": "FixtureRecordError",
+        "code": "syntax",
+        "message": "This file is not complete JSON. Choose a saved ScopeSignal fixture record."
+      }
+    },
+    {
+      "name": "malformed-json-1",
+      "passed": true,
+      "detail": {
+        "name": "FixtureRecordError",
+        "code": "syntax",
+        "message": "This file is not complete JSON. Choose a saved ScopeSignal fixture record."
+      }
+    },
+    {
+      "name": "malformed-json-2",
+      "passed": true,
+      "detail": {
+        "name": "FixtureRecordError",
+        "code": "syntax",
+        "message": "This file is not complete JSON. Choose a saved ScopeSignal fixture record."
+      }
+    },
+    {
+      "name": "malformed-json-3",
+      "passed": true,
+      "detail": {
+        "name": "FixtureRecordError",
+        "code": "syntax",
+        "message": "This file is not complete JSON. Choose a saved ScopeSignal fixture record."
+      }
+    },
+    {
+      "name": "wrong-format-0",
+      "passed": true,
+      "detail": {
+        "name": "FixtureRecordError",
+        "code": "format",
+        "message": "This is not a ScopeSignal fixture record."
+      }
+    },
+    {
+      "name": "wrong-format-1",
+      "passed": true,
+      "detail": {
+        "name": "FixtureRecordError",
+        "code": "format",
+        "message": "This is not a ScopeSignal fixture record."
+      }
+    },
+    {
+      "name": "wrong-format-2",
+      "passed": true,
+      "detail": {
+        "name": "FixtureRecordError",
+        "code": "format",
+        "message": "This is not a ScopeSignal fixture record."
+      }
+    },
+    {
+      "name": "wrong-format-3",
+      "passed": true,
+      "detail": {
+        "name": "FixtureRecordError",
+        "code": "format",
+        "message": "This is not a ScopeSignal fixture record."
+      }
+    },
+    {
+      "name": "deep-wrong-format-typed-refusal",
+      "passed": true,
+      "detail": {
+        "name": "FixtureRecordError",
+        "code": "format",
+        "message": "This is not a ScopeSignal fixture record."
+      }
+    },
+    {
+      "name": "prototype-names-no-effect",
+      "passed": true,
+      "detail": {
+        "name": "FixtureRecordError",
+        "code": "format",
+        "message": "The saved record has missing or unsupported fields. Choose an original fixture-record export."
+      }
+    },
+    {
+      "name": "controller-valid-open-control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "controller-duplicate-preserves-opened-record",
+      "passed": false,
+      "error": "AssertionError: Expected \"actual\" to be reference-equal to \"expected\":\n+ actual - expected\n... Skipped lines\n\n  Node {\n    children: [\n      Node {\n        children: [\n          Node {\n...\n            listeners: Map(0) {},\n+           textContent: 'duplicate.json',\n-           textContent: 'accepted.json',\n            value: ''\n          },\n          Node {\n            children: [],\n            className: 'record-notice',\n"
+    },
+    {
+      "name": "controller-first-duplicate-no-display",
+      "passed": false,
+      "error": "AssertionError: Expected values to be strictly equal:\n\n1 !== 0\n"
+    },
+    {
+      "name": "controller-existing-syntax-error-retains-display",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": 30,
+  "total": 54,
+  "duplicate_cases": 22,
+  "duplicate_error_codes": [],
+  "duplicate_inputs": {
+    "root-identical-schema": {
+      "bytes": 2345,
+      "sha256": "fef756c3585e19e9e27bdad894be7c285ecf24d4b268fbadc57c8864f2c61c72"
+    },
+    "root-shadowed-schema": {
+      "bytes": 2335,
+      "sha256": "551292ce8b7c6580e84a696f0d5b364a5a00f79c5038ecbba9a72d0cb48c7f96"
+    },
+    "root-shadowed-version": {
+      "bytes": 2319,
+      "sha256": "c6f720c95169c1b45d9eaeac03ef176c806d004666b63e3c78e68e6ab7754b72"
+    },
+    "root-shadowed-fixture-only": {
+      "bytes": 2327,
+      "sha256": "3a7ebed8b3bd03ee95d82f08d012538cd01add0091cae7e2dc0f75bb33e6f083"
+    },
+    "root-shadowed-payment-evidence": {
+      "bytes": 2330,
+      "sha256": "f03a8fe0e9fc9ef6c12c77bed0e5bc93e384d9e3e3c5be7dc2aa087fd16e2032"
+    },
+    "fixture-shadowed-id": {
+      "bytes": 2330,
+      "sha256": "8eb2d4d985651774fd8ac14abf19fc299b507d6d45f577114451eff381671668"
+    },
+    "fixture-shadowed-amount": {
+      "bytes": 2318,
+      "sha256": "3728a2af742f44f621ab21391073b6378482087a45c5a054fc7139ccdb1462f6"
+    },
+    "summary-shadowed-approved": {
+      "bytes": 2320,
+      "sha256": "255e0534789728d791997af596e09f86b2d314dfa29463d36c9d578b40c328de"
+    },
+    "summary-shadowed-captured": {
+      "bytes": 2320,
+      "sha256": "1eb733c73817ce44e49125b28f7872dc0e41447ec3f143f4c9d468e858ef0a50"
+    },
+    "summary-shadowed-remaining": {
+      "bytes": 2321,
+      "sha256": "9003799b1068c1fc996978088ca8811c082b483e411ddc23ee826ee5527855a7"
+    },
+    "approval-shadowed-approver": {
+      "bytes": 2335,
+      "sha256": "40d70793119bb89b9fd78e87b6dfa2d4b2b1c4053f7bc7656de6f4c89cb7ab7b"
+    },
+    "approval-shadowed-evidence": {
+      "bytes": 2345,
+      "sha256": "57a817a8305568543b5068bf474de78caa2c8ad57eaebcd6e7ba5b48da3f138f"
+    },
+    "capture-shadowed-status": {
+      "bytes": 2326,
+      "sha256": "e6d0c64f217d554e24c5de73885d90356e3bd647fb617969f53019759ca938c6"
+    },
+    "capture-shadowed-order": {
+      "bytes": 2333,
+      "sha256": "c39186b570cd478d6631cebe3af80fcafcdcb031159789806fd8be00ccafca4f"
+    },
+    "event-shadowed-type": {
+      "bytes": 2329,
+      "sha256": "8e99f6809f520071f4b09f464b0b585c399fe1a8838eb3ebe0aed9d30decf9e6"
+    },
+    "event-shadowed-sequence": {
+      "bytes": 2315,
+      "sha256": "b03e2ab77120eadc3fbd9e3b0b57555a25f33b93909e603aeec29055654be13f"
+    },
+    "event-shadowed-evidence": {
+      "bytes": 2345,
+      "sha256": "7939dc26cfdb867263cff1f7c0b0753f4014c56571c6cc8413efd2d8caecc9c6"
+    },
+    "root-unicode-escaped-first": {
+      "bytes": 2350,
+      "sha256": "f40f7077789d556001e4a0c0039657d70b8082a73ce7e0ca4f5dbd7f80356522"
+    },
+    "root-unicode-escaped-last": {
+      "bytes": 2350,
+      "sha256": "a99772d3d338fe7129039ce629baf282c30b4160ec06b0e02f7ab5ad551252b2"
+    },
+    "event-unicode-escaped-first": {
+      "bytes": 2350,
+      "sha256": "b5cc4aa3531883351cb1f34f858f7d111597ab2fa7545c7f3fc801482927a5e6"
+    },
+    "event-unicode-escaped-last": {
+      "bytes": 2350,
+      "sha256": "5027a1b541ed41a1f0bb52c1b90bd08854d5d4f30bb8fdba17570c3690a2b5cf"
+    },
+    "multiple-object-depths": {
+      "bytes": 2426,
+      "sha256": "32aeaa43e3e4d41974a590caefea4f9dbb5791a85d387965175464a3664f46c5"
+    }
+  },
+  "controller_cases": 4,
+  "source_unchanged": true,
+  "limits": "Authored synthetic API and DOM-shaped controller receiving. No real browser/HTML rendering, payment, authenticity, external transaction, device, network, installed package or performance claim. Maintained tests, workflows, ledger, serializer and actual controller source are preserved by exact beforeimage hashes; the maintained test suite was not repeated here."
+}

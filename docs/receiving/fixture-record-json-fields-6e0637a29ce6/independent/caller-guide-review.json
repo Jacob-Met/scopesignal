@@ -1,0 +1,30 @@
+{
+  "schema": "scopesignal-independent-caller-guide-review/v1",
+  "verdict": "APPROVE_SCOPED_CALLER_GUIDE",
+  "completed_utc": "2026-10-13T05:19:49.028933+00:00",
+  "pins": {
+    "docs/fixture-record-json-fields.md": {
+      "bytes": 3139,
+      "sha256": "b766fef8bed4e7b3b8b672cf75b5ba8359d0f700621a005d44850972917c9f98"
+    },
+    "src/record-reader.mjs": {
+      "bytes": 6082,
+      "sha256": "358d2ab071a29844f3e8571023101756e613a46f86b9d684c47e6abe8e282cc3"
+    },
+    "src/record-view.mjs": {
+      "bytes": 8786,
+      "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f"
+    }
+  },
+  "basis": "Read guide against frozen candidate source and completed original-first 54-case independent API/controller receipt; no product execution repeated.",
+  "findings": [
+    "Decoded per-object duplicate field refusal, identical-value refusal and escaped aliases match scanner after native syntax validation. Existing byte limit remains first.",
+    "Per-object scope, iterative nesting, existing native scalar parsing and retained facts behavior accurately bounded.",
+    "Caller retention recommendation matches unchanged controller and previously completed authored DOM-shaped harness; browser/device qualification explicitly excluded.",
+    "Original 30/54 and candidate 54/54 counts, 22 duplicate API refusals, two retention refusals and 30 controls match independent receipt.",
+    "Focused author baseline/candidate and initial whitespace-fixture correction are attributed to author course; not independently repeated here.",
+    "Documented command names four existing test modules; maintained ledger test imports roles and Workers AI modules, so that projection must include the owner-added dependency closure. This review does not claim execution of that command.",
+    "Source-only synthetic-fixture scope and source-branch-only delivery constraints are explicit; no payment, hosted CI, main, browser or installed claim."
+  ],
+  "prior_independent_review_sha256": "b04f7b562c16f216e9abd1b7801c55af6232fed6fc7d2fba8ce39b517a3a4b86"
+}

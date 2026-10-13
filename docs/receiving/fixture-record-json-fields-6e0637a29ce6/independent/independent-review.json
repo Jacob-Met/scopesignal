@@ -1,0 +1,81 @@
+{
+  "schema": "scopesignal-independent-duplicate-reader-review/v1",
+  "verdict": "APPROVE_SCOPED_SOURCE_AND_LOCAL_API_CONTROLLER_RECEIVING",
+  "completed_utc": "2026-10-13T04:01:55.992985+00:00",
+  "original_source_commit": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+  "original_reader_sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8",
+  "candidate_reader_sha256": "358d2ab071a29844f3e8571023101756e613a46f86b9d684c47e6abe8e282cc3",
+  "contract": {
+    "bytes": 5568,
+    "sha256": "9721a85abcfc69a4f214b9293729bf3c3047f525e68148650005244dd8cba192"
+  },
+  "pre_candidate_seal": {
+    "bytes": 2358,
+    "sha256": "5d77f6e60053c718359a2c3c57f839d81a196b9a9b2e23480ec3012e18e00f81"
+  },
+  "receiver": {
+    "bytes": 14951,
+    "sha256": "18f57bb461b9b3222a5a3abd4e369726b58704adb13f96e73ec735851efc119c"
+  },
+  "original_receipt": {
+    "bytes": 21961,
+    "sha256": "373d539604a9eaf920ed94c1b8fc5f03cab586cf1ef96668f06ce1c3e608da39"
+  },
+  "candidate_receipt": {
+    "bytes": 23993,
+    "sha256": "1267180d813773d2d08711cce77e237fee085930b8486d99f8feac0364992482"
+  },
+  "original": {
+    "passed": 30,
+    "total": 54,
+    "exit": 1,
+    "expected_failures": {
+      "duplicate_api": 22,
+      "duplicate_controller_retention": 2
+    }
+  },
+  "candidate": {
+    "passed": 54,
+    "total": 54,
+    "exit": 0,
+    "duplicate_api": 22,
+    "controller_courses": 4
+  },
+  "source_review": {
+    "scope": "One added iterative string/brace scanner and its call after native JSON syntax validation; all six other original selected closure files preserved. Ledger, fixture exporter, controller, maintained reader tests and workflows unchanged.",
+    "reasoning": [
+      "JSON.parse validates complete syntax before scanning, preserving malformed-syntax refusal precedence.",
+      "Complete string tokens consume escaped quotes/backslashes and literal braces; colon following a validated string identifies an object member name.",
+      "Each object receives its own Set; array punctuation needs no stack entry because object braces still nest correctly. JSON.parse(token) compares decoded member names, including escaped aliases.",
+      "The iterative object stack avoids recursive descent; the sealed 12000-depth wrong-format control remains a typed refusal.",
+      "The prior 1 MiB UTF8 byte gate remains before parsing/scanning; no event reduction, facts, freeze or controller code changes.",
+      "The stable format error reaches the existing controller catch path; prior accepted content is retained and first-load rejection does not display ambiguous input."
+    ]
+  },
+  "controls": "Eight recovery prefixes, decoded Unicode/escape aliases, literal evidence text, reordered/whitespace JSON, all nonduplicate escaped keys, deep freeze, exact/over UTF8 byte boundary, malformed syntax, wrong shape, deep nesting and prototype-name controls passed.",
+  "preservation": "Both courses independently bind unchanged selected files and compare source bytes before/after. The frozen original-first receiver and contract were not changed for the candidate.",
+  "boundaries": [
+    "Controller checks use an authored DOM-shaped harness around the actual handler, not browser, HTML layout, rendering or accessibility qualification.",
+    "No device, payment, deployment, main integration, workflow execution or Pages claim.",
+    "Focused author and maintained test suites are not re-run by this independent reviewer.",
+    "Publication remains owner-managed source branch only under the existing Pages constraint."
+  ],
+  "streams": {
+    "original.stdout": {
+      "bytes": 755,
+      "sha256": "80d2c638c8eea7bd5f72c30c87fa7507a33afd05f2994c9e8e433bc0895440b9"
+    },
+    "original.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "candidate.stdout": {
+      "bytes": 79,
+      "sha256": "57bde08850374abd3f56ea44290a63ab7124b8c16d908c9e7ed5950e0fdbf7e8"
+    },
+    "candidate.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  }
+}

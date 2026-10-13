@@ -1,0 +1,51 @@
+import { createHash } from 'node:crypto';
+import { readFile, writeFile } from 'node:fs/promises';
+import { createFixtureRecord, serializeFixtureRecord } from './original/src/fixture-record.mjs';
+import { readFixtureRecord } from './original/src/record-reader.mjs';
+import { replayFixture } from './original/src/ledger.mjs';
+
+const base = JSON.stringify(createFixtureRecord(replayFixture().events));
+const samples = [
+  ['top_version_disagrees', base.replace('"version":1', '"version":2,"version":1')],
+  ['top_fixture_flag_disagrees', base.replace('"paymentEvidence":false', '"paymentEvidence":true,"paymentEvidence":false')],
+  ['nested_captured_disagrees', base.replace('"captured":40000', '"captured":90000,"captured":40000')],
+  ['escaped_equivalent_version', base.replace('"version":1', '"version":2,"ver\\u0073ion":1')],
+  ['equal_repeated_version', base.replace('"version":1', '"version":1,"version":1')],
+];
+const observations = [];
+for (const [name, text] of samples) {
+  if (text === base) throw new Error('Witness replacement did not match: ' + name);
+  let admitted = false;
+  let error = null;
+  let facts = null;
+  try {
+    const value = readFixtureRecord(text);
+    admitted = true;
+    facts = { version: value.version, paymentEvidence: value.paymentEvidence, captured: value.summary.captured };
+  } catch (failure) {
+    error = { name: failure.name, code: failure.code, message: failure.message };
+  }
+  observations.push({ name, admitted, expected_refusal: true, error, facts,
+    input_sha256: createHash('sha256').update(text).digest('hex'), input: text });
+}
+const controls = [];
+const events = replayFixture().events;
+for (let length = 0; length <= events.length; length += 1) {
+  const input = serializeFixtureRecord(events.slice(0, length));
+  const actual = readFixtureRecord(input);
+  controls.push({ prefix: length, admitted: true, event_count: actual.events.length,
+    captured: actual.summary.captured,
+    exact_to_existing_exporter: JSON.stringify(actual) === JSON.stringify(createFixtureRecord(events.slice(0, length))) });
+}
+const raw = await readFile(new URL('./original/src/record-reader.mjs', import.meta.url));
+const receipt = {
+  observed_utc: new Date().toISOString(), node: process.version,
+  repository: 'Jacob-Met/scopesignal', original_commit: '6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508',
+  reader_sha256: createHash('sha256').update(raw).digest('hex'),
+  observations, controls,
+  scope: 'Actual unchanged fixed-fixture reader on authored JSON through the existing exporter and ledger. No authored-workspace codec, payment/provider, browser, deployed or installed claim.',
+};
+await writeFile(new URL('./original-witness.json', import.meta.url), JSON.stringify(receipt, null, 2) + '\n', { flag: 'wx' });
+console.log(JSON.stringify({ repeated_fields_admitted: observations.filter(x => x.admitted).length,
+  authored_duplicate_cases: observations.length, valid_prefix_controls: controls.length,
+  exact_valid_controls: controls.every(x => x.exact_to_existing_exporter), reader_sha256: receipt.reader_sha256 }));

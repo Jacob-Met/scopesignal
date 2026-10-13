@@ -26,6 +26,30 @@ const fields = {
 function refuse(code, message) { throw new FixtureRecordError(code, message); }
 function object(value) { return value !== null && typeof value === 'object' && !Array.isArray(value); }
 
+// Run only after JSON.parse has validated syntax. Tokenize complete strings so
+// braces and field-like text inside values stay literal. Each object owns its
+// decoded names; an iterative stack also handles deeply nested wrong-format JSON.
+function requireUniqueFields(text) {
+  const objects = [];
+  const tokens = /"(?:[^"\\]|\\[\s\S])*"|[{}]/g;
+  for (const match of text.matchAll(tokens)) {
+    const token = match[0];
+    if (token === '{') objects.push(new Set());
+    else if (token === '}') objects.pop();
+    else {
+      let after = match.index + token.length;
+      while (after < text.length && ' \t\r\n'.includes(text[after])) after++;
+      if (text[after] !== ':') continue;
+      const name = JSON.parse(token);
+      const names = objects.at(-1);
+      if (names.has(name)) {
+        refuse('format', 'This file repeats a JSON field. Choose an original fixture-record export.');
+      }
+      names.add(name);
+    }
+  }
+}
+
 function requireKeys(value, expected, label) {
   if (!object(value) || Object.keys(value).length !== expected.length
     || expected.some(key => !Object.hasOwn(value, key))) {
@@ -75,6 +99,7 @@ export function readFixtureRecord(text) {
   let saved;
   try { saved = JSON.parse(text); }
   catch { refuse('syntax', 'This file is not complete JSON. Choose a saved ScopeSignal fixture record.'); }
+  requireUniqueFields(text);
 
   if (!object(saved) || saved.schema !== 'scopesignal.fixture-record') {
     refuse('format', 'This is not a ScopeSignal fixture record.');

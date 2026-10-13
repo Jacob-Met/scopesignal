@@ -1,0 +1,24 @@
+✔ repeated decoded fields are refused before accepting otherwise valid facts (31.839459ms)
+✔ repeated names in separate objects and all actual recovery prefixes remain valid (8.112096ms)
+✔ quoted braces, escaped quotes, Unicode and field-like evidence remain literal (2.315752ms)
+✔ deep valid JSON with the wrong format still receives a typed refusal (34.676434ms)
+✔ native syntax refusal keeps priority over repeated-field admission (0.329325ms)
+✔ saved fixture reader accepts all real recovery prefixes without advancing the outcome (13.445926ms)
+✔ accepted evidence is exact literal Unicode text and an unapproved draft is absent (2.868322ms)
+✔ ordinary capture, lookup-only recovery and independent checkpoints use the existing ledger (7.899206ms)
+✔ JSON key order and whitespace do not change the record, and returned facts are immutable (1.727947ms)
+✔ invalid JSON, another document and unsupported record versions are refused (3.173341ms)
+✔ saved summaries, approvals, identities and fixture definitions must match recorded events (15.875037ms)
+✔ missing, extra and inherited-property fields cannot become trusted record facts (5.379258ms)
+✔ event order, required metadata and payload types are checked before ledger replay (3.387953ms)
+✔ shared ledger refuses contradictory lifecycle, money and capture identities in a file (6.522065ms)
+✔ exact byte limit is inclusive and uses UTF-8 bytes rather than JavaScript characters (30.584952ms)
+✔ event limit permits a bounded full history and rejects the next exact duplicate (245.264272ms)
+ℹ tests 16
+ℹ suites 0
+ℹ pass 16
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 508.125395

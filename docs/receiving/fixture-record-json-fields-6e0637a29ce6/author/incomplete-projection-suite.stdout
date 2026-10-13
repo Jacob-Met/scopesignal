@@ -1,0 +1,58 @@
+✔ repeated decoded fields are refused before accepting otherwise valid facts (16.090361ms)
+✔ repeated names in separate objects and all actual recovery prefixes remain valid (4.075688ms)
+✔ quoted braces, escaped quotes, Unicode and field-like evidence remain literal (1.377261ms)
+✔ deep valid JSON with the wrong format still receives a typed refusal (11.302672ms)
+✔ native syntax refusal keeps priority over repeated-field admission (0.384278ms)
+✔ download has a fixed safe filename and explicit fixture schema and provenance (2.655643ms)
+✔ export records the actual replay events and reduced counted outcome (1.336059ms)
+✔ accepted multiline and literal evidence comes from the exact approval event (0.95812ms)
+✔ unapproved checkpoints have no approval evidence and no authored draft field (0.895396ms)
+✔ every capture prefix exports the current outcome without advancing or inventing events (1.075116ms)
+✔ repeated exports are deterministic and detached from the live in-memory ledger (0.806703ms)
+✔ an empty fixture exports no approval and never represents a successful payment (0.216576ms)
+node:internal/modules/esm/resolve:271
+    throw new ERR_MODULE_NOT_FOUND(
+          ^
+
+Error [ERR_MODULE_NOT_FOUND]: Cannot find module '/dev/shm/estate-6e0637-portfolio-scope/repo/src/agents.mjs' imported from /dev/shm/estate-6e0637-portfolio-scope/repo/tests/ledger.test.mjs
+    at finalizeResolution (node:internal/modules/esm/resolve:271:11)
+    at moduleResolve (node:internal/modules/esm/resolve:865:10)
+    at defaultResolve (node:internal/modules/esm/resolve:992:11)
+    at #cachedDefaultResolve (node:internal/modules/esm/loader:701:20)
+    at #resolveAndMaybeBlockOnLoaderThread (node:internal/modules/esm/loader:721:38)
+    at ModuleLoader.resolveSync (node:internal/modules/esm/loader:759:56)
+    at #resolve (node:internal/modules/esm/loader:683:17)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:603:35)
+    at ModuleJob.syncLink (node:internal/modules/esm/module_job:163:33)
+    at ModuleJob.link (node:internal/modules/esm/module_job:253:17) {
+  code: 'ERR_MODULE_NOT_FOUND',
+  url: 'file:///dev/shm/estate-6e0637-portfolio-scope/repo/src/agents.mjs'
+}
+
+Node.js v24.19.0
+✖ /dev/shm/estate-6e0637-portfolio-scope/repo/tests/ledger.test.mjs (79.930059ms)
+✔ saved fixture reader accepts all real recovery prefixes without advancing the outcome (8.116172ms)
+✔ accepted evidence is exact literal Unicode text and an unapproved draft is absent (1.892585ms)
+✔ ordinary capture, lookup-only recovery and independent checkpoints use the existing ledger (4.111292ms)
+✔ JSON key order and whitespace do not change the record, and returned facts are immutable (1.546565ms)
+✔ invalid JSON, another document and unsupported record versions are refused (2.249622ms)
+✔ saved summaries, approvals, identities and fixture definitions must match recorded events (7.164871ms)
+✔ missing, extra and inherited-property fields cannot become trusted record facts (4.285192ms)
+✔ event order, required metadata and payload types are checked before ledger replay (3.037446ms)
+✔ shared ledger refuses contradictory lifecycle, money and capture identities in a file (5.451115ms)
+✔ exact byte limit is inclusive and uses UTF-8 bytes rather than JavaScript characters (10.234477ms)
+✔ event limit permits a bounded full history and rejects the next exact duplicate (128.343144ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 23
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 286.179118
+
+✖ failing tests:
+
+test at ../../../dev/shm/estate-6e0637-portfolio-scope/repo/tests/ledger.test.mjs:1:1
+✖ /dev/shm/estate-6e0637-portfolio-scope/repo/tests/ledger.test.mjs (79.930059ms)
+  'test failed'

@@ -1,0 +1,33 @@
+{
+  "schema": "scopesignal-source-publication-gate/v1",
+  "observed_utc": "2026-10-13 05:19:08 UTC",
+  "repository": "Jacob-Met/scopesignal",
+  "default_branch": "paypal-ai",
+  "default_commit": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+  "base_tree": "245c0dd66c05c17f22e53bf57d9ae5847b36dc9a",
+  "has_pages": true,
+  "rulesets": [],
+  "branch": "fix/fixture-record-json-fields-6e0637a29ce6",
+  "branch_previously_absent": true,
+  "scope_issue": 70,
+  "product_path": "src/record-reader.mjs",
+  "candidate_sha256": "358d2ab071a29844f3e8571023101756e613a46f86b9d684c47e6abe8e282cc3",
+  "workflows": [
+    {
+      "path": ".github/workflows/pages.yml",
+      "blob": "2fac275ab0183987bccac3ba787a133795a70016",
+      "events": "push branches [paypal-ai]; workflow_dispatch"
+    },
+    {
+      "path": ".github/workflows/test.yml",
+      "blob": "b97f2716367bb4c5ed930693e3c3e7fdc02c792e",
+      "events": "pull_request"
+    }
+  ],
+  "complete_tree_entries": 947,
+  "complete_tree_leaves": 763,
+  "open_issues_prs_screened": 26,
+  "source_path_owner_conflict": false,
+  "preserved_owners": "Issue69 authored workspace codec; issue56 saved-record history controller additions; issues71/72 authoring/library. No other record-reader source claim found.",
+  "publication_scope": "Only reviewed nondefault branch, skip-marked commit. No PR/default ref, workflow dispatch, Pages, settings, browser or installed consumer change."
+}

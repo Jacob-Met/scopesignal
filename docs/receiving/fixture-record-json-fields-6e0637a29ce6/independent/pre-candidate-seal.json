@@ -1,0 +1,66 @@
+{
+  "schema": "scopesignal-original-first-independent-seal/v1",
+  "sealed_utc": "2026-10-13T02:53:16.924250+00:00",
+  "candidate_supplied_or_read": false,
+  "contract": {
+    "bytes": 5568,
+    "sha256": "9721a85abcfc69a4f214b9293729bf3c3047f525e68148650005244dd8cba192"
+  },
+  "receiver": {
+    "bytes": 14951,
+    "sha256": "18f57bb461b9b3222a5a3abd4e369726b58704adb13f96e73ec735851efc119c"
+  },
+  "original_receipt": {
+    "bytes": 21961,
+    "sha256": "373d539604a9eaf920ed94c1b8fc5f03cab586cf1ef96668f06ce1c3e608da39"
+  },
+  "stdout": {
+    "bytes": 755,
+    "sha256": "80d2c638c8eea7bd5f72c30c87fa7507a33afd05f2994c9e8e433bc0895440b9"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "original_result": {
+    "passed": 30,
+    "total": 54,
+    "expected_failures": 24,
+    "duplicate_api_failures": 22,
+    "controller_duplicate_failures": 2,
+    "other_controls_passed": 30,
+    "exit_code": 1
+  },
+  "source_pins": {
+    "src/ledger.mjs": {
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    },
+    "src/fixture-record.mjs": {
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+    },
+    "src/record-reader.mjs": {
+      "bytes": 5111,
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+    },
+    "src/record-view.mjs": {
+      "bytes": 8786,
+      "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f"
+    },
+    "tests/record-reader.test.mjs": {
+      "bytes": 8759,
+      "sha256": "01084a72ce7bd408212c8c5b1ff56df73b42dcfeaedaaf654fb352448c56a034"
+    },
+    ".github/workflows/pages.yml": {
+      "bytes": 946,
+      "sha256": "29079efa600bff732c7612251ff52458dc44fd87388d80264dd27a972e910735"
+    },
+    ".github/workflows/test.yml": {
+      "bytes": 436,
+      "sha256": "65600373a689661f1e448e2b22e7973235ef002317f93a1d87394a692bc995ff"
+    }
+  },
+  "source_unchanged": true,
+  "boundaries": "Original uses ordinary last-wins JSON.parse and accepts all22 otherwise valid duplicate-member records. The unchanged authored DOM-shaped handler replaces the prior display for a duplicate and opens a first duplicate. All other selected controls pass. This is not a browser/payment/device qualification."
+}

@@ -1,0 +1,133 @@
+{
+  "observed_utc": "2026-10-13T02:19:16.631Z",
+  "node": "v24.19.0",
+  "repository": "Jacob-Met/scopesignal",
+  "original_commit": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+  "reader_sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8",
+  "observations": [
+    {
+      "name": "top_version_disagrees",
+      "admitted": true,
+      "expected_refusal": true,
+      "error": null,
+      "facts": {
+        "version": 1,
+        "paymentEvidence": false,
+        "captured": 40000
+      },
+      "input_sha256": "3391dfc884808bb83029d4fb3e8bcc29dd1f2b789950968a8122077e319f85d2",
+      "input": "{\"schema\":\"scopesignal.fixture-record\",\"version\":2,\"version\":1,\"ledgerSpecVersion\":1,\"fixtureOnly\":true,\"paymentEvidence\":false,\"notice\":\"Synthetic ScopeSignal fixture. This is not a payment receipt or evidence of a real transaction.\",\"fixture\":{\"id\":\"fixture-signal-studio\",\"label\":\"Northstar onboarding refresh\",\"currency\":\"USD\",\"amount\":120000},\"summary\":{\"total\":120000,\"approved\":1,\"captured\":40000,\"remaining\":80000},\"checkpoints\":[{\"id\":\"journey\",\"title\":\"First-run checklist\",\"amount\":40000,\"approval\":{\"source\":\"checkpoint.approved\",\"eventSequence\":1,\"approver\":\"human-reviewer\",\"acceptedEvidence\":\"A screen recording shows the checklist completion path and reset behavior.\"},\"capture\":{\"status\":\"captured\",\"orderId\":\"SANDBOX-JOURNEY\",\"captureId\":\"CAP-FIXTURE-001\",\"counted\":40000}},{\"id\":\"accessibility\",\"title\":\"Accessible billing setup\",\"amount\":40000,\"approval\":null,\"capture\":{\"status\":\"not_started\",\"orderId\":null,\"captureId\":null,\"counted\":0}},{\"id\":\"handoff\",\"title\":\"Responsive handoff\",\"amount\":40000,\"approval\":null,\"capture\":{\"status\":\"not_started\",\"orderId\":null,\"captureId\":null,\"counted\":0}}],\"events\":[{\"seq\":1,\"type\":\"checkpoint.approved\",\"at\":\"T+001\",\"checkpointId\":\"journey\",\"approver\":\"human-reviewer\",\"acceptedEvidence\":\"A screen recording shows the checklist completion path and reset behavior.\"},{\"seq\":2,\"type\":\"paypal.order.created\",\"at\":\"T+002\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"amount\":40000,\"currency\":\"USD\",\"environment\":\"sandbox\"},{\"seq\":3,\"type\":\"paypal.capture.requested\",\"at\":\"T+003\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"environment\":\"sandbox\"},{\"seq\":4,\"type\":\"paypal.capture.response_lost\",\"at\":\"T+004\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"outcome\":\"unknown\"},{\"seq\":5,\"type\":\"paypal.webhook.received\",\"at\":\"T+005\",\"checkpointId\":\"journey\",\"eventId\":\"WH-EVT-FIXTURE-001\",\"captureId\":\"CAP-FIXTURE-001\",\"duplicate\":false,\"amount\":40000,\"currency\":\"USD\"},{\"seq\":6,\"type\":\"paypal.webhook.received\",\"at\":\"T+006\",\"checkpointId\":\"journey\",\"eventId\":\"WH-EVT-FIXTURE-001\",\"captureId\":\"CAP-FIXTURE-001\",\"duplicate\":true,\"amount\":40000,\"currency\":\"USD\"},{\"seq\":7,\"type\":\"paypal.capture.reconciled\",\"at\":\"T+007\",\"checkpointId\":\"journey\",\"captureId\":\"CAP-FIXTURE-001\",\"outcome\":\"captured\",\"source\":\"sandbox-transaction-lookup\"}]}"
+    },
+    {
+      "name": "top_fixture_flag_disagrees",
+      "admitted": true,
+      "expected_refusal": true,
+      "error": null,
+      "facts": {
+        "version": 1,
+        "paymentEvidence": false,
+        "captured": 40000
+      },
+      "input_sha256": "e2d392867919172e9260282d6785609e8c50ca5677d35b4f910017a5fe3ac320",
+      "input": "{\"schema\":\"scopesignal.fixture-record\",\"version\":1,\"ledgerSpecVersion\":1,\"fixtureOnly\":true,\"paymentEvidence\":true,\"paymentEvidence\":false,\"notice\":\"Synthetic ScopeSignal fixture. This is not a payment receipt or evidence of a real transaction.\",\"fixture\":{\"id\":\"fixture-signal-studio\",\"label\":\"Northstar onboarding refresh\",\"currency\":\"USD\",\"amount\":120000},\"summary\":{\"total\":120000,\"approved\":1,\"captured\":40000,\"remaining\":80000},\"checkpoints\":[{\"id\":\"journey\",\"title\":\"First-run checklist\",\"amount\":40000,\"approval\":{\"source\":\"checkpoint.approved\",\"eventSequence\":1,\"approver\":\"human-reviewer\",\"acceptedEvidence\":\"A screen recording shows the checklist completion path and reset behavior.\"},\"capture\":{\"status\":\"captured\",\"orderId\":\"SANDBOX-JOURNEY\",\"captureId\":\"CAP-FIXTURE-001\",\"counted\":40000}},{\"id\":\"accessibility\",\"title\":\"Accessible billing setup\",\"amount\":40000,\"approval\":null,\"capture\":{\"status\":\"not_started\",\"orderId\":null,\"captureId\":null,\"counted\":0}},{\"id\":\"handoff\",\"title\":\"Responsive handoff\",\"amount\":40000,\"approval\":null,\"capture\":{\"status\":\"not_started\",\"orderId\":null,\"captureId\":null,\"counted\":0}}],\"events\":[{\"seq\":1,\"type\":\"checkpoint.approved\",\"at\":\"T+001\",\"checkpointId\":\"journey\",\"approver\":\"human-reviewer\",\"acceptedEvidence\":\"A screen recording shows the checklist completion path and reset behavior.\"},{\"seq\":2,\"type\":\"paypal.order.created\",\"at\":\"T+002\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"amount\":40000,\"currency\":\"USD\",\"environment\":\"sandbox\"},{\"seq\":3,\"type\":\"paypal.capture.requested\",\"at\":\"T+003\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"environment\":\"sandbox\"},{\"seq\":4,\"type\":\"paypal.capture.response_lost\",\"at\":\"T+004\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"outcome\":\"unknown\"},{\"seq\":5,\"type\":\"paypal.webhook.received\",\"at\":\"T+005\",\"checkpointId\":\"journey\",\"eventId\":\"WH-EVT-FIXTURE-001\",\"captureId\":\"CAP-FIXTURE-001\",\"duplicate\":false,\"amount\":40000,\"currency\":\"USD\"},{\"seq\":6,\"type\":\"paypal.webhook.received\",\"at\":\"T+006\",\"checkpointId\":\"journey\",\"eventId\":\"WH-EVT-FIXTURE-001\",\"captureId\":\"CAP-FIXTURE-001\",\"duplicate\":true,\"amount\":40000,\"currency\":\"USD\"},{\"seq\":7,\"type\":\"paypal.capture.reconciled\",\"at\":\"T+007\",\"checkpointId\":\"journey\",\"captureId\":\"CAP-FIXTURE-001\",\"outcome\":\"captured\",\"source\":\"sandbox-transaction-lookup\"}]}"
+    },
+    {
+      "name": "nested_captured_disagrees",
+      "admitted": true,
+      "expected_refusal": true,
+      "error": null,
+      "facts": {
+        "version": 1,
+        "paymentEvidence": false,
+        "captured": 40000
+      },
+      "input_sha256": "80c417a93ca98d73e4c91e169177359bc148df40afa6acd54ecebc317721b7c9",
+      "input": "{\"schema\":\"scopesignal.fixture-record\",\"version\":1,\"ledgerSpecVersion\":1,\"fixtureOnly\":true,\"paymentEvidence\":false,\"notice\":\"Synthetic ScopeSignal fixture. This is not a payment receipt or evidence of a real transaction.\",\"fixture\":{\"id\":\"fixture-signal-studio\",\"label\":\"Northstar onboarding refresh\",\"currency\":\"USD\",\"amount\":120000},\"summary\":{\"total\":120000,\"approved\":1,\"captured\":90000,\"captured\":40000,\"remaining\":80000},\"checkpoints\":[{\"id\":\"journey\",\"title\":\"First-run checklist\",\"amount\":40000,\"approval\":{\"source\":\"checkpoint.approved\",\"eventSequence\":1,\"approver\":\"human-reviewer\",\"acceptedEvidence\":\"A screen recording shows the checklist completion path and reset behavior.\"},\"capture\":{\"status\":\"captured\",\"orderId\":\"SANDBOX-JOURNEY\",\"captureId\":\"CAP-FIXTURE-001\",\"counted\":40000}},{\"id\":\"accessibility\",\"title\":\"Accessible billing setup\",\"amount\":40000,\"approval\":null,\"capture\":{\"status\":\"not_started\",\"orderId\":null,\"captureId\":null,\"counted\":0}},{\"id\":\"handoff\",\"title\":\"Responsive handoff\",\"amount\":40000,\"approval\":null,\"capture\":{\"status\":\"not_started\",\"orderId\":null,\"captureId\":null,\"counted\":0}}],\"events\":[{\"seq\":1,\"type\":\"checkpoint.approved\",\"at\":\"T+001\",\"checkpointId\":\"journey\",\"approver\":\"human-reviewer\",\"acceptedEvidence\":\"A screen recording shows the checklist completion path and reset behavior.\"},{\"seq\":2,\"type\":\"paypal.order.created\",\"at\":\"T+002\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"amount\":40000,\"currency\":\"USD\",\"environment\":\"sandbox\"},{\"seq\":3,\"type\":\"paypal.capture.requested\",\"at\":\"T+003\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"environment\":\"sandbox\"},{\"seq\":4,\"type\":\"paypal.capture.response_lost\",\"at\":\"T+004\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"outcome\":\"unknown\"},{\"seq\":5,\"type\":\"paypal.webhook.received\",\"at\":\"T+005\",\"checkpointId\":\"journey\",\"eventId\":\"WH-EVT-FIXTURE-001\",\"captureId\":\"CAP-FIXTURE-001\",\"duplicate\":false,\"amount\":40000,\"currency\":\"USD\"},{\"seq\":6,\"type\":\"paypal.webhook.received\",\"at\":\"T+006\",\"checkpointId\":\"journey\",\"eventId\":\"WH-EVT-FIXTURE-001\",\"captureId\":\"CAP-FIXTURE-001\",\"duplicate\":true,\"amount\":40000,\"currency\":\"USD\"},{\"seq\":7,\"type\":\"paypal.capture.reconciled\",\"at\":\"T+007\",\"checkpointId\":\"journey\",\"captureId\":\"CAP-FIXTURE-001\",\"outcome\":\"captured\",\"source\":\"sandbox-transaction-lookup\"}]}"
+    },
+    {
+      "name": "escaped_equivalent_version",
+      "admitted": true,
+      "expected_refusal": true,
+      "error": null,
+      "facts": {
+        "version": 1,
+        "paymentEvidence": false,
+        "captured": 40000
+      },
+      "input_sha256": "7710273d76e3a311473290683df4cbbfdd236052438c1624d54345969a4709c1",
+      "input": "{\"schema\":\"scopesignal.fixture-record\",\"version\":2,\"ver\\u0073ion\":1,\"ledgerSpecVersion\":1,\"fixtureOnly\":true,\"paymentEvidence\":false,\"notice\":\"Synthetic ScopeSignal fixture. This is not a payment receipt or evidence of a real transaction.\",\"fixture\":{\"id\":\"fixture-signal-studio\",\"label\":\"Northstar onboarding refresh\",\"currency\":\"USD\",\"amount\":120000},\"summary\":{\"total\":120000,\"approved\":1,\"captured\":40000,\"remaining\":80000},\"checkpoints\":[{\"id\":\"journey\",\"title\":\"First-run checklist\",\"amount\":40000,\"approval\":{\"source\":\"checkpoint.approved\",\"eventSequence\":1,\"approver\":\"human-reviewer\",\"acceptedEvidence\":\"A screen recording shows the checklist completion path and reset behavior.\"},\"capture\":{\"status\":\"captured\",\"orderId\":\"SANDBOX-JOURNEY\",\"captureId\":\"CAP-FIXTURE-001\",\"counted\":40000}},{\"id\":\"accessibility\",\"title\":\"Accessible billing setup\",\"amount\":40000,\"approval\":null,\"capture\":{\"status\":\"not_started\",\"orderId\":null,\"captureId\":null,\"counted\":0}},{\"id\":\"handoff\",\"title\":\"Responsive handoff\",\"amount\":40000,\"approval\":null,\"capture\":{\"status\":\"not_started\",\"orderId\":null,\"captureId\":null,\"counted\":0}}],\"events\":[{\"seq\":1,\"type\":\"checkpoint.approved\",\"at\":\"T+001\",\"checkpointId\":\"journey\",\"approver\":\"human-reviewer\",\"acceptedEvidence\":\"A screen recording shows the checklist completion path and reset behavior.\"},{\"seq\":2,\"type\":\"paypal.order.created\",\"at\":\"T+002\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"amount\":40000,\"currency\":\"USD\",\"environment\":\"sandbox\"},{\"seq\":3,\"type\":\"paypal.capture.requested\",\"at\":\"T+003\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"environment\":\"sandbox\"},{\"seq\":4,\"type\":\"paypal.capture.response_lost\",\"at\":\"T+004\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"outcome\":\"unknown\"},{\"seq\":5,\"type\":\"paypal.webhook.received\",\"at\":\"T+005\",\"checkpointId\":\"journey\",\"eventId\":\"WH-EVT-FIXTURE-001\",\"captureId\":\"CAP-FIXTURE-001\",\"duplicate\":false,\"amount\":40000,\"currency\":\"USD\"},{\"seq\":6,\"type\":\"paypal.webhook.received\",\"at\":\"T+006\",\"checkpointId\":\"journey\",\"eventId\":\"WH-EVT-FIXTURE-001\",\"captureId\":\"CAP-FIXTURE-001\",\"duplicate\":true,\"amount\":40000,\"currency\":\"USD\"},{\"seq\":7,\"type\":\"paypal.capture.reconciled\",\"at\":\"T+007\",\"checkpointId\":\"journey\",\"captureId\":\"CAP-FIXTURE-001\",\"outcome\":\"captured\",\"source\":\"sandbox-transaction-lookup\"}]}"
+    },
+    {
+      "name": "equal_repeated_version",
+      "admitted": true,
+      "expected_refusal": true,
+      "error": null,
+      "facts": {
+        "version": 1,
+        "paymentEvidence": false,
+        "captured": 40000
+      },
+      "input_sha256": "20544c438b0a75b2c6cec5595893631323f776fafea3413d48caa82b2e0b9b1e",
+      "input": "{\"schema\":\"scopesignal.fixture-record\",\"version\":1,\"version\":1,\"ledgerSpecVersion\":1,\"fixtureOnly\":true,\"paymentEvidence\":false,\"notice\":\"Synthetic ScopeSignal fixture. This is not a payment receipt or evidence of a real transaction.\",\"fixture\":{\"id\":\"fixture-signal-studio\",\"label\":\"Northstar onboarding refresh\",\"currency\":\"USD\",\"amount\":120000},\"summary\":{\"total\":120000,\"approved\":1,\"captured\":40000,\"remaining\":80000},\"checkpoints\":[{\"id\":\"journey\",\"title\":\"First-run checklist\",\"amount\":40000,\"approval\":{\"source\":\"checkpoint.approved\",\"eventSequence\":1,\"approver\":\"human-reviewer\",\"acceptedEvidence\":\"A screen recording shows the checklist completion path and reset behavior.\"},\"capture\":{\"status\":\"captured\",\"orderId\":\"SANDBOX-JOURNEY\",\"captureId\":\"CAP-FIXTURE-001\",\"counted\":40000}},{\"id\":\"accessibility\",\"title\":\"Accessible billing setup\",\"amount\":40000,\"approval\":null,\"capture\":{\"status\":\"not_started\",\"orderId\":null,\"captureId\":null,\"counted\":0}},{\"id\":\"handoff\",\"title\":\"Responsive handoff\",\"amount\":40000,\"approval\":null,\"capture\":{\"status\":\"not_started\",\"orderId\":null,\"captureId\":null,\"counted\":0}}],\"events\":[{\"seq\":1,\"type\":\"checkpoint.approved\",\"at\":\"T+001\",\"checkpointId\":\"journey\",\"approver\":\"human-reviewer\",\"acceptedEvidence\":\"A screen recording shows the checklist completion path and reset behavior.\"},{\"seq\":2,\"type\":\"paypal.order.created\",\"at\":\"T+002\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"amount\":40000,\"currency\":\"USD\",\"environment\":\"sandbox\"},{\"seq\":3,\"type\":\"paypal.capture.requested\",\"at\":\"T+003\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"environment\":\"sandbox\"},{\"seq\":4,\"type\":\"paypal.capture.response_lost\",\"at\":\"T+004\",\"checkpointId\":\"journey\",\"orderId\":\"SANDBOX-JOURNEY\",\"outcome\":\"unknown\"},{\"seq\":5,\"type\":\"paypal.webhook.received\",\"at\":\"T+005\",\"checkpointId\":\"journey\",\"eventId\":\"WH-EVT-FIXTURE-001\",\"captureId\":\"CAP-FIXTURE-001\",\"duplicate\":false,\"amount\":40000,\"currency\":\"USD\"},{\"seq\":6,\"type\":\"paypal.webhook.received\",\"at\":\"T+006\",\"checkpointId\":\"journey\",\"eventId\":\"WH-EVT-FIXTURE-001\",\"captureId\":\"CAP-FIXTURE-001\",\"duplicate\":true,\"amount\":40000,\"currency\":\"USD\"},{\"seq\":7,\"type\":\"paypal.capture.reconciled\",\"at\":\"T+007\",\"checkpointId\":\"journey\",\"captureId\":\"CAP-FIXTURE-001\",\"outcome\":\"captured\",\"source\":\"sandbox-transaction-lookup\"}]}"
+    }
+  ],
+  "controls": [
+    {
+      "prefix": 0,
+      "admitted": true,
+      "event_count": 0,
+      "captured": 0,
+      "exact_to_existing_exporter": true
+    },
+    {
+      "prefix": 1,
+      "admitted": true,
+      "event_count": 1,
+      "captured": 0,
+      "exact_to_existing_exporter": true
+    },
+    {
+      "prefix": 2,
+      "admitted": true,
+      "event_count": 2,
+      "captured": 0,
+      "exact_to_existing_exporter": true
+    },
+    {
+      "prefix": 3,
+      "admitted": true,
+      "event_count": 3,
+      "captured": 0,
+      "exact_to_existing_exporter": true
+    },
+    {
+      "prefix": 4,
+      "admitted": true,
+      "event_count": 4,
+      "captured": 0,
+      "exact_to_existing_exporter": true
+    },
+    {
+      "prefix": 5,
+      "admitted": true,
+      "event_count": 5,
+      "captured": 0,
+      "exact_to_existing_exporter": true
+    },
+    {
+      "prefix": 6,
+      "admitted": true,
+      "event_count": 6,
+      "captured": 0,
+      "exact_to_existing_exporter": true
+    },
+    {
+      "prefix": 7,
+      "admitted": true,
+      "event_count": 7,
+      "captured": 40000,
+      "exact_to_existing_exporter": true
+    }
+  ],
+  "scope": "Actual unchanged fixed-fixture reader on authored JSON through the existing exporter and ledger. No authored-workspace codec, payment/provider, browser, deployed or installed claim."
+}

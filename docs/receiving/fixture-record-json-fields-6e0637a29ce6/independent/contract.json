@@ -1,0 +1,79 @@
+{
+  "schema": "scopesignal-fixture-reader-independent-contract/v1",
+  "reviewer": "runtime_integrator/6e0637a29ce6",
+  "frozen_utc": "2026-10-13T02:27:04.652084+00:00",
+  "candidate_read": false,
+  "original_commit": "6f17ea30fe8659dc4ae47cae6cb3a8e32c1d2508",
+  "original_tree": "245c0dd66c05c17f22e53bf57d9ae5847b36dc9a",
+  "original_pins": {
+    "src/ledger.mjs": {
+      "bytes": 12684,
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0",
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+    },
+    "src/fixture-record.mjs": {
+      "bytes": 1615,
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8",
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+    },
+    "src/record-reader.mjs": {
+      "bytes": 5111,
+      "git_blob": "e6f69a87605b9808058a4e46df6b923ebb22c9dd",
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+    },
+    "src/record-view.mjs": {
+      "bytes": 8786,
+      "git_blob": "08dbca153a600bf7ff6b41fb378b86b62422925f",
+      "sha256": "99e7e7ad3e58400ff3ae8d92796e88199379f8263465b650e3f7d2005542fe9f"
+    },
+    "tests/record-reader.test.mjs": {
+      "bytes": 8759,
+      "git_blob": "562f7db7b2052c26f66e29601b4fca931b0a8a48",
+      "sha256": "01084a72ce7bd408212c8c5b1ff56df73b42dcfeaedaaf654fb352448c56a034"
+    },
+    ".github/workflows/pages.yml": {
+      "bytes": 946,
+      "git_blob": "2fac275ab0183987bccac3ba787a133795a70016",
+      "sha256": "29079efa600bff732c7612251ff52458dc44fd87388d80264dd27a972e910735"
+    },
+    ".github/workflows/test.yml": {
+      "bytes": 436,
+      "git_blob": "b97f2716367bb4c5ed930693e3c3e7fdc02c792e",
+      "sha256": "65600373a689661f1e448e2b22e7973235ef002317f93a1d87394a692bc995ff"
+    }
+  },
+  "admission": "Refuse repeated decoded member names within the same JSON object before a last-wins value becomes accepted fixture facts. Names in different objects, array values, and key-like literal strings are not duplicate members.",
+  "duplicate_cases": [
+    "Top-level schema identical duplicates and wrong-earlier/correct-final duplicates",
+    "Top-level fixtureOnly and paymentEvidence conflicting earlier values with valid final values",
+    "Nested summary captured and fixture amount with differing earlier numbers and correct final values",
+    "Checkpoint approval acceptedEvidence and capture status/orderId within their exact objects",
+    "Event type and acceptedEvidence duplicate payload fields with valid final values",
+    "Literal versus Unicode-escaped decoded-equal names in both member orders",
+    "More than one duplicate depth and ordinary JSON whitespace"
+  ],
+  "baseline_witness": "For every defect input independently assert JSON.parse(text) equals a valid ledger-derived record; original should then accept it, proving duplicate admission rather than existing semantic inconsistency.",
+  "duplicate_error": "FixtureRecordError with a stable documented nonempty code/message; no partially accepted facts or unrelated runtime exception. Specific new code can be chosen by author and documented before candidate delivery. Existing malformed-JSON syntax and size-priority codes remain unchanged.",
+  "valid_controls": [
+    "All eight replayFixture recovery prefixes preserve complete records and states; only seventh event advances captured total",
+    "Key ordering and legal whitespace remain irrelevant",
+    "Repeated names across distinct checkpoint/event objects remain valid",
+    "Literal evidence with braces/brackets/commas/colons/escaped quotes/backslashes/key-like text/newlines/tabs and Unicode remains exact",
+    "Escaped ASCII field names without duplicate decode to accepted originals",
+    "Unicode value code units remain exact, including composed/decomposed text and supplementary characters",
+    "Deep freezing of accepted record/arrays remains intact"
+  ],
+  "negative_controls": [
+    "Existing malformed JSON and wrong format remain typed FixtureRecordError refusals",
+    "Deeply nested wrong-format JSON must not introduce an unhandled RangeError/stack failure",
+    "Exact 1MiB UTF-8 boundary stays inclusive; one byte beyond and multibyte overflow retain size refusal",
+    "Unsupported prototype-like names have no Object.prototype effects",
+    "Existing semantic/type/version/history gates and 512-event rule remain source-identical"
+  ],
+  "controller": "Require exact record-view.mjs beforeimage. Verify source retention and a bounded DOM-shaped handler harness if needed: valid file renders; duplicate after prior success preserves display; first duplicate creates no accepted display. No browser or device interaction.",
+  "scope": "Only record-reader.mjs admission span plus new test/guide/evidence; ledger, fixture serialization, view/controller, maintained tests and workflows preserved. Scope-workspace-record.mjs remains owned by issue69 and excluded.",
+  "owner_evidence_limit": "Portfolio reported all23 open records/49branches checked; this reviewer has not repeated the remote owner census.",
+  "publication_limit": "Source-branch-only due existing Pages gate; this review authorizes no main/Actions/Pages/deployment action.",
+  "limits": "Authored synthetic source and isolated consumer receiving. No payment, authenticity, external transaction, browser, device, performance or installed qualification.",
+  "storage_note": "Initial longer contract file write failed for shared ENOSPC and left a zero-byte file; no candidate was supplied or read. This contract is the first successfully frozen version."
+}
