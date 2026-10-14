@@ -1,3 +1,5 @@
+import { createSavedEventTextMatcher, MAX_EVENT_QUERY_LENGTH } from './record-event-search.mjs';
+
 // Only receives an already admitted record and its existing ordered event rows.
 // Filtering changes row visibility; it never rebuilds disclosures or reduces history.
 export function createRecordEventFilter(record, list, labels) {
@@ -30,6 +32,19 @@ export function createRecordEventFilter(record, list, labels) {
   const present = new Set(record.events.map(event => event.type));
   const type = select('record-event-type', 'Event type', 'All event types',
     Object.entries(labels).filter(([value]) => present.has(value)));
+  const searchLabel = node('label', 'Search saved event values');
+  const query = node('input');
+  query.type = 'search';
+  query.id = 'record-event-query';
+  query.maxLength = MAX_EVENT_QUERY_LENGTH;
+  query.autocomplete = 'off';
+  query.spellcheck = false;
+  query.placeholder = 'Evidence phrase or identifier';
+  query.disabled = record.events.length === 0;
+  query.setAttribute('aria-describedby', 'record-event-search-help record-event-search-error');
+  searchLabel.htmlFor = query.id;
+  searchLabel.append(query);
+  controls.append(searchLabel);
   const reset = node('button', 'Show all events');
   reset.type = 'button';
   controls.append(reset);
@@ -39,32 +54,55 @@ export function createRecordEventFilter(record, list, labels) {
   count.setAttribute('aria-live', 'polite');
   count.setAttribute('aria-atomic', 'true');
   const help = node('p', 'Filters change only this list. Totals and checkpoint outcomes above describe the full record. Original sequence numbers and saved fields are retained.');
-  const empty = node('p', 'No recorded events match both filters. Choose another filter or show all events.');
+  const searchHelp = node('p', 'Search matches literal saved values, ignoring case. Spaces and accents are not normalized; field names and display labels are not searched. Downloads still include the full record.');
+  searchHelp.id = 'record-event-search-help';
+  const searchError = node('p');
+  searchError.id = 'record-event-search-error';
+  searchError.className = 'record-event-search-error';
+  searchError.setAttribute('role', 'alert');
+  searchError.hidden = true;
+  const empty = node('p', 'No recorded events match these filters. Change a filter or show all events.');
   empty.className = 'record-event-empty';
   const rows = [...list.children];
   const update = () => {
+    let matchesText;
+    try {
+      matchesText = createSavedEventTextMatcher(query.value);
+    } catch (failure) {
+      searchError.textContent = failure.message + ' The last applied event view is unchanged.';
+      searchError.hidden = false;
+      query.setAttribute('aria-invalid', 'true');
+      reset.disabled = false;
+      return;
+    }
+    searchError.textContent = '';
+    searchError.hidden = true;
+    query.removeAttribute('aria-invalid');
     let shown = 0;
     record.events.forEach((event, index) => {
       const matches = (!checkpoint.value || event.checkpointId === checkpoint.value)
-        && (!type.value || event.type === type.value);
+        && (!type.value || event.type === type.value) && matchesText(event);
       rows[index].hidden = !matches;
       if (matches) shown += 1;
     });
     count.textContent = 'Showing ' + shown + ' of ' + record.events.length + ' recorded events. '
-      + checkpoint.selectedOptions[0].textContent + ' · ' + type.selectedOptions[0].textContent + '.';
-    reset.disabled = !checkpoint.value && !type.value;
+      + checkpoint.selectedOptions[0].textContent + ' · ' + type.selectedOptions[0].textContent
+      + (query.value ? ' · Search: “' + query.value + '”' : '') + '.';
+    reset.disabled = !checkpoint.value && !type.value && !query.value;
     empty.hidden = shown > 0 || record.events.length === 0;
     list.hidden = shown === 0;
   };
   checkpoint.addEventListener('change', update);
   type.addEventListener('change', update);
+  query.addEventListener('input', update);
   reset.addEventListener('click', () => {
     checkpoint.value = '';
     type.value = '';
+    query.value = '';
     update();
     checkpoint.focus();
   });
-  panel.append(controls, count, help, empty);
+  panel.append(controls, count, help, searchHelp, searchError, empty);
   update();
   return panel;
 }
