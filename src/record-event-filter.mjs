@@ -48,6 +48,18 @@ export function createRecordEventFilter(record, list, labels) {
   const reset = node('button', 'Show all events');
   reset.type = 'button';
   controls.append(reset);
+  const expand = node('button', 'Expand shown events');
+  expand.id = 'record-events-expand-shown';
+  expand.type = 'button';
+  const collapse = node('button', 'Collapse shown events');
+  collapse.id = 'record-events-collapse-shown';
+  collapse.type = 'button';
+  controls.append(expand, collapse);
+  const disclosureStatus = node('p');
+  disclosureStatus.id = 'record-event-disclosure-status';
+  disclosureStatus.setAttribute('role', 'status');
+  disclosureStatus.setAttribute('aria-live', 'polite');
+  disclosureStatus.setAttribute('aria-atomic', 'true');
   const count = node('p');
   count.id = 'record-event-count';
   count.setAttribute('role', 'status');
@@ -64,6 +76,20 @@ export function createRecordEventFilter(record, list, labels) {
   const empty = node('p', 'No recorded events match these filters. Change a filter or show all events.');
   empty.className = 'record-event-empty';
   const rows = [...list.children];
+  const disclosures = rows.map(row => row.children[0]);
+  const setShownExpanded = (open, button) => {
+    if (button.disabled) return;
+    let shown = 0;
+    rows.forEach((row, index) => {
+      if (row.hidden) return;
+      disclosures[index].open = open;
+      shown += 1;
+    });
+    if (shown) disclosureStatus.textContent = (open ? 'Expanded ' : 'Collapsed ')
+      + shown + ' shown event' + (shown === 1 ? '' : 's') + '.';
+  };
+  expand.addEventListener('click', () => setShownExpanded(true, expand));
+  collapse.addEventListener('click', () => setShownExpanded(false, collapse));
   const update = () => {
     let matchesText;
     try {
@@ -75,6 +101,7 @@ export function createRecordEventFilter(record, list, labels) {
       reset.disabled = false;
       return;
     }
+    disclosureStatus.textContent = '';
     searchError.textContent = '';
     searchError.hidden = true;
     query.removeAttribute('aria-invalid');
@@ -89,6 +116,7 @@ export function createRecordEventFilter(record, list, labels) {
       + checkpoint.selectedOptions[0].textContent + ' · ' + type.selectedOptions[0].textContent
       + (query.value ? ' · Search: “' + query.value + '”' : '') + '.';
     reset.disabled = !checkpoint.value && !type.value && !query.value;
+    expand.disabled = collapse.disabled = shown === 0;
     empty.hidden = shown > 0 || record.events.length === 0;
     list.hidden = shown === 0;
   };
@@ -102,7 +130,7 @@ export function createRecordEventFilter(record, list, labels) {
     update();
     checkpoint.focus();
   });
-  panel.append(controls, count, help, searchHelp, searchError, empty);
+  panel.append(controls, count, help, searchHelp, searchError, empty, disclosureStatus);
   update();
   return panel;
 }

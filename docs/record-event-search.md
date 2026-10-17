@@ -6,6 +6,14 @@ The result count always shows matching events out of the complete recorded histo
 
 The summary, checkpoint outcomes and **Download record review** always describe the complete admitted record. A no-match list does not mean an empty record or an absence of recorded approval. Downloading while no rows match still includes every original event and saved field. Keep the original JSON to reopen the interactive viewer; the HTML download is the unchanged complete reading copy.
 
+## Read all currently shown event fields
+
+**Expand shown events** opens the existing disclosures for every event currently shown by the filters. **Collapse shown events** closes only that same visible set. Hidden events retain their previous open or closed state; showing them again does not change it. The buttons leave keyboard focus in place and announce the affected count. They are disabled when no events are shown.
+
+These actions do not reset your search or selects, reorder events, rewrite saved fields, or change the complete-record download. **Show all events** still resets only the three filters. If an overlength programmatic query is refused, the last successfully applied list remains visible and the two disclosure buttons apply to that list without clearing the query error. Opening a new file creates its own fresh disclosures; old detached controls cannot change that new view.
+
+The issue 82 batch disclosure controls are a separate source increment from the prior issue 80 search receiving described below. One focused Node capture passed all four groups in `tests/record-event-disclosure-controls.test.mjs` and all four maintained literal-search groups. Those checks admit the complete fictional example and compare original nodes, hidden/open states, invalid-query handling, the 512-event boundary and unchanged full-record exports. This is controlled-DOM and model/export evidence; actual browser keyboard/layout receiving is pending for these new buttons.
+
 ## Literal matching
 
 Search is case-insensitive in the precise JavaScript lowercase-substring sense. It examines each saved scalar value separately: string contents, number spelling, or `true` / `false`. It does not search field names, derived labels or checkpoint display titles. Select a checkpoint by its existing control when that is the intended restriction.
@@ -48,7 +56,7 @@ node --test --test-reporter=tap tests/record-event-search.test.mjs
 
 Four groups cover literal scalar/query boundaries, admitted-record intersection and complete export preservation, the current 512-event boundary with duplicates, and filter identity/reset/error behavior under an explicitly declared small DOM harness. The harness checks state and references; it does not claim browser layout, keyboard interaction, accessibility tooling or file-chooser behavior.
 
-## Receiving status and ownership
+## Prior literal-search receiving and ownership (issue 80)
 
 The finite native course passed the four focused groups and separately recorded all 21 query cases against the frozen fictional 12-event record. An independent reviewer accepted all complete sequence sets, selected event objects, the pristine source record, six query-boundary outcomes and the complete HTML reference. Native controller checks (14) and independent saved-result checks (27) are separate scopes. The pre-execution guide and source inputs remain retained unchanged.
 
@@ -56,7 +64,7 @@ One actual Chrome 154 course then passed 189 checks at 1360 × 1000 and 390 × 1
 
 While no events matched, the real **Download record review** action produced the complete 17,405-byte HTML file, byte-for-byte equal to the unchanged exporter reference (SHA-256 `eb579e0a4c9eb9a3a334c0289adc7b5c265aa29187c1811b19156e48d8ed0684`). Both original viewport captures are retained. The desktop image shows the native Event type popup open over some help text; the narrow image shows wrapped controls and the literal event-01 evidence. No additional run was performed to replace the desktop image.
 
-The browser used a loopback server and fresh task-owned profile. Its owning parent reaped the receiver; the final observation recorded eleven owned Chrome identities as ten signaled exits with code 0 and one absent, with no owned listener or active/unknown process. Image-query error 31 on the exited identities remains in the raw observations; it was not converted into a false absence claim. These results qualify the named current workflow, not an unrelated historical suite or direct `file:` opening.
+The browser used a loopback server and fresh task-owned profile. Its owning parent reaped the receiver; the final observation recorded eleven owned Chrome identities as ten signaled exits with code 0 and one absent, with no owned listener or active/unknown process. Image-query error 31 on the exited identities remains in the raw observations; it was not converted into a false absence claim. These results qualify the prior issue 80 literal-search workflow, not the new issue 82 disclosure buttons, an unrelated historical suite or direct `file:` opening.
 
 Receiving base is `paypal-ai@a8e7ab95e5b9dd4c93fd06a776391d57d81a9515`, including PR 79's completed composition of checkpoint/type filtering and complete-record review download. Issue 80 owns this five-path increment. Owner 73's existing controls, owner 74's download, owner 62's different workspace-library search, owner 56's history proposal, owner 70's admission proposal and owner 68's packaging remain separate.
 
