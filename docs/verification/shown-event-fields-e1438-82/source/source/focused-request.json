@@ -1,0 +1,106 @@
+{
+  "schema": "scopesignal.shown-disclosures.focused-request/1",
+  "status": "PREPARED_UNRUN_PENDING_SOURCE_REVIEW",
+  "cwd": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source",
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "--test",
+    "--test-reporter=tap",
+    "tests/record-event-disclosure-controls.test.mjs",
+    "tests/record-event-search.test.mjs"
+  ],
+  "output": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-v1",
+  "timeout_seconds": 30,
+  "groups": {
+    "new": 4,
+    "maintained_search": 4
+  },
+  "capture_source": {
+    "path": "/workspace/scratch/e1438c9d058f/money-comparison-navigation-native/capture_process.py",
+    "bytes": 7969,
+    "sha256": "48ea98257bce2198e7e0f3009cb8c3ed09f9a017dbae2777e01b86e7ab2fc2d0",
+    "git_blob": "3a59961b07f97d66ff23955739f4fbf1d687135b"
+  },
+  "capture_argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "-B",
+    "/workspace/scratch/e1438c9d058f/money-comparison-navigation-native/capture_process.py",
+    "--cwd",
+    "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source",
+    "--out",
+    "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-v1",
+    "--timeout",
+    "30",
+    "--",
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "--test",
+    "--test-reporter=tap",
+    "tests/record-event-disclosure-controls.test.mjs",
+    "tests/record-event-search.test.mjs"
+  ],
+  "selected_sources": [
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/record-event-filter.mjs",
+      "bytes": 6022,
+      "sha256": "1dab1cb2c2f38deb763943bf45149a13655317dac07641f3e6db96fab21e64bd",
+      "git_blob": "bf434acb68768590fb4c41442a329632236f54d0"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/tests/record-event-disclosure-controls.test.mjs",
+      "bytes": 14859,
+      "sha256": "0bc6b76f9d691d004972a80434572fcfb6aa459b15ae9383e0228e6a58ab5bbc",
+      "git_blob": "1412357e93a6d5a9ac4119d16775ad47b4c7cf3e"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/docs/record-event-search.md",
+      "bytes": 9042,
+      "sha256": "53bc712dd9bfba48fab4f08f3985294a322b3c4b2da8458d7bb476882a9e4be8",
+      "git_blob": "cd71cc18abe013f20904a9b3982d1bf4bc2973e4"
+    }
+  ],
+  "exact_dependencies": [
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/tests/record-event-search.test.mjs",
+      "bytes": 11813,
+      "sha256": "f5bfc74f672f4ed3fa9db23ac5d22d1ed0adb6854b6bcc4bab60321fe4035207",
+      "git_blob": "11919d741a6b6a9c3dc4f4cdaab7d6e85f34a488"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/record-event-search.mjs",
+      "bytes": 743,
+      "sha256": "757f5ca3c8f1808e806fe62004f251b905006ffcd4210167314e40e3ae2c4434",
+      "git_blob": "f654d2ecb5384c53ec5c34963fd7297159a4d6b4"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/fixture-record.mjs",
+      "bytes": 1615,
+      "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a",
+      "git_blob": "5eda4b74b5067e16de9e7de1bbd8935ff69895e8"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/record-reader.mjs",
+      "bytes": 5111,
+      "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8",
+      "git_blob": "e6f69a87605b9808058a4e46df6b923ebb22c9dd"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/record-review-export.mjs",
+      "bytes": 5697,
+      "sha256": "596fee6a19a14ce360b6a9be07107324cef41cffadd38a89de3debd19b3ba08a",
+      "git_blob": "cffc10014b0426888c310b409f3bd6448eec1f8f"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/ledger.mjs",
+      "bytes": 12684,
+      "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c",
+      "git_blob": "beb94176ae3b1a2f29890c5752e47c25694f01f0"
+    }
+  ],
+  "manual_fixture": {
+    "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/examples/shown-events.fixture.json",
+    "bytes": 3520,
+    "sha256": "8639e3ac91311f7b3d50082bc7424a605f7d83fbc49b1a40b7916399cda6e942",
+    "git_blob": "a9a0dabc7d4ea95cc3e3c393949addd5cf73901e"
+  },
+  "qualification": "One controlled-DOM and pure model/export focused child, no network, browser, native input, package script or unrelated suite. New manual fixture is embedded exactly in the new test and checked by the maintained reader during the authorized capture."
+}

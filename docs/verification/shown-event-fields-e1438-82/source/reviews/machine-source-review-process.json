@@ -1,0 +1,7 @@
+{
+  "chunk_id": "65e53c",
+  "wall_time_seconds": 0.000024987,
+  "exit_code": 0,
+  "original_token_count": 76,
+  "output": "{\"status\": \"ACCEPT_THREE_PATH_SOURCE_AND_EIGHT_FOCUSED_TEST_PLAN\", \"proof\": {\"path\": \"/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/machine-source-review.json\", \"bytes\": 3505, \"sha256\": \"ee43183895664535db0ba117b55495e846724237140aab574ce1939f492fb0a4\"}, \"focused_groups\": 8}\n"
+}

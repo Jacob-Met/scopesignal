@@ -1,0 +1,58 @@
+TAP version 13
+# Subtest: shown disclosure controls preserve hidden states, original nodes and the complete record
+ok 1 - shown disclosure controls preserve hidden states, original nodes and the complete record
+  ---
+  duration_ms: 7.593489
+  type: 'test'
+  ...
+# Subtest: invalid queries retain the actionable last view; zero matches and empty records disable both actions
+ok 2 - invalid queries retain the actionable last view; zero matches and empty records disable both actions
+  ---
+  duration_ms: 3.285957
+  type: 'test'
+  ...
+# Subtest: reset and repeat actions retain disclosures, and detached controls cannot affect a replacement view
+ok 3 - reset and repeat actions retain disclosures, and detached controls cannot affect a replacement view
+  ---
+  duration_ms: 3.388112
+  type: 'test'
+  ...
+# Subtest: the admitted 512-event boundary keeps every duplicate and only changes shown disclosures
+ok 4 - the admitted 512-event boundary keeps every duplicate and only changes shown disclosures
+  ---
+  duration_ms: 29.579497
+  type: 'test'
+  ...
+# Subtest: literal saved scalar matching has explicit whitespace, Unicode and query boundaries
+ok 5 - literal saved scalar matching has explicit whitespace, Unicode and query boundaries
+  ---
+  duration_ms: 1.440157
+  type: 'test'
+  ...
+# Subtest: admitted saved records retain references, exact evidence and complete exports through intersections
+ok 6 - admitted saved records retain references, exact evidence and complete exports through intersections
+  ---
+  duration_ms: 5.466554
+  type: 'test'
+  ...
+# Subtest: the current512-event admission bound retains every duplicate and exact original sequence
+ok 7 - the current512-event admission bound retains every duplicate and exact original sequence
+  ---
+  duration_ms: 14.848397
+  type: 'test'
+  ...
+# Subtest: the filter composes all three controls without rebuilding rows and repairs invalid queries
+ok 8 - the filter composes all three controls without rebuilding rows and repairs invalid queries
+  ---
+  duration_ms: 4.383287
+  type: 'test'
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 139.777682

@@ -1,0 +1,63 @@
+{
+  "schema": "scopesignal.shown-disclosures.machine-source-review/1",
+  "status": "ACCEPT_THREE_PATH_SOURCE_AND_EIGHT_FOCUSED_TEST_PLAN",
+  "base": "10f6233dcc5157afdf0e31371e59eb4fccda0d35",
+  "files": [
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/record-event-filter.mjs",
+      "bytes": 6022,
+      "sha256": "1dab1cb2c2f38deb763943bf45149a13655317dac07641f3e6db96fab21e64bd"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/tests/record-event-disclosure-controls.test.mjs",
+      "bytes": 14859,
+      "sha256": "0bc6b76f9d691d004972a80434572fcfb6aa459b15ae9383e0228e6a58ab5bbc"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/docs/record-event-search.md",
+      "bytes": 9042,
+      "sha256": "53bc712dd9bfba48fab4f08f3985294a322b3c4b2da8458d7bb476882a9e4be8"
+    }
+  ],
+  "fixture": {
+    "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/examples/shown-events.fixture.json",
+    "bytes": 3520,
+    "sha256": "8639e3ac91311f7b3d50082bc7424a605f7d83fbc49b1a40b7916399cda6e942"
+  },
+  "existing_regression": {
+    "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/tests/record-event-search.test.mjs",
+    "bytes": 11813,
+    "sha256": "f5bfc74f672f4ed3fa9db23ac5d22d1ed0adb6854b6bcc4bab60321fe4035207"
+  },
+  "complete_candidate_inverse_rules": 6,
+  "guide_qualification_rules": 3,
+  "unchanged_dependencies": [
+    "src/record-event-search.mjs",
+    "tests/record-event-search.test.mjs",
+    "src/fixture-record.mjs",
+    "src/record-reader.mjs",
+    "src/record-review-export.mjs",
+    "src/ledger.mjs",
+    "src/record-review-download.mjs",
+    "record.html",
+    "src/record-view.mjs",
+    "record-view.css"
+  ],
+  "manual_fixture_literal_exact": true,
+  "focused_groups": [
+    "shown disclosure controls preserve hidden states, original nodes and the complete record",
+    "invalid queries retain the actionable last view; zero matches and empty records disable both actions",
+    "reset and repeat actions retain disclosures, and detached controls cannot affect a replacement view",
+    "the admitted 512-event boundary keeps every duplicate and only changes shown disclosures"
+  ],
+  "existing_groups": 4,
+  "findings": [],
+  "reviewed_behavior": [
+    "Only existing last-applied visible details.open properties change; hidden state and node/event identity remain.",
+    "Invalid overlength query leaves the previous visible set actionable without clearing error or count; zero/empty actions are disabled and guarded.",
+    "Reset/repeat/detached panel ownership, reference conservation, full JSON and complete exporter equality are explicit controls.",
+    "Manual eight-event fixture has consistent approval/lost-response/duplicate/reconciliation totals; 512-event duplicate boundary retains all rows.",
+    "No focus change from new handlers; declared DOM harness cannot establish actual keyboard/layout/accessibility. Historical issue80 receiving is explicitly separate."
+  ],
+  "qualification": "Complete implementation, new test, fixture, guide and relevant unchanged view/search/ledger/download/CSS source read. Passive byte/Git joins and whole forward/inverses only; no candidate, test, browser, native, provider or workflow invocation. Default/Pages/Actions hold remains. Root controls the single local focused run and later publication."
+}

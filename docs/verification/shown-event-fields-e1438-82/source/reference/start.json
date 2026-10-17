@@ -1,0 +1,14 @@
+{
+  "request": {
+    "cmd": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 -B /workspace/scratch/e1438c9d058f/money-comparison-navigation-native/capture_process.py --cwd /workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity --out /workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/reference-capture-v1 --timeout 15 -- /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node generate-review-reference.mjs",
+    "yield_time_ms": 1000,
+    "max_output_tokens": 2500
+  },
+  "response": {
+    "chunk_id": "904a83",
+    "wall_time_seconds": 0.082913583,
+    "exit_code": 0,
+    "original_token_count": 238,
+    "output": "{\n  \"argv\": [\n    \"/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node\",\n    \"generate-review-reference.mjs\"\n  ],\n  \"cwd\": \"/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity\",\n  \"descendants_observed\": false,\n  \"elapsed_seconds\": 0.11478874999738764,\n  \"finished_utc\": \"2026-10-17T05:59:31.912200+00:00\",\n  \"observer_errors\": [],\n  \"output\": \"/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/reference-capture-v1\",\n  \"pid\": 5,\n  \"python\": \"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\",\n  \"returncode\": 0,\n  \"schema\": \"hamon.process-capture/1\",\n  \"started_utc\": \"2026-10-17T05:59:31.797418+00:00\",\n  \"state\": \"exited\",\n  \"stderr\": {\n    \"bytes\": 0,\n    \"sha256\": \"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n  },\n  \"stdout\": {\n    \"bytes\": 498,\n    \"sha256\": \"e39f4a1a1a6803ac92ddecd0327ad9febb08bd65e667009a243b598c2830d25d\"\n  },\n  \"timeout_seconds\": 15.0\n}\n"
+  }
+}

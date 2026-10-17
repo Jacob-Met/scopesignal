@@ -1,0 +1,65 @@
+{
+  "base": "10f6233dcc5157afdf0e31371e59eb4fccda0d35",
+  "issue": 82,
+  "paths": [
+    {
+      "path": "src/record-event-filter.mjs",
+      "before": {
+        "bytes": 4763,
+        "sha256": "f5760c7d86f58846c80674d937fb5c61194cfc1e272618029abe048bbd33df61"
+      },
+      "after": {
+        "bytes": 6022,
+        "sha256": "1dab1cb2c2f38deb763943bf45149a13655317dac07641f3e6db96fab21e64bd"
+      },
+      "rules": [
+        {
+          "before": "  controls.append(reset);\n",
+          "after": "  controls.append(reset);\n  const expand = node('button', 'Expand shown events');\n  expand.id = 'record-events-expand-shown';\n  expand.type = 'button';\n  const collapse = node('button', 'Collapse shown events');\n  collapse.id = 'record-events-collapse-shown';\n  collapse.type = 'button';\n  controls.append(expand, collapse);\n  const disclosureStatus = node('p');\n  disclosureStatus.id = 'record-event-disclosure-status';\n  disclosureStatus.setAttribute('role', 'status');\n  disclosureStatus.setAttribute('aria-live', 'polite');\n  disclosureStatus.setAttribute('aria-atomic', 'true');\n",
+          "count": 1
+        },
+        {
+          "before": "  const rows = [...list.children];\n",
+          "after": "  const rows = [...list.children];\n  const disclosures = rows.map(row => row.children[0]);\n  const setShownExpanded = (open, button) => {\n    if (button.disabled) return;\n    let shown = 0;\n    rows.forEach((row, index) => {\n      if (row.hidden) return;\n      disclosures[index].open = open;\n      shown += 1;\n    });\n    if (shown) disclosureStatus.textContent = (open ? 'Expanded ' : 'Collapsed ')\n      + shown + ' shown event' + (shown === 1 ? '' : 's') + '.';\n  };\n  expand.addEventListener('click', () => setShownExpanded(true, expand));\n  collapse.addEventListener('click', () => setShownExpanded(false, collapse));\n",
+          "count": 1
+        },
+        {
+          "before": "    searchError.textContent = '';\n",
+          "after": "    disclosureStatus.textContent = '';\n    searchError.textContent = '';\n",
+          "count": 1
+        },
+        {
+          "before": "    reset.disabled = !checkpoint.value && !type.value && !query.value;\n",
+          "after": "    reset.disabled = !checkpoint.value && !type.value && !query.value;\n    expand.disabled = collapse.disabled = shown === 0;\n",
+          "count": 1
+        },
+        {
+          "before": "  panel.append(controls, count, help, searchHelp, searchError, empty);\n",
+          "after": "  panel.append(controls, count, help, searchHelp, searchError, empty, disclosureStatus);\n",
+          "count": 1
+        }
+      ],
+      "whole_inverse": true
+    },
+    {
+      "path": "docs/record-event-search.md",
+      "before": {
+        "bytes": 7751,
+        "sha256": "3c003cd6c91711e3d4c3528ccd44336d6634c545e6782c08e123af597e2c547a"
+      },
+      "after": {
+        "bytes": 8932,
+        "sha256": "e7618e54606b5403f7555b3aafe90495798cf7b4e61e4ac29cd83b62383c8ff8"
+      },
+      "rules": [
+        {
+          "before": "## Literal matching\n",
+          "after": "## Read all currently shown event fields\n\n**Expand shown events** opens the existing disclosures for every event currently shown by the filters. **Collapse shown events** closes only that same visible set. Hidden events retain their previous open or closed state; showing them again does not change it. The buttons leave keyboard focus in place and announce the affected count. They are disabled when no events are shown.\n\nThese actions do not reset your search or selects, reorder events, rewrite saved fields, or change the complete-record download. **Show all events** still resets only the three filters. If an overlength programmatic query is refused, the last successfully applied list remains visible and the two disclosure buttons apply to that list without clearing the query error. Opening a new file creates its own fresh disclosures; old detached controls cannot change that new view.\n\nThe batch disclosure controls are a separate source increment from the search receiving described below. Their focused controlled-DOM checks are maintained in `tests/record-event-disclosure-controls.test.mjs`; actual browser keyboard/layout receiving is pending for this increment.\n\n## Literal matching\n",
+          "count": 1
+        }
+      ],
+      "whole_inverse": true
+    }
+  ],
+  "qualification": "Source-only five implementation spans and one guide section. Existing literal matcher, original controlled tests, reader, exporter, ledger, styles and file lifecycle unchanged. No module, test, browser or native invocation."
+}

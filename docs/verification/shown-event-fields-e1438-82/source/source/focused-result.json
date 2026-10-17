@@ -1,0 +1,60 @@
+{
+  "schema": "scopesignal.shown-disclosures.focused-result/1",
+  "status": "PASS_EIGHT_FOCUSED_GROUPS_PENDING_INDEPENDENT_RESULT_REVIEW",
+  "capture": {
+    "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-capture-start.json",
+    "bytes": 1595,
+    "sha256": "edb68e0db9b08db6e8f4c9129c54cd4776a663123ad1390a617b02f7957c80e8",
+    "git_blob": "13406142e658ac6af04bfac1912488af286985a0"
+  },
+  "originals": [
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-v1/REQUEST.json",
+      "bytes": 616,
+      "sha256": "e37b9cd1919ae2b4a47c20e69a7fb7d26e5f966849c74929bc9b8d3fcdb8ed7c",
+      "git_blob": "f0ccff913ef516cd3f6f72860d780f928cb17e1a"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-v1/PROCESS.json",
+      "bytes": 1048,
+      "sha256": "51a1d32970f42e9280c688cc9b533332694491d5e9e68b02111de7a76d11b49d",
+      "git_blob": "5ea47f7a453679961f254092f15938f89b23c07b"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-v1/stdout",
+      "bytes": 2159,
+      "sha256": "4e751d42a1e23527d750596ad5d61d8d27863bd3cbb445f432aaa8f1da767cf1",
+      "git_blob": "6c30a0d0653572a704c6941e8c86538fd29a7e7c"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-v1/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    }
+  ],
+  "direct_pid": 5,
+  "exit_code": 0,
+  "groups": 8,
+  "new_groups": 4,
+  "maintained_groups": 4,
+  "source_and_dependency_pins_unchanged_at_capture": true,
+  "guide_projection": {
+    "before": {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-result-history/guide.before.md",
+      "bytes": 9042,
+      "sha256": "53bc712dd9bfba48fab4f08f3985294a322b3c4b2da8458d7bb476882a9e4be8",
+      "git_blob": "cd71cc18abe013f20904a9b3982d1bf4bc2973e4"
+    },
+    "after": {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/docs/record-event-search.md",
+      "bytes": 9310,
+      "sha256": "a3063a6a8e685298c0763458fd7ef4e1da2618632ae0a5fde2d69815421d0d9e",
+      "git_blob": "7704e1cbad5a95e2e29e4c19de1ebb0f116db618"
+    },
+    "old": "The issue 82 batch disclosure controls are a source-only candidate, separate from the prior issue 80 search receiving described below. Focused controlled-DOM execution is pending for `tests/record-event-disclosure-controls.test.mjs`; actual browser keyboard/layout receiving is also pending for these new buttons.",
+    "new": "The issue 82 batch disclosure controls are a separate source increment from the prior issue 80 search receiving described below. One focused Node capture passed all four groups in `tests/record-event-disclosure-controls.test.mjs` and all four maintained literal-search groups. Those checks admit the complete fictional example and compare original nodes, hidden/open states, invalid-query handling, the 512-event boundary and unchanged full-record exports. This is controlled-DOM and model/export evidence; actual browser keyboard/layout receiving is pending for these new buttons.",
+    "whole_inverse": true
+  },
+  "qualification": "Saved original protocol and streams only; no rerun. Controlled DOM properties/model/export checks, no actual browser or keyboard receiving."
+}

@@ -1,0 +1,27 @@
+{
+  "argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+    "generate-review-reference.mjs"
+  ],
+  "cwd": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity",
+  "descendants_observed": false,
+  "elapsed_seconds": 0.11478874999738764,
+  "finished_utc": "2026-10-17T05:59:31.912200+00:00",
+  "observer_errors": [],
+  "output": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/reference-capture-v1",
+  "pid": 5,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "returncode": 0,
+  "schema": "hamon.process-capture/1",
+  "started_utc": "2026-10-17T05:59:31.797418+00:00",
+  "state": "exited",
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 498,
+    "sha256": "e39f4a1a1a6803ac92ddecd0327ad9febb08bd65e667009a243b598c2830d25d"
+  },
+  "timeout_seconds": 15.0
+}

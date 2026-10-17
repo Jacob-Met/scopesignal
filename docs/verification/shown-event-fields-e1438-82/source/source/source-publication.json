@@ -1,0 +1,37 @@
+{
+  "schema": "scopesignal.shown-disclosures.source-publication/1",
+  "status": "ACCEPT_THREE_PATH_ISOLATED_SOURCE_OFFER_WHOLE_FRESH",
+  "repository": "Jacob-Met/scopesignal",
+  "branch": "estate/e1438-shown-event-fields-82",
+  "parent": "10f6233dcc5157afdf0e31371e59eb4fccda0d35",
+  "commit": "dcad391d11a66a43df32ae1051a48c5ebd22ff34",
+  "tree": "bf8910efa55be40da9a872823f02be5195b2a6f6",
+  "selected": [
+    {
+      "relative": "src/record-event-filter.mjs",
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/record-event-filter.mjs",
+      "bytes": 6022,
+      "sha256": "1dab1cb2c2f38deb763943bf45149a13655317dac07641f3e6db96fab21e64bd",
+      "git_blob": "bf434acb68768590fb4c41442a329632236f54d0"
+    },
+    {
+      "relative": "tests/record-event-disclosure-controls.test.mjs",
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/tests/record-event-disclosure-controls.test.mjs",
+      "bytes": 14859,
+      "sha256": "0bc6b76f9d691d004972a80434572fcfb6aa459b15ae9383e0228e6a58ab5bbc",
+      "git_blob": "1412357e93a6d5a9ac4119d16775ad47b4c7cf3e"
+    },
+    {
+      "relative": "docs/record-event-search.md",
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/docs/record-event-search.md",
+      "bytes": 9310,
+      "sha256": "a3063a6a8e685298c0763458fd7ef4e1da2618632ae0a5fde2d69815421d0d9e",
+      "git_blob": "7704e1cbad5a95e2e29e4c19de1ebb0f116db618"
+    }
+  ],
+  "whole_leaf_count": 835,
+  "preserved_unselected": 832,
+  "default_unchanged": "a8e7ab95e5b9dd4c93fd06a776391d57d81a9515",
+  "guide_url": "https://github.com/Jacob-Met/scopesignal/blob/dcad391d11a66a43df32ae1051a48c5ebd22ff34/docs/record-event-search.md",
+  "qualification": "Fresh complete three bodies and whole tree. Isolated offer only; no PR, merge, Actions dispatch, Pages or default mutation. Eight local focused groups passed; actual browser receiving remains separate and pending."
+}

@@ -1,0 +1,216 @@
+{
+  "schema": "scopesignal.shown-disclosures.source-evidence/1",
+  "source_revision": "dcad391d11a66a43df32ae1051a48c5ebd22ff34",
+  "source_tree": "bf8910efa55be40da9a872823f02be5195b2a6f6",
+  "source_paths": [
+    {
+      "relative": "src/record-event-filter.mjs",
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/record-event-filter.mjs",
+      "bytes": 6022,
+      "sha256": "1dab1cb2c2f38deb763943bf45149a13655317dac07641f3e6db96fab21e64bd",
+      "git_blob": "bf434acb68768590fb4c41442a329632236f54d0"
+    },
+    {
+      "relative": "tests/record-event-disclosure-controls.test.mjs",
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/tests/record-event-disclosure-controls.test.mjs",
+      "bytes": 14859,
+      "sha256": "0bc6b76f9d691d004972a80434572fcfb6aa459b15ae9383e0228e6a58ab5bbc",
+      "git_blob": "1412357e93a6d5a9ac4119d16775ad47b4c7cf3e"
+    },
+    {
+      "relative": "docs/record-event-search.md",
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/docs/record-event-search.md",
+      "bytes": 9310,
+      "sha256": "a3063a6a8e685298c0763458fd7ef4e1da2618632ae0a5fde2d69815421d0d9e",
+      "git_blob": "7704e1cbad5a95e2e29e4c19de1ebb0f116db618"
+    }
+  ],
+  "focused_originals": 4,
+  "reference_originals": 4,
+  "actual_browser_status": "PENDING_SEPARATE_RECEIVING",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7455,
+      "sha256": "d916655b66ae75d3658f1472041262478ec3b3be3b8aaf7ebc40172e7a647c13",
+      "git_blob": "bf0513ce4b918221f4984dce713bf762c5d61ac5",
+      "original": null
+    },
+    {
+      "path": "examples/shown-events.fixture.json",
+      "bytes": 3520,
+      "sha256": "8639e3ac91311f7b3d50082bc7424a605f7d83fbc49b1a40b7916399cda6e942",
+      "git_blob": "a9a0dabc7d4ea95cc3e3c393949addd5cf73901e",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/examples/shown-events.fixture.json"
+    },
+    {
+      "path": "focused/PROCESS.json",
+      "bytes": 1048,
+      "sha256": "51a1d32970f42e9280c688cc9b533332694491d5e9e68b02111de7a76d11b49d",
+      "git_blob": "5ea47f7a453679961f254092f15938f89b23c07b",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-v1/PROCESS.json"
+    },
+    {
+      "path": "focused/REQUEST.json",
+      "bytes": 616,
+      "sha256": "e37b9cd1919ae2b4a47c20e69a7fb7d26e5f966849c74929bc9b8d3fcdb8ed7c",
+      "git_blob": "f0ccff913ef516cd3f6f72860d780f928cb17e1a",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-v1/REQUEST.json"
+    },
+    {
+      "path": "focused/start.json",
+      "bytes": 1595,
+      "sha256": "edb68e0db9b08db6e8f4c9129c54cd4776a663123ad1390a617b02f7957c80e8",
+      "git_blob": "13406142e658ac6af04bfac1912488af286985a0",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-capture-start.json"
+    },
+    {
+      "path": "focused/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-v1/stderr"
+    },
+    {
+      "path": "focused/stdout",
+      "bytes": 2159,
+      "sha256": "4e751d42a1e23527d750596ad5d61d8d27863bd3cbb445f432aaa8f1da767cf1",
+      "git_blob": "6c30a0d0653572a704c6941e8c86538fd29a7e7c",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-v1/stdout"
+    },
+    {
+      "path": "reference/PROCESS.json",
+      "bytes": 950,
+      "sha256": "9d6fe3d7765cb776c0398edc6dcaf24b2d0fcd874b98a9a8a626f3f47757a55f",
+      "git_blob": "c82f9b3717796529a1d22f9aad557c299f4f61c8",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/reference-capture-v1/PROCESS.json"
+    },
+    {
+      "path": "reference/REQUEST.json",
+      "bytes": 518,
+      "sha256": "dd128ff678d20aded32e62eec7e6922179c0a7c362459008f2da5d4d5dada0b4",
+      "git_blob": "bc8e4b016a9fe606267f4ed2110462d66b2a0e68",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/reference-capture-v1/REQUEST.json"
+    },
+    {
+      "path": "reference/generate-review-reference.mjs",
+      "bytes": 1600,
+      "sha256": "b7d9c3173fc4a246e44a5be1675c1113fd3730e2cba727bbf4401e04af6f4697",
+      "git_blob": "5ed3aa55fc740615bcb4feb6ccb28cbf593ccd49",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/generate-review-reference.mjs"
+    },
+    {
+      "path": "reference/scopesignal-record-review.html",
+      "bytes": 13519,
+      "sha256": "414e1212721e42d8cd827167090cf446ed5dd2f039f1538d636392bf4c7e52f4",
+      "git_blob": "7c02102f901c1bb33869a084ad45e657f1e429d7",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/reference-v1/scopesignal-record-review.html"
+    },
+    {
+      "path": "reference/start.json",
+      "bytes": 1741,
+      "sha256": "75e8ba71fbbe3c4bff932719b44a89971eadec767a058f7e60a2a46029ed1c3b",
+      "git_blob": "6086034232350e205f30697010888d7b51a1b95c",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/reference-capture-start.json"
+    },
+    {
+      "path": "reference/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/reference-capture-v1/stderr"
+    },
+    {
+      "path": "reference/stdout",
+      "bytes": 498,
+      "sha256": "e39f4a1a1a6803ac92ddecd0327ad9febb08bd65e667009a243b598c2830d25d",
+      "git_blob": "8500e326cd0c90fc55069b21643323262d56a668",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/reference-capture-v1/stdout"
+    },
+    {
+      "path": "reviews/machine-source-review-process.json",
+      "bytes": 447,
+      "sha256": "25aa00af02537336c93e1dc258e3dc4fafcb82c69ce7cc934f40015f939b51e8",
+      "git_blob": "73542deb6e9525f6ac84e04f4fc870c78827c600",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/machine-source-review-process.json"
+    },
+    {
+      "path": "reviews/machine-source-review.json",
+      "bytes": 3505,
+      "sha256": "ee43183895664535db0ba117b55495e846724237140aab574ce1939f492fb0a4",
+      "git_blob": "53dd75975d5454f75969b74ff6ba363372fb8e05",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/machine-source-review.json"
+    },
+    {
+      "path": "reviews/review-source-machine.py",
+      "bytes": 5836,
+      "sha256": "47df43fa8253f4b7aad4f0de232cc5699aad370fd089d2e29958e166c1298d3f",
+      "git_blob": "aa46ccc4b28b1172ca22d69e1ba8d4111ee7598a",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/review-source-machine.py"
+    },
+    {
+      "path": "reviews/root-focused-result-review.json",
+      "bytes": 2055,
+      "sha256": "a79895602447ef1d2ca627f77b4b5f9da7505057219ee41ea331368df8ece15a",
+      "git_blob": "47df1730702191d01da041e28efdc55b662a807b",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/root-focused-result-review.json"
+    },
+    {
+      "path": "reviews/root-publication-review.json",
+      "bytes": 842,
+      "sha256": "cba6af4cd6989a3fddb2ada5e292a79b35e00cbb1c36598be00a4dec0906630a",
+      "git_blob": "67d06e17ce55148d33e1a7b1fcadb87ef5c59dc8",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/root-publication-review.json"
+    },
+    {
+      "path": "source/candidate-source-delta.json",
+      "bytes": 4631,
+      "sha256": "3397d35adb59edad56accebabe3433a1c7016c17b155d9a87c1842524d790e5e",
+      "git_blob": "d4f5537253ed18ab261801c9a5047a4f80a73eb5",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/candidate-source-delta.json"
+    },
+    {
+      "path": "source/commit-response-note.json",
+      "bytes": 1170,
+      "sha256": "fdcff150d383fc32212bfd7a42135a503de95737f7c4867ccf4feb3d25a7bd2e",
+      "git_blob": "ad8a34e80a0624328d93916f19ec8af9c355c149",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/publication-operations/first-commit-wrapper-failure.json"
+    },
+    {
+      "path": "source/focused-request.json",
+      "bytes": 4928,
+      "sha256": "9fca902696e2de8685115ea2fccaedf61fc1a8792734d0a068eb1e35014e77e7",
+      "git_blob": "a5847a0354301b66e86f45c55a083ecc302d6f53",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-request.json"
+    },
+    {
+      "path": "source/focused-result.json",
+      "bytes": 3526,
+      "sha256": "2bcfc5d813b08c4efbcf2814dd1efe267d74606a056383b8823e41e223b1a421",
+      "git_blob": "460bbeba820d90c825e80fb8c83bc0b69267469d",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-result.json"
+    },
+    {
+      "path": "source/guide-result.patch",
+      "bytes": 1472,
+      "sha256": "75dbcb33df182e156330eaeda390b89742a868cda3edbf19b253ef8796cad13b",
+      "git_blob": "4141e55ed2f99d437eb3791e4c41525625685173",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/focused-result-history/guide.patch"
+    },
+    {
+      "path": "source/source-publication-process.json",
+      "bytes": 2426,
+      "sha256": "c8e9019dfca070712deb5cd37430c9e5c76813cbea178371f136adf3986fb6f3",
+      "git_blob": "26ef118e9dc8e21eae8b2310f9b3974d407d21bb",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source-publication-process.json"
+    },
+    {
+      "path": "source/source-publication.json",
+      "bytes": 2001,
+      "sha256": "d391eea8df4dc9965c230d863551c541d34e3b041e3f210804b656ddb0801dd1",
+      "git_blob": "b9c6cb65d3f846888bfec14f30281e8a0f61fe02",
+      "original": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source-publication.json"
+    }
+  ],
+  "qualification": "All selected original bodies copied whole once. Current product code/tests/guide are immutable Git references; no historical issue80 evidence copied. No test, exporter, browser, package or native invocation by this data-only evidence preparation."
+}

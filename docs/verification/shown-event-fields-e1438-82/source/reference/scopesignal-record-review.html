@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Saved fixture record review — ScopeSignal</title>
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f4f1e8;color:#182923;font:16px/1.6 system-ui,sans-serif}main{max-width:980px;margin:auto;padding:36px 24px}h1{font-size:clamp(26px,5vw,40px);line-height:1.2}h2{margin-top:38px}h3{margin-top:0}h4{margin-bottom:8px}h1,h2,h3,h4,p,dt,dd{overflow-wrap:anywhere}.notice{padding:16px;border:2px solid #57694e;background:#e6eddf}.filename,dd{white-space:pre-wrap;overflow-wrap:anywhere}article{background:white;border:1px solid #b5c0b0;padding:22px;margin:18px 0}dl{margin:0}.field{display:grid;grid-template-columns:minmax(150px,1fr) minmax(0,3fr);gap:12px;padding:8px 0;border-bottom:1px solid #e4e8e0}dt{font-weight:600}dd{margin:0;min-width:0}.events{padding-left:26px}footer{margin-top:36px;border-top:1px solid #b5c0b0;padding-top:18px}@media(max-width:560px){main{padding:24px 16px}article{padding:16px}.field{grid-template-columns:1fr;gap:4px}}@media print{body{background:white;color:black}main{max-width:none;padding:0}article{border-color:#999;break-inside:auto}h2,h3,h4{break-after:avoid}.notice{background:white}footer{font-size:10pt}}
+</style>
+</head>
+<body><main><header><p>ScopeSignal · saved fixture record review</p><h1>Northstar onboarding refresh</h1><p>Opened file label:</p><p class="filename" data-field="filename">shown-events.fixture.json</p><p class="notice">Synthetic fixture · Not payment evidence. This unsigned review does not establish identity, human action or a real transaction.</p><p>Keep the original JSON to reopen the interactive viewer. This document contains the complete opened record; it does not apply current view filters. T+ values are sequence markers, not clock times. Amounts below are USD integer cents, not dollars.</p></header><section><h2>Record metadata</h2><dl><div class="field"><dt>schema</dt><dd data-field="record.schema">scopesignal.fixture-record</dd></div>
+<div class="field"><dt>version</dt><dd data-field="record.version">1</dd></div>
+<div class="field"><dt>ledgerSpecVersion</dt><dd data-field="record.ledgerSpecVersion">1</dd></div>
+<div class="field"><dt>fixtureOnly</dt><dd data-field="record.fixtureOnly">true</dd></div>
+<div class="field"><dt>paymentEvidence</dt><dd data-field="record.paymentEvidence">false</dd></div>
+<div class="field"><dt>notice</dt><dd data-field="record.notice">Synthetic ScopeSignal fixture. This is not a payment receipt or evidence of a real transaction.</dd></div></dl></section><section><h2>Fixture definition</h2><dl><div class="field"><dt>id</dt><dd data-field="fixture.id">fixture-signal-studio</dd></div>
+<div class="field"><dt>label</dt><dd data-field="fixture.label">Northstar onboarding refresh</dd></div>
+<div class="field"><dt>currency</dt><dd data-field="fixture.currency">USD</dd></div>
+<div class="field"><dt>amount (USD integer cents)</dt><dd data-field="fixture.amount">120000</dd></div></dl></section><section><h2>Recorded totals</h2><dl><div class="field"><dt>total (USD integer cents)</dt><dd data-field="summary.total">120000</dd></div>
+<div class="field"><dt>approved</dt><dd data-field="summary.approved">2</dd></div>
+<div class="field"><dt>captured (USD integer cents)</dt><dd data-field="summary.captured">40000</dd></div>
+<div class="field"><dt>remaining (USD integer cents)</dt><dd data-field="summary.remaining">80000</dd></div></dl><p>Pending and unknown captures remain uncounted. Duplicate receipts remain in the history without counting the same capture again.</p></section><section><h2>Checkpoint evidence and outcomes</h2><article><h3>Checkpoint 1 · First-run checklist</h3><dl><div class="field"><dt>id</dt><dd data-field="checkpoints.0.id">journey</dd></div><div class="field"><dt>title</dt><dd data-field="checkpoints.0.title">First-run checklist</dd></div><div class="field"><dt>amount (USD integer cents)</dt><dd data-field="checkpoints.0.amount">40000</dd></div></dl><h4>Recorded approval</h4><dl><div class="field"><dt>source</dt><dd data-field="checkpoints.0.approval.source">checkpoint.approved</dd></div>
+<div class="field"><dt>eventSequence</dt><dd data-field="checkpoints.0.approval.eventSequence">1</dd></div>
+<div class="field"><dt>approver</dt><dd data-field="checkpoints.0.approval.approver">human-reviewer</dd></div>
+<div class="field"><dt>acceptedEvidence</dt><dd data-field="checkpoints.0.approval.acceptedEvidence">Visible &lt;literal&gt; evidence
+Keyboard route.</dd></div></dl><h4>Recorded capture</h4><dl><div class="field"><dt>status</dt><dd data-field="checkpoints.0.capture.status">captured</dd></div>
+<div class="field"><dt>orderId</dt><dd data-field="checkpoints.0.capture.orderId">SANDBOX-JOURNEY</dd></div>
+<div class="field"><dt>captureId</dt><dd data-field="checkpoints.0.capture.captureId">CAP-SHOWN-001</dd></div>
+<div class="field"><dt>counted (USD integer cents)</dt><dd data-field="checkpoints.0.capture.counted">40000</dd></div></dl></article>
+<article><h3>Checkpoint 2 · Accessible billing setup</h3><dl><div class="field"><dt>id</dt><dd data-field="checkpoints.1.id">accessibility</dd></div><div class="field"><dt>title</dt><dd data-field="checkpoints.1.title">Accessible billing setup</dd></div><div class="field"><dt>amount (USD integer cents)</dt><dd data-field="checkpoints.1.amount">40000</dd></div></dl><h4>Recorded approval</h4><dl><div class="field"><dt>source</dt><dd data-field="checkpoints.1.approval.source">checkpoint.approved</dd></div>
+<div class="field"><dt>eventSequence</dt><dd data-field="checkpoints.1.approval.eventSequence">8</dd></div>
+<div class="field"><dt>approver</dt><dd data-field="checkpoints.1.approval.approver">human-reviewer</dd></div>
+<div class="field"><dt>acceptedEvidence</dt><dd data-field="checkpoints.1.approval.acceptedEvidence">Second fictional review.</dd></div></dl><h4>Recorded capture</h4><dl><div class="field"><dt>status</dt><dd data-field="checkpoints.1.capture.status">not_started</dd></div>
+<div class="field"><dt>orderId</dt><dd data-field="checkpoints.1.capture.orderId">null</dd></div>
+<div class="field"><dt>captureId</dt><dd data-field="checkpoints.1.capture.captureId">null</dd></div>
+<div class="field"><dt>counted (USD integer cents)</dt><dd data-field="checkpoints.1.capture.counted">0</dd></div></dl></article>
+<article><h3>Checkpoint 3 · Responsive handoff</h3><dl><div class="field"><dt>id</dt><dd data-field="checkpoints.2.id">handoff</dd></div><div class="field"><dt>title</dt><dd data-field="checkpoints.2.title">Responsive handoff</dd></div><div class="field"><dt>amount (USD integer cents)</dt><dd data-field="checkpoints.2.amount">40000</dd></div></dl><h4>Recorded approval</h4><dl><div class="field"><dt>approval — none recorded</dt><dd data-field="checkpoints.2.approval">null</dd></div></dl><h4>Recorded capture</h4><dl><div class="field"><dt>status</dt><dd data-field="checkpoints.2.capture.status">not_started</dd></div>
+<div class="field"><dt>orderId</dt><dd data-field="checkpoints.2.capture.orderId">null</dd></div>
+<div class="field"><dt>captureId</dt><dd data-field="checkpoints.2.capture.captureId">null</dd></div>
+<div class="field"><dt>counted (USD integer cents)</dt><dd data-field="checkpoints.2.capture.counted">0</dd></div></dl></article></section><section><h2>Complete recorded event history</h2><p>8 events, in saved order.</p><ol class="events"><li><article><h3>Event 1 · checkpoint.approved</h3><dl><div class="field"><dt>seq</dt><dd data-field="events.0.seq">1</dd></div>
+<div class="field"><dt>at</dt><dd data-field="events.0.at">T+001</dd></div>
+<div class="field"><dt>type</dt><dd data-field="events.0.type">checkpoint.approved</dd></div>
+<div class="field"><dt>checkpointId</dt><dd data-field="events.0.checkpointId">journey</dd></div>
+<div class="field"><dt>approver</dt><dd data-field="events.0.approver">human-reviewer</dd></div>
+<div class="field"><dt>acceptedEvidence</dt><dd data-field="events.0.acceptedEvidence">Visible &lt;literal&gt; evidence
+Keyboard route.</dd></div></dl></article></li>
+<li><article><h3>Event 2 · paypal.order.created</h3><dl><div class="field"><dt>seq</dt><dd data-field="events.1.seq">2</dd></div>
+<div class="field"><dt>at</dt><dd data-field="events.1.at">T+002</dd></div>
+<div class="field"><dt>type</dt><dd data-field="events.1.type">paypal.order.created</dd></div>
+<div class="field"><dt>checkpointId</dt><dd data-field="events.1.checkpointId">journey</dd></div>
+<div class="field"><dt>orderId</dt><dd data-field="events.1.orderId">SANDBOX-JOURNEY</dd></div>
+<div class="field"><dt>amount (USD integer cents)</dt><dd data-field="events.1.amount">40000</dd></div>
+<div class="field"><dt>currency</dt><dd data-field="events.1.currency">USD</dd></div>
+<div class="field"><dt>environment</dt><dd data-field="events.1.environment">sandbox</dd></div></dl></article></li>
+<li><article><h3>Event 3 · paypal.capture.requested</h3><dl><div class="field"><dt>seq</dt><dd data-field="events.2.seq">3</dd></div>
+<div class="field"><dt>at</dt><dd data-field="events.2.at">T+003</dd></div>
+<div class="field"><dt>type</dt><dd data-field="events.2.type">paypal.capture.requested</dd></div>
+<div class="field"><dt>checkpointId</dt><dd data-field="events.2.checkpointId">journey</dd></div>
+<div class="field"><dt>orderId</dt><dd data-field="events.2.orderId">SANDBOX-JOURNEY</dd></div>
+<div class="field"><dt>environment</dt><dd data-field="events.2.environment">sandbox</dd></div></dl></article></li>
+<li><article><h3>Event 4 · paypal.capture.response_lost</h3><dl><div class="field"><dt>seq</dt><dd data-field="events.3.seq">4</dd></div>
+<div class="field"><dt>at</dt><dd data-field="events.3.at">T+004</dd></div>
+<div class="field"><dt>type</dt><dd data-field="events.3.type">paypal.capture.response_lost</dd></div>
+<div class="field"><dt>checkpointId</dt><dd data-field="events.3.checkpointId">journey</dd></div>
+<div class="field"><dt>orderId</dt><dd data-field="events.3.orderId">SANDBOX-JOURNEY</dd></div>
+<div class="field"><dt>outcome</dt><dd data-field="events.3.outcome">unknown</dd></div></dl></article></li>
+<li><article><h3>Event 5 · paypal.webhook.received</h3><dl><div class="field"><dt>seq</dt><dd data-field="events.4.seq">5</dd></div>
+<div class="field"><dt>at</dt><dd data-field="events.4.at">T+005</dd></div>
+<div class="field"><dt>type</dt><dd data-field="events.4.type">paypal.webhook.received</dd></div>
+<div class="field"><dt>checkpointId</dt><dd data-field="events.4.checkpointId">journey</dd></div>
+<div class="field"><dt>eventId</dt><dd data-field="events.4.eventId">WH-SHOWN-001</dd></div>
+<div class="field"><dt>captureId</dt><dd data-field="events.4.captureId">CAP-SHOWN-001</dd></div>
+<div class="field"><dt>duplicate</dt><dd data-field="events.4.duplicate">false</dd></div>
+<div class="field"><dt>amount (USD integer cents)</dt><dd data-field="events.4.amount">40000</dd></div>
+<div class="field"><dt>currency</dt><dd data-field="events.4.currency">USD</dd></div></dl></article></li>
+<li><article><h3>Event 6 · paypal.webhook.received</h3><dl><div class="field"><dt>seq</dt><dd data-field="events.5.seq">6</dd></div>
+<div class="field"><dt>at</dt><dd data-field="events.5.at">T+006</dd></div>
+<div class="field"><dt>type</dt><dd data-field="events.5.type">paypal.webhook.received</dd></div>
+<div class="field"><dt>checkpointId</dt><dd data-field="events.5.checkpointId">journey</dd></div>
+<div class="field"><dt>eventId</dt><dd data-field="events.5.eventId">WH-SHOWN-001</dd></div>
+<div class="field"><dt>captureId</dt><dd data-field="events.5.captureId">CAP-SHOWN-001</dd></div>
+<div class="field"><dt>duplicate</dt><dd data-field="events.5.duplicate">true</dd></div>
+<div class="field"><dt>amount (USD integer cents)</dt><dd data-field="events.5.amount">40000</dd></div>
+<div class="field"><dt>currency</dt><dd data-field="events.5.currency">USD</dd></div></dl></article></li>
+<li><article><h3>Event 7 · paypal.capture.reconciled</h3><dl><div class="field"><dt>seq</dt><dd data-field="events.6.seq">7</dd></div>
+<div class="field"><dt>at</dt><dd data-field="events.6.at">T+007</dd></div>
+<div class="field"><dt>type</dt><dd data-field="events.6.type">paypal.capture.reconciled</dd></div>
+<div class="field"><dt>checkpointId</dt><dd data-field="events.6.checkpointId">journey</dd></div>
+<div class="field"><dt>captureId</dt><dd data-field="events.6.captureId">CAP-SHOWN-001</dd></div>
+<div class="field"><dt>outcome</dt><dd data-field="events.6.outcome">captured</dd></div>
+<div class="field"><dt>source</dt><dd data-field="events.6.source">sandbox-transaction-lookup</dd></div></dl></article></li>
+<li><article><h3>Event 8 · checkpoint.approved</h3><dl><div class="field"><dt>seq</dt><dd data-field="events.7.seq">8</dd></div>
+<div class="field"><dt>at</dt><dd data-field="events.7.at">T+008</dd></div>
+<div class="field"><dt>type</dt><dd data-field="events.7.type">checkpoint.approved</dd></div>
+<div class="field"><dt>checkpointId</dt><dd data-field="events.7.checkpointId">accessibility</dd></div>
+<div class="field"><dt>approver</dt><dd data-field="events.7.approver">human-reviewer</dd></div>
+<div class="field"><dt>acceptedEvidence</dt><dd data-field="events.7.acceptedEvidence">Second fictional review.</dd></div></dl></article></li></ol></section><footer>Offline review only · No payment controls, scripts or external assets. File labels do not establish authorship or chronology.</footer></main></body>
+</html>

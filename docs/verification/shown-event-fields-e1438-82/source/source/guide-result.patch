@@ -1,0 +1,11 @@
+--- guide.before.md
++++ docs/record-event-search.md
+@@ -12,7 +12,7 @@
+ 
+ These actions do not reset your search or selects, reorder events, rewrite saved fields, or change the complete-record download. **Show all events** still resets only the three filters. If an overlength programmatic query is refused, the last successfully applied list remains visible and the two disclosure buttons apply to that list without clearing the query error. Opening a new file creates its own fresh disclosures; old detached controls cannot change that new view.
+ 
+-The issue 82 batch disclosure controls are a source-only candidate, separate from the prior issue 80 search receiving described below. Focused controlled-DOM execution is pending for `tests/record-event-disclosure-controls.test.mjs`; actual browser keyboard/layout receiving is also pending for these new buttons.
++The issue 82 batch disclosure controls are a separate source increment from the prior issue 80 search receiving described below. One focused Node capture passed all four groups in `tests/record-event-disclosure-controls.test.mjs` and all four maintained literal-search groups. Those checks admit the complete fictional example and compare original nodes, hidden/open states, invalid-query handling, the 512-event boundary and unchanged full-record exports. This is controlled-DOM and model/export evidence; actual browser keyboard/layout receiving is pending for these new buttons.
+ 
+ ## Literal matching
+ 

@@ -1,0 +1,31 @@
+{
+  "schema": "scopesignal.shown-disclosures.root-focused-review/1",
+  "status": "ACCEPT_ORIGINAL_EIGHT_FOCUSED_GROUPS",
+  "process": {
+    "bytes": 1048,
+    "sha256": "51a1d32970f42e9280c688cc9b533332694491d5e9e68b02111de7a76d11b49d"
+  },
+  "stdout": {
+    "bytes": 2159,
+    "sha256": "4e751d42a1e23527d750596ad5d61d8d27863bd3cbb445f432aaa8f1da767cf1"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "groups": 8,
+  "new_groups": 4,
+  "maintained_search_groups": 4,
+  "unchanged_executable_dependencies_and_fixture": [
+    "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/record-event-filter.mjs",
+    "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/tests/record-event-disclosure-controls.test.mjs",
+    "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/tests/record-event-search.test.mjs",
+    "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/record-event-search.mjs",
+    "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/fixture-record.mjs",
+    "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/record-reader.mjs",
+    "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/record-review-export.mjs",
+    "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/source/src/ledger.mjs",
+    "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/examples/shown-events.fixture.json"
+  ],
+  "qualification": "Whole original quartet and TAP read; exactargv/cwd/bound, normalexit0/noobservererrors,8PASS/0skip/0failure and all executable/dependency/manualfixture bodies joined. Controlled DOM and real reader/export model scope only; no browser, keyboard/layout, installed runtime or default adoption inferred. Documentation may receive a separately recorded result projection after this original capture. No test replay."
+}
