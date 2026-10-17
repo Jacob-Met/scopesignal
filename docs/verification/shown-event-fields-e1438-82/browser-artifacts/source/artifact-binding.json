@@ -1,0 +1,67 @@
+{
+  "schema": "scopesignal.shown-events.artifact-binding/1",
+  "status": "BOUND_THREE_ACCEPTED_R2_ORIGINAL_ARTIFACTS",
+  "before": {
+    "bytes": 2372,
+    "sha256": "310d38220bc8ac53ecc53e6b39dc4f17767743f76d03155badc216aa80312595"
+  },
+  "after": {
+    "bytes": 2650,
+    "sha256": "fe5f2e7fce396949841dd35f80a96bf9942a47cea8fbd08160a14e6b8cbcd604"
+  },
+  "root_review": {
+    "bytes": 905,
+    "sha256": "004a4629a04ae9ea7bbe5af40fb338e13d03cd47a4d2c8ce9e72fe663c49dfb8"
+  },
+  "independent_review": {
+    "bytes": 3764,
+    "sha256": "beb8743d8f21fcb7039ba9b9ab8558f8672e286e08804ed749dc551a8de0685e"
+  },
+  "originals": [
+    {
+      "label": "desktop_png",
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/events-desktop.png",
+      "mime_type": "image/png",
+      "bytes": 58217,
+      "sha256": "7d2d77085bd4a0fcea080dce4cdc9c3444124d73fbe4692d3aa377e3a4fa43f9"
+    },
+    {
+      "label": "narrow_png",
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/events-narrow.png",
+      "mime_type": "image/png",
+      "bytes": 40351,
+      "sha256": "02000859b760342c763fbb1c45560e6252c2118c245f9b6c44f5e7295f579857"
+    },
+    {
+      "label": "review_html",
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/downloads/scopesignal-record-review.html",
+      "mime_type": "text/html",
+      "bytes": 13519,
+      "sha256": "414e1212721e42d8cd827167090cf446ed5dd2f039f1538d636392bf4c7e52f4"
+    }
+  ],
+  "rules": [
+    {
+      "before": "ORIGINAL_ROOT = None",
+      "after": "ORIGINAL_ROOT = Path('/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2')",
+      "count": 1
+    },
+    {
+      "before": "('desktop_png',ids['desktop_png'],'image/png',None,None,ORIGINAL_ROOT/'browser-v1/events-desktop.png','fresh-scopesignal-events-desktop.png')",
+      "after": "('desktop_png',ids['desktop_png'],'image/png',58217,'7d2d77085bd4a0fcea080dce4cdc9c3444124d73fbe4692d3aa377e3a4fa43f9',ORIGINAL_ROOT/'browser-v2/events-desktop.png','fresh-scopesignal-events-desktop.png')",
+      "count": 1
+    },
+    {
+      "before": "('narrow_png',ids['narrow_png'],'image/png',None,None,ORIGINAL_ROOT/'browser-v1/events-narrow.png','fresh-scopesignal-events-narrow.png')",
+      "after": "('narrow_png',ids['narrow_png'],'image/png',40351,'02000859b760342c763fbb1c45560e6252c2118c245f9b6c44f5e7295f579857',ORIGINAL_ROOT/'browser-v2/events-narrow.png','fresh-scopesignal-events-narrow.png')",
+      "count": 1
+    },
+    {
+      "before": "('review_html',ids['review_html'],'text/html',None,None,ORIGINAL_ROOT/'browser-v1/downloads/scopesignal-record-review.html','fresh-scopesignal-record-review.html')",
+      "after": "('review_html',ids['review_html'],'text/html',13519,'414e1212721e42d8cd827167090cf446ed5dd2f039f1538d636392bf4c7e52f4',ORIGINAL_ROOT/'browser-v2/downloads/scopesignal-record-review.html','fresh-scopesignal-record-review.html')",
+      "count": 1
+    }
+  ],
+  "whole_inverse": true,
+  "qualification": "Only accepted root and three complete file tuples bound, including browser-v2 original paths. Existing ordinary receiving logic unchanged; R1 incomplete course remains separate. No upload, fetch or product execution in this source binding."
+}

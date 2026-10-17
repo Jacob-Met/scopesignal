@@ -1,0 +1,64 @@
+{
+  "schema": "scopesignal.shown-events.artifact-receiver-source/1",
+  "status": "UNBOUND_THREE_ORIGINALS_SOURCE_ONLY",
+  "donor_path": "/workspace/scratch/e1438c9d058f/replay-forge-studio-clip-context-delivery/receive-artifacts.py",
+  "donor": {
+    "bytes": 3399,
+    "sha256": "7e74966ffe2f30f72b26f06be1bc7dedf275f485677b9399eeaf0c30fab1dec1"
+  },
+  "current": {
+    "bytes": 2372,
+    "sha256": "310d38220bc8ac53ecc53e6b39dc4f17767743f76d03155badc216aa80312595"
+  },
+  "rules": [
+    {
+      "before": "D=Path(__file__).resolve().parent\n",
+      "after": "D=Path(__file__).resolve().parent\nORIGINAL_ROOT = None\nassert isinstance(ORIGINAL_ROOT, Path) and ORIGINAL_ROOT.is_absolute(), 'Accepted local original root must be bound'\n",
+      "count": 1
+    },
+    {
+      "before": "{'containing_png', 'retained_json', 'containing_json', 'retained_png', 'fallback_json', 'fallback_png'}",
+      "after": "{'desktop_png', 'narrow_png', 'review_html'}",
+      "count": 1
+    },
+    {
+      "before": "len(set(ids.values()))==6",
+      "after": "len(set(ids.values()))==3",
+      "count": 1
+    },
+    {
+      "before": "items=[\n ('containing_png',ids['containing_png'],'image/png',229613,'43f36244bf3578f1ce6ce6ad1165ad59764fb49296a6b901ec365a4207b84bd3',D.parent/'replay-forge-studio-clip-context-receiving/actual-v1/studio-containing-clip.png','fresh-studio-containing-clip.png'),\n ('retained_png',ids['retained_png'],'image/png',231339,'7b08586f37feed9419211d7f8c0a7919d744a586c5e7e62e97dc378e56c77bb2',D.parent/'replay-forge-studio-clip-context-receiving/actual-v1/studio-retained-current-clip.png','fresh-studio-retained-current-clip.png'),\n ('fallback_png',ids['fallback_png'],'image/png',226119,'32b4cd18e1d8f657e6afaae2c7cd8c916afb5c8408be6341a3cff077b92ffd43',D.parent/'replay-forge-studio-clip-context-receiving/actual-v1/studio-whole-scene-fallback.png','fresh-studio-whole-scene-fallback.png'),\n ('containing_json',ids['containing_json'],'application/json',14133,'d73564a777fffd8c02209c25f84e00548054021db34f7eccd54ab01e74f6100c',D.parent/'replay-forge-studio-clip-context-receiving/actual-v1/export-containing.json','fresh-studio-export-containing.json'),\n ('retained_json',ids['retained_json'],'application/json',14130,'830c2424400795f1882a2fe01050ff0d2fc6ac59d19a128683b7fdb9ccc82640',D.parent/'replay-forge-studio-clip-context-receiving/actual-v1/export-retained.json','fresh-studio-export-retained.json'),\n ('fallback_json',ids['fallback_json'],'application/json',13680,'6bdff0c6aca374f22d76f8d7a0166b8e422806b38209aafd75f4295e6e1d525e',D.parent/'replay-forge-studio-clip-context-receiving/actual-v1/export-fallback.json','fresh-studio-export-fallback.json')]",
+      "after": "items=[\n ('desktop_png',ids['desktop_png'],'image/png',None,None,ORIGINAL_ROOT/'browser-v1/events-desktop.png','fresh-scopesignal-events-desktop.png'),\n ('narrow_png',ids['narrow_png'],'image/png',None,None,ORIGINAL_ROOT/'browser-v1/events-narrow.png','fresh-scopesignal-events-narrow.png'),\n ('review_html',ids['review_html'],'text/html',None,None,ORIGINAL_ROOT/'browser-v1/downloads/scopesignal-record-review.html','fresh-scopesignal-record-review.html')]",
+      "count": 1
+    },
+    {
+      "before": "replay-forge.studio-clip-context.original-artifact-delivery/1",
+      "after": "scopesignal.shown-events.original-artifact-delivery/1",
+      "count": 1
+    },
+    {
+      "before": "ACCEPT_SIX_ORIGINAL_ARTIFACTS_AND_ORDINARY_FRESH_RECEIVING",
+      "after": "ACCEPT_THREE_ORIGINAL_ARTIFACTS_AND_ORDINARY_FRESH_RECEIVING",
+      "count": 1
+    },
+    {
+      "before": "One upload and one ordinary fresh raw-file fetch for each of three original PNGs and three original exported session JSON bodies; exact whole bytes, no conversion or browser replay.",
+      "after": "One upload and one ordinary fresh raw-file fetch for each of two original PNGs and the original complete downloaded HTML review; exact whole bytes, no conversion or browser replay.",
+      "count": 1
+    }
+  ],
+  "whole_inverse": true,
+  "original_root": null,
+  "original_names": [
+    "browser-v1/events-desktop.png",
+    "browser-v1/events-narrow.png",
+    "browser-v1/downloads/scopesignal-record-review.html"
+  ],
+  "actual_tuples": [
+    null,
+    null,
+    null
+  ],
+  "eyes_parent": "1Fa24MIEeJuKgF2jLjEjwvpqY4PDOInp8",
+  "qualification": "The accepted finite ordinary receiving loop is unchanged. Exact extraction root and three byte/hash pairs remain unset pending original custody, semantics and visual acceptance. Maintained 30-second timeout is per socket request, not a combined wall-clock bound. No receiver, network, upload, native or browser invocation."
+}

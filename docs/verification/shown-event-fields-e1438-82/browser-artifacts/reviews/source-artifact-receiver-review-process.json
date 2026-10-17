@@ -1,0 +1,13 @@
+{
+  "request": {
+    "cmd": "python - <<'PY'\nfrom pathlib import Path\nimport json,hashlib\np=Path('scopesignal-visible-events-delivery');v=json.loads((p/'artifact-receiver-source.json').read_text());old=(p/'artifact-receiver-donor.py').read_text();new=(p/'receive-artifacts.py').read_text();f=old\nfor r in v['rules']:\n assert f.count(r['before'])==r['count'];f=f.replace(r['before'],r['after'])\nassert f==new\nfor r in reversed(v['rules']):\n assert f.count(r['after'])==r['count'];f=f.replace(r['after'],r['before'])\nassert f==old==Path(v['donor_path']).read_text()\nassert new.count('None')==7 and 'ORIGINAL_ROOT = None' in new\nproof={'schema':'scopesignal.shown-events.original-artifact-receiver-source-peer/1','status':'ACCEPT_UNBOUND_THREE_ARTIFACT_RECEIVER_SOURCE','current':{'bytes':len(new.encode()),'sha256':hashlib.sha256(new.encode()).hexdigest()},'full_source_read':True,'complete_forward_inverse_rules':len(v['rules']),'root_and_three_tuples_unbound':True,'review':'Exact accepted ordinary loop retained: fixed3 IDs/names/MIME/parent, HTTPS provider host, one size+1 read with30-second socket timeout, complete hash/original-byte equality and exclusive destination. Root fails closed before files/network when unset. No invocation or native result claim.'}\nwith (p/'source-artifact-receiver-review.json').open('x') as out:out.write(json.dumps(proof,indent=2)+'\\n')\nprint(json.dumps(proof))\nPY",
+    "max_output_tokens": 1400
+  },
+  "response": {
+    "chunk_id": "7948d7",
+    "wall_time_seconds": 0.000024336,
+    "exit_code": 0,
+    "original_token_count": 163,
+    "output": "{\"schema\": \"scopesignal.shown-events.original-artifact-receiver-source-peer/1\", \"status\": \"ACCEPT_UNBOUND_THREE_ARTIFACT_RECEIVER_SOURCE\", \"current\": {\"bytes\": 2372, \"sha256\": \"310d38220bc8ac53ecc53e6b39dc4f17767743f76d03155badc216aa80312595\"}, \"full_source_read\": true, \"complete_forward_inverse_rules\": 7, \"root_and_three_tuples_unbound\": true, \"review\": \"Exact accepted ordinary loop retained: fixed3 IDs/names/MIME/parent, HTTPS provider host, one size+1 read with30-second socket timeout, complete hash/original-byte equality and exclusive destination. Root fails closed before files/network when unset. No invocation or native result claim.\"}\n"
+  }
+}

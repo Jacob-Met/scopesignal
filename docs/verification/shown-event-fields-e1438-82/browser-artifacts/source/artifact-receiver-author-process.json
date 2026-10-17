@@ -1,0 +1,7 @@
+{
+  "chunk_id": "175dcc",
+  "wall_time_seconds": 0.000030495,
+  "exit_code": 0,
+  "original_token_count": 264,
+  "output": "{\"schema\": \"scopesignal.shown-events.artifact-receiver-source/1\", \"status\": \"UNBOUND_THREE_ORIGINALS_SOURCE_ONLY\", \"donor_path\": \"/workspace/scratch/e1438c9d058f/replay-forge-studio-clip-context-delivery/receive-artifacts.py\", \"donor\": {\"bytes\": 3399, \"sha256\": \"7e74966ffe2f30f72b26f06be1bc7dedf275f485677b9399eeaf0c30fab1dec1\"}, \"current\": {\"bytes\": 2372, \"sha256\": \"310d38220bc8ac53ecc53e6b39dc4f17767743f76d03155badc216aa80312595\"}, \"whole_inverse\": true, \"original_root\": null, \"original_names\": [\"browser-v1/events-desktop.png\", \"browser-v1/events-narrow.png\", \"browser-v1/downloads/scopesignal-record-review.html\"], \"actual_tuples\": [null, null, null], \"eyes_parent\": \"1Fa24MIEeJuKgF2jLjEjwvpqY4PDOInp8\", \"qualification\": \"The accepted finite ordinary receiving loop is unchanged. Exact extraction root and three byte/hash pairs remain unset pending original custody, semantics and visual acceptance. Maintained 30-second timeout is per socket request, not a combined wall-clock bound. No receiver, network, upload, native or browser invocation.\"}\n"
+}

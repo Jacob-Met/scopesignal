@@ -1,0 +1,52 @@
+{
+  "schema": "scopesignal.shown-events.original-artifact-delivery/1",
+  "status": "ACCEPT_THREE_ORIGINAL_ARTIFACTS_AND_ORDINARY_FRESH_RECEIVING",
+  "files": [
+    {
+      "label": "desktop_png",
+      "id": "1oXc9RFmY4YB6xa6sds_Fp2YbXzso7L-U",
+      "url": "https://drive.google.com/file/d/1oXc9RFmY4YB6xa6sds_Fp2YbXzso7L-U/view",
+      "mime_type": "image/png",
+      "parent_ids": [
+        "1Fa24MIEeJuKgF2jLjEjwvpqY4PDOInp8"
+      ],
+      "bytes": 58217,
+      "sha256": "7d2d77085bd4a0fcea080dce4cdc9c3444124d73fbe4692d3aa377e3a4fa43f9",
+      "http_status": 200,
+      "fresh_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/fresh-scopesignal-events-desktop.png",
+      "original_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/events-desktop.png",
+      "whole_bytes_equal": true
+    },
+    {
+      "label": "narrow_png",
+      "id": "1P0268SbsuBgqZlykEjDRbyZAZG6-gSki",
+      "url": "https://drive.google.com/file/d/1P0268SbsuBgqZlykEjDRbyZAZG6-gSki/view",
+      "mime_type": "image/png",
+      "parent_ids": [
+        "1Fa24MIEeJuKgF2jLjEjwvpqY4PDOInp8"
+      ],
+      "bytes": 40351,
+      "sha256": "02000859b760342c763fbb1c45560e6252c2118c245f9b6c44f5e7295f579857",
+      "http_status": 200,
+      "fresh_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/fresh-scopesignal-events-narrow.png",
+      "original_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/events-narrow.png",
+      "whole_bytes_equal": true
+    },
+    {
+      "label": "review_html",
+      "id": "1D_e61uE_jWsDpjtgCvHVvuMNir9XiJ0h",
+      "url": "https://drive.google.com/file/d/1D_e61uE_jWsDpjtgCvHVvuMNir9XiJ0h/view",
+      "mime_type": "text/html",
+      "parent_ids": [
+        "1Fa24MIEeJuKgF2jLjEjwvpqY4PDOInp8"
+      ],
+      "bytes": 13519,
+      "sha256": "414e1212721e42d8cd827167090cf446ed5dd2f039f1538d636392bf4c7e52f4",
+      "http_status": 200,
+      "fresh_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/fresh-scopesignal-record-review.html",
+      "original_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/downloads/scopesignal-record-review.html",
+      "whole_bytes_equal": true
+    }
+  ],
+  "qualification": "One upload and one ordinary fresh raw-file fetch for each of two original PNGs and the original complete downloaded HTML review; exact whole bytes, no conversion or browser replay."
+}

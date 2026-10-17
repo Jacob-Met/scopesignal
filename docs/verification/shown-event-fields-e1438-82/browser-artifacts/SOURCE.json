@@ -1,0 +1,155 @@
+{
+  "schema": "scopesignal.shown-events.browser-artifacts.publication-source/1",
+  "repository": "Jacob-Met/scopesignal",
+  "prefix": "docs/verification/shown-event-fields-e1438-82/browser-artifacts",
+  "source_revision": "dcad391d11a66a43df32ae1051a48c5ebd22ff34",
+  "parent": "b0cacf72edfa2330bcf917590c1eefdcf694029b",
+  "tree": "651e205d84f78c5cd7b1533f338eb67d0100e170",
+  "files": [
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/OPEN_BROWSER_RESULTS.md",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/OPEN_BROWSER_RESULTS.md",
+      "bytes": 3633,
+      "sha256": "af625d296be2f7615bfdf36026c057c54f2af130d6329c645ca240b7d7da9091",
+      "git_blob": "796b33af07b2a6a5198c12899fda20feba2ace3a"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/README-artifacts.md",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/README.md",
+      "bytes": 2151,
+      "sha256": "aaefa4554fe05bcdf3e7c96e895040febacad8463e2e955ba02227aa76a602de",
+      "git_blob": "e7c144a0cfa059e52ce348da04e68af57b022d0f"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/artifact-delivery.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/delivery/artifact-delivery.json",
+      "bytes": 2547,
+      "sha256": "0c1a5e21eeeb14030aa3d9e0fbd8d6aa51b5ec1b9ee387e50a17b06dc0df2599",
+      "git_blob": "ef3ff225d43c5e24e6b334cabf439bfdd815ead8"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/artifact-receiving-final.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/delivery/artifact-receiving-final.json",
+      "bytes": 125,
+      "sha256": "320cf01e489101daf9d7f4fd55db747f468e8135a47472667c8b92d999e6ea6e",
+      "git_blob": "802716352ed93aab974f0c7dafaff7ab5bfc0837"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/artifact-receiving-terminal.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/delivery/artifact-receiving-poll.json",
+      "bytes": 130,
+      "sha256": "81f65f4c7734f17286f88f835f8edeba018d6954693fbfc401e0cae97a187224",
+      "git_blob": "9e44e32b4277e30b4472a0e5529cf102462c677d"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/artifact-receiving-start.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/delivery/artifact-receiving-start.json",
+      "bytes": 2518,
+      "sha256": "5deca70364c125cc7ca7ae1419a828d2afd8ed643ba4e1900c34591c54454874",
+      "git_blob": "ab13a3cee169b0fd12bbd816583fd468851bc4e7"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/artifact-upload-ids.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/delivery/artifact-upload-ids.json",
+      "bytes": 164,
+      "sha256": "8a399c0faf0663acd8e0b0eff674d04e2c87bc1013838fad4816a2589def1e79",
+      "git_blob": "6f03ec4ff59312a0f98c6c17f9839a9d37f848d3"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/desktop_png-upload.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/delivery/desktop_png-upload.json",
+      "bytes": 1368,
+      "sha256": "13242ed46b384835070158560f7d6121e9471eb33d59c274755ecadd9f596360",
+      "git_blob": "200733a994df502744ddd64e29ddef536dd6ded8"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/narrow_png-upload.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/delivery/narrow_png-upload.json",
+      "bytes": 1362,
+      "sha256": "326206d6e2b24effd461055610ec6b83ca2951c7f1ebc1ed074049fae570835d",
+      "git_blob": "0adf964a07f35fac4ec38b2a16c89e2af8121944"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/review_html-upload.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/delivery/review_html-upload.json",
+      "bytes": 1435,
+      "sha256": "ed426a3aa17e06b879485c2014cb1220eb59b24da0413be76059d9252ab56e32",
+      "git_blob": "3176ec96a057bdb9cdb2946b1e9e68ab6cffa66c"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/source-artifact-receiver-review-process.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/reviews/source-artifact-receiver-review-process.json",
+      "bytes": 2286,
+      "sha256": "2594e775b8d4c51433f5504c85b201e99a3efa4af4f00cbfb2a30d3e6ca093c3",
+      "git_blob": "431b8566bd3b876268a0e18ab0de54a8f64417f0"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/source-artifact-receiver-review.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/reviews/source-artifact-receiver-review.json",
+      "bytes": 677,
+      "sha256": "42c516bb3cac2d77a888f2917640806ef3d3da511566b23ba373836734035be0",
+      "git_blob": "a7e9b11c6ce3029d6245d5278c213ad77cd9e27d"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/artifact-binding-process.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/source/artifact-binding-process.json",
+      "bytes": 1917,
+      "sha256": "bc491e1879264e02e98384a28612f219247cc0aa867aed7e93f973c2ef4e9970",
+      "git_blob": "6737dfd3e3d9f5ba6525018282d6f611ff17759f"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/artifact-binding.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/source/artifact-binding.json",
+      "bytes": 3371,
+      "sha256": "b421f646e252877d64561f860a6b75f66be1535aae4197428e72c87b57c2a80d",
+      "git_blob": "05ec0aa9a0f42764769ae41e779b6592d930c315"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/artifact-receiver-author-process.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/source/artifact-receiver-author-process.json",
+      "bytes": 1234,
+      "sha256": "1595e1ecc0a8664df5e051b853b60862b71a619226f05ce44a23570a92625d6a",
+      "git_blob": "f02ec092fc320e97ac827bec7cb038b10f129b79"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/artifact-receiver-source.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/source/artifact-receiver-source.json",
+      "bytes": 4657,
+      "sha256": "285dafa08dd758b90d82f5a34bc585e2f48ad8e1da2f8ae3d718513dcd26bdee",
+      "git_blob": "b75d8f04043f3506f7758a13ac1e7f46b86c0374"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/author-artifact-receiver.py",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/source/author-artifact-receiver.py",
+      "bytes": 3493,
+      "sha256": "4c2ed2dbf1ce75c3eb6ae05d70747d20847f612723a4cd9bf8e6c7780a5137ad",
+      "git_blob": "41ac4ad4191f2424b893fc8e2fb10ee01b79cd0a"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/bind-artifacts.py",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/source/bind-artifacts.py",
+      "bytes": 3210,
+      "sha256": "bd14a4620b543b19dd7b1d94000456155cdb3ad339b629815f1c4194baaf7235",
+      "git_blob": "5ec38f59a83c4d4ffb6e37b4a29bc32824578153"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/receive-artifacts.py",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/source/receive-artifacts.py",
+      "bytes": 2650,
+      "sha256": "fe5f2e7fce396949841dd35f80a96bf9942a47cea8fbd08160a14e6b8cbcd604",
+      "git_blob": "d700afd756ced80fa71d8fd838625da4220e2da0"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/root-artifact-delivery-review.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/browser-artifacts/reviews/root-artifact-delivery-review.json",
+      "bytes": 396,
+      "sha256": "a98fdf1e880e5ab7278cd46d5ca415f1d5b4b1f72571f626c67e4fe923d54f38",
+      "git_blob": "2fa64a6e41450286c96800908447bfb32d586f63"
+    }
+  ],
+  "references": {
+    "browser_account": "https://github.com/Jacob-Met/scopesignal/blob/b0cacf72edfa2330bcf917590c1eefdcf694029b/docs/verification/shown-event-fields-e1438-82/browser/README.md",
+    "review_kit": "https://github.com/Jacob-Met/scopesignal/blob/84532281940e5841e4244ff17a2011325acdc3c6/docs/verification/shown-event-fields-e1438-82/review-kit/README.md"
+  },
+  "qualification": "Twenty nonself original source/proof/opening bodies. The two screenshots and complete review HTML remain on Drive, with exact original/fresh identities in the delivery proof. Native R1/R2 receipts and control histories remain at the immutable browser account. The unbound source snapshot retains its historical browser-v1 names; the exact accepted binding identifies browser-v2. Private fetch URLs omitted."
+}

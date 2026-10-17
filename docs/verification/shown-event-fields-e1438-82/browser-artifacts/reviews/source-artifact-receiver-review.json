@@ -1,0 +1,12 @@
+{
+  "schema": "scopesignal.shown-events.original-artifact-receiver-source-peer/1",
+  "status": "ACCEPT_UNBOUND_THREE_ARTIFACT_RECEIVER_SOURCE",
+  "current": {
+    "bytes": 2372,
+    "sha256": "310d38220bc8ac53ecc53e6b39dc4f17767743f76d03155badc216aa80312595"
+  },
+  "full_source_read": true,
+  "complete_forward_inverse_rules": 7,
+  "root_and_three_tuples_unbound": true,
+  "review": "Exact accepted ordinary loop retained: fixed3 IDs/names/MIME/parent, HTTPS provider host, one size+1 read with30-second socket timeout, complete hash/original-byte equality and exclusive destination. Root fails closed before files/network when unset. No invocation or native result claim."
+}

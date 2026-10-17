@@ -1,0 +1,37 @@
+{
+  "request": {
+    "file_uri": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/downloads/scopesignal-record-review.html",
+    "file_name": "ScopeSignal-Shown-Events-82-Complete-Review.html",
+    "mime_type": "text/html",
+    "parent_folder_id": "1Fa24MIEeJuKgF2jLjEjwvpqY4PDOInp8"
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "accepted_input": "file_uri",
+      "success": true,
+      "id": "1D_e61uE_jWsDpjtgCvHVvuMNir9XiJ0h",
+      "title": "ScopeSignal-Shown-Events-82-Complete-Review.html",
+      "file_name": "ScopeSignal-Shown-Events-82-Complete-Review.html",
+      "mime_type": "text/html",
+      "url": "https://drive.google.com/file/d/1D_e61uE_jWsDpjtgCvHVvuMNir9XiJ0h/view?usp=drivesdk",
+      "parent_id": "1Fa24MIEeJuKgF2jLjEjwvpqY4PDOInp8",
+      "structuredContent": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "1D_e61uE_jWsDpjtgCvHVvuMNir9XiJ0h",
+        "title": "ScopeSignal-Shown-Events-82-Complete-Review.html",
+        "file_name": "ScopeSignal-Shown-Events-82-Complete-Review.html",
+        "mime_type": "text/html",
+        "url": "https://drive.google.com/file/d/1D_e61uE_jWsDpjtgCvHVvuMNir9XiJ0h/view?usp=drivesdk",
+        "parent_id": "1Fa24MIEeJuKgF2jLjEjwvpqY4PDOInp8"
+      }
+    },
+    "isError": false
+  }
+}
