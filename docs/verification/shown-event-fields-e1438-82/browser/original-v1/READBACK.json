@@ -1,0 +1,43 @@
+{
+  "schema": "scopesignal.shown-disclosures.decoded-readback/1",
+  "status": "PARTIAL_PRESERVED",
+  "mode": "browser",
+  "files": [
+    {
+      "path": "browser-v1/receiving.json",
+      "bytes": 94380,
+      "sha256": "1fbe4ced79ca7b8fdeea20c901dc6ad595e71add17ee09d3539a821b2a906c31"
+    },
+    {
+      "path": "browser-v1/browser.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "browser-v1/browser.stderr",
+      "bytes": 2788,
+      "sha256": "781ff7dd3a79f313247a5797a828a05009b5c1a9d12e474bc24508cc6bf3b545"
+    },
+    {
+      "path": "browser-v1/events-desktop.png",
+      "bytes": 58217,
+      "sha256": "7d2d77085bd4a0fcea080dce4cdc9c3444124d73fbe4692d3aa377e3a4fa43f9"
+    }
+  ],
+  "missing": [
+    {
+      "path": "browser-v1/events-narrow.png",
+      "reason": "ENOENT: no such file or directory, lstat 'C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\browser-v1\\events-narrow.png'",
+      "code": "ENOENT"
+    },
+    {
+      "path": "browser-v1/downloads/scopesignal-record-review.html",
+      "reason": "ENOENT: no such file or directory, lstat 'C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\browser-v1\\downloads\\scopesignal-record-review.html'",
+      "code": "ENOENT"
+    }
+  ],
+  "refused": [],
+  "original_bytes": 155385,
+  "envelope_sha256": "5b36f9f181dcc9f3e020aaa334712d27ff445b0e91b6b7a50e14cf46aa3f2f91",
+  "gzip_sha256": "afb559cbb79604d57ccc989caa91f0c3f4c01ee8b8cc574fa1a60fa8138424c0"
+}

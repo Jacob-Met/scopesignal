@@ -1,0 +1,14 @@
+{
+  "schema": "scopesignal.shown-disclosures.root-v2-review/1",
+  "status": "PASS",
+  "original_files": 6,
+  "original_bytes": 243391,
+  "states": 8,
+  "independent_machine_review": "machine-v2-original-review.json",
+  "visual_review": {
+    "desktop": "Viewed original1360x1000 PNG; focusedExpand,2matchingdisclosures; controlslegiblewithinviewport.",
+    "narrow": "Viewed original390x1000 PNG; stackedfilters/actionsfit; searchfocusvisible,literalquery/countlegible;nohorizontalclipping."
+  },
+  "lineage": "Whole55 original static identities preserved; sole receiver replacement under new filename. New exact config joined to original before/after and all56 inputs conserved. Product/fixture/reference unchanged.",
+  "qualification": "Viewport images and actual8-state CDP-input course; no OSchooser, maintainedserverCLI, fullaccessibilityaudit, productiondeployment or processfamilyabsence claim."
+}

@@ -1,0 +1,6 @@
+{
+  "deviceId": "9ea77fe9-bb87-46e0-a5a8-8b3e25f6ff7e",
+  "shell": "powershell.exe",
+  "timeout_ms": 3000,
+  "command": "$env:NODE_OPTIONS = $null; & 'C:\\Program Files\\nodejs\\node.exe' 'C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\controls\\receive-v2.cjs' 'C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\browser-config-v2.json' '71ceab745851f82799b6039ba790223115698d97ccd8150fef5fc399441ccdac'"
+}

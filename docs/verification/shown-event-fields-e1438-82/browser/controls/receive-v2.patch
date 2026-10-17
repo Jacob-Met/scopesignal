@@ -1,0 +1,49 @@
+--- receive.cjs
++++ receive-v2.cjs
+@@ -53,14 +53,14 @@
+   need(process.argv.length===4&&/^[0-9a-f]{64}$/.test(process.argv[3]),'config and SHA arguments required');
+   need(process.platform==='win32'&&process.arch==='x64'&&process.execPath===NODE&&process.version==='v24.19.0','runtime differs');
+   need(os.hostname()==='MSI'&&os.userInfo().username==='Veria'&&os.homedir()===HOME&&process.env.USERPROFILE===HOME,'account differs');
+-  need(path.resolve(__filename)===path.join(ROOT,'controls','receive.cjs')&&process.argv[2]===path.join(ROOT,'browser-config.json'),'controller path differs');
++  need(path.resolve(__filename)===path.join(ROOT,'controls','receive-v2.cjs')&&process.argv[2]===path.join(ROOT,'browser-config-v2.json'),'controller path differs');
+   const configRead=read(process.argv[2]);configIdentity=configRead.identity;need(configIdentity.sha256===process.argv[3],'config SHA differs');
+-  cfg=JSON.parse(configRead.body);output=path.join(ROOT,'browser-v1');profile=path.join(output,'profile');downloads=path.join(output,'downloads');
++  cfg=JSON.parse(configRead.body);output=path.join(ROOT,'browser-v2');profile=path.join(output,'profile');downloads=path.join(output,'downloads');
+   need(cfg.schema==='scopesignal.shown-disclosures.windows-browser-config/1'&&cfg.root===ROOT&&cfg.source_revision===REVISION,'config scope differs');
+   need(cfg.source_root===path.join(ROOT,'kit')&&cfg.fixture===path.join(ROOT,'kit','examples','shown-events.fixture.json')&&
+     cfg.expected_review===path.join(ROOT,'controls','expected-review.html')&&cfg.receiver===__filename&&cfg.output===output,'config paths differ');
+   need(cfg.host==='MSI'&&cfg.user==='Veria'&&cfg.account_home===HOME&&cfg.node_version==='v24.19.0'&&cfg.browser_version==='155.0.4283.45','config identity differs');
+-  need(cfg.timeout_seconds===120&&cfg.cleanup_timeout_seconds===20,'bounded timing differs');
++  need(cfg.timeout_seconds===120&&cfg.cleanup_timeout_seconds===60,'bounded timing differs');
+   need(cfg.node.path===NODE&&cfg.node.bytes===92825416&&cfg.node.sha256==='3602f2bb1a10f2cbab4c36886218a33c1ab3db87290e73b033c46c77147d0237','Node pin differs');
+   need(cfg.browser.path===EDGE&&cfg.browser.bytes===5438280&&cfg.browser.sha256==='4bb4545b4ab80a3cf463a588ce570ca42de38fe6db16e3baeb0798ac75b4648b','Edge pin differs');
+   need(Array.isArray(cfg.kit_members)&&cfg.kit_members.length===54&&same(cfg.kit_members,[...cfg.kit_members].sort()),'kit membership differs');
+@@ -167,7 +167,8 @@
+   await send('Input.dispatchMouseEvent',{type:'mouseReleased',x,y,button:'left',clickCount:1},session);
+ }
+ async function key(key,code,vk,modifiers=0){record(receipt.actions,{kind:'key',key,code,modifiers,at:stamp()});
+-  await send('Input.dispatchKeyEvent',{type:'keyDown',key,code,windowsVirtualKeyCode:vk,nativeVirtualKeyCode:vk,modifiers},session);
++  const text=modifiers===0?(key==='Enter'?'\r':key===' '?' ':''):'';
++  await send('Input.dispatchKeyEvent',{type:text?'keyDown':'rawKeyDown',key,code,windowsVirtualKeyCode:vk,nativeVirtualKeyCode:vk,modifiers,...(text?{text,unmodifiedText:text}:{})},session);
+   await send('Input.dispatchKeyEvent',{type:'keyUp',key,code,windowsVirtualKeyCode:vk,nativeVirtualKeyCode:vk,modifiers},session);}
+ async function query(text){await click('#record-event-query');await key('a','KeyA',65,2);await send('Input.insertText',{text},session);record(receipt.actions,{kind:'insertText',selector:'#record-event-query',text,at:stamp()});}
+ async function select(selector,value){const values=await evaluate('Array.from(document.querySelector('+JSON.stringify(selector)+').options, o => o.value)');const index=values.indexOf(value);need(index>=0&&index<10,'select value missing');
+@@ -188,7 +189,8 @@
+   walk(doc.root);need(found.length===8&&found.every(r=>r.every(Number.isInteger)),'event node references missing');return found;}
+ let baselineReferences;
+ async function state(name,shown,opened,announcement=''){
+-  const s=await poll(async()=>{const x=await evaluate(SNAPSHOT);return same(x.rows.filter(r=>!r.hidden).map(r=>r.seq),shown)&&same(x.rows.filter(r=>r.open).map(r=>r.seq),opened)?x:null;},'state did not settle: '+name);
++  let last;
++  const s=await poll(async()=>{const x=await evaluate(SNAPSHOT);last=x;return same(x.rows.filter(r=>!r.hidden).map(r=>r.seq),shown)&&same(x.rows.filter(r=>r.open).map(r=>r.seq),opened)?x:null;},'state did not settle: '+name).catch(e=>{receipt.failed_state={name,expected_shown:shown,expected_opened:opened,last_observation:last??null,observed_at:stamp()};throw e;});
+   s.name=name;s.observed_at=stamp();s.node_references=await nodeReferences();record(receipt.states,s,16);
+   need(same(s.rows.map(r=>JSON.parse(r.raw)),fixture.events),'whole saved event fields changed');
+   need(same(s.rows.map(r=>r.raw),fixture.events.map(e=>JSON.stringify(e,null,2))),'raw event presentation changed');
+@@ -251,7 +253,7 @@
+   receipt.course_completed=true;
+ }
+ async function cleanup(){
+-  deadline=Date.now()+20000;const c=receipt.cleanup;c.started_at=stamp();c.forced_termination=false;c.browser_close_acknowledged=false;
++  deadline=Date.now()+60000;const c=receipt.cleanup;c.started_at=stamp();c.forced_termination=false;c.browser_close_acknowledged=false;
+   asynchronousFailure=null; // Retained errors must not prevent independent normal cleanup.
+   if(ws&&ws.readyState===WebSocket.OPEN){try{await send('Browser.close');c.browser_close_acknowledged=true;}catch(e){c.browser_close_error=String(e);}}
+   const until=deadline;

@@ -1,0 +1,30 @@
+{
+  "schema": "scopesignal.shown-disclosures.bootstrap/1",
+  "root": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82",
+  "host": "MSI",
+  "user": "Veria",
+  "account_home": "C:\\Users\\Veria",
+  "observed_at": "2026-10-17T06:09:53.496Z",
+  "runtime": {
+    "node": {
+      "path": "C:\\Program Files\\nodejs\\node.exe",
+      "type": "regular",
+      "bytes": 92825416,
+      "mode": 33206,
+      "mtime_ns": "1785781088000000000",
+      "inode": "562949955424144",
+      "device": "3668076944",
+      "sha256": "3602f2bb1a10f2cbab4c36886218a33c1ab3db87290e73b033c46c77147d0237"
+    },
+    "browser": {
+      "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+      "type": "regular",
+      "bytes": 5438280,
+      "mode": 33206,
+      "mtime_ns": "1791427914389217600",
+      "inode": "8444249301898381",
+      "device": "3668076944",
+      "sha256": "4bb4545b4ab80a3cf463a588ce570ca42de38fe6db16e3baeb0798ac75b4648b"
+    }
+  }
+}

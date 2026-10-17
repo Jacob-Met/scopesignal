@@ -1,0 +1,6 @@
+{
+  "deviceId": "9ea77fe9-bb87-46e0-a5a8-8b3e25f6ff7e",
+  "shell": "powershell.exe",
+  "timeout_ms": 3000,
+  "command": "$p = Get-CimInstance Win32_Process -Filter 'ProcessId=31664' -ErrorAction Stop; if ($null -eq $p) { [pscustomobject]@{status='ABSENT';pid=31664;observed_utc=[DateTime]::UtcNow.ToString('o')} | ConvertTo-Json -Compress } else { [pscustomobject]@{status='PRESENT';pid=$p.ProcessId;executable=$p.ExecutablePath;command_line=$p.CommandLine;created_utc=$p.CreationDate.ToUniversalTime().ToString('o');observed_utc=[DateTime]::UtcNow.ToString('o')} | ConvertTo-Json -Compress }"
+}

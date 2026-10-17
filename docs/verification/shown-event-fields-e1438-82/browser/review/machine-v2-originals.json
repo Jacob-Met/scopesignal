@@ -1,0 +1,84 @@
+{
+  "schema": "scopesignal.shown-disclosures.machine-v2-original-review/1",
+  "status": "ACCEPT_COMPLETE_EIGHT_STATE_REVIEW_DOWNLOAD_AND_OBSERVED_NORMAL_CLOSE",
+  "originals": [
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/receiving.json",
+      "bytes": 128189,
+      "sha256": "361aec2a5e2492d5dd34f130199397cdda6979cfaf27d99ec5c1fa59c88fe08e"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/browser.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/browser.stderr",
+      "bytes": 3115,
+      "sha256": "5628364d1cfd9446f8bcecaf63b6b0f3aac10e9fb31fe52482da8df1403646d9"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/events-desktop.png",
+      "bytes": 58217,
+      "sha256": "7d2d77085bd4a0fcea080dce4cdc9c3444124d73fbe4692d3aa377e3a4fa43f9"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/events-narrow.png",
+      "bytes": 40351,
+      "sha256": "02000859b760342c763fbb1c45560e6252c2118c245f9b6c44f5e7295f579857"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/downloads/scopesignal-record-review.html",
+      "bytes": 13519,
+      "sha256": "414e1212721e42d8cd827167090cf446ed5dd2f039f1538d636392bf4c7e52f4"
+    }
+  ],
+  "transport": {
+    "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/READBACK.json",
+    "bytes": 1360,
+    "sha256": "bcc2d96df8ddf8728e626ab0fe097215f758adb9179a0703e7982c729e5d328e"
+  },
+  "config": {
+    "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/stage-received-v2/browser-config-v2.json",
+    "bytes": 24675,
+    "sha256": "71ceab745851f82799b6039ba790223115698d97ccd8150fef5fc399441ccdac"
+  },
+  "fixture": {
+    "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/examples/shown-events.fixture.json",
+    "bytes": 3520,
+    "sha256": "8639e3ac91311f7b3d50082bc7424a605f7d83fbc49b1a40b7916399cda6e942"
+  },
+  "reference": {
+    "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-opportunity/reference-v1/scopesignal-record-review.html",
+    "bytes": 13519,
+    "sha256": "414e1212721e42d8cd827167090cf446ed5dd2f039f1538d636392bf4c7e52f4"
+  },
+  "manual_states": 8,
+  "actual_actions": 31,
+  "download_bytes": 13519,
+  "static_files_conserved": 56,
+  "cleanup": {
+    "started_at": "2026-10-17T06:37:08.500Z",
+    "forced_termination": false,
+    "browser_close_acknowledged": true,
+    "socket_closed": true,
+    "direct_child_closed": true,
+    "stdout_end": true,
+    "stderr_end": true,
+    "exact_browser_pid": 488,
+    "pid_observations": [
+      {
+        "pid": 488,
+        "at": "2026-10-17T06:37:35.825Z",
+        "code": "ESRCH",
+        "result": "PID_ABSENT_AT_OBSERVATION"
+      }
+    ],
+    "browser_pid_absence": "PID_ABSENT_AT_OBSERVATION",
+    "helper_server_closed": true,
+    "finished_at": "2026-10-17T06:37:35.826Z",
+    "normal_observations_complete": true
+  },
+  "qualification": "R2 complete original course accepted. R1 four originals and failed20s observation remain unchanged. Browser close/stream drain and exact PID absence qualify these observations, not every process-family descendant. PNG binary identities and geometry checked here; root owns visual inspection.",
+  "no_product_or_receiver_replay": true
+}

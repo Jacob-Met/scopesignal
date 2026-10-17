@@ -1,0 +1,71 @@
+{
+  "schema": "scopesignal.shown-disclosures.machine-v2-source-review/1",
+  "status": "ACCEPT_KEY_EVENT_DIAGNOSTIC_AND_BOUNDED_NORMAL_CLOSE_SUCCESSOR",
+  "before": {
+    "bytes": 29542,
+    "sha256": "11f24f051fe07c78d7f54409d2ce0a3d210baa9a00c70dc6549018a05e6f7154"
+  },
+  "after": {
+    "bytes": 29835,
+    "sha256": "3ab7128af97b68700941e1a44363df074aba70bc2b8d11be2e3afc4e75a90431"
+  },
+  "complete_literal_rules": [
+    {
+      "old": "'controls','receive.cjs'",
+      "new": "'controls','receive-v2.cjs'",
+      "count": 1
+    },
+    {
+      "old": "ROOT,'browser-config.json'",
+      "new": "ROOT,'browser-config-v2.json'",
+      "count": 1
+    },
+    {
+      "old": "output=path.join(ROOT,'browser-v1')",
+      "new": "output=path.join(ROOT,'browser-v2')",
+      "count": 1
+    },
+    {
+      "old": "cfg.cleanup_timeout_seconds===20",
+      "new": "cfg.cleanup_timeout_seconds===60",
+      "count": 1
+    },
+    {
+      "old": "  await send('Input.dispatchKeyEvent',{type:'keyDown',key,code,windowsVirtualKeyCode:vk,nativeVirtualKeyCode:vk,modifiers},session);",
+      "new": "  const text=modifiers===0?(key==='Enter'?'\\r':key===' '?' ':''):'';\n  await send('Input.dispatchKeyEvent',{type:text?'keyDown':'rawKeyDown',key,code,windowsVirtualKeyCode:vk,nativeVirtualKeyCode:vk,modifiers,...(text?{text,unmodifiedText:text}:{})},session);",
+      "count": 1
+    },
+    {
+      "old": "  const s=await poll(async()=>{const x=await evaluate(SNAPSHOT);return same(x.rows.filter(r=>!r.hidden).map(r=>r.seq),shown)&&same(x.rows.filter(r=>r.open).map(r=>r.seq),opened)?x:null;},'state did not settle: '+name);",
+      "new": "  let last;\n  const s=await poll(async()=>{const x=await evaluate(SNAPSHOT);last=x;return same(x.rows.filter(r=>!r.hidden).map(r=>r.seq),shown)&&same(x.rows.filter(r=>r.open).map(r=>r.seq),opened)?x:null;},'state did not settle: '+name).catch(e=>{receipt.failed_state={name,expected_shown:shown,expected_opened:opened,last_observation:last??null,observed_at:stamp()};throw e;});",
+      "count": 1
+    },
+    {
+      "old": "deadline=Date.now()+20000;const c=receipt.cleanup;",
+      "new": "deadline=Date.now()+60000;const c=receipt.cleanup;",
+      "count": 1
+    }
+  ],
+  "whole_forward_inverse": true,
+  "assessment": [
+    "Enter uses carriage-return text/unmodifiedText and Space uses its literal text with keyDown; other no-text keys use rawKeyDown, all retain keyUp",
+    "Last failed state observation is retained before rethrow without changing any success predicate",
+    "Distinct controller/config/output/profile preserve original first course",
+    "Only normal cleanup observation extends20 to60 seconds; browser flags, ownership/PID predicates and no-force behavior unchanged",
+    "All product/source bodies, eight intended states, input56 and fixed outputs remain unchanged",
+    "Original four-file aggregateFAIL and later separate PID absence remain distinct observations"
+  ],
+  "primary_sources": [
+    {
+      "url": "https://github.com/puppeteer/puppeteer/blob/main/packages/puppeteer-core/src/common/USKeyboardLayout.ts",
+      "retrieved_ref": "turn173view0",
+      "fact": "Enter defines carriage-return text; Space defines a literal space key."
+    },
+    {
+      "url": "https://chromedevtools.github.io/devtools-protocol/tot/Input/",
+      "retrieved_ref": "turn173search0",
+      "fact": "Protocol exposes distinct keyDown/rawKeyDown/keyUp/char types and text/unmodifiedText fields."
+    }
+  ],
+  "qualification": "Source review only; no receiver, browser, product, or additional native observation invoked."
+}

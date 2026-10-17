@@ -1,0 +1,55 @@
+{
+  "schema": "scopesignal.shown-disclosures.machine-original-review/1",
+  "status": "ACCEPT_ORIGINAL_PARTIAL_COURSE_WITH_FAILURE_AND_UNCLOSED_BROWSER_QUALIFICATIONS",
+  "originals": [
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v1/browser-v1/receiving.json",
+      "bytes": 94380,
+      "sha256": "1fbe4ced79ca7b8fdeea20c901dc6ad595e71add17ee09d3539a821b2a906c31"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v1/browser-v1/browser.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v1/browser-v1/browser.stderr",
+      "bytes": 2788,
+      "sha256": "781ff7dd3a79f313247a5797a828a05009b5c1a9d12e474bc24508cc6bf3b545"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v1/browser-v1/events-desktop.png",
+      "bytes": 58217,
+      "sha256": "7d2d77085bd4a0fcea080dce4cdc9c3444124d73fbe4692d3aa377e3a4fa43f9"
+    }
+  ],
+  "transport": {
+    "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v1/READBACK.json",
+    "bytes": 1550,
+    "sha256": "1239e0cbc33559e5e1bc3676db47a1a3604212517a31e7bdea4b23a1c6ab1269"
+  },
+  "config": {
+    "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/stage-received-v1/browser-config.json",
+    "bytes": 24668,
+    "sha256": "99ca2f79e8b57a0ec172de5c8da42c6224b291282392a1b447851770cdada883"
+  },
+  "passed_observations": [
+    "four whole manual states and all eight original event values",
+    "native Space expands only shown5/6; already open hidden1/8 preserved",
+    "full count text, unchanged full-record totals/evidence/node identities",
+    "desktop original1360x1000 PNG",
+    "all56 static inputs/config/Node/Edge unchanged"
+  ],
+  "failure": {
+    "predicate": "keyboard_collapse did not reach expected state within its8s poll",
+    "qualification": "The receiver retained no post-Enter DOM snapshot; do not infer its actual row state or classify a product defect from this timeout.",
+    "unperformed": [
+      "no-matches",
+      "actual review download",
+      "reset",
+      "narrow state/PNG"
+    ],
+    "cleanup": "Browser.close acknowledged and socket closed; direct child/streams were not closed at20s, exact PID existed then. No forced termination or later absence is claimed."
+  },
+  "no_replay": true
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "scopesignal.shown-disclosures.staging-v2/1",
+  "status": "PREPARED_NOT_EXECUTED",
+  "source_revision": "dcad391d11a66a43df32ae1051a48c5ebd22ff34",
+  "original_config": {
+    "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\browser-config.json",
+    "type": "regular",
+    "bytes": 24668,
+    "sha256": "99ca2f79e8b57a0ec172de5c8da42c6224b291282392a1b447851770cdada883",
+    "mode": 33206,
+    "mtime_ns": "1792217717370500000",
+    "inode": "7318349395194619",
+    "device": "3668076944"
+  },
+  "original_failed_receipt": {
+    "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\browser-v1\\receiving.json",
+    "type": "regular",
+    "bytes": 94380,
+    "sha256": "1fbe4ced79ca7b8fdeea20c901dc6ad595e71add17ee09d3539a821b2a906c31",
+    "mode": 33206,
+    "mtime_ns": "1792218099579576800",
+    "inode": "12103423999275682",
+    "device": "3668076944"
+  },
+  "receiver": {
+    "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\controls\\receive-v2.cjs",
+    "type": "regular",
+    "bytes": 29835,
+    "sha256": "3ab7128af97b68700941e1a44363df074aba70bc2b8d11be2e3afc4e75a90431",
+    "mode": 33206,
+    "mtime_ns": "1792218869105412900",
+    "inode": "23362423067406766",
+    "device": "3668076944"
+  },
+  "config": {
+    "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\browser-config-v2.json",
+    "type": "regular",
+    "bytes": 24675,
+    "sha256": "71ceab745851f82799b6039ba790223115698d97ccd8150fef5fc399441ccdac",
+    "mode": 33206,
+    "mtime_ns": "1792218869486379400",
+    "inode": "20829148277268398",
+    "device": "3668076944"
+  },
+  "static_members": 56,
+  "kit_members": 54,
+  "cleanup_seconds": 60,
+  "observed_at": "2026-10-17T06:34:41.745Z"
+}

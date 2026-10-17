@@ -1,0 +1,2616 @@
+{
+  "schema": "scopesignal.shown-disclosures.receiving/1",
+  "status": "FAIL",
+  "started_at": "2026-10-17T06:19:55.218Z",
+  "qualification": {
+    "hosting": "Owned in-process immutable allowlisted loopback server; maintained serve CLI not invoked.",
+    "input": "CDP file attachment, mouse and keyboard events; no operating-system chooser claim.",
+    "closure": "Browser.close, its socket, direct spawned child and exact observed PID only; no process-family absence claim."
+  },
+  "actions": [
+    {
+      "kind": "DOM.setFileInputFiles",
+      "selector": "#record-file",
+      "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\examples\\shown-events.fixture.json",
+      "at": "2026-10-17T06:20:55.130Z"
+    },
+    {
+      "kind": "mouse",
+      "selector": ".event-list > li:nth-child(1) summary",
+      "x": 672.5,
+      "y": 499.578125,
+      "at": "2026-10-17T06:20:55.431Z"
+    },
+    {
+      "kind": "mouse",
+      "selector": ".event-list > li:nth-child(8) summary",
+      "x": 672.5,
+      "y": 802.046875,
+      "at": "2026-10-17T06:20:55.727Z"
+    },
+    {
+      "kind": "mouse",
+      "selector": "#record-event-checkpoint",
+      "x": 329.484375,
+      "y": 500.375,
+      "at": "2026-10-17T06:20:56.002Z"
+    },
+    {
+      "kind": "key",
+      "key": "Home",
+      "code": "Home",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:56.050Z"
+    },
+    {
+      "kind": "key",
+      "key": "ArrowDown",
+      "code": "ArrowDown",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:56.060Z"
+    },
+    {
+      "kind": "key",
+      "key": "Enter",
+      "code": "Enter",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:56.069Z"
+    },
+    {
+      "kind": "mouse",
+      "selector": "#record-event-type",
+      "x": 599.4609375,
+      "y": 500.375,
+      "at": "2026-10-17T06:20:56.506Z"
+    },
+    {
+      "kind": "key",
+      "key": "Home",
+      "code": "Home",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:56.541Z"
+    },
+    {
+      "kind": "key",
+      "key": "ArrowDown",
+      "code": "ArrowDown",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:56.553Z"
+    },
+    {
+      "kind": "key",
+      "key": "ArrowDown",
+      "code": "ArrowDown",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:56.561Z"
+    },
+    {
+      "kind": "key",
+      "key": "ArrowDown",
+      "code": "ArrowDown",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:56.568Z"
+    },
+    {
+      "kind": "key",
+      "key": "ArrowDown",
+      "code": "ArrowDown",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:56.574Z"
+    },
+    {
+      "kind": "key",
+      "key": "ArrowDown",
+      "code": "ArrowDown",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:56.582Z"
+    },
+    {
+      "kind": "key",
+      "key": "Enter",
+      "code": "Enter",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:56.587Z"
+    },
+    {
+      "kind": "mouse",
+      "selector": "#record-event-query",
+      "x": 869.4453125,
+      "y": 500.375,
+      "at": "2026-10-17T06:20:56.755Z"
+    },
+    {
+      "kind": "key",
+      "key": "a",
+      "code": "KeyA",
+      "modifiers": 2,
+      "at": "2026-10-17T06:20:56.766Z"
+    },
+    {
+      "kind": "insertText",
+      "selector": "#record-event-query",
+      "text": "CAP-SHOWN-001",
+      "at": "2026-10-17T06:20:56.778Z"
+    },
+    {
+      "kind": "key",
+      "key": "Tab",
+      "code": "Tab",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:56.793Z"
+    },
+    {
+      "kind": "key",
+      "key": "Tab",
+      "code": "Tab",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:56.799Z"
+    },
+    {
+      "kind": "key",
+      "key": " ",
+      "code": "Space",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:56.806Z"
+    },
+    {
+      "kind": "key",
+      "key": "Tab",
+      "code": "Tab",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:57.067Z"
+    },
+    {
+      "kind": "key",
+      "key": "Enter",
+      "code": "Enter",
+      "modifiers": 0,
+      "at": "2026-10-17T06:20:57.083Z"
+    }
+  ],
+  "states": [
+    {
+      "title": "Northstar onboarding refresh",
+      "filename": "shown-events.fixture.json",
+      "status": "Opened shown-events.fixture.json. 8 events; 2 approvals recorded. The saved fields match the event history.",
+      "error": null,
+      "query": "",
+      "checkpoint": "",
+      "type": "",
+      "active": {
+        "id": "",
+        "tag": "BODY",
+        "text": "\n  Skip to content\n  \n    S ScopeSignal\n    FIXTURE RECORD VIEWER\n  \n  \n    \n      SAVED REVIEW\n      Review a savedfixture record.\n      Open a ScopeSignal JSON download to read its approvals, exact accepted evidence and simulated capture history.\n    \n    \n      Choose your record\n      Version 1 fixture-record JSON · Up to 1 MiB and 512 events\n      \n        Choose a saved fixture record\n        \n        Clear view\n      \n      Read locally on this device. Your file is not uploaded or added to the active fixture.\n      Opened shown-events.fixture.json. 8 events; 2 approvals recorded. The saved fields match the event history.\n      \n      Jump to the opened record ↓\n      <p>Enable JavaScript to inspect a record. Your file stays on your device.</p>\n    \n    OPEN RECORDNorthstar onboarding refreshshown-events.fixture.jsonSynthetic fixture · Not payment evidenceDownload record reviewProject cap$1,200.00Approvals recorded2 / 3Captures recorded$400.00Remaining in fixture$800.00Accepted evidence and outcomesFirst-run checklist$400.00Approval recorded · Event 1 · human-reviewerEXACT ACCEPTED EVIDENCEVisible <literal> evidence\nKeyboard route.Capture recordedThis capture contributes $400.00 to the recorded fixture total.OrderSANDBOX-JOURNEYConfirmed captureCAP-SHOWN-001Counted amount$400.00Accessible billing setup$400.00Approval recorded · Event 8 · human-reviewerEXACT ACCEPTED EVIDENCESecond fictional review.Not startedNo fixture capture is recorded.OrderNone recordedConfirmed captureNone recordedCounted amount$0.00Responsive handoff$400.00No approval recordedThis file contains no accepted evidence for this checkpoint.Not startedNo fixture capture is recorded.OrderNone recordedConfirmed captureNone recordedCounted amount$0.00Recorded event history8 events. Open an event to read its exact saved fields. T+ values are sequence markers, not clock times.CheckpointAll checkpointsFirst-run checklistAccessible billing setupResponsive handoffEvent typeAll event typesHuman approval recordedFixture order createdCapture requestedCapture response lostWebhook receivedCapture reconciledSearch saved event valuesShow all eventsExpand shown eventsCollapse shown eventsShowing 8 of 8 recorded events. All checkpoints · All event types.Filters change only this list. Totals and checkpoint outcomes above describe the full record. Original sequence numbers and saved fields are retained.Search matches literal saved values, ignoring case. Spaces and accents are not normalized; field names and display labels are not searched. Downloads still include the full record.No recorded events match these filters. Change a filter or show all events.01Human approval recordedFirst-run checklist{\n  \"seq\": 1,\n  \"at\": \"T+001\",\n  \"type\": \"checkpoint.approved\",\n  \"checkpointId\": \"journey\",\n  \"approver\": \"human-reviewer\",\n  \"acceptedEvidence\": \"Visible <literal> evidence\\nKeyboard route.\"\n}02Fixture order createdFirst-run checklist{\n  \"seq\": 2,\n  \"at\": \"T+002\",\n  \"type\": \"paypal.order.created\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"amount\": 40000,\n  \"currency\": \"USD\",\n  \"environment\": \"sandbox\"\n}03Capture requestedFirst-run checklist{\n  \"seq\": 3,\n  \"at\": \"T+003\",\n  \"type\": \"paypal.capture.requested\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"environment\": \"sandbox\"\n}04Capture response lostFirst-run checklist{\n  \"seq\": 4,\n  \"at\": \"T+004\",\n  \"type\": \"paypal.capture.response_lost\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"outcome\": \"unknown\"\n}05Webhook receivedFirst-run checklist{\n  \"seq\": 5,\n  \"at\": \"T+005\",\n  \"type\": \"paypal.webhook.received\",\n  \"checkpointId\": \"journey\",\n  \"eventId\": \"WH-SHOWN-001\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"duplicate\": false,\n  \"amount\": 40000,\n  \"currency\": \"USD\"\n}06Duplicate webhook recordedFirst-run checklist{\n  \"seq\": 6,\n  \"at\": \"T+006\",\n  \"type\": \"paypal.webhook.received\",\n  \"checkpointId\": \"journey\",\n  \"eventId\": \"WH-SHOWN-001\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"duplicate\": true,\n  \"amount\": 40000,\n  \"currency\": \"USD\"\n}07Capture reconciledFirst-run checklist{\n  \"seq\": 7,\n  \"at\": \"T+007\",\n  \"type\": \"paypal.capture.reconciled\",\n  \"checkpointId\": \"journey\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"outcome\": \"captured\",\n  \"source\": \"sandbox-transaction-lookup\"\n}08Human approval recordedAccessible billing setup{\n  \"seq\": 8,\n  \"at\": \"T+008\",\n  \"type\": \"checkpoint.approved\",\n  \"checkpointId\": \"accessibility\",\n  \"approver\": \"human-reviewer\",\n  \"acceptedEvidence\": \"Second fictional review.\"\n}The file is unsigned. Consistent fields do not establish who wrote it or prove a real approval or transaction.\n  \n  Synthetic fixture · No live paymentsOpen the fixture demo\n\n\n"
+      },
+      "count": "Showing 8 of 8 recorded events. All checkpoints · All event types.",
+      "announcement": "",
+      "emptyVisible": false,
+      "expandDisabled": false,
+      "collapseDisabled": false,
+      "totals": [
+        [
+          "Project cap",
+          "$1,200.00"
+        ],
+        [
+          "Approvals recorded",
+          "2 / 3"
+        ],
+        [
+          "Captures recorded",
+          "$400.00"
+        ],
+        [
+          "Remaining in fixture",
+          "$800.00"
+        ]
+      ],
+      "evidence": [
+        "Visible <literal> evidence\nKeyboard route.",
+        "Second fictional review."
+      ],
+      "rows": [
+        {
+          "seq": 1,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 1,\n  \"at\": \"T+001\",\n  \"type\": \"checkpoint.approved\",\n  \"checkpointId\": \"journey\",\n  \"approver\": \"human-reviewer\",\n  \"acceptedEvidence\": \"Visible <literal> evidence\\nKeyboard route.\"\n}"
+        },
+        {
+          "seq": 2,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 2,\n  \"at\": \"T+002\",\n  \"type\": \"paypal.order.created\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"amount\": 40000,\n  \"currency\": \"USD\",\n  \"environment\": \"sandbox\"\n}"
+        },
+        {
+          "seq": 3,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 3,\n  \"at\": \"T+003\",\n  \"type\": \"paypal.capture.requested\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"environment\": \"sandbox\"\n}"
+        },
+        {
+          "seq": 4,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 4,\n  \"at\": \"T+004\",\n  \"type\": \"paypal.capture.response_lost\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"outcome\": \"unknown\"\n}"
+        },
+        {
+          "seq": 5,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 5,\n  \"at\": \"T+005\",\n  \"type\": \"paypal.webhook.received\",\n  \"checkpointId\": \"journey\",\n  \"eventId\": \"WH-SHOWN-001\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"duplicate\": false,\n  \"amount\": 40000,\n  \"currency\": \"USD\"\n}"
+        },
+        {
+          "seq": 6,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 6,\n  \"at\": \"T+006\",\n  \"type\": \"paypal.webhook.received\",\n  \"checkpointId\": \"journey\",\n  \"eventId\": \"WH-SHOWN-001\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"duplicate\": true,\n  \"amount\": 40000,\n  \"currency\": \"USD\"\n}"
+        },
+        {
+          "seq": 7,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 7,\n  \"at\": \"T+007\",\n  \"type\": \"paypal.capture.reconciled\",\n  \"checkpointId\": \"journey\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"outcome\": \"captured\",\n  \"source\": \"sandbox-transaction-lookup\"\n}"
+        },
+        {
+          "seq": 8,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 8,\n  \"at\": \"T+008\",\n  \"type\": \"checkpoint.approved\",\n  \"checkpointId\": \"accessibility\",\n  \"approver\": \"human-reviewer\",\n  \"acceptedEvidence\": \"Second fictional review.\"\n}"
+        }
+      ],
+      "controls": [
+        {
+          "id": "record-event-checkpoint",
+          "tag": "SELECT",
+          "text": null,
+          "rect": {
+            "x": 201.5,
+            "y": 2338.875,
+            "width": 255.96875,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-event-type",
+          "tag": "SELECT",
+          "text": null,
+          "rect": {
+            "x": 471.46875,
+            "y": 2338.875,
+            "width": 255.984375,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-event-query",
+          "tag": "INPUT",
+          "text": null,
+          "rect": {
+            "x": 741.453125,
+            "y": 2338.875,
+            "width": 255.984375,
+            "height": 45
+          }
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "text": "Show all events",
+          "rect": {
+            "x": 1011.4375,
+            "y": 2338.875,
+            "width": 132.0625,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-events-expand-shown",
+          "tag": "BUTTON",
+          "text": "Expand shown events",
+          "rect": {
+            "x": 201.5,
+            "y": 2397.875,
+            "width": 170.984375,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-events-collapse-shown",
+          "tag": "BUTTON",
+          "text": "Collapse shown events",
+          "rect": {
+            "x": 386.484375,
+            "y": 2397.875,
+            "width": 177.984375,
+            "height": 45
+          }
+        }
+      ],
+      "viewport": {
+        "width": 1360,
+        "height": 1000,
+        "documentWidth": 1345
+      },
+      "storage": {
+        "local": 0,
+        "session": 0
+      },
+      "name": "loaded",
+      "observed_at": "2026-10-17T06:20:55.274Z",
+      "node_references": [
+        [
+          267,
+          268,
+          280
+        ],
+        [
+          283,
+          284,
+          296
+        ],
+        [
+          299,
+          300,
+          312
+        ],
+        [
+          315,
+          316,
+          328
+        ],
+        [
+          331,
+          332,
+          344
+        ],
+        [
+          347,
+          348,
+          360
+        ],
+        [
+          363,
+          364,
+          376
+        ],
+        [
+          379,
+          380,
+          392
+        ]
+      ]
+    },
+    {
+      "title": "Northstar onboarding refresh",
+      "filename": "shown-events.fixture.json",
+      "status": "Opened shown-events.fixture.json. 8 events; 2 approvals recorded. The saved fields match the event history.",
+      "error": null,
+      "query": "",
+      "checkpoint": "",
+      "type": "",
+      "active": {
+        "id": "",
+        "tag": "SUMMARY",
+        "text": "08Human approval recordedAccessible billing setup"
+      },
+      "count": "Showing 8 of 8 recorded events. All checkpoints · All event types.",
+      "announcement": "",
+      "emptyVisible": false,
+      "expandDisabled": false,
+      "collapseDisabled": false,
+      "totals": [
+        [
+          "Project cap",
+          "$1,200.00"
+        ],
+        [
+          "Approvals recorded",
+          "2 / 3"
+        ],
+        [
+          "Captures recorded",
+          "$400.00"
+        ],
+        [
+          "Remaining in fixture",
+          "$800.00"
+        ]
+      ],
+      "evidence": [
+        "Visible <literal> evidence\nKeyboard route.",
+        "Second fictional review."
+      ],
+      "rows": [
+        {
+          "seq": 1,
+          "hidden": false,
+          "open": true,
+          "raw": "{\n  \"seq\": 1,\n  \"at\": \"T+001\",\n  \"type\": \"checkpoint.approved\",\n  \"checkpointId\": \"journey\",\n  \"approver\": \"human-reviewer\",\n  \"acceptedEvidence\": \"Visible <literal> evidence\\nKeyboard route.\"\n}"
+        },
+        {
+          "seq": 2,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 2,\n  \"at\": \"T+002\",\n  \"type\": \"paypal.order.created\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"amount\": 40000,\n  \"currency\": \"USD\",\n  \"environment\": \"sandbox\"\n}"
+        },
+        {
+          "seq": 3,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 3,\n  \"at\": \"T+003\",\n  \"type\": \"paypal.capture.requested\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"environment\": \"sandbox\"\n}"
+        },
+        {
+          "seq": 4,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 4,\n  \"at\": \"T+004\",\n  \"type\": \"paypal.capture.response_lost\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"outcome\": \"unknown\"\n}"
+        },
+        {
+          "seq": 5,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 5,\n  \"at\": \"T+005\",\n  \"type\": \"paypal.webhook.received\",\n  \"checkpointId\": \"journey\",\n  \"eventId\": \"WH-SHOWN-001\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"duplicate\": false,\n  \"amount\": 40000,\n  \"currency\": \"USD\"\n}"
+        },
+        {
+          "seq": 6,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 6,\n  \"at\": \"T+006\",\n  \"type\": \"paypal.webhook.received\",\n  \"checkpointId\": \"journey\",\n  \"eventId\": \"WH-SHOWN-001\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"duplicate\": true,\n  \"amount\": 40000,\n  \"currency\": \"USD\"\n}"
+        },
+        {
+          "seq": 7,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 7,\n  \"at\": \"T+007\",\n  \"type\": \"paypal.capture.reconciled\",\n  \"checkpointId\": \"journey\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"outcome\": \"captured\",\n  \"source\": \"sandbox-transaction-lookup\"\n}"
+        },
+        {
+          "seq": 8,
+          "hidden": false,
+          "open": true,
+          "raw": "{\n  \"seq\": 8,\n  \"at\": \"T+008\",\n  \"type\": \"checkpoint.approved\",\n  \"checkpointId\": \"accessibility\",\n  \"approver\": \"human-reviewer\",\n  \"acceptedEvidence\": \"Second fictional review.\"\n}"
+        }
+      ],
+      "controls": [
+        {
+          "id": "record-event-checkpoint",
+          "tag": "SELECT",
+          "text": null,
+          "rect": {
+            "x": 201.5,
+            "y": -214.125,
+            "width": 255.96875,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-event-type",
+          "tag": "SELECT",
+          "text": null,
+          "rect": {
+            "x": 471.46875,
+            "y": -214.125,
+            "width": 255.984375,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-event-query",
+          "tag": "INPUT",
+          "text": null,
+          "rect": {
+            "x": 741.453125,
+            "y": -214.125,
+            "width": 255.984375,
+            "height": 45
+          }
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "text": "Show all events",
+          "rect": {
+            "x": 1011.4375,
+            "y": -214.125,
+            "width": 132.0625,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-events-expand-shown",
+          "tag": "BUTTON",
+          "text": "Expand shown events",
+          "rect": {
+            "x": 201.5,
+            "y": -155.125,
+            "width": 170.984375,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-events-collapse-shown",
+          "tag": "BUTTON",
+          "text": "Collapse shown events",
+          "rect": {
+            "x": 386.484375,
+            "y": -155.125,
+            "width": 177.984375,
+            "height": 45
+          }
+        }
+      ],
+      "viewport": {
+        "width": 1360,
+        "height": 1000,
+        "documentWidth": 1345
+      },
+      "storage": {
+        "local": 0,
+        "session": 0
+      },
+      "name": "independent_open_rows",
+      "observed_at": "2026-10-17T06:20:55.745Z",
+      "node_references": [
+        [
+          267,
+          268,
+          280
+        ],
+        [
+          283,
+          284,
+          296
+        ],
+        [
+          299,
+          300,
+          312
+        ],
+        [
+          315,
+          316,
+          328
+        ],
+        [
+          331,
+          332,
+          344
+        ],
+        [
+          347,
+          348,
+          360
+        ],
+        [
+          363,
+          364,
+          376
+        ],
+        [
+          379,
+          380,
+          392
+        ]
+      ]
+    },
+    {
+      "title": "Northstar onboarding refresh",
+      "filename": "shown-events.fixture.json",
+      "status": "Opened shown-events.fixture.json. 8 events; 2 approvals recorded. The saved fields match the event history.",
+      "error": null,
+      "query": "CAP-SHOWN-001",
+      "checkpoint": "journey",
+      "type": "paypal.webhook.received",
+      "active": {
+        "id": "record-event-query",
+        "tag": "INPUT",
+        "text": ""
+      },
+      "count": "Showing 2 of 8 recorded events. First-run checklist · Webhook received · Search: “CAP-SHOWN-001”.",
+      "announcement": "",
+      "emptyVisible": false,
+      "expandDisabled": false,
+      "collapseDisabled": false,
+      "totals": [
+        [
+          "Project cap",
+          "$1,200.00"
+        ],
+        [
+          "Approvals recorded",
+          "2 / 3"
+        ],
+        [
+          "Captures recorded",
+          "$400.00"
+        ],
+        [
+          "Remaining in fixture",
+          "$800.00"
+        ]
+      ],
+      "evidence": [
+        "Visible <literal> evidence\nKeyboard route.",
+        "Second fictional review."
+      ],
+      "rows": [
+        {
+          "seq": 1,
+          "hidden": true,
+          "open": true,
+          "raw": "{\n  \"seq\": 1,\n  \"at\": \"T+001\",\n  \"type\": \"checkpoint.approved\",\n  \"checkpointId\": \"journey\",\n  \"approver\": \"human-reviewer\",\n  \"acceptedEvidence\": \"Visible <literal> evidence\\nKeyboard route.\"\n}"
+        },
+        {
+          "seq": 2,
+          "hidden": true,
+          "open": false,
+          "raw": "{\n  \"seq\": 2,\n  \"at\": \"T+002\",\n  \"type\": \"paypal.order.created\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"amount\": 40000,\n  \"currency\": \"USD\",\n  \"environment\": \"sandbox\"\n}"
+        },
+        {
+          "seq": 3,
+          "hidden": true,
+          "open": false,
+          "raw": "{\n  \"seq\": 3,\n  \"at\": \"T+003\",\n  \"type\": \"paypal.capture.requested\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"environment\": \"sandbox\"\n}"
+        },
+        {
+          "seq": 4,
+          "hidden": true,
+          "open": false,
+          "raw": "{\n  \"seq\": 4,\n  \"at\": \"T+004\",\n  \"type\": \"paypal.capture.response_lost\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"outcome\": \"unknown\"\n}"
+        },
+        {
+          "seq": 5,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 5,\n  \"at\": \"T+005\",\n  \"type\": \"paypal.webhook.received\",\n  \"checkpointId\": \"journey\",\n  \"eventId\": \"WH-SHOWN-001\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"duplicate\": false,\n  \"amount\": 40000,\n  \"currency\": \"USD\"\n}"
+        },
+        {
+          "seq": 6,
+          "hidden": false,
+          "open": false,
+          "raw": "{\n  \"seq\": 6,\n  \"at\": \"T+006\",\n  \"type\": \"paypal.webhook.received\",\n  \"checkpointId\": \"journey\",\n  \"eventId\": \"WH-SHOWN-001\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"duplicate\": true,\n  \"amount\": 40000,\n  \"currency\": \"USD\"\n}"
+        },
+        {
+          "seq": 7,
+          "hidden": true,
+          "open": false,
+          "raw": "{\n  \"seq\": 7,\n  \"at\": \"T+007\",\n  \"type\": \"paypal.capture.reconciled\",\n  \"checkpointId\": \"journey\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"outcome\": \"captured\",\n  \"source\": \"sandbox-transaction-lookup\"\n}"
+        },
+        {
+          "seq": 8,
+          "hidden": true,
+          "open": true,
+          "raw": "{\n  \"seq\": 8,\n  \"at\": \"T+008\",\n  \"type\": \"checkpoint.approved\",\n  \"checkpointId\": \"accessibility\",\n  \"approver\": \"human-reviewer\",\n  \"acceptedEvidence\": \"Second fictional review.\"\n}"
+        }
+      ],
+      "controls": [
+        {
+          "id": "record-event-checkpoint",
+          "tag": "SELECT",
+          "text": null,
+          "rect": {
+            "x": 201.5,
+            "y": 477.875,
+            "width": 255.96875,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-event-type",
+          "tag": "SELECT",
+          "text": null,
+          "rect": {
+            "x": 471.46875,
+            "y": 477.875,
+            "width": 255.984375,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-event-query",
+          "tag": "INPUT",
+          "text": null,
+          "rect": {
+            "x": 741.453125,
+            "y": 477.875,
+            "width": 255.984375,
+            "height": 45
+          }
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "text": "Show all events",
+          "rect": {
+            "x": 1011.4375,
+            "y": 477.875,
+            "width": 132.0625,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-events-expand-shown",
+          "tag": "BUTTON",
+          "text": "Expand shown events",
+          "rect": {
+            "x": 201.5,
+            "y": 536.875,
+            "width": 170.984375,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-events-collapse-shown",
+          "tag": "BUTTON",
+          "text": "Collapse shown events",
+          "rect": {
+            "x": 386.484375,
+            "y": 536.875,
+            "width": 177.984375,
+            "height": 45
+          }
+        }
+      ],
+      "viewport": {
+        "width": 1360,
+        "height": 1000,
+        "documentWidth": 1345
+      },
+      "storage": {
+        "local": 0,
+        "session": 0
+      },
+      "name": "intersected_filters",
+      "observed_at": "2026-10-17T06:20:56.782Z",
+      "node_references": [
+        [
+          267,
+          268,
+          280
+        ],
+        [
+          283,
+          284,
+          296
+        ],
+        [
+          299,
+          300,
+          312
+        ],
+        [
+          315,
+          316,
+          328
+        ],
+        [
+          331,
+          332,
+          344
+        ],
+        [
+          347,
+          348,
+          360
+        ],
+        [
+          363,
+          364,
+          376
+        ],
+        [
+          379,
+          380,
+          392
+        ]
+      ]
+    },
+    {
+      "title": "Northstar onboarding refresh",
+      "filename": "shown-events.fixture.json",
+      "status": "Opened shown-events.fixture.json. 8 events; 2 approvals recorded. The saved fields match the event history.",
+      "error": null,
+      "query": "CAP-SHOWN-001",
+      "checkpoint": "journey",
+      "type": "paypal.webhook.received",
+      "active": {
+        "id": "record-events-expand-shown",
+        "tag": "BUTTON",
+        "text": "Expand shown events"
+      },
+      "count": "Showing 2 of 8 recorded events. First-run checklist · Webhook received · Search: “CAP-SHOWN-001”.",
+      "announcement": "Expanded 2 shown events.",
+      "emptyVisible": false,
+      "expandDisabled": false,
+      "collapseDisabled": false,
+      "totals": [
+        [
+          "Project cap",
+          "$1,200.00"
+        ],
+        [
+          "Approvals recorded",
+          "2 / 3"
+        ],
+        [
+          "Captures recorded",
+          "$400.00"
+        ],
+        [
+          "Remaining in fixture",
+          "$800.00"
+        ]
+      ],
+      "evidence": [
+        "Visible <literal> evidence\nKeyboard route.",
+        "Second fictional review."
+      ],
+      "rows": [
+        {
+          "seq": 1,
+          "hidden": true,
+          "open": true,
+          "raw": "{\n  \"seq\": 1,\n  \"at\": \"T+001\",\n  \"type\": \"checkpoint.approved\",\n  \"checkpointId\": \"journey\",\n  \"approver\": \"human-reviewer\",\n  \"acceptedEvidence\": \"Visible <literal> evidence\\nKeyboard route.\"\n}"
+        },
+        {
+          "seq": 2,
+          "hidden": true,
+          "open": false,
+          "raw": "{\n  \"seq\": 2,\n  \"at\": \"T+002\",\n  \"type\": \"paypal.order.created\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"amount\": 40000,\n  \"currency\": \"USD\",\n  \"environment\": \"sandbox\"\n}"
+        },
+        {
+          "seq": 3,
+          "hidden": true,
+          "open": false,
+          "raw": "{\n  \"seq\": 3,\n  \"at\": \"T+003\",\n  \"type\": \"paypal.capture.requested\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"environment\": \"sandbox\"\n}"
+        },
+        {
+          "seq": 4,
+          "hidden": true,
+          "open": false,
+          "raw": "{\n  \"seq\": 4,\n  \"at\": \"T+004\",\n  \"type\": \"paypal.capture.response_lost\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"outcome\": \"unknown\"\n}"
+        },
+        {
+          "seq": 5,
+          "hidden": false,
+          "open": true,
+          "raw": "{\n  \"seq\": 5,\n  \"at\": \"T+005\",\n  \"type\": \"paypal.webhook.received\",\n  \"checkpointId\": \"journey\",\n  \"eventId\": \"WH-SHOWN-001\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"duplicate\": false,\n  \"amount\": 40000,\n  \"currency\": \"USD\"\n}"
+        },
+        {
+          "seq": 6,
+          "hidden": false,
+          "open": true,
+          "raw": "{\n  \"seq\": 6,\n  \"at\": \"T+006\",\n  \"type\": \"paypal.webhook.received\",\n  \"checkpointId\": \"journey\",\n  \"eventId\": \"WH-SHOWN-001\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"duplicate\": true,\n  \"amount\": 40000,\n  \"currency\": \"USD\"\n}"
+        },
+        {
+          "seq": 7,
+          "hidden": true,
+          "open": false,
+          "raw": "{\n  \"seq\": 7,\n  \"at\": \"T+007\",\n  \"type\": \"paypal.capture.reconciled\",\n  \"checkpointId\": \"journey\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"outcome\": \"captured\",\n  \"source\": \"sandbox-transaction-lookup\"\n}"
+        },
+        {
+          "seq": 8,
+          "hidden": true,
+          "open": true,
+          "raw": "{\n  \"seq\": 8,\n  \"at\": \"T+008\",\n  \"type\": \"checkpoint.approved\",\n  \"checkpointId\": \"accessibility\",\n  \"approver\": \"human-reviewer\",\n  \"acceptedEvidence\": \"Second fictional review.\"\n}"
+        }
+      ],
+      "controls": [
+        {
+          "id": "record-event-checkpoint",
+          "tag": "SELECT",
+          "text": null,
+          "rect": {
+            "x": 201.5,
+            "y": 477.875,
+            "width": 255.96875,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-event-type",
+          "tag": "SELECT",
+          "text": null,
+          "rect": {
+            "x": 471.46875,
+            "y": 477.875,
+            "width": 255.984375,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-event-query",
+          "tag": "INPUT",
+          "text": null,
+          "rect": {
+            "x": 741.453125,
+            "y": 477.875,
+            "width": 255.984375,
+            "height": 45
+          }
+        },
+        {
+          "id": "",
+          "tag": "BUTTON",
+          "text": "Show all events",
+          "rect": {
+            "x": 1011.4375,
+            "y": 477.875,
+            "width": 132.0625,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-events-expand-shown",
+          "tag": "BUTTON",
+          "text": "Expand shown events",
+          "rect": {
+            "x": 201.5,
+            "y": 536.875,
+            "width": 170.984375,
+            "height": 45
+          }
+        },
+        {
+          "id": "record-events-collapse-shown",
+          "tag": "BUTTON",
+          "text": "Collapse shown events",
+          "rect": {
+            "x": 386.484375,
+            "y": 536.875,
+            "width": 177.984375,
+            "height": 45
+          }
+        }
+      ],
+      "viewport": {
+        "width": 1360,
+        "height": 1000,
+        "documentWidth": 1345
+      },
+      "storage": {
+        "local": 0,
+        "session": 0
+      },
+      "name": "keyboard_expand",
+      "observed_at": "2026-10-17T06:20:56.817Z",
+      "node_references": [
+        [
+          267,
+          268,
+          280
+        ],
+        [
+          283,
+          284,
+          296
+        ],
+        [
+          299,
+          300,
+          312
+        ],
+        [
+          315,
+          316,
+          328
+        ],
+        [
+          331,
+          332,
+          344
+        ],
+        [
+          347,
+          348,
+          360
+        ],
+        [
+          363,
+          364,
+          376
+        ],
+        [
+          379,
+          380,
+          392
+        ]
+      ]
+    }
+  ],
+  "requests": [
+    {
+      "at": "2026-10-17T06:20:46.933Z",
+      "method": "GET",
+      "url": "/record.html",
+      "host": "127.0.0.1:50919"
+    },
+    {
+      "at": "2026-10-17T06:20:47.354Z",
+      "method": "GET",
+      "url": "/record-view.css",
+      "host": "127.0.0.1:50919"
+    },
+    {
+      "at": "2026-10-17T06:20:47.526Z",
+      "method": "GET",
+      "url": "/src/record-view.mjs",
+      "host": "127.0.0.1:50919"
+    },
+    {
+      "at": "2026-10-17T06:20:47.649Z",
+      "method": "GET",
+      "url": "/src/record-event-filter.mjs",
+      "host": "127.0.0.1:50919"
+    },
+    {
+      "at": "2026-10-17T06:20:47.774Z",
+      "method": "GET",
+      "url": "/src/record-review-download.mjs",
+      "host": "127.0.0.1:50919"
+    },
+    {
+      "at": "2026-10-17T06:20:47.776Z",
+      "method": "GET",
+      "url": "/src/record-event-search.mjs",
+      "host": "127.0.0.1:50919"
+    },
+    {
+      "at": "2026-10-17T06:20:47.902Z",
+      "method": "GET",
+      "url": "/src/record-reader.mjs",
+      "host": "127.0.0.1:50919"
+    },
+    {
+      "at": "2026-10-17T06:20:48.029Z",
+      "method": "GET",
+      "url": "/src/record-review-export.mjs",
+      "host": "127.0.0.1:50919"
+    },
+    {
+      "at": "2026-10-17T06:20:48.034Z",
+      "method": "GET",
+      "url": "/src/ledger.mjs",
+      "host": "127.0.0.1:50919"
+    },
+    {
+      "at": "2026-10-17T06:20:48.036Z",
+      "method": "GET",
+      "url": "/src/fixture-record.mjs",
+      "host": "127.0.0.1:50919"
+    }
+  ],
+  "network": [
+    {
+      "url": "http://127.0.0.1:50919/record.html",
+      "type": "Document"
+    },
+    {
+      "url": "http://127.0.0.1:50919/record-view.css",
+      "type": "Stylesheet"
+    },
+    {
+      "url": "http://127.0.0.1:50919/src/record-view.mjs",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:50919/src/record-event-filter.mjs",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:50919/src/record-review-download.mjs",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:50919/src/record-reader.mjs",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:50919/src/record-event-search.mjs",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:50919/src/record-review-export.mjs",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:50919/src/ledger.mjs",
+      "type": "Script"
+    },
+    {
+      "url": "http://127.0.0.1:50919/src/fixture-record.mjs",
+      "type": "Script"
+    }
+  ],
+  "downloads": [],
+  "exceptions": [],
+  "console": [],
+  "log": [],
+  "async_errors": [],
+  "outputs": {
+    "events-desktop.png": {
+      "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\browser-v1\\events-desktop.png",
+      "type": "regular",
+      "bytes": 58217,
+      "mode": 33206,
+      "mtime_ns": "1792218057065328600",
+      "inode": "15762598696598717",
+      "device": "3668076944",
+      "sha256": "7d2d77085bd4a0fcea080dce4cdc9c3444124d73fbe4692d3aa377e3a4fa43f9"
+    },
+    "browser.stdout": {
+      "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\browser-v1\\browser.stdout",
+      "type": "regular",
+      "bytes": 0,
+      "mode": 33206,
+      "mtime_ns": "1792218035983895600",
+      "inode": "8725724278747912",
+      "device": "3668076944",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "browser.stderr": {
+      "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\browser-v1\\browser.stderr",
+      "type": "regular",
+      "bytes": 2788,
+      "mode": 33206,
+      "mtime_ns": "1792218047650222400",
+      "inode": "7599824371905289",
+      "device": "3668076944",
+      "sha256": "781ff7dd3a79f313247a5797a828a05009b5c1a9d12e474bc24508cc6bf3b545"
+    }
+  },
+  "cleanup": {
+    "started_at": "2026-10-17T06:21:05.094Z",
+    "forced_termination": false,
+    "browser_close_acknowledged": true,
+    "socket_closed": true,
+    "direct_child_closed": false,
+    "stdout_end": false,
+    "stderr_end": false,
+    "exact_browser_pid": 31664,
+    "pid_observations": [
+      {
+        "pid": 31664,
+        "at": "2026-10-17T06:21:25.179Z",
+        "result": "PID_EXISTS_IDENTITY_NOT_RECONFIRMED"
+      }
+    ],
+    "browser_pid_absence": "PID_EXISTS_IDENTITY_NOT_RECONFIRMED",
+    "helper_server_closed": true,
+    "finished_at": "2026-10-17T06:21:25.181Z",
+    "normal_observations_complete": false
+  },
+  "before": {
+    "inputs": [
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\controls\\expected-review.html",
+        "type": "regular",
+        "bytes": 13519,
+        "mode": 33206,
+        "mtime_ns": "1792217701746490700",
+        "inode": "8444249302037185",
+        "device": "3668076944",
+        "sha256": "414e1212721e42d8cd827167090cf446ed5dd2f039f1538d636392bf4c7e52f4"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\controls\\receive.cjs",
+        "type": "regular",
+        "bytes": 29542,
+        "mode": 33206,
+        "mtime_ns": "1792217701972826300",
+        "inode": "8162774325326530",
+        "device": "3668076944",
+        "sha256": "11f24f051fe07c78d7f54409d2ce0a3d210baa9a00c70dc6549018a05e6f7154"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\LICENSE",
+        "type": "regular",
+        "bytes": 807,
+        "mode": 33206,
+        "mtime_ns": "1792217702136331100",
+        "inode": "7599824371905219",
+        "device": "3668076944",
+        "sha256": "3f25841c9348bbf34a89b246075022b77ab309bf6d5102b165a1bf900c5c246f"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\OPEN_FIRST.md",
+        "type": "regular",
+        "bytes": 5183,
+        "mode": 33206,
+        "mtime_ns": "1792217702469183500",
+        "inode": "7318349395194564",
+        "device": "3668076944",
+        "sha256": "50506354ae0d5c83a8c4ee44cd82ad4c06143b70395f00f8176f0f5efcbcd690"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\SOURCE.json",
+        "type": "regular",
+        "bytes": 19831,
+        "mode": 33206,
+        "mtime_ns": "1792217702695768700",
+        "inode": "7599824371905221",
+        "device": "3668076944",
+        "sha256": "1399d64ffa07349d77b45ba61872da1cf34b70470f1e99af6cc40584398eeda7"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\app.mjs",
+        "type": "regular",
+        "bytes": 5366,
+        "mode": 33206,
+        "mtime_ns": "1792217702925393700",
+        "inode": "7318349395194566",
+        "device": "3668076944",
+        "sha256": "a33c3519e59445e4ed6c19a2beec81005482e34b5e6bd396f10916cfbfd96a24"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\docs\\record-event-search.md",
+        "type": "regular",
+        "bytes": 9310,
+        "mode": 33206,
+        "mtime_ns": "1792217703155926100",
+        "inode": "7036874418483911",
+        "device": "3668076944",
+        "sha256": "a3063a6a8e685298c0763458fd7ef4e1da2618632ae0a5fde2d69815421d0d9e"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\examples\\shown-events.fixture.json",
+        "type": "regular",
+        "bytes": 3520,
+        "mode": 33206,
+        "mtime_ns": "1792217703605310700",
+        "inode": "7318349395194568",
+        "device": "3668076944",
+        "sha256": "8639e3ac91311f7b3d50082bc7424a605f7d83fbc49b1a40b7916399cda6e942"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\fixture-timeline.css",
+        "type": "regular",
+        "bytes": 2714,
+        "mode": 33206,
+        "mtime_ns": "1792217703955410800",
+        "inode": "7599824371905225",
+        "device": "3668076944",
+        "sha256": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\index.html",
+        "type": "regular",
+        "bytes": 9090,
+        "mode": 33206,
+        "mtime_ns": "1792217704293999000",
+        "inode": "7318349395194570",
+        "device": "3668076944",
+        "sha256": "73171545f26fd82cfaf425ada9ba59b91bd16c5e68118a92152edd9a5c62155c"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\package.json",
+        "type": "regular",
+        "bytes": 305,
+        "mode": 33206,
+        "mtime_ns": "1792217704637540800",
+        "inode": "8725724278747851",
+        "device": "3668076944",
+        "sha256": "d73623f2519ca0992e562da7170645d83e103a895dc04479159e6504d5829573"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\record-view.css",
+        "type": "regular",
+        "bytes": 7744,
+        "mode": 33206,
+        "mtime_ns": "1792217704782550500",
+        "inode": "8444249302037196",
+        "device": "3668076944",
+        "sha256": "fbbe1f1287397341c6cf20874dbfbf0525e2d3708979753193e468f7baf510c9"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\record.html",
+        "type": "regular",
+        "bytes": 2461,
+        "mode": 33206,
+        "mtime_ns": "1792217705011498000",
+        "inode": "8444249302037197",
+        "device": "3668076944",
+        "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-checkpoint-import.css",
+        "type": "regular",
+        "bytes": 1317,
+        "mode": 33206,
+        "mtime_ns": "1792217705352645400",
+        "inode": "7881299348615886",
+        "device": "3668076944",
+        "sha256": "45587c17cf2db359652b88553b66c88898abb9fa4108380dd6dcb5a8f8e67f2f"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-compare.css",
+        "type": "regular",
+        "bytes": 6818,
+        "mode": 33206,
+        "mtime_ns": "1792217705574399300",
+        "inode": "8162774325326543",
+        "device": "3668076944",
+        "sha256": "22589796d131cbaa0adb049a0f4bf4c5f1f96f0791f6561221d120d6b418a02b"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-compare.html",
+        "type": "regular",
+        "bytes": 5874,
+        "mode": 33206,
+        "mtime_ns": "1792217705921413900",
+        "inode": "7881299348615888",
+        "device": "3668076944",
+        "sha256": "fc10e883961d9c9c8f61f72b00cb4376b986465dad569bb9081d1ba8d4a0421a"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-csv.css",
+        "type": "regular",
+        "bytes": 3976,
+        "mode": 33206,
+        "mtime_ns": "1792217706258313700",
+        "inode": "7881299348615889",
+        "device": "3668076944",
+        "sha256": "f12f3635813369079b4a154f2e0c59b8600f18d4010984e90c088b4ee078bb04"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-csv.html",
+        "type": "regular",
+        "bytes": 5762,
+        "mode": 33206,
+        "mtime_ns": "1792217706599790000",
+        "inode": "8725724278747859",
+        "device": "3668076944",
+        "sha256": "ea72eb1b8642ce1a2db9d4f28537a1b38f87d1e5b07e52627b4fb56f5cb22758"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-history.css",
+        "type": "regular",
+        "bytes": 2801,
+        "mode": 33206,
+        "mtime_ns": "1792217706957879000",
+        "inode": "17451448556778140",
+        "device": "3668076944",
+        "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-library.css",
+        "type": "regular",
+        "bytes": 3305,
+        "mode": 33206,
+        "mtime_ns": "1792217707189611000",
+        "inode": "8725724278747861",
+        "device": "3668076944",
+        "sha256": "2d8686f72c6aaf6a2308026307b4f713df5cdf5faa73c87e16108074ff08a7c0"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-library.html",
+        "type": "regular",
+        "bytes": 3047,
+        "mode": 33206,
+        "mtime_ns": "1792217707539717400",
+        "inode": "5910974511641302",
+        "device": "3668076944",
+        "sha256": "c60dde7118e4cb51d3eac9391b40d410e2b5e3916142ac280ee37ba415af4e35"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-workspace.css",
+        "type": "regular",
+        "bytes": 5277,
+        "mode": 33206,
+        "mtime_ns": "1792217707958464500",
+        "inode": "7599824371905239",
+        "device": "3668076944",
+        "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope.html",
+        "type": "regular",
+        "bytes": 13971,
+        "mode": 33206,
+        "mtime_ns": "1792217708189298200",
+        "inode": "8725724278747864",
+        "device": "3668076944",
+        "sha256": "3179243d12803701b4255146853d2ba26d9746bfbcff2de891c9335d0f482cd2"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scripts\\serve.mjs",
+        "type": "regular",
+        "bytes": 950,
+        "mode": 33206,
+        "mtime_ns": "1792217708535782600",
+        "inode": "8162774325326553",
+        "device": "3668076944",
+        "sha256": "f5c195cc4aa83a4eb7d1ead87dd64896d87da2fdce9c31de5c6a84d12f398f87"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\agents.mjs",
+        "type": "regular",
+        "bytes": 1599,
+        "mode": 33206,
+        "mtime_ns": "1792217708770603600",
+        "inode": "8725724278747866",
+        "device": "3668076944",
+        "sha256": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\fixture-record.mjs",
+        "type": "regular",
+        "bytes": 1615,
+        "mode": 33206,
+        "mtime_ns": "1792217709226366300",
+        "inode": "8444249302037211",
+        "device": "3668076944",
+        "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\fixture-timeline-view.mjs",
+        "type": "regular",
+        "bytes": 3336,
+        "mode": 33206,
+        "mtime_ns": "1792217709566989200",
+        "inode": "8162774325326556",
+        "device": "3668076944",
+        "sha256": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\fixture-timeline.mjs",
+        "type": "regular",
+        "bytes": 3054,
+        "mode": 33206,
+        "mtime_ns": "1792217709904809600",
+        "inode": "8162774325326557",
+        "device": "3668076944",
+        "sha256": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\ledger.mjs",
+        "type": "regular",
+        "bytes": 12684,
+        "mode": 33206,
+        "mtime_ns": "1792217709910338000",
+        "inode": "7881299348615902",
+        "device": "3668076944",
+        "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\payment-status.mjs",
+        "type": "regular",
+        "bytes": 1959,
+        "mode": 33206,
+        "mtime_ns": "1792217710135130800",
+        "inode": "7881299348615903",
+        "device": "3668076944",
+        "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\record-event-filter.mjs",
+        "type": "regular",
+        "bytes": 6022,
+        "mode": 33206,
+        "mtime_ns": "1792217710364820700",
+        "inode": "8162774325326560",
+        "device": "3668076944",
+        "sha256": "1dab1cb2c2f38deb763943bf45149a13655317dac07641f3e6db96fab21e64bd"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\record-event-search.mjs",
+        "type": "regular",
+        "bytes": 743,
+        "mode": 33206,
+        "mtime_ns": "1792217710701484000",
+        "inode": "7599824371905249",
+        "device": "3668076944",
+        "sha256": "757f5ca3c8f1808e806fe62004f251b905006ffcd4210167314e40e3ae2c4434"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\record-reader.mjs",
+        "type": "regular",
+        "bytes": 5111,
+        "mode": 33206,
+        "mtime_ns": "1792217711085356600",
+        "inode": "7881299348615906",
+        "device": "3668076944",
+        "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\record-review-download.mjs",
+        "type": "regular",
+        "bytes": 1726,
+        "mode": 33206,
+        "mtime_ns": "1792217711405926400",
+        "inode": "7881299348615907",
+        "device": "3668076944",
+        "sha256": "bdcc20b72776eb272cf122e9c81a7d7d200a883038bc67f6e8b76ec813319b32"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\record-review-export.mjs",
+        "type": "regular",
+        "bytes": 5697,
+        "mode": 33206,
+        "mtime_ns": "1792217711750650800",
+        "inode": "7881299348615908",
+        "device": "3668076944",
+        "sha256": "596fee6a19a14ce360b6a9be07107324cef41cffadd38a89de3debd19b3ba08a"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\record-view.mjs",
+        "type": "regular",
+        "bytes": 9046,
+        "mode": 33206,
+        "mtime_ns": "1792217711981344500",
+        "inode": "19703248370463408",
+        "device": "3668076944",
+        "sha256": "66410f875c2068691b3358d4d162d1b188a56a9b8f5a648d96c7d952882ffea6"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-checkpoint-csv-ui.mjs",
+        "type": "regular",
+        "bytes": 6509,
+        "mode": 33206,
+        "mtime_ns": "1792217712332950200",
+        "inode": "8162774325326566",
+        "device": "3668076944",
+        "sha256": "66884f32de17c02f077b32e6e2b26030f4f1b81499f90b404939128dc7d0dcce"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-checkpoint-csv.mjs",
+        "type": "regular",
+        "bytes": 4675,
+        "mode": 33206,
+        "mtime_ns": "1792217712568182800",
+        "inode": "9007199255458535",
+        "device": "3668076944",
+        "sha256": "acd8e78d1b2c2a999f6f1d8c4f154bf293d138471832a281293029c048e2e224"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-checkpoint-import-ui.mjs",
+        "type": "regular",
+        "bytes": 7206,
+        "mode": 33206,
+        "mtime_ns": "1792217712795285200",
+        "inode": "8725724278747880",
+        "device": "3668076944",
+        "sha256": "850e8ef9afcc9c63e013d097839a823615d5e66389acf4a970897ce114843195"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-checkpoint-import.mjs",
+        "type": "regular",
+        "bytes": 1771,
+        "mode": 33206,
+        "mtime_ns": "1792217713020412100",
+        "inode": "8444249302037225",
+        "device": "3668076944",
+        "sha256": "89019640fbe3a9a5f3955566bb3fd6e7d838fc30c984e41cd24fb43dd6f9788e"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-compare-ui.mjs",
+        "type": "regular",
+        "bytes": 13887,
+        "mode": 33206,
+        "mtime_ns": "1792217713023411200",
+        "inode": "8162774325326570",
+        "device": "3668076944",
+        "sha256": "041d36d0254925de033d4596ac86310d8c762ef92b32080e5fa4403debc47c2f"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-compare.mjs",
+        "type": "regular",
+        "bytes": 7743,
+        "mode": 33206,
+        "mtime_ns": "1792217713362512900",
+        "inode": "8162774325326571",
+        "device": "3668076944",
+        "sha256": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-comparison-export.mjs",
+        "type": "regular",
+        "bytes": 10702,
+        "mode": 33206,
+        "mtime_ns": "1792217713591956500",
+        "inode": "8162774325326572",
+        "device": "3668076944",
+        "sha256": "2fec30a548cdb8f304c52c3c479e06bd8aaad10ee57c53bbbc1ec5b09e272978"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-draft-removal.mjs",
+        "type": "regular",
+        "bytes": 1399,
+        "mode": 33206,
+        "mtime_ns": "1792217713823118000",
+        "inode": "7881299348615917",
+        "device": "3668076944",
+        "sha256": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-history-view.mjs",
+        "type": "regular",
+        "bytes": 5728,
+        "mode": 33206,
+        "mtime_ns": "1792217714168879200",
+        "inode": "7881299348615918",
+        "device": "3668076944",
+        "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-history.mjs",
+        "type": "regular",
+        "bytes": 4297,
+        "mode": 33206,
+        "mtime_ns": "1792217714391857600",
+        "inode": "8162774325326575",
+        "device": "3668076944",
+        "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-library-ui.mjs",
+        "type": "regular",
+        "bytes": 6248,
+        "mode": 33206,
+        "mtime_ns": "1792217714725262500",
+        "inode": "7881299348615920",
+        "device": "3668076944",
+        "sha256": "7631162c5b7c75ce98434014161adb235c4bf07f8a7d42c96445681cd7a11349"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-library.mjs",
+        "type": "regular",
+        "bytes": 3550,
+        "mode": 33206,
+        "mtime_ns": "1792217714958000700",
+        "inode": "7881299348615921",
+        "device": "3668076944",
+        "sha256": "8950f2ca8e2ddef094b630260b93ad8580989eb44fe0a3d96bb0baf2f9364ad4"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-plan.mjs",
+        "type": "regular",
+        "bytes": 7200,
+        "mode": 33206,
+        "mtime_ns": "1792217715296491900",
+        "inode": "8162774325326578",
+        "device": "3668076944",
+        "sha256": "88a22b221c09eaba16cf78027958ee504b72624638193b1e029d3c15ff177046"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-review-export.mjs",
+        "type": "regular",
+        "bytes": 8253,
+        "mode": 33206,
+        "mtime_ns": "1792217715637487300",
+        "inode": "8162774325326579",
+        "device": "3668076944",
+        "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-revision-draft.mjs",
+        "type": "regular",
+        "bytes": 667,
+        "mode": 33206,
+        "mtime_ns": "1792217715973499600",
+        "inode": "8162774325326580",
+        "device": "3668076944",
+        "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-workspace-record.mjs",
+        "type": "regular",
+        "bytes": 7421,
+        "mode": 33206,
+        "mtime_ns": "1792217715977268200",
+        "inode": "7599824371905269",
+        "device": "3668076944",
+        "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-workspace.mjs",
+        "type": "regular",
+        "bytes": 26338,
+        "mode": 33206,
+        "mtime_ns": "1792217716322138000",
+        "inode": "7318349395194615",
+        "device": "3668076944",
+        "sha256": "39f2abe72f1ebaf09cf687177a858632bacb2a7d4708f0eb960cd23cc07a6e38"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\styles.css",
+        "type": "regular",
+        "bytes": 9444,
+        "mode": 33206,
+        "mtime_ns": "1792217716657984000",
+        "inode": "6755399441773304",
+        "device": "3668076944",
+        "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\tests\\record-event-disclosure-controls.test.mjs",
+        "type": "regular",
+        "bytes": 14859,
+        "mode": 33206,
+        "mtime_ns": "1792217717008792300",
+        "inode": "8444249302037202",
+        "device": "3668076944",
+        "sha256": "0bc6b76f9d691d004972a80434572fcfb6aa459b15ae9383e0228e6a58ab5bbc"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\tests\\record-event-search.test.mjs",
+        "type": "regular",
+        "bytes": 11813,
+        "mode": 33206,
+        "mtime_ns": "1792217717140076800",
+        "inode": "7318349395194618",
+        "device": "3668076944",
+        "sha256": "f5bfc74f672f4ed3fa9db23ac5d22d1ed0adb6854b6bcc4bab60321fe4035207"
+      }
+    ],
+    "node": {
+      "path": "C:\\Program Files\\nodejs\\node.exe",
+      "type": "regular",
+      "bytes": 92825416,
+      "mode": 33206,
+      "mtime_ns": "1785781088000000000",
+      "inode": "562949955424144",
+      "device": "3668076944",
+      "sha256": "3602f2bb1a10f2cbab4c36886218a33c1ab3db87290e73b033c46c77147d0237"
+    },
+    "browser": {
+      "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+      "type": "regular",
+      "bytes": 5438280,
+      "mode": 33206,
+      "mtime_ns": "1791427914389217600",
+      "inode": "8444249301898381",
+      "device": "3668076944",
+      "sha256": "4bb4545b4ab80a3cf463a588ce570ca42de38fe6db16e3baeb0798ac75b4648b"
+    },
+    "config": {
+      "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\browser-config.json",
+      "type": "regular",
+      "bytes": 24668,
+      "mode": 33206,
+      "mtime_ns": "1792217717370500000",
+      "inode": "7318349395194619",
+      "device": "3668076944",
+      "sha256": "99ca2f79e8b57a0ec172de5c8da42c6224b291282392a1b447851770cdada883"
+    }
+  },
+  "after": {
+    "inputs": [
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\controls\\expected-review.html",
+        "type": "regular",
+        "bytes": 13519,
+        "mode": 33206,
+        "mtime_ns": "1792217701746490700",
+        "inode": "8444249302037185",
+        "device": "3668076944",
+        "sha256": "414e1212721e42d8cd827167090cf446ed5dd2f039f1538d636392bf4c7e52f4"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\controls\\receive.cjs",
+        "type": "regular",
+        "bytes": 29542,
+        "mode": 33206,
+        "mtime_ns": "1792217701972826300",
+        "inode": "8162774325326530",
+        "device": "3668076944",
+        "sha256": "11f24f051fe07c78d7f54409d2ce0a3d210baa9a00c70dc6549018a05e6f7154"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\LICENSE",
+        "type": "regular",
+        "bytes": 807,
+        "mode": 33206,
+        "mtime_ns": "1792217702136331100",
+        "inode": "7599824371905219",
+        "device": "3668076944",
+        "sha256": "3f25841c9348bbf34a89b246075022b77ab309bf6d5102b165a1bf900c5c246f"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\OPEN_FIRST.md",
+        "type": "regular",
+        "bytes": 5183,
+        "mode": 33206,
+        "mtime_ns": "1792217702469183500",
+        "inode": "7318349395194564",
+        "device": "3668076944",
+        "sha256": "50506354ae0d5c83a8c4ee44cd82ad4c06143b70395f00f8176f0f5efcbcd690"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\SOURCE.json",
+        "type": "regular",
+        "bytes": 19831,
+        "mode": 33206,
+        "mtime_ns": "1792217702695768700",
+        "inode": "7599824371905221",
+        "device": "3668076944",
+        "sha256": "1399d64ffa07349d77b45ba61872da1cf34b70470f1e99af6cc40584398eeda7"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\app.mjs",
+        "type": "regular",
+        "bytes": 5366,
+        "mode": 33206,
+        "mtime_ns": "1792217702925393700",
+        "inode": "7318349395194566",
+        "device": "3668076944",
+        "sha256": "a33c3519e59445e4ed6c19a2beec81005482e34b5e6bd396f10916cfbfd96a24"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\docs\\record-event-search.md",
+        "type": "regular",
+        "bytes": 9310,
+        "mode": 33206,
+        "mtime_ns": "1792217703155926100",
+        "inode": "7036874418483911",
+        "device": "3668076944",
+        "sha256": "a3063a6a8e685298c0763458fd7ef4e1da2618632ae0a5fde2d69815421d0d9e"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\examples\\shown-events.fixture.json",
+        "type": "regular",
+        "bytes": 3520,
+        "mode": 33206,
+        "mtime_ns": "1792217703605310700",
+        "inode": "7318349395194568",
+        "device": "3668076944",
+        "sha256": "8639e3ac91311f7b3d50082bc7424a605f7d83fbc49b1a40b7916399cda6e942"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\fixture-timeline.css",
+        "type": "regular",
+        "bytes": 2714,
+        "mode": 33206,
+        "mtime_ns": "1792217703955410800",
+        "inode": "7599824371905225",
+        "device": "3668076944",
+        "sha256": "d97b36709e3d194727aa87f6579e44dc9a069bbc67d1cfbad85cc0d23abb422b"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\index.html",
+        "type": "regular",
+        "bytes": 9090,
+        "mode": 33206,
+        "mtime_ns": "1792217704293999000",
+        "inode": "7318349395194570",
+        "device": "3668076944",
+        "sha256": "73171545f26fd82cfaf425ada9ba59b91bd16c5e68118a92152edd9a5c62155c"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\package.json",
+        "type": "regular",
+        "bytes": 305,
+        "mode": 33206,
+        "mtime_ns": "1792217704637540800",
+        "inode": "8725724278747851",
+        "device": "3668076944",
+        "sha256": "d73623f2519ca0992e562da7170645d83e103a895dc04479159e6504d5829573"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\record-view.css",
+        "type": "regular",
+        "bytes": 7744,
+        "mode": 33206,
+        "mtime_ns": "1792217704782550500",
+        "inode": "8444249302037196",
+        "device": "3668076944",
+        "sha256": "fbbe1f1287397341c6cf20874dbfbf0525e2d3708979753193e468f7baf510c9"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\record.html",
+        "type": "regular",
+        "bytes": 2461,
+        "mode": 33206,
+        "mtime_ns": "1792217705011498000",
+        "inode": "8444249302037197",
+        "device": "3668076944",
+        "sha256": "11cac040eea1544aa8dcc1e1c24a4c0f3d23f54b077d52982a2daa05a0b5c3a4"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-checkpoint-import.css",
+        "type": "regular",
+        "bytes": 1317,
+        "mode": 33206,
+        "mtime_ns": "1792217705352645400",
+        "inode": "7881299348615886",
+        "device": "3668076944",
+        "sha256": "45587c17cf2db359652b88553b66c88898abb9fa4108380dd6dcb5a8f8e67f2f"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-compare.css",
+        "type": "regular",
+        "bytes": 6818,
+        "mode": 33206,
+        "mtime_ns": "1792217705574399300",
+        "inode": "8162774325326543",
+        "device": "3668076944",
+        "sha256": "22589796d131cbaa0adb049a0f4bf4c5f1f96f0791f6561221d120d6b418a02b"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-compare.html",
+        "type": "regular",
+        "bytes": 5874,
+        "mode": 33206,
+        "mtime_ns": "1792217705921413900",
+        "inode": "7881299348615888",
+        "device": "3668076944",
+        "sha256": "fc10e883961d9c9c8f61f72b00cb4376b986465dad569bb9081d1ba8d4a0421a"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-csv.css",
+        "type": "regular",
+        "bytes": 3976,
+        "mode": 33206,
+        "mtime_ns": "1792217706258313700",
+        "inode": "7881299348615889",
+        "device": "3668076944",
+        "sha256": "f12f3635813369079b4a154f2e0c59b8600f18d4010984e90c088b4ee078bb04"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-csv.html",
+        "type": "regular",
+        "bytes": 5762,
+        "mode": 33206,
+        "mtime_ns": "1792217706599790000",
+        "inode": "8725724278747859",
+        "device": "3668076944",
+        "sha256": "ea72eb1b8642ce1a2db9d4f28537a1b38f87d1e5b07e52627b4fb56f5cb22758"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-history.css",
+        "type": "regular",
+        "bytes": 2801,
+        "mode": 33206,
+        "mtime_ns": "1792217706957879000",
+        "inode": "17451448556778140",
+        "device": "3668076944",
+        "sha256": "79e305c0df50034ffac3accc555ee4bf39a1ed15720350a09474e186462c6c69"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-library.css",
+        "type": "regular",
+        "bytes": 3305,
+        "mode": 33206,
+        "mtime_ns": "1792217707189611000",
+        "inode": "8725724278747861",
+        "device": "3668076944",
+        "sha256": "2d8686f72c6aaf6a2308026307b4f713df5cdf5faa73c87e16108074ff08a7c0"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-library.html",
+        "type": "regular",
+        "bytes": 3047,
+        "mode": 33206,
+        "mtime_ns": "1792217707539717400",
+        "inode": "5910974511641302",
+        "device": "3668076944",
+        "sha256": "c60dde7118e4cb51d3eac9391b40d410e2b5e3916142ac280ee37ba415af4e35"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope-workspace.css",
+        "type": "regular",
+        "bytes": 5277,
+        "mode": 33206,
+        "mtime_ns": "1792217707958464500",
+        "inode": "7599824371905239",
+        "device": "3668076944",
+        "sha256": "c36abd494fc61e638182517036f424ffb69c32608fece56334777c67a8df6a20"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scope.html",
+        "type": "regular",
+        "bytes": 13971,
+        "mode": 33206,
+        "mtime_ns": "1792217708189298200",
+        "inode": "8725724278747864",
+        "device": "3668076944",
+        "sha256": "3179243d12803701b4255146853d2ba26d9746bfbcff2de891c9335d0f482cd2"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\scripts\\serve.mjs",
+        "type": "regular",
+        "bytes": 950,
+        "mode": 33206,
+        "mtime_ns": "1792217708535782600",
+        "inode": "8162774325326553",
+        "device": "3668076944",
+        "sha256": "f5c195cc4aa83a4eb7d1ead87dd64896d87da2fdce9c31de5c6a84d12f398f87"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\agents.mjs",
+        "type": "regular",
+        "bytes": 1599,
+        "mode": 33206,
+        "mtime_ns": "1792217708770603600",
+        "inode": "8725724278747866",
+        "device": "3668076944",
+        "sha256": "0f61affd858355b3a5d95626c59321ce9ee3e06f47fb1a74ed478d1d8d5f9af2"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\fixture-record.mjs",
+        "type": "regular",
+        "bytes": 1615,
+        "mode": 33206,
+        "mtime_ns": "1792217709226366300",
+        "inode": "8444249302037211",
+        "device": "3668076944",
+        "sha256": "5533a5a914f0459ea289594ed4925fce580e886547897eb452db982ab1a31d9a"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\fixture-timeline-view.mjs",
+        "type": "regular",
+        "bytes": 3336,
+        "mode": 33206,
+        "mtime_ns": "1792217709566989200",
+        "inode": "8162774325326556",
+        "device": "3668076944",
+        "sha256": "9cace9708954026c63819fe6d34718a4c5c344087fa25081cb9b1229913ec4cd"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\fixture-timeline.mjs",
+        "type": "regular",
+        "bytes": 3054,
+        "mode": 33206,
+        "mtime_ns": "1792217709904809600",
+        "inode": "8162774325326557",
+        "device": "3668076944",
+        "sha256": "a31b7739c005a8d7cc372835a66db2ee3348a77eca4fb1fb576d20717f048b55"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\ledger.mjs",
+        "type": "regular",
+        "bytes": 12684,
+        "mode": 33206,
+        "mtime_ns": "1792217709910338000",
+        "inode": "7881299348615902",
+        "device": "3668076944",
+        "sha256": "504960dce6d278baef15e90f7cd7c7c57a543d1dcc881aef4225f320fb39ca3c"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\payment-status.mjs",
+        "type": "regular",
+        "bytes": 1959,
+        "mode": 33206,
+        "mtime_ns": "1792217710135130800",
+        "inode": "7881299348615903",
+        "device": "3668076944",
+        "sha256": "3cf9ffd03d4797dc325943005abae3432193ed580cbe04d2a9fbae88525e98ef"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\record-event-filter.mjs",
+        "type": "regular",
+        "bytes": 6022,
+        "mode": 33206,
+        "mtime_ns": "1792217710364820700",
+        "inode": "8162774325326560",
+        "device": "3668076944",
+        "sha256": "1dab1cb2c2f38deb763943bf45149a13655317dac07641f3e6db96fab21e64bd"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\record-event-search.mjs",
+        "type": "regular",
+        "bytes": 743,
+        "mode": 33206,
+        "mtime_ns": "1792217710701484000",
+        "inode": "7599824371905249",
+        "device": "3668076944",
+        "sha256": "757f5ca3c8f1808e806fe62004f251b905006ffcd4210167314e40e3ae2c4434"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\record-reader.mjs",
+        "type": "regular",
+        "bytes": 5111,
+        "mode": 33206,
+        "mtime_ns": "1792217711085356600",
+        "inode": "7881299348615906",
+        "device": "3668076944",
+        "sha256": "78b09f9aa44a143705f28c62a5b5a1fca1f57ab3a8ed1e38a417adf8793c38e8"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\record-review-download.mjs",
+        "type": "regular",
+        "bytes": 1726,
+        "mode": 33206,
+        "mtime_ns": "1792217711405926400",
+        "inode": "7881299348615907",
+        "device": "3668076944",
+        "sha256": "bdcc20b72776eb272cf122e9c81a7d7d200a883038bc67f6e8b76ec813319b32"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\record-review-export.mjs",
+        "type": "regular",
+        "bytes": 5697,
+        "mode": 33206,
+        "mtime_ns": "1792217711750650800",
+        "inode": "7881299348615908",
+        "device": "3668076944",
+        "sha256": "596fee6a19a14ce360b6a9be07107324cef41cffadd38a89de3debd19b3ba08a"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\record-view.mjs",
+        "type": "regular",
+        "bytes": 9046,
+        "mode": 33206,
+        "mtime_ns": "1792217711981344500",
+        "inode": "19703248370463408",
+        "device": "3668076944",
+        "sha256": "66410f875c2068691b3358d4d162d1b188a56a9b8f5a648d96c7d952882ffea6"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-checkpoint-csv-ui.mjs",
+        "type": "regular",
+        "bytes": 6509,
+        "mode": 33206,
+        "mtime_ns": "1792217712332950200",
+        "inode": "8162774325326566",
+        "device": "3668076944",
+        "sha256": "66884f32de17c02f077b32e6e2b26030f4f1b81499f90b404939128dc7d0dcce"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-checkpoint-csv.mjs",
+        "type": "regular",
+        "bytes": 4675,
+        "mode": 33206,
+        "mtime_ns": "1792217712568182800",
+        "inode": "9007199255458535",
+        "device": "3668076944",
+        "sha256": "acd8e78d1b2c2a999f6f1d8c4f154bf293d138471832a281293029c048e2e224"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-checkpoint-import-ui.mjs",
+        "type": "regular",
+        "bytes": 7206,
+        "mode": 33206,
+        "mtime_ns": "1792217712795285200",
+        "inode": "8725724278747880",
+        "device": "3668076944",
+        "sha256": "850e8ef9afcc9c63e013d097839a823615d5e66389acf4a970897ce114843195"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-checkpoint-import.mjs",
+        "type": "regular",
+        "bytes": 1771,
+        "mode": 33206,
+        "mtime_ns": "1792217713020412100",
+        "inode": "8444249302037225",
+        "device": "3668076944",
+        "sha256": "89019640fbe3a9a5f3955566bb3fd6e7d838fc30c984e41cd24fb43dd6f9788e"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-compare-ui.mjs",
+        "type": "regular",
+        "bytes": 13887,
+        "mode": 33206,
+        "mtime_ns": "1792217713023411200",
+        "inode": "8162774325326570",
+        "device": "3668076944",
+        "sha256": "041d36d0254925de033d4596ac86310d8c762ef92b32080e5fa4403debc47c2f"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-compare.mjs",
+        "type": "regular",
+        "bytes": 7743,
+        "mode": 33206,
+        "mtime_ns": "1792217713362512900",
+        "inode": "8162774325326571",
+        "device": "3668076944",
+        "sha256": "8166881faaf8ad37be279842a5f181c92499068fd1dc50cb8a28f250576f266c"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-comparison-export.mjs",
+        "type": "regular",
+        "bytes": 10702,
+        "mode": 33206,
+        "mtime_ns": "1792217713591956500",
+        "inode": "8162774325326572",
+        "device": "3668076944",
+        "sha256": "2fec30a548cdb8f304c52c3c479e06bd8aaad10ee57c53bbbc1ec5b09e272978"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-draft-removal.mjs",
+        "type": "regular",
+        "bytes": 1399,
+        "mode": 33206,
+        "mtime_ns": "1792217713823118000",
+        "inode": "7881299348615917",
+        "device": "3668076944",
+        "sha256": "d0afedee9efd9cf166bb0bf7977e9790b380ab8bd41c0d2931fb94434bd1b224"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-history-view.mjs",
+        "type": "regular",
+        "bytes": 5728,
+        "mode": 33206,
+        "mtime_ns": "1792217714168879200",
+        "inode": "7881299348615918",
+        "device": "3668076944",
+        "sha256": "d3b4ab0a424a7d54a2da77afdc59da0bd59099b17f63a018324804b1769be51b"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-history.mjs",
+        "type": "regular",
+        "bytes": 4297,
+        "mode": 33206,
+        "mtime_ns": "1792217714391857600",
+        "inode": "8162774325326575",
+        "device": "3668076944",
+        "sha256": "4024f6a1102d2dff8d21ee2984319d3e1a4ee1686086e0260a9e7b4167b39c88"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-library-ui.mjs",
+        "type": "regular",
+        "bytes": 6248,
+        "mode": 33206,
+        "mtime_ns": "1792217714725262500",
+        "inode": "7881299348615920",
+        "device": "3668076944",
+        "sha256": "7631162c5b7c75ce98434014161adb235c4bf07f8a7d42c96445681cd7a11349"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-library.mjs",
+        "type": "regular",
+        "bytes": 3550,
+        "mode": 33206,
+        "mtime_ns": "1792217714958000700",
+        "inode": "7881299348615921",
+        "device": "3668076944",
+        "sha256": "8950f2ca8e2ddef094b630260b93ad8580989eb44fe0a3d96bb0baf2f9364ad4"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-plan.mjs",
+        "type": "regular",
+        "bytes": 7200,
+        "mode": 33206,
+        "mtime_ns": "1792217715296491900",
+        "inode": "8162774325326578",
+        "device": "3668076944",
+        "sha256": "88a22b221c09eaba16cf78027958ee504b72624638193b1e029d3c15ff177046"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-review-export.mjs",
+        "type": "regular",
+        "bytes": 8253,
+        "mode": 33206,
+        "mtime_ns": "1792217715637487300",
+        "inode": "8162774325326579",
+        "device": "3668076944",
+        "sha256": "157f6ab436464d383023dee99fc2839530c7541b42e0f1672a1458fa41174397"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-revision-draft.mjs",
+        "type": "regular",
+        "bytes": 667,
+        "mode": 33206,
+        "mtime_ns": "1792217715973499600",
+        "inode": "8162774325326580",
+        "device": "3668076944",
+        "sha256": "56d4e15441a28676d53d1ce10d73c363c43246f1057251895fec255c0283d61e"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-workspace-record.mjs",
+        "type": "regular",
+        "bytes": 7421,
+        "mode": 33206,
+        "mtime_ns": "1792217715977268200",
+        "inode": "7599824371905269",
+        "device": "3668076944",
+        "sha256": "03efe794b271dde38021c720e39bc15f73dc5eed9b05117b1d04406fc2847a85"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\src\\scope-workspace.mjs",
+        "type": "regular",
+        "bytes": 26338,
+        "mode": 33206,
+        "mtime_ns": "1792217716322138000",
+        "inode": "7318349395194615",
+        "device": "3668076944",
+        "sha256": "39f2abe72f1ebaf09cf687177a858632bacb2a7d4708f0eb960cd23cc07a6e38"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\styles.css",
+        "type": "regular",
+        "bytes": 9444,
+        "mode": 33206,
+        "mtime_ns": "1792217716657984000",
+        "inode": "6755399441773304",
+        "device": "3668076944",
+        "sha256": "4a95ed1901f70782832ae8a90cfe0cea1d637669adb0a5a03213b23ac1468f69"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\tests\\record-event-disclosure-controls.test.mjs",
+        "type": "regular",
+        "bytes": 14859,
+        "mode": 33206,
+        "mtime_ns": "1792217717008792300",
+        "inode": "8444249302037202",
+        "device": "3668076944",
+        "sha256": "0bc6b76f9d691d004972a80434572fcfb6aa459b15ae9383e0228e6a58ab5bbc"
+      },
+      {
+        "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\tests\\record-event-search.test.mjs",
+        "type": "regular",
+        "bytes": 11813,
+        "mode": 33206,
+        "mtime_ns": "1792217717140076800",
+        "inode": "7318349395194618",
+        "device": "3668076944",
+        "sha256": "f5bfc74f672f4ed3fa9db23ac5d22d1ed0adb6854b6bcc4bab60321fe4035207"
+      }
+    ],
+    "node": {
+      "path": "C:\\Program Files\\nodejs\\node.exe",
+      "type": "regular",
+      "bytes": 92825416,
+      "mode": 33206,
+      "mtime_ns": "1785781088000000000",
+      "inode": "562949955424144",
+      "device": "3668076944",
+      "sha256": "3602f2bb1a10f2cbab4c36886218a33c1ab3db87290e73b033c46c77147d0237"
+    },
+    "browser": {
+      "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+      "type": "regular",
+      "bytes": 5438280,
+      "mode": 33206,
+      "mtime_ns": "1791427914389217600",
+      "inode": "8444249301898381",
+      "device": "3668076944",
+      "sha256": "4bb4545b4ab80a3cf463a588ce570ca42de38fe6db16e3baeb0798ac75b4648b"
+    },
+    "config": {
+      "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\browser-config.json",
+      "type": "regular",
+      "bytes": 24668,
+      "mode": 33206,
+      "mtime_ns": "1792217717370500000",
+      "inode": "7318349395194619",
+      "device": "3668076944",
+      "sha256": "99ca2f79e8b57a0ec172de5c8da42c6224b291282392a1b447851770cdada883"
+    }
+  },
+  "source_revision": "dcad391d11a66a43df32ae1051a48c5ebd22ff34",
+  "fixture": {
+    "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\kit\\examples\\shown-events.fixture.json",
+    "type": "regular",
+    "bytes": 3520,
+    "mode": 33206,
+    "mtime_ns": "1792217703605310700",
+    "inode": "7318349395194568",
+    "device": "3668076944",
+    "sha256": "8639e3ac91311f7b3d50082bc7424a605f7d83fbc49b1a40b7916399cda6e942"
+  },
+  "expected_review": {
+    "path": "C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\controls\\expected-review.html",
+    "type": "regular",
+    "bytes": 13519,
+    "mode": 33206,
+    "mtime_ns": "1792217701746490700",
+    "inode": "8444249302037185",
+    "device": "3668076944",
+    "sha256": "414e1212721e42d8cd827167090cf446ed5dd2f039f1538d636392bf4c7e52f4"
+  },
+  "origin": "http://127.0.0.1:50919",
+  "browser": {
+    "exe": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "argv": [
+      "--headless=new",
+      "--user-data-dir=C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\browser-v1\\profile",
+      "--remote-debugging-address=127.0.0.1",
+      "--remote-debugging-port=0",
+      "--enable-automation",
+      "--no-first-run",
+      "--no-default-browser-check",
+      "--window-size=1360,1000",
+      "about:blank"
+    ],
+    "spawned_at": "2026-10-17T06:20:36.906Z",
+    "stdout_bytes": 0,
+    "stderr_bytes": 2788,
+    "stdout_end": false,
+    "stderr_end": false,
+    "direct_pid": 31664,
+    "version": {
+      "protocolVersion": "1.3",
+      "product": "Edg/155.0.4283.45",
+      "revision": "@50f24ef2aa5369a074b8888b7db82d9c0652d642",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+      "jsVersion": "15.5.9.4"
+    },
+    "command_line": {
+      "arguments": [
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "--headless=new",
+        "--user-data-dir=C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\browser-v1\\profile",
+        "--remote-debugging-address=127.0.0.1",
+        "--remote-debugging-port=0",
+        "--enable-automation",
+        "--no-first-run",
+        "--no-default-browser-check",
+        "--window-size=1360,1000",
+        "--noerrdialogs",
+        "--flag-switches-begin",
+        "--flag-switches-end",
+        "about:blank"
+      ]
+    },
+    "browser_process_observation": [
+      {
+        "type": "browser",
+        "id": 31664,
+        "cpuTime": 2.548905
+      }
+    ],
+    "target": "55299DC908B153A31CA664AC5E737843"
+  },
+  "desktop_geometry": {
+    "title": "Northstar onboarding refresh",
+    "filename": "shown-events.fixture.json",
+    "status": "Opened shown-events.fixture.json. 8 events; 2 approvals recorded. The saved fields match the event history.",
+    "error": null,
+    "query": "CAP-SHOWN-001",
+    "checkpoint": "journey",
+    "type": "paypal.webhook.received",
+    "active": {
+      "id": "record-events-expand-shown",
+      "tag": "BUTTON",
+      "text": "Expand shown events"
+    },
+    "count": "Showing 2 of 8 recorded events. First-run checklist · Webhook received · Search: “CAP-SHOWN-001”.",
+    "announcement": "Expanded 2 shown events.",
+    "emptyVisible": false,
+    "expandDisabled": false,
+    "collapseDisabled": false,
+    "totals": [
+      [
+        "Project cap",
+        "$1,200.00"
+      ],
+      [
+        "Approvals recorded",
+        "2 / 3"
+      ],
+      [
+        "Captures recorded",
+        "$400.00"
+      ],
+      [
+        "Remaining in fixture",
+        "$800.00"
+      ]
+    ],
+    "evidence": [
+      "Visible <literal> evidence\nKeyboard route.",
+      "Second fictional review."
+    ],
+    "rows": [
+      {
+        "seq": 1,
+        "hidden": true,
+        "open": true,
+        "raw": "{\n  \"seq\": 1,\n  \"at\": \"T+001\",\n  \"type\": \"checkpoint.approved\",\n  \"checkpointId\": \"journey\",\n  \"approver\": \"human-reviewer\",\n  \"acceptedEvidence\": \"Visible <literal> evidence\\nKeyboard route.\"\n}"
+      },
+      {
+        "seq": 2,
+        "hidden": true,
+        "open": false,
+        "raw": "{\n  \"seq\": 2,\n  \"at\": \"T+002\",\n  \"type\": \"paypal.order.created\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"amount\": 40000,\n  \"currency\": \"USD\",\n  \"environment\": \"sandbox\"\n}"
+      },
+      {
+        "seq": 3,
+        "hidden": true,
+        "open": false,
+        "raw": "{\n  \"seq\": 3,\n  \"at\": \"T+003\",\n  \"type\": \"paypal.capture.requested\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"environment\": \"sandbox\"\n}"
+      },
+      {
+        "seq": 4,
+        "hidden": true,
+        "open": false,
+        "raw": "{\n  \"seq\": 4,\n  \"at\": \"T+004\",\n  \"type\": \"paypal.capture.response_lost\",\n  \"checkpointId\": \"journey\",\n  \"orderId\": \"SANDBOX-JOURNEY\",\n  \"outcome\": \"unknown\"\n}"
+      },
+      {
+        "seq": 5,
+        "hidden": false,
+        "open": true,
+        "raw": "{\n  \"seq\": 5,\n  \"at\": \"T+005\",\n  \"type\": \"paypal.webhook.received\",\n  \"checkpointId\": \"journey\",\n  \"eventId\": \"WH-SHOWN-001\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"duplicate\": false,\n  \"amount\": 40000,\n  \"currency\": \"USD\"\n}"
+      },
+      {
+        "seq": 6,
+        "hidden": false,
+        "open": true,
+        "raw": "{\n  \"seq\": 6,\n  \"at\": \"T+006\",\n  \"type\": \"paypal.webhook.received\",\n  \"checkpointId\": \"journey\",\n  \"eventId\": \"WH-SHOWN-001\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"duplicate\": true,\n  \"amount\": 40000,\n  \"currency\": \"USD\"\n}"
+      },
+      {
+        "seq": 7,
+        "hidden": true,
+        "open": false,
+        "raw": "{\n  \"seq\": 7,\n  \"at\": \"T+007\",\n  \"type\": \"paypal.capture.reconciled\",\n  \"checkpointId\": \"journey\",\n  \"captureId\": \"CAP-SHOWN-001\",\n  \"outcome\": \"captured\",\n  \"source\": \"sandbox-transaction-lookup\"\n}"
+      },
+      {
+        "seq": 8,
+        "hidden": true,
+        "open": true,
+        "raw": "{\n  \"seq\": 8,\n  \"at\": \"T+008\",\n  \"type\": \"checkpoint.approved\",\n  \"checkpointId\": \"accessibility\",\n  \"approver\": \"human-reviewer\",\n  \"acceptedEvidence\": \"Second fictional review.\"\n}"
+      }
+    ],
+    "controls": [
+      {
+        "id": "record-event-checkpoint",
+        "tag": "SELECT",
+        "text": null,
+        "rect": {
+          "x": 201.5,
+          "y": 477.875,
+          "width": 255.96875,
+          "height": 45
+        }
+      },
+      {
+        "id": "record-event-type",
+        "tag": "SELECT",
+        "text": null,
+        "rect": {
+          "x": 471.46875,
+          "y": 477.875,
+          "width": 255.984375,
+          "height": 45
+        }
+      },
+      {
+        "id": "record-event-query",
+        "tag": "INPUT",
+        "text": null,
+        "rect": {
+          "x": 741.453125,
+          "y": 477.875,
+          "width": 255.984375,
+          "height": 45
+        }
+      },
+      {
+        "id": "",
+        "tag": "BUTTON",
+        "text": "Show all events",
+        "rect": {
+          "x": 1011.4375,
+          "y": 477.875,
+          "width": 132.0625,
+          "height": 45
+        }
+      },
+      {
+        "id": "record-events-expand-shown",
+        "tag": "BUTTON",
+        "text": "Expand shown events",
+        "rect": {
+          "x": 201.5,
+          "y": 536.875,
+          "width": 170.984375,
+          "height": 45
+        }
+      },
+      {
+        "id": "record-events-collapse-shown",
+        "tag": "BUTTON",
+        "text": "Collapse shown events",
+        "rect": {
+          "x": 386.484375,
+          "y": 536.875,
+          "width": 177.984375,
+          "height": 45
+        }
+      }
+    ],
+    "viewport": {
+      "width": 1360,
+      "height": 1000,
+      "documentWidth": 1345
+    },
+    "storage": {
+      "local": 0,
+      "session": 0
+    }
+  },
+  "error": "Error: state did not settle: keyboard_collapse\n    at poll (C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\controls\\receive.cjs:109:9)\n    at async state (C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\controls\\receive.cjs:191:11)\n    at async course (C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\controls\\receive.cjs:234:19)\n    at async main (C:\\Users\\Veria\\hamon-e1438c9d058f-scopesignal-visible-events-82\\controls\\receive.cjs:271:15)",
+  "cleanup_failure": "Normal owned browser closure/drain observations incomplete",
+  "finished_at": "2026-10-17T06:21:39.346Z"
+}

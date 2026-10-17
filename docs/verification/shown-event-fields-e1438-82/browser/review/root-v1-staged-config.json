@@ -1,0 +1,10 @@
+{
+  "schema": "scopesignal.shown-disclosures.root-staged-config-review/1",
+  "status": "PASS",
+  "static_members": 56,
+  "kit_members": 54,
+  "payload_bytes": 374792,
+  "config_bytes": 24668,
+  "config_sha256": "99ca2f79e8b57a0ec172de5c8da42c6224b291282392a1b447851770cdada883",
+  "review": "Complete original stage carrier decoded; exact56 packet body pins and actual Node identities match; bootstrap runtime identities unchanged; product browser not yet executed."
+}

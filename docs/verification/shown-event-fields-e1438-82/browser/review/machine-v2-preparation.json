@@ -1,0 +1,93 @@
+{
+  "schema": "scopesignal.shown-disclosures.machine-v2-preparation-review/1",
+  "status": "ACCEPT_EXCLUSIVE_R2_PREPARATION_AND_FIXED_READBACK_SOURCE",
+  "preparer": {
+    "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/prepare-v2.cjs",
+    "bytes": 4502,
+    "sha256": "bbdf2163835f9bf71c8e4e3ad672f8d900e0a66f934d1fee755161c4e31dfb7c"
+  },
+  "receiver": {
+    "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-browser/receive-v2.cjs",
+    "bytes": 29835,
+    "sha256": "3ab7128af97b68700941e1a44363df074aba70bc2b8d11be2e3afc4e75a90431"
+  },
+  "original_config": {
+    "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/stage-received-v1/browser-config.json",
+    "bytes": 24668,
+    "sha256": "99ca2f79e8b57a0ec172de5c8da42c6224b291282392a1b447851770cdada883"
+  },
+  "original_failed_receipt": {
+    "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v1/browser-v1/receiving.json",
+    "bytes": 94380,
+    "sha256": "1fbe4ced79ca7b8fdeea20c901dc6ad595e71add17ee09d3539a821b2a906c31"
+  },
+  "variants": [
+    {
+      "original": {
+        "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/readback.cjs",
+        "bytes": 3829,
+        "sha256": "f0f7073d8cf92afb73de85c416dbe5ad0c7442b57fedfbbf31a5125bbe7789d9"
+      },
+      "current": {
+        "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/readback-v2.cjs",
+        "bytes": 3835,
+        "sha256": "7feb3c2c6a725d5f3ac58f413c9bb058b4473dfed5b9ec7b5b6b1d37aa616e79"
+      },
+      "complete_forward_and_inverse": true
+    },
+    {
+      "original": {
+        "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/decode-readback.py",
+        "bytes": 5181,
+        "sha256": "9168f83763b927c739b19155de64683a63944ff3be4b7a281ab4c4685e72d180"
+      },
+      "current": {
+        "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/decode-readback-v2.py",
+        "bytes": 5187,
+        "sha256": "f24682c9fbf25ec8f37a16dc2b203562c673de0d9f3101dc61545dfc3b80a98d"
+      },
+      "complete_forward_and_inverse": true
+    }
+  ],
+  "requests": [
+    {
+      "request": {
+        "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/prepare-v2-request.json",
+        "bytes": 20164,
+        "sha256": "8c96afe1b4e50cff1e4b514d6096cbb17cdd2f1344594bf19572d95b9b8ba2a7"
+      },
+      "command_characters": 20034,
+      "embedded_source": "bbdf2163835f9bf71c8e4e3ad672f8d900e0a66f934d1fee755161c4e31dfb7c",
+      "whole_wrapper_inverse": true
+    },
+    {
+      "request": {
+        "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/stage-v2-readback-request.json",
+        "bytes": 5469,
+        "sha256": "169a842a7b19fef844dd124a1142a1e3f4624dbb9d54af35b0e65c74724df1f3"
+      },
+      "command_characters": 5339,
+      "embedded_source": "7feb3c2c6a725d5f3ac58f413c9bb058b4473dfed5b9ec7b5b6b1d37aa616e79",
+      "whole_wrapper_inverse": true
+    },
+    {
+      "request": {
+        "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-v2-readback-request.json",
+        "bytes": 5471,
+        "sha256": "099e026dd997a9d4edd55fc5f87fca9e6970feb316e30720cd8fa94def52e7aa"
+      },
+      "command_characters": 5341,
+      "embedded_source": "7feb3c2c6a725d5f3ac58f413c9bb058b4473dfed5b9ec7b5b6b1d37aa616e79",
+      "whole_wrapper_inverse": true
+    }
+  ],
+  "source_findings": [],
+  "review": [
+    "Complete preparer read: exact Node/account and plain parents, whole original config and all 56 input identities plus runtime admitted before writes.",
+    "Exact failed receipt is read and conserved; receiver, config, stage receipt and output must all be absent before exclusive writes. Gzip decode and exact whole receiver pin precede writes.",
+    "Only new receiver/config/receipt are written. Old receiver remains an unchanged guarded original; configuration replaces its one input row and changes only receiver/output/cleanup timeout. All original 56 inputs, original config and failed receipt are rechecked.",
+    "Partial new files are preserved on any error; no product/browser process or output directory is created during preparation.",
+    "Readback and local decoder are complete paths-only variants of accepted originals: unchanged framing, fixed name partition, per-file and total caps, refusal records and exclusive local extraction.",
+    "No selected source, decoder, product or native request was invoked by this peer. R1 remains failed; later process absence is a separate observation."
+  ]
+}

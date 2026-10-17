@@ -1,0 +1,240 @@
+{
+  "schema": "scopesignal.shown-disclosures.browser-evidence/1",
+  "source_revision": "dcad391d11a66a43df32ae1051a48c5ebd22ff34",
+  "parent_revision": "84532281940e5841e4244ff17a2011325acdc3c6",
+  "base_tree": "843b6bda7b8d6dc352df1e5538c6e3dff3b7b222",
+  "branch": "estate/e1438-shown-event-fields-82",
+  "destination_prefix": "docs/verification/shown-event-fields-e1438-82/browser",
+  "status": "R1_INCOMPLETE_PRESERVED_R2_ACCEPTED",
+  "files": [
+    {
+      "path": "README.md",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-browser/README-receiving.md",
+      "bytes": 7595,
+      "sha256": "fe0c2cfb2978a8da416c9b85a529a0022f372f0a3d5705af3a6ee2a3dc0ac698"
+    },
+    {
+      "path": "controls/receive-v1.cjs",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-browser/receive.cjs",
+      "bytes": 29542,
+      "sha256": "11f24f051fe07c78d7f54409d2ce0a3d210baa9a00c70dc6549018a05e6f7154"
+    },
+    {
+      "path": "controls/receive-v2.cjs",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-browser/receive-v2.cjs",
+      "bytes": 29835,
+      "sha256": "3ab7128af97b68700941e1a44363df074aba70bc2b8d11be2e3afc4e75a90431"
+    },
+    {
+      "path": "controls/receive-v2.patch",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-browser/receive-v2.patch",
+      "bytes": 5495,
+      "sha256": "fd362f9dfaf835b7f92014581044be4b9517d9ad3615ce1fe811b3eefbc9f2a9"
+    },
+    {
+      "path": "controls/stage.cjs",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/stage.cjs",
+      "bytes": 8523,
+      "sha256": "a98a125e81958e7d8ececfe30ebdcf2014edccbfc4db0ca75d8ec417fd18da36"
+    },
+    {
+      "path": "controls/prepare-v2.cjs",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/prepare-v2.cjs",
+      "bytes": 4502,
+      "sha256": "bbdf2163835f9bf71c8e4e3ad672f8d900e0a66f934d1fee755161c4e31dfb7c"
+    },
+    {
+      "path": "controls/readback-v1.cjs",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/readback.cjs",
+      "bytes": 3829,
+      "sha256": "f0f7073d8cf92afb73de85c416dbe5ad0c7442b57fedfbbf31a5125bbe7789d9"
+    },
+    {
+      "path": "controls/readback-v2.cjs",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/readback-v2.cjs",
+      "bytes": 3835,
+      "sha256": "7feb3c2c6a725d5f3ac58f413c9bb058b4473dfed5b9ec7b5b6b1d37aa616e79"
+    },
+    {
+      "path": "controls/decode-readback-v1.py",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/decode-readback.py",
+      "bytes": 5181,
+      "sha256": "9168f83763b927c739b19155de64683a63944ff3be4b7a281ab4c4685e72d180"
+    },
+    {
+      "path": "controls/decode-readback-v2.py",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/decode-readback-v2.py",
+      "bytes": 5187,
+      "sha256": "f24682c9fbf25ec8f37a16dc2b203562c673de0d9f3101dc61545dfc3b80a98d"
+    },
+    {
+      "path": "configuration/bootstrap-receipt.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/stage-received-v1/bootstrap-receipt.json",
+      "bytes": 977,
+      "sha256": "4c02d082f55bcd2a36cc06e3b02621ad357975e83cfb38597afe37c23c9a8ab1"
+    },
+    {
+      "path": "configuration/browser-config-v1.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/stage-received-v1/browser-config.json",
+      "bytes": 24668,
+      "sha256": "99ca2f79e8b57a0ec172de5c8da42c6224b291282392a1b447851770cdada883"
+    },
+    {
+      "path": "configuration/browser-config-v2.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/stage-received-v2/browser-config-v2.json",
+      "bytes": 24675,
+      "sha256": "71ceab745851f82799b6039ba790223115698d97ccd8150fef5fc399441ccdac"
+    },
+    {
+      "path": "configuration/stage-v1-receipt.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/stage-received-v1/stage-receipt.json",
+      "bytes": 1810,
+      "sha256": "127bf480b27b20222ba8232c789fe3fbf1985fc87f70e3f983f757fe005867dd"
+    },
+    {
+      "path": "configuration/stage-v2-receipt.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/stage-received-v2/stage-v2-receipt.json",
+      "bytes": 1784,
+      "sha256": "068dad9b07f151e0356bc932978b898553168d9857c42c27817d66b37e11b394"
+    },
+    {
+      "path": "original-v1/receiving.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v1/browser-v1/receiving.json",
+      "bytes": 94380,
+      "sha256": "1fbe4ced79ca7b8fdeea20c901dc6ad595e71add17ee09d3539a821b2a906c31"
+    },
+    {
+      "path": "original-v1/browser.stdout",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v1/browser-v1/browser.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "original-v1/browser.stderr",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v1/browser-v1/browser.stderr",
+      "bytes": 2788,
+      "sha256": "781ff7dd3a79f313247a5797a828a05009b5c1a9d12e474bc24508cc6bf3b545"
+    },
+    {
+      "path": "original-v1/READBACK.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v1/READBACK.json",
+      "bytes": 1550,
+      "sha256": "1239e0cbc33559e5e1bc3676db47a1a3604212517a31e7bdea4b23a1c6ab1269"
+    },
+    {
+      "path": "original-v1/request.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-request.json",
+      "bytes": 440,
+      "sha256": "dcc925e3420fe20087e1b3f639c1c21ae061cbafdfe16c9a1b328b83880ba384"
+    },
+    {
+      "path": "original-v1/process.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-completion.json",
+      "bytes": 687,
+      "sha256": "75318d9d831f07519b7c4c2e2adc5009291e27e9d964a9eaaf9f7d2f4e53519a"
+    },
+    {
+      "path": "original-v1/later-pid-request.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/v1-post-close-request.json",
+      "bytes": 596,
+      "sha256": "9941c1934588ed375b0d2899f392791aefef8142a90e388a8c22ff6e1f3542cf"
+    },
+    {
+      "path": "original-v1/later-pid-process.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/v1-post-close-completion.json",
+      "bytes": 432,
+      "sha256": "49a42311e5c8c22b76707a2764702fa1227fbfaa1b2899c662680c5c60f5ee83"
+    },
+    {
+      "path": "original-v2/receiving.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/receiving.json",
+      "bytes": 128189,
+      "sha256": "361aec2a5e2492d5dd34f130199397cdda6979cfaf27d99ec5c1fa59c88fe08e"
+    },
+    {
+      "path": "original-v2/browser.stdout",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/browser.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "original-v2/browser.stderr",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/browser.stderr",
+      "bytes": 3115,
+      "sha256": "5628364d1cfd9446f8bcecaf63b6b0f3aac10e9fb31fe52482da8df1403646d9"
+    },
+    {
+      "path": "original-v2/READBACK.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/READBACK.json",
+      "bytes": 1360,
+      "sha256": "bcc2d96df8ddf8728e626ab0fe097215f758adb9179a0703e7982c729e5d328e"
+    },
+    {
+      "path": "original-v2/request.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-v2-request.json",
+      "bytes": 446,
+      "sha256": "cf74055621c6a15aef73a4a666188173fc1fb40b3160625c5e04a59bb1a4b75f"
+    },
+    {
+      "path": "original-v2/process.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-v2-completion2.json",
+      "bytes": 687,
+      "sha256": "418617ad3c7efb3671212045cdeb54de0b24ddac99c6aa03e45256533f203fa7"
+    },
+    {
+      "path": "review/machine-v1-originals.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/machine-original-review.json",
+      "bytes": 2581,
+      "sha256": "6cb024d4bebc3af00720db137cb7325d09aa1be672d1f52d38f98a7daa5b9c19"
+    },
+    {
+      "path": "review/machine-v2-originals.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/machine-v2-original-review.json",
+      "bytes": 3764,
+      "sha256": "beb8743d8f21fcb7039ba9b9ab8558f8672e286e08804ed749dc551a8de0685e"
+    },
+    {
+      "path": "review/root-v2-originals.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/root-v2-original-review.json",
+      "bytes": 905,
+      "sha256": "004a4629a04ae9ea7bbe5af40fb338e13d03cd47a4d2c8ce9e72fe663c49dfb8"
+    },
+    {
+      "path": "review/machine-v2-receiver-source.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-browser/machine-v2-source-review.json",
+      "bytes": 3572,
+      "sha256": "22747b217a7e48fd0f7227e4d15f8fb3583bfaed6a2665218de4ae85f91dacc3"
+    },
+    {
+      "path": "review/machine-v2-preparation.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/machine-v2-preparation-review.json",
+      "bytes": 4645,
+      "sha256": "ab62605f9256aa38771325235b6a87263916c6a007261126e88b31831c8b8714"
+    },
+    {
+      "path": "review/root-v1-staged-config.json",
+      "original_local_path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/root-staged-config-review.json",
+      "bytes": 469,
+      "sha256": "9f1c209e027481e5342fbd65dbe63e1f6ef1d22dd279a96b3c9efa6b423773e5"
+    }
+  ],
+  "practical_kit": "https://drive.google.com/file/d/1SYgZt9kTD9Jp2vTvv54Pts3k6WTxd69o/view",
+  "review_artifacts": [
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/events-desktop.png",
+      "bytes": 58217,
+      "sha256": "7d2d77085bd4a0fcea080dce4cdc9c3444124d73fbe4692d3aa377e3a4fa43f9"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/events-narrow.png",
+      "bytes": 40351,
+      "sha256": "02000859b760342c763fbb1c45560e6252c2118c245f9b6c44f5e7295f579857"
+    },
+    {
+      "path": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-native/browser-received-v2/browser-v2/downloads/scopesignal-record-review.html",
+      "bytes": 13519,
+      "sha256": "414e1212721e42d8cd827167090cf446ed5dd2f039f1538d636392bf4c7e52f4"
+    }
+  ],
+  "qualification": "Browser output bodies are exact originals. PNGs and actual HTML are delivery artifacts, linked by whole identities here and in original receipt; their Drive receiving follows in a separate linked increment. The R1 desktop image is byte-identical to R2 desktop. Transport base64 carriers/packet are omitted from this compact source account; original per-file whole identities and complete fixed-input configs are retained. Native controls are receiving records with exact environment pins; not general portable runner promises. Absolute original paths remain provenance, not repository-relative references."
+}

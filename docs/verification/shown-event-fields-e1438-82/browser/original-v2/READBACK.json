@@ -1,0 +1,42 @@
+{
+  "schema": "scopesignal.shown-disclosures.decoded-readback/1",
+  "status": "COMPLETE",
+  "mode": "browser",
+  "files": [
+    {
+      "path": "browser-v2/receiving.json",
+      "bytes": 128189,
+      "sha256": "361aec2a5e2492d5dd34f130199397cdda6979cfaf27d99ec5c1fa59c88fe08e"
+    },
+    {
+      "path": "browser-v2/browser.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "browser-v2/browser.stderr",
+      "bytes": 3115,
+      "sha256": "5628364d1cfd9446f8bcecaf63b6b0f3aac10e9fb31fe52482da8df1403646d9"
+    },
+    {
+      "path": "browser-v2/events-desktop.png",
+      "bytes": 58217,
+      "sha256": "7d2d77085bd4a0fcea080dce4cdc9c3444124d73fbe4692d3aa377e3a4fa43f9"
+    },
+    {
+      "path": "browser-v2/events-narrow.png",
+      "bytes": 40351,
+      "sha256": "02000859b760342c763fbb1c45560e6252c2118c245f9b6c44f5e7295f579857"
+    },
+    {
+      "path": "browser-v2/downloads/scopesignal-record-review.html",
+      "bytes": 13519,
+      "sha256": "414e1212721e42d8cd827167090cf446ed5dd2f039f1538d636392bf4c7e52f4"
+    }
+  ],
+  "missing": [],
+  "refused": [],
+  "original_bytes": 243391,
+  "envelope_sha256": "441cdf3d2f079975e148bcb8308ed63a5332b979fcfd0f8462e5ff5d5534e67f",
+  "gzip_sha256": "727e44b3d6d5ce3c189a230200233924fb66b74a641d77f2dc119e838d69c1c4"
+}
