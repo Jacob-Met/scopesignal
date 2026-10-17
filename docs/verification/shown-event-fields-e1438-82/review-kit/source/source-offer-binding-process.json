@@ -1,0 +1,8 @@
+{
+  "chunk_id": "a7ca57",
+  "wall_time_seconds": 0.000039618,
+  "exit_code": 0,
+  "original_token_count": 57,
+  "output": "{\"source_revision\": \"dcad391d11a66a43df32ae1051a48c5ebd22ff34\", \"source_tree\": \"bf8910efa55be40da9a872823f02be5195b2a6f6\", \"author\": {\"bytes\": 7729, \"sha256\": \"2ae4d738c9bff3f4b4e9883b16223b7309b900acd755878b14811fa7d077b26b\"}}\n"
+}
+

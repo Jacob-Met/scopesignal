@@ -1,0 +1,8 @@
+{
+  "chunk_id": "8f6a73",
+  "wall_time_seconds": 0.000026759,
+  "exit_code": 0,
+  "original_token_count": 165,
+  "output": "{\"schema\": \"scopesignal.shown-events.review-kit.wrapper-binding/1\", \"status\": \"BOUND_SOURCE_ONLY_UNWRAPPED\", \"before\": {\"bytes\": 3244, \"sha256\": \"64a9bc111b0e0699950e871f3ac366d55f662338d493fdc077d12199a87df07e\"}, \"after\": {\"bytes\": 3284, \"sha256\": \"46b2e8e43b15fb25ee6219cd1a33d5be3659854d2fef1db4ac150a76cdcf8c12\"}, \"selection\": {\"bytes\": 12212, \"sha256\": \"627a0afd58f158112ef9104a9d9a0a2baa56a4e68bc0333820e5003977bdb01d\"}, \"rules\": [{\"old\": \"SOURCE_REVISION = None\", \"new\": \"SOURCE_REVISION = 'dcad391d11a66a43df32ae1051a48c5ebd22ff34'\", \"count\": 1}, {\"old\": \"PAYLOAD_BYTES = None\", \"new\": \"PAYLOAD_BYTES = 331731\", \"count\": 1}], \"whole_inverse\": true}\n"
+}
+

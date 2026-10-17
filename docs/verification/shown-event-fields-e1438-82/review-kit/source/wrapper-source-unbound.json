@@ -1,0 +1,76 @@
+{
+  "schema": "scopesignal.shown-events.review-kit.wrapper-source/1",
+  "status": "UNBOUND_SOURCE_ONLY",
+  "donor": {
+    "bytes": 3123,
+    "sha256": "09ab56df08f80099c38b54fe4782856da47bc6d60db4c56a7ea0cafc588e9a8c"
+  },
+  "current": {
+    "bytes": 3244,
+    "sha256": "64a9bc111b0e0699950e871f3ac366d55f662338d493fdc077d12199a87df07e"
+  },
+  "rules": [
+    {
+      "old": "assert selection['regular_files'] == 18 and selection['typed_entries'] == 23",
+      "new": "assert selection['regular_files'] == 54 and selection['typed_entries'] == 60",
+      "count": 1
+    },
+    {
+      "old": "assert selection['adopted_revision'] == 'a2b1fe0af6d2044d48fe382be94cda813d33dfef'",
+      "new": "SOURCE_REVISION = None\nPAYLOAD_BYTES = None\nassert SOURCE_REVISION and PAYLOAD_BYTES, 'Exact accepted kit binding is required'\nassert selection['source_revision'] == SOURCE_REVISION",
+      "count": 1
+    },
+    {
+      "old": "selection['payload_bytes'] == 205718",
+      "new": "selection['payload_bytes'] == PAYLOAD_BYTES",
+      "count": 1
+    },
+    {
+      "old": "D/'Replay-Forge-Standalone-Builder-a2b1fe0a.zip'",
+      "new": "D/('ScopeSignal-Shown-Events-'+SOURCE_REVISION[:8]+'.zip')",
+      "count": 1
+    },
+    {
+      "old": "(2026, 10, 17, 5, 20, 0)",
+      "new": "(2026, 10, 17, 6, 0, 0)",
+      "count": 2
+    },
+    {
+      "old": "'replay-forge.standalone-builder-kit.package/1'",
+      "new": "'scopesignal.shown-events.review-kit.package/1'",
+      "count": 1
+    },
+    {
+      "old": "'source_revision': selection['adopted_revision']",
+      "new": "'source_revision': selection['source_revision']",
+      "count": 1
+    },
+    {
+      "old": "'source_tree': selection['adopted_tree']",
+      "new": "'source_tree': selection['source_tree']",
+      "count": 1
+    },
+    {
+      "old": "One ZIP_STORED wrapping of the accepted eighteen source-kit files.",
+      "new": "One ZIP_STORED wrapping of the accepted fifty-four review-kit files.",
+      "count": 1
+    },
+    {
+      "old": "No builder, test, browser or native invocation.",
+      "new": "No server, module, test, browser or native invocation.",
+      "count": 1
+    }
+  ],
+  "whole_inverse": true,
+  "unbound": [
+    "SOURCE_REVISION",
+    "PAYLOAD_BYTES"
+  ],
+  "qualification": "Finite accepted wrapper derivative only. No wrapping or product invocation.",
+  "prior_author_observation": {
+    "tool_record": "5dc72d",
+    "exit_code": 1,
+    "stage": "Inverse assertion before any output write",
+    "cause": "A broad selection source_revision inverse also matched the newly inserted guard. Corrected only the author rule context to the package dictionary span. This is an account of the visible original tool observation, not a reconstructed process envelope."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "scopesignal.shown-events.root-fresh-package-review/1",
+  "status": "PASS",
+  "archive_bytes": 338191,
+  "archive_sha256": "5b86a8b3e222d4fe0588eb94ac0d779e2a78ebbdd801a9e083f940d374ed2d7b",
+  "whole_members": 54,
+  "payload_bytes": 331731,
+  "review": "Same previously received fresh archive; all54 complete members CRC-read and compared with accepted source selection and payload. No fetch, server, test or browser invocation."
+}

@@ -1,0 +1,42 @@
+{
+  "schema": "scopesignal.shown-events.source-package-review/1",
+  "status": "ACCEPT_FIFTY_FOUR_FILE_KIT_WRAPPER_AND_UNBOUND_RECEIVER_SOURCE",
+  "selection": {
+    "bytes": 12212,
+    "sha256": "627a0afd58f158112ef9104a9d9a0a2baa56a4e68bc0333820e5003977bdb01d",
+    "git_blob": "2891de2765ab842395902274a391bddb440b150f"
+  },
+  "source_revision": "dcad391d11a66a43df32ae1051a48c5ebd22ff34",
+  "source_tree": "bf8910efa55be40da9a872823f02be5195b2a6f6",
+  "whole_files": 54,
+  "typed_entries": 60,
+  "payload_bytes": 331731,
+  "git_source_bodies": 51,
+  "self_excluding_manifest_rows": 53,
+  "manual_fixture": {
+    "bytes": 3520,
+    "sha256": "8639e3ac91311f7b3d50082bc7424a605f7d83fbc49b1a40b7916399cda6e942",
+    "git_blob": "a9a0dabc7d4ea95cc3e3c393949addd5cf73901e"
+  },
+  "opening_guide": {
+    "bytes": 5183,
+    "sha256": "50506354ae0d5c83a8c4ee44cd82ad4c06143b70395f00f8176f0f5efcbcd690",
+    "git_blob": "1f4e10731d334bdecaf29c2f1b60fa118f805e9b"
+  },
+  "wrapper": {
+    "bytes": 3284,
+    "sha256": "46b2e8e43b15fb25ee6219cd1a33d5be3659854d2fef1db4ac150a76cdcf8c12",
+    "git_blob": "4d8dc1d3d42ab4abae9839de0a1b608c1a66422c"
+  },
+  "unbound_receiver": {
+    "bytes": 5262,
+    "sha256": "a88c13b2865b1151f5d3fa519c0aaf9721a166ecec61d004ac188fc7079d8dc1",
+    "git_blob": "97dcd1fa3e1dbd4ff027bfd5a6880a233e3e2783"
+  },
+  "whole_inverse_rule_counts": [
+    10,
+    2,
+    14
+  ],
+  "qualification": "Full opener, manifest, wrapper and receiver read. All54 whole bodies/Git51/source3/fixture/test literal/8PASS joined. Retained local entrypoint, optional external font and historical issue80 scope qualified; issue82 browser pending. Same Eyes/one bounded ordinary fetch/whole-byte and ZIP-member receiving logic preserved. No wrapping, server, module, test, browser, upload or fetch invoked by this peer. Package/ZIP tuples still unbound; authorized delivery requires actual sole-wrapper output and exact two binding literals."
+}

@@ -1,0 +1,8 @@
+{
+  "chunk_id": "b697ad",
+  "wall_time_seconds": 0.000026098,
+  "exit_code": 0,
+  "original_token_count": 269,
+  "output": "{\"schema\": \"scopesignal.shown-events.review-kit.receiver-binding/1\", \"status\": \"ACCEPT_EXACT_TWO_PACKAGE_AND_ARCHIVE_BINDINGS_SOURCE_ONLY\", \"before\": {\"bytes\": 5262, \"sha256\": \"a88c13b2865b1151f5d3fa519c0aaf9721a166ecec61d004ac188fc7079d8dc1\"}, \"after\": {\"bytes\": 5424, \"sha256\": \"34b006648fa57621c8754fe3efcee886dc85e5467b3da409af6ee6addb544894\"}, \"package\": {\"bytes\": 12788, \"sha256\": \"ac00d6a71dd551d75e16836263f4cccebcf3693cb77defce9c98c1bfc000df23\"}, \"archive\": {\"bytes\": 338191, \"sha256\": \"5b86a8b3e222d4fe0588eb94ac0d779e2a78ebbdd801a9e083f940d374ed2d7b\", \"git_blob\": \"a36f8a2e9d272e1c55cb0254868eb8b3e6b7c9f0\"}, \"rules\": [{\"old\": \"PACKAGE_PIN = None\", \"new\": \"PACKAGE_PIN = {'bytes': 12788, 'sha256': 'ac00d6a71dd551d75e16836263f4cccebcf3693cb77defce9c98c1bfc000df23'}\", \"count\": 1}, {\"old\": \"ARCHIVE_PIN = None\", \"new\": \"ARCHIVE_PIN = (338191, '5b86a8b3e222d4fe0588eb94ac0d779e2a78ebbdd801a9e083f940d374ed2d7b')\", \"count\": 1}], \"whole_inverse\": true, \"qualification\": \"Exact tuples only. Original unbound receiver remains intact; no network or product invocation.\"}\n"
+}
+

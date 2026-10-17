@@ -1,0 +1,234 @@
+{
+  "schema": "scopesignal.shown-events.review-kit.publication-source/1",
+  "repository": "Jacob-Met/scopesignal",
+  "source_offer": "dcad391d11a66a43df32ae1051a48c5ebd22ff34",
+  "parent_evidence_commit": "5dc4529d853946f4ad7489ac4bdbd2732afd2bbd",
+  "parent_tree": "75bcbd4e3fb2fdcda9e138aedac546f1f0ae0253",
+  "prefix": "docs/verification/shown-event-fields-e1438-82/review-kit",
+  "files": [
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/README-review-kit.md",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/README.md",
+      "bytes": 6152,
+      "sha256": "d69e850de697315bb497ab3f942aa5081ed5dcb04b1acc0c98ca369b09e677a5",
+      "git_blob": "85fdbcd27449cb56e136344eedf775cd2820b3c8"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/payload/OPEN_FIRST.md",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/package/OPEN_FIRST.md",
+      "bytes": 5183,
+      "sha256": "50506354ae0d5c83a8c4ee44cd82ad4c06143b70395f00f8176f0f5efcbcd690",
+      "git_blob": "1f4e10731d334bdecaf29c2f1b60fa118f805e9b"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/payload/SOURCE.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/package/SOURCE.json",
+      "bytes": 19831,
+      "sha256": "1399d64ffa07349d77b45ba61872da1cf34b70470f1e99af6cc40584398eeda7",
+      "git_blob": "83962db0c1bac7c6f58361df2123f02fefae489e"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/payload/docs/record-event-search.md",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/package/docs/record-event-search.md",
+      "bytes": 9310,
+      "sha256": "a3063a6a8e685298c0763458fd7ef4e1da2618632ae0a5fde2d69815421d0d9e",
+      "git_blob": "7704e1cbad5a95e2e29e4c19de1ebb0f116db618"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/package.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/package/package.json",
+      "bytes": 12788,
+      "sha256": "ac00d6a71dd551d75e16836263f4cccebcf3693cb77defce9c98c1bfc000df23",
+      "git_blob": "f16af9b9c89ce083b757a5bdc843c1a106cc7613"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/kit-selection.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/kit-selection.json",
+      "bytes": 12212,
+      "sha256": "627a0afd58f158112ef9104a9d9a0a2baa56a4e68bc0333820e5003977bdb01d",
+      "git_blob": "2891de2765ab842395902274a391bddb440b150f"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/kit-preparation.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/kit-preparation.json",
+      "bytes": 15108,
+      "sha256": "a48231936ad5148d8a13618f4f70b1e3648af025b24ce69ae1b7550276c7ba49",
+      "git_blob": "f7aee9a569c22a54aa56fb6bd66bb7b8ff70356b"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/prepare-kit.py",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/prepare-kit.py",
+      "bytes": 7729,
+      "sha256": "2ae4d738c9bff3f4b4e9883b16223b7309b900acd755878b14811fa7d077b26b",
+      "git_blob": "e86706b1496a76490169fa3337421cfb14d31557"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/OPEN_FIRST-draft.md",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/OPEN_FIRST-draft.md",
+      "bytes": 4445,
+      "sha256": "beb1ae9f774e87ad8f195254cd93db199b10a567f008f03ef2768b1708f9ff7c",
+      "git_blob": "7e29806f925b7c3418500aeb84bef6b25f323b3e"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/source-offer-binding.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/source-offer-binding.json",
+      "bytes": 883,
+      "sha256": "0856702e1241860b09c1eafa51623a8e43e544e829dc0b69960a7cbebd14fd2b",
+      "git_blob": "e0e8647577ee8f2746a0eed6e8337bdc7d315047"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/source-offer-binding-process.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/source-offer-binding-process.json",
+      "bytes": 373,
+      "sha256": "8f49a1110dce8b204542d28af3d4eac0a8fd62a5b10abd7333ae9119239a5282",
+      "git_blob": "58babeb19276ffdb4f8232372a30cf8b1f831c1a"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/kit-preparation-process.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/kit-preparation-process.json",
+      "bytes": 333,
+      "sha256": "c3d380e1968eebdd8b5029c5f16cbe54e75011d0424b164e4850342071d43e2d",
+      "git_blob": "a3b6d508a090df15899fae15635e6b8b166742a4"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/recovery/recovery-proof.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/recovery-proof.json",
+      "bytes": 11190,
+      "sha256": "33516bcae0dfbd1b08c3398f8c3d4097ae7002004336d8d5747a8bb98595a1d5",
+      "git_blob": "9e78e87f4c6aae96bdc0321bb87c5e81f123082a"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/wrap-kit.py",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/wrap-kit.py",
+      "bytes": 3284,
+      "sha256": "46b2e8e43b15fb25ee6219cd1a33d5be3659854d2fef1db4ac150a76cdcf8c12",
+      "git_blob": "4d8dc1d3d42ab4abae9839de0a1b608c1a66422c"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/wrapper-source-unbound.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/wrapper-source-unbound.json",
+      "bytes": 2750,
+      "sha256": "60fca2646601a3720af8e027e2cd40e165877c1af9cdb77d72d7dba0936ff8aa",
+      "git_blob": "990cdbbf9bd66f0f65e7b4a405e0faf5dbfec4a8"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/wrapper-binding.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/wrapper-binding.json",
+      "bytes": 769,
+      "sha256": "dc4aab5adda21717390e41855f7a6f716a4af5b21e99447ee8a8d9798ed2d8e5",
+      "git_blob": "b6de80ac715dd5c402101c9db535722e104dbe1e"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/wrapper-binding-process.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/wrapper-binding-process.json",
+      "bytes": 843,
+      "sha256": "c89ab4a18575067bd6d18b53e20cb4084bbbcaa3fb304c9d883ce2619d77dbf4",
+      "git_blob": "85a52c9ab2dab7342f6834df01343e7a34dc907e"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/wrapper-author-process.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/wrapper-author-process.json",
+      "bytes": 295,
+      "sha256": "672d603dd604ada24e1f59fa51b21740d56b9a53daebded0f18fb1884017c851",
+      "git_blob": "18c939afe41ca65a9dc242d96f1371f77cab4ac3"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/receive-package.py",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/receive-package.py",
+      "bytes": 5424,
+      "sha256": "34b006648fa57621c8754fe3efcee886dc85e5467b3da409af6ee6addb544894",
+      "git_blob": "1a2a9dfd63fcdc99479e0527a51db249417776d3"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/receiver-source-unbound.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/receiver-source-unbound.json",
+      "bytes": 3929,
+      "sha256": "004dc568727e7f129909cc0f3bc30075e0e293a922dfa8bc2bcd00224a3f6b78",
+      "git_blob": "9e543a80038a863bbe084fd0d859ba53697445ac"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/receiver-binding.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/receiver-binding.json",
+      "bytes": 1207,
+      "sha256": "ad4d098f7edf4f119811bab55124851f2aabcb919fb5b4e9cabe9be5e93c9a44",
+      "git_blob": "38054df8947b3be28bdcd271141407a0925ac57c"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/receiver-binding-process.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/receiver-binding-process.json",
+      "bytes": 1277,
+      "sha256": "18edb7b8c7acb6afea5bf6de0139714114842d73e68cf67a77d54a17ef074b90",
+      "git_blob": "b2161cc7ae4f17094d4153487a1c3a2785be5bd3"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/receiver-author-process.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/source/receiver-author-process.json",
+      "bytes": 295,
+      "sha256": "b791e5e528e4381ad82fcb61805376bce09f0b0093c5758ce634c240683c6c86",
+      "git_blob": "4b7a2862af00554c7732a39c3830eca800410bd6"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/source-package-review.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/reviews/source-package-review.json",
+      "bytes": 1941,
+      "sha256": "5473b72b9c8074fb6ce0b6392f1d7998cfcc069d54f5aa5b6dd5c7d524fc5a7e",
+      "git_blob": "49978e134cb028e19b381cb94c9fd453f5a3a34a"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/source-package-review-process.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/reviews/source-package-review-process.json",
+      "bytes": 2361,
+      "sha256": "d1947780c1cb730b8ac1331723231995b8992b8fb336193e1f33dcbe5755fdd0",
+      "git_blob": "151f66285ea845c01a5aecd84bb408f03f79b991"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/package-process.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/delivery/package-process.json",
+      "bytes": 1087,
+      "sha256": "4db5a5e5f81c03752cc541f2bce5c7cc817fb53259782ece77325da7652963de",
+      "git_blob": "dcaa62c8c1d88208ab9252e5287c9dc9ed4f206d"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/package-upload.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/delivery/package-upload.json",
+      "bytes": 1367,
+      "sha256": "2f40d0e1be6f3a524b3eb5dbbb52085da5223fc84a5b5d77d60fdcd357d1abeb",
+      "git_blob": "96153af6c9408bff4dc77e8aa427e445daf69283"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/package-delivery.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/delivery/package-delivery.json",
+      "bytes": 33187,
+      "sha256": "d2a66f03370ad700824744901348bf52e62c88b6f3262a9becffac2c9aa2e4ad",
+      "git_blob": "9a4fac4b2224596ad156f1cd4a8f8465c20238e7"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/package-receiving-start.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/delivery/package-receiving-start.json",
+      "bytes": 6624,
+      "sha256": "3b7cc82e472467a437059cdaa8c3ceb2df9590a82bc76389c3b7394ffd55f56c",
+      "git_blob": "92e01c338b9568f5de9be03f2b95bffae90a1e51"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/package-receiving-completion.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/delivery/package-receiving-completion.json",
+      "bytes": 127,
+      "sha256": "e495cfe35c42850fe3771fb400aae3866626e890ddfe6a955aaf3db7c2d00f2c",
+      "git_blob": "7175f999e976e7a24bea157f2515b30cc4206d1e"
+    },
+    {
+      "source": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/root-delivery-review.json",
+      "path": "docs/verification/shown-event-fields-e1438-82/review-kit/reviews/root-delivery-review.json",
+      "bytes": 446,
+      "sha256": "f33ce1dda1ccd02676cfe0d4d02a7bebf78ad5d8f26e395998ab5f3b364e9ca6",
+      "git_blob": "52f56060c99178315222620b715a7a1842e420e0"
+    }
+  ],
+  "unselected_references": {
+    "product_source": "https://github.com/Jacob-Met/scopesignal/tree/dcad391d11a66a43df32ae1051a48c5ebd22ff34",
+    "source_validation": "https://github.com/Jacob-Met/scopesignal/blob/5dc4529d853946f4ad7489ac4bdbd2732afd2bbd/docs/verification/shown-event-fields-e1438-82/source/README.md",
+    "wrapper_donor": "https://github.com/Jacob-Met/replay-forge/blob/f2a13583d2c7acf3cb4efb5ba2c179290d617306/docs/verification/standalone-utf8-lf-e1438-14/builder-kit/source/wrap-kit.py",
+    "receiver_donor": "https://github.com/Jacob-Met/replay-forge/blob/f2a13583d2c7acf3cb4efb5ba2c179290d617306/docs/verification/standalone-utf8-lf-e1438-14/builder-kit/source/receive-package.py"
+  },
+  "qualification": "All31 nonself bodies selected once. The complete54-member delivered kit is described by package/SOURCE.json and delivery/package-delivery.json;51 maintained source bodies are referenced by immutable Git identities rather than duplicated. ZIP and private provider fetch URL omitted. Source validation originals remain in the preceding source account. This delivered-kit checkpoint has no new browser outcome."
+}

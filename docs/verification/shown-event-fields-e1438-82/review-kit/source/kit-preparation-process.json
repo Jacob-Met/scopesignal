@@ -1,0 +1,8 @@
+{
+  "chunk_id": "a3400e",
+  "wall_time_seconds": 0.000022242,
+  "exit_code": 0,
+  "original_token_count": 48,
+  "output": "{\"status\": \"ACCEPT_WHOLE_SOURCE_TREE_AND_FIXED_PLAYABLE_SELECTION\", \"files\": 54, \"typed_entries\": 60, \"payload_bytes\": 331731, \"source_revision\": \"dcad391d11a66a43df32ae1051a48c5ebd22ff34\"}\n"
+}
+

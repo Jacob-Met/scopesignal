@@ -1,0 +1,90 @@
+{
+  "schema": "scopesignal.shown-events.review-kit.receiver-source/1",
+  "status": "UNBOUND_SOURCE_ONLY",
+  "donor": {
+    "bytes": 5193,
+    "sha256": "b04d17b48ad7d9186d9f5b6fdac9f007e4410a0ce2e2dadbc9031717820ee7c2"
+  },
+  "current": {
+    "bytes": 5262,
+    "sha256": "a88c13b2865b1151f5d3fa519c0aaf9721a166ecec61d004ac188fc7079d8dc1"
+  },
+  "rules": [
+    {
+      "old": "assert pin(package_raw) == {'bytes': 4861, 'sha256': '504551a34dd3b3c568a1d66a12f0912c9efe6d5ad3efe25d258f7846dd31f5ff'}",
+      "new": "PACKAGE_PIN = None\nassert PACKAGE_PIN is not None, 'Exact package manifest binding is required'\nassert pin(package_raw) == PACKAGE_PIN",
+      "count": 1
+    },
+    {
+      "old": "assert (expected['bytes'], expected['sha256']) == (207768, 'd7a8529503993fb1957c1490f7c6dda374b8d2a5a5c7697bda6b53a60b906c51')",
+      "new": "ARCHIVE_PIN = None\nassert ARCHIVE_PIN is not None, 'Exact archive binding is required'\nassert (expected['bytes'], expected['sha256']) == ARCHIVE_PIN",
+      "count": 1
+    },
+    {
+      "old": "fresh-Replay-Forge-Standalone-Builder-a2b1fe0a.zip",
+      "new": "fresh-ScopeSignal-Shown-Events-dcad391d.zip",
+      "count": 1
+    },
+    {
+      "old": "len(members) == 18",
+      "new": "len(members) == 54",
+      "count": 1
+    },
+    {
+      "old": "(2026, 10, 17, 5, 20, 0)",
+      "new": "(2026, 10, 17, 6, 0, 0)",
+      "count": 1
+    },
+    {
+      "old": "package['payload_bytes'] == 205718",
+      "new": "package['payload_bytes'] == 331731",
+      "count": 1
+    },
+    {
+      "old": "len(practical['files']) == 17",
+      "new": "len(practical['files']) == 53",
+      "count": 1
+    },
+    {
+      "old": "practical['adopted_revision']",
+      "new": "practical['source_revision']",
+      "count": 1
+    },
+    {
+      "old": "a2b1fe0af6d2044d48fe382be94cda813d33dfef",
+      "new": "dcad391d11a66a43df32ae1051a48c5ebd22ff34",
+      "count": 1
+    },
+    {
+      "old": "replay-forge.standalone-builder-kit",
+      "new": "scopesignal.shown-events.review-kit",
+      "count": 2
+    },
+    {
+      "old": "ADOPTED_SOURCE_PREPARED_TRANSFER_AND_WINDOWS_BUILD_PENDING",
+      "new": "VERIFIED_NONDEFAULT_SOURCE_PREPARED_TRANSFER_AND_BROWSER_RECEIVING_PENDING",
+      "count": 1
+    },
+    {
+      "old": "len(source_rows)==16",
+      "new": "len(source_rows)==51",
+      "count": 1
+    },
+    {
+      "old": "member_count=18, payload_bytes=205718",
+      "new": "member_count=54, payload_bytes=331731",
+      "count": 1
+    },
+    {
+      "old": "One ordinary upload and fresh complete-byte receive of the eighteen accepted standalone builder-kit files. All whole members, CRCs, exact metadata, seventeen manifest rows and sixteen adopted source Git blobs joined without extraction or builder/test/browser/native execution. The accepted cloud Python build and earlier Studio browser receiving remain separate. This unchanged preparation snapshot keeps kit transfer and the unflagged Windows build pending; this delivery proof closes only its transfer receiving.",
+      "new": "One ordinary upload and fresh complete-byte receive of the fifty-four accepted ScopeSignal review-kit files. All whole members, CRCs, exact metadata, fifty-three manifest rows and fifty-one nondefault source Git blobs joined without extraction or server/module/test/browser/native execution. The eight accepted controlled-DOM groups and historical issue80 browser receiving remain separate. This unchanged preparation snapshot keeps kit transfer and issue82 browser receiving pending; this delivery proof closes only its transfer receiving.",
+      "count": 1
+    }
+  ],
+  "whole_inverse": true,
+  "unbound": [
+    "PACKAGE_PIN",
+    "ARCHIVE_PIN"
+  ],
+  "qualification": "Finite accepted receiver derivative only. Same Eyes parent, one HTTPS request, 30-second socket timeout, size+1 bound, whole original/fresh equality and exclusive writes retained. No network, extraction or product invocation."
+}

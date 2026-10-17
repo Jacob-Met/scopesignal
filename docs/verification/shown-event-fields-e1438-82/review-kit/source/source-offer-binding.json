@@ -1,0 +1,32 @@
+{
+  "schema": "scopesignal.shown-events.review-kit.source-offer-binding/1",
+  "source_offer": {
+    "bytes": 2001,
+    "sha256": "d391eea8df4dc9965c230d863551c541d34e3b041e3f210804b656ddb0801dd1"
+  },
+  "source_tree": {
+    "bytes": 349463,
+    "sha256": "1590561ef13a6a8449a6f8f438187376b71d0fcba6efe3b67fec3688450ef28c"
+  },
+  "before": {
+    "bytes": 7653,
+    "sha256": "6f3c22ddd8c444bc8cb2f969decf6fa89cb667dc0a26edb3cc52840fe3976b04"
+  },
+  "after": {
+    "bytes": 7729,
+    "sha256": "2ae4d738c9bff3f4b4e9883b16223b7309b900acd755878b14811fa7d077b26b"
+  },
+  "rules": [
+    {
+      "old": "SOURCE_REVISION=None",
+      "new": "SOURCE_REVISION='dcad391d11a66a43df32ae1051a48c5ebd22ff34'",
+      "count": 1
+    },
+    {
+      "old": "SOURCE_TREE=None",
+      "new": "SOURCE_TREE='bf8910efa55be40da9a872823f02be5195b2a6f6'",
+      "count": 1
+    }
+  ],
+  "whole_inverse": true
+}

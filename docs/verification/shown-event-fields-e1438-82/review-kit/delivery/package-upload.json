@@ -1,0 +1,38 @@
+{
+  "request": {
+    "file_uri": "/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/ScopeSignal-Shown-Events-dcad391d.zip",
+    "file_name": "ScopeSignal-Shown-Events-dcad391d.zip",
+    "mime_type": "application/zip",
+    "parent_folder_id": "1Fa24MIEeJuKgF2jLjEjwvpqY4PDOInp8"
+  },
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Action completed."
+      }
+    ],
+    "structuredContent": {
+      "accepted_input": "file_uri",
+      "success": true,
+      "id": "1SYgZt9kTD9Jp2vTvv54Pts3k6WTxd69o",
+      "title": "ScopeSignal-Shown-Events-dcad391d.zip",
+      "file_name": "ScopeSignal-Shown-Events-dcad391d.zip",
+      "mime_type": "application/zip",
+      "url": "https://drive.google.com/file/d/1SYgZt9kTD9Jp2vTvv54Pts3k6WTxd69o/view?usp=drivesdk",
+      "parent_id": "1Fa24MIEeJuKgF2jLjEjwvpqY4PDOInp8",
+      "structuredContent": {
+        "accepted_input": "file_uri",
+        "success": true,
+        "id": "1SYgZt9kTD9Jp2vTvv54Pts3k6WTxd69o",
+        "title": "ScopeSignal-Shown-Events-dcad391d.zip",
+        "file_name": "ScopeSignal-Shown-Events-dcad391d.zip",
+        "mime_type": "application/zip",
+        "url": "https://drive.google.com/file/d/1SYgZt9kTD9Jp2vTvv54Pts3k6WTxd69o/view?usp=drivesdk",
+        "parent_id": "1Fa24MIEeJuKgF2jLjEjwvpqY4PDOInp8"
+      }
+    },
+    "isError": false
+  }
+}
+

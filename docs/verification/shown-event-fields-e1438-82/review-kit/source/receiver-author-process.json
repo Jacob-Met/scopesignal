@@ -1,0 +1,8 @@
+{
+  "chunk_id": "e03a08",
+  "wall_time_seconds": 0.000025298,
+  "exit_code": 0,
+  "original_token_count": 38,
+  "output": "{\"status\": \"UNBOUND_SOURCE_ONLY\", \"source\": {\"bytes\": 5262, \"sha256\": \"a88c13b2865b1151f5d3fa519c0aaf9721a166ecec61d004ac188fc7079d8dc1\"}, \"rules\": 14}\n"
+}
+

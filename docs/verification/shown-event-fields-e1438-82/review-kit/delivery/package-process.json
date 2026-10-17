@@ -1,0 +1,8 @@
+{
+  "chunk_id": "0cb3cf",
+  "wall_time_seconds": 0.000037706,
+  "exit_code": 0,
+  "original_token_count": 228,
+  "output": "{\"schema\": \"scopesignal.shown-events.review-kit.package/1\", \"path\": \"/workspace/scratch/e1438c9d058f/scopesignal-visible-events-delivery/ScopeSignal-Shown-Events-dcad391d.zip\", \"zip\": {\"bytes\": 338191, \"sha256\": \"5b86a8b3e222d4fe0588eb94ac0d779e2a78ebbdd801a9e083f940d374ed2d7b\", \"git_blob\": \"a36f8a2e9d272e1c55cb0254868eb8b3e6b7c9f0\"}, \"payload_bytes\": 331731, \"source_revision\": \"dcad391d11a66a43df32ae1051a48c5ebd22ff34\", \"source_tree\": \"bf8910efa55be40da9a872823f02be5195b2a6f6\", \"selection\": {\"bytes\": 12212, \"sha256\": \"627a0afd58f158112ef9104a9d9a0a2baa56a4e68bc0333820e5003977bdb01d\", \"git_blob\": \"2891de2765ab842395902274a391bddb440b150f\"}, \"source_bodies_unchanged\": true, \"qualification\": \"One ZIP_STORED wrapping of the accepted fifty-four review-kit files. Exact root-relative names, fixed metadata, CRCs and whole-member equality checked. No server, module, test, browser or native invocation.\"}\n"
+}
+

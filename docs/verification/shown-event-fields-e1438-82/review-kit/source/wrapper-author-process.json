@@ -1,0 +1,8 @@
+{
+  "chunk_id": "ec7edc",
+  "wall_time_seconds": 0.000021642,
+  "exit_code": 0,
+  "original_token_count": 38,
+  "output": "{\"status\": \"UNBOUND_SOURCE_ONLY\", \"source\": {\"bytes\": 3244, \"sha256\": \"64a9bc111b0e0699950e871f3ac366d55f662338d493fdc077d12199a87df07e\"}, \"rules\": 10}\n"
+}
+
